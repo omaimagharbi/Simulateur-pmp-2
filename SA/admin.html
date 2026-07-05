@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Administration — PMP Simulator</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="topbar-mount"></div>
+
+<div class="page">
+  <div class="eyebrow">Admin area</div>
+  <h1>Administration</h1>
+
+  <div class="admin-tabs">
+    <button class="active" data-tab="questions">Questions</button>
+    <button data-tab="users">Users &amp; scores</button>
+    <button data-tab="settings">Settings</button>
+  </div>
+
+  <div id="tab-questions">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem">
+      <div class="stat-strip" style="gap:.7rem">
+        <span class="pill good" id="q-count">0 questions</span>
+      </div>
+      <button class="btn btn-brass" id="btn-add-question">+ Add a question</button>
+    </div>
+    <div class="card" style="padding:0.4rem 1rem; overflow:auto">
+      <table class="admin-table" id="questions-table"></table>
+    </div>
+  </div>
+
+  <div id="tab-users" style="display:none">
+    <div class="grid-3" style="margin-bottom:1.6rem" id="user-stat-boxes"></div>
+    <div class="card" style="padding:0.4rem 1rem; overflow:auto">
+      <table class="admin-table" id="users-table"></table>
+    </div>
+  </div>
+
+  <div id="tab-settings" style="display:none">
+    <div class="card" style="padding:1.8rem; max-width:420px">
+      <h3 style="font-size:1.05rem">Change the admin password</h3>
+      <div class="banner warn">This account is shared by anyone with access to this browser. Change the default password before any real use.</div>
+      <form id="pw-form">
+        <div class="field">
+          <label>New password</label>
+          <input type="password" id="new-pw" required minlength="4">
+        </div>
+        <div class="field">
+          <label>Confirm</label>
+          <input type="password" id="confirm-pw" required minlength="4">
+        </div>
+        <div class="error-text" id="pw-error"></div>
+        <button class="btn btn-primary btn-block" type="submit">Update</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: add / edit a question -->
+<div class="modal-overlay" id="modal-overlay">
+  <div class="modal">
+    <h3 id="modal-title">Add a question</h3>
+    <form id="question-form">
+      <input type="hidden" id="f-id">
+      <div class="grid-2">
+        <div class="field">
+          <label>Category (sidebar)</label>
+          <select id="f-category">
+            <option value="Predictif">Predictive</option>
+            <option value="Agile">Agile</option>
+            <option value="Hybride">Hybrid</option>
+            <option value="Exam">Exam</option>
+            <option value="Quiz">Quiz</option>
+            <option value="MiniExam">Mini exam</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>PMI domain</label>
+          <select id="f-domain">
+            <option value="People">People</option>
+            <option value="Process">Process</option>
+            <option value="Business">Business Environment</option>
+          </select>
+        </div>
+      </div>
+      <div class="field">
+        <label>Question text</label>
+        <textarea id="f-text" rows="3" required></textarea>
+      </div>
+      <div class="field">
+        <label>Option A</label>
+        <input id="f-optA" required>
+      </div>
+      <div class="field">
+        <label>Option B</label>
+        <input id="f-optB" required>
+      </div>
+      <div class="field">
+        <label>Option C</label>
+        <input id="f-optC" required>
+      </div>
+      <div class="field">
+        <label>Option D</label>
+        <input id="f-optD" required>
+      </div>
+      <div class="field">
+        <label>Correct answer</label>
+        <select id="f-answer">
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="D">D</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Justification (shown in the review)</label>
+        <textarea id="f-justification" rows="3"></textarea>
+      </div>
+      <div class="modal-actions">
+        <button type="button" class="btn btn-ghost" id="modal-cancel">Cancel</button>
+        <button type="submit" class="btn btn-primary">Save</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

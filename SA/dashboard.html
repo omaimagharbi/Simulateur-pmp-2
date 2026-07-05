@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard — PMP Simulator</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="topbar-mount"></div>
+
+<div class="shell-with-sidebar">
+  <div class="category-nav">
+    <div class="nav-title">Training categories</div>
+    <div id="category-list"></div>
+  </div>
+
+  <div>
+    <div class="eyebrow" id="welcome-eyebrow">Welcome</div>
+    <h1 id="welcome-title">Ready to train?</h1>
+
+    <div class="grid-2" style="margin-top:1.4rem">
+      <div class="card" style="padding:1.6rem">
+        <h3 style="font-size:1.05rem">Your progress</h3>
+        <div id="compass-mount"></div>
+      </div>
+      <div class="stat-strip" style="flex-direction:column; gap:1rem">
+        <div class="card stat-box">
+          <div class="n" id="stat-attempts">0</div>
+          <div class="l">Exams taken</div>
+        </div>
+        <div class="card stat-box">
+          <div class="n" id="stat-best">—</div>
+          <div class="l">Best score</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-title"><h2 id="category-title">Select a category</h2></div>
+    <div class="card category-detail" id="category-detail-mount"></div>
+
+    <div class="section-title"><h2>Recent attempts</h2><a href="history.html" style="font-size:.85rem">View full history →</a></div>
+    <div class="card" style="padding:0.4rem 1rem" id="recent-table-mount"></div>
+  </div>
+</div>
+
+<footer class="foot">PMP Simulator — training tool, not affiliated with PMI®.</footer>
+
+<script src="js/data.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>
