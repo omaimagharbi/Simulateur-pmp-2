@@ -1,0 +1,1044 @@
+// PMP question bank — categorized by Predictive/Agile/Hybrid/Exam/Quiz/MiniExam
+// and by PMI domain (People/Process/Business).
+const QUESTIONS = [
+  {
+    "id": 1,
+    "exam": 1,
+    "num_in_exam": 1,
+    "domain": "People",
+    "category": "Exam",
+    "text": "Two key project team members are in constant disagreement over the technical architecture of a new product. This conflict is delaying the deliverables of the current iteration. What should the project manager do FIRST?",
+    "options": {
+      "A": "Choose the technical solution that presents the least financial risk to the project.",
+      "B": "Ask the two team members to meet privately to resolve their disagreement.",
+      "C": "Organize a meeting with both members to hear their viewpoints and facilitate consensus.",
+      "D": "Escalate the situation to the HR director for formal arbitration."
+    },
+    "answer": "C",
+    "justification": "PMI favors collaboration and constructive conflict resolution. Organizing a meeting to facilitate consensus (confrontation/problem-solving method) addresses the root cause while respecting the team. Option B shifts responsibility, option A ignores the human factor, option D is a premature escalation."
+  },
+  {
+    "id": 2,
+    "exam": 1,
+    "num_in_exam": 2,
+    "domain": "People",
+    "category": "Agile",
+    "text": "A digital transformation project uses an agile approach. During the sprint review, a major client expresses deep frustration because a key feature was not built as they imagined. What is the best action for the project manager (Scrum Master)?",
+    "options": {
+      "A": "Remind the client that the specifications were validated during sprint planning.",
+      "B": "Collaborate with the Product Owner and the client to refine the acceptance criteria in the Product Backlog.",
+      "C": "Ask the development team to immediately modify the feature during the meeting.",
+      "D": "Submit a formal change request to the Change Control Board (CCB)."
+    },
+    "answer": "B",
+    "justification": "In Agile, the sprint review is meant to gather feedback. Faced with dissatisfaction, the Scrum Master should direct the action toward collaboration between the Product Owner (responsible for content) and the client to adjust the backlog. Options A and D take a rigid contractual approach that doesn't fit the agile mindset."
+  },
+  {
+    "id": 3,
+    "exam": 1,
+    "num_in_exam": 3,
+    "domain": "People",
+    "category": "Exam",
+    "text": "A project manager notices that a highly effective team member has seemed demotivated for two weeks, which is starting to affect the quality of their work. What approach should the project manager take?",
+    "options": {
+      "A": "Wait for the next annual review to address the topic formally.",
+      "B": "Schedule an informal one-on-one conversation to understand the reasons behind the drop in motivation.",
+      "C": "Reassign this person's critical tasks to another team member as a precaution.",
+      "D": "Issue a written warning about the decline in deliverable quality."
+    },
+    "answer": "B",
+    "justification": "A good leader (servant leader) shows empathy and emotional intelligence. Understanding the underlying cause privately is the first step before taking disciplinary or organizational action."
+  },
+  {
+    "id": 4,
+    "exam": 1,
+    "num_in_exam": 4,
+    "domain": "People",
+    "category": "Agile",
+    "text": "An agile team is spread across three different time zones. Team members complain that the Daily Standup is either too late or too early for some of them. How should the project manager respond?",
+    "options": {
+      "A": "Keep the current schedule based on the company headquarters' time zone.",
+      "B": "Facilitate a working session with the team to jointly agree on a communication solution (e.g., asynchronous standups or rotating schedules).",
+      "C": "Cancel the daily meeting and replace it with a weekly progress email.",
+      "D": "Ask the least conveniently located team members to make an effort for the good of the project."
+    },
+    "answer": "B",
+    "justification": "Agility relies on self-organizing teams. The project manager should not impose a unilateral solution but should facilitate a workshop so the team can find the best communication compromise."
+  },
+  {
+    "id": 5,
+    "exam": 1,
+    "num_in_exam": 5,
+    "domain": "People",
+    "category": "Agile",
+    "text": "The Product Owner of an agile project keeps adding new priority items in the middle of an ongoing sprint, disrupting the development team and preventing it from reaching its Sprint Goal. What should the Scrum Master / project manager do?",
+    "options": {
+      "A": "Accept the Product Owner's requests, since the client is king in agile.",
+      "B": "Explain the impact of these disruptions to the Product Owner and help them prioritize these items for the next sprint.",
+      "C": "Ask the team to work overtime to absorb the extra workload.",
+      "D": "Complain to the project Sponsor about the Product Owner's behavior."
+    },
+    "answer": "B",
+    "justification": "The scope of an ongoing sprint is protected to keep the team focused. The Scrum Master should coach the Product Owner on Scrum rules to preserve the project's overall effectiveness."
+  },
+  {
+    "id": 6,
+    "exam": 1,
+    "num_in_exam": 6,
+    "domain": "People",
+    "category": "Exam",
+    "text": "While forming a new cross-functional project team, members display defensive behaviors, argue over role assignments, and test the limits of the project manager's authority. At which stage of Tuckman's model is this team?",
+    "options": {
+      "A": "Forming",
+      "B": "Storming",
+      "C": "Norming",
+      "D": "Performing"
+    },
+    "answer": "B",
+    "justification": "The Storming stage is characterized by conflict, power struggles, and disagreements over team organization before the team begins to normalize."
+  },
+  {
+    "id": 7,
+    "exam": 1,
+    "num_in_exam": 7,
+    "domain": "People",
+    "category": "Exam",
+    "text": "A complex project involves an influential stakeholder who has historically opposed the project's objectives and could block its final adoption. What is the best strategy for managing this stakeholder?",
+    "options": {
+      "A": "Ignore this stakeholder and focus on the project's supporters.",
+      "B": "Actively engage them early in discussions to understand their concerns and seek compromises.",
+      "C": "Ask the Sponsor to exclude this person from the steering committee.",
+      "D": "Send them only minimal monthly status reports to avoid conflict."
+    },
+    "answer": "B",
+    "justification": "Managing resistant or negative stakeholders requires an active engagement strategy. Understanding their objections early often turns an opponent into an ally or mitigates a major political risk."
+  },
+  {
+    "id": 8,
+    "exam": 1,
+    "num_in_exam": 8,
+    "domain": "People",
+    "category": "Exam",
+    "text": "A member of your project team makes a major technical error that delays an important milestone. The project Sponsor publicly demands to know who is responsible for the mistake. What should the project manager do?",
+    "options": {
+      "A": "Give the Sponsor the team member's name to preserve their own credibility.",
+      "B": "Take overall accountability for the failure in front of the Sponsor, then address the issue privately with the team.",
+      "C": "Blame unclear client requirements to justify the error.",
+      "D": "Ignore the Sponsor's request and continue working as if nothing happened."
+    },
+    "answer": "B",
+    "justification": "The project manager is ultimately accountable for project outcomes to the Sponsor. Publicly blaming a team member destroys the team's psychological safety. The mistake should be addressed internally to draw lessons from it."
+  },
+  {
+    "id": 9,
+    "exam": 1,
+    "num_in_exam": 9,
+    "domain": "People",
+    "category": "Exam",
+    "text": "A project team is working under heavy pressure. The project manager wants to develop the team's collective emotional intelligence to improve collaboration. Which action best supports this goal?",
+    "options": {
+      "A": "Set up a leaderboard ranking individual employee performance.",
+      "B": "Encourage open expression of feelings and frustrations during retrospectives in a safe environment.",
+      "C": "Replace in-person meetings with strict ticket-based communication (Jira).",
+      "D": "Impose mandatory team-building sessions on weekends."
+    },
+    "answer": "B",
+    "justification": "Creating a safe space where the team can express frustrations (such as during a retrospective) builds mutual trust and collective self-awareness — pillars of emotional intelligence."
+  },
+  {
+    "id": 10,
+    "exam": 1,
+    "num_in_exam": 10,
+    "domain": "People",
+    "category": "Exam",
+    "text": "A project manager leads a highly skilled and autonomous team. Team members are able to make technical decisions on their own and effectively manage their daily workload. Which leadership style should the project manager favor here?",
+    "options": {
+      "A": "Directive (Autocratic)",
+      "B": "Delegating (Laissez-faire / Servant)",
+      "C": "Transactional",
+      "D": "Bureaucratic"
+    },
+    "answer": "B",
+    "justification": "With a highly mature and autonomous team of experts, a servant or delegating leadership style is most effective. A directive style would be counterproductive and demotivating."
+  },
+  {
+    "id": 11,
+    "exam": 1,
+    "num_in_exam": 11,
+    "domain": "People",
+    "category": "Exam",
+    "text": "During a project meeting, a technical expert uses very complex jargon that confuses the representative from the marketing department, a key stakeholder. Which skill should the project manager use immediately to resolve this situation?",
+    "options": {
+      "A": "Active listening and paraphrasing to translate technical concepts into business terms.",
+      "B": "Time management to interrupt the meeting and move to the next item.",
+      "C": "Formal authority to order the technical expert to stop talking.",
+      "D": "Contract negotiation to change communication obligations."
+    },
+    "answer": "A",
+    "justification": "The project manager acts as a communication bridge between technical experts and the business side. Translating jargon keeps all stakeholders aligned."
+  },
+  {
+    "id": 12,
+    "exam": 1,
+    "num_in_exam": 12,
+    "domain": "People",
+    "category": "Exam",
+    "text": "An international project involves teams based in Europe and Asia. The project manager notices repeated misunderstandings about deadlines, caused by cultural differences in the perception of urgency. What is the best approach to correct this?",
+    "options": {
+      "A": "Impose European work standards on the entire international team.",
+      "B": "Organize a cultural awareness workshop and co-create a team charter defining clear expectations for everyone.",
+      "C": "Replace the Asian team members with local consultants.",
+      "D": "Reduce direct interactions between the two teams to limit friction."
+    },
+    "answer": "B",
+    "justification": "Multicultural projects require establishing a shared understanding. Co-creating ground rules through a team charter respects diversity while setting a common professional framework."
+  },
+  {
+    "id": 13,
+    "exam": 1,
+    "num_in_exam": 13,
+    "domain": "People",
+    "category": "Exam",
+    "text": "A junior team member expresses a wish to develop risk management skills, even though this isn't part of their current duties. How should the project manager respond?",
+    "options": {
+      "A": "Refuse, since the project has no budget for additional training.",
+      "B": "Offer to have them shadow a senior risk manager during the next risk identification sessions.",
+      "C": "Tell them to wait until the current project ends to explore new areas.",
+      "D": "Immediately change their job description to make them the project's official risk owner."
+    },
+    "answer": "B",
+    "justification": "Encouraging team members' continuous professional development (through shadowing or pairing) increases the team's overall versatility and motivation without heavily impacting the budget."
+  },
+  {
+    "id": 14,
+    "exam": 1,
+    "num_in_exam": 14,
+    "domain": "Process",
+    "category": "Predictif",
+    "text": "A predictive project (V-model) is underway. The client requests a major scope change that will add new features to the software being developed. What is the FIRST action the project manager should take?",
+    "options": {
+      "A": "Reject the request since the initial scope was already validated in writing.",
+      "B": "Analyze the impact of this change on the project's cost, schedule, and quality.",
+      "C": "Ask the technical team to immediately start coding the changes.",
+      "D": "Present the request directly to the Change Control Board (CCB) for approval."
+    },
+    "answer": "B",
+    "justification": "PMI's golden rule in a predictive cycle: faced with a change request, always analyze the impact on the golden triangle (Cost, Schedule, Scope) first, before submitting to the CCB or rejecting it."
+  },
+  {
+    "id": 15,
+    "exam": 1,
+    "num_in_exam": 15,
+    "domain": "Process",
+    "category": "Predictif",
+    "text": "A project's performance calculation shows a Cost Performance Index (CPI) of 0.85 and a Schedule Performance Index (SPI) of 1.15. How do you interpret this project's situation?",
+    "options": {
+      "A": "The project is ahead of schedule and under budget.",
+      "B": "The project is behind schedule and over budget.",
+      "C": "The project is ahead of schedule and over budget.",
+      "D": "The project is behind schedule and under budget."
+    },
+    "answer": "C",
+    "justification": "An SPI above 1 means the project is ahead of schedule (1.15). A CPI below 1 means the project is spending more than planned, so it is over budget (0.85)."
+  },
+  {
+    "id": 16,
+    "exam": 1,
+    "num_in_exam": 16,
+    "domain": "Process",
+    "category": "Exam",
+    "text": "During the planning phase of a construction project, the team identifies a risk: a potential cement shortage due to tensions in the global market. The team decides to sign a fixed-price supply contract with a local supplier to guarantee deliveries. Which risk response strategy was used?",
+    "options": {
+      "A": "Avoid",
+      "B": "Transfer",
+      "C": "Mitigate",
+      "D": "Accept"
+    },
+    "answer": "C",
+    "justification": "Signing a fixed-price contract to secure volumes reduces the probability and impact of the shortage. This is a mitigation strategy. If the risk had been fully transferred to insurance or a third party for financial costs, that would be a transfer. Here, the action actively reduces the impact on the job site."
+  },
+  {
+    "id": 17,
+    "exam": 1,
+    "num_in_exam": 17,
+    "domain": "Process",
+    "category": "Hybride",
+    "text": "A project manager is running a hybrid IT project. Software development follows an agile approach (Scrum), while physical server deployment follows a predictive approach. The network infrastructure team is critically behind schedule. Where should the project manager look to assess the impact of this delay on the overall project end date?",
+    "options": {
+      "A": "In the Product Backlog updated by the Product Owner.",
+      "B": "On the critical path of the project's network diagram.",
+      "C": "In the development team's velocity chart.",
+      "D": "In the Lessons Learned Register."
+    },
+    "answer": "B",
+    "justification": "In a hybrid approach, the predictive (physical) portion is modeled in a network diagram. The critical path determines the project's total duration. A delay on the critical path will directly impact the end date."
+  },
+  {
+    "id": 18,
+    "exam": 1,
+    "num_in_exam": 18,
+    "domain": "Process",
+    "category": "Exam",
+    "text": "A medical product development project must comply with extremely strict safety regulations. Regular quality audits are scheduled throughout the project life cycle. Which quality management process do these audits belong to?",
+    "options": {
+      "A": "Plan Quality Management",
+      "B": "Manage Quality (Quality Assurance)",
+      "C": "Control Quality",
+      "D": "Validate Scope"
+    },
+    "answer": "B",
+    "justification": "Quality audits are part of the 'Manage Quality' process (Quality Assurance), which verifies that the organization's processes and standards are properly applied to the project. (Quality control, on the other hand, inspects finished deliverables.)"
+  },
+  {
+    "id": 19,
+    "exam": 1,
+    "num_in_exam": 19,
+    "domain": "Process",
+    "category": "Exam",
+    "text": "During project closure, the client refuses to sign off on final acceptance of the deliverables because they believe a minor feature doesn't exactly meet their operational criteria. What should the project manager do FIRST?",
+    "options": {
+      "A": "Threaten the client with legal action for breach of contract terms.",
+      "B": "Check the Work Breakdown Structure (WBS) dictionary and the validated acceptance criteria to verify compliance.",
+      "C": "Ask the team to completely redo the deliverable to satisfy the client.",
+      "D": "Transfer the file directly to the operational support team, unilaterally closing the project."
+    },
+    "answer": "B",
+    "justification": "Before making a decision or committing to extra work, the project manager should rely on the scope baseline (WBS, acceptance criteria) to objectively determine whether the deliverable complies with the contract."
+  },
+  {
+    "id": 20,
+    "exam": 1,
+    "num_in_exam": 20,
+    "domain": "Process",
+    "category": "Agile",
+    "text": "An agile project team notices that many development tickets are piling up in the 'Testing' column of their Kanban board, creating a bottleneck that slows the entire production chain. What action should the team take to fix this process issue?",
+    "options": {
+      "A": "Increase the Work In Progress (WIP) limit for the testing column.",
+      "B": "Ask developers to temporarily stop writing new code and help test the blocked tickets.",
+      "C": "Ignore the Kanban board and switch to a Gantt chart.",
+      "D": "Immediately hire three full-time external testers."
+    },
+    "answer": "B",
+    "justification": "In a Kanban approach, to resolve a bottleneck, the team should apply the principle 'Stop starting, start finishing.' Team members help each other clear the saturated column before taking on new tasks."
+  },
+  {
+    "id": 21,
+    "exam": 1,
+    "num_in_exam": 21,
+    "domain": "Process",
+    "category": "Exam",
+    "text": "When planning communications management, a project manager must determine the information needs of 150 different stakeholders. What is the most appropriate tool or technique to streamline this work?",
+    "options": {
+      "A": "Sending personalized individual emails to each stakeholder every week.",
+      "B": "Analyzing communication technologies and communication models (Push/Pull/Interactive).",
+      "C": "Arbitrarily reducing the number of stakeholders to inform.",
+      "D": "Exclusively using large daily group meetings."
+    },
+    "answer": "B",
+    "justification": "Analyzing communication types (for example, favoring 'Pull' communication via a web portal for 150 people rather than individual 'Push' emails) makes it possible to efficiently manage a large volume of stakeholders."
+  },
+  {
+    "id": 22,
+    "exam": 1,
+    "num_in_exam": 22,
+    "domain": "Process",
+    "category": "Exam",
+    "text": "A project manager is preparing the cost estimate for a new software project. They use the actual cost of a similar project completed by the company last year as a basis for estimating the current project's cost. Which estimating technique is being used here?",
+    "options": {
+      "A": "Analogous estimating",
+      "B": "Parametric estimating",
+      "C": "Bottom-up estimating",
+      "D": "Three-point estimating"
+    },
+    "answer": "A",
+    "justification": "Analogous estimating uses historical data from a similar past project. It is a fast technique but sometimes less accurate than bottom-up or parametric estimating."
+  },
+  {
+    "id": 23,
+    "exam": 1,
+    "num_in_exam": 23,
+    "domain": "Process",
+    "category": "Exam",
+    "text": "A project faces an unexpected problem: one of the main test servers has failed, something that wasn't anticipated in the risk register. The team must spend an unbudgeted $5,000 to replace it urgently so the project isn't blocked. Where should these funds come from?",
+    "options": {
+      "A": "Contingency Reserves",
+      "B": "Management Reserves",
+      "C": "The project manager's personal budget",
+      "D": "A reduction in team salaries"
+    },
+    "answer": "B",
+    "justification": "Unforeseen risks (the 'unknown unknowns') have no response plan in the risk register. Their funding therefore comes from management reserves. Contingency reserves are dedicated to risks identified in advance."
+  },
+  {
+    "id": 24,
+    "exam": 1,
+    "num_in_exam": 24,
+    "domain": "Process",
+    "category": "Exam",
+    "text": "A company outsources part of its mobile application development. The scope of work is not fully defined and is likely to change frequently as user feedback comes in. Which type of contract is best suited to this situation?",
+    "options": {
+      "A": "Firm Fixed Price (FFP)",
+      "B": "Cost Reimbursable (CR) or Time and Materials (T&M)",
+      "C": "Fixed Price Incentive Fee (FPIF)",
+      "D": "Standard commodity purchase contract"
+    },
+    "answer": "B",
+    "justification": "When the scope is vague and evolving, a cost-reimbursable or time-and-materials contract protects the supplier while giving the buyer the flexibility needed to change requirements. A fixed price (FFP) would be too risky or restrictive."
+  },
+  {
+    "id": 25,
+    "exam": 1,
+    "num_in_exam": 25,
+    "domain": "Process",
+    "category": "Exam",
+    "text": "The project manager is holding a project closure meeting. They want to ensure that the knowledge gained throughout the project is captured for the organization's future projects. Which document must be finalized and indexed in the organizational knowledge base?",
+    "options": {
+      "A": "Project Charter",
+      "B": "Lessons Learned Register",
+      "C": "Cost Management Plan",
+      "D": "Requirements Traceability Matrix"
+    },
+    "answer": "B",
+    "justification": "The Lessons Learned Register is the central document for formalizing feedback and enriching organizational process assets at project closure."
+  },
+  {
+    "id": 26,
+    "exam": 1,
+    "num_in_exam": 26,
+    "domain": "Process",
+    "category": "Exam",
+    "text": "During a project, an external supplier informs the project manager that a key component will be delivered three weeks late. The project manager immediately consults the risk management plan to apply the fallback solution already planned. Which PMI process is the project manager executing?",
+    "options": {
+      "A": "Identify Risks",
+      "B": "Plan Risk Responses",
+      "C": "Monitor Risks",
+      "D": "Implement Risk Responses"
+    },
+    "answer": "D",
+    "justification": "Since the risk has materialized (the delay is confirmed), executing the planned corrective action or fallback solution corresponds to the Implement Risk Responses process."
+  },
+  {
+    "id": 27,
+    "exam": 1,
+    "num_in_exam": 27,
+    "domain": "Business",
+    "category": "Exam",
+    "text": "A new private data protection law (similar to GDPR) is set to take effect in six months. It directly impacts the customer data storage module of the project you currently manage. What should the project manager do FIRST?",
+    "options": {
+      "A": "Continue the project as originally planned and wait for the legal department to step in.",
+      "B": "Assess the impact of the new regulatory requirements on the project's scope and compliance.",
+      "C": "Immediately halt all project activities until further notice.",
+      "D": "Ask the client to sign a legal liability waiver."
+    },
+    "answer": "B",
+    "justification": "A project manager must be proactive regarding regulatory changes. The first action is to analyze the impact of the new law on product compliance in order to plan the required adjustments."
+  },
+  {
+    "id": 28,
+    "exam": 1,
+    "num_in_exam": 28,
+    "domain": "Business",
+    "category": "Exam",
+    "text": "An organization decides to move from a classic functional organizational structure to a 'Strong Matrix' structure. What is the main impact of this change for the company's project managers?",
+    "options": {
+      "A": "The project manager will have less authority over the project budget.",
+      "B": "The project manager will have moderate to high authority and will manage the project budget.",
+      "C": "Project staff will be managed exclusively by functional managers.",
+      "D": "The project manager role will disappear in favor of project coordinators."
+    },
+    "answer": "B",
+    "justification": "In a strong matrix organization, the project manager holds significant power, manages the project team full-time, and controls the budget, unlike in a functional or weak matrix structure."
+  },
+  {
+    "id": 29,
+    "exam": 1,
+    "num_in_exam": 29,
+    "domain": "Business",
+    "category": "Agile",
+    "text": "A delivery app development project is halfway complete. A major competitor has just launched a similar app with a groundbreaking AI-based feature, changing the expected business value of your project. What is the best action for the project manager in collaboration with the Product Owner?",
+    "options": {
+      "A": "Ignore the competitor and finish the project exactly as originally planned.",
+      "B": "Review the Business Case and realign the Product Backlog to maximize the product's business value against the market.",
+      "C": "Immediately cancel the project since it has lost all competitive relevance.",
+      "D": "Blame the development team for not anticipating artificial intelligence."
+    },
+    "answer": "B",
+    "justification": "A project must continuously deliver value. If the competitive environment changes, the project manager and Product Owner must reassess the Business Case to ensure the project remains viable and pivot if necessary by adjusting the backlog."
+  },
+  {
+    "id": 30,
+    "exam": 1,
+    "num_in_exam": 30,
+    "domain": "Business",
+    "category": "Exam",
+    "text": "An energy infrastructure project crosses an ecologically protected region. Local environmental groups are beginning to publicly protest the project. In which document should the project manager record and analyze the impact of these external Enterprise Environmental Factors (EEFs)?",
+    "options": {
+      "A": "The risk register and the stakeholder register.",
+      "B": "The human resources management plan only.",
+      "C": "The Work Breakdown Structure (WBS).",
+      "D": "Organizational Process Assets (OPA)."
+    },
+    "answer": "A",
+    "justification": "Local community reactions and the ecological environment are external Enterprise Environmental Factors (EEFs). The protests represent a risk (risk register), and the protesters are external actors impacting the project (stakeholder register)."
+  },
+  {
+    "id": 31,
+    "exam": 2,
+    "num_in_exam": 1,
+    "domain": "People",
+    "category": "Agile",
+    "text": "During an iteration, two senior developers argue over the best way to implement an API. Tensions rise and begin to affect the rest of the team's morale during Daily Standups. What should the Scrum Master / project manager do FIRST?",
+    "options": {
+      "A": "Make the final technical decision themselves to end the debate and keep the schedule on track.",
+      "B": "Encourage the two developers to present their technical arguments privately and guide them toward a compromise.",
+      "C": "Ask the Product Owner to decide since it affects the final product.",
+      "D": "Temporarily exclude both developers from team meetings to protect the work atmosphere."
+    },
+    "answer": "B",
+    "justification": "A servant leader favors constructive conflict resolution by the team itself (confrontation/collaboration method). Deciding unilaterally (A) undermines the team's autonomy, and excluding members (D) hides the problem without solving it."
+  },
+  {
+    "id": 32,
+    "exam": 2,
+    "num_in_exam": 2,
+    "domain": "Process",
+    "category": "Quiz",
+    "text": "A fiber optic network construction project is in the execution phase. The client sends an official email requesting the addition of three new city districts to the current deployment plan. What is the FIRST action the project manager should take?",
+    "options": {
+      "A": "Ask the technical team to immediately begin field surveys in these new districts.",
+      "B": "Submit a budget change request directly to the Change Control Board (CCB).",
+      "C": "Assess the impact of this request on the project's budget, schedule, risks, and resources.",
+      "D": "Reject the request since the scope baseline has already been signed and validated."
+    },
+    "answer": "C",
+    "justification": "This is PMI's absolute golden rule in predictive project management: faced with any change request, the project manager must always analyze the overall impact first before acting (A), submitting it to the CCB (B), or rejecting it (D)."
+  },
+  {
+    "id": 33,
+    "exam": 2,
+    "num_in_exam": 3,
+    "domain": "Process",
+    "category": "Predictif",
+    "text": "You are analyzing your project's financial and operational performance at the midpoint. Your Earned Value Management (EVM) calculations show the following results: CPI = 1.12 and SPI = 0.81. How should you report the project's health to the Sponsor?",
+    "options": {
+      "A": "The project is spending less money than planned and is ahead of schedule.",
+      "B": "The project is spending more money than planned and is behind schedule.",
+      "C": "The project is spending more money than planned and is ahead of schedule.",
+      "D": "The project is spending less money than planned and is behind schedule."
+    },
+    "answer": "D",
+    "justification": "A CPI above 1 (1.12) means you are spending your budget efficiently, so you are under budget (spending less than planned for the work completed). An SPI below 1 (0.81) means you are progressing more slowly than planned, so you are behind schedule."
+  },
+  {
+    "id": 34,
+    "exam": 2,
+    "num_in_exam": 4,
+    "domain": "Business",
+    "category": "Quiz",
+    "text": "A connected medical device development project is underway. The company's legal department informs the project manager that a new international health data security standard will take effect in four months, before the product launch. What should the project manager do FIRST?",
+    "options": {
+      "A": "Transfer compliance responsibility to the end client by adjusting the contract terms.",
+      "B": "Analyze the gap between the current product and the new standard's requirements to measure the impact on the project.",
+      "C": "Ignore the information since the project started under the old regulation and has grandfathered status.",
+      "D": "Ask the Sponsor to immediately halt the project until the law is officially published."
+    },
+    "answer": "B",
+    "justification": "A project manager must be proactive regarding the business and regulatory environment. Faced with a legal or compliance change, the first action is to analyze the impact (gap analysis) to know precisely what needs to change in the project's scope."
+  },
+  {
+    "id": 35,
+    "exam": 2,
+    "num_in_exam": 5,
+    "domain": "Process",
+    "category": "Hybride",
+    "text": "In a hybrid project, the software team works in sprints (Agile) while the physical server installation team uses Gantt charts (Predictive). The hardware team announces a three-week delay in delivering a critical server needed for final software testing. Where should the project manager analyze the criticality of this delay on the overall project delivery?",
+    "options": {
+      "A": "By checking the impact of the delay on the critical path of the overall network diagram.",
+      "B": "By asking the Product Owner to recalculate the software team's velocity.",
+      "C": "By simply adding a new feature to the Product Backlog to keep the developers busy.",
+      "D": "By reviewing last year's Lessons Learned Register."
+    },
+    "answer": "A",
+    "justification": "In a hybrid project, dependencies between the agile portion and the predictive portion are integrated into the project's overall schedule. Physical elements (the servers) and their milestones dictate the critical path. If an item on this path is delayed, the entire project end date is at risk."
+  },
+  {
+    "id": 36,
+    "exam": 3,
+    "num_in_exam": 1,
+    "domain": "People",
+    "category": "MiniExam",
+    "text": "Two of your technical experts cannot agree on the choice of a cloud service provider. Their dispute is starting to block progress on the architecture. What should you do FIRST?",
+    "options": {
+      "A": "Choose the provider yourself to avoid wasting time.",
+      "B": "Ask the two experts to meet and objectively compare their technical data to reach a consensus.",
+      "C": "Escalate the issue to the Sponsor for a management decision.",
+      "D": "Replace one of the experts with a more flexible external consultant."
+    },
+    "answer": "B",
+    "justification": "PMI favors the confrontation/problem-solving method based on facts and collaboration. The project manager should guide the experts toward an objective technical consensus."
+  },
+  {
+    "id": 37,
+    "exam": 3,
+    "num_in_exam": 2,
+    "domain": "People",
+    "category": "MiniExam",
+    "text": "A key member of your project team comes to you privately to confide that they feel overwhelmed by their workload and fear burning out. What is the best response for the project manager?",
+    "options": {
+      "A": "Tell them the project is going through a critical phase and everyone needs to make an effort.",
+      "B": "Immediately reduce their objectives without discussing it with the rest of the team.",
+      "C": "Listen to their concerns with empathy, review their workload, and explore solutions together (prioritization, delegation).",
+      "D": "Immediately reassign them to another, less stressful project to protect their health."
+    },
+    "answer": "C",
+    "justification": "A servant leader shows emotional intelligence and empathy. They listen and co-build a viable solution to protect their team member's health."
+  },
+  {
+    "id": 38,
+    "exam": 3,
+    "num_in_exam": 3,
+    "domain": "People",
+    "category": "Agile",
+    "text": "In an agile project, the Product Owner tries to directly assign daily tasks to developers during the Daily Standup, bypassing the principle of self-organization. What action should the Scrum Master take?",
+    "options": {
+      "A": "Do nothing, since the Product Owner is responsible for the product's success.",
+      "B": "Immediately interrupt the meeting and exclude the Product Owner from future Daily Standups.",
+      "C": "Meet privately with the Product Owner to coach them on Scrum roles and the importance of team autonomy.",
+      "D": "Ask the development team to follow the Product Owner's instructions to avoid conflict."
+    },
+    "answer": "C",
+    "justification": "The Scrum Master is a coach for the organization and the Product Owner. They should correct methodological deviations privately to preserve the development team's autonomy."
+  },
+  {
+    "id": 39,
+    "exam": 3,
+    "num_in_exam": 4,
+    "domain": "People",
+    "category": "MiniExam",
+    "text": "An international project team includes members based in Paris, New York, and Tokyo. The project manager notices growing friction due to misunderstandings about meeting times and communication styles. What is the best long-term solution?",
+    "options": {
+      "A": "Organize a workshop to co-create a team charter defining communication rules and shared time slots.",
+      "B": "Impose Paris time on all team members since that's where headquarters is located.",
+      "C": "Communicate exclusively by email to avoid live meetings.",
+      "D": "Ask HR to assess team members' cross-cultural skills."
+    },
+    "answer": "A",
+    "justification": "Virtual, multicultural teams need clear, shared ground rules. Co-creating a team charter builds engagement and reduces conflict."
+  },
+  {
+    "id": 40,
+    "exam": 3,
+    "num_in_exam": 5,
+    "domain": "People",
+    "category": "MiniExam",
+    "text": "The project Sponsor is known for being very direct and often gets publicly upset with the team during project reviews when results aren't perfect. The team is starting to lose motivation. How should the project manager handle this situation?",
+    "options": {
+      "A": "Ask the team to stop attending reviews and present the results alone.",
+      "B": "Discuss privately with the Sponsor to explain the impact of their communication style on team motivation and agree on a more constructive approach.",
+      "C": "Report the Sponsor's behavior to the company's ethics compliance department.",
+      "D": "Ignore the situation and tell the team not to take these remarks personally."
+    },
+    "answer": "B",
+    "justification": "The project manager must manage relationships with all stakeholders, including the Sponsor. A constructive private conversation addresses the impact of their behavior without creating public confrontation."
+  },
+  {
+    "id": 41,
+    "exam": 3,
+    "num_in_exam": 6,
+    "domain": "People",
+    "category": "MiniExam",
+    "text": "A project team has just welcomed three new junior members. The project manager wants to ensure they quickly develop the necessary skills without slowing down output. What management strategy is most effective?",
+    "options": {
+      "A": "Assign them only simple administrative tasks for the first few months.",
+      "B": "Set up a pairing/shadowing system with senior team members.",
+      "C": "Fund three weeks of external theoretical training before they touch the project.",
+      "D": "Leave them fully autonomous to test their ability to adapt under pressure."
+    },
+    "answer": "B",
+    "justification": "Pairing or shadowing is an excellent agile/hybrid technique for quickly upskilling team members without blocking the value chain."
+  },
+  {
+    "id": 42,
+    "exam": 3,
+    "num_in_exam": 7,
+    "domain": "People",
+    "category": "MiniExam",
+    "text": "During project planning, a key stakeholder refuses to approve the overall strategy because they feel their needs weren't considered. What is the best approach to gain their buy-in?",
+    "options": {
+      "A": "Ask the Sponsor to use their authority to force approval.",
+      "B": "Organize a dedicated meeting with this stakeholder to listen to their requirements, analyze their concerns, and find a compromise.",
+      "C": "Proceed with approval while ignoring this stakeholder since the majority of the team agrees.",
+      "D": "Change the entire project strategy to satisfy only this person."
+    },
+    "answer": "B",
+    "justification": "A blocking stakeholder must be actively engaged. Ignoring the opposition or forcing it through creates major political risks for the rest of the project."
+  },
+  {
+    "id": 43,
+    "exam": 3,
+    "num_in_exam": 8,
+    "domain": "People",
+    "category": "MiniExam",
+    "text": "A high-performing project team is starting to lose cohesion because two senior members are competing over a prestigious task assignment. Which team management tool or technique should the project manager use?",
+    "options": {
+      "A": "The requirements traceability matrix.",
+      "B": "The team charter and the RACI matrix.",
+      "C": "The cause-and-effect (Ishikawa) diagram.",
+      "D": "The company's human resources management plan."
+    },
+    "answer": "B",
+    "justification": "The team charter sets acceptable behaviors, and the RACI matrix transparently clarifies 'who does what,' eliminating task assignment conflicts."
+  },
+  {
+    "id": 44,
+    "exam": 3,
+    "num_in_exam": 9,
+    "domain": "People",
+    "category": "MiniExam",
+    "text": "A project manager notices that an external supplier consistently delivers components late, which deeply frustrates the internal development team that depends on these deliverables. What should the project manager do FIRST?",
+    "options": {
+      "A": "Terminate the contract with the supplier for gross misconduct.",
+      "B": "Organize a meeting with the supplier's manager to analyze the root causes of the delays and define a recovery plan.",
+      "C": "Publicly blame the supplier during the next client meeting.",
+      "D": "Ask the internal team to work weekends to make up for the supplier's delays."
+    },
+    "answer": "B",
+    "justification": "Faced with an issue with a third party, the first step is to collaboratively seek to understand the root cause before taking punitive action."
+  },
+  {
+    "id": 45,
+    "exam": 3,
+    "num_in_exam": 10,
+    "domain": "People",
+    "category": "Agile",
+    "text": "You lead an experienced agile team. During the retrospective, the team expresses a need to change a project tracking tool because the current one is too administratively burdensome. How should you respond as a servant leader?",
+    "options": {
+      "A": "Refuse the change since the current tool is standardized across the company.",
+      "B": "Support the team by facilitating the evaluation and adoption of the new tool if it improves their efficiency.",
+      "C": "Ask the team to write a 20-page business case before deciding.",
+      "D": "Make the final decision yourself after consulting the IT department."
+    },
+    "answer": "B",
+    "justification": "A servant leader removes administrative obstacles and supports the team's decisions if they improve productivity and well-being."
+  },
+  {
+    "id": 46,
+    "exam": 3,
+    "num_in_exam": 11,
+    "domain": "Process",
+    "category": "MiniExam",
+    "text": "In the middle of a predictively managed project, the marketing director requests the addition of a new mobile payment feature. What is the project manager's FIRST action?",
+    "options": {
+      "A": "Immediately submit the request to the Change Control Board (CCB).",
+      "B": "Analyze the impact of this change on the project's scope, cost, schedule, and risks.",
+      "C": "Ask the development team to build a prototype for marketing.",
+      "D": "Reject the request since the scope baseline is locked."
+    },
+    "answer": "B",
+    "justification": "PMI's absolute rule in predictive management: analyze the impact first, decide afterward. Nothing is submitted to the CCB without first quantifying the impact on the cost/schedule/quality triad."
+  },
+  {
+    "id": 47,
+    "exam": 3,
+    "num_in_exam": 12,
+    "domain": "Process",
+    "category": "Predictif",
+    "text": "A project manager calculates the performance indicators for their software development project. They get a CPI of 0.78 and an SPI of 1.05. What is the project's actual situation?",
+    "options": {
+      "A": "The project is ahead of schedule and spending less than planned.",
+      "B": "The project is behind schedule and spending more than planned.",
+      "C": "The project is ahead of schedule and spending more than planned.",
+      "D": "The project is behind schedule and spending less than planned."
+    },
+    "answer": "C",
+    "justification": "SPI = 1.05 (above 1), so the project is ahead of schedule. CPI = 0.78 (below 1), so the project is spending more of its budget than planned for the work completed."
+  },
+  {
+    "id": 48,
+    "exam": 3,
+    "num_in_exam": 13,
+    "domain": "Process",
+    "category": "MiniExam",
+    "text": "During the planning phase of an event project, the team identifies a high risk of rain on the day of the outdoor festival. They decide to rent large removable tents to cover the stages if needed. Which risk response strategy was implemented?",
+    "options": {
+      "A": "Avoid",
+      "B": "Transfer",
+      "C": "Mitigate",
+      "D": "Accept"
+    },
+    "answer": "C",
+    "justification": "Renting tents doesn't eliminate the risk of rain (this isn't avoidance), but it reduces the financial and operational impact of rain on the festival. This is mitigation."
+  },
+  {
+    "id": 49,
+    "exam": 3,
+    "num_in_exam": 14,
+    "domain": "Process",
+    "category": "Agile",
+    "text": "An agile team notices its velocity has dropped by 30% over the last three sprints. The developers explain that they spend too much time fixing bugs from previous code. What is the best action to fix this process issue?",
+    "options": {
+      "A": "Increase the sprint length to give the team more time.",
+      "B": "Use the next retrospective to analyze the causes of these defects and incorporate quality practices (e.g., code reviews, automated testing) into the Definition of Done (DoD).",
+      "C": "Ask the Product Owner to remove the testing step to speed up deliveries.",
+      "D": "Set a minimum lines-of-code quota per developer per day."
+    },
+    "answer": "B",
+    "justification": "In Agile, process issues are resolved during the retrospective. Strengthening the Definition of Done with quality criteria prevents technical debt from slowing the team down."
+  },
+  {
+    "id": 50,
+    "exam": 3,
+    "num_in_exam": 15,
+    "domain": "Process",
+    "category": "MiniExam",
+    "text": "The client refuses to sign the final acceptance report for a turnkey factory project, claiming that one of the machines doesn't produce the hourly output specified in the contract. What should the project manager do FIRST?",
+    "options": {
+      "A": "Force the project closure by relying on the Sponsor's agreement.",
+      "B": "Review the quality control documents and the requirements traceability matrix to verify the machine's performance test results.",
+      "C": "Ask the team to immediately replace the machine with a better model at the company's expense.",
+      "D": "Initiate legal arbitration proceedings for non-payment."
+    },
+    "answer": "B",
+    "justification": "Faced with a dispute over a deliverable, the project manager should rely on factual data (quality tests, initial acceptance criteria) to verify the validity of the client's claim."
+  },
+  {
+    "id": 51,
+    "exam": 3,
+    "num_in_exam": 16,
+    "domain": "Process",
+    "category": "Predictif",
+    "text": "A construction project uses a network diagram. Activity D has a duration of 5 days and is on the critical path. It experiences a 4-day supply delay. What is the impact of this delay on the project's end date?",
+    "options": {
+      "A": "No impact, since the delay is less than 5 days.",
+      "B": "The overall project will be delayed by 4 days.",
+      "C": "The overall project will be delayed by 9 days.",
+      "D": "The critical path will automatically change without impacting the end date."
+    },
+    "answer": "B",
+    "justification": "The critical path has zero total float. Any delay on a critical path activity translates day-for-day into a delay in the overall project end date."
+  },
+  {
+    "id": 52,
+    "exam": 3,
+    "num_in_exam": 17,
+    "domain": "Process",
+    "category": "MiniExam",
+    "text": "A project manager is preparing the budget for a new construction project. They have very little detailed information since the concept is still preliminary, but management demands a quick estimate. Which estimating method should they use?",
+    "options": {
+      "A": "Bottom-Up Estimation",
+      "B": "Analogous Estimation",
+      "C": "Function Point Estimation",
+      "D": "Parametric Estimation"
+    },
+    "answer": "B",
+    "justification": "Analogous estimating uses the cost of similar past projects as a basis. It is fast and ideal when details of the current project are very limited (early phases)."
+  },
+  {
+    "id": 53,
+    "exam": 3,
+    "num_in_exam": 18,
+    "domain": "Process",
+    "category": "MiniExam",
+    "text": "During a project, an unforeseen transportation strike paralyzes the delivery of an essential IT server. This event was not identified in the risk register. The project manager must spend $3,000 to pay for a private helicopter carrier. Where should this budget come from?",
+    "options": {
+      "A": "Contingency Reserves",
+      "B": "Management Reserves",
+      "C": "The project's profit margin",
+      "D": "The team's training budget"
+    },
+    "answer": "B",
+    "justification": "Unforeseen risks (the 'unknown unknowns') are not covered by contingency reserves. Funding them requires approval and use of management reserves."
+  },
+  {
+    "id": 54,
+    "exam": 3,
+    "num_in_exam": 19,
+    "domain": "Process",
+    "category": "MiniExam",
+    "text": "A company outsources the development of a virtual reality application. Technology evolves every month and the exact scope is impossible to lock in advance. Which type of contract should the buyer favor?",
+    "options": {
+      "A": "Firm Fixed Price (FFP)",
+      "B": "Time and Materials (T&M) or Cost Reimbursable",
+      "C": "Fixed Price with Economic Price Adjustment (FP-EPA)",
+      "D": "Standard letter of intent to purchase"
+    },
+    "answer": "B",
+    "justification": "When the scope is unclear and subject to major technological change, time-and-materials (T&M) or cost-reimbursable contracts offer the flexibility needed without overburdening the supplier."
+  },
+  {
+    "id": 55,
+    "exam": 3,
+    "num_in_exam": 20,
+    "domain": "Process",
+    "category": "MiniExam",
+    "text": "The project manager is formalizing the closure of a project that lasted 18 months. All deliverables have been accepted by the client. Which activity is mandatory to finalize the closure process according to PMI?",
+    "options": {
+      "A": "Delete all intermediate versions of the project plans.",
+      "B": "Update and transfer the Lessons Learned Register to the company's organizational knowledge base.",
+      "C": "Hold a project wrap-up party using the remaining management reserve budget.",
+      "D": "Extend the validity of the Project Charter."
+    },
+    "answer": "B",
+    "justification": "Capturing knowledge by archiving the Lessons Learned Register is a mandatory administrative step to formally close a project according to PMI."
+  },
+  {
+    "id": 56,
+    "exam": 3,
+    "num_in_exam": 21,
+    "domain": "Business",
+    "category": "MiniExam",
+    "text": "A strict new law on the use of generative artificial intelligence is passed and will apply in 3 months. Your project to develop a decision-support tool relies heavily on this technology. What should you do FIRST?",
+    "options": {
+      "A": "Ignore the law until it is officially enacted through its implementing decree.",
+      "B": "Assess the current project algorithms' compliance against the new law's criteria.",
+      "C": "Immediately redesign the architecture to remove any trace of artificial intelligence.",
+      "D": "Ask the Sponsor to cancel the project to avoid legal penalties."
+    },
+    "answer": "B",
+    "justification": "A project manager must ensure the compliance of their deliverables. The first action is to perform a gap analysis between the product's current state and the upcoming regulation."
+  },
+  {
+    "id": 57,
+    "exam": 3,
+    "num_in_exam": 22,
+    "domain": "Business",
+    "category": "MiniExam",
+    "text": "A project to open an overseas commercial subsidiary is underway. A major currency crisis breaks out in the target country, devaluing the local currency by 40% and changing the expected profitability. What is the best action for the project manager?",
+    "options": {
+      "A": "Continue execution as if nothing happened since the plan was approved.",
+      "B": "Collaborate with the Sponsor and financial analysts to reassess the Business Case and determine whether the project remains viable.",
+      "C": "Permanently stop all spending without consulting management.",
+      "D": "Ask the team to double the pace to launch before the crisis ends."
+    },
+    "answer": "B",
+    "justification": "If the macroeconomic environment undermines the project's theoretical profitability, the Business Case must be immediately reassessed with the Sponsor to confirm whether continuing the project still makes sense."
+  },
+  {
+    "id": 58,
+    "exam": 3,
+    "num_in_exam": 23,
+    "domain": "Business",
+    "category": "MiniExam",
+    "text": "Your organization is moving from a 'Functional' (siloed) structure to a 'Strong Matrix' structure. What major change will you observe in your role as project manager?",
+    "options": {
+      "A": "You will lose control over the project budget.",
+      "B": "Your authority will increase significantly and you will manage the project budget independently.",
+      "C": "Your role will be limited to that of a simple coordinator or facilitator with no power.",
+      "D": "You will no longer need to negotiate resources with functional managers."
+    },
+    "answer": "B",
+    "justification": "In a strong matrix organization, the project manager has strong authority, works on the project full-time, and holds budgetary power, unlike in weak or functional structures."
+  },
+  {
+    "id": 59,
+    "exam": 3,
+    "num_in_exam": 24,
+    "domain": "Business",
+    "category": "MiniExam",
+    "text": "During an industrial project, the project manager notices that the company's overall Corporate Social Responsibility (CSR) strategy has just been updated to ban the use of certain non-recyclable plastics. The project uses exactly these components. How should the project manager respond?",
+    "options": {
+      "A": "Ignore the new CSR strategy since the project started before it was published.",
+      "B": "Document the situation in the risk register and analyze substitution options to align the project with the company's new policy.",
+      "C": "Conceal the use of these plastics in progress reports.",
+      "D": "Request a permanent exemption from the company's CEO."
+    },
+    "answer": "B",
+    "justification": "The project must remain aligned with corporate governance and strategy (CSR). Changing components to comply with the new policy is the expected professional approach."
+  },
+  {
+    "id": 60,
+    "exam": 3,
+    "num_in_exam": 25,
+    "domain": "Business",
+    "category": "Agile",
+    "text": "The Product Owner of an e-commerce project realizes that a direct competitor has just launched a very popular photo-based visual search feature. The business value of the application under development risks dropping if this feature isn't integrated. What is the appropriate action?",
+    "options": {
+      "A": "Continue the original development and deliver the planned product without changes.",
+      "B": "Work with the Product Owner to reprioritize the Product Backlog and include a similar feature in the next sprint planning.",
+      "C": "Blame the development team for not having this idea sooner.",
+      "D": "Restart the project from scratch with an entirely new team."
+    },
+    "answer": "B",
+    "justification": "In a changing environment, the project must adapt to keep delivering business value. Collaborating to reorder the backlog is the quintessential agile response."
+  },
+  {
+    "id": 61,
+    "exam": 3,
+    "num_in_exam": 26,
+    "domain": "Business",
+    "category": "MiniExam",
+    "text": "During the rollout of an ERP system at a multinational company, the project manager observes strong resistance to change from end users at local plants, jeopardizing system adoption. Which plan should have been better developed and executed to prevent this?",
+    "options": {
+      "A": "The configuration management plan.",
+      "B": "The organizational change management plan.",
+      "C": "The project cost management plan.",
+      "D": "The WBS dictionary."
+    },
+    "answer": "B",
+    "justification": "Adoption of a new tool depends directly on the change management plan (training, communication, user support). Without it, resistance to change causes projects to fail."
+  },
+  {
+    "id": 62,
+    "exam": 3,
+    "num_in_exam": 27,
+    "domain": "Business",
+    "category": "MiniExam",
+    "text": "A telecommunications company launches a 5G rollout project. The project manager studies local environmental regulations regarding exposure to electromagnetic waves. PMI classifies these external regulatory factors as:",
+    "options": {
+      "A": "Organizational Process Assets (OPA)",
+      "B": "Enterprise Environmental Factors (EEF)",
+      "C": "Scope Baseline",
+      "D": "Formal change requests"
+    },
+    "answer": "B",
+    "justification": "Laws, government regulations, and external industry standards are imposed on the project and constitute external Enterprise Environmental Factors (EEFs)."
+  },
+  {
+    "id": 63,
+    "exam": 3,
+    "num_in_exam": 28,
+    "domain": "Business",
+    "category": "MiniExam",
+    "text": "A long-term public transportation infrastructure project is funded by the government. A change in government occurs, and the new political direction favors cycling over the tram (your project). In which Business Environment process area should the project manager get involved?",
+    "options": {
+      "A": "Assess and manage political risks in the risk register and evaluate the continued viability of the project's expected benefits.",
+      "B": "Ignore the politics since government contracts are immutable.",
+      "C": "Immediately cut engineers' salaries to save budget.",
+      "D": "Change the tram project into a bike path without the Sponsor's approval."
+    },
+    "answer": "A",
+    "justification": "The project manager must monitor external strategic (political) changes to ensure the project's expected benefits remain viable and useful to the client/funder."
+  },
+  {
+    "id": 64,
+    "exam": 3,
+    "num_in_exam": 29,
+    "domain": "Business",
+    "category": "MiniExam",
+    "text": "Your company's governance committee requests an update on how your IT project contributes to the organization's strategic objective #1: 'Reduce infrastructure carbon footprint by 15%.' Where should the project manager look for the project's initial alignment with strategic objectives?",
+    "options": {
+      "A": "In the development team's weekly performance reports.",
+      "B": "In the Project Charter and the Business Case.",
+      "C": "In the schedule management plan.",
+      "D": "In team members' job descriptions."
+    },
+    "answer": "B",
+    "justification": "The Business Case and Project Charter are where the project's strategic justification and initial macroeconomic/environmental objectives are recorded."
+  },
+  {
+    "id": 65,
+    "exam": 3,
+    "num_in_exam": 30,
+    "domain": "Business",
+    "category": "MiniExam",
+    "text": "A project manager is assigned to a new electric vehicle development project. To ensure the project delivers value throughout its life cycle, which delivery approach should they favor if the market is evolving very rapidly?",
+    "options": {
+      "A": "A purely predictive (waterfall) approach with a single validation at the end of the project.",
+      "B": "An incremental or hybrid approach allowing frequent, staged validation and delivery of value.",
+      "C": "An approach with no planning or documentation whatsoever.",
+      "D": "Full outsourcing with no internal oversight."
+    },
+    "answer": "B",
+    "justification": "A rapidly evolving market requires short, iterative delivery cycles (incremental/hybrid approach) to incorporate market feedback and continuously deliver value."
+  }
+];
