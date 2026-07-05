@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n-title="brand">PMP Simulateur</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="topbar-mount"></div>
+
+<div class="page">
+  <div class="eyebrow" data-i18n="nav_history">Historique</div>
+  <h1 data-i18n="history_title">Toutes tes tentatives</h1>
+  <div class="card" style="padding:0.4rem 1rem; margin-top:1.4rem" id="table-mount"></div>
+</div>
+
+<footer class="foot" data-i18n="footer_note">PMP Simulateur — outil d'entraînement non affilié au PMI®.</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/data.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/ui.js"></script>
+<script>
+  applyI18n();
+  const histUser = Store.requireAuth('index.html');
+  if (histUser) {
+    renderTopbar('history');
+    const CATEGORY_META = categoryMeta();
+    const attempts = Store.getAttemptsForUser(histUser.username).sort((a,b) => new Date(b.date) - new Date(a.date));
+    const mount = document.getElementById('table-mount');
+    if (!attempts.length) {
+      mount.innerHTML = `<div class="empty-state"><div class="glyph">📋</div>${t('empty_no_attempts')}<br><a href="dashboard.html" class="btn btn-primary" style="margin-top:1rem">${t('start_session')}</a></div>`;
+    } else {
+      mount.innerHTML = `
+        <table class="history">
+          <thead><tr><th>${t('col_category')}</th><th>${t('col_date')}</th><th>${t('col_score')}</th><th>${t('col_duration')}</th><th></th></tr></thead>
+          <tbody>
+            ${attempts.map(a => {
+              const pct = Math.round((a.score/a.total)*100);
+              const meta = CATEGORY_META[a.category] || { label: a.category };
+              return `<tr>
+                <td>${meta.label}</td>
+                <td>${formatDate(a.date)}</td>
+                <td><span class="pill ${pct>=61?'good':'bad'}">${a.score}/${a.total} · ${pct}%</span></td>
+                <td>${formatDuration(a.durationSeconds)}</td>
+                <td><a href="results.html?id=${a.id}" class="btn btn-ghost btn-sm">${t('review')}</a></td>
+              </tr>`;
+            }).join('')}
+          </tbody>
+        </table>`;
+    }
+  }
+</script>
+</body>
+</html>
