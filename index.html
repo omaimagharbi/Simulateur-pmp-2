@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n-title="brand">PMP Simulateur</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="auth-shell">
+  <div id="lang-mount" style="position:fixed; top:1.2rem; right:1.4rem; z-index:5"></div>
+
+  <div class="auth-visual">
+    <div>
+      <div class="mark" data-i18n="login_tagline">PMI Certification · Simulateur d'examen</div>
+      <h1 data-i18n="login_headline">Entraîne-toi comme le jour J.</h1>
+      <p data-i18n="login_sub">65 questions situationnelles réparties sur les trois domaines officiels du PMP.</p>
+    </div>
+    <div>
+      <div class="stat-row">
+        <div class="stat"><b>65</b><span data-i18n="login_stat_questions">Questions</span></div>
+        <div class="stat"><b>6</b><span data-i18n="login_stat_categories">Catégories</span></div>
+        <div class="stat"><b>3</b><span data-i18n="login_stat_domains">Domaines PMI</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="auth-form">
+    <div class="auth-form-inner">
+      <div class="tab-switch">
+        <button id="tab-login" class="active" data-i18n="tab_login">Connexion</button>
+        <button id="tab-signup" data-i18n="tab_signup">Créer un compte</button>
+      </div>
+
+      <form id="login-form">
+        <div class="field">
+          <label for="login-username" data-i18n="field_username">Nom d'utilisateur</label>
+          <input id="login-username" type="text" autocomplete="username" required>
+        </div>
+        <div class="field">
+          <label for="login-password" data-i18n="field_password">Mot de passe</label>
+          <input id="login-password" type="password" autocomplete="current-password" required>
+        </div>
+        <div class="error-text" id="login-error"></div>
+        <button type="submit" class="btn btn-primary btn-block" data-i18n="btn_login">Se connecter</button>
+      </form>
+
+      <form id="signup-form" style="display:none">
+        <div class="field">
+          <label for="signup-username" data-i18n="field_username">Nom d'utilisateur</label>
+          <input id="signup-username" type="text" autocomplete="username" required>
+        </div>
+        <div class="field">
+          <label for="signup-password" data-i18n="field_password">Mot de passe</label>
+          <input id="signup-password" type="password" autocomplete="new-password" required>
+          <small data-i18n="field_password_hint">4 caractères minimum.</small>
+        </div>
+        <div class="error-text" id="signup-error"></div>
+        <button type="submit" class="btn btn-primary btn-block" data-i18n="btn_signup">Créer mon compte</button>
+      </form>
+
+      <div class="banner" style="margin-top:1.6rem" data-i18n-html="admin_demo_banner"></div>
+    </div>
+  </div>
+</div>
+
+<script src="js/i18n.js"></script>
+<script src="js/data.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/ui.js"></script>
+<script>
+  applyI18n();
+  renderLangSwitchStandalone('lang-mount');
+
+  if (Store.currentUser()) window.location.href = 'dashboard.html';
+
+  const tabLogin = document.getElementById('tab-login');
+  const tabSignup = document.getElementById('tab-signup');
+  const loginForm = document.getElementById('login-form');
+  const signupForm = document.getElementById('signup-form');
+
+  tabLogin.addEventListener('click', () => {
+    tabLogin.classList.add('active'); tabSignup.classList.remove('active');
+    loginForm.style.display = 'block'; signupForm.style.display = 'none';
+  });
+  tabSignup.addEventListener('click', () => {
+    tabSignup.classList.add('active'); tabLogin.classList.remove('active');
+    signupForm.style.display = 'block'; loginForm.style.display = 'none';
+  });
+
+  loginForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const username = document.getElementById('login-username').value;
+    const password = document.getElementById('login-password').value;
+    const res = Store.authenticate(username, password);
+    const errEl = document.getElementById('login-error');
+    if (!res.ok) { errEl.textContent = res.error; return; }
+    errEl.textContent = '';
+    Store.login(username);
+    window.location.href = 'dashboard.html';
+  });
+
+  signupForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const username = document.getElementById('signup-username').value;
+    const password = document.getElementById('signup-password').value;
+    const res = Store.createUser(username, password);
+    const errEl = document.getElementById('signup-error');
+    if (!res.ok) { errEl.textContent = res.error; return; }
+    errEl.textContent = '';
+    Store.login(username);
+    window.location.href = 'dashboard.html';
+  });
+</script>
+</body>
+</html>
