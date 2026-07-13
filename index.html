@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n-title="brand">PMP Simulateur</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="auth-shell">
+  <div id="lang-mount" style="position:fixed; top:1.2rem; right:1.4rem; z-index:5"></div>
+
+  <div class="auth-visual">
+    <div>
+      <div class="mark" data-i18n="login_tagline">PMI Certification · Simulateur d'examen</div>
+      <h1 data-i18n="login_headline">Entraîne-toi comme le jour J.</h1>
+      <p data-i18n="login_sub">65 questions situationnelles réparties sur les trois domaines officiels du PMP.</p>
+    </div>
+    <div>
+      <div class="stat-row">
+        <div class="stat"><b>65</b><span data-i18n="login_stat_questions">Questions</span></div>
+        <div class="stat"><b>6</b><span data-i18n="login_stat_categories">Catégories</span></div>
+        <div class="stat"><b>3</b><span data-i18n="login_stat_domains">Domaines PMI</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="auth-form">
+    <div class="auth-form-inner">
+      <div class="tab-switch">
+        <button id="tab-login" class="active" data-i18n="tab_login">Connexion</button>
+        <button id="tab-signup" data-i18n="tab_signup">Créer un compte</button>
+        <button id="tab-forgot" data-i18n="tab_forgot">Mot de passe oublié</button>
+      </div>
+
+      <form id="login-form">
+        <div class="field">
+          <label for="login-username" data-i18n="field_username">Nom d'utilisateur</label>
+          <input id="login-username" type="text" autocomplete="username" required>
+        </div>
+        <div class="field">
+          <label for="login-password" data-i18n="field_password">Mot de passe</label>
+          <input id="login-password" type="password" autocomplete="current-password" required>
+        </div>
+        <div class="error-text" id="login-error"></div>
+        <button type="submit" class="btn btn-primary btn-block" data-i18n="btn_login">Se connecter</button>
+      </form>
+
+      <form id="signup-form" style="display:none">
+        <div class="field">
+          <label for="signup-username" data-i18n="field_username">Nom d'utilisateur</label>
+          <input id="signup-username" type="text" autocomplete="username" required>
+        </div>
+        <div class="field">
+          <label for="signup-password" data-i18n="field_password">Mot de passe</label>
+          <input id="signup-password" type="password" autocomplete="new-password" required>
+          <small data-i18n="field_password_hint">4 caractères minimum.</small>
+        </div>
+        <div class="field">
+          <label for="signup-recovery" data-i18n="field_recovery_secret">Mot secret de récupération</label>
+          <input id="signup-recovery" type="text" autocomplete="off" required>
+          <small data-i18n="field_recovery_secret_hint">Utilisé uniquement si tu oublies ton mot de passe. 3 caractères minimum.</small>
+        </div>
+        <div class="error-text" id="signup-error"></div>
+        <button type="submit" class="btn btn-primary btn-block" data-i18n="btn_signup">Créer mon compte</button>
+      </form>
+
+      <form id="forgot-form" style="display:none">
+        <div class="field">
+          <label for="forgot-username" data-i18n="field_username">Nom d'utilisateur</label>
+          <input id="forgot-username" type="text" autocomplete="username" required>
+        </div>
+        <div class="field">
+          <label for="forgot-recovery" data-i18n="field_recovery_secret">Mot secret de récupération</label>
+          <input id="forgot-recovery" type="text" autocomplete="off" required>
+        </div>
+        <div class="field">
+          <label for="forgot-newpass" data-i18n="field_new_password">Nouveau mot de passe</label>
+          <input id="forgot-newpass" type="password" autocomplete="new-password" required>
+          <small data-i18n="field_password_hint">4 caractères minimum.</small>
+        </div>
+        <div class="error-text" id="forgot-error"></div>
+        <div class="success-text" id="forgot-success" style="display:none; color:var(--good); font-size:.86rem; margin-bottom:.6rem"></div>
+        <button type="submit" class="btn btn-primary btn-block" data-i18n="btn_reset_password">Réinitialiser le mot de passe</button>
+      </form>
+
+      <div class="banner" style="margin-top:1.6rem" data-i18n-html="admin_demo_banner"></div>
+    </div>
+  </div>
+</div>
+
+<script src="js/i18n.js"></script>
+<script src="js/data.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/ui.js"></script>
+<script>
+  applyI18n();
+  renderLangSwitchStandalone('lang-mount');
+
+  if (Store.currentUser()) window.location.href = postLoginDestination(Store.currentUser());
+
+  function postLoginDestination(u) {
+    return (u.role !== 'admin' && !u.unlocked) ? 'activate-voucher.html' : 'dashboard.html';
+  }
+
+  const tabLogin = document.getElementById('tab-login');
+  const tabSignup = document.getElementById('tab-signup');
+  const tabForgot = document.getElementById('tab-forgot');
+  const loginForm = document.getElementById('login-form');
+  const signupForm = document.getElementById('signup-form');
+  const forgotForm = document.getElementById('forgot-form');
+
+  function showTab(tab) {
+    [tabLogin, tabSignup, tabForgot].forEach(b => b.classList.remove('active'));
+    [loginForm, signupForm, forgotForm].forEach(f => f.style.display = 'none');
+    if (tab === 'login') { tabLogin.classList.add('active'); loginForm.style.display = 'block'; }
+    if (tab === 'signup') { tabSignup.classList.add('active'); signupForm.style.display = 'block'; }
+    if (tab === 'forgot') { tabForgot.classList.add('active'); forgotForm.style.display = 'block'; }
+  }
+  tabLogin.addEventListener('click', () => showTab('login'));
+  tabSignup.addEventListener('click', () => showTab('signup'));
+  tabForgot.addEventListener('click', () => showTab('forgot'));
+
+  loginForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const username = document.getElementById('login-username').value;
+    const password = document.getElementById('login-password').value;
+    const res = Store.authenticate(username, password);
+    const errEl = document.getElementById('login-error');
+    if (!res.ok) { errEl.textContent = res.error; return; }
+    errEl.textContent = '';
+    Store.login(username);
+    window.location.href = postLoginDestination(res.user);
+  });
+
+  signupForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const username = document.getElementById('signup-username').value;
+    const password = document.getElementById('signup-password').value;
+    const recovery = document.getElementById('signup-recovery').value;
+    const res = Store.createUser(username, password, recovery);
+    const errEl = document.getElementById('signup-error');
+    if (!res.ok) { errEl.textContent = res.error; return; }
+    errEl.textContent = '';
+    Store.login(username);
+    window.location.href = 'activate-voucher.html';
+  });
+
+  forgotForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const username = document.getElementById('forgot-username').value;
+    const recovery = document.getElementById('forgot-recovery').value;
+    const newPassword = document.getElementById('forgot-newpass').value;
+    const res = Store.resetPassword(username, recovery, newPassword);
+    const errEl = document.getElementById('forgot-error');
+    const okEl = document.getElementById('forgot-success');
+    if (!res.ok) { errEl.textContent = res.error; okEl.style.display = 'none'; return; }
+    errEl.textContent = '';
+    okEl.style.display = 'block';
+    okEl.textContent = t('reset_password_success');
+    forgotForm.reset();
+  });
+</script>
+</body>
+</html>
