@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n-title="brand">PMP Simulateur</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="topbar-mount"></div>
+
+<div class="shell-with-sidebar">
+  <div class="category-nav">
+    <a class="nav-title" href="dashboard.html" data-i18n="categories_title" style="text-decoration:none; color:inherit; display:block">Dashboard</a>
+    <div id="category-list"></div>
+  </div>
+
+  <div>
+    <div class="eyebrow" data-i18n="nav_chatbot">Chatbot IA</div>
+    <h1 data-i18n="chatbot_title">Assistant PMP</h1>
+    <p style="color:var(--ink-700); max-width:56ch; font-size:1.02rem; margin-bottom:.6rem" data-i18n="chatbot_desc">
+      Pose une question sur le PMP — Agile, EVM, ITTOs, domaines PMI — et reçois une réponse instantanée.
+    </p>
+    <p style="color:var(--ink-600); font-size:.82rem; max-width:56ch; margin-bottom:1.4rem" data-i18n="chatbot_disclaimer">
+      Assistant à réponses pré-programmées (pas une IA générative) — utile pour les questions fréquentes, mais ne remplace pas ton cours PMP.
+    </p>
+
+    <div class="card" style="padding:0; overflow:hidden">
+      <div class="chat-window" id="chat-window"></div>
+      <div class="chat-input-row">
+        <input type="text" id="chat-input" data-i18n-ph="chatbot_placeholder" placeholder="Écris ta question ici…" autocomplete="off">
+        <button class="btn btn-primary" id="chat-send" data-i18n="chatbot_send">Envoyer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="foot" data-i18n="footer_note">PMP Simulateur — outil d'entraînement non affilié au PMI®.</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/data.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/books.js"></script>
+<script src="js/chatbot.js"></script>
+<script>
+  applyI18n();
+  const chatUser = Store.requireAuth('index.html');
+  if (chatUser) {
+    renderTopbar('chatbot');
+    const CATEGORY_META = categoryMeta();
+    const categoryOrder = ['Predictif', 'Agile', 'Hybride', 'Exam', 'Quiz', 'MiniExam', 'KillMistakes'];
+    document.getElementById('category-list').innerHTML = categoryOrder.map(c => {
+      const m = CATEGORY_META[c];
+      return `<a class="category-item" href="category.html?cat=${c}">
+        <span class="dot" style="background:${m.color}"></span>${m.label}
+      </a>`;
+    }).join('') + `
+      <div class="nav-sep"></div>
+      <a class="category-item" href="library.html">
+        <span class="dot" style="background:#c99a4a"></span>${t('nav_library')}
+      </a>
+      <a class="category-item active" href="chatbot.html">
+        <span class="dot" style="background:#7a5cc9"></span>${t('nav_chatbot')}
+      </a>${chatUser.role === 'admin' ? `
+      <a class="category-item" href="books.html">
+        <span class="dot" style="background:#2c7a6d"></span>${t('nav_books')}
+      </a>` : ''}`;
+
+    const chatWindow = document.getElementById('chat-window');
+    function addMessage(text, who) {
+      const bubble = document.createElement('div');
+      bubble.className = `chat-msg ${who}`;
+      bubble.textContent = text;
+      chatWindow.appendChild(bubble);
+      chatWindow.scrollTop = chatWindow.scrollHeight;
+    }
+
+    function addSources(sources) {
+      if (!sources || !sources.length) return;
+      const box = document.createElement('div');
+      box.className = 'chat-msg bot chat-sources';
+      box.innerHTML = `<div class="chat-sources-label">${t('chatbot_sources_label')}</div>` + sources.map(s => `
+        <div class="chat-source-item">
+          <div class="chat-source-meta">${escapeHTML(s.bookTitle)} — ${t('chatbot_source_page')} ${s.page}</div>
+          <div class="chat-source-text">${escapeHTML(s.text)}</div>
+        </div>`).join('');
+      chatWindow.appendChild(box);
+      chatWindow.scrollTop = chatWindow.scrollHeight;
+    }
+
+    addMessage(t('chatbot_greeting'), 'bot');
+
+    function send() {
+      const input = document.getElementById('chat-input');
+      const msg = input.value.trim();
+      if (!msg) return;
+      addMessage(msg, 'user');
+      input.value = '';
+      setTimeout(() => {
+        const result = chatbotAnswer(msg);
+        if (result.text) addMessage(result.text, 'bot');
+        else if (!result.sources.length) addMessage(t('chatbot_fallback'), 'bot');
+        addSources(result.sources);
+      }, 250);
+    }
+
+    document.getElementById('chat-send').addEventListener('click', send);
+    document.getElementById('chat-input').addEventListener('keydown', (e) => { if (e.key === 'Enter') send(); });
+  }
+</script>
+</body>
+</html>
