@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n-title="brand">PMP Simulateur</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="topbar-mount"></div>
+
+<div class="shell-with-sidebar">
+  <div class="category-nav">
+    <a class="nav-title" href="dashboard.html" data-i18n="categories_title" style="text-decoration:none; color:inherit; display:block">Dashboard</a>
+    <div id="category-list"></div>
+  </div>
+
+  <div>
+    <div class="eyebrow" data-i18n="nav_books">Livres PMP</div>
+    <h1 data-i18n="books_title">Livres PMP (base du chatbot)</h1>
+    <p style="color:var(--ink-700); max-width:60ch; font-size:1.02rem; margin-bottom:.5rem" data-i18n="books_desc">
+      Ajoute ici des PDF (PMBOK, guides de préparation, notes de cours…). Leur contenu est indexé et utilisé par le chatbot pour répondre avec des extraits pertinents. Seul le texte est stocké, pas le fichier original.
+    </p>
+    <p style="color:var(--ink-600); font-size:.8rem; max-width:60ch; margin-bottom:1.4rem" data-i18n="books_copyright_note">
+      Rappel : n'importe ici que des documents dont tu as le droit d'usage (tes propres notes, ou des ouvrages que tu possèdes légalement). Ce contenu reste stocké uniquement dans ce navigateur.
+    </p>
+
+    <div class="card" style="padding:1.6rem">
+      <label for="book-title" style="font-weight:600; display:block; margin-bottom:.4rem" data-i18n="books_title_field">Titre du livre</label>
+      <input type="text" id="book-title" data-i18n-ph="books_title_placeholder" placeholder="ex : PMBOK Guide 7e édition" style="margin-bottom:.8rem">
+
+      <label for="book-file" style="font-weight:600; display:block; margin-bottom:.4rem" data-i18n="books_upload_label">Ajouter un livre (PDF)</label>
+      <input type="file" accept="application/pdf" id="book-file" style="display:block; margin-bottom:.9rem">
+
+      <button class="btn btn-brass" id="book-index-btn" data-i18n="books_add_btn">Indexer ce PDF</button>
+      <div id="book-progress" style="margin-top:.8rem; font-size:.86rem; color:var(--ink-700); display:none"></div>
+    </div>
+
+    <p id="storage-used" style="font-size:.78rem; color:var(--ink-600); margin:.9rem 0"></p>
+
+    <div class="section-title"><h2 data-i18n="books_title">Livres PMP (base du chatbot)</h2></div>
+    <div id="books-mount"></div>
+  </div>
+</div>
+
+<footer class="foot" data-i18n="footer_note">PMP Simulateur — outil d'entraînement non affilié au PMI®.</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/data.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/books.js"></script>
+<script>
+  applyI18n();
+  const booksUser = Store.requireAdmin('dashboard.html');
+  if (booksUser) {
+    pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+
+    renderTopbar('books');
+    const CATEGORY_META = categoryMeta();
+    const categoryOrder = ['Predictif', 'Agile', 'Hybride', 'Exam', 'Quiz', 'MiniExam', 'KillMistakes'];
+    document.getElementById('category-list').innerHTML = categoryOrder.map(c => {
+      const m = CATEGORY_META[c];
+      return `<a class="category-item" href="category.html?cat=${c}">
+        <span class="dot" style="background:${m.color}"></span>${m.label}
+      </a>`;
+    }).join('') + `
+      <div class="nav-sep"></div>
+      <a class="category-item" href="library.html">
+        <span class="dot" style="background:#c99a4a"></span>${t('nav_library')}
+      </a>
+      <a class="category-item" href="chatbot.html">
+        <span class="dot" style="background:#7a5cc9"></span>${t('nav_chatbot')}
+      </a>
+      <a class="category-item active" href="books.html">
+        <span class="dot" style="background:#2c7a6d"></span>${t('nav_books')}
+      </a>`;
+
+    function renderStorageUsed() {
+      const books = Store.getBooks();
+      const totalChars = books.reduce((sum, b) => sum + b.chunks.reduce((s, c) => s + c.text.length, 0), 0);
+      document.getElementById('storage-used').textContent = `${t('books_storage_used')} : ~${estimateStorageKB('x'.repeat(totalChars))} Ko`;
+    }
+
+    function renderBooks() {
+      const books = Store.getBooks().sort((a, b) => new Date(b.date) - new Date(a.date));
+      const mount = document.getElementById('books-mount');
+      if (!books.length) {
+        mount.innerHTML = `<div class="empty-state card" style="padding:2.2rem"><div class="glyph">📖</div>${t('books_empty')}</div>`;
+      } else {
+        mount.innerHTML = `
+          <div class="card" style="padding:0.4rem 1rem">
+            <table class="history">
+              <thead><tr><th>${t('books_col_title')}</th><th>${t('books_col_pages')}</th><th>${t('books_col_date')}</th><th></th></tr></thead>
+              <tbody>
+                ${books.map(b => `
+                  <tr>
+                    <td>${escapeHTML(b.title)}</td>
+                    <td>${b.chunks.length}</td>
+                    <td>${formatDate(b.date)}</td>
+                    <td style="text-align:right">
+                      <button class="btn btn-danger btn-sm" data-id="${b.id}">${t('books_delete')}</button>
+                    </td>
+                  </tr>`).join('')}
+              </tbody>
+            </table>
+          </div>`;
+        mount.querySelectorAll('button[data-id]').forEach(btn => {
+          btn.addEventListener('click', () => {
+            if (!confirm(t('books_delete_confirm'))) return;
+            Store.deleteBook(btn.dataset.id);
+            renderBooks();
+            renderStorageUsed();
+          });
+        });
+      }
+      renderStorageUsed();
+    }
+
+    document.getElementById('book-index-btn').addEventListener('click', async () => {
+      const fileInput = document.getElementById('book-file');
+      const titleInput = document.getElementById('book-title');
+      const file = fileInput.files[0];
+      if (!file) return;
+      const title = titleInput.value.trim() || file.name.replace(/\.pdf$/i, '');
+      const progress = document.getElementById('book-progress');
+      const btn = document.getElementById('book-index-btn');
+      progress.style.display = 'block';
+      btn.disabled = true;
+      try {
+        const chunks = await extractPdfChunks(file, (current, total) => {
+          progress.textContent = t('books_processing').replace('{current}', current).replace('{total}', total);
+        });
+        const result = Store.addBook({
+          id: 'book_' + Date.now() + '_' + Math.random().toString(36).slice(2, 7),
+          title,
+          date: new Date().toISOString(),
+          chunks,
+        });
+        if (!result.ok) {
+          alert(t('books_quota_error'));
+        } else {
+          fileInput.value = '';
+          titleInput.value = '';
+          showToast(t('books_add_btn'));
+          renderBooks();
+        }
+      } catch (e) {
+        alert(e.message || String(e));
+      } finally {
+        progress.style.display = 'none';
+        btn.disabled = false;
+      }
+    });
+
+    renderBooks();
+  }
+</script>
+</body>
+</html>

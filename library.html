@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n-title="brand">PMP Simulateur</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="topbar-mount"></div>
+
+<div class="shell-with-sidebar">
+  <div class="category-nav">
+    <a class="nav-title" href="dashboard.html" data-i18n="categories_title" style="text-decoration:none; color:inherit; display:block">Dashboard</a>
+    <div id="category-list"></div>
+  </div>
+
+  <div>
+    <div class="eyebrow" data-i18n="nav_library">Bibliothèque</div>
+    <h1 data-i18n="library_title">Bibliothèque de révision</h1>
+    <p style="color:var(--ink-700); max-width:56ch; font-size:1.02rem; margin-bottom:1.6rem" data-i18n="library_desc">
+      Dépose ici tes fiches, résumés et documents PDF pour les retrouver facilement avant l'examen.
+    </p>
+
+    <div id="upload-mount"></div>
+
+    <div class="section-title" style="margin-top:1.6rem"><h2 data-i18n="library_title">Bibliothèque de révision</h2></div>
+    <div id="library-mount"></div>
+  </div>
+</div>
+
+<footer class="foot" data-i18n="footer_note">PMP Simulateur — outil d'entraînement non affilié au PMI®.</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/data.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/ui.js"></script>
+<script>
+  applyI18n();
+  const libUser = Store.requireAuth('index.html');
+  if (libUser) {
+    renderTopbar('library');
+    const CATEGORY_META = categoryMeta();
+    const categoryOrder = ['Predictif', 'Agile', 'Hybride', 'Exam', 'Quiz', 'MiniExam', 'KillMistakes'];
+    document.getElementById('category-list').innerHTML = categoryOrder.map(c => {
+      const m = CATEGORY_META[c];
+      return `<a class="category-item" href="category.html?cat=${c}">
+        <span class="dot" style="background:${m.color}"></span>${m.label}
+      </a>`;
+    }).join('') + `
+      <div class="nav-sep"></div>
+      <a class="category-item active" href="library.html">
+        <span class="dot" style="background:#c99a4a"></span>${t('nav_library')}
+      </a>
+      <a class="category-item" href="chatbot.html">
+        <span class="dot" style="background:#7a5cc9"></span>${t('nav_chatbot')}
+      </a>${libUser.role === 'admin' ? `
+      <a class="category-item" href="books.html">
+        <span class="dot" style="background:#2c7a6d"></span>${t('nav_books')}
+      </a>` : ''}`;
+
+    const MAX_SIZE = 8 * 1024 * 1024; // 8 Mo — limite raisonnable pour localStorage
+
+    // Seul l'admin peut ajouter des documents ; les participants sont en lecture seule.
+    if (libUser.role === 'admin') {
+      document.getElementById('upload-mount').innerHTML = `
+        <div class="card" style="padding:1.6rem">
+          <label for="file-input" style="font-weight:600; display:block; margin-bottom:.4rem">${t('library_upload_label')}</label>
+          <input type="file" id="file-input" style="display:block; margin-bottom:.4rem">
+          <p style="font-size:.82rem; color:var(--ink-600)">${t('library_upload_hint')}</p>
+        </div>`;
+      document.getElementById('file-input').addEventListener('change', (e) => {
+        const file = e.target.files[0];
+        if (!file) return;
+        if (file.size > MAX_SIZE) {
+          alert(t('library_too_big'));
+          e.target.value = '';
+          return;
+        }
+        const reader = new FileReader();
+        reader.onload = () => {
+          Store.addDocument({
+            id: 'doc_' + Date.now() + '_' + Math.random().toString(36).slice(2, 7),
+            username: libUser.username,
+            name: file.name,
+            size: file.size,
+            type: file.type,
+            date: new Date().toISOString(),
+            dataUrl: reader.result,
+          });
+          e.target.value = '';
+          renderLibrary();
+        };
+        reader.readAsDataURL(file);
+      });
+    } else {
+      document.getElementById('upload-mount').innerHTML = `<p class="banner">${t('library_readonly_note')}</p>`;
+    }
+
+    function renderLibrary() {
+      const docs = Store.getDocuments().sort((a, b) => new Date(b.date) - new Date(a.date));
+      const mount = document.getElementById('library-mount');
+      if (!docs.length) {
+        mount.innerHTML = `<div class="empty-state card" style="padding:2.2rem"><div class="glyph">📚</div>${t('library_empty')}</div>`;
+        return;
+      }
+      mount.innerHTML = `
+        <div class="card" style="padding:0.4rem 1rem">
+          <table class="history">
+            <thead><tr><th>${t('library_col_name')}</th><th>${t('library_col_size')}</th><th>${t('library_col_date')}</th><th></th></tr></thead>
+            <tbody>
+              ${docs.map(d => `
+                <tr>
+                  <td>${escapeHTML(d.name)}</td>
+                  <td>${formatBytes(d.size)}</td>
+                  <td>${formatDate(d.date)}</td>
+                  <td style="display:flex; gap:.4rem; justify-content:flex-end">
+                    <a href="${d.dataUrl}" download="${escapeHTML(d.name)}" class="btn btn-ghost btn-sm">${t('library_open')}</a>
+                    ${libUser.role === 'admin' ? `<button class="btn btn-danger btn-sm" data-id="${d.id}">${t('library_delete')}</button>` : ''}
+                  </td>
+                </tr>`).join('')}
+            </tbody>
+          </table>
+        </div>`;
+      mount.querySelectorAll('button[data-id]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          if (!confirm(t('library_delete_confirm'))) return;
+          Store.deleteDocument(btn.dataset.id);
+          renderLibrary();
+        });
+      });
+    }
+
+    renderLibrary();
+  }
+</script>
+</body>
+</html>
