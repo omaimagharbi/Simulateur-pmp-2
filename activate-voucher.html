@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n-title="brand">PMP Simulateur</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="topbar-mount"></div>
+
+<div class="page" style="max-width:480px; margin:3rem auto">
+  <div class="eyebrow" data-i18n="voucher_eyebrow">Accès examens</div>
+  <h1 id="voucher-heading" data-i18n="voucher_title">Active ton accès</h1>
+  <p id="voucher-description" style="color:var(--ink-700); font-size:1.02rem; margin-bottom:1.8rem" data-i18n="voucher_desc">
+    Ton compte est créé, mais l'accès aux examens blancs est verrouillé. Saisis le code reçu après ton paiement pour le débloquer.
+  </p>
+
+  <form id="voucher-form" class="card" style="padding:1.6rem">
+    <div class="field">
+      <label for="voucher-code" data-i18n="voucher_field_code">Code d'accès</label>
+      <input id="voucher-code" type="text" placeholder="PMP-2026-X8F2" autocomplete="off" required style="text-transform:uppercase; letter-spacing:.05em">
+    </div>
+    <div class="error-text" id="voucher-error"></div>
+    <button type="submit" class="btn btn-primary btn-block" data-i18n="voucher_submit">Débloquer mon accès</button>
+  </form>
+
+  <p id="voucher-help" style="color:var(--ink-600); font-size:.86rem; margin-top:1.2rem" data-i18n="voucher_help">
+    Pas encore payé ou code perdu ? Contacte l'organisateur de ta session pour recevoir ton code.
+  </p>
+</div>
+
+<script src="js/i18n.js"></script>
+<script src="js/data.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/ui.js"></script>
+<script>
+  applyI18n();
+  const vUser = Store.requireAuth('index.html');
+  if (vUser) {
+    renderTopbar(null);
+    // Un compte débloqué et non bloqué n'a rien à faire ici.
+    if (vUser.role === 'admin' || (vUser.unlocked && !vUser.blocked)) {
+      window.location.href = 'dashboard.html';
+    } else if (vUser.blocked) {
+      // Accès coupé manuellement par l'admin : un nouveau code ne change rien,
+      // seul l'admin peut débloquer — on l'indique clairement.
+      document.getElementById('voucher-heading').textContent = t('voucher_blocked_title');
+      document.getElementById('voucher-description').textContent = t('voucher_blocked_desc');
+      document.getElementById('voucher-form').style.display = 'none';
+      document.getElementById('voucher-help').style.display = 'none';
+    } else {
+      document.getElementById('voucher-form').addEventListener('submit', (e) => {
+        e.preventDefault();
+        const code = document.getElementById('voucher-code').value;
+        const res = Store.redeemVoucher(vUser.username, code);
+        const errEl = document.getElementById('voucher-error');
+        if (!res.ok) { errEl.textContent = res.error; return; }
+        errEl.textContent = '';
+        showToast(t('voucher_success'));
+        setTimeout(() => { window.location.href = 'dashboard.html'; }, 700);
+      });
+    }
+  }
+</script>
+</body>
+</html>
