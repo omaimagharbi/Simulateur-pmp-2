@@ -1,0 +1,973 @@
+{
+  "meta": {
+    "titre": "Banque de questions - Simulateur PMP 2026",
+    "version": "0.1.0-scaffold",
+    "eco_version": "PMP ECO 2026",
+    "pmbok_version": "PMBOK 8th Edition",
+    "quotas_domaine": {
+      "D1_people": 0.33,
+      "D2_process": 0.41,
+      "D3_business_environment": 0.26
+    },
+    "quotas_approche": {
+      "agile_hybride": 0.6,
+      "predictif": 0.4
+    },
+    "types_question_supportes": [
+      "single_choice",
+      "multi_choice",
+      "matching",
+      "case_study"
+    ],
+    "note": "Fichier en cours de population progressive. Voir champ 'progression' pour l'état d'avancement réel."
+  },
+  "progression": {
+    "total_cible": 900,
+    "total_redige_en_conversation": 896,
+    "total_present_dans_ce_fichier": 14,
+    "prochaine_action": "Il manque le Lot 2 de la conversion Examen 5 (MC-004 a MC-010, MT-004 a MT-006, CS-002) qui n a pas ete fourni. Il manque aussi les 896 questions de base (examens 1-4 et le reste de l examen 5) et les 4 questions manquantes pour atteindre 900."
+  },
+  "schema_exemple_par_type": {
+    "single_choice": {
+      "id": "EX-SC-001",
+      "examen": 1,
+      "type": "single_choice",
+      "domaine": "D1",
+      "approche": "agile_hybride",
+      "theme": "standard",
+      "scenario": "Texte du scénario...",
+      "question": "Texte de la question...",
+      "options": [
+        {
+          "id": "A",
+          "texte": "..."
+        },
+        {
+          "id": "B",
+          "texte": "..."
+        },
+        {
+          "id": "C",
+          "texte": "..."
+        },
+        {
+          "id": "D",
+          "texte": "..."
+        }
+      ],
+      "correct_answers": [
+        "B"
+      ],
+      "explication": "Texte explicatif...",
+      "reference": "PMBOK 8 - Focus Area ..."
+    },
+    "multi_choice": {
+      "id": "EX-MC-001",
+      "examen": 5,
+      "type": "multi_choice",
+      "domaine": "D2",
+      "approche": "predictif",
+      "theme": "standard",
+      "scenario": "Texte du scénario...",
+      "question": "Sélectionnez les DEUX meilleures actions (2 réponses attendues) parmi les 5 options.",
+      "options": [
+        {
+          "id": "A",
+          "texte": "..."
+        },
+        {
+          "id": "B",
+          "texte": "..."
+        },
+        {
+          "id": "C",
+          "texte": "..."
+        },
+        {
+          "id": "D",
+          "texte": "..."
+        },
+        {
+          "id": "E",
+          "texte": "..."
+        }
+      ],
+      "correct_answers": [
+        "B",
+        "D"
+      ],
+      "nombre_reponses_attendues": 2,
+      "explication": "...",
+      "reference": "..."
+    },
+    "matching": {
+      "id": "EX-MT-001",
+      "examen": 5,
+      "type": "matching",
+      "domaine": "D3",
+      "approche": "agile_hybride",
+      "theme": "standard",
+      "scenario": "Contexte du scénario...",
+      "question": "Associez chaque élément de la colonne de gauche à l'élément correspondant de la colonne de droite.",
+      "colonne_gauche": [
+        {
+          "id": "1",
+          "texte": "..."
+        },
+        {
+          "id": "2",
+          "texte": "..."
+        },
+        {
+          "id": "3",
+          "texte": "..."
+        }
+      ],
+      "colonne_droite": [
+        {
+          "id": "a",
+          "texte": "..."
+        },
+        {
+          "id": "b",
+          "texte": "..."
+        },
+        {
+          "id": "c",
+          "texte": "..."
+        }
+      ],
+      "correct_matching": {
+        "1": "b",
+        "2": "a",
+        "3": "c"
+      },
+      "explication": "...",
+      "reference": "..."
+    },
+    "case_study": {
+      "id": "EX-CS-001",
+      "examen": 5,
+      "type": "case_study",
+      "domaine": "D2",
+      "approche": "predictif",
+      "theme": "standard",
+      "contexte_etendu": "Description longue et détaillée d'un cas (plusieurs paragraphes), servant de base à plusieurs sous-questions.",
+      "sous_questions": [
+        {
+          "id": "EX-CS-001-Q1",
+          "type": "single_choice",
+          "question": "...",
+          "options": [
+            {
+              "id": "A",
+              "texte": "..."
+            },
+            {
+              "id": "B",
+              "texte": "..."
+            },
+            {
+              "id": "C",
+              "texte": "..."
+            },
+            {
+              "id": "D",
+              "texte": "..."
+            }
+          ],
+          "correct_answers": [
+            "A"
+          ],
+          "explication": "..."
+        },
+        {
+          "id": "EX-CS-001-Q2",
+          "type": "multi_choice",
+          "question": "...",
+          "options": [
+            {
+              "id": "A",
+              "texte": "..."
+            },
+            {
+              "id": "B",
+              "texte": "..."
+            },
+            {
+              "id": "C",
+              "texte": "..."
+            },
+            {
+              "id": "D",
+              "texte": "..."
+            },
+            {
+              "id": "E",
+              "texte": "..."
+            }
+          ],
+          "correct_answers": [
+            "B",
+            "C"
+          ],
+          "explication": "..."
+        }
+      ],
+      "reference": "..."
+    }
+  },
+  "questions": [
+    {
+      "id": "EX1-Q001",
+      "examen": 1,
+      "type": "single_choice",
+      "domaine": "D1",
+      "approche": "agile_hybride",
+      "theme": "standard",
+      "scenario": "Vous êtes Scrum Master d'une équipe de développement produit. Lors de la rétrospective, deux membres seniors expriment ouvertement leur frustration l'un envers l'autre concernant la répartition des tâches, créant une tension palpable dans l'équipe.",
+      "question": "Que devriez-vous faire en priorité ?",
+      "options": [
+        {
+          "id": "A",
+          "texte": "Réaffecter immédiatement les tâches contestées pour calmer la situation"
+        },
+        {
+          "id": "B",
+          "texte": "Faciliter une discussion ouverte entre les deux membres pour identifier la cause racine du conflit"
+        },
+        {
+          "id": "C",
+          "texte": "Escalader le conflit au Product Owner pour arbitrage"
+        },
+        {
+          "id": "D",
+          "texte": "Ignorer le conflit, il se résoudra naturellement lors du prochain sprint"
+        }
+      ],
+      "correct_answers": [
+        "B"
+      ],
+      "explication": "Le rôle du Scrum Master est de faciliter la résolution de conflit au sein de l'équipe, pas de trancher à sa place (ce qui retirerait l'autonomie de l'équipe, principe clé agile) ni d'escalader prématurément (option C, qui contourne l'auto-organisation). Ignorer (D) laisse le conflit s'envenimer.",
+      "reference": "PMBOK 8 - Domaine de performance Équipe, Focus Area Leadership collaboratif"
+    },
+    {
+      "id": "EX1-Q002",
+      "examen": 1,
+      "type": "single_choice",
+      "domaine": "D1",
+      "approche": "agile_hybride",
+      "theme": "standard",
+      "scenario": "Votre équipe hybride combine des développeurs en méthode Scrum et une équipe d'intégration système travaillant en cascade. Un développeur agile se plaint que les cycles de validation de l'équipe cascade ralentissent son rythme de livraison.",
+      "question": "Quelle est la meilleure approche du chef de projet ?",
+      "options": [
+        {
+          "id": "A",
+          "texte": "Forcer l'équipe cascade à adopter des sprints de 2 semaines"
+        },
+        {
+          "id": "B",
+          "texte": "Créer un cadre d'intégration avec des points de synchronisation clairs entre les deux cadences"
+        },
+        {
+          "id": "C",
+          "texte": "Séparer complètement les deux équipes pour éviter les frictions"
+        },
+        {
+          "id": "D",
+          "texte": "Donner la priorité systématique aux livrables agiles"
+        }
+      ],
+      "correct_answers": [
+        "B"
+      ],
+      "explication": "Dans un environnement hybride, l'enjeu n'est pas d'imposer une méthode à l'autre, mais de créer des interfaces claires (ex: points de synchronisation, definition of done partagée) qui respectent le rythme de chaque équipe tout en assurant la cohérence globale.",
+      "reference": "PMBOK 8 - Focus Area Approches adaptatives et hybrides"
+    },
+    {
+      "id": "EX1-Q003",
+      "examen": 1,
+      "type": "single_choice",
+      "domaine": "D1",
+      "approche": "agile_hybride",
+      "theme": "ia",
+      "scenario": "Votre équipe utilise un outil d'IA pour générer automatiquement des user stories à partir des retours clients. Un membre de l'équipe conteste la pertinence de plusieurs stories générées, estimant qu'elles ne reflètent pas les vrais besoins utilisateurs.",
+      "question": "Quelle action est la plus appropriée ?",
+      "options": [
+        {
+          "id": "A",
+          "texte": "Accepter les user stories générées par l'IA sans modification, car l'outil est plus objectif"
+        },
+        {
+          "id": "B",
+          "texte": "Supprimer l'usage de l'IA immédiatement dans le processus"
+        },
+        {
+          "id": "C",
+          "texte": "Organiser une session de raffinement collaborative pour valider et ajuster les stories générées avec l'équipe"
+        },
+        {
+          "id": "D",
+          "texte": "Demander au membre de l'équipe de justifier formellement chaque désaccord avant toute discussion"
+        }
+      ],
+      "correct_answers": [
+        "C"
+      ],
+      "explication": "L'IA est un outil d'aide à la décision, pas un substitut au jugement humain et à la collaboration d'équipe. Le raffinement collaboratif (backlog refinement) reste un processus humain essentiel, même quand l'IA génère un premier jet.",
+      "reference": "PMBOK 8 - Focus Area IA et technologies émergentes"
+    },
+    {
+      "id": "EX5-MC-001",
+      "examen": 5,
+      "type": "multi_choice",
+      "domaine": "D1",
+      "approche": "agile_hybride",
+      "theme": "standard",
+      "scenario": "Votre équipe agile constate une baisse de collaboration entre deux sous-équipes travaillant sur des composants interdépendants du même produit.",
+      "question": "Sélectionnez les DEUX meilleures actions du chef de projet (2 réponses attendues) :",
+      "options": [
+        {
+          "id": "A",
+          "texte": "Fusionner immédiatement les deux équipes en une seule"
+        },
+        {
+          "id": "B",
+          "texte": "Organiser une session de Scrum of Scrums pour synchroniser les dépendances"
+        },
+        {
+          "id": "C",
+          "texte": "Cartographier visuellement les dépendances entre les deux équipes"
+        },
+        {
+          "id": "D",
+          "texte": "Assigner un seul responsable ayant autorité sur les deux équipes"
+        },
+        {
+          "id": "E",
+          "texte": "Réduire la fréquence des livraisons pour limiter les interactions"
+        },
+        {
+          "id": "F",
+          "texte": "Ignorer la situation tant que les livrables individuels sont produits à temps"
+        }
+      ],
+      "correct_answers": [
+        "B",
+        "C"
+      ],
+      "nombre_reponses_attendues": 2,
+      "explication": "La synchronisation régulière (Scrum of Scrums) combinée à une cartographie visible des dépendances constitue l'approche standard pour résoudre les frictions inter-équipes, sans recourir à des solutions structurelles disproportionnées (A, D) ni contre-productives (E, F).",
+      "reference": "PMBOK 8 - Focus Area Coordination inter-équipes et synchronisation agile"
+    },
+    {
+      "id": "EX5-MC-002",
+      "examen": 5,
+      "type": "multi_choice",
+      "domaine": "D2",
+      "approche": "predictif",
+      "theme": "standard",
+      "scenario": "Une analyse de la valeur acquise révèle un CPI de 0,85 et un SPI de 0,80 à mi-parcours de votre projet.",
+      "question": "Sélectionnez les TROIS actions appropriées du chef de projet (3 réponses attendues) :",
+      "options": [
+        {
+          "id": "A",
+          "texte": "Analyser les causes racines du double dépassement coût/délai"
+        },
+        {
+          "id": "B",
+          "texte": "Ignorer les indices tant que le sponsor ne les questionne pas"
+        },
+        {
+          "id": "C",
+          "texte": "Présenter un plan de redressement avec options aux parties prenantes"
+        },
+        {
+          "id": "D",
+          "texte": "Réduire immédiatement le périmètre sans consultation"
+        },
+        {
+          "id": "E",
+          "texte": "Réévaluer l'estimation à terminaison (EAC) sur la base de la performance actuelle"
+        },
+        {
+          "id": "F",
+          "texte": "Célébrer le fait que le projet reste dans son enveloppe initiale"
+        }
+      ],
+      "correct_answers": [
+        "A",
+        "C",
+        "E"
+      ],
+      "nombre_reponses_attendues": 3,
+      "explication": "Un CPI et SPI tous deux inférieurs à 1 exigent une analyse des causes, une révision de l'EAC basée sur la tendance réelle, et une communication transparente aux parties prenantes avec options — pas l'inaction (B, F) ni une décision unilatérale (D).",
+      "reference": "PMBOK 8 - Focus Area Analyse combinée CPI/SPI et plan de redressement"
+    },
+    {
+      "id": "EX5-MC-003",
+      "examen": 5,
+      "type": "multi_choice",
+      "domaine": "D3",
+      "approche": "agile_hybride",
+      "theme": "ia",
+      "scenario": "Une nouvelle réglementation impose l'enregistrement de tout système d'IA à haut risque auprès d'une autorité de régulation.",
+      "question": "Sélectionnez les DEUX actions appropriées (2 réponses attendues) :",
+      "options": [
+        {
+          "id": "A",
+          "texte": "Continuer le déploiement prévu sans attendre l'enregistrement"
+        },
+        {
+          "id": "B",
+          "texte": "Évaluer avec le juridique si les composants IA entrent dans la catégorie \"haut risque\""
+        },
+        {
+          "id": "C",
+          "texte": "Retirer tout composant IA du produit par précaution"
+        },
+        {
+          "id": "D",
+          "texte": "Intégrer le délai d'enregistrement dans la planification de la roadmap"
+        },
+        {
+          "id": "E",
+          "texte": "Attendre une sanction avant d'agir"
+        },
+        {
+          "id": "F",
+          "texte": "Contester la réglementation avant toute analyse"
+        }
+      ],
+      "correct_answers": [
+        "B",
+        "D"
+      ],
+      "nombre_reponses_attendues": 2,
+      "explication": "Une classification réglementaire doit être évaluée juridiquement puis intégrée réalistement au calendrier, plutôt qu'ignorée (A, E), traitée par un retrait disproportionné (C) ou contestée sans analyse préalable (F).",
+      "reference": "PMBOK 8 - Focus Area Enregistrement réglementaire de l'IA à haut risque"
+    },
+    {
+      "id": "EX5-MT-001",
+      "examen": 5,
+      "type": "matching",
+      "domaine": "D2",
+      "approche": "predictif",
+      "theme": "standard",
+      "scenario": "Associez chaque stratégie de réponse au risque à sa description correcte.",
+      "question": "Associez chaque élément de la colonne de gauche à l'élément correspondant de la colonne de droite.",
+      "colonne_gauche": [
+        {
+          "id": "1",
+          "texte": "Éviter"
+        },
+        {
+          "id": "2",
+          "texte": "Atténuer"
+        },
+        {
+          "id": "3",
+          "texte": "Transférer"
+        },
+        {
+          "id": "4",
+          "texte": "Accepter"
+        }
+      ],
+      "colonne_droite": [
+        {
+          "id": "a",
+          "texte": "Souscrire une assurance ou sous-traiter le risque à un tiers"
+        },
+        {
+          "id": "b",
+          "texte": "Modifier le plan de projet pour éliminer la menace ou sa cause"
+        },
+        {
+          "id": "c",
+          "texte": "Réduire la probabilité ou l'impact du risque à un niveau acceptable"
+        },
+        {
+          "id": "d",
+          "texte": "Ne prendre aucune action proactive, avec ou sans réserve de contingence"
+        }
+      ],
+      "correct_matching": {
+        "1": "b",
+        "2": "c",
+        "3": "a",
+        "4": "d"
+      },
+      "explication": "Ces quatre stratégies fondamentales de réponse aux risques négatifs se distinguent par leur niveau d'intervention : éviter élimine la cause, atténuer réduit probabilité/impact, transférer déplace la responsabilité financière, accepter ne change rien activement.",
+      "reference": "PMBOK 8 - Focus Area Stratégies de réponse aux risques négatifs"
+    },
+    {
+      "id": "EX5-MT-002",
+      "examen": 5,
+      "type": "matching",
+      "domaine": "D1",
+      "approche": "predictif",
+      "theme": "standard",
+      "scenario": "Associez chaque style de leadership situationnel au contexte d'équipe le plus approprié.",
+      "question": "Associez chaque élément de la colonne de gauche à l'élément correspondant de la colonne de droite.",
+      "colonne_gauche": [
+        {
+          "id": "1",
+          "texte": "Directif"
+        },
+        {
+          "id": "2",
+          "texte": "Persuasif"
+        },
+        {
+          "id": "3",
+          "texte": "Participatif"
+        },
+        {
+          "id": "4",
+          "texte": "Délégatif"
+        }
+      ],
+      "colonne_droite": [
+        {
+          "id": "a",
+          "texte": "Équipe très compétente et très motivée"
+        },
+        {
+          "id": "b",
+          "texte": "Équipe compétente mais peu confiante"
+        },
+        {
+          "id": "c",
+          "texte": "Équipe peu compétente mais motivée"
+        },
+        {
+          "id": "d",
+          "texte": "Équipe peu compétente et peu motivée"
+        }
+      ],
+      "correct_matching": {
+        "1": "d",
+        "2": "c",
+        "3": "b",
+        "4": "a"
+      },
+      "explication": "Le modèle de leadership situationnel adapte le style au niveau de maturité de l'équipe : directif pour les novices non motivés, persuasif pour les novices motivés, participatif pour les compétents mais hésitants, délégatif pour les équipes autonomes.",
+      "reference": "PMBOK 8 - Domaine de performance Équipe, Focus Area Leadership situationnel"
+    },
+    {
+      "id": "EX5-MT-003",
+      "examen": 5,
+      "type": "matching",
+      "domaine": "D3",
+      "approche": "predictif",
+      "theme": "standard",
+      "scenario": "Associez chaque type de contrat à sa caractéristique principale de répartition du risque.",
+      "question": "Associez chaque élément de la colonne de gauche à l'élément correspondant de la colonne de droite.",
+      "colonne_gauche": [
+        {
+          "id": "1",
+          "texte": "Prix fixe forfaitaire (FFP)"
+        },
+        {
+          "id": "2",
+          "texte": "Coûts remboursables (CR)"
+        },
+        {
+          "id": "3",
+          "texte": "Temps et matériaux (T&M)"
+        },
+        {
+          "id": "4",
+          "texte": "Prix fixe avec intéressement (FPIF)"
+        }
+      ],
+      "colonne_droite": [
+        {
+          "id": "a",
+          "texte": "Risque financier principalement porté par l'acheteur"
+        },
+        {
+          "id": "b",
+          "texte": "Risque financier principalement porté par le vendeur"
+        },
+        {
+          "id": "c",
+          "texte": "Risque partagé, hybride entre les deux précédents"
+        },
+        {
+          "id": "d",
+          "texte": "Risque faible pour l'acheteur mais nécessite un plafond pour le contrôler"
+        }
+      ],
+      "correct_matching": {
+        "1": "b",
+        "2": "a",
+        "3": "d",
+        "4": "c"
+      },
+      "explication": "Le FFP transfère le risque au vendeur (prix fixé), le CR le laisse à l'acheteur (rembourse les coûts réels), le T&M nécessite un plafond car sans limite de portée claire, et le FPIF partage le risque via un mécanisme d'intéressement.",
+      "reference": "PMBOK 8 - Focus Area Types de contrats et répartition du risque"
+    },
+    {
+      "id": "EX5-MT-007",
+      "examen": 5,
+      "type": "matching",
+      "domaine": "D2",
+      "approche": "predictif",
+      "theme": "standard",
+      "scenario": "Associez chaque critère d'évaluation de fournisseur à sa catégorie correcte.",
+      "question": "Associez chaque élément de la colonne de gauche à l'élément correspondant de la colonne de droite.",
+      "colonne_gauche": [
+        {
+          "id": "1",
+          "texte": "Antécédents de retards documentés"
+        },
+        {
+          "id": "2",
+          "texte": "Prix proposé"
+        },
+        {
+          "id": "3",
+          "texte": "Certifications qualité détenues"
+        },
+        {
+          "id": "4",
+          "texte": "Capacité financière du fournisseur"
+        }
+      ],
+      "colonne_droite": [
+        {
+          "id": "a",
+          "texte": "Critère de risque opérationnel"
+        },
+        {
+          "id": "b",
+          "texte": "Critère de risque financier"
+        },
+        {
+          "id": "c",
+          "texte": "Critère de coût"
+        },
+        {
+          "id": "d",
+          "texte": "Critère de conformité/qualité"
+        }
+      ],
+      "correct_matching": {
+        "1": "a",
+        "2": "c",
+        "3": "d",
+        "4": "b"
+      },
+      "explication": "Une évaluation multicritère de fournisseur distingue le risque opérationnel (fiabilité d'exécution), le coût, la conformité qualité et la solidité financière — le prix seul ne doit jamais être le critère unique de sélection.",
+      "reference": "PMBOK 8 - Focus Area Évaluation multicritère des fournisseurs"
+    },
+    {
+      "id": "EX5-MT-008",
+      "examen": 5,
+      "type": "matching",
+      "domaine": "D2",
+      "approche": "predictif",
+      "theme": "standard",
+      "scenario": "Associez chaque composante du coût de la qualité (COQ) à sa catégorie.",
+      "question": "Associez chaque élément de la colonne de gauche à l'élément correspondant de la colonne de droite.",
+      "colonne_gauche": [
+        {
+          "id": "1",
+          "texte": "Formation à la prévention des défauts"
+        },
+        {
+          "id": "2",
+          "texte": "Inspection et tests"
+        },
+        {
+          "id": "3",
+          "texte": "Reprise d'un livrable défectueux avant livraison"
+        },
+        {
+          "id": "4",
+          "texte": "Remboursement client suite à un défaut détecté après livraison"
+        }
+      ],
+      "colonne_droite": [
+        {
+          "id": "a",
+          "texte": "Coût de la non-conformité interne"
+        },
+        {
+          "id": "b",
+          "texte": "Coût de la non-conformité externe"
+        },
+        {
+          "id": "c",
+          "texte": "Coût de prévention"
+        },
+        {
+          "id": "d",
+          "texte": "Coût d'évaluation"
+        }
+      ],
+      "correct_matching": {
+        "1": "c",
+        "2": "d",
+        "3": "a",
+        "4": "b"
+      },
+      "explication": "Le coût de la qualité se décompose en coûts de conformité (prévention + évaluation) et coûts de non-conformité (interne, avant livraison ; externe, après livraison chez le client) — ces derniers étant les plus coûteux et à éviter en priorité.",
+      "reference": "PMBOK 8 - Focus Area Coût de la qualité (COQ)"
+    },
+    {
+      "id": "EX5-MT-009",
+      "examen": 5,
+      "type": "matching",
+      "domaine": "D3",
+      "approche": "agile_hybride",
+      "theme": "ia",
+      "scenario": "Associez chaque niveau de gouvernance à son autorité décisionnelle typique dans l'approbation des déploiements IA.",
+      "question": "Associez chaque élément de la colonne de gauche à l'élément correspondant de la colonne de droite.",
+      "colonne_gauche": [
+        {
+          "id": "1",
+          "texte": "Comité technique"
+        },
+        {
+          "id": "2",
+          "texte": "Comité d'éthique de l'IA"
+        },
+        {
+          "id": "3",
+          "texte": "Conseil d'administration"
+        },
+        {
+          "id": "4",
+          "texte": "Chef de projet"
+        }
+      ],
+      "colonne_droite": [
+        {
+          "id": "a",
+          "texte": "Décisions stratégiques majeures à fort impact organisationnel ou réputationnel"
+        },
+        {
+          "id": "b",
+          "texte": "Validation des considérations éthiques et de biais pour les cas sensibles"
+        },
+        {
+          "id": "c",
+          "texte": "Décisions opérationnelles courantes à faible risque"
+        },
+        {
+          "id": "d",
+          "texte": "Validation de la faisabilité et robustesse technique"
+        }
+      ],
+      "correct_matching": {
+        "1": "d",
+        "2": "b",
+        "3": "a",
+        "4": "c"
+      },
+      "explication": "La gouvernance de l'IA doit être proportionnée au niveau de risque : le chef de projet gère le courant, le comité technique valide la robustesse, le comité d'éthique les enjeux sensibles, et le conseil d'administration les décisions à fort impact stratégique.",
+      "reference": "PMBOK 8 - Focus Area Matrice de gouvernance pour l'approbation des déploiements IA"
+    },
+    {
+      "id": "EX5-CS-001",
+      "examen": 5,
+      "type": "case_study",
+      "domaine": "D2",
+      "approche": "predictif",
+      "theme": "ia",
+      "contexte_etendu": "Votre organisation développe un produit SaaS de gestion RH intégrant un module de présélection de CV par IA. Le projet est en phase finale avant lancement commercial dans trois marchés : l'Union Européenne, les États-Unis et le Brésil. Une étude interne récente révèle que l'algorithme, entraîné sur des données historiques de recrutement, reproduit un biais favorisant les candidats ayant fréquenté certaines universités prestigieuses, corrélé indirectement à l'origine socio-économique. Par ailleurs, le calendrier de lancement est fixé dans 6 semaines, coïncidant avec un salon professionnel majeur où le sponsor souhaite annoncer le produit. L'équipe technique estime qu'une correction complète du biais nécessiterait 10 semaines supplémentaires. Le budget de contingence du projet est déjà consommé à 70%.",
+      "sous_questions": [
+        {
+          "id": "EX5-CS-001-Q1",
+          "type": "single_choice",
+          "question": "Quelle est la meilleure action immédiate du chef de projet ?",
+          "options": [
+            {
+              "id": "A",
+              "texte": "Lancer le produit tel quel pour respecter le salon professionnel"
+            },
+            {
+              "id": "B",
+              "texte": "Documenter le biais, informer le Product Owner et le sponsor, et présenter les options (report, MVP sans le module IA concerné, correction partielle prioritaire) avant toute décision de calendrier"
+            },
+            {
+              "id": "C",
+              "texte": "Corriger silencieusement l'algorithme sans en informer la direction pour éviter de retarder le lancement"
+            },
+            {
+              "id": "D",
+              "texte": "Annuler définitivement le module de présélection IA sans évaluation des alternatives"
+            }
+          ],
+          "correct_answers": [
+            "B"
+          ],
+          "explication": "Un biais discriminatoire découvert doit être communiqué transparemment aux décideurs avec options concrètes, ni caché (C), ni ignoré pour respecter un calendrier commercial (A), ni traité par une décision disproportionnée sans évaluation (D)."
+        },
+        {
+          "id": "EX5-CS-001-Q2",
+          "type": "multi_choice",
+          "question": "Compte tenu de la contrainte budgétaire (contingence à 70%) et du calendrier, sélectionnez les DEUX options les plus réalistes à proposer au sponsor :",
+          "options": [
+            {
+              "id": "A",
+              "texte": "Lancer le produit sans le module de présélection IA pour ce cycle, en le réintégrant dans une version ultérieure une fois corrigé"
+            },
+            {
+              "id": "B",
+              "texte": "Reporter le lancement complet de 10 semaines"
+            },
+            {
+              "id": "C",
+              "texte": "Lancer avec le biais connu en informant simplement les clients dans les mentions légales"
+            },
+            {
+              "id": "D",
+              "texte": "Prioriser une correction partielle rapide (réduction significative du biais en 3-4 semaines) avec un engagement de correction complète en version suivante"
+            },
+            {
+              "id": "E",
+              "texte": "Transférer la responsabilité légale au client utilisateur du module"
+            }
+          ],
+          "correct_answers": [
+            "A",
+            "D"
+          ],
+          "nombre_reponses_attendues": 2,
+          "explication": "Ces deux options offrent un compromis réaliste entre le calendrier contraint et l'intégrité éthique — soit retarder uniquement le module concerné, soit une correction rapide substantielle — contrairement à une divulgation insuffisante (C) ou un transfert de responsabilité inapproprié (E). Un report complet de 10 semaines (B) n'est pas nécessairement optimal si le MVP peut être livré sans ce module."
+        },
+        {
+          "id": "EX5-CS-001-Q3",
+          "type": "single_choice",
+          "question": "Pour le marché de l'Union Européenne spécifiquement, quelle considération réglementaire est la plus pertinente dans ce scénario ?",
+          "options": [
+            {
+              "id": "A",
+              "texte": "Le RGPD uniquement, car il s'agit de données personnelles"
+            },
+            {
+              "id": "B",
+              "texte": "L'AI Act européen, qui classe les systèmes de recrutement par IA comme à \"haut risque\" nécessitant des exigences renforcées de gestion des biais et de documentation"
+            },
+            {
+              "id": "C",
+              "texte": "Aucune réglementation spécifique ne s'applique aux outils de recrutement par IA"
+            },
+            {
+              "id": "D",
+              "texte": "Uniquement le droit du travail local de chaque pays membre"
+            }
+          ],
+          "correct_answers": [
+            "B"
+          ],
+          "explication": "Les systèmes d'IA utilisés dans le recrutement sont explicitement classés à haut risque par la réglementation européenne sur l'IA, imposant des obligations spécifiques de gestion des biais, de transparence et de documentation technique, au-delà du seul RGPD."
+        }
+      ],
+      "reference": "PMBOK 8 - Domaine de performance Conformité, Focus Area Biais algorithmique dans le recrutement et réglementation IA à haut risque"
+    },
+    {
+      "id": "EX5-CS-003",
+      "examen": 5,
+      "type": "case_study",
+      "domaine": "D1",
+      "approche": "agile_hybride",
+      "theme": "standard",
+      "contexte_etendu": "Vous dirigez un projet hybride de transformation digitale pour une chaîne de distribution présente dans 8 pays. L'équipe centrale (15 personnes) est basée en France, avec des équipes locales de déploiement dans chaque pays (2-3 personnes chacune). Le projet touche à sa clôture dans 6 semaines. Deux problèmes coexistent : (1) un membre clé de l'équipe centrale, responsable de l'architecture technique, vient d'annoncer son départ pour un poste ailleurs, avec un préavis de 3 semaines seulement, et détient une expertise critique non documentée ; (2) l'équipe locale au Brésil signale un désengagement croissant, se sentant historiquement moins consultée que les autres équipes locales dans les décisions de priorisation, un point jamais formellement traité malgré des remontées répétées en rétrospective.",
+      "sous_questions": [
+        {
+          "id": "EX5-CS-003-Q1",
+          "type": "single_choice",
+          "question": "Concernant le départ du responsable architecture, quelle est la meilleure action immédiate ?",
+          "options": [
+            {
+              "id": "A",
+              "texte": "Accepter la démission et gérer la transition après son départ effectif"
+            },
+            {
+              "id": "B",
+              "texte": "Maximiser le transfert de connaissances structuré dans le temps restant, documenter les décisions d'architecture critiques, et identifier un ou plusieurs relais internes"
+            },
+            {
+              "id": "C",
+              "texte": "Tenter de le convaincre de rester en proposant une contrepartie financière non budgétée"
+            },
+            {
+              "id": "D",
+              "texte": "Recruter en urgence un remplaçant externe sans transfert de connaissances préalable"
+            }
+          ],
+          "correct_answers": [
+            "B"
+          ],
+          "explication": "Un départ avec préavis court et expertise critique non documentée exige un plan de transfert de connaissances immédiat et structuré, plutôt qu'une gestion après-coup (A), une négociation improvisée (C) ou un recrutement sans transition (D)."
+        },
+        {
+          "id": "EX5-CS-003-Q2",
+          "type": "multi_choice",
+          "question": "Concernant le désengagement de l'équipe brésilienne, sélectionnez les DEUX actions les plus appropriées en fin de projet :",
+          "options": [
+            {
+              "id": "A",
+              "texte": "Ignorer la situation car le projet est presque terminé"
+            },
+            {
+              "id": "B",
+              "texte": "Organiser une conversation directe pour comprendre les causes précises du sentiment d'exclusion"
+            },
+            {
+              "id": "C",
+              "texte": "Documenter ce constat comme leçon apprise pour améliorer l'inclusion des équipes locales dans les futurs projets"
+            },
+            {
+              "id": "D",
+              "texte": "Retirer l'équipe brésilienne du reste du projet pour éviter tout conflit en fin de course"
+            },
+            {
+              "id": "E",
+              "texte": "Promettre une réparation immédiate non budgétée pour apaiser la situation rapidement"
+            }
+          ],
+          "correct_answers": [
+            "B",
+            "C"
+          ],
+          "nombre_reponses_attendues": 2,
+          "explication": "Même en fin de projet, une conversation directe pour comprendre les causes et une documentation en leçon apprise sont appropriées et réalistes, contrairement à l'ignorance (A), l'exclusion (D) ou une promesse non fondée (E)."
+        },
+        {
+          "id": "EX5-CS-003-Q3",
+          "type": "single_choice",
+          "question": "Ces deux problèmes combinés (perte de connaissance clé + désengagement d'équipe) affectent quel domaine de performance PMBOK 8 en priorité ?",
+          "options": [
+            {
+              "id": "A",
+              "texte": "Domaine Livraison uniquement, car cela concerne les livrables techniques"
+            },
+            {
+              "id": "B",
+              "texte": "Domaine Équipe, car les deux problèmes touchent la gestion des personnes, la continuité des connaissances et la dynamique d'équipe"
+            },
+            {
+              "id": "C",
+              "texte": "Domaine Conformité uniquement"
+            },
+            {
+              "id": "D",
+              "texte": "Aucun domaine spécifique, ce sont des incidents isolés sans lien avec la performance du projet"
+            }
+          ],
+          "correct_answers": [
+            "B"
+          ],
+          "explication": "Les deux problèmes — transfert de connaissances et inclusion d'équipe — relèvent fondamentalement du Domaine de performance Équipe, qui couvre la gestion des personnes, le développement, la rétention des connaissances et la dynamique de groupe."
+        }
+      ],
+      "reference": "PMBOK 8 - Domaine de performance Équipe, Focus Area Transfert de connaissances et inclusion des équipes distribuées"
+    }
+  ]
+}

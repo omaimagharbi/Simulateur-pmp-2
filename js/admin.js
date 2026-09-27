@@ -15,9 +15,17 @@ if (adminUser) {
   const categorySelect = document.getElementById('f-category');
   categorySelect.innerHTML = Object.keys(CATEGORY_META).filter(c => c !== 'KillMistakes').map(c => `<option value="${c}">${CATEGORY_META[c].label}</option>`).join('');
 
+  // filtre catégorie de la table Questions, éventuellement pré-rempli depuis
+  // le lien "Modifier" d'une carte d'examen sur category.html (?cat=...)
+  const qFilterSelect = document.getElementById('q-filter-category');
+  qFilterSelect.innerHTML += Object.keys(CATEGORY_META).map(c => `<option value="${c}">${CATEGORY_META[c].label}</option>`).join('');
+  const urlParams = new URLSearchParams(window.location.search);
+  const urlCat = urlParams.get('cat');
+  if (urlCat && CATEGORY_META[urlCat]) qFilterSelect.value = urlCat;
+
   // ---------- Tabs ----------
   const tabButtons = document.querySelectorAll('.admin-tabs button');
-  const panels = { questions: document.getElementById('tab-questions'), users: document.getElementById('tab-users'), vouchers: document.getElementById('tab-vouchers'), settings: document.getElementById('tab-settings') };
+  const panels = { questions: document.getElementById('tab-questions'), users: document.getElementById('tab-users'), vouchers: document.getElementById('tab-vouchers'), accounting: document.getElementById('tab-accounting'), settings: document.getElementById('tab-settings') };
   tabButtons.forEach(btn => {
     btn.addEventListener('click', () => {
       tabButtons.forEach(b => b.classList.remove('active'));
@@ -29,7 +37,8 @@ if (adminUser) {
 
   // ---------- Questions tab ----------
   function renderQuestionsTable() {
-    const questions = Store.getAllQuestions();
+    const catFilter = qFilterSelect.value;
+    const questions = Store.getAllQuestions().filter(q => !catFilter || q.category === catFilter);
     document.getElementById('q-count').textContent = `${questions.length} questions`;
     const table = document.getElementById('questions-table');
     table.innerHTML = `
@@ -63,6 +72,7 @@ if (adminUser) {
     });
   }
   renderQuestionsTable();
+  qFilterSelect.addEventListener('change', renderQuestionsTable);
 
   // ---------- Modal (add/edit) ----------
   const overlay = document.getElementById('modal-overlay');
@@ -113,6 +123,17 @@ if (adminUser) {
   });
 
   // ---------- Users tab ----------
+  function accessStatusPill(u) {
+    if (u.role === 'admin') return `<span class="pill good">${t('voucher_status_active')}</span>`;
+    if (u.blocked) return `<span class="pill bad">${t('user_status_blocked')}</span>`;
+    if (!u.unlocked) return `<span class="pill bad">${t('voucher_locked')}</span>`;
+    if (!u.accessExpiresAt) return `<span class="pill good">${t('user_status_unlimited')}</span>`;
+    const daysLeft = Math.ceil((new Date(u.accessExpiresAt) - new Date()) / 86400000);
+    if (daysLeft < 0) return `<span class="pill bad">${t('user_status_expired')}</span>`;
+    if (daysLeft <= 14) return `<span class="pill warn">${t('user_status_expiring', { n: daysLeft })}</span>`;
+    return `<span class="pill good">${t('user_status_active_until', { date: formatDate(u.accessExpiresAt) })}</span>`;
+  }
+
   function renderUsersTable() {
     const users = Store.getUsers();
     const attempts = Store.getAttempts();
@@ -123,28 +144,101 @@ if (adminUser) {
       return { u, count: userAttempts.length, avg, best };
     }).sort((a, b) => b.count - a.count);
 
+    const toReview = rows.filter(r => r.u.role !== 'admin' && r.u.unlocked && !r.u.blocked && r.u.accessExpiresAt && new Date(r.u.accessExpiresAt) < new Date()).length;
+
     document.getElementById('user-stat-boxes').innerHTML = `
       <div class="card stat-box"><div class="n">${Object.keys(users).length}</div><div class="l">${t('registered_accounts')}</div></div>
       <div class="card stat-box"><div class="n">${attempts.length}</div><div class="l">${t('exams_all_accounts')}</div></div>
-      <div class="card stat-box"><div class="n">${attempts.length ? Math.round(attempts.reduce((s,a)=>s+(a.score/a.total)*100,0)/attempts.length) : 0}%</div><div class="l">${t('global_avg_score')}</div></div>`;
+      <div class="card stat-box"><div class="n" style="${toReview ? 'color:var(--bad)' : ''}">${toReview}</div><div class="l">${t('user_stat_to_review')}</div></div>`;
 
     document.getElementById('users-table').innerHTML = `
-      <thead><tr><th>${t('col_user')}</th><th>${t('col_role')}</th><th>${t('voucher_col_access')}</th><th>${t('col_joined')}</th><th>${t('col_exams')}</th><th>${t('col_avg_score')}</th><th>${t('col_best_score')}</th></tr></thead>
+      <thead><tr><th>${t('col_user')}</th><th>${t('col_role')}</th><th>${t('voucher_col_access')}</th><th>${t('col_joined')}</th><th>${t('col_exams')}</th><th>${t('col_avg_score')}</th><th></th></tr></thead>
       <tbody>
         ${rows.map(r => `
           <tr>
             <td>${r.u.username}</td>
             <td>${r.u.role === 'admin' ? `<span class="pill good">${t('role_admin')}</span>` : t('role_user')}</td>
-            <td>${r.u.role === 'admin' || r.u.unlocked ? `<span class="pill good">${t('voucher_status_active')}</span>` : `<span class="pill bad">${t('voucher_locked')}</span>`}</td>
+            <td>${accessStatusPill(r.u)}</td>
             <td>${formatDate(r.u.createdAt)}</td>
             <td>${r.count}</td>
             <td>${r.avg === null ? '—' : `<span class="pill ${r.avg>=65?'good':'bad'}">${r.avg}%</span>`}</td>
-            <td>${r.best === null ? '—' : `${r.best}%`}</td>
+            <td style="white-space:nowrap">
+              ${r.u.role === 'admin' ? '' : `
+                <button class="btn btn-ghost btn-sm" data-extend="${r.u.username}">${t('user_extend_btn')}</button>
+                ${r.u.blocked
+                  ? `<button class="btn btn-ghost btn-sm" data-unblock="${r.u.username}">${t('user_unblock_btn')}</button>`
+                  : `<button class="btn btn-danger btn-sm" data-block="${r.u.username}">${t('user_block_btn')}</button>`}
+              `}
+            </td>
           </tr>`).join('')}
       </tbody>`;
+
+    document.getElementById('users-table').querySelectorAll('[data-block]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        if (!confirm(t('user_block_confirm', { username: btn.dataset.block }))) return;
+        Store.setUserBlocked(btn.dataset.block, true);
+        renderUsersTable();
+        showToast(t('user_blocked'));
+      });
+    });
+    document.getElementById('users-table').querySelectorAll('[data-unblock]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        Store.setUserBlocked(btn.dataset.unblock, false);
+        renderUsersTable();
+        showToast(t('user_unblocked'));
+      });
+    });
+    document.getElementById('users-table').querySelectorAll('[data-extend]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        extendModal.dataset.username = btn.dataset.extend;
+        extendModal.classList.add('show');
+      });
+    });
   }
   renderUsersTable();
   document.querySelector('[data-tab="users"]').addEventListener('click', renderUsersTable);
+
+  // ---------- Add user modal ----------
+  const userModal = document.getElementById('user-modal-overlay');
+  document.getElementById('btn-add-user').addEventListener('click', () => {
+    document.getElementById('user-form').reset();
+    document.getElementById('user-form-error').textContent = '';
+    userModal.classList.add('show');
+  });
+  document.getElementById('user-modal-cancel').addEventListener('click', () => userModal.classList.remove('show'));
+  userModal.addEventListener('click', (e) => { if (e.target === userModal) userModal.classList.remove('show'); });
+
+  document.getElementById('u-unlocked').addEventListener('change', (e) => {
+    document.getElementById('u-months-field').style.display = e.target.checked ? 'block' : 'none';
+  });
+
+  document.getElementById('user-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const username = document.getElementById('u-username').value;
+    const password = document.getElementById('u-password').value;
+    const role = document.getElementById('u-role').value;
+    const unlocked = document.getElementById('u-unlocked').checked;
+    const accessMonths = document.getElementById('u-access-months').value;
+    const res = Store.createUserByAdmin(username, password, { role, unlocked, accessMonths });
+    if (!res.ok) { document.getElementById('user-form-error').textContent = res.error; return; }
+    userModal.classList.remove('show');
+    renderUsersTable();
+    showToast(t('user_created'));
+  });
+
+  // ---------- Extend access modal ----------
+  const extendModal = document.getElementById('extend-modal-overlay');
+  document.getElementById('extend-modal-cancel').addEventListener('click', () => extendModal.classList.remove('show'));
+  extendModal.addEventListener('click', (e) => { if (e.target === extendModal) extendModal.classList.remove('show'); });
+
+  document.getElementById('extend-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const months = document.getElementById('ext-months').value;
+    Store.setUserAccessMonths(extendModal.dataset.username, months);
+    extendModal.classList.remove('show');
+    renderUsersTable();
+    showToast(t('user_access_extended'));
+  });
 
   // ---------- Vouchers tab ----------
   function renderVouchersTable() {
@@ -160,12 +254,13 @@ if (adminUser) {
       <div class="card stat-box"><div class="n">${vouchers.length - activeCount}</div><div class="l">${t('voucher_stat_pending')}</div></div>`;
 
     document.getElementById('vouchers-table').innerHTML = `
-      <thead><tr><th>${t('voucher_col_code')}</th><th>${t('voucher_col_method')}</th><th>${t('voucher_col_status')}</th><th>${t('voucher_col_user')}</th><th>${t('voucher_col_created')}</th><th>${t('voucher_col_note')}</th><th></th></tr></thead>
+      <thead><tr><th>${t('voucher_col_code')}</th><th>${t('voucher_col_method')}</th><th>${t('voucher_col_amount')}</th><th>${t('voucher_col_status')}</th><th>${t('voucher_col_user')}</th><th>${t('voucher_col_created')}</th><th>${t('voucher_col_note')}</th><th></th></tr></thead>
       <tbody>
         ${filtered.map(v => `
           <tr>
             <td style="font-family:var(--font-mono)">${v.code}</td>
             <td>${v.method}</td>
+            <td>${(v.amount || 0).toFixed(2)} TND</td>
             <td>${v.status === 'active' ? `<span class="pill good">${t('voucher_status_active')}</span>` : `<span class="pill">${t('voucher_status_inactive')}</span>`}</td>
             <td>${v.redeemedBy || '—'}</td>
             <td>${formatDate(v.createdAt)}</td>
@@ -197,9 +292,11 @@ if (adminUser) {
   document.getElementById('voucher-form').addEventListener('submit', (e) => {
     e.preventDefault();
     const method = document.getElementById('v-method').value;
+    const amount = document.getElementById('v-amount').value;
+    const accessMonths = document.getElementById('v-access-months').value;
     const validUntil = document.getElementById('v-validity').value || null;
     const note = document.getElementById('v-note').value;
-    const voucher = Store.createVoucher({ method, validUntil, note });
+    const voucher = Store.createVoucher({ method, validUntil, note, amount, accessMonths });
     document.getElementById('voucher-form').reset();
     voucherModal.classList.remove('show');
     document.getElementById('voucher-generated-code').textContent = voucher.code;
@@ -213,6 +310,100 @@ if (adminUser) {
   });
   document.getElementById('voucher-result-close').addEventListener('click', () => voucherResultModal.classList.remove('show'));
   voucherResultModal.addEventListener('click', (e) => { if (e.target === voucherResultModal) voucherResultModal.classList.remove('show'); });
+
+  function getFilteredVouchers() {
+    const methodFilter = document.getElementById('voucher-filter-method').value;
+    const statusFilter = document.getElementById('voucher-filter-status').value;
+    return Store.getVouchers()
+      .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
+      .filter(v => (!methodFilter || v.method === methodFilter) && (!statusFilter || v.status === statusFilter));
+  }
+
+  // Export Excel : un simple CSV s'ouvre nativement dans Excel/Google Sheets,
+  // sans dépendre d'une librairie externe.
+  document.getElementById('btn-export-csv').addEventListener('click', () => {
+    const rows = getFilteredVouchers();
+    const header = [t('voucher_col_code'), t('voucher_col_method'), t('voucher_col_amount'), t('voucher_col_status'), t('voucher_col_user'), t('voucher_col_created'), t('voucher_col_note')];
+    const csvRows = [header, ...rows.map(v => [
+      v.code, v.method, (v.amount || 0).toFixed(2),
+      v.status === 'active' ? t('voucher_status_active') : t('voucher_status_inactive'),
+      v.redeemedBy || '', new Date(v.createdAt).toISOString().slice(0, 10), (v.note || '').replace(/[\r\n]+/g, ' '),
+    ])];
+    const csv = '\uFEFF' + csvRows.map(r => r.map(cell => `"${String(cell).replace(/"/g, '""')}"`).join(';')).join('\r\n');
+    const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = `vouchers_${new Date().toISOString().slice(0, 10)}.csv`;
+    link.click();
+    URL.revokeObjectURL(link.href);
+  });
+
+  // Export PDF : ouvre la boîte d'impression du navigateur sur une page
+  // simplifiée ; le participant choisit "Enregistrer en PDF" comme
+  // destination — pas de librairie PDF externe nécessaire.
+  document.getElementById('btn-export-pdf').addEventListener('click', () => {
+    const rows = getFilteredVouchers();
+    const win = window.open('', '_blank');
+    win.document.write(`
+      <!DOCTYPE html><html><head><meta charset="UTF-8"><title>Vouchers — ${t('brand')}</title>
+      <style>
+        body{ font-family:Arial, sans-serif; padding:2rem; color:#1a1a1a; }
+        h1{ font-size:1.3rem; margin-bottom:1rem; }
+        table{ width:100%; border-collapse:collapse; font-size:.82rem; }
+        th, td{ border:1px solid #ccc; padding:.4rem .6rem; text-align:left; }
+        th{ background:#f0f0f0; }
+      </style></head><body>
+      <h1>${t('voucher_export_pdf_title')} — ${new Date().toLocaleDateString()}</h1>
+      <table>
+        <thead><tr><th>${t('voucher_col_code')}</th><th>${t('voucher_col_method')}</th><th>${t('voucher_col_amount')}</th><th>${t('voucher_col_status')}</th><th>${t('voucher_col_user')}</th><th>${t('voucher_col_created')}</th><th>${t('voucher_col_note')}</th></tr></thead>
+        <tbody>
+          ${rows.map(v => `<tr>
+            <td>${v.code}</td><td>${v.method}</td><td>${(v.amount || 0).toFixed(2)} TND</td>
+            <td>${v.status === 'active' ? t('voucher_status_active') : t('voucher_status_inactive')}</td>
+            <td>${v.redeemedBy || '—'}</td><td>${formatDate(v.createdAt)}</td><td>${escapeHTML(v.note || '')}</td>
+          </tr>`).join('')}
+        </tbody>
+      </table>
+      </body></html>`);
+    win.document.close();
+    win.focus();
+    setTimeout(() => win.print(), 300);
+  });
+
+  // ---------- Accounting (comptabilité) tab ----------
+  function renderAccounting() {
+    // La recette est comptée à la création du voucher (l'admin encaisse
+    // avant de générer le code) ; un voucher annulé ne compte plus.
+    const vouchers = Store.getVouchers();
+    const total = vouchers.reduce((s, v) => s + (v.amount || 0), 0);
+
+    const byMethod = {};
+    vouchers.forEach(v => { byMethod[v.method] = (byMethod[v.method] || 0) + (v.amount || 0); });
+
+    const byMonth = {};
+    vouchers.forEach(v => {
+      const key = v.createdAt.slice(0, 7); // YYYY-MM
+      byMonth[key] = (byMonth[key] || 0) + (v.amount || 0);
+    });
+    const months = Object.keys(byMonth).sort().reverse();
+
+    document.getElementById('accounting-stat-boxes').innerHTML = `
+      <div class="card stat-box"><div class="n">${total.toFixed(2)} TND</div><div class="l">${t('accounting_total')}</div></div>
+      <div class="card stat-box"><div class="n">${vouchers.length}</div><div class="l">${t('accounting_transactions')}</div></div>
+      <div class="card stat-box"><div class="n">${vouchers.length ? (total / vouchers.length).toFixed(2) : '0.00'} TND</div><div class="l">${t('accounting_average')}</div></div>`;
+
+    document.getElementById('accounting-method-table').innerHTML = `
+      <thead><tr><th>${t('voucher_col_method')}</th><th>${t('accounting_col_amount')}</th></tr></thead>
+      <tbody>${Object.keys(byMethod).sort((a, b) => byMethod[b] - byMethod[a]).map(m => `
+        <tr><td>${m}</td><td>${byMethod[m].toFixed(2)} TND</td></tr>`).join('')}
+      </tbody>`;
+
+    document.getElementById('accounting-month-table').innerHTML = `
+      <thead><tr><th>${t('accounting_col_month')}</th><th>${t('accounting_col_amount')}</th></tr></thead>
+      <tbody>${months.map(m => `<tr><td>${m}</td><td>${byMonth[m].toFixed(2)} TND</td></tr>`).join('')}</tbody>`;
+  }
+  renderAccounting();
+  document.querySelector('[data-tab="accounting"]').addEventListener('click', renderAccounting);
 
   // ---------- Settings tab ----------
   document.getElementById('pw-form').addEventListener('submit', (e) => {

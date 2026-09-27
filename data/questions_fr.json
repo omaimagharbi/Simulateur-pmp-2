@@ -560,6 +560,456 @@
     "category": "Hybride"
   },
   {
+    "id": 66,
+    "exam": 2,
+    "num_in_exam": 6,
+    "domain": "People",
+    "approche": "agile_hybride",
+    "text": "Un membre de votre équipe agile propose de raccourcir le daily stand-up à 5 minutes strictes, mais plusieurs membres estiment avoir besoin de plus de temps pour partager le contexte. Quelle est la meilleure action du Scrum Master ?",
+    "options": {
+      "A": "Imposer les 5 minutes sans discussion",
+      "B": "Faciliter une discussion d'équipe sur le format optimal, en testant des ajustements et en évaluant leur efficacité",
+      "C": "Maintenir la durée actuelle indéfiniment",
+      "D": "Laisser chaque membre décider individuellement de sa propre durée de parole"
+    },
+    "answer": "B",
+    "justification": "Le format des cérémonies doit être ajusté collaborativement selon les besoins réels de l'équipe, testé puis évalué, plutôt qu'imposé (A) ou figé (C).",
+    "reference": "PMBOK 8 - Focus Area Optimisation des cérémonies agiles",
+    "category": "Exam"
+  },
+  {
+    "id": 67,
+    "exam": 2,
+    "num_in_exam": 7,
+    "domain": "People",
+    "approche": "agile_hybride",
+    "text": "Un Product Owner change fréquemment d'avis sur la définition du MVP, créant une confusion dans l'équipe de développement. Quelle est la meilleure action ?",
+    "options": {
+      "A": "Continuer selon la dernière version communiquée sans clarification",
+      "B": "Organiser une session de clarification pour documenter formellement une définition stable du MVP, révisable via un processus défini",
+      "C": "Ignorer les changements et poursuivre le plan initial",
+      "D": "Demander à l'équipe de développement de définir elle-même le MVP"
+    },
+    "answer": "B",
+    "justification": "Une instabilité de définition du MVP doit être stabilisée par une clarification documentée avec processus de révision clair, plutôt qu'ignorée dans un sens ou dans l'autre (A, C) ou déléguée de façon inappropriée (D).",
+    "reference": "PMBOK 8 - Focus Area Stabilité de la définition du MVP",
+    "category": "Exam"
+  },
+  {
+    "id": 68,
+    "exam": 2,
+    "num_in_exam": 8,
+    "domain": "People",
+    "approche": "predictif",
+    "text": "Un chef de projet découvre qu'un membre senior de son équipe partage des informations confidentielles du projet avec un ancien collègue travaillant chez un concurrent. Quelle est la meilleure action immédiate ?",
+    "options": {
+      "A": "Ignorer tant qu'aucun dommage concret n'est prouvé",
+      "B": "Vérifier les faits, puis escalader formellement au service conformité/juridique tout en traitant la question avec discrétion",
+      "C": "Confronter publiquement le membre en réunion d'équipe",
+      "D": "Résilier immédiatement son contrat sans procédure"
+    },
+    "answer": "B",
+    "justification": "Une fuite d'information confidentielle suspectée doit être vérifiée puis escaladée formellement au service compétent, jamais traitée publiquement (C) ni de façon disproportionnée sans procédure (D).",
+    "reference": "PMBOK 8 - Focus Area Confidentialité et intégrité professionnelle",
+    "category": "Exam"
+  },
+  {
+    "id": 69,
+    "exam": 2,
+    "num_in_exam": 9,
+    "domain": "People",
+    "approche": "predictif",
+    "text": "Le sponsor de votre projet insiste pour que vous rapportiez directement à lui, contournant le comité de pilotage établi. Quelle est la meilleure action ?",
+    "options": {
+      "A": "Accepter et rapporter uniquement au sponsor",
+      "B": "Clarifier avec le sponsor l'importance de maintenir la gouvernance établie, tout en maintenant une communication ouverte avec lui dans ce cadre",
+      "C": "Refuser tout contact direct avec le sponsor",
+      "D": "Rapporter à la fois au sponsor et au comité sans cohérence"
+    },
+    "answer": "B",
+    "justification": "Un contournement de gouvernance, même demandé par le sponsor, doit être clarifié pour préserver l'intégrité du processus établi, sans pour autant couper la communication (C).",
+    "reference": "PMBOK 8 - Focus Area Intégrité de la gouvernance de projet",
+    "category": "Exam"
+  },
+  {
+    "id": 70,
+    "exam": 2,
+    "num_in_exam": 10,
+    "domain": "People",
+    "approche": "agile_hybride",
+    "text": "Une équipe distribuée sur 3 continents peine à trouver un créneau de daily stand-up convenant à tous les fuseaux horaires. Quelle est la meilleure solution ?",
+    "options": {
+      "A": "Imposer l'horaire du siège social à tous",
+      "B": "Alterner les horaires de réunion équitablement entre les fuseaux, ou passer à un format asynchrone documenté",
+      "C": "Supprimer le daily stand-up",
+      "D": "Diviser l'équipe en sous-groupes qui ne se synchronisent jamais"
+    },
+    "answer": "B",
+    "justification": "Une contrainte de fuseaux horaires multiples doit être résolue par une alternance équitable ou un format asynchrone, plutôt qu'une imposition unilatérale (A) ou une suppression du rituel (C).",
+    "reference": "PMBOK 8 - Focus Area Équité des horaires en équipe distribuée internationale",
+    "category": "Exam"
+  },
+  {
+    "id": 71,
+    "exam": 2,
+    "num_in_exam": 11,
+    "domain": "People",
+    "approche": "agile_hybride",
+    "text": "Un membre junior propose une idée technique innovante en planning, mais le Lead Technique la rejette immédiatement sans explication. Quelle est la meilleure action du Scrum Master ?",
+    "options": {
+      "A": "Ne rien dire, le Lead Technique a l'autorité technique",
+      "B": "Encourager le Lead Technique à expliquer son raisonnement, favorisant un climat où les idées sont examinées sur le fond",
+      "C": "Adopter automatiquement l'idée du junior pour l'encourager",
+      "D": "Discuter du rejet uniquement en privé avec le junior sans impliquer le Lead Technique"
+    },
+    "answer": "B",
+    "justification": "Un rejet sans explication nuit à la sécurité psychologique ; encourager une justification favorise un climat d'examen objectif des idées, indépendamment du statut.",
+    "reference": "PMBOK 8 - Focus Area Sécurité psychologique et examen objectif des idées",
+    "category": "Exam"
+  },
+  {
+    "id": 72,
+    "exam": 2,
+    "num_in_exam": 12,
+    "domain": "People",
+    "approche": "predictif",
+    "text": "Un membre de l'équipe est régulièrement en désaccord avec les décisions de planification mais ne l'exprime jamais en réunion. Quelle est la meilleure action du chef de projet ?",
+    "options": {
+      "A": "Continuer sans chercher à comprendre son silence",
+      "B": "Créer un espace de dialogue individuel pour comprendre son point de vue et encourager une expression plus directe à l'avenir",
+      "C": "Ignorer ses désaccords tant qu'il exécute les tâches",
+      "D": "Le retirer des réunions de planification"
+    },
+    "answer": "B",
+    "justification": "Un désaccord silencieux mérite exploration individuelle et encouragement à l'expression directe, plutôt qu'ignoré (A, C) ou évité par exclusion (D).",
+    "reference": "PMBOK 8 - Focus Area Encouragement de l'expression directe des désaccords",
+    "category": "Exam"
+  },
+  {
+    "id": 73,
+    "exam": 2,
+    "num_in_exam": 13,
+    "domain": "People",
+    "approche": "predictif",
+    "text": "Une réorganisation transfère plusieurs membres de votre équipe vers un nouveau manager sans consultation préalable. Quelle est la meilleure action ?",
+    "options": {
+      "A": "Accepter sans évaluer l'impact sur le projet",
+      "B": "Évaluer l'impact sur le calendrier et négocier une transition avec la nouvelle direction",
+      "C": "Refuser le transfert",
+      "D": "Ignorer la réorganisation"
+    },
+    "answer": "B",
+    "justification": "Un transfert de ressources imposé doit être évalué pour son impact avec négociation d'une transition appropriée, plutôt qu'accepté sans réaction (A) ou ignoré (D).",
+    "reference": "PMBOK 8 - Focus Area Gestion des réaffectations organisationnelles",
+    "category": "Exam"
+  },
+  {
+    "id": 74,
+    "exam": 2,
+    "num_in_exam": 14,
+    "domain": "Process",
+    "approche": "agile_hybride",
+    "text": "Une user story critique reste bloquée car elle dépend d'une décision d'architecture jamais tranchée. Quelle est la meilleure action ?",
+    "options": {
+      "A": "Continuer sans décision architecturale",
+      "B": "Organiser un spike technique dédié pour trancher la décision avant de planifier les stories dépendantes",
+      "C": "Laisser chaque développeur choisir sa propre approche",
+      "D": "Annuler la story"
+    },
+    "answer": "B",
+    "justification": "Une dépendance architecturale bloquante doit être résolue par un spike dédié avant planification, plutôt qu'ignorée (A) ou traitée de façon incohérente (C).",
+    "reference": "PMBOK 8 - Focus Area Spikes techniques et décisions d'architecture",
+    "category": "Exam"
+  },
+  {
+    "id": 75,
+    "exam": 2,
+    "num_in_exam": 15,
+    "domain": "Process",
+    "approche": "agile_hybride",
+    "text": "Un incrément livré fonctionne mais génère des logs excessifs, saturant l'espace de stockage. Quelle est la meilleure action ?",
+    "options": {
+      "A": "Ignorer tant que le système reste fonctionnel",
+      "B": "Optimiser la stratégie de logging (niveaux appropriés, rotation, rétention) et l'intégrer aux standards de qualité",
+      "C": "Supprimer tous les logs",
+      "D": "Augmenter indéfiniment le stockage sans optimisation"
+    },
+    "answer": "B",
+    "justification": "Un excès de logs doit être corrigé par une stratégie de logging optimisée, plutôt qu'ignoré (A) ou compensé par une expansion infinie de stockage (D).",
+    "reference": "PMBOK 8 - Focus Area Gestion des logs et standards de qualité",
+    "category": "Exam"
+  },
+  {
+    "id": 76,
+    "exam": 2,
+    "num_in_exam": 16,
+    "domain": "Process",
+    "approche": "agile_hybride",
+    "text": "Deux user stories apparemment indépendantes révèlent, en cours de développement, un couplage technique fort non anticipé. Quelle est la meilleure action ?",
+    "options": {
+      "A": "Continuer à les traiter séparément malgré le couplage découvert",
+      "B": "Communiquer la découverte au Product Owner, réévaluer conjointement le séquencement et l'estimation des deux stories",
+      "C": "Abandonner l'une des deux stories",
+      "D": "Fusionner arbitrairement les deux stories sans discussion"
+    },
+    "answer": "B",
+    "justification": "Un couplage technique découvert doit être communiqué pour réévaluation collaborative du séquencement, plutôt qu'ignoré (A) ou traité arbitrairement (D).",
+    "reference": "PMBOK 8 - Focus Area Gestion des dépendances techniques découvertes",
+    "category": "Exam"
+  },
+  {
+    "id": 77,
+    "exam": 2,
+    "num_in_exam": 17,
+    "domain": "Process",
+    "approche": "agile_hybride",
+    "text": "Un incrément produit introduit une régression mineure de style visuel non fonctionnelle, détectée juste avant la sprint review. Quelle est la meilleure action ?",
+    "options": {
+      "A": "Annuler la sprint review",
+      "B": "Présenter l'incrément en mentionnant transparemment la régression mineure identifiée, avec un plan de correction au sprint suivant",
+      "C": "Cacher le problème pendant la démonstration",
+      "D": "Retarder indéfiniment la review jusqu'à correction complète"
+    },
+    "answer": "B",
+    "justification": "Une régression mineure découverte tardivement doit être communiquée transparemment lors de la review avec plan de correction, plutôt que cachée (C) ou traitée par une annulation disproportionnée (A, D).",
+    "reference": "PMBOK 8 - Focus Area Transparence lors de la revue de sprint",
+    "category": "Exam"
+  },
+  {
+    "id": 78,
+    "exam": 2,
+    "num_in_exam": 18,
+    "domain": "Process",
+    "approche": "predictif",
+    "text": "Un audit révèle que la matrice RACI de votre projet n'a jamais été formellement validée par les parties prenantes concernées. Quelle est la meilleure action ?",
+    "options": {
+      "A": "Continuer sans validation formelle",
+      "B": "Faire valider formellement la matrice RACI par toutes les parties prenantes concernées, corrigeant toute ambiguïté identifiée",
+      "C": "Supprimer la matrice RACI",
+      "D": "Créer une nouvelle matrice sans consultation"
+    },
+    "answer": "B",
+    "justification": "Une matrice RACI non validée doit être formellement validée par les parties prenantes concernées pour éliminer les ambiguïtés, plutôt qu'ignorée (A) ou recréée sans consultation (D).",
+    "reference": "PMBOK 8 - Focus Area Validation formelle de la matrice RACI",
+    "category": "Exam"
+  },
+  {
+    "id": 79,
+    "exam": 2,
+    "num_in_exam": 19,
+    "domain": "Process",
+    "approche": "predictif",
+    "text": "Une revue de risques révèle qu'un risque technique majeur a été correctement atténué, mais que le coût de cette atténuation n'a jamais été formellement intégré au budget. Quelle est la meilleure action ?",
+    "options": {
+      "A": "Continuer sans ajustement budgétaire formel",
+      "B": "Documenter formellement ce coût dans le budget via le processus de contrôle des changements",
+      "C": "Ignorer le coût tant que le budget global reste positif",
+      "D": "Réduire d'autres postes sans analyse pour compenser"
+    },
+    "answer": "B",
+    "justification": "Un coût d'atténuation non intégré formellement doit être documenté via le contrôle des changements pour une traçabilité budgétaire correcte, plutôt qu'ignoré (A, C) ou compensé sans analyse (D).",
+    "reference": "PMBOK 8 - Focus Area Intégration budgétaire des coûts de mitigation des risques",
+    "category": "Exam"
+  },
+  {
+    "id": 80,
+    "exam": 2,
+    "num_in_exam": 20,
+    "domain": "Process",
+    "approche": "predictif",
+    "text": "Un fournisseur propose de livrer un composant en avance, mais cela nécessiterait une réception anticipée non planifiée dans le calendrier de stockage. Quelle est la meilleure action ?",
+    "options": {
+      "A": "Refuser systématiquement toute livraison anticipée",
+      "B": "Évaluer la faisabilité logistique de la réception anticipée avant d'accepter, en coordination avec les équipes concernées",
+      "C": "Accepter automatiquement sans vérification logistique",
+      "D": "Ignorer la proposition sans réponse au fournisseur"
+    },
+    "answer": "B",
+    "justification": "Une livraison anticipée proposée doit être évaluée pour sa faisabilité logistique réelle avant acceptation, plutôt que refusée par principe (A) ou acceptée sans vérification (C).",
+    "reference": "PMBOK 8 - Focus Area Évaluation logistique des livraisons anticipées",
+    "category": "Exam"
+  },
+  {
+    "id": 81,
+    "exam": 2,
+    "num_in_exam": 21,
+    "domain": "Process",
+    "approche": "predictif",
+    "text": "Une revue de qualité révèle que les critères d'acceptation de plusieurs livrables ont été interprétés différemment par l'équipe et le client. Quelle est la meilleure action ?",
+    "options": {
+      "A": "Continuer avec l'interprétation de l'équipe",
+      "B": "Clarifier formellement avec le client l'interprétation correcte, et ajuster les critères d'acceptation futurs pour éviter la récurrence",
+      "C": "Adopter automatiquement l'interprétation du client sans discussion",
+      "D": "Ignorer la divergence tant qu'aucun litige n'est formalisé"
+    },
+    "answer": "B",
+    "justification": "Une divergence d'interprétation des critères d'acceptation doit être clarifiée formellement avec le client et corrigée pour l'avenir, plutôt qu'imposée unilatéralement (A, C) ou ignorée (D).",
+    "reference": "PMBOK 8 - Focus Area Clarification des critères d'acceptation",
+    "category": "Exam"
+  },
+  {
+    "id": 82,
+    "exam": 2,
+    "num_in_exam": 22,
+    "domain": "Process",
+    "approche": "predictif",
+    "text": "Un changement de fournisseur de composants entraîne un délai d'intégration de deux semaines non anticipé au calendrier. Quelle est la meilleure action ?",
+    "options": {
+      "A": "Absorber le délai sans communication",
+      "B": "Documenter l'impact calendaire, communiquer aux parties prenantes et évaluer des options de compression si possible",
+      "C": "Revenir à l'ancien fournisseur sans évaluation",
+      "D": "Ignorer le délai jusqu'à ce qu'il affecte un jalon critique"
+    },
+    "answer": "B",
+    "justification": "Un délai d'intégration non anticipé doit être documenté et communiqué avec évaluation d'options de compression, plutôt qu'absorbé silencieusement (A, D) ou traité par un retour en arrière précipité (C).",
+    "reference": "PMBOK 8 - Focus Area Impact calendaire des changements de fournisseur",
+    "category": "Exam"
+  },
+  {
+    "id": 83,
+    "exam": 2,
+    "num_in_exam": 23,
+    "domain": "Process",
+    "approche": "predictif",
+    "text": "Une analyse de risque révèle qu'un risque jugé mineur initialement présente en réalité un potentiel d'impact catastrophique en cas de matérialisation combinée avec un autre risque. Quelle est la meilleure action ?",
+    "options": {
+      "A": "Continuer à traiter les deux risques séparément selon leur évaluation individuelle initiale",
+      "B": "Réaliser une analyse de corrélation et développer une stratégie de réponse tenant compte de l'impact combiné potentiel",
+      "C": "Ignorer la corrélation car chaque risque reste individuellement mineur",
+      "D": "Traiter uniquement le risque jugé le plus probable"
+    },
+    "answer": "B",
+    "justification": "Une corrélation de risques créant un impact combiné catastrophique doit être analysée spécifiquement, plutôt que traitée isolément (A, D) ou ignorée (C).",
+    "reference": "PMBOK 8 - Focus Area Analyse de corrélation des risques",
+    "category": "Exam"
+  },
+  {
+    "id": 84,
+    "exam": 2,
+    "num_in_exam": 24,
+    "domain": "Business",
+    "approche": "agile_hybride",
+    "text": "Un changement de réglementation sur la publicité en ligne impose de nouvelles mentions obligatoires dans votre produit, affectant plusieurs écrans déjà développés. Quelle est la meilleure action ?",
+    "options": {
+      "A": "Ignorer la réglementation jusqu'à un contrôle formel",
+      "B": "Prioriser dans le backlog les modifications de conformité nécessaires, en collaboration avec le juridique",
+      "C": "Retarder indéfiniment le lancement du produit",
+      "D": "Implémenter une version minimale non conforme en attendant"
+    },
+    "answer": "B",
+    "justification": "Une nouvelle exigence réglementaire doit être priorisée dans le backlog avec collaboration juridique appropriée, plutôt qu'ignorée (A) ou traitée par un retard disproportionné (C) ou une non-conformité (D).",
+    "reference": "PMBOK 8 - Domaine de performance Conformité, Focus Area Conformité publicitaire réglementaire",
+    "category": "Exam"
+  },
+  {
+    "id": 85,
+    "exam": 2,
+    "num_in_exam": 25,
+    "domain": "Business",
+    "approche": "agile_hybride",
+    "text": "Une étude de marché révèle qu'un segment d'utilisateurs initialement jugé mineur croît rapidement et représente désormais une opportunité stratégique significative. Quelle est la meilleure action ?",
+    "options": {
+      "A": "Continuer selon les priorités initiales sans ajustement",
+      "B": "Partager l'étude avec le Product Owner pour évaluer une reprioritisation du backlog vers ce segment",
+      "C": "Réorienter unilatéralement toute la roadmap",
+      "D": "Ignorer l'étude car elle contredit la stratégie initiale"
+    },
+    "answer": "B",
+    "justification": "Une opportunité de marché émergente doit être partagée pour une évaluation collaborative de reprioritisation, plutôt qu'ignorée (A, D) ou traitée par une réorientation unilatérale (C).",
+    "reference": "PMBOK 8 - Focus Area Réévaluation stratégique des segments de marché émergents",
+    "category": "Exam"
+  },
+  {
+    "id": 86,
+    "exam": 2,
+    "num_in_exam": 26,
+    "domain": "Business",
+    "approche": "agile_hybride",
+    "text": "Un partenaire technologique clé annonce une fusion avec un concurrent de votre organisation, créant une incertitude sur la continuité du partenariat. Quelle est la meilleure action ?",
+    "options": {
+      "A": "Ignorer l'annonce tant qu'aucun changement concret n'est appliqué",
+      "B": "Alerter le sponsor et explorer des options de diversification pour réduire la dépendance à ce partenaire",
+      "C": "Rompre immédiatement le partenariat",
+      "D": "Attendre passivement les développements"
+    },
+    "answer": "B",
+    "justification": "Une incertitude stratégique sur un partenaire clé doit être signalée avec exploration proactive d'alternatives, plutôt qu'ignorée (A, D) ou traitée par une rupture précipitée (C).",
+    "reference": "PMBOK 8 - Focus Area Gestion de l'incertitude des partenariats stratégiques",
+    "category": "Exam"
+  },
+  {
+    "id": 87,
+    "exam": 2,
+    "num_in_exam": 27,
+    "domain": "Business",
+    "approche": "predictif",
+    "text": "Un audit de conformité révèle que votre projet n'a jamais vérifié si ses pratiques respectent une nouvelle norme d'accessibilité numérique applicable à son secteur. Quelle est la meilleure action ?",
+    "options": {
+      "A": "Continuer sans vérification tant qu'aucun contrôle n'est effectué",
+      "B": "Évaluer l'écart de conformité et planifier les actions correctives nécessaires avant l'échéance applicable",
+      "C": "Ignorer la norme car elle n'était pas en vigueur au démarrage du projet",
+      "D": "Attendre une sanction avant d'agir"
+    },
+    "answer": "B",
+    "justification": "Une nouvelle norme d'accessibilité applicable doit être évaluée avec plan d'action correctif avant échéance, plutôt qu'ignorée (A, C, D).",
+    "reference": "PMBOK 8 - Domaine de performance Conformité, Focus Area Normes d'accessibilité numérique",
+    "category": "Exam"
+  },
+  {
+    "id": 88,
+    "exam": 2,
+    "num_in_exam": 28,
+    "domain": "Business",
+    "approche": "predictif",
+    "text": "Une revue de gouvernance révèle que le business case de votre projet n'a jamais été comparé aux résultats réels obtenus à mi-parcours. Quelle est la meilleure action ?",
+    "options": {
+      "A": "Continuer sans comparaison, le business case ayant été approuvé initialement",
+      "B": "Réaliser une comparaison formelle entre projections initiales et résultats réels, présentée au comité de gouvernance",
+      "C": "Ignorer la comparaison tant que le projet reste dans les délais",
+      "D": "Réviser unilatéralement le business case sans validation"
+    },
+    "answer": "B",
+    "justification": "Un manque de comparaison entre projections et résultats réels doit être corrigé par une analyse formelle présentée à la gouvernance, plutôt qu'ignoré (A, C) ou révisé sans validation (D).",
+    "reference": "PMBOK 8 - Focus Area Comparaison du business case aux résultats réels",
+    "category": "Exam"
+  },
+  {
+    "id": 89,
+    "exam": 2,
+    "num_in_exam": 29,
+    "domain": "Business",
+    "approche": "predictif",
+    "text": "Un changement de taux de change défavorable affecte significativement le budget d'un projet international impliquant des paiements en devise étrangère. Quelle est la meilleure action ?",
+    "options": {
+      "A": "Absorber l'impact sans analyse ni communication",
+      "B": "Quantifier l'impact, explorer des options de couverture de change, et communiquer aux décideurs financiers",
+      "C": "Suspendre tous les paiements internationaux",
+      "D": "Ignorer le changement tant que le budget global reste positif"
+    },
+    "answer": "B",
+    "justification": "Un impact de taux de change significatif doit être quantifié avec exploration de couverture et communication aux décideurs, plutôt qu'absorbé silencieusement (A, D) ou traité par une suspension disproportionnée (C).",
+    "reference": "PMBOK 8 - Focus Area Gestion du risque de change",
+    "category": "Exam"
+  },
+  {
+    "id": 90,
+    "exam": 2,
+    "num_in_exam": 30,
+    "domain": "Business",
+    "approche": "predictif",
+    "text": "Une revue de portefeuille révèle que votre projet partage une ressource critique avec un autre projet, sans coordination formelle établie entre les deux chefs de projet. Quelle est la meilleure action ?",
+    "options": {
+      "A": "Continuer à utiliser la ressource sans coordination",
+      "B": "Établir une coordination formelle avec l'autre chef de projet et le PMO pour planifier l'allocation partagée de la ressource",
+      "C": "Réclamer l'usage exclusif de la ressource sans négociation",
+      "D": "Ignorer le partage tant qu'aucun conflit n'est survenu"
+    },
+    "answer": "B",
+    "justification": "Un partage de ressource non coordonné doit être formalisé avec l'autre projet et le PMO, plutôt qu'ignoré (A, D) ou traité par une réclamation unilatérale (C).",
+    "reference": "PMBOK 8 - Focus Area Coordination des ressources partagées inter-projets",
+    "category": "Exam"
+  },
+  {
     "id": 36,
     "exam": 3,
     "num_in_exam": 1,

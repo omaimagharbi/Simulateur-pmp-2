@@ -31,7 +31,6 @@
       <div class="tab-switch">
         <button id="tab-login" class="active" data-i18n="tab_login">Connexion</button>
         <button id="tab-signup" data-i18n="tab_signup">Créer un compte</button>
-        <button id="tab-forgot" data-i18n="tab_forgot">Mot de passe oublié</button>
       </div>
 
       <form id="login-form">
@@ -42,6 +41,7 @@
         <div class="field">
           <label for="login-password" data-i18n="field_password">Mot de passe</label>
           <input id="login-password" type="password" autocomplete="current-password" required>
+          <a href="#" id="forgot-link" class="forgot-link" data-i18n="forgot_password_link">Mot de passe oublié ?</a>
         </div>
         <div class="error-text" id="login-error"></div>
         <button type="submit" class="btn btn-primary btn-block" data-i18n="btn_login">Se connecter</button>
@@ -67,6 +67,7 @@
       </form>
 
       <form id="forgot-form" style="display:none">
+        <a href="#" id="back-to-login-link" class="forgot-link" style="display:inline-block; margin-bottom:1rem" data-i18n="back_to_login_link">← Retour à la connexion</a>
         <div class="field">
           <label for="forgot-username" data-i18n="field_username">Nom d'utilisateur</label>
           <input id="forgot-username" type="text" autocomplete="username" required>
@@ -104,23 +105,25 @@
     return (u.role !== 'admin' && !u.unlocked) ? 'activate-voucher.html' : 'dashboard.html';
   }
 
+  const tabSwitch = document.querySelector('.tab-switch');
   const tabLogin = document.getElementById('tab-login');
   const tabSignup = document.getElementById('tab-signup');
-  const tabForgot = document.getElementById('tab-forgot');
   const loginForm = document.getElementById('login-form');
   const signupForm = document.getElementById('signup-form');
   const forgotForm = document.getElementById('forgot-form');
 
   function showTab(tab) {
-    [tabLogin, tabSignup, tabForgot].forEach(b => b.classList.remove('active'));
+    [tabLogin, tabSignup].forEach(b => b.classList.remove('active'));
     [loginForm, signupForm, forgotForm].forEach(f => f.style.display = 'none');
+    tabSwitch.style.display = tab === 'forgot' ? 'none' : 'flex';
     if (tab === 'login') { tabLogin.classList.add('active'); loginForm.style.display = 'block'; }
     if (tab === 'signup') { tabSignup.classList.add('active'); signupForm.style.display = 'block'; }
-    if (tab === 'forgot') { tabForgot.classList.add('active'); forgotForm.style.display = 'block'; }
+    if (tab === 'forgot') { forgotForm.style.display = 'block'; }
   }
   tabLogin.addEventListener('click', () => showTab('login'));
   tabSignup.addEventListener('click', () => showTab('signup'));
-  tabForgot.addEventListener('click', () => showTab('forgot'));
+  document.getElementById('forgot-link').addEventListener('click', (e) => { e.preventDefault(); showTab('forgot'); });
+  document.getElementById('back-to-login-link').addEventListener('click', (e) => { e.preventDefault(); showTab('login'); });
 
   loginForm.addEventListener('submit', (e) => {
     e.preventDefault();

@@ -16,6 +16,52 @@ const DB_KEYS = {
   vouchers: 'pmp_vouchers',
 };
 
+// ---------- Support des formats avancés ECO 2026 (multi_choice / matching / case_study) ----------
+// Les questions "historiques" sont { options:{A..D}, answer:"B", domain:"People" }.
+// Les nouvelles questions (banque pmp_question_bank.json) utilisent { options:[{id,texte}],
+// correct_answers:[...], domaine:"D1", scenario+question }. On normalise tout vers un format
+// unique que quiz.js / results.js savent afficher, quel que soit le type.
+const DOMAINE_MAP = { D1: 'People', D2: 'Process', D3: 'Business' };
+
+function normalizeQuestion(raw) {
+  const q = { ...raw };
+  if (!q.type) q.type = 'single_choice';
+  if (Array.isArray(q.options)) {
+    const dict = {};
+    q.options.forEach(o => { dict[o.id] = o.texte; });
+    q.options = dict;
+  }
+  if (!q.text && (q.scenario || q.question)) {
+    q.text = [q.scenario, q.question].filter(Boolean).join(' ');
+  }
+  if (!q.domain && q.domaine) q.domain = DOMAINE_MAP[q.domaine] || q.domaine;
+  if (!q.category) q.category = 'Exam';
+  if (!q.justification && q.explication) q.justification = q.explication;
+  if (q.type === 'single_choice' && !q.answer && Array.isArray(q.correct_answers)) {
+    q.answer = q.correct_answers[0];
+  }
+  if (q.type === 'multi_choice' && !q.correct_answers && q.answer) {
+    q.correct_answers = [q.answer];
+  }
+  return q;
+}
+
+// Une étude de cas (case_study) n'est pas répondue en un seul clic : elle est éclatée en
+// plusieurs sous-questions "atomiques" qui héritent du contexte étendu, pour rester
+// compatibles avec le moteur de quiz existant (une carte = une réponse = un score).
+function expandQuestion(raw) {
+  const q = normalizeQuestion(raw);
+  if (q.type !== 'case_study' || !Array.isArray(q.sous_questions)) return [q];
+  return q.sous_questions.map((sub, i) => {
+    const child = normalizeQuestion({ ...sub, examen: q.examen, exam: q.exam, domaine: q.domaine, domain: q.domain, approche: q.approche, category: q.category, reference: q.reference });
+    child.id = (typeof q.id === 'number' ? q.id : 9000 + i) * 1000 + (i + 1);
+    child.contexte_etendu = q.contexte_etendu;
+    child.case_group_id = q.id;
+    child.case_group_label = `${i + 1}/${q.sous_questions.length}`;
+    return child;
+  });
+}
+
 function readJSON(key, fallback) {
   try {
     const raw = localStorage.getItem(key);
@@ -48,7 +94,7 @@ function seedDefaults() {
   const users = readJSON(DB_KEYS.users, null);
   if (!users) {
     writeJSON(DB_KEYS.users, {
-      admin: { username: 'admin', passwordHash: simpleHash('admin123'), recoveryHash: simpleHash('admin-secret'), role: 'admin', unlocked: true, createdAt: new Date().toISOString() },
+      admin: { username: 'admin', passwordHash: simpleHash('admin123'), recoveryHash: simpleHash('admin-secret'), role: 'admin', unlocked: true, blocked: false, accessMonths: null, accessExpiresAt: null, createdAt: new Date().toISOString() },
     });
   }
   ['fr', 'en'].forEach(lang => {
@@ -79,8 +125,78 @@ const Store = {
       recoveryHash: simpleHash(recoverySecret.trim().toLowerCase()),
       role: 'user',
       unlocked: false,
+      blocked: false,
+      accessMonths: null,
+      accessExpiresAt: null,
       createdAt: new Date().toISOString(),
     };
+    writeJSON(DB_KEYS.users, users);
+    return { ok: true };
+  },
+
+  // Création manuelle d'un compte par l'admin (pas de mot secret nécessaire :
+  // l'admin peut toujours réinitialiser le mot de passe lui-même).
+  createUserByAdmin(username, password, { role, unlocked, accessMonths } = {}) {
+    const users = this.getUsers();
+    const key = username.trim().toLowerCase();
+    if (!key) return { ok: false, error: t('field_username') };
+    if (users[key]) return { ok: false, error: getLang() === 'en' ? 'This username already exists.' : "Ce nom d'utilisateur existe déjà." };
+    if (password.length < 4) return { ok: false, error: t('field_password_hint') };
+    const months = Number(accessMonths) || null;
+    users[key] = {
+      username: key,
+      passwordHash: simpleHash(password),
+      recoveryHash: simpleHash(Math.random().toString(36).slice(2, 10)),
+      role: role === 'admin' ? 'admin' : 'user',
+      unlocked: !!unlocked,
+      blocked: false,
+      accessMonths: months,
+      accessExpiresAt: (unlocked && months) ? this._addMonths(new Date(), months).toISOString() : null,
+      createdAt: new Date().toISOString(),
+    };
+    writeJSON(DB_KEYS.users, users);
+    return { ok: true };
+  },
+
+  _addMonths(date, months) {
+    const d = new Date(date);
+    d.setMonth(d.getMonth() + Number(months));
+    return d;
+  },
+
+  // Blocage/déblocage manuel par l'admin, indépendant de la durée d'accès —
+  // coupe (ou restaure) l'accès aux examens immédiatement.
+  setUserBlocked(username, blocked) {
+    const users = this.getUsers();
+    const key = username.trim().toLowerCase();
+    if (!users[key]) return { ok: false };
+    users[key].blocked = !!blocked;
+    writeJSON(DB_KEYS.users, users);
+    return { ok: true };
+  },
+
+  // Annule l'accès (reverrouille le compte) sans le bloquer explicitement —
+  // l'utilisateur pourra ressaisir un nouveau voucher.
+  revokeUserAccess(username) {
+    const users = this.getUsers();
+    const key = username.trim().toLowerCase();
+    if (!users[key]) return { ok: false };
+    users[key].unlocked = false;
+    users[key].accessExpiresAt = null;
+    writeJSON(DB_KEYS.users, users);
+    return { ok: true };
+  },
+
+  // Prolonge/redéfinit manuellement la durée d'accès d'un utilisateur (mois).
+  setUserAccessMonths(username, months) {
+    const users = this.getUsers();
+    const key = username.trim().toLowerCase();
+    if (!users[key]) return { ok: false };
+    const n = Number(months) || null;
+    users[key].unlocked = true;
+    users[key].blocked = false;
+    users[key].accessMonths = n;
+    users[key].accessExpiresAt = n ? this._addMonths(new Date(), n).toISOString() : null;
     writeJSON(DB_KEYS.users, users);
     return { ok: true };
   },
@@ -152,7 +268,7 @@ const Store = {
   requireUnlocked(redirectTo) {
     const u = this.requireAuth('index.html');
     if (!u) return null;
-    if (u.role !== 'admin' && !u.unlocked) { window.location.href = redirectTo || 'activate-voucher.html'; return null; }
+    if (u.role !== 'admin' && (u.blocked || !u.unlocked)) { window.location.href = redirectTo || 'activate-voucher.html'; return null; }
     return u;
   },
 
@@ -170,7 +286,10 @@ const Store = {
     Object.values(overrides).forEach(q => {
       if (!base.some(b => b.id === q.id) && !deleted.has(q.id)) merged.push(q);
     });
-    return merged.sort((a, b) => a.id - b.id);
+    // expandQuestion normalise chaque question et éclate les case_study en sous-questions ;
+    // le résultat (un seul niveau, pas de tableaux imbriqués) est ce que le reste de l'app consomme.
+    const expanded = merged.flatMap(expandQuestion);
+    return expanded.sort((a, b) => a.id - b.id);
   },
 
   upsertQuestion(question) {
@@ -259,12 +378,14 @@ const Store = {
 
   getVouchers() { return readJSON(DB_KEYS.vouchers, []); },
 
-  createVoucher({ method, validUntil, note }) {
+  createVoucher({ method, validUntil, note, amount, accessMonths }) {
     const vouchers = this.getVouchers();
     const voucher = {
       id: 'v_' + Date.now() + '_' + Math.random().toString(36).slice(2, 7),
       code: this.generateVoucherCode(),
       method: method || 'Autre',
+      amount: Number(amount) || 0,
+      accessMonths: Number(accessMonths) || null,
       note: (note || '').trim(),
       status: 'inactive',
       createdAt: new Date().toISOString(),
@@ -306,7 +427,10 @@ const Store = {
     const key = username.trim().toLowerCase();
     if (users[key]) {
       users[key].unlocked = true;
+      users[key].blocked = false;
       users[key].voucherCode = code;
+      users[key].accessMonths = voucher.accessMonths || null;
+      users[key].accessExpiresAt = voucher.accessMonths ? this._addMonths(new Date(), voucher.accessMonths).toISOString() : null;
       writeJSON(DB_KEYS.users, users);
     }
     return { ok: true };

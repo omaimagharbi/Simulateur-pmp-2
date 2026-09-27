@@ -103,7 +103,26 @@ const CHATBOT_KB = [
   },
 ];
 
+// Détecte si un message est plutôt français ou anglais, indépendamment de la
+// langue d'affichage du site — le chatbot répond dans la langue de la
+// question posée, pas dans celle du bouton FR/EN en haut à droite.
+function detectMessageLang(text) {
+  const norm = ' ' + text.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '') + ' ';
+  const frSignals = [' le ', ' la ', ' les ', ' un ', ' une ', ' des ', ' est ', ' es ', ' ai ', ' quel ', ' quelle ',
+    ' comment ', ' pourquoi ', ' avec ', ' dans ', ' pour ', ' qu ', ' cest ', ' etre ', ' avoir ', ' que ',
+    ' qui ', ' tu ', ' je ', ' vous ', ' peux ', ' peut ', ' aide ', ' merci ', ' bonjour ', ' quest'];
+  const enSignals = [' the ', ' is ', ' are ', ' what ', ' how ', ' why ', ' with ', ' in ', ' for ', ' does ',
+    ' do ', ' you ', ' can ', ' help ', ' thanks ', ' hello ', ' hi ', ' please ', ' i ', ' my '];
+  const hasAccents = /[éèêëàâçîïôûù]/.test(text.toLowerCase());
+  let frScore = hasAccents ? 1 : 0;
+  let enScore = 0;
+  frSignals.forEach(s => { if (norm.includes(s)) frScore++; });
+  enSignals.forEach(s => { if (norm.includes(s)) enScore++; });
+  return enScore > frScore ? 'en' : 'fr'; // égalité ou signal insuffisant → français par défaut
+}
+
 function chatbotAnswer(message) {
+  const lang = detectMessageLang(message);
   const norm = message
     .toLowerCase()
     .normalize('NFD').replace(/[\u0300-\u036f]/g, ''); // enlève les accents pour un matching plus robuste
@@ -121,7 +140,10 @@ function chatbotAnswer(message) {
   // Recherche complémentaire dans les livres PMP uploadés par l'admin, s'il y en a.
   const bookMatches = (typeof searchBooks === 'function') ? searchBooks(message, 2) : [];
 
-  const mainText = best ? (getLang() === 'en' ? best.en : best.fr) : (bookMatches.length ? null : t('chatbot_fallback'));
+  const fallback = lang === 'en'
+    ? "I don't have a pre-programmed answer for that yet. Try keywords like: EVM, CPI, SPI, Agile, Scrum, Sprint, critical path, stakeholders, risk, PMI domains, PDU."
+    : "Je n'ai pas de réponse pré-programmée pour cette question. Essaie avec des mots-clés comme : EVM, CPI, SPI, Agile, Scrum, Sprint, chemin critique, parties prenantes, risque, domaines PMI, PDU.";
+  const mainText = best ? (lang === 'en' ? best.en : best.fr) : (bookMatches.length ? null : fallback);
 
   return { text: mainText, sources: bookMatches };
 }

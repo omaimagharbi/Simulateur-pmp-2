@@ -11,8 +11,8 @@
 
 <div class="page" style="max-width:480px; margin:3rem auto">
   <div class="eyebrow" data-i18n="voucher_eyebrow">Accès examens</div>
-  <h1 data-i18n="voucher_title">Active ton accès</h1>
-  <p style="color:var(--ink-700); font-size:1.02rem; margin-bottom:1.8rem" data-i18n="voucher_desc">
+  <h1 id="voucher-heading" data-i18n="voucher_title">Active ton accès</h1>
+  <p id="voucher-description" style="color:var(--ink-700); font-size:1.02rem; margin-bottom:1.8rem" data-i18n="voucher_desc">
     Ton compte est créé, mais l'accès aux examens blancs est verrouillé. Saisis le code reçu après ton paiement pour le débloquer.
   </p>
 
@@ -25,7 +25,7 @@
     <button type="submit" class="btn btn-primary btn-block" data-i18n="voucher_submit">Débloquer mon accès</button>
   </form>
 
-  <p style="color:var(--ink-600); font-size:.86rem; margin-top:1.2rem" data-i18n="voucher_help">
+  <p id="voucher-help" style="color:var(--ink-600); font-size:.86rem; margin-top:1.2rem" data-i18n="voucher_help">
     Pas encore payé ou code perdu ? Contacte l'organisateur de ta session pour recevoir ton code.
   </p>
 </div>
@@ -39,9 +39,16 @@
   const vUser = Store.requireAuth('index.html');
   if (vUser) {
     renderTopbar(null);
-    // Un compte déjà débloqué (ou admin) n'a rien à faire ici.
-    if (vUser.role === 'admin' || vUser.unlocked) {
+    // Un compte débloqué et non bloqué n'a rien à faire ici.
+    if (vUser.role === 'admin' || (vUser.unlocked && !vUser.blocked)) {
       window.location.href = 'dashboard.html';
+    } else if (vUser.blocked) {
+      // Accès coupé manuellement par l'admin : un nouveau code ne change rien,
+      // seul l'admin peut débloquer — on l'indique clairement.
+      document.getElementById('voucher-heading').textContent = t('voucher_blocked_title');
+      document.getElementById('voucher-description').textContent = t('voucher_blocked_desc');
+      document.getElementById('voucher-form').style.display = 'none';
+      document.getElementById('voucher-help').style.display = 'none';
     } else {
       document.getElementById('voucher-form').addEventListener('submit', (e) => {
         e.preventDefault();

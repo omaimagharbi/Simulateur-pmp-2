@@ -33,23 +33,61 @@ if (resultsUser) {
     drawRing('ring-svg', pct);
     document.querySelector('#ring-num').innerHTML = `<span>${t('score_label')}</span>${pct}%`;
 
+    // Rendu de la correction, spécifique à chaque type de question.
+    function reviewOptionsSingle(q, a) {
+      const letters = Object.keys(q.options).filter(l => l === a.correctAnswer || l === a.chosen);
+      return `<div class="options">
+        ${letters.map(letter => {
+          let cls = '';
+          if (letter === a.correctAnswer) cls = 'correct';
+          else if (letter === a.chosen && letter !== a.correctAnswer) cls = 'incorrect';
+          return `<div class="option ${cls}"><span class="letter">${letter}</span><span class="option-text">${q.options[letter]}</span></div>`;
+        }).join('')}
+      </div>`;
+    }
+    function reviewOptionsMulti(q, a) {
+      const chosen = Array.isArray(a.chosen) ? a.chosen : [];
+      const correct = (q.correct_answers || []);
+      return `<div class="options">
+        ${Object.keys(q.options).map(letter => {
+          const isCorrect = correct.includes(letter);
+          const isChosen = chosen.includes(letter);
+          let cls = '';
+          if (isCorrect) cls = 'correct';
+          else if (isChosen) cls = 'incorrect';
+          if (!isCorrect && !isChosen) return '';
+          return `<div class="option ${cls}"><span class="letter">${letter}</span><span class="option-text">${q.options[letter]}</span></div>`;
+        }).join('')}
+      </div>`;
+    }
+    function reviewMatching(q, a) {
+      const chosen = a.chosen && typeof a.chosen === 'object' ? a.chosen : {};
+      return `<div class="options matching">
+        ${q.colonne_gauche.map(l => {
+          const yourId = chosen[l.id];
+          const correctId = q.correct_matching[l.id];
+          const yourTxt = q.colonne_droite.find(r => r.id === yourId)?.texte || t('not_answered');
+          const cls = yourId === correctId ? 'correct' : 'incorrect';
+          return `<div class="option ${cls}"><span class="option-text"><b>${l.texte}</b> → ${yourTxt}${yourId !== correctId ? ` (${t('correctAnswer') || 'correct'}: ${q.colonne_droite.find(r => r.id === correctId)?.texte})` : ''}</span></div>`;
+        }).join('')}
+      </div>`;
+    }
+
     const reviewMount = document.getElementById('review-mount');
     reviewMount.innerHTML = attempt.answers.map((a, idx) => {
       const q = byId[a.questionId];
       if (!q) return '';
+      let optionsHtml;
+      if (q.type === 'multi_choice') optionsHtml = reviewOptionsMulti(q, a);
+      else if (q.type === 'matching') optionsHtml = reviewMatching(q, a);
+      else optionsHtml = reviewOptionsSingle(q, a);
       return `
         <div class="review-item card">
           <span class="q-domain ${a.domain}">${DOMAIN_META[a.domain]?.label || a.domain}</span>
+          ${q.contexte_etendu ? `<div class="banner" style="margin-bottom:.75rem"><b>${t('case_study_label') || 'Étude de cas'} ${q.case_group_label || ''}</b><br>${q.contexte_etendu}</div>` : ''}
           <div class="q-text">${idx + 1}. ${q.text}</div>
-          <div class="options">
-            ${['A', 'B', 'C', 'D'].filter(l => q.options[l]).filter(letter => letter === a.correctAnswer || letter === a.chosen).map(letter => {
-              let cls = '';
-              if (letter === a.correctAnswer) cls = 'correct';
-              else if (letter === a.chosen && letter !== a.correctAnswer) cls = 'incorrect';
-              return `<div class="option ${cls}"><span class="letter">${letter}</span><span class="option-text">${q.options[letter]}</span></div>`;
-            }).join('')}
-          </div>
-          ${!a.chosen ? `<div class="banner warn" style="margin-top:1rem">${t('not_answered')}</div>` : ''}
+          ${optionsHtml}
+          ${!a.chosen || (Array.isArray(a.chosen) && !a.chosen.length) ? `<div class="banner warn" style="margin-top:1rem">${t('not_answered')}</div>` : ''}
           ${q.justification ? `<div class="justification show"><b>${t('justification_label')}</b> ${q.justification}</div>` : ''}
         </div>`;
     }).join('');
@@ -112,9 +150,19 @@ function downloadResultsPdf(attempt, byId, pct, catMeta) {
     doc.text(qLines, margin, y); y += qLines.length * 14 + 4;
 
     doc.setFont('helvetica', 'normal'); doc.setFontSize(10);
-    const statusText = a.chosen
-      ? (a.correct ? `✓ ${L.correct}: ${a.chosen}` : `✗ ${L.yourAnswer}: ${a.chosen}  |  ${L.correctAnswer}: ${a.correctAnswer}`)
-      : `${L.notAnswered}  |  ${L.correctAnswer}: ${a.correctAnswer}`;
+    let chosenTxt = a.chosen;
+    let correctTxt = a.correctAnswer;
+    let hasAnswer = !!a.chosen;
+    if (q.type === 'multi_choice') { chosenTxt = Array.isArray(a.chosen) ? a.chosen.join(', ') : ''; hasAnswer = Array.isArray(a.chosen) && a.chosen.length > 0; }
+    if (q.type === 'matching') {
+      const val = a.chosen && typeof a.chosen === 'object' ? a.chosen : {};
+      chosenTxt = q.colonne_gauche.map(l => `${l.texte}→${q.colonne_droite.find(r => r.id === val[l.id])?.texte || '?'}`).join(' | ');
+      correctTxt = q.colonne_gauche.map(l => `${l.texte}→${q.colonne_droite.find(r => r.id === q.correct_matching[l.id])?.texte}`).join(' | ');
+      hasAnswer = Object.keys(val).length > 0;
+    }
+    const statusText = hasAnswer
+      ? (a.correct ? `✓ ${L.correct}: ${chosenTxt}` : `✗ ${L.yourAnswer}: ${chosenTxt}  |  ${L.correctAnswer}: ${correctTxt}`)
+      : `${L.notAnswered}  |  ${L.correctAnswer}: ${correctTxt}`;
     doc.setTextColor(a.correct ? 47 : 163, a.correct ? 122 : 57, a.correct ? 79 : 43);
     ensureSpace(14);
     doc.text(statusText, margin, y); y += 16;

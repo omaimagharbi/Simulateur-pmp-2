@@ -11,7 +11,7 @@
 
 <div class="shell-with-sidebar">
   <div class="category-nav">
-    <a class="nav-title" href="dashboard.html" data-i18n="categories_title" style="text-decoration:none; color:inherit; display:block">Dashboard</a>
+    <a class="sidebar-brand" href="dashboard.html"><img src="assets/logo.svg" alt=""><span data-i18n="categories_title">Dashboard</span></a>
     <div id="category-list"></div>
   </div>
 
@@ -67,9 +67,11 @@
     document.getElementById('cat-desc').textContent = meta.desc;
 
     const questions = cat === 'KillMistakes' ? getMistakeQuestions(catUser.username) : Store.getAllQuestions().filter(q => q.category === cat);
-    // "Kill mistakes" reste un examen UNIQUE qui grossit au fil des erreurs :
+    // "Kill mistakes" et "Exam" restent une session UNIQUE et continue (comme un
+    // vrai examen blanc complet, avec pauses réglementaires pour "Exam") :
     // pas de découpage en parties de 10 comme les autres catégories.
-    const parts = cat === 'KillMistakes' ? (questions.length ? [questions] : []) : chunkQuestions(questions, 10);
+    const isSingleSession = cat === 'KillMistakes' || cat === 'Exam';
+    const parts = isSingleSession ? (questions.length ? [questions] : []) : chunkQuestions(questions, 10);
 
     if (!parts.length) {
       document.getElementById('empty-mount').innerHTML = cat === 'KillMistakes' ? `
@@ -90,14 +92,43 @@
           <p>${t('kill_mistakes_single_desc')}</p>
           <a href="quiz.html?cat=${cat}&part=1" class="btn btn-primary btn-block">${t('start_exam')}</a>
         </div>`;
+    } else if (cat === 'Exam') {
+      document.getElementById('parts-grid').innerHTML = `
+        <div class="exam-card card">
+          <span class="tag">${parts[0].length} questions</span>
+          <h3>${t('exam_single_title')}</h3>
+          <p>${t('exam_single_desc')}</p>
+          ${catUser.role === 'admin' ? `
+          <div style="margin-bottom:.5rem">
+            <a href="admin.html?cat=${cat}" class="btn btn-ghost btn-sm btn-block">${t('admin_edit_questions')}</a>
+          </div>` : ''}
+          <a href="quiz.html?cat=${cat}&part=1" class="btn btn-primary btn-block">${t('start_exam')}</a>
+        </div>`;
     } else {
       document.getElementById('parts-grid').innerHTML = parts.map((p, idx) => `
         <div class="exam-card card">
           <span class="tag">${p.length} questions</span>
           <h3>${t('exam_part_label', { n: idx + 1 })}</h3>
           <p>${meta.label}</p>
+          ${catUser.role === 'admin' ? `
+          <div style="display:flex; gap:.5rem; margin-bottom:.5rem">
+            <a href="admin.html?cat=${cat}" class="btn btn-ghost btn-sm" style="flex:1">${t('admin_edit_questions')}</a>
+            <button class="btn btn-danger btn-sm" data-delete-part='${JSON.stringify(p.map(q => q.id))}' style="flex:1">${t('admin_delete_part')}</button>
+          </div>` : ''}
           <a href="quiz.html?cat=${cat}&part=${idx + 1}" class="btn btn-primary btn-block">${t('start_exam')}</a>
         </div>`).join('');
+
+      if (catUser.role === 'admin') {
+        document.querySelectorAll('[data-delete-part]').forEach(btn => {
+          btn.addEventListener('click', () => {
+            if (!confirm(t('admin_delete_part_confirm'))) return;
+            const ids = JSON.parse(btn.dataset.deletePart);
+            ids.forEach(id => Store.deleteQuestion(id));
+            showToast(t('admin_delete_part_done'));
+            window.location.reload();
+          });
+        });
+      }
     }
   }
 </script>

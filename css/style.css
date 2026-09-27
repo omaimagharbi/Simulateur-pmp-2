@@ -140,6 +140,8 @@ button, input, select, textarea{ font-family:inherit; font-size:1rem; }
 }
 .field small{ display:block; margin-top:.35em; color:var(--ink-600); font-size:.76rem; }
 .error-text{ color:var(--bad); font-size:.82rem; margin-top:.5rem; min-height:1.1em; }
+.forgot-link{ display:block; text-align:right; font-size:.82rem; color:var(--brass); text-decoration:none; margin-top:.4rem; }
+.forgot-link:hover{ text-decoration:underline; }
 
 /* ---------- Top nav ---------- */
 .topbar{
@@ -232,8 +234,8 @@ button, input, select, textarea{ font-family:inherit; font-size:1rem; }
 .auth-form-inner{ width:100%; max-width:380px; }
 .tab-switch{ display:flex; border:1px solid var(--paper-line); border-radius:var(--radius-m); padding:3px; margin-bottom:1.8rem; background:var(--paper-dim); }
 .tab-switch button{
-  flex:1; padding:.6em .3em; border:none; background:transparent; border-radius:6px;
-  font-weight:600; font-size:.78rem; cursor:pointer; color:var(--ink-700);
+  flex:1; padding:.6em; border:none; background:transparent; border-radius:6px;
+  font-weight:600; font-size:.86rem; cursor:pointer; color:var(--ink-700);
 }
 .tab-switch button.active{ background:var(--white); color:var(--ink-900); box-shadow:var(--shadow-card); }
 
@@ -243,6 +245,13 @@ button, input, select, textarea{ font-family:inherit; font-size:1rem; }
 
 .category-nav{ display:flex; flex-direction:column; gap:.35rem; position:sticky; top:1.5rem; }
 .category-nav .nav-title{ font-family:var(--font-mono); font-size:.7rem; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-600); margin:0 0 .6rem .2rem; }
+.sidebar-brand{
+  display:flex; align-items:center; justify-content:center; gap:.5rem;
+  text-decoration:none; color:inherit;
+  margin:.6rem 0 1.4rem; padding-top:.4rem;
+}
+.sidebar-brand img{ width:22px; height:auto; flex:none; }
+.sidebar-brand span{ font-family:var(--font-mono); font-size:.72rem; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-600); font-weight:700; }
 .category-item{
   display:flex; align-items:center; gap:.7rem;
   padding:.65em .8em; border-radius:var(--radius-m); cursor:pointer;
@@ -304,6 +313,7 @@ table.history tr:last-child td{ border-bottom:none; }
 .pill{ font-family:var(--font-mono); font-size:.76rem; padding:.2em .55em; border-radius:20px; }
 .pill.good{ background:rgba(47,122,79,.12); color:var(--good); }
 .pill.bad{ background:rgba(163,57,43,.12); color:var(--bad); }
+.pill.warn{ background:rgba(201,154,74,.16); color:#8a6415; }
 
 /* ---------- Quiz ---------- */
 .quiz-shell{ max-width:760px; margin:0 auto; padding:2rem 1.5rem 5rem; }
@@ -340,6 +350,9 @@ table.history tr:last-child td{ border-bottom:none; }
 .option.incorrect{ border-color:var(--bad); background:rgba(163,57,43,.07); }
 .option.incorrect .letter{ background:var(--bad); border-color:var(--bad); color:var(--white); }
 .option-text{ font-size:.94rem; padding-top:2px; }
+.matching-row{ display:flex; align-items:center; justify-content:space-between; gap:1rem; cursor:default; }
+.matching-row .option-text{ flex:0 0 auto; max-width:45%; }
+.matching-select{ flex:1 1 auto; padding:.5rem .6rem; border:1px solid var(--brass-light); border-radius:8px; font-family:inherit; font-size:.9rem; background:var(--white); }
 
 .justification{
   margin-top:1.2rem; padding:1rem 1.1rem; border-radius:var(--radius-m);

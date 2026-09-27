@@ -1039,9 +1039,4507 @@ const QUESTIONS_FR = [
     "answer": "B",
     "justification": "Un marché à évolution rapide nécessite des cycles de livraison courts et itératifs (approche incrémentale/hybride) pour intégrer les retours du marché et délivrer de la valeur de manière continue.",
     "category": "MiniExam"
+  },
+  {
+    "id": 9000,
+    "exam": 99,
+    "num_in_exam": 1,
+    "domain": "People",
+    "text": "[TEST #1] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 1)",
+      "B": "Option de test B (question 1)",
+      "C": "Option de test C (question 1)",
+      "D": "Option de test D (question 1)"
+    },
+    "answer": "A",
+    "justification": "Question de test #1 — la bonne réponse est fixée arbitrairement à \"A\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9001,
+    "exam": 99,
+    "num_in_exam": 2,
+    "domain": "People",
+    "text": "[TEST #2] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 2)",
+      "B": "Option de test B (question 2)",
+      "C": "Option de test C (question 2)",
+      "D": "Option de test D (question 2)"
+    },
+    "answer": "B",
+    "justification": "Question de test #2 — la bonne réponse est fixée arbitrairement à \"B\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9002,
+    "exam": 99,
+    "num_in_exam": 3,
+    "domain": "Process",
+    "text": "[TEST #3] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 3)",
+      "B": "Option de test B (question 3)",
+      "C": "Option de test C (question 3)",
+      "D": "Option de test D (question 3)"
+    },
+    "answer": "C",
+    "justification": "Question de test #3 — la bonne réponse est fixée arbitrairement à \"C\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9003,
+    "exam": 99,
+    "num_in_exam": 4,
+    "domain": "People",
+    "text": "[TEST #4] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 4)",
+      "B": "Option de test B (question 4)",
+      "C": "Option de test C (question 4)",
+      "D": "Option de test D (question 4)"
+    },
+    "answer": "D",
+    "justification": "Question de test #4 — la bonne réponse est fixée arbitrairement à \"D\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9004,
+    "exam": 99,
+    "num_in_exam": 5,
+    "domain": "People",
+    "text": "[TEST #5] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 5)",
+      "B": "Option de test B (question 5)",
+      "C": "Option de test C (question 5)",
+      "D": "Option de test D (question 5)"
+    },
+    "answer": "A",
+    "justification": "Question de test #5 — la bonne réponse est fixée arbitrairement à \"A\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9005,
+    "exam": 99,
+    "num_in_exam": 6,
+    "domain": "Process",
+    "text": "[TEST #6] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 6)",
+      "B": "Option de test B (question 6)",
+      "C": "Option de test C (question 6)",
+      "D": "Option de test D (question 6)"
+    },
+    "answer": "B",
+    "justification": "Question de test #6 — la bonne réponse est fixée arbitrairement à \"B\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9006,
+    "exam": 99,
+    "num_in_exam": 7,
+    "domain": "People",
+    "text": "[TEST #7] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 7)",
+      "B": "Option de test B (question 7)",
+      "C": "Option de test C (question 7)",
+      "D": "Option de test D (question 7)"
+    },
+    "answer": "C",
+    "justification": "Question de test #7 — la bonne réponse est fixée arbitrairement à \"C\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9007,
+    "exam": 99,
+    "num_in_exam": 8,
+    "domain": "Process",
+    "text": "[TEST #8] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 8)",
+      "B": "Option de test B (question 8)",
+      "C": "Option de test C (question 8)",
+      "D": "Option de test D (question 8)"
+    },
+    "answer": "D",
+    "justification": "Question de test #8 — la bonne réponse est fixée arbitrairement à \"D\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9008,
+    "exam": 99,
+    "num_in_exam": 9,
+    "domain": "Process",
+    "text": "[TEST #9] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 9)",
+      "B": "Option de test B (question 9)",
+      "C": "Option de test C (question 9)",
+      "D": "Option de test D (question 9)"
+    },
+    "answer": "A",
+    "justification": "Question de test #9 — la bonne réponse est fixée arbitrairement à \"A\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9009,
+    "exam": 99,
+    "num_in_exam": 10,
+    "domain": "People",
+    "text": "[TEST #10] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 10)",
+      "B": "Option de test B (question 10)",
+      "C": "Option de test C (question 10)",
+      "D": "Option de test D (question 10)"
+    },
+    "answer": "B",
+    "justification": "Question de test #10 — la bonne réponse est fixée arbitrairement à \"B\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9010,
+    "exam": 99,
+    "num_in_exam": 11,
+    "domain": "People",
+    "text": "[TEST #11] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 11)",
+      "B": "Option de test B (question 11)",
+      "C": "Option de test C (question 11)",
+      "D": "Option de test D (question 11)"
+    },
+    "answer": "C",
+    "justification": "Question de test #11 — la bonne réponse est fixée arbitrairement à \"C\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9011,
+    "exam": 99,
+    "num_in_exam": 12,
+    "domain": "Process",
+    "text": "[TEST #12] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 12)",
+      "B": "Option de test B (question 12)",
+      "C": "Option de test C (question 12)",
+      "D": "Option de test D (question 12)"
+    },
+    "answer": "D",
+    "justification": "Question de test #12 — la bonne réponse est fixée arbitrairement à \"D\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9012,
+    "exam": 99,
+    "num_in_exam": 13,
+    "domain": "Process",
+    "text": "[TEST #13] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 13)",
+      "B": "Option de test B (question 13)",
+      "C": "Option de test C (question 13)",
+      "D": "Option de test D (question 13)"
+    },
+    "answer": "A",
+    "justification": "Question de test #13 — la bonne réponse est fixée arbitrairement à \"A\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9013,
+    "exam": 99,
+    "num_in_exam": 14,
+    "domain": "Process",
+    "text": "[TEST #14] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 14)",
+      "B": "Option de test B (question 14)",
+      "C": "Option de test C (question 14)",
+      "D": "Option de test D (question 14)"
+    },
+    "answer": "B",
+    "justification": "Question de test #14 — la bonne réponse est fixée arbitrairement à \"B\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9014,
+    "exam": 99,
+    "num_in_exam": 15,
+    "domain": "People",
+    "text": "[TEST #15] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 15)",
+      "B": "Option de test B (question 15)",
+      "C": "Option de test C (question 15)",
+      "D": "Option de test D (question 15)"
+    },
+    "answer": "C",
+    "justification": "Question de test #15 — la bonne réponse est fixée arbitrairement à \"C\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9015,
+    "exam": 99,
+    "num_in_exam": 16,
+    "domain": "Process",
+    "text": "[TEST #16] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 16)",
+      "B": "Option de test B (question 16)",
+      "C": "Option de test C (question 16)",
+      "D": "Option de test D (question 16)"
+    },
+    "answer": "D",
+    "justification": "Question de test #16 — la bonne réponse est fixée arbitrairement à \"D\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9016,
+    "exam": 99,
+    "num_in_exam": 17,
+    "domain": "People",
+    "text": "[TEST #17] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 17)",
+      "B": "Option de test B (question 17)",
+      "C": "Option de test C (question 17)",
+      "D": "Option de test D (question 17)"
+    },
+    "answer": "A",
+    "justification": "Question de test #17 — la bonne réponse est fixée arbitrairement à \"A\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9017,
+    "exam": 99,
+    "num_in_exam": 18,
+    "domain": "People",
+    "text": "[TEST #18] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 18)",
+      "B": "Option de test B (question 18)",
+      "C": "Option de test C (question 18)",
+      "D": "Option de test D (question 18)"
+    },
+    "answer": "B",
+    "justification": "Question de test #18 — la bonne réponse est fixée arbitrairement à \"B\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9018,
+    "exam": 99,
+    "num_in_exam": 19,
+    "domain": "Process",
+    "text": "[TEST #19] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 19)",
+      "B": "Option de test B (question 19)",
+      "C": "Option de test C (question 19)",
+      "D": "Option de test D (question 19)"
+    },
+    "answer": "C",
+    "justification": "Question de test #19 — la bonne réponse est fixée arbitrairement à \"C\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9019,
+    "exam": 99,
+    "num_in_exam": 20,
+    "domain": "People",
+    "text": "[TEST #20] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 20)",
+      "B": "Option de test B (question 20)",
+      "C": "Option de test C (question 20)",
+      "D": "Option de test D (question 20)"
+    },
+    "answer": "D",
+    "justification": "Question de test #20 — la bonne réponse est fixée arbitrairement à \"D\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9020,
+    "exam": 99,
+    "num_in_exam": 21,
+    "domain": "People",
+    "text": "[TEST #21] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 21)",
+      "B": "Option de test B (question 21)",
+      "C": "Option de test C (question 21)",
+      "D": "Option de test D (question 21)"
+    },
+    "answer": "A",
+    "justification": "Question de test #21 — la bonne réponse est fixée arbitrairement à \"A\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9021,
+    "exam": 99,
+    "num_in_exam": 22,
+    "domain": "Business",
+    "text": "[TEST #22] Question de test générée automatiquement (domaine Business) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 22)",
+      "B": "Option de test B (question 22)",
+      "C": "Option de test C (question 22)",
+      "D": "Option de test D (question 22)"
+    },
+    "answer": "B",
+    "justification": "Question de test #22 — la bonne réponse est fixée arbitrairement à \"B\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9022,
+    "exam": 99,
+    "num_in_exam": 23,
+    "domain": "Process",
+    "text": "[TEST #23] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 23)",
+      "B": "Option de test B (question 23)",
+      "C": "Option de test C (question 23)",
+      "D": "Option de test D (question 23)"
+    },
+    "answer": "C",
+    "justification": "Question de test #23 — la bonne réponse est fixée arbitrairement à \"C\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9023,
+    "exam": 99,
+    "num_in_exam": 24,
+    "domain": "Process",
+    "text": "[TEST #24] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 24)",
+      "B": "Option de test B (question 24)",
+      "C": "Option de test C (question 24)",
+      "D": "Option de test D (question 24)"
+    },
+    "answer": "D",
+    "justification": "Question de test #24 — la bonne réponse est fixée arbitrairement à \"D\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9024,
+    "exam": 99,
+    "num_in_exam": 25,
+    "domain": "Process",
+    "text": "[TEST #25] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 25)",
+      "B": "Option de test B (question 25)",
+      "C": "Option de test C (question 25)",
+      "D": "Option de test D (question 25)"
+    },
+    "answer": "A",
+    "justification": "Question de test #25 — la bonne réponse est fixée arbitrairement à \"A\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9025,
+    "exam": 99,
+    "num_in_exam": 26,
+    "domain": "Process",
+    "text": "[TEST #26] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 26)",
+      "B": "Option de test B (question 26)",
+      "C": "Option de test C (question 26)",
+      "D": "Option de test D (question 26)"
+    },
+    "answer": "B",
+    "justification": "Question de test #26 — la bonne réponse est fixée arbitrairement à \"B\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9026,
+    "exam": 99,
+    "num_in_exam": 27,
+    "domain": "People",
+    "text": "[TEST #27] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 27)",
+      "B": "Option de test B (question 27)",
+      "C": "Option de test C (question 27)",
+      "D": "Option de test D (question 27)"
+    },
+    "answer": "C",
+    "justification": "Question de test #27 — la bonne réponse est fixée arbitrairement à \"C\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9027,
+    "exam": 99,
+    "num_in_exam": 28,
+    "domain": "People",
+    "text": "[TEST #28] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 28)",
+      "B": "Option de test B (question 28)",
+      "C": "Option de test C (question 28)",
+      "D": "Option de test D (question 28)"
+    },
+    "answer": "D",
+    "justification": "Question de test #28 — la bonne réponse est fixée arbitrairement à \"D\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9028,
+    "exam": 99,
+    "num_in_exam": 29,
+    "domain": "People",
+    "text": "[TEST #29] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 29)",
+      "B": "Option de test B (question 29)",
+      "C": "Option de test C (question 29)",
+      "D": "Option de test D (question 29)"
+    },
+    "answer": "A",
+    "justification": "Question de test #29 — la bonne réponse est fixée arbitrairement à \"A\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9029,
+    "exam": 99,
+    "num_in_exam": 30,
+    "domain": "People",
+    "text": "[TEST #30] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 30)",
+      "B": "Option de test B (question 30)",
+      "C": "Option de test C (question 30)",
+      "D": "Option de test D (question 30)"
+    },
+    "answer": "B",
+    "justification": "Question de test #30 — la bonne réponse est fixée arbitrairement à \"B\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9030,
+    "exam": 99,
+    "num_in_exam": 31,
+    "domain": "Process",
+    "text": "[TEST #31] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 31)",
+      "B": "Option de test B (question 31)",
+      "C": "Option de test C (question 31)",
+      "D": "Option de test D (question 31)"
+    },
+    "answer": "C",
+    "justification": "Question de test #31 — la bonne réponse est fixée arbitrairement à \"C\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9031,
+    "exam": 99,
+    "num_in_exam": 32,
+    "domain": "People",
+    "text": "[TEST #32] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 32)",
+      "B": "Option de test B (question 32)",
+      "C": "Option de test C (question 32)",
+      "D": "Option de test D (question 32)"
+    },
+    "answer": "D",
+    "justification": "Question de test #32 — la bonne réponse est fixée arbitrairement à \"D\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9032,
+    "exam": 99,
+    "num_in_exam": 33,
+    "domain": "People",
+    "text": "[TEST #33] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 33)",
+      "B": "Option de test B (question 33)",
+      "C": "Option de test C (question 33)",
+      "D": "Option de test D (question 33)"
+    },
+    "answer": "A",
+    "justification": "Question de test #33 — la bonne réponse est fixée arbitrairement à \"A\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9033,
+    "exam": 99,
+    "num_in_exam": 34,
+    "domain": "Process",
+    "text": "[TEST #34] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 34)",
+      "B": "Option de test B (question 34)",
+      "C": "Option de test C (question 34)",
+      "D": "Option de test D (question 34)"
+    },
+    "answer": "B",
+    "justification": "Question de test #34 — la bonne réponse est fixée arbitrairement à \"B\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9034,
+    "exam": 99,
+    "num_in_exam": 35,
+    "domain": "People",
+    "text": "[TEST #35] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 35)",
+      "B": "Option de test B (question 35)",
+      "C": "Option de test C (question 35)",
+      "D": "Option de test D (question 35)"
+    },
+    "answer": "C",
+    "justification": "Question de test #35 — la bonne réponse est fixée arbitrairement à \"C\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9035,
+    "exam": 99,
+    "num_in_exam": 36,
+    "domain": "Process",
+    "text": "[TEST #36] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 36)",
+      "B": "Option de test B (question 36)",
+      "C": "Option de test C (question 36)",
+      "D": "Option de test D (question 36)"
+    },
+    "answer": "D",
+    "justification": "Question de test #36 — la bonne réponse est fixée arbitrairement à \"D\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9036,
+    "exam": 99,
+    "num_in_exam": 37,
+    "domain": "Process",
+    "text": "[TEST #37] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 37)",
+      "B": "Option de test B (question 37)",
+      "C": "Option de test C (question 37)",
+      "D": "Option de test D (question 37)"
+    },
+    "answer": "A",
+    "justification": "Question de test #37 — la bonne réponse est fixée arbitrairement à \"A\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9037,
+    "exam": 99,
+    "num_in_exam": 38,
+    "domain": "Process",
+    "text": "[TEST #38] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 38)",
+      "B": "Option de test B (question 38)",
+      "C": "Option de test C (question 38)",
+      "D": "Option de test D (question 38)"
+    },
+    "answer": "B",
+    "justification": "Question de test #38 — la bonne réponse est fixée arbitrairement à \"B\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9038,
+    "exam": 99,
+    "num_in_exam": 39,
+    "domain": "Process",
+    "text": "[TEST #39] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 39)",
+      "B": "Option de test B (question 39)",
+      "C": "Option de test C (question 39)",
+      "D": "Option de test D (question 39)"
+    },
+    "answer": "C",
+    "justification": "Question de test #39 — la bonne réponse est fixée arbitrairement à \"C\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9039,
+    "exam": 99,
+    "num_in_exam": 40,
+    "domain": "Process",
+    "text": "[TEST #40] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 40)",
+      "B": "Option de test B (question 40)",
+      "C": "Option de test C (question 40)",
+      "D": "Option de test D (question 40)"
+    },
+    "answer": "D",
+    "justification": "Question de test #40 — la bonne réponse est fixée arbitrairement à \"D\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9040,
+    "exam": 99,
+    "num_in_exam": 41,
+    "domain": "People",
+    "text": "[TEST #41] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 41)",
+      "B": "Option de test B (question 41)",
+      "C": "Option de test C (question 41)",
+      "D": "Option de test D (question 41)"
+    },
+    "answer": "A",
+    "justification": "Question de test #41 — la bonne réponse est fixée arbitrairement à \"A\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9041,
+    "exam": 99,
+    "num_in_exam": 42,
+    "domain": "Process",
+    "text": "[TEST #42] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 42)",
+      "B": "Option de test B (question 42)",
+      "C": "Option de test C (question 42)",
+      "D": "Option de test D (question 42)"
+    },
+    "answer": "B",
+    "justification": "Question de test #42 — la bonne réponse est fixée arbitrairement à \"B\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9042,
+    "exam": 99,
+    "num_in_exam": 43,
+    "domain": "People",
+    "text": "[TEST #43] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 43)",
+      "B": "Option de test B (question 43)",
+      "C": "Option de test C (question 43)",
+      "D": "Option de test D (question 43)"
+    },
+    "answer": "C",
+    "justification": "Question de test #43 — la bonne réponse est fixée arbitrairement à \"C\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9043,
+    "exam": 99,
+    "num_in_exam": 44,
+    "domain": "People",
+    "text": "[TEST #44] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 44)",
+      "B": "Option de test B (question 44)",
+      "C": "Option de test C (question 44)",
+      "D": "Option de test D (question 44)"
+    },
+    "answer": "D",
+    "justification": "Question de test #44 — la bonne réponse est fixée arbitrairement à \"D\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9044,
+    "exam": 99,
+    "num_in_exam": 45,
+    "domain": "Process",
+    "text": "[TEST #45] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 45)",
+      "B": "Option de test B (question 45)",
+      "C": "Option de test C (question 45)",
+      "D": "Option de test D (question 45)"
+    },
+    "answer": "A",
+    "justification": "Question de test #45 — la bonne réponse est fixée arbitrairement à \"A\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9045,
+    "exam": 99,
+    "num_in_exam": 46,
+    "domain": "Process",
+    "text": "[TEST #46] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 46)",
+      "B": "Option de test B (question 46)",
+      "C": "Option de test C (question 46)",
+      "D": "Option de test D (question 46)"
+    },
+    "answer": "B",
+    "justification": "Question de test #46 — la bonne réponse est fixée arbitrairement à \"B\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9046,
+    "exam": 99,
+    "num_in_exam": 47,
+    "domain": "Process",
+    "text": "[TEST #47] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 47)",
+      "B": "Option de test B (question 47)",
+      "C": "Option de test C (question 47)",
+      "D": "Option de test D (question 47)"
+    },
+    "answer": "C",
+    "justification": "Question de test #47 — la bonne réponse est fixée arbitrairement à \"C\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9047,
+    "exam": 99,
+    "num_in_exam": 48,
+    "domain": "People",
+    "text": "[TEST #48] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 48)",
+      "B": "Option de test B (question 48)",
+      "C": "Option de test C (question 48)",
+      "D": "Option de test D (question 48)"
+    },
+    "answer": "D",
+    "justification": "Question de test #48 — la bonne réponse est fixée arbitrairement à \"D\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9048,
+    "exam": 99,
+    "num_in_exam": 49,
+    "domain": "People",
+    "text": "[TEST #49] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 49)",
+      "B": "Option de test B (question 49)",
+      "C": "Option de test C (question 49)",
+      "D": "Option de test D (question 49)"
+    },
+    "answer": "A",
+    "justification": "Question de test #49 — la bonne réponse est fixée arbitrairement à \"A\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9049,
+    "exam": 99,
+    "num_in_exam": 50,
+    "domain": "People",
+    "text": "[TEST #50] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 50)",
+      "B": "Option de test B (question 50)",
+      "C": "Option de test C (question 50)",
+      "D": "Option de test D (question 50)"
+    },
+    "answer": "B",
+    "justification": "Question de test #50 — la bonne réponse est fixée arbitrairement à \"B\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9050,
+    "exam": 99,
+    "num_in_exam": 51,
+    "domain": "Process",
+    "text": "[TEST #51] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 51)",
+      "B": "Option de test B (question 51)",
+      "C": "Option de test C (question 51)",
+      "D": "Option de test D (question 51)"
+    },
+    "answer": "C",
+    "justification": "Question de test #51 — la bonne réponse est fixée arbitrairement à \"C\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9051,
+    "exam": 99,
+    "num_in_exam": 52,
+    "domain": "Business",
+    "text": "[TEST #52] Question de test générée automatiquement (domaine Business) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 52)",
+      "B": "Option de test B (question 52)",
+      "C": "Option de test C (question 52)",
+      "D": "Option de test D (question 52)"
+    },
+    "answer": "D",
+    "justification": "Question de test #52 — la bonne réponse est fixée arbitrairement à \"D\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9052,
+    "exam": 99,
+    "num_in_exam": 53,
+    "domain": "Process",
+    "text": "[TEST #53] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 53)",
+      "B": "Option de test B (question 53)",
+      "C": "Option de test C (question 53)",
+      "D": "Option de test D (question 53)"
+    },
+    "answer": "A",
+    "justification": "Question de test #53 — la bonne réponse est fixée arbitrairement à \"A\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9053,
+    "exam": 99,
+    "num_in_exam": 54,
+    "domain": "People",
+    "text": "[TEST #54] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 54)",
+      "B": "Option de test B (question 54)",
+      "C": "Option de test C (question 54)",
+      "D": "Option de test D (question 54)"
+    },
+    "answer": "B",
+    "justification": "Question de test #54 — la bonne réponse est fixée arbitrairement à \"B\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9054,
+    "exam": 99,
+    "num_in_exam": 55,
+    "domain": "People",
+    "text": "[TEST #55] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 55)",
+      "B": "Option de test B (question 55)",
+      "C": "Option de test C (question 55)",
+      "D": "Option de test D (question 55)"
+    },
+    "answer": "C",
+    "justification": "Question de test #55 — la bonne réponse est fixée arbitrairement à \"C\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9055,
+    "exam": 99,
+    "num_in_exam": 56,
+    "domain": "Process",
+    "text": "[TEST #56] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 56)",
+      "B": "Option de test B (question 56)",
+      "C": "Option de test C (question 56)",
+      "D": "Option de test D (question 56)"
+    },
+    "answer": "D",
+    "justification": "Question de test #56 — la bonne réponse est fixée arbitrairement à \"D\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9056,
+    "exam": 99,
+    "num_in_exam": 57,
+    "domain": "Business",
+    "text": "[TEST #57] Question de test générée automatiquement (domaine Business) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 57)",
+      "B": "Option de test B (question 57)",
+      "C": "Option de test C (question 57)",
+      "D": "Option de test D (question 57)"
+    },
+    "answer": "A",
+    "justification": "Question de test #57 — la bonne réponse est fixée arbitrairement à \"A\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9057,
+    "exam": 99,
+    "num_in_exam": 58,
+    "domain": "People",
+    "text": "[TEST #58] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 58)",
+      "B": "Option de test B (question 58)",
+      "C": "Option de test C (question 58)",
+      "D": "Option de test D (question 58)"
+    },
+    "answer": "B",
+    "justification": "Question de test #58 — la bonne réponse est fixée arbitrairement à \"B\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9058,
+    "exam": 99,
+    "num_in_exam": 59,
+    "domain": "Process",
+    "text": "[TEST #59] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 59)",
+      "B": "Option de test B (question 59)",
+      "C": "Option de test C (question 59)",
+      "D": "Option de test D (question 59)"
+    },
+    "answer": "C",
+    "justification": "Question de test #59 — la bonne réponse est fixée arbitrairement à \"C\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9059,
+    "exam": 99,
+    "num_in_exam": 60,
+    "domain": "Process",
+    "text": "[TEST #60] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 60)",
+      "B": "Option de test B (question 60)",
+      "C": "Option de test C (question 60)",
+      "D": "Option de test D (question 60)"
+    },
+    "answer": "D",
+    "justification": "Question de test #60 — la bonne réponse est fixée arbitrairement à \"D\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9060,
+    "exam": 99,
+    "num_in_exam": 61,
+    "domain": "People",
+    "text": "[TEST #61] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 61)",
+      "B": "Option de test B (question 61)",
+      "C": "Option de test C (question 61)",
+      "D": "Option de test D (question 61)"
+    },
+    "answer": "A",
+    "justification": "Question de test #61 — la bonne réponse est fixée arbitrairement à \"A\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9061,
+    "exam": 99,
+    "num_in_exam": 62,
+    "domain": "Process",
+    "text": "[TEST #62] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 62)",
+      "B": "Option de test B (question 62)",
+      "C": "Option de test C (question 62)",
+      "D": "Option de test D (question 62)"
+    },
+    "answer": "B",
+    "justification": "Question de test #62 — la bonne réponse est fixée arbitrairement à \"B\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9062,
+    "exam": 99,
+    "num_in_exam": 63,
+    "domain": "People",
+    "text": "[TEST #63] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 63)",
+      "B": "Option de test B (question 63)",
+      "C": "Option de test C (question 63)",
+      "D": "Option de test D (question 63)"
+    },
+    "answer": "C",
+    "justification": "Question de test #63 — la bonne réponse est fixée arbitrairement à \"C\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9063,
+    "exam": 99,
+    "num_in_exam": 64,
+    "domain": "Process",
+    "text": "[TEST #64] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 64)",
+      "B": "Option de test B (question 64)",
+      "C": "Option de test C (question 64)",
+      "D": "Option de test D (question 64)"
+    },
+    "answer": "D",
+    "justification": "Question de test #64 — la bonne réponse est fixée arbitrairement à \"D\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9064,
+    "exam": 99,
+    "num_in_exam": 65,
+    "domain": "People",
+    "text": "[TEST #65] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 65)",
+      "B": "Option de test B (question 65)",
+      "C": "Option de test C (question 65)",
+      "D": "Option de test D (question 65)"
+    },
+    "answer": "A",
+    "justification": "Question de test #65 — la bonne réponse est fixée arbitrairement à \"A\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9065,
+    "exam": 99,
+    "num_in_exam": 66,
+    "domain": "People",
+    "text": "[TEST #66] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 66)",
+      "B": "Option de test B (question 66)",
+      "C": "Option de test C (question 66)",
+      "D": "Option de test D (question 66)"
+    },
+    "answer": "B",
+    "justification": "Question de test #66 — la bonne réponse est fixée arbitrairement à \"B\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9066,
+    "exam": 99,
+    "num_in_exam": 67,
+    "domain": "People",
+    "text": "[TEST #67] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 67)",
+      "B": "Option de test B (question 67)",
+      "C": "Option de test C (question 67)",
+      "D": "Option de test D (question 67)"
+    },
+    "answer": "C",
+    "justification": "Question de test #67 — la bonne réponse est fixée arbitrairement à \"C\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9067,
+    "exam": 99,
+    "num_in_exam": 68,
+    "domain": "Process",
+    "text": "[TEST #68] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 68)",
+      "B": "Option de test B (question 68)",
+      "C": "Option de test C (question 68)",
+      "D": "Option de test D (question 68)"
+    },
+    "answer": "D",
+    "justification": "Question de test #68 — la bonne réponse est fixée arbitrairement à \"D\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9068,
+    "exam": 99,
+    "num_in_exam": 69,
+    "domain": "People",
+    "text": "[TEST #69] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 69)",
+      "B": "Option de test B (question 69)",
+      "C": "Option de test C (question 69)",
+      "D": "Option de test D (question 69)"
+    },
+    "answer": "A",
+    "justification": "Question de test #69 — la bonne réponse est fixée arbitrairement à \"A\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9069,
+    "exam": 99,
+    "num_in_exam": 70,
+    "domain": "Process",
+    "text": "[TEST #70] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 70)",
+      "B": "Option de test B (question 70)",
+      "C": "Option de test C (question 70)",
+      "D": "Option de test D (question 70)"
+    },
+    "answer": "B",
+    "justification": "Question de test #70 — la bonne réponse est fixée arbitrairement à \"B\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9070,
+    "exam": 99,
+    "num_in_exam": 71,
+    "domain": "People",
+    "text": "[TEST #71] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 71)",
+      "B": "Option de test B (question 71)",
+      "C": "Option de test C (question 71)",
+      "D": "Option de test D (question 71)"
+    },
+    "answer": "C",
+    "justification": "Question de test #71 — la bonne réponse est fixée arbitrairement à \"C\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9071,
+    "exam": 99,
+    "num_in_exam": 72,
+    "domain": "Business",
+    "text": "[TEST #72] Question de test générée automatiquement (domaine Business) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 72)",
+      "B": "Option de test B (question 72)",
+      "C": "Option de test C (question 72)",
+      "D": "Option de test D (question 72)"
+    },
+    "answer": "D",
+    "justification": "Question de test #72 — la bonne réponse est fixée arbitrairement à \"D\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9072,
+    "exam": 99,
+    "num_in_exam": 73,
+    "domain": "Process",
+    "text": "[TEST #73] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 73)",
+      "B": "Option de test B (question 73)",
+      "C": "Option de test C (question 73)",
+      "D": "Option de test D (question 73)"
+    },
+    "answer": "A",
+    "justification": "Question de test #73 — la bonne réponse est fixée arbitrairement à \"A\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9073,
+    "exam": 99,
+    "num_in_exam": 74,
+    "domain": "People",
+    "text": "[TEST #74] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 74)",
+      "B": "Option de test B (question 74)",
+      "C": "Option de test C (question 74)",
+      "D": "Option de test D (question 74)"
+    },
+    "answer": "B",
+    "justification": "Question de test #74 — la bonne réponse est fixée arbitrairement à \"B\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9074,
+    "exam": 99,
+    "num_in_exam": 75,
+    "domain": "Process",
+    "text": "[TEST #75] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 75)",
+      "B": "Option de test B (question 75)",
+      "C": "Option de test C (question 75)",
+      "D": "Option de test D (question 75)"
+    },
+    "answer": "C",
+    "justification": "Question de test #75 — la bonne réponse est fixée arbitrairement à \"C\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9075,
+    "exam": 99,
+    "num_in_exam": 76,
+    "domain": "Process",
+    "text": "[TEST #76] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 76)",
+      "B": "Option de test B (question 76)",
+      "C": "Option de test C (question 76)",
+      "D": "Option de test D (question 76)"
+    },
+    "answer": "D",
+    "justification": "Question de test #76 — la bonne réponse est fixée arbitrairement à \"D\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9076,
+    "exam": 99,
+    "num_in_exam": 77,
+    "domain": "People",
+    "text": "[TEST #77] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 77)",
+      "B": "Option de test B (question 77)",
+      "C": "Option de test C (question 77)",
+      "D": "Option de test D (question 77)"
+    },
+    "answer": "A",
+    "justification": "Question de test #77 — la bonne réponse est fixée arbitrairement à \"A\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9077,
+    "exam": 99,
+    "num_in_exam": 78,
+    "domain": "People",
+    "text": "[TEST #78] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 78)",
+      "B": "Option de test B (question 78)",
+      "C": "Option de test C (question 78)",
+      "D": "Option de test D (question 78)"
+    },
+    "answer": "B",
+    "justification": "Question de test #78 — la bonne réponse est fixée arbitrairement à \"B\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9078,
+    "exam": 99,
+    "num_in_exam": 79,
+    "domain": "People",
+    "text": "[TEST #79] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 79)",
+      "B": "Option de test B (question 79)",
+      "C": "Option de test C (question 79)",
+      "D": "Option de test D (question 79)"
+    },
+    "answer": "C",
+    "justification": "Question de test #79 — la bonne réponse est fixée arbitrairement à \"C\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9079,
+    "exam": 99,
+    "num_in_exam": 80,
+    "domain": "Process",
+    "text": "[TEST #80] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 80)",
+      "B": "Option de test B (question 80)",
+      "C": "Option de test C (question 80)",
+      "D": "Option de test D (question 80)"
+    },
+    "answer": "D",
+    "justification": "Question de test #80 — la bonne réponse est fixée arbitrairement à \"D\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9080,
+    "exam": 99,
+    "num_in_exam": 81,
+    "domain": "People",
+    "text": "[TEST #81] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 81)",
+      "B": "Option de test B (question 81)",
+      "C": "Option de test C (question 81)",
+      "D": "Option de test D (question 81)"
+    },
+    "answer": "A",
+    "justification": "Question de test #81 — la bonne réponse est fixée arbitrairement à \"A\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9081,
+    "exam": 99,
+    "num_in_exam": 82,
+    "domain": "Business",
+    "text": "[TEST #82] Question de test générée automatiquement (domaine Business) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 82)",
+      "B": "Option de test B (question 82)",
+      "C": "Option de test C (question 82)",
+      "D": "Option de test D (question 82)"
+    },
+    "answer": "B",
+    "justification": "Question de test #82 — la bonne réponse est fixée arbitrairement à \"B\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9082,
+    "exam": 99,
+    "num_in_exam": 83,
+    "domain": "Process",
+    "text": "[TEST #83] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 83)",
+      "B": "Option de test B (question 83)",
+      "C": "Option de test C (question 83)",
+      "D": "Option de test D (question 83)"
+    },
+    "answer": "C",
+    "justification": "Question de test #83 — la bonne réponse est fixée arbitrairement à \"C\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9083,
+    "exam": 99,
+    "num_in_exam": 84,
+    "domain": "People",
+    "text": "[TEST #84] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 84)",
+      "B": "Option de test B (question 84)",
+      "C": "Option de test C (question 84)",
+      "D": "Option de test D (question 84)"
+    },
+    "answer": "D",
+    "justification": "Question de test #84 — la bonne réponse est fixée arbitrairement à \"D\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9084,
+    "exam": 99,
+    "num_in_exam": 85,
+    "domain": "Process",
+    "text": "[TEST #85] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 85)",
+      "B": "Option de test B (question 85)",
+      "C": "Option de test C (question 85)",
+      "D": "Option de test D (question 85)"
+    },
+    "answer": "A",
+    "justification": "Question de test #85 — la bonne réponse est fixée arbitrairement à \"A\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9085,
+    "exam": 99,
+    "num_in_exam": 86,
+    "domain": "Process",
+    "text": "[TEST #86] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 86)",
+      "B": "Option de test B (question 86)",
+      "C": "Option de test C (question 86)",
+      "D": "Option de test D (question 86)"
+    },
+    "answer": "B",
+    "justification": "Question de test #86 — la bonne réponse est fixée arbitrairement à \"B\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9086,
+    "exam": 99,
+    "num_in_exam": 87,
+    "domain": "Process",
+    "text": "[TEST #87] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 87)",
+      "B": "Option de test B (question 87)",
+      "C": "Option de test C (question 87)",
+      "D": "Option de test D (question 87)"
+    },
+    "answer": "C",
+    "justification": "Question de test #87 — la bonne réponse est fixée arbitrairement à \"C\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9087,
+    "exam": 99,
+    "num_in_exam": 88,
+    "domain": "People",
+    "text": "[TEST #88] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 88)",
+      "B": "Option de test B (question 88)",
+      "C": "Option de test C (question 88)",
+      "D": "Option de test D (question 88)"
+    },
+    "answer": "D",
+    "justification": "Question de test #88 — la bonne réponse est fixée arbitrairement à \"D\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9088,
+    "exam": 99,
+    "num_in_exam": 89,
+    "domain": "People",
+    "text": "[TEST #89] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 89)",
+      "B": "Option de test B (question 89)",
+      "C": "Option de test C (question 89)",
+      "D": "Option de test D (question 89)"
+    },
+    "answer": "A",
+    "justification": "Question de test #89 — la bonne réponse est fixée arbitrairement à \"A\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9089,
+    "exam": 99,
+    "num_in_exam": 90,
+    "domain": "Process",
+    "text": "[TEST #90] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 90)",
+      "B": "Option de test B (question 90)",
+      "C": "Option de test C (question 90)",
+      "D": "Option de test D (question 90)"
+    },
+    "answer": "B",
+    "justification": "Question de test #90 — la bonne réponse est fixée arbitrairement à \"B\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9090,
+    "exam": 99,
+    "num_in_exam": 91,
+    "domain": "Business",
+    "text": "[TEST #91] Question de test générée automatiquement (domaine Business) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 91)",
+      "B": "Option de test B (question 91)",
+      "C": "Option de test C (question 91)",
+      "D": "Option de test D (question 91)"
+    },
+    "answer": "C",
+    "justification": "Question de test #91 — la bonne réponse est fixée arbitrairement à \"C\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9091,
+    "exam": 99,
+    "num_in_exam": 92,
+    "domain": "People",
+    "text": "[TEST #92] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 92)",
+      "B": "Option de test B (question 92)",
+      "C": "Option de test C (question 92)",
+      "D": "Option de test D (question 92)"
+    },
+    "answer": "D",
+    "justification": "Question de test #92 — la bonne réponse est fixée arbitrairement à \"D\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9092,
+    "exam": 99,
+    "num_in_exam": 93,
+    "domain": "Process",
+    "text": "[TEST #93] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 93)",
+      "B": "Option de test B (question 93)",
+      "C": "Option de test C (question 93)",
+      "D": "Option de test D (question 93)"
+    },
+    "answer": "A",
+    "justification": "Question de test #93 — la bonne réponse est fixée arbitrairement à \"A\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9093,
+    "exam": 99,
+    "num_in_exam": 94,
+    "domain": "Process",
+    "text": "[TEST #94] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 94)",
+      "B": "Option de test B (question 94)",
+      "C": "Option de test C (question 94)",
+      "D": "Option de test D (question 94)"
+    },
+    "answer": "B",
+    "justification": "Question de test #94 — la bonne réponse est fixée arbitrairement à \"B\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9094,
+    "exam": 99,
+    "num_in_exam": 95,
+    "domain": "Business",
+    "text": "[TEST #95] Question de test générée automatiquement (domaine Business) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 95)",
+      "B": "Option de test B (question 95)",
+      "C": "Option de test C (question 95)",
+      "D": "Option de test D (question 95)"
+    },
+    "answer": "C",
+    "justification": "Question de test #95 — la bonne réponse est fixée arbitrairement à \"C\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9095,
+    "exam": 99,
+    "num_in_exam": 96,
+    "domain": "People",
+    "text": "[TEST #96] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 96)",
+      "B": "Option de test B (question 96)",
+      "C": "Option de test C (question 96)",
+      "D": "Option de test D (question 96)"
+    },
+    "answer": "D",
+    "justification": "Question de test #96 — la bonne réponse est fixée arbitrairement à \"D\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9096,
+    "exam": 99,
+    "num_in_exam": 97,
+    "domain": "People",
+    "text": "[TEST #97] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 97)",
+      "B": "Option de test B (question 97)",
+      "C": "Option de test C (question 97)",
+      "D": "Option de test D (question 97)"
+    },
+    "answer": "A",
+    "justification": "Question de test #97 — la bonne réponse est fixée arbitrairement à \"A\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9097,
+    "exam": 99,
+    "num_in_exam": 98,
+    "domain": "Process",
+    "text": "[TEST #98] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 98)",
+      "B": "Option de test B (question 98)",
+      "C": "Option de test C (question 98)",
+      "D": "Option de test D (question 98)"
+    },
+    "answer": "B",
+    "justification": "Question de test #98 — la bonne réponse est fixée arbitrairement à \"B\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9098,
+    "exam": 99,
+    "num_in_exam": 99,
+    "domain": "Process",
+    "text": "[TEST #99] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 99)",
+      "B": "Option de test B (question 99)",
+      "C": "Option de test C (question 99)",
+      "D": "Option de test D (question 99)"
+    },
+    "answer": "C",
+    "justification": "Question de test #99 — la bonne réponse est fixée arbitrairement à \"C\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9099,
+    "exam": 99,
+    "num_in_exam": 100,
+    "domain": "People",
+    "text": "[TEST #100] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 100)",
+      "B": "Option de test B (question 100)",
+      "C": "Option de test C (question 100)",
+      "D": "Option de test D (question 100)"
+    },
+    "answer": "D",
+    "justification": "Question de test #100 — la bonne réponse est fixée arbitrairement à \"D\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9100,
+    "exam": 99,
+    "num_in_exam": 101,
+    "domain": "People",
+    "text": "[TEST #101] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 101)",
+      "B": "Option de test B (question 101)",
+      "C": "Option de test C (question 101)",
+      "D": "Option de test D (question 101)"
+    },
+    "answer": "A",
+    "justification": "Question de test #101 — la bonne réponse est fixée arbitrairement à \"A\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9101,
+    "exam": 99,
+    "num_in_exam": 102,
+    "domain": "Process",
+    "text": "[TEST #102] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 102)",
+      "B": "Option de test B (question 102)",
+      "C": "Option de test C (question 102)",
+      "D": "Option de test D (question 102)"
+    },
+    "answer": "B",
+    "justification": "Question de test #102 — la bonne réponse est fixée arbitrairement à \"B\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9102,
+    "exam": 99,
+    "num_in_exam": 103,
+    "domain": "People",
+    "text": "[TEST #103] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 103)",
+      "B": "Option de test B (question 103)",
+      "C": "Option de test C (question 103)",
+      "D": "Option de test D (question 103)"
+    },
+    "answer": "C",
+    "justification": "Question de test #103 — la bonne réponse est fixée arbitrairement à \"C\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9103,
+    "exam": 99,
+    "num_in_exam": 104,
+    "domain": "Process",
+    "text": "[TEST #104] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 104)",
+      "B": "Option de test B (question 104)",
+      "C": "Option de test C (question 104)",
+      "D": "Option de test D (question 104)"
+    },
+    "answer": "D",
+    "justification": "Question de test #104 — la bonne réponse est fixée arbitrairement à \"D\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9104,
+    "exam": 99,
+    "num_in_exam": 105,
+    "domain": "Process",
+    "text": "[TEST #105] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 105)",
+      "B": "Option de test B (question 105)",
+      "C": "Option de test C (question 105)",
+      "D": "Option de test D (question 105)"
+    },
+    "answer": "A",
+    "justification": "Question de test #105 — la bonne réponse est fixée arbitrairement à \"A\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9105,
+    "exam": 99,
+    "num_in_exam": 106,
+    "domain": "Process",
+    "text": "[TEST #106] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 106)",
+      "B": "Option de test B (question 106)",
+      "C": "Option de test C (question 106)",
+      "D": "Option de test D (question 106)"
+    },
+    "answer": "B",
+    "justification": "Question de test #106 — la bonne réponse est fixée arbitrairement à \"B\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9106,
+    "exam": 99,
+    "num_in_exam": 107,
+    "domain": "Process",
+    "text": "[TEST #107] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 107)",
+      "B": "Option de test B (question 107)",
+      "C": "Option de test C (question 107)",
+      "D": "Option de test D (question 107)"
+    },
+    "answer": "C",
+    "justification": "Question de test #107 — la bonne réponse est fixée arbitrairement à \"C\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9107,
+    "exam": 99,
+    "num_in_exam": 108,
+    "domain": "Process",
+    "text": "[TEST #108] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 108)",
+      "B": "Option de test B (question 108)",
+      "C": "Option de test C (question 108)",
+      "D": "Option de test D (question 108)"
+    },
+    "answer": "D",
+    "justification": "Question de test #108 — la bonne réponse est fixée arbitrairement à \"D\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9108,
+    "exam": 99,
+    "num_in_exam": 109,
+    "domain": "Process",
+    "text": "[TEST #109] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 109)",
+      "B": "Option de test B (question 109)",
+      "C": "Option de test C (question 109)",
+      "D": "Option de test D (question 109)"
+    },
+    "answer": "A",
+    "justification": "Question de test #109 — la bonne réponse est fixée arbitrairement à \"A\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9109,
+    "exam": 99,
+    "num_in_exam": 110,
+    "domain": "People",
+    "text": "[TEST #110] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 110)",
+      "B": "Option de test B (question 110)",
+      "C": "Option de test C (question 110)",
+      "D": "Option de test D (question 110)"
+    },
+    "answer": "B",
+    "justification": "Question de test #110 — la bonne réponse est fixée arbitrairement à \"B\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9110,
+    "exam": 99,
+    "num_in_exam": 111,
+    "domain": "Process",
+    "text": "[TEST #111] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 111)",
+      "B": "Option de test B (question 111)",
+      "C": "Option de test C (question 111)",
+      "D": "Option de test D (question 111)"
+    },
+    "answer": "C",
+    "justification": "Question de test #111 — la bonne réponse est fixée arbitrairement à \"C\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9111,
+    "exam": 99,
+    "num_in_exam": 112,
+    "domain": "People",
+    "text": "[TEST #112] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 112)",
+      "B": "Option de test B (question 112)",
+      "C": "Option de test C (question 112)",
+      "D": "Option de test D (question 112)"
+    },
+    "answer": "D",
+    "justification": "Question de test #112 — la bonne réponse est fixée arbitrairement à \"D\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9112,
+    "exam": 99,
+    "num_in_exam": 113,
+    "domain": "People",
+    "text": "[TEST #113] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 113)",
+      "B": "Option de test B (question 113)",
+      "C": "Option de test C (question 113)",
+      "D": "Option de test D (question 113)"
+    },
+    "answer": "A",
+    "justification": "Question de test #113 — la bonne réponse est fixée arbitrairement à \"A\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9113,
+    "exam": 99,
+    "num_in_exam": 114,
+    "domain": "Process",
+    "text": "[TEST #114] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 114)",
+      "B": "Option de test B (question 114)",
+      "C": "Option de test C (question 114)",
+      "D": "Option de test D (question 114)"
+    },
+    "answer": "B",
+    "justification": "Question de test #114 — la bonne réponse est fixée arbitrairement à \"B\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9114,
+    "exam": 99,
+    "num_in_exam": 115,
+    "domain": "People",
+    "text": "[TEST #115] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 115)",
+      "B": "Option de test B (question 115)",
+      "C": "Option de test C (question 115)",
+      "D": "Option de test D (question 115)"
+    },
+    "answer": "C",
+    "justification": "Question de test #115 — la bonne réponse est fixée arbitrairement à \"C\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9115,
+    "exam": 99,
+    "num_in_exam": 116,
+    "domain": "People",
+    "text": "[TEST #116] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 116)",
+      "B": "Option de test B (question 116)",
+      "C": "Option de test C (question 116)",
+      "D": "Option de test D (question 116)"
+    },
+    "answer": "D",
+    "justification": "Question de test #116 — la bonne réponse est fixée arbitrairement à \"D\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9116,
+    "exam": 99,
+    "num_in_exam": 117,
+    "domain": "Business",
+    "text": "[TEST #117] Question de test générée automatiquement (domaine Business) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 117)",
+      "B": "Option de test B (question 117)",
+      "C": "Option de test C (question 117)",
+      "D": "Option de test D (question 117)"
+    },
+    "answer": "A",
+    "justification": "Question de test #117 — la bonne réponse est fixée arbitrairement à \"A\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9117,
+    "exam": 99,
+    "num_in_exam": 118,
+    "domain": "Process",
+    "text": "[TEST #118] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 118)",
+      "B": "Option de test B (question 118)",
+      "C": "Option de test C (question 118)",
+      "D": "Option de test D (question 118)"
+    },
+    "answer": "B",
+    "justification": "Question de test #118 — la bonne réponse est fixée arbitrairement à \"B\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9118,
+    "exam": 99,
+    "num_in_exam": 119,
+    "domain": "Process",
+    "text": "[TEST #119] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 119)",
+      "B": "Option de test B (question 119)",
+      "C": "Option de test C (question 119)",
+      "D": "Option de test D (question 119)"
+    },
+    "answer": "C",
+    "justification": "Question de test #119 — la bonne réponse est fixée arbitrairement à \"C\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9119,
+    "exam": 99,
+    "num_in_exam": 120,
+    "domain": "Process",
+    "text": "[TEST #120] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 120)",
+      "B": "Option de test B (question 120)",
+      "C": "Option de test C (question 120)",
+      "D": "Option de test D (question 120)"
+    },
+    "answer": "D",
+    "justification": "Question de test #120 — la bonne réponse est fixée arbitrairement à \"D\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9120,
+    "exam": 99,
+    "num_in_exam": 121,
+    "domain": "Process",
+    "text": "[TEST #121] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 121)",
+      "B": "Option de test B (question 121)",
+      "C": "Option de test C (question 121)",
+      "D": "Option de test D (question 121)"
+    },
+    "answer": "A",
+    "justification": "Question de test #121 — la bonne réponse est fixée arbitrairement à \"A\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9121,
+    "exam": 99,
+    "num_in_exam": 122,
+    "domain": "People",
+    "text": "[TEST #122] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 122)",
+      "B": "Option de test B (question 122)",
+      "C": "Option de test C (question 122)",
+      "D": "Option de test D (question 122)"
+    },
+    "answer": "B",
+    "justification": "Question de test #122 — la bonne réponse est fixée arbitrairement à \"B\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9122,
+    "exam": 99,
+    "num_in_exam": 123,
+    "domain": "Process",
+    "text": "[TEST #123] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 123)",
+      "B": "Option de test B (question 123)",
+      "C": "Option de test C (question 123)",
+      "D": "Option de test D (question 123)"
+    },
+    "answer": "C",
+    "justification": "Question de test #123 — la bonne réponse est fixée arbitrairement à \"C\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9123,
+    "exam": 99,
+    "num_in_exam": 124,
+    "domain": "People",
+    "text": "[TEST #124] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 124)",
+      "B": "Option de test B (question 124)",
+      "C": "Option de test C (question 124)",
+      "D": "Option de test D (question 124)"
+    },
+    "answer": "D",
+    "justification": "Question de test #124 — la bonne réponse est fixée arbitrairement à \"D\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9124,
+    "exam": 99,
+    "num_in_exam": 125,
+    "domain": "Process",
+    "text": "[TEST #125] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 125)",
+      "B": "Option de test B (question 125)",
+      "C": "Option de test C (question 125)",
+      "D": "Option de test D (question 125)"
+    },
+    "answer": "A",
+    "justification": "Question de test #125 — la bonne réponse est fixée arbitrairement à \"A\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9125,
+    "exam": 99,
+    "num_in_exam": 126,
+    "domain": "Process",
+    "text": "[TEST #126] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 126)",
+      "B": "Option de test B (question 126)",
+      "C": "Option de test C (question 126)",
+      "D": "Option de test D (question 126)"
+    },
+    "answer": "B",
+    "justification": "Question de test #126 — la bonne réponse est fixée arbitrairement à \"B\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9126,
+    "exam": 99,
+    "num_in_exam": 127,
+    "domain": "People",
+    "text": "[TEST #127] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 127)",
+      "B": "Option de test B (question 127)",
+      "C": "Option de test C (question 127)",
+      "D": "Option de test D (question 127)"
+    },
+    "answer": "C",
+    "justification": "Question de test #127 — la bonne réponse est fixée arbitrairement à \"C\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9127,
+    "exam": 99,
+    "num_in_exam": 128,
+    "domain": "People",
+    "text": "[TEST #128] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 128)",
+      "B": "Option de test B (question 128)",
+      "C": "Option de test C (question 128)",
+      "D": "Option de test D (question 128)"
+    },
+    "answer": "D",
+    "justification": "Question de test #128 — la bonne réponse est fixée arbitrairement à \"D\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9128,
+    "exam": 99,
+    "num_in_exam": 129,
+    "domain": "People",
+    "text": "[TEST #129] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 129)",
+      "B": "Option de test B (question 129)",
+      "C": "Option de test C (question 129)",
+      "D": "Option de test D (question 129)"
+    },
+    "answer": "A",
+    "justification": "Question de test #129 — la bonne réponse est fixée arbitrairement à \"A\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9129,
+    "exam": 99,
+    "num_in_exam": 130,
+    "domain": "Process",
+    "text": "[TEST #130] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 130)",
+      "B": "Option de test B (question 130)",
+      "C": "Option de test C (question 130)",
+      "D": "Option de test D (question 130)"
+    },
+    "answer": "B",
+    "justification": "Question de test #130 — la bonne réponse est fixée arbitrairement à \"B\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9130,
+    "exam": 99,
+    "num_in_exam": 131,
+    "domain": "Process",
+    "text": "[TEST #131] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 131)",
+      "B": "Option de test B (question 131)",
+      "C": "Option de test C (question 131)",
+      "D": "Option de test D (question 131)"
+    },
+    "answer": "C",
+    "justification": "Question de test #131 — la bonne réponse est fixée arbitrairement à \"C\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9131,
+    "exam": 99,
+    "num_in_exam": 132,
+    "domain": "People",
+    "text": "[TEST #132] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 132)",
+      "B": "Option de test B (question 132)",
+      "C": "Option de test C (question 132)",
+      "D": "Option de test D (question 132)"
+    },
+    "answer": "D",
+    "justification": "Question de test #132 — la bonne réponse est fixée arbitrairement à \"D\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9132,
+    "exam": 99,
+    "num_in_exam": 133,
+    "domain": "People",
+    "text": "[TEST #133] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 133)",
+      "B": "Option de test B (question 133)",
+      "C": "Option de test C (question 133)",
+      "D": "Option de test D (question 133)"
+    },
+    "answer": "A",
+    "justification": "Question de test #133 — la bonne réponse est fixée arbitrairement à \"A\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9133,
+    "exam": 99,
+    "num_in_exam": 134,
+    "domain": "Business",
+    "text": "[TEST #134] Question de test générée automatiquement (domaine Business) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 134)",
+      "B": "Option de test B (question 134)",
+      "C": "Option de test C (question 134)",
+      "D": "Option de test D (question 134)"
+    },
+    "answer": "B",
+    "justification": "Question de test #134 — la bonne réponse est fixée arbitrairement à \"B\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9134,
+    "exam": 99,
+    "num_in_exam": 135,
+    "domain": "Process",
+    "text": "[TEST #135] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 135)",
+      "B": "Option de test B (question 135)",
+      "C": "Option de test C (question 135)",
+      "D": "Option de test D (question 135)"
+    },
+    "answer": "C",
+    "justification": "Question de test #135 — la bonne réponse est fixée arbitrairement à \"C\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9135,
+    "exam": 99,
+    "num_in_exam": 136,
+    "domain": "People",
+    "text": "[TEST #136] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 136)",
+      "B": "Option de test B (question 136)",
+      "C": "Option de test C (question 136)",
+      "D": "Option de test D (question 136)"
+    },
+    "answer": "D",
+    "justification": "Question de test #136 — la bonne réponse est fixée arbitrairement à \"D\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9136,
+    "exam": 99,
+    "num_in_exam": 137,
+    "domain": "Process",
+    "text": "[TEST #137] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 137)",
+      "B": "Option de test B (question 137)",
+      "C": "Option de test C (question 137)",
+      "D": "Option de test D (question 137)"
+    },
+    "answer": "A",
+    "justification": "Question de test #137 — la bonne réponse est fixée arbitrairement à \"A\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9137,
+    "exam": 99,
+    "num_in_exam": 138,
+    "domain": "Process",
+    "text": "[TEST #138] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 138)",
+      "B": "Option de test B (question 138)",
+      "C": "Option de test C (question 138)",
+      "D": "Option de test D (question 138)"
+    },
+    "answer": "B",
+    "justification": "Question de test #138 — la bonne réponse est fixée arbitrairement à \"B\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9138,
+    "exam": 99,
+    "num_in_exam": 139,
+    "domain": "Business",
+    "text": "[TEST #139] Question de test générée automatiquement (domaine Business) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 139)",
+      "B": "Option de test B (question 139)",
+      "C": "Option de test C (question 139)",
+      "D": "Option de test D (question 139)"
+    },
+    "answer": "C",
+    "justification": "Question de test #139 — la bonne réponse est fixée arbitrairement à \"C\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9139,
+    "exam": 99,
+    "num_in_exam": 140,
+    "domain": "Process",
+    "text": "[TEST #140] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 140)",
+      "B": "Option de test B (question 140)",
+      "C": "Option de test C (question 140)",
+      "D": "Option de test D (question 140)"
+    },
+    "answer": "D",
+    "justification": "Question de test #140 — la bonne réponse est fixée arbitrairement à \"D\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9140,
+    "exam": 99,
+    "num_in_exam": 141,
+    "domain": "People",
+    "text": "[TEST #141] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 141)",
+      "B": "Option de test B (question 141)",
+      "C": "Option de test C (question 141)",
+      "D": "Option de test D (question 141)"
+    },
+    "answer": "A",
+    "justification": "Question de test #141 — la bonne réponse est fixée arbitrairement à \"A\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9141,
+    "exam": 99,
+    "num_in_exam": 142,
+    "domain": "People",
+    "text": "[TEST #142] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 142)",
+      "B": "Option de test B (question 142)",
+      "C": "Option de test C (question 142)",
+      "D": "Option de test D (question 142)"
+    },
+    "answer": "B",
+    "justification": "Question de test #142 — la bonne réponse est fixée arbitrairement à \"B\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9142,
+    "exam": 99,
+    "num_in_exam": 143,
+    "domain": "Process",
+    "text": "[TEST #143] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 143)",
+      "B": "Option de test B (question 143)",
+      "C": "Option de test C (question 143)",
+      "D": "Option de test D (question 143)"
+    },
+    "answer": "C",
+    "justification": "Question de test #143 — la bonne réponse est fixée arbitrairement à \"C\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9143,
+    "exam": 99,
+    "num_in_exam": 144,
+    "domain": "Process",
+    "text": "[TEST #144] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 144)",
+      "B": "Option de test B (question 144)",
+      "C": "Option de test C (question 144)",
+      "D": "Option de test D (question 144)"
+    },
+    "answer": "D",
+    "justification": "Question de test #144 — la bonne réponse est fixée arbitrairement à \"D\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9144,
+    "exam": 99,
+    "num_in_exam": 145,
+    "domain": "People",
+    "text": "[TEST #145] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 145)",
+      "B": "Option de test B (question 145)",
+      "C": "Option de test C (question 145)",
+      "D": "Option de test D (question 145)"
+    },
+    "answer": "A",
+    "justification": "Question de test #145 — la bonne réponse est fixée arbitrairement à \"A\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9145,
+    "exam": 99,
+    "num_in_exam": 146,
+    "domain": "Process",
+    "text": "[TEST #146] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 146)",
+      "B": "Option de test B (question 146)",
+      "C": "Option de test C (question 146)",
+      "D": "Option de test D (question 146)"
+    },
+    "answer": "B",
+    "justification": "Question de test #146 — la bonne réponse est fixée arbitrairement à \"B\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9146,
+    "exam": 99,
+    "num_in_exam": 147,
+    "domain": "People",
+    "text": "[TEST #147] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 147)",
+      "B": "Option de test B (question 147)",
+      "C": "Option de test C (question 147)",
+      "D": "Option de test D (question 147)"
+    },
+    "answer": "C",
+    "justification": "Question de test #147 — la bonne réponse est fixée arbitrairement à \"C\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9147,
+    "exam": 99,
+    "num_in_exam": 148,
+    "domain": "Business",
+    "text": "[TEST #148] Question de test générée automatiquement (domaine Business) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 148)",
+      "B": "Option de test B (question 148)",
+      "C": "Option de test C (question 148)",
+      "D": "Option de test D (question 148)"
+    },
+    "answer": "D",
+    "justification": "Question de test #148 — la bonne réponse est fixée arbitrairement à \"D\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9148,
+    "exam": 99,
+    "num_in_exam": 149,
+    "domain": "Process",
+    "text": "[TEST #149] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 149)",
+      "B": "Option de test B (question 149)",
+      "C": "Option de test C (question 149)",
+      "D": "Option de test D (question 149)"
+    },
+    "answer": "A",
+    "justification": "Question de test #149 — la bonne réponse est fixée arbitrairement à \"A\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9149,
+    "exam": 99,
+    "num_in_exam": 150,
+    "domain": "People",
+    "text": "[TEST #150] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 150)",
+      "B": "Option de test B (question 150)",
+      "C": "Option de test C (question 150)",
+      "D": "Option de test D (question 150)"
+    },
+    "answer": "B",
+    "justification": "Question de test #150 — la bonne réponse est fixée arbitrairement à \"B\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9150,
+    "exam": 99,
+    "num_in_exam": 151,
+    "domain": "Process",
+    "text": "[TEST #151] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 151)",
+      "B": "Option de test B (question 151)",
+      "C": "Option de test C (question 151)",
+      "D": "Option de test D (question 151)"
+    },
+    "answer": "C",
+    "justification": "Question de test #151 — la bonne réponse est fixée arbitrairement à \"C\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9151,
+    "exam": 99,
+    "num_in_exam": 152,
+    "domain": "People",
+    "text": "[TEST #152] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 152)",
+      "B": "Option de test B (question 152)",
+      "C": "Option de test C (question 152)",
+      "D": "Option de test D (question 152)"
+    },
+    "answer": "D",
+    "justification": "Question de test #152 — la bonne réponse est fixée arbitrairement à \"D\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9152,
+    "exam": 99,
+    "num_in_exam": 153,
+    "domain": "Process",
+    "text": "[TEST #153] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 153)",
+      "B": "Option de test B (question 153)",
+      "C": "Option de test C (question 153)",
+      "D": "Option de test D (question 153)"
+    },
+    "answer": "A",
+    "justification": "Question de test #153 — la bonne réponse est fixée arbitrairement à \"A\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9153,
+    "exam": 99,
+    "num_in_exam": 154,
+    "domain": "Process",
+    "text": "[TEST #154] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 154)",
+      "B": "Option de test B (question 154)",
+      "C": "Option de test C (question 154)",
+      "D": "Option de test D (question 154)"
+    },
+    "answer": "B",
+    "justification": "Question de test #154 — la bonne réponse est fixée arbitrairement à \"B\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9154,
+    "exam": 99,
+    "num_in_exam": 155,
+    "domain": "People",
+    "text": "[TEST #155] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 155)",
+      "B": "Option de test B (question 155)",
+      "C": "Option de test C (question 155)",
+      "D": "Option de test D (question 155)"
+    },
+    "answer": "C",
+    "justification": "Question de test #155 — la bonne réponse est fixée arbitrairement à \"C\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9155,
+    "exam": 99,
+    "num_in_exam": 156,
+    "domain": "Process",
+    "text": "[TEST #156] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 156)",
+      "B": "Option de test B (question 156)",
+      "C": "Option de test C (question 156)",
+      "D": "Option de test D (question 156)"
+    },
+    "answer": "D",
+    "justification": "Question de test #156 — la bonne réponse est fixée arbitrairement à \"D\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9156,
+    "exam": 99,
+    "num_in_exam": 157,
+    "domain": "Process",
+    "text": "[TEST #157] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 157)",
+      "B": "Option de test B (question 157)",
+      "C": "Option de test C (question 157)",
+      "D": "Option de test D (question 157)"
+    },
+    "answer": "A",
+    "justification": "Question de test #157 — la bonne réponse est fixée arbitrairement à \"A\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9157,
+    "exam": 99,
+    "num_in_exam": 158,
+    "domain": "People",
+    "text": "[TEST #158] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 158)",
+      "B": "Option de test B (question 158)",
+      "C": "Option de test C (question 158)",
+      "D": "Option de test D (question 158)"
+    },
+    "answer": "B",
+    "justification": "Question de test #158 — la bonne réponse est fixée arbitrairement à \"B\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9158,
+    "exam": 99,
+    "num_in_exam": 159,
+    "domain": "People",
+    "text": "[TEST #159] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 159)",
+      "B": "Option de test B (question 159)",
+      "C": "Option de test C (question 159)",
+      "D": "Option de test D (question 159)"
+    },
+    "answer": "C",
+    "justification": "Question de test #159 — la bonne réponse est fixée arbitrairement à \"C\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9159,
+    "exam": 99,
+    "num_in_exam": 160,
+    "domain": "People",
+    "text": "[TEST #160] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 160)",
+      "B": "Option de test B (question 160)",
+      "C": "Option de test C (question 160)",
+      "D": "Option de test D (question 160)"
+    },
+    "answer": "D",
+    "justification": "Question de test #160 — la bonne réponse est fixée arbitrairement à \"D\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9160,
+    "exam": 99,
+    "num_in_exam": 161,
+    "domain": "Business",
+    "text": "[TEST #161] Question de test générée automatiquement (domaine Business) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 161)",
+      "B": "Option de test B (question 161)",
+      "C": "Option de test C (question 161)",
+      "D": "Option de test D (question 161)"
+    },
+    "answer": "A",
+    "justification": "Question de test #161 — la bonne réponse est fixée arbitrairement à \"A\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9161,
+    "exam": 99,
+    "num_in_exam": 162,
+    "domain": "Process",
+    "text": "[TEST #162] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 162)",
+      "B": "Option de test B (question 162)",
+      "C": "Option de test C (question 162)",
+      "D": "Option de test D (question 162)"
+    },
+    "answer": "B",
+    "justification": "Question de test #162 — la bonne réponse est fixée arbitrairement à \"B\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9162,
+    "exam": 99,
+    "num_in_exam": 163,
+    "domain": "People",
+    "text": "[TEST #163] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 163)",
+      "B": "Option de test B (question 163)",
+      "C": "Option de test C (question 163)",
+      "D": "Option de test D (question 163)"
+    },
+    "answer": "C",
+    "justification": "Question de test #163 — la bonne réponse est fixée arbitrairement à \"C\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9163,
+    "exam": 99,
+    "num_in_exam": 164,
+    "domain": "People",
+    "text": "[TEST #164] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 164)",
+      "B": "Option de test B (question 164)",
+      "C": "Option de test C (question 164)",
+      "D": "Option de test D (question 164)"
+    },
+    "answer": "D",
+    "justification": "Question de test #164 — la bonne réponse est fixée arbitrairement à \"D\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9164,
+    "exam": 99,
+    "num_in_exam": 165,
+    "domain": "Process",
+    "text": "[TEST #165] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 165)",
+      "B": "Option de test B (question 165)",
+      "C": "Option de test C (question 165)",
+      "D": "Option de test D (question 165)"
+    },
+    "answer": "A",
+    "justification": "Question de test #165 — la bonne réponse est fixée arbitrairement à \"A\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9165,
+    "exam": 99,
+    "num_in_exam": 166,
+    "domain": "Process",
+    "text": "[TEST #166] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 166)",
+      "B": "Option de test B (question 166)",
+      "C": "Option de test C (question 166)",
+      "D": "Option de test D (question 166)"
+    },
+    "answer": "B",
+    "justification": "Question de test #166 — la bonne réponse est fixée arbitrairement à \"B\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9166,
+    "exam": 99,
+    "num_in_exam": 167,
+    "domain": "Process",
+    "text": "[TEST #167] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 167)",
+      "B": "Option de test B (question 167)",
+      "C": "Option de test C (question 167)",
+      "D": "Option de test D (question 167)"
+    },
+    "answer": "C",
+    "justification": "Question de test #167 — la bonne réponse est fixée arbitrairement à \"C\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9167,
+    "exam": 99,
+    "num_in_exam": 168,
+    "domain": "Process",
+    "text": "[TEST #168] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 168)",
+      "B": "Option de test B (question 168)",
+      "C": "Option de test C (question 168)",
+      "D": "Option de test D (question 168)"
+    },
+    "answer": "D",
+    "justification": "Question de test #168 — la bonne réponse est fixée arbitrairement à \"D\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9168,
+    "exam": 99,
+    "num_in_exam": 169,
+    "domain": "People",
+    "text": "[TEST #169] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 169)",
+      "B": "Option de test B (question 169)",
+      "C": "Option de test C (question 169)",
+      "D": "Option de test D (question 169)"
+    },
+    "answer": "A",
+    "justification": "Question de test #169 — la bonne réponse est fixée arbitrairement à \"A\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9169,
+    "exam": 99,
+    "num_in_exam": 170,
+    "domain": "Business",
+    "text": "[TEST #170] Question de test générée automatiquement (domaine Business) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 170)",
+      "B": "Option de test B (question 170)",
+      "C": "Option de test C (question 170)",
+      "D": "Option de test D (question 170)"
+    },
+    "answer": "B",
+    "justification": "Question de test #170 — la bonne réponse est fixée arbitrairement à \"B\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9170,
+    "exam": 99,
+    "num_in_exam": 171,
+    "domain": "Process",
+    "text": "[TEST #171] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 171)",
+      "B": "Option de test B (question 171)",
+      "C": "Option de test C (question 171)",
+      "D": "Option de test D (question 171)"
+    },
+    "answer": "C",
+    "justification": "Question de test #171 — la bonne réponse est fixée arbitrairement à \"C\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9171,
+    "exam": 99,
+    "num_in_exam": 172,
+    "domain": "Process",
+    "text": "[TEST #172] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 172)",
+      "B": "Option de test B (question 172)",
+      "C": "Option de test C (question 172)",
+      "D": "Option de test D (question 172)"
+    },
+    "answer": "D",
+    "justification": "Question de test #172 — la bonne réponse est fixée arbitrairement à \"D\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9172,
+    "exam": 99,
+    "num_in_exam": 173,
+    "domain": "People",
+    "text": "[TEST #173] Question de test générée automatiquement (domaine People) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 173)",
+      "B": "Option de test B (question 173)",
+      "C": "Option de test C (question 173)",
+      "D": "Option de test D (question 173)"
+    },
+    "answer": "A",
+    "justification": "Question de test #173 — la bonne réponse est fixée arbitrairement à \"A\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9173,
+    "exam": 99,
+    "num_in_exam": 174,
+    "domain": "Process",
+    "text": "[TEST #174] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 174)",
+      "B": "Option de test B (question 174)",
+      "C": "Option de test C (question 174)",
+      "D": "Option de test D (question 174)"
+    },
+    "answer": "B",
+    "justification": "Question de test #174 — la bonne réponse est fixée arbitrairement à \"B\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9174,
+    "exam": 99,
+    "num_in_exam": 175,
+    "domain": "Process",
+    "text": "[TEST #175] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 175)",
+      "B": "Option de test B (question 175)",
+      "C": "Option de test C (question 175)",
+      "D": "Option de test D (question 175)"
+    },
+    "answer": "C",
+    "justification": "Question de test #175 — la bonne réponse est fixée arbitrairement à \"C\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9175,
+    "exam": 99,
+    "num_in_exam": 176,
+    "domain": "Process",
+    "text": "[TEST #176] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 176)",
+      "B": "Option de test B (question 176)",
+      "C": "Option de test C (question 176)",
+      "D": "Option de test D (question 176)"
+    },
+    "answer": "D",
+    "justification": "Question de test #176 — la bonne réponse est fixée arbitrairement à \"D\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9176,
+    "exam": 99,
+    "num_in_exam": 177,
+    "domain": "Process",
+    "text": "[TEST #177] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 177)",
+      "B": "Option de test B (question 177)",
+      "C": "Option de test C (question 177)",
+      "D": "Option de test D (question 177)"
+    },
+    "answer": "A",
+    "justification": "Question de test #177 — la bonne réponse est fixée arbitrairement à \"A\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9177,
+    "exam": 99,
+    "num_in_exam": 178,
+    "domain": "Business",
+    "text": "[TEST #178] Question de test générée automatiquement (domaine Business) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 178)",
+      "B": "Option de test B (question 178)",
+      "C": "Option de test C (question 178)",
+      "D": "Option de test D (question 178)"
+    },
+    "answer": "B",
+    "justification": "Question de test #178 — la bonne réponse est fixée arbitrairement à \"B\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9178,
+    "exam": 99,
+    "num_in_exam": 179,
+    "domain": "Process",
+    "text": "[TEST #179] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 179)",
+      "B": "Option de test B (question 179)",
+      "C": "Option de test C (question 179)",
+      "D": "Option de test D (question 179)"
+    },
+    "answer": "C",
+    "justification": "Question de test #179 — la bonne réponse est fixée arbitrairement à \"C\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 9179,
+    "exam": 99,
+    "num_in_exam": 180,
+    "domain": "Process",
+    "text": "[TEST #180] Question de test générée automatiquement (domaine Process) — sert uniquement à valider le mécanisme de pause après 60/120 questions et l'horloge de 240 minutes. À remplacer par une vraie question via l'administration.",
+    "options": {
+      "A": "Option de test A (question 180)",
+      "B": "Option de test B (question 180)",
+      "C": "Option de test C (question 180)",
+      "D": "Option de test D (question 180)"
+    },
+    "answer": "D",
+    "justification": "Question de test #180 — la bonne réponse est fixée arbitrairement à \"D\" pour permettre de vérifier le calcul du score. Ne pas utiliser telle quelle pour un vrai examen.",
+    "category": "Exam"
+  },
+  {
+    "id": 66,
+    "exam": 2,
+    "num_in_exam": 6,
+    "domain": "People",
+    "approche": "agile_hybride",
+    "text": "Un membre de votre équipe agile propose de raccourcir le daily stand-up à 5 minutes strictes, mais plusieurs membres estiment avoir besoin de plus de temps pour partager le contexte. Quelle est la meilleure action du Scrum Master ?",
+    "options": {
+      "A": "Imposer les 5 minutes sans discussion",
+      "B": "Faciliter une discussion d'équipe sur le format optimal, en testant des ajustements et en évaluant leur efficacité",
+      "C": "Maintenir la durée actuelle indéfiniment",
+      "D": "Laisser chaque membre décider individuellement de sa propre durée de parole"
+    },
+    "answer": "B",
+    "justification": "Le format des cérémonies doit être ajusté collaborativement selon les besoins réels de l'équipe, testé puis évalué, plutôt qu'imposé (A) ou figé (C).",
+    "reference": "PMBOK 8 - Focus Area Optimisation des cérémonies agiles",
+    "category": "Exam"
+  },
+  {
+    "id": 67,
+    "exam": 2,
+    "num_in_exam": 7,
+    "domain": "People",
+    "approche": "agile_hybride",
+    "text": "Un Product Owner change fréquemment d'avis sur la définition du MVP, créant une confusion dans l'équipe de développement. Quelle est la meilleure action ?",
+    "options": {
+      "A": "Continuer selon la dernière version communiquée sans clarification",
+      "B": "Organiser une session de clarification pour documenter formellement une définition stable du MVP, révisable via un processus défini",
+      "C": "Ignorer les changements et poursuivre le plan initial",
+      "D": "Demander à l'équipe de développement de définir elle-même le MVP"
+    },
+    "answer": "B",
+    "justification": "Une instabilité de définition du MVP doit être stabilisée par une clarification documentée avec processus de révision clair, plutôt qu'ignorée dans un sens ou dans l'autre (A, C) ou déléguée de façon inappropriée (D).",
+    "reference": "PMBOK 8 - Focus Area Stabilité de la définition du MVP",
+    "category": "Exam"
+  },
+  {
+    "id": 68,
+    "exam": 2,
+    "num_in_exam": 8,
+    "domain": "People",
+    "approche": "predictif",
+    "text": "Un chef de projet découvre qu'un membre senior de son équipe partage des informations confidentielles du projet avec un ancien collègue travaillant chez un concurrent. Quelle est la meilleure action immédiate ?",
+    "options": {
+      "A": "Ignorer tant qu'aucun dommage concret n'est prouvé",
+      "B": "Vérifier les faits, puis escalader formellement au service conformité/juridique tout en traitant la question avec discrétion",
+      "C": "Confronter publiquement le membre en réunion d'équipe",
+      "D": "Résilier immédiatement son contrat sans procédure"
+    },
+    "answer": "B",
+    "justification": "Une fuite d'information confidentielle suspectée doit être vérifiée puis escaladée formellement au service compétent, jamais traitée publiquement (C) ni de façon disproportionnée sans procédure (D).",
+    "reference": "PMBOK 8 - Focus Area Confidentialité et intégrité professionnelle",
+    "category": "Exam"
+  },
+  {
+    "id": 69,
+    "exam": 2,
+    "num_in_exam": 9,
+    "domain": "People",
+    "approche": "predictif",
+    "text": "Le sponsor de votre projet insiste pour que vous rapportiez directement à lui, contournant le comité de pilotage établi. Quelle est la meilleure action ?",
+    "options": {
+      "A": "Accepter et rapporter uniquement au sponsor",
+      "B": "Clarifier avec le sponsor l'importance de maintenir la gouvernance établie, tout en maintenant une communication ouverte avec lui dans ce cadre",
+      "C": "Refuser tout contact direct avec le sponsor",
+      "D": "Rapporter à la fois au sponsor et au comité sans cohérence"
+    },
+    "answer": "B",
+    "justification": "Un contournement de gouvernance, même demandé par le sponsor, doit être clarifié pour préserver l'intégrité du processus établi, sans pour autant couper la communication (C).",
+    "reference": "PMBOK 8 - Focus Area Intégrité de la gouvernance de projet",
+    "category": "Exam"
+  },
+  {
+    "id": 70,
+    "exam": 2,
+    "num_in_exam": 10,
+    "domain": "People",
+    "approche": "agile_hybride",
+    "text": "Une équipe distribuée sur 3 continents peine à trouver un créneau de daily stand-up convenant à tous les fuseaux horaires. Quelle est la meilleure solution ?",
+    "options": {
+      "A": "Imposer l'horaire du siège social à tous",
+      "B": "Alterner les horaires de réunion équitablement entre les fuseaux, ou passer à un format asynchrone documenté",
+      "C": "Supprimer le daily stand-up",
+      "D": "Diviser l'équipe en sous-groupes qui ne se synchronisent jamais"
+    },
+    "answer": "B",
+    "justification": "Une contrainte de fuseaux horaires multiples doit être résolue par une alternance équitable ou un format asynchrone, plutôt qu'une imposition unilatérale (A) ou une suppression du rituel (C).",
+    "reference": "PMBOK 8 - Focus Area Équité des horaires en équipe distribuée internationale",
+    "category": "Exam"
+  },
+  {
+    "id": 71,
+    "exam": 2,
+    "num_in_exam": 11,
+    "domain": "People",
+    "approche": "agile_hybride",
+    "text": "Un membre junior propose une idée technique innovante en planning, mais le Lead Technique la rejette immédiatement sans explication. Quelle est la meilleure action du Scrum Master ?",
+    "options": {
+      "A": "Ne rien dire, le Lead Technique a l'autorité technique",
+      "B": "Encourager le Lead Technique à expliquer son raisonnement, favorisant un climat où les idées sont examinées sur le fond",
+      "C": "Adopter automatiquement l'idée du junior pour l'encourager",
+      "D": "Discuter du rejet uniquement en privé avec le junior sans impliquer le Lead Technique"
+    },
+    "answer": "B",
+    "justification": "Un rejet sans explication nuit à la sécurité psychologique ; encourager une justification favorise un climat d'examen objectif des idées, indépendamment du statut.",
+    "reference": "PMBOK 8 - Focus Area Sécurité psychologique et examen objectif des idées",
+    "category": "Exam"
+  },
+  {
+    "id": 72,
+    "exam": 2,
+    "num_in_exam": 12,
+    "domain": "People",
+    "approche": "predictif",
+    "text": "Un membre de l'équipe est régulièrement en désaccord avec les décisions de planification mais ne l'exprime jamais en réunion. Quelle est la meilleure action du chef de projet ?",
+    "options": {
+      "A": "Continuer sans chercher à comprendre son silence",
+      "B": "Créer un espace de dialogue individuel pour comprendre son point de vue et encourager une expression plus directe à l'avenir",
+      "C": "Ignorer ses désaccords tant qu'il exécute les tâches",
+      "D": "Le retirer des réunions de planification"
+    },
+    "answer": "B",
+    "justification": "Un désaccord silencieux mérite exploration individuelle et encouragement à l'expression directe, plutôt qu'ignoré (A, C) ou évité par exclusion (D).",
+    "reference": "PMBOK 8 - Focus Area Encouragement de l'expression directe des désaccords",
+    "category": "Exam"
+  },
+  {
+    "id": 73,
+    "exam": 2,
+    "num_in_exam": 13,
+    "domain": "People",
+    "approche": "predictif",
+    "text": "Une réorganisation transfère plusieurs membres de votre équipe vers un nouveau manager sans consultation préalable. Quelle est la meilleure action ?",
+    "options": {
+      "A": "Accepter sans évaluer l'impact sur le projet",
+      "B": "Évaluer l'impact sur le calendrier et négocier une transition avec la nouvelle direction",
+      "C": "Refuser le transfert",
+      "D": "Ignorer la réorganisation"
+    },
+    "answer": "B",
+    "justification": "Un transfert de ressources imposé doit être évalué pour son impact avec négociation d'une transition appropriée, plutôt qu'accepté sans réaction (A) ou ignoré (D).",
+    "reference": "PMBOK 8 - Focus Area Gestion des réaffectations organisationnelles",
+    "category": "Exam"
+  },
+  {
+    "id": 74,
+    "exam": 2,
+    "num_in_exam": 14,
+    "domain": "Process",
+    "approche": "agile_hybride",
+    "text": "Une user story critique reste bloquée car elle dépend d'une décision d'architecture jamais tranchée. Quelle est la meilleure action ?",
+    "options": {
+      "A": "Continuer sans décision architecturale",
+      "B": "Organiser un spike technique dédié pour trancher la décision avant de planifier les stories dépendantes",
+      "C": "Laisser chaque développeur choisir sa propre approche",
+      "D": "Annuler la story"
+    },
+    "answer": "B",
+    "justification": "Une dépendance architecturale bloquante doit être résolue par un spike dédié avant planification, plutôt qu'ignorée (A) ou traitée de façon incohérente (C).",
+    "reference": "PMBOK 8 - Focus Area Spikes techniques et décisions d'architecture",
+    "category": "Exam"
+  },
+  {
+    "id": 75,
+    "exam": 2,
+    "num_in_exam": 15,
+    "domain": "Process",
+    "approche": "agile_hybride",
+    "text": "Un incrément livré fonctionne mais génère des logs excessifs, saturant l'espace de stockage. Quelle est la meilleure action ?",
+    "options": {
+      "A": "Ignorer tant que le système reste fonctionnel",
+      "B": "Optimiser la stratégie de logging (niveaux appropriés, rotation, rétention) et l'intégrer aux standards de qualité",
+      "C": "Supprimer tous les logs",
+      "D": "Augmenter indéfiniment le stockage sans optimisation"
+    },
+    "answer": "B",
+    "justification": "Un excès de logs doit être corrigé par une stratégie de logging optimisée, plutôt qu'ignoré (A) ou compensé par une expansion infinie de stockage (D).",
+    "reference": "PMBOK 8 - Focus Area Gestion des logs et standards de qualité",
+    "category": "Exam"
+  },
+  {
+    "id": 76,
+    "exam": 2,
+    "num_in_exam": 16,
+    "domain": "Process",
+    "approche": "agile_hybride",
+    "text": "Deux user stories apparemment indépendantes révèlent, en cours de développement, un couplage technique fort non anticipé. Quelle est la meilleure action ?",
+    "options": {
+      "A": "Continuer à les traiter séparément malgré le couplage découvert",
+      "B": "Communiquer la découverte au Product Owner, réévaluer conjointement le séquencement et l'estimation des deux stories",
+      "C": "Abandonner l'une des deux stories",
+      "D": "Fusionner arbitrairement les deux stories sans discussion"
+    },
+    "answer": "B",
+    "justification": "Un couplage technique découvert doit être communiqué pour réévaluation collaborative du séquencement, plutôt qu'ignoré (A) ou traité arbitrairement (D).",
+    "reference": "PMBOK 8 - Focus Area Gestion des dépendances techniques découvertes",
+    "category": "Exam"
+  },
+  {
+    "id": 77,
+    "exam": 2,
+    "num_in_exam": 17,
+    "domain": "Process",
+    "approche": "agile_hybride",
+    "text": "Un incrément produit introduit une régression mineure de style visuel non fonctionnelle, détectée juste avant la sprint review. Quelle est la meilleure action ?",
+    "options": {
+      "A": "Annuler la sprint review",
+      "B": "Présenter l'incrément en mentionnant transparemment la régression mineure identifiée, avec un plan de correction au sprint suivant",
+      "C": "Cacher le problème pendant la démonstration",
+      "D": "Retarder indéfiniment la review jusqu'à correction complète"
+    },
+    "answer": "B",
+    "justification": "Une régression mineure découverte tardivement doit être communiquée transparemment lors de la review avec plan de correction, plutôt que cachée (C) ou traitée par une annulation disproportionnée (A, D).",
+    "reference": "PMBOK 8 - Focus Area Transparence lors de la revue de sprint",
+    "category": "Exam"
+  },
+  {
+    "id": 78,
+    "exam": 2,
+    "num_in_exam": 18,
+    "domain": "Process",
+    "approche": "predictif",
+    "text": "Un audit révèle que la matrice RACI de votre projet n'a jamais été formellement validée par les parties prenantes concernées. Quelle est la meilleure action ?",
+    "options": {
+      "A": "Continuer sans validation formelle",
+      "B": "Faire valider formellement la matrice RACI par toutes les parties prenantes concernées, corrigeant toute ambiguïté identifiée",
+      "C": "Supprimer la matrice RACI",
+      "D": "Créer une nouvelle matrice sans consultation"
+    },
+    "answer": "B",
+    "justification": "Une matrice RACI non validée doit être formellement validée par les parties prenantes concernées pour éliminer les ambiguïtés, plutôt qu'ignorée (A) ou recréée sans consultation (D).",
+    "reference": "PMBOK 8 - Focus Area Validation formelle de la matrice RACI",
+    "category": "Exam"
+  },
+  {
+    "id": 79,
+    "exam": 2,
+    "num_in_exam": 19,
+    "domain": "Process",
+    "approche": "predictif",
+    "text": "Une revue de risques révèle qu'un risque technique majeur a été correctement atténué, mais que le coût de cette atténuation n'a jamais été formellement intégré au budget. Quelle est la meilleure action ?",
+    "options": {
+      "A": "Continuer sans ajustement budgétaire formel",
+      "B": "Documenter formellement ce coût dans le budget via le processus de contrôle des changements",
+      "C": "Ignorer le coût tant que le budget global reste positif",
+      "D": "Réduire d'autres postes sans analyse pour compenser"
+    },
+    "answer": "B",
+    "justification": "Un coût d'atténuation non intégré formellement doit être documenté via le contrôle des changements pour une traçabilité budgétaire correcte, plutôt qu'ignoré (A, C) ou compensé sans analyse (D).",
+    "reference": "PMBOK 8 - Focus Area Intégration budgétaire des coûts de mitigation des risques",
+    "category": "Exam"
+  },
+  {
+    "id": 80,
+    "exam": 2,
+    "num_in_exam": 20,
+    "domain": "Process",
+    "approche": "predictif",
+    "text": "Un fournisseur propose de livrer un composant en avance, mais cela nécessiterait une réception anticipée non planifiée dans le calendrier de stockage. Quelle est la meilleure action ?",
+    "options": {
+      "A": "Refuser systématiquement toute livraison anticipée",
+      "B": "Évaluer la faisabilité logistique de la réception anticipée avant d'accepter, en coordination avec les équipes concernées",
+      "C": "Accepter automatiquement sans vérification logistique",
+      "D": "Ignorer la proposition sans réponse au fournisseur"
+    },
+    "answer": "B",
+    "justification": "Une livraison anticipée proposée doit être évaluée pour sa faisabilité logistique réelle avant acceptation, plutôt que refusée par principe (A) ou acceptée sans vérification (C).",
+    "reference": "PMBOK 8 - Focus Area Évaluation logistique des livraisons anticipées",
+    "category": "Exam"
+  },
+  {
+    "id": 81,
+    "exam": 2,
+    "num_in_exam": 21,
+    "domain": "Process",
+    "approche": "predictif",
+    "text": "Une revue de qualité révèle que les critères d'acceptation de plusieurs livrables ont été interprétés différemment par l'équipe et le client. Quelle est la meilleure action ?",
+    "options": {
+      "A": "Continuer avec l'interprétation de l'équipe",
+      "B": "Clarifier formellement avec le client l'interprétation correcte, et ajuster les critères d'acceptation futurs pour éviter la récurrence",
+      "C": "Adopter automatiquement l'interprétation du client sans discussion",
+      "D": "Ignorer la divergence tant qu'aucun litige n'est formalisé"
+    },
+    "answer": "B",
+    "justification": "Une divergence d'interprétation des critères d'acceptation doit être clarifiée formellement avec le client et corrigée pour l'avenir, plutôt qu'imposée unilatéralement (A, C) ou ignorée (D).",
+    "reference": "PMBOK 8 - Focus Area Clarification des critères d'acceptation",
+    "category": "Exam"
+  },
+  {
+    "id": 82,
+    "exam": 2,
+    "num_in_exam": 22,
+    "domain": "Process",
+    "approche": "predictif",
+    "text": "Un changement de fournisseur de composants entraîne un délai d'intégration de deux semaines non anticipé au calendrier. Quelle est la meilleure action ?",
+    "options": {
+      "A": "Absorber le délai sans communication",
+      "B": "Documenter l'impact calendaire, communiquer aux parties prenantes et évaluer des options de compression si possible",
+      "C": "Revenir à l'ancien fournisseur sans évaluation",
+      "D": "Ignorer le délai jusqu'à ce qu'il affecte un jalon critique"
+    },
+    "answer": "B",
+    "justification": "Un délai d'intégration non anticipé doit être documenté et communiqué avec évaluation d'options de compression, plutôt qu'absorbé silencieusement (A, D) ou traité par un retour en arrière précipité (C).",
+    "reference": "PMBOK 8 - Focus Area Impact calendaire des changements de fournisseur",
+    "category": "Exam"
+  },
+  {
+    "id": 83,
+    "exam": 2,
+    "num_in_exam": 23,
+    "domain": "Process",
+    "approche": "predictif",
+    "text": "Une analyse de risque révèle qu'un risque jugé mineur initialement présente en réalité un potentiel d'impact catastrophique en cas de matérialisation combinée avec un autre risque. Quelle est la meilleure action ?",
+    "options": {
+      "A": "Continuer à traiter les deux risques séparément selon leur évaluation individuelle initiale",
+      "B": "Réaliser une analyse de corrélation et développer une stratégie de réponse tenant compte de l'impact combiné potentiel",
+      "C": "Ignorer la corrélation car chaque risque reste individuellement mineur",
+      "D": "Traiter uniquement le risque jugé le plus probable"
+    },
+    "answer": "B",
+    "justification": "Une corrélation de risques créant un impact combiné catastrophique doit être analysée spécifiquement, plutôt que traitée isolément (A, D) ou ignorée (C).",
+    "reference": "PMBOK 8 - Focus Area Analyse de corrélation des risques",
+    "category": "Exam"
+  },
+  {
+    "id": 84,
+    "exam": 2,
+    "num_in_exam": 24,
+    "domain": "Business",
+    "approche": "agile_hybride",
+    "text": "Un changement de réglementation sur la publicité en ligne impose de nouvelles mentions obligatoires dans votre produit, affectant plusieurs écrans déjà développés. Quelle est la meilleure action ?",
+    "options": {
+      "A": "Ignorer la réglementation jusqu'à un contrôle formel",
+      "B": "Prioriser dans le backlog les modifications de conformité nécessaires, en collaboration avec le juridique",
+      "C": "Retarder indéfiniment le lancement du produit",
+      "D": "Implémenter une version minimale non conforme en attendant"
+    },
+    "answer": "B",
+    "justification": "Une nouvelle exigence réglementaire doit être priorisée dans le backlog avec collaboration juridique appropriée, plutôt qu'ignorée (A) ou traitée par un retard disproportionné (C) ou une non-conformité (D).",
+    "reference": "PMBOK 8 - Domaine de performance Conformité, Focus Area Conformité publicitaire réglementaire",
+    "category": "Exam"
+  },
+  {
+    "id": 85,
+    "exam": 2,
+    "num_in_exam": 25,
+    "domain": "Business",
+    "approche": "agile_hybride",
+    "text": "Une étude de marché révèle qu'un segment d'utilisateurs initialement jugé mineur croît rapidement et représente désormais une opportunité stratégique significative. Quelle est la meilleure action ?",
+    "options": {
+      "A": "Continuer selon les priorités initiales sans ajustement",
+      "B": "Partager l'étude avec le Product Owner pour évaluer une reprioritisation du backlog vers ce segment",
+      "C": "Réorienter unilatéralement toute la roadmap",
+      "D": "Ignorer l'étude car elle contredit la stratégie initiale"
+    },
+    "answer": "B",
+    "justification": "Une opportunité de marché émergente doit être partagée pour une évaluation collaborative de reprioritisation, plutôt qu'ignorée (A, D) ou traitée par une réorientation unilatérale (C).",
+    "reference": "PMBOK 8 - Focus Area Réévaluation stratégique des segments de marché émergents",
+    "category": "Exam"
+  },
+  {
+    "id": 86,
+    "exam": 2,
+    "num_in_exam": 26,
+    "domain": "Business",
+    "approche": "agile_hybride",
+    "text": "Un partenaire technologique clé annonce une fusion avec un concurrent de votre organisation, créant une incertitude sur la continuité du partenariat. Quelle est la meilleure action ?",
+    "options": {
+      "A": "Ignorer l'annonce tant qu'aucun changement concret n'est appliqué",
+      "B": "Alerter le sponsor et explorer des options de diversification pour réduire la dépendance à ce partenaire",
+      "C": "Rompre immédiatement le partenariat",
+      "D": "Attendre passivement les développements"
+    },
+    "answer": "B",
+    "justification": "Une incertitude stratégique sur un partenaire clé doit être signalée avec exploration proactive d'alternatives, plutôt qu'ignorée (A, D) ou traitée par une rupture précipitée (C).",
+    "reference": "PMBOK 8 - Focus Area Gestion de l'incertitude des partenariats stratégiques",
+    "category": "Exam"
+  },
+  {
+    "id": 87,
+    "exam": 2,
+    "num_in_exam": 27,
+    "domain": "Business",
+    "approche": "predictif",
+    "text": "Un audit de conformité révèle que votre projet n'a jamais vérifié si ses pratiques respectent une nouvelle norme d'accessibilité numérique applicable à son secteur. Quelle est la meilleure action ?",
+    "options": {
+      "A": "Continuer sans vérification tant qu'aucun contrôle n'est effectué",
+      "B": "Évaluer l'écart de conformité et planifier les actions correctives nécessaires avant l'échéance applicable",
+      "C": "Ignorer la norme car elle n'était pas en vigueur au démarrage du projet",
+      "D": "Attendre une sanction avant d'agir"
+    },
+    "answer": "B",
+    "justification": "Une nouvelle norme d'accessibilité applicable doit être évaluée avec plan d'action correctif avant échéance, plutôt qu'ignorée (A, C, D).",
+    "reference": "PMBOK 8 - Domaine de performance Conformité, Focus Area Normes d'accessibilité numérique",
+    "category": "Exam"
+  },
+  {
+    "id": 88,
+    "exam": 2,
+    "num_in_exam": 28,
+    "domain": "Business",
+    "approche": "predictif",
+    "text": "Une revue de gouvernance révèle que le business case de votre projet n'a jamais été comparé aux résultats réels obtenus à mi-parcours. Quelle est la meilleure action ?",
+    "options": {
+      "A": "Continuer sans comparaison, le business case ayant été approuvé initialement",
+      "B": "Réaliser une comparaison formelle entre projections initiales et résultats réels, présentée au comité de gouvernance",
+      "C": "Ignorer la comparaison tant que le projet reste dans les délais",
+      "D": "Réviser unilatéralement le business case sans validation"
+    },
+    "answer": "B",
+    "justification": "Un manque de comparaison entre projections et résultats réels doit être corrigé par une analyse formelle présentée à la gouvernance, plutôt qu'ignoré (A, C) ou révisé sans validation (D).",
+    "reference": "PMBOK 8 - Focus Area Comparaison du business case aux résultats réels",
+    "category": "Exam"
+  },
+  {
+    "id": 89,
+    "exam": 2,
+    "num_in_exam": 29,
+    "domain": "Business",
+    "approche": "predictif",
+    "text": "Un changement de taux de change défavorable affecte significativement le budget d'un projet international impliquant des paiements en devise étrangère. Quelle est la meilleure action ?",
+    "options": {
+      "A": "Absorber l'impact sans analyse ni communication",
+      "B": "Quantifier l'impact, explorer des options de couverture de change, et communiquer aux décideurs financiers",
+      "C": "Suspendre tous les paiements internationaux",
+      "D": "Ignorer le changement tant que le budget global reste positif"
+    },
+    "answer": "B",
+    "justification": "Un impact de taux de change significatif doit être quantifié avec exploration de couverture et communication aux décideurs, plutôt qu'absorbé silencieusement (A, D) ou traité par une suspension disproportionnée (C).",
+    "reference": "PMBOK 8 - Focus Area Gestion du risque de change",
+    "category": "Exam"
+  },
+  {
+    "id": 90,
+    "exam": 2,
+    "num_in_exam": 30,
+    "domain": "Business",
+    "approche": "predictif",
+    "text": "Une revue de portefeuille révèle que votre projet partage une ressource critique avec un autre projet, sans coordination formelle établie entre les deux chefs de projet. Quelle est la meilleure action ?",
+    "options": {
+      "A": "Continuer à utiliser la ressource sans coordination",
+      "B": "Établir une coordination formelle avec l'autre chef de projet et le PMO pour planifier l'allocation partagée de la ressource",
+      "C": "Réclamer l'usage exclusif de la ressource sans négociation",
+      "D": "Ignorer le partage tant qu'aucun conflit n'est survenu"
+    },
+    "answer": "B",
+    "justification": "Un partage de ressource non coordonné doit être formalisé avec l'autre projet et le PMO, plutôt qu'ignoré (A, D) ou traité par une réclamation unilatérale (C).",
+    "reference": "PMBOK 8 - Focus Area Coordination des ressources partagées inter-projets",
+    "category": "Exam"
+  },
+  {
+    "id": 9200,
+    "type": "multi_choice",
+    "domaine": "D1",
+    "approche": "agile_hybride",
+    "theme": "standard",
+    "scenario": "Votre équipe agile constate une baisse de collaboration entre deux sous-équipes travaillant sur des composants interdépendants du même produit.",
+    "question": "Sélectionnez les DEUX meilleures actions du chef de projet (2 réponses attendues) :",
+    "options": [
+      {
+        "id": "A",
+        "texte": "Fusionner immédiatement les deux équipes en une seule"
+      },
+      {
+        "id": "B",
+        "texte": "Organiser une session de Scrum of Scrums pour synchroniser les dépendances"
+      },
+      {
+        "id": "C",
+        "texte": "Cartographier visuellement les dépendances entre les deux équipes"
+      },
+      {
+        "id": "D",
+        "texte": "Assigner un seul responsable ayant autorité sur les deux équipes"
+      },
+      {
+        "id": "E",
+        "texte": "Réduire la fréquence des livraisons pour limiter les interactions"
+      },
+      {
+        "id": "F",
+        "texte": "Ignorer la situation tant que les livrables individuels sont produits à temps"
+      }
+    ],
+    "correct_answers": [
+      "B",
+      "C"
+    ],
+    "nombre_reponses_attendues": 2,
+    "explication": "La synchronisation régulière (Scrum of Scrums) combinée à une cartographie visible des dépendances constitue l'approche standard pour résoudre les frictions inter-équipes, sans recourir à des solutions structurelles disproportionnées (A, D) ni contre-productives (E, F).",
+    "reference": "PMBOK 8 - Focus Area Coordination inter-équipes et synchronisation agile",
+    "code": "EX5-MC-001",
+    "exam": 5,
+    "category": "Exam"
+  },
+  {
+    "id": 9201,
+    "type": "multi_choice",
+    "domaine": "D2",
+    "approche": "predictif",
+    "theme": "standard",
+    "scenario": "Une analyse de la valeur acquise révèle un CPI de 0,85 et un SPI de 0,80 à mi-parcours de votre projet.",
+    "question": "Sélectionnez les TROIS actions appropriées du chef de projet (3 réponses attendues) :",
+    "options": [
+      {
+        "id": "A",
+        "texte": "Analyser les causes racines du double dépassement coût/délai"
+      },
+      {
+        "id": "B",
+        "texte": "Ignorer les indices tant que le sponsor ne les questionne pas"
+      },
+      {
+        "id": "C",
+        "texte": "Présenter un plan de redressement avec options aux parties prenantes"
+      },
+      {
+        "id": "D",
+        "texte": "Réduire immédiatement le périmètre sans consultation"
+      },
+      {
+        "id": "E",
+        "texte": "Réévaluer l'estimation à terminaison (EAC) sur la base de la performance actuelle"
+      },
+      {
+        "id": "F",
+        "texte": "Célébrer le fait que le projet reste dans son enveloppe initiale"
+      }
+    ],
+    "correct_answers": [
+      "A",
+      "C",
+      "E"
+    ],
+    "nombre_reponses_attendues": 3,
+    "explication": "Un CPI et SPI tous deux inférieurs à 1 exigent une analyse des causes, une révision de l'EAC basée sur la tendance réelle, et une communication transparente aux parties prenantes avec options — pas l'inaction (B, F) ni une décision unilatérale (D).",
+    "reference": "PMBOK 8 - Focus Area Analyse combinée CPI/SPI et plan de redressement",
+    "code": "EX5-MC-002",
+    "exam": 5,
+    "category": "Exam"
+  },
+  {
+    "id": 9202,
+    "type": "multi_choice",
+    "domaine": "D3",
+    "approche": "agile_hybride",
+    "theme": "ia",
+    "scenario": "Une nouvelle réglementation impose l'enregistrement de tout système d'IA à haut risque auprès d'une autorité de régulation.",
+    "question": "Sélectionnez les DEUX actions appropriées (2 réponses attendues) :",
+    "options": [
+      {
+        "id": "A",
+        "texte": "Continuer le déploiement prévu sans attendre l'enregistrement"
+      },
+      {
+        "id": "B",
+        "texte": "Évaluer avec le juridique si les composants IA entrent dans la catégorie \"haut risque\""
+      },
+      {
+        "id": "C",
+        "texte": "Retirer tout composant IA du produit par précaution"
+      },
+      {
+        "id": "D",
+        "texte": "Intégrer le délai d'enregistrement dans la planification de la roadmap"
+      },
+      {
+        "id": "E",
+        "texte": "Attendre une sanction avant d'agir"
+      },
+      {
+        "id": "F",
+        "texte": "Contester la réglementation avant toute analyse"
+      }
+    ],
+    "correct_answers": [
+      "B",
+      "D"
+    ],
+    "nombre_reponses_attendues": 2,
+    "explication": "Une classification réglementaire doit être évaluée juridiquement puis intégrée réalistement au calendrier, plutôt qu'ignorée (A, E), traitée par un retrait disproportionné (C) ou contestée sans analyse préalable (F).",
+    "reference": "PMBOK 8 - Focus Area Enregistrement réglementaire de l'IA à haut risque",
+    "code": "EX5-MC-003",
+    "exam": 5,
+    "category": "Exam"
+  },
+  {
+    "id": 9203,
+    "type": "matching",
+    "domaine": "D2",
+    "approche": "predictif",
+    "theme": "standard",
+    "scenario": "Associez chaque stratégie de réponse au risque à sa description correcte.",
+    "question": "Associez chaque élément de la colonne de gauche à l'élément correspondant de la colonne de droite.",
+    "colonne_gauche": [
+      {
+        "id": "1",
+        "texte": "Éviter"
+      },
+      {
+        "id": "2",
+        "texte": "Atténuer"
+      },
+      {
+        "id": "3",
+        "texte": "Transférer"
+      },
+      {
+        "id": "4",
+        "texte": "Accepter"
+      }
+    ],
+    "colonne_droite": [
+      {
+        "id": "a",
+        "texte": "Souscrire une assurance ou sous-traiter le risque à un tiers"
+      },
+      {
+        "id": "b",
+        "texte": "Modifier le plan de projet pour éliminer la menace ou sa cause"
+      },
+      {
+        "id": "c",
+        "texte": "Réduire la probabilité ou l'impact du risque à un niveau acceptable"
+      },
+      {
+        "id": "d",
+        "texte": "Ne prendre aucune action proactive, avec ou sans réserve de contingence"
+      }
+    ],
+    "correct_matching": {
+      "1": "b",
+      "2": "c",
+      "3": "a",
+      "4": "d"
+    },
+    "explication": "Ces quatre stratégies fondamentales de réponse aux risques négatifs se distinguent par leur niveau d'intervention : éviter élimine la cause, atténuer réduit probabilité/impact, transférer déplace la responsabilité financière, accepter ne change rien activement.",
+    "reference": "PMBOK 8 - Focus Area Stratégies de réponse aux risques négatifs",
+    "code": "EX5-MT-001",
+    "exam": 5,
+    "category": "Exam"
+  },
+  {
+    "id": 9204,
+    "type": "matching",
+    "domaine": "D1",
+    "approche": "predictif",
+    "theme": "standard",
+    "scenario": "Associez chaque style de leadership situationnel au contexte d'équipe le plus approprié.",
+    "question": "Associez chaque élément de la colonne de gauche à l'élément correspondant de la colonne de droite.",
+    "colonne_gauche": [
+      {
+        "id": "1",
+        "texte": "Directif"
+      },
+      {
+        "id": "2",
+        "texte": "Persuasif"
+      },
+      {
+        "id": "3",
+        "texte": "Participatif"
+      },
+      {
+        "id": "4",
+        "texte": "Délégatif"
+      }
+    ],
+    "colonne_droite": [
+      {
+        "id": "a",
+        "texte": "Équipe très compétente et très motivée"
+      },
+      {
+        "id": "b",
+        "texte": "Équipe compétente mais peu confiante"
+      },
+      {
+        "id": "c",
+        "texte": "Équipe peu compétente mais motivée"
+      },
+      {
+        "id": "d",
+        "texte": "Équipe peu compétente et peu motivée"
+      }
+    ],
+    "correct_matching": {
+      "1": "d",
+      "2": "c",
+      "3": "b",
+      "4": "a"
+    },
+    "explication": "Le modèle de leadership situationnel adapte le style au niveau de maturité de l'équipe : directif pour les novices non motivés, persuasif pour les novices motivés, participatif pour les compétents mais hésitants, délégatif pour les équipes autonomes.",
+    "reference": "PMBOK 8 - Domaine de performance Équipe, Focus Area Leadership situationnel",
+    "code": "EX5-MT-002",
+    "exam": 5,
+    "category": "Exam"
+  },
+  {
+    "id": 9205,
+    "type": "matching",
+    "domaine": "D3",
+    "approche": "predictif",
+    "theme": "standard",
+    "scenario": "Associez chaque type de contrat à sa caractéristique principale de répartition du risque.",
+    "question": "Associez chaque élément de la colonne de gauche à l'élément correspondant de la colonne de droite.",
+    "colonne_gauche": [
+      {
+        "id": "1",
+        "texte": "Prix fixe forfaitaire (FFP)"
+      },
+      {
+        "id": "2",
+        "texte": "Coûts remboursables (CR)"
+      },
+      {
+        "id": "3",
+        "texte": "Temps et matériaux (T&M)"
+      },
+      {
+        "id": "4",
+        "texte": "Prix fixe avec intéressement (FPIF)"
+      }
+    ],
+    "colonne_droite": [
+      {
+        "id": "a",
+        "texte": "Risque financier principalement porté par l'acheteur"
+      },
+      {
+        "id": "b",
+        "texte": "Risque financier principalement porté par le vendeur"
+      },
+      {
+        "id": "c",
+        "texte": "Risque partagé, hybride entre les deux précédents"
+      },
+      {
+        "id": "d",
+        "texte": "Risque faible pour l'acheteur mais nécessite un plafond pour le contrôler"
+      }
+    ],
+    "correct_matching": {
+      "1": "b",
+      "2": "a",
+      "3": "d",
+      "4": "c"
+    },
+    "explication": "Le FFP transfère le risque au vendeur (prix fixé), le CR le laisse à l'acheteur (rembourse les coûts réels), le T&M nécessite un plafond car sans limite de portée claire, et le FPIF partage le risque via un mécanisme d'intéressement.",
+    "reference": "PMBOK 8 - Focus Area Types de contrats et répartition du risque",
+    "code": "EX5-MT-003",
+    "exam": 5,
+    "category": "Exam"
+  },
+  {
+    "id": 9206,
+    "type": "matching",
+    "domaine": "D2",
+    "approche": "predictif",
+    "theme": "standard",
+    "scenario": "Associez chaque critère d'évaluation de fournisseur à sa catégorie correcte.",
+    "question": "Associez chaque élément de la colonne de gauche à l'élément correspondant de la colonne de droite.",
+    "colonne_gauche": [
+      {
+        "id": "1",
+        "texte": "Antécédents de retards documentés"
+      },
+      {
+        "id": "2",
+        "texte": "Prix proposé"
+      },
+      {
+        "id": "3",
+        "texte": "Certifications qualité détenues"
+      },
+      {
+        "id": "4",
+        "texte": "Capacité financière du fournisseur"
+      }
+    ],
+    "colonne_droite": [
+      {
+        "id": "a",
+        "texte": "Critère de risque opérationnel"
+      },
+      {
+        "id": "b",
+        "texte": "Critère de risque financier"
+      },
+      {
+        "id": "c",
+        "texte": "Critère de coût"
+      },
+      {
+        "id": "d",
+        "texte": "Critère de conformité/qualité"
+      }
+    ],
+    "correct_matching": {
+      "1": "a",
+      "2": "c",
+      "3": "d",
+      "4": "b"
+    },
+    "explication": "Une évaluation multicritère de fournisseur distingue le risque opérationnel (fiabilité d'exécution), le coût, la conformité qualité et la solidité financière — le prix seul ne doit jamais être le critère unique de sélection.",
+    "reference": "PMBOK 8 - Focus Area Évaluation multicritère des fournisseurs",
+    "code": "EX5-MT-007",
+    "exam": 5,
+    "category": "Exam"
+  },
+  {
+    "id": 9207,
+    "type": "matching",
+    "domaine": "D2",
+    "approche": "predictif",
+    "theme": "standard",
+    "scenario": "Associez chaque composante du coût de la qualité (COQ) à sa catégorie.",
+    "question": "Associez chaque élément de la colonne de gauche à l'élément correspondant de la colonne de droite.",
+    "colonne_gauche": [
+      {
+        "id": "1",
+        "texte": "Formation à la prévention des défauts"
+      },
+      {
+        "id": "2",
+        "texte": "Inspection et tests"
+      },
+      {
+        "id": "3",
+        "texte": "Reprise d'un livrable défectueux avant livraison"
+      },
+      {
+        "id": "4",
+        "texte": "Remboursement client suite à un défaut détecté après livraison"
+      }
+    ],
+    "colonne_droite": [
+      {
+        "id": "a",
+        "texte": "Coût de la non-conformité interne"
+      },
+      {
+        "id": "b",
+        "texte": "Coût de la non-conformité externe"
+      },
+      {
+        "id": "c",
+        "texte": "Coût de prévention"
+      },
+      {
+        "id": "d",
+        "texte": "Coût d'évaluation"
+      }
+    ],
+    "correct_matching": {
+      "1": "c",
+      "2": "d",
+      "3": "a",
+      "4": "b"
+    },
+    "explication": "Le coût de la qualité se décompose en coûts de conformité (prévention + évaluation) et coûts de non-conformité (interne, avant livraison ; externe, après livraison chez le client) — ces derniers étant les plus coûteux et à éviter en priorité.",
+    "reference": "PMBOK 8 - Focus Area Coût de la qualité (COQ)",
+    "code": "EX5-MT-008",
+    "exam": 5,
+    "category": "Exam"
+  },
+  {
+    "id": 9208,
+    "type": "matching",
+    "domaine": "D3",
+    "approche": "agile_hybride",
+    "theme": "ia",
+    "scenario": "Associez chaque niveau de gouvernance à son autorité décisionnelle typique dans l'approbation des déploiements IA.",
+    "question": "Associez chaque élément de la colonne de gauche à l'élément correspondant de la colonne de droite.",
+    "colonne_gauche": [
+      {
+        "id": "1",
+        "texte": "Comité technique"
+      },
+      {
+        "id": "2",
+        "texte": "Comité d'éthique de l'IA"
+      },
+      {
+        "id": "3",
+        "texte": "Conseil d'administration"
+      },
+      {
+        "id": "4",
+        "texte": "Chef de projet"
+      }
+    ],
+    "colonne_droite": [
+      {
+        "id": "a",
+        "texte": "Décisions stratégiques majeures à fort impact organisationnel ou réputationnel"
+      },
+      {
+        "id": "b",
+        "texte": "Validation des considérations éthiques et de biais pour les cas sensibles"
+      },
+      {
+        "id": "c",
+        "texte": "Décisions opérationnelles courantes à faible risque"
+      },
+      {
+        "id": "d",
+        "texte": "Validation de la faisabilité et robustesse technique"
+      }
+    ],
+    "correct_matching": {
+      "1": "d",
+      "2": "b",
+      "3": "a",
+      "4": "c"
+    },
+    "explication": "La gouvernance de l'IA doit être proportionnée au niveau de risque : le chef de projet gère le courant, le comité technique valide la robustesse, le comité d'éthique les enjeux sensibles, et le conseil d'administration les décisions à fort impact stratégique.",
+    "reference": "PMBOK 8 - Focus Area Matrice de gouvernance pour l'approbation des déploiements IA",
+    "code": "EX5-MT-009",
+    "exam": 5,
+    "category": "Exam"
+  },
+  {
+    "id": 9209,
+    "type": "case_study",
+    "domaine": "D2",
+    "approche": "predictif",
+    "theme": "ia",
+    "contexte_etendu": "Votre organisation développe un produit SaaS de gestion RH intégrant un module de présélection de CV par IA. Le projet est en phase finale avant lancement commercial dans trois marchés : l'Union Européenne, les États-Unis et le Brésil. Une étude interne récente révèle que l'algorithme, entraîné sur des données historiques de recrutement, reproduit un biais favorisant les candidats ayant fréquenté certaines universités prestigieuses, corrélé indirectement à l'origine socio-économique. Par ailleurs, le calendrier de lancement est fixé dans 6 semaines, coïncidant avec un salon professionnel majeur où le sponsor souhaite annoncer le produit. L'équipe technique estime qu'une correction complète du biais nécessiterait 10 semaines supplémentaires. Le budget de contingence du projet est déjà consommé à 70%.",
+    "sous_questions": [
+      {
+        "id": "EX5-CS-001-Q1",
+        "type": "single_choice",
+        "question": "Quelle est la meilleure action immédiate du chef de projet ?",
+        "options": [
+          {
+            "id": "A",
+            "texte": "Lancer le produit tel quel pour respecter le salon professionnel"
+          },
+          {
+            "id": "B",
+            "texte": "Documenter le biais, informer le Product Owner et le sponsor, et présenter les options (report, MVP sans le module IA concerné, correction partielle prioritaire) avant toute décision de calendrier"
+          },
+          {
+            "id": "C",
+            "texte": "Corriger silencieusement l'algorithme sans en informer la direction pour éviter de retarder le lancement"
+          },
+          {
+            "id": "D",
+            "texte": "Annuler définitivement le module de présélection IA sans évaluation des alternatives"
+          }
+        ],
+        "correct_answers": [
+          "B"
+        ],
+        "explication": "Un biais discriminatoire découvert doit être communiqué transparemment aux décideurs avec options concrètes, ni caché (C), ni ignoré pour respecter un calendrier commercial (A), ni traité par une décision disproportionnée sans évaluation (D)."
+      },
+      {
+        "id": "EX5-CS-001-Q2",
+        "type": "multi_choice",
+        "question": "Compte tenu de la contrainte budgétaire (contingence à 70%) et du calendrier, sélectionnez les DEUX options les plus réalistes à proposer au sponsor :",
+        "options": [
+          {
+            "id": "A",
+            "texte": "Lancer le produit sans le module de présélection IA pour ce cycle, en le réintégrant dans une version ultérieure une fois corrigé"
+          },
+          {
+            "id": "B",
+            "texte": "Reporter le lancement complet de 10 semaines"
+          },
+          {
+            "id": "C",
+            "texte": "Lancer avec le biais connu en informant simplement les clients dans les mentions légales"
+          },
+          {
+            "id": "D",
+            "texte": "Prioriser une correction partielle rapide (réduction significative du biais en 3-4 semaines) avec un engagement de correction complète en version suivante"
+          },
+          {
+            "id": "E",
+            "texte": "Transférer la responsabilité légale au client utilisateur du module"
+          }
+        ],
+        "correct_answers": [
+          "A",
+          "D"
+        ],
+        "nombre_reponses_attendues": 2,
+        "explication": "Ces deux options offrent un compromis réaliste entre le calendrier contraint et l'intégrité éthique — soit retarder uniquement le module concerné, soit une correction rapide substantielle — contrairement à une divulgation insuffisante (C) ou un transfert de responsabilité inapproprié (E). Un report complet de 10 semaines (B) n'est pas nécessairement optimal si le MVP peut être livré sans ce module."
+      },
+      {
+        "id": "EX5-CS-001-Q3",
+        "type": "single_choice",
+        "question": "Pour le marché de l'Union Européenne spécifiquement, quelle considération réglementaire est la plus pertinente dans ce scénario ?",
+        "options": [
+          {
+            "id": "A",
+            "texte": "Le RGPD uniquement, car il s'agit de données personnelles"
+          },
+          {
+            "id": "B",
+            "texte": "L'AI Act européen, qui classe les systèmes de recrutement par IA comme à \"haut risque\" nécessitant des exigences renforcées de gestion des biais et de documentation"
+          },
+          {
+            "id": "C",
+            "texte": "Aucune réglementation spécifique ne s'applique aux outils de recrutement par IA"
+          },
+          {
+            "id": "D",
+            "texte": "Uniquement le droit du travail local de chaque pays membre"
+          }
+        ],
+        "correct_answers": [
+          "B"
+        ],
+        "explication": "Les systèmes d'IA utilisés dans le recrutement sont explicitement classés à haut risque par la réglementation européenne sur l'IA, imposant des obligations spécifiques de gestion des biais, de transparence et de documentation technique, au-delà du seul RGPD."
+      }
+    ],
+    "reference": "PMBOK 8 - Domaine de performance Conformité, Focus Area Biais algorithmique dans le recrutement et réglementation IA à haut risque",
+    "code": "EX5-CS-001",
+    "exam": 5,
+    "category": "Exam"
+  },
+  {
+    "id": 9210,
+    "type": "case_study",
+    "domaine": "D1",
+    "approche": "agile_hybride",
+    "theme": "standard",
+    "contexte_etendu": "Vous dirigez un projet hybride de transformation digitale pour une chaîne de distribution présente dans 8 pays. L'équipe centrale (15 personnes) est basée en France, avec des équipes locales de déploiement dans chaque pays (2-3 personnes chacune). Le projet touche à sa clôture dans 6 semaines. Deux problèmes coexistent : (1) un membre clé de l'équipe centrale, responsable de l'architecture technique, vient d'annoncer son départ pour un poste ailleurs, avec un préavis de 3 semaines seulement, et détient une expertise critique non documentée ; (2) l'équipe locale au Brésil signale un désengagement croissant, se sentant historiquement moins consultée que les autres équipes locales dans les décisions de priorisation, un point jamais formellement traité malgré des remontées répétées en rétrospective.",
+    "sous_questions": [
+      {
+        "id": "EX5-CS-003-Q1",
+        "type": "single_choice",
+        "question": "Concernant le départ du responsable architecture, quelle est la meilleure action immédiate ?",
+        "options": [
+          {
+            "id": "A",
+            "texte": "Accepter la démission et gérer la transition après son départ effectif"
+          },
+          {
+            "id": "B",
+            "texte": "Maximiser le transfert de connaissances structuré dans le temps restant, documenter les décisions d'architecture critiques, et identifier un ou plusieurs relais internes"
+          },
+          {
+            "id": "C",
+            "texte": "Tenter de le convaincre de rester en proposant une contrepartie financière non budgétée"
+          },
+          {
+            "id": "D",
+            "texte": "Recruter en urgence un remplaçant externe sans transfert de connaissances préalable"
+          }
+        ],
+        "correct_answers": [
+          "B"
+        ],
+        "explication": "Un départ avec préavis court et expertise critique non documentée exige un plan de transfert de connaissances immédiat et structuré, plutôt qu'une gestion après-coup (A), une négociation improvisée (C) ou un recrutement sans transition (D)."
+      },
+      {
+        "id": "EX5-CS-003-Q2",
+        "type": "multi_choice",
+        "question": "Concernant le désengagement de l'équipe brésilienne, sélectionnez les DEUX actions les plus appropriées en fin de projet :",
+        "options": [
+          {
+            "id": "A",
+            "texte": "Ignorer la situation car le projet est presque terminé"
+          },
+          {
+            "id": "B",
+            "texte": "Organiser une conversation directe pour comprendre les causes précises du sentiment d'exclusion"
+          },
+          {
+            "id": "C",
+            "texte": "Documenter ce constat comme leçon apprise pour améliorer l'inclusion des équipes locales dans les futurs projets"
+          },
+          {
+            "id": "D",
+            "texte": "Retirer l'équipe brésilienne du reste du projet pour éviter tout conflit en fin de course"
+          },
+          {
+            "id": "E",
+            "texte": "Promettre une réparation immédiate non budgétée pour apaiser la situation rapidement"
+          }
+        ],
+        "correct_answers": [
+          "B",
+          "C"
+        ],
+        "nombre_reponses_attendues": 2,
+        "explication": "Même en fin de projet, une conversation directe pour comprendre les causes et une documentation en leçon apprise sont appropriées et réalistes, contrairement à l'ignorance (A), l'exclusion (D) ou une promesse non fondée (E)."
+      },
+      {
+        "id": "EX5-CS-003-Q3",
+        "type": "single_choice",
+        "question": "Ces deux problèmes combinés (perte de connaissance clé + désengagement d'équipe) affectent quel domaine de performance PMBOK 8 en priorité ?",
+        "options": [
+          {
+            "id": "A",
+            "texte": "Domaine Livraison uniquement, car cela concerne les livrables techniques"
+          },
+          {
+            "id": "B",
+            "texte": "Domaine Équipe, car les deux problèmes touchent la gestion des personnes, la continuité des connaissances et la dynamique d'équipe"
+          },
+          {
+            "id": "C",
+            "texte": "Domaine Conformité uniquement"
+          },
+          {
+            "id": "D",
+            "texte": "Aucun domaine spécifique, ce sont des incidents isolés sans lien avec la performance du projet"
+          }
+        ],
+        "correct_answers": [
+          "B"
+        ],
+        "explication": "Les deux problèmes — transfert de connaissances et inclusion d'équipe — relèvent fondamentalement du Domaine de performance Équipe, qui couvre la gestion des personnes, le développement, la rétention des connaissances et la dynamique de groupe."
+      }
+    ],
+    "reference": "PMBOK 8 - Domaine de performance Équipe, Focus Area Transfert de connaissances et inclusion des équipes distribuées",
+    "code": "EX5-CS-003",
+    "exam": 5,
+    "category": "Exam"
+  },
+  {
+    "id": 9211,
+    "type": "multi_choice",
+    "domaine": "D3",
+    "approche": "predictif",
+    "theme": "standard",
+    "scenario": "Une analyse révèle que le coût de maintenance d'un composant IA développé en interne dépasse largement les prévisions.",
+    "question": "Sélectionnez les DEUX meilleures actions (2 réponses attendues) :",
+    "options": [
+      {
+        "id": "A",
+        "texte": "Continuer sans réévaluation car le composant fonctionne"
+      },
+      {
+        "id": "B",
+        "texte": "Présenter une analyse du coût total de possession (TCO) actualisée aux décideurs financiers"
+      },
+      {
+        "id": "C",
+        "texte": "Abandonner immédiatement le composant sans analyse"
+      },
+      {
+        "id": "D",
+        "texte": "Explorer des options d'optimisation des coûts de maintenance ou de migration"
+      },
+      {
+        "id": "E",
+        "texte": "Augmenter le budget sans justification détaillée"
+      },
+      {
+        "id": "F",
+        "texte": "Ignorer l'écart tant que le budget global reste dans les limites"
+      }
+    ],
+    "correct_answers": [
+      "B",
+      "D"
+    ],
+    "nombre_reponses_attendues": 2,
+    "explication": "Un dépassement de coût de maintenance doit être analysé en TCO complet avec exploration d'options concrètes, plutôt qu'ignoré (A, F), abandonné sans analyse (C) ou compensé sans justification (E).",
+    "reference": "PMBOK 8 - Focus Area Coût total de possession et réévaluation financière",
+    "code": "EX5-MC-004",
+    "exam": 5,
+    "category": "Exam"
+  },
+  {
+    "id": 9212,
+    "type": "multi_choice",
+    "domaine": "D3",
+    "approche": "predictif",
+    "theme": "ia",
+    "scenario": "Une nouvelle politique impose un budget dédié pour la remédiation de biais IA post-déploiement.",
+    "question": "Sélectionnez les DEUX actions appropriées (2 réponses attendues) :",
+    "options": [
+      {
+        "id": "A",
+        "texte": "Continuer sans budget dédié tant qu'aucun problème n'est survenu"
+      },
+      {
+        "id": "B",
+        "texte": "Collaborer avec la finance pour intégrer cette ligne budgétaire au plan de coûts"
+      },
+      {
+        "id": "C",
+        "texte": "Refuser d'allouer un budget spécifique"
+      },
+      {
+        "id": "D",
+        "texte": "Proportionner le budget au niveau de risque des composants IA utilisés"
+      },
+      {
+        "id": "E",
+        "texte": "Allouer un budget uniforme sans considération du risque"
+      },
+      {
+        "id": "F",
+        "texte": "Ignorer l'exigence si le budget global est suffisant"
+      }
+    ],
+    "correct_answers": [
+      "B",
+      "D"
+    ],
+    "nombre_reponses_attendues": 2,
+    "explication": "Une nouvelle exigence budgétaire doit être intégrée formellement et proportionnée au risque réel, plutôt qu'ignorée (A, F), refusée (C) ou traitée uniformément sans nuance (E).",
+    "reference": "PMBOK 8 - Focus Area Budget de remédiation des biais IA",
+    "code": "EX5-MC-005",
+    "exam": 5,
+    "category": "Exam"
+  },
+  {
+    "id": 9213,
+    "type": "multi_choice",
+    "domaine": "D2",
+    "approche": "agile_hybride",
+    "theme": "ia",
+    "scenario": "Un système de détection de fraude présente un taux de faux positifs disproportionné pour certains pays.",
+    "question": "Sélectionnez les TROIS actions appropriées (3 réponses attendues) :",
+    "options": [
+      {
+        "id": "A",
+        "texte": "Accepter ce taux car il minimise le risque global de fraude"
+      },
+      {
+        "id": "B",
+        "texte": "Analyser les causes de la disparité géographique"
+      },
+      {
+        "id": "C",
+        "texte": "Bloquer complètement les transactions de ces pays"
+      },
+      {
+        "id": "D",
+        "texte": "Ajuster le modèle pour réduire les faux positifs disproportionnés"
+      },
+      {
+        "id": "E",
+        "texte": "Vérifier que les données d'entraînement ne sont pas biaisées géographiquement"
+      },
+      {
+        "id": "F",
+        "texte": "Ignorer la disparité tant qu'elle réduit la fraude globale"
+      }
+    ],
+    "correct_answers": [
+      "B",
+      "D",
+      "E"
+    ],
+    "nombre_reponses_attendues": 3,
+    "explication": "Une disparité géographique de faux positifs doit être analysée, tracée à sa source dans les données, et corrigée par un ajustement du modèle, plutôt qu'acceptée (A, F) ou traitée par un blocage discriminatoire disproportionné (C).",
+    "reference": "PMBOK 8 - Focus Area Équité géographique dans la détection de fraude",
+    "code": "EX5-MC-006",
+    "exam": 5,
+    "category": "Exam"
+  },
+  {
+    "id": 9214,
+    "type": "multi_choice",
+    "domaine": "D2",
+    "approche": "predictif",
+    "theme": "standard",
+    "scenario": "Votre projet accuse un retard sur le chemin critique sans marge de sécurité prévue.",
+    "question": "Sélectionnez les DEUX techniques appropriées de compression du calendrier (2 réponses attendues) :",
+    "options": [
+      {
+        "id": "A",
+        "texte": "Fast-tracking (chevauchement d'activités normalement séquentielles)"
+      },
+      {
+        "id": "B",
+        "texte": "Réduction unilatérale de la portée sans analyse d'impact"
+      },
+      {
+        "id": "C",
+        "texte": "Crashing (ajout de ressources pour réduire la durée au coût le moins élevé possible)"
+      },
+      {
+        "id": "D",
+        "texte": "Ignorer le retard en espérant le rattraper"
+      },
+      {
+        "id": "E",
+        "texte": "Blâmer l'équipe précédente pour le retard"
+      },
+      {
+        "id": "F",
+        "texte": "Augmenter la réserve de contingence sans agir sur le calendrier"
+      }
+    ],
+    "correct_answers": [
+      "A",
+      "C"
+    ],
+    "nombre_reponses_attendues": 2,
+    "explication": "Le fast-tracking et le crashing sont les deux techniques standards de compression du calendrier PMI, contrairement à une réduction de portée non analysée (B), à l'inaction (D, F) ou au blâme (E).",
+    "reference": "PMBOK 8 - Focus Area Techniques de compression du calendrier",
+    "code": "EX5-MC-007",
+    "exam": 5,
+    "category": "Exam"
+  },
+  {
+    "id": 9215,
+    "type": "multi_choice",
+    "domaine": "D2",
+    "approche": "predictif",
+    "theme": "standard",
+    "scenario": "Plusieurs risques classés \"élevés\" en début de projet n'ont jamais été réévalués malgré un avancement significatif.",
+    "question": "Sélectionnez les DEUX actions correctives appropriées (2 réponses attendues) :",
+    "options": [
+      {
+        "id": "A",
+        "texte": "Maintenir les évaluations initiales car validées par le comité de pilotage"
+      },
+      {
+        "id": "B",
+        "texte": "Planifier une réévaluation systématique à intervalles réguliers"
+      },
+      {
+        "id": "C",
+        "texte": "Supprimer les risques non matérialisés du registre"
+      },
+      {
+        "id": "D",
+        "texte": "Tenir compte du contexte actuel du projet lors de la réévaluation"
+      },
+      {
+        "id": "E",
+        "texte": "Considérer que les risques non matérialisés ne se matérialiseront jamais"
+      },
+      {
+        "id": "F",
+        "texte": "Attendre la clôture du projet pour réévaluer l'ensemble des risques"
+      }
+    ],
+    "correct_answers": [
+      "B",
+      "D"
+    ],
+    "nombre_reponses_attendues": 2,
+    "explication": "Les risques doivent être réévalués régulièrement en tenant compte du contexte évolutif du projet, plutôt que figés (A), supprimés prématurément (C), présumés résolus (E) ou reportés à la clôture (F).",
+    "reference": "PMBOK 8 - Focus Area Réévaluation continue des risques",
+    "code": "EX5-MC-008",
+    "exam": 5,
+    "category": "Exam"
+  },
+  {
+    "id": 9216,
+    "type": "matching",
+    "domaine": "D2",
+    "approche": "predictif",
+    "theme": "standard",
+    "scenario": "Associez chaque indice de performance EVM à sa formule/interprétation correcte.",
+    "question": "Associez chaque élément de la colonne de gauche à l'élément correspondant de la colonne de droite.",
+    "colonne_gauche": [
+      {
+        "id": "1",
+        "texte": "CPI (Cost Performance Index)"
+      },
+      {
+        "id": "2",
+        "texte": "SPI (Schedule Performance Index)"
+      },
+      {
+        "id": "3",
+        "texte": "TCPI (To-Complete Performance Index)"
+      },
+      {
+        "id": "4",
+        "texte": "EAC (Estimate at Completion)"
+      }
+    ],
+    "colonne_droite": [
+      {
+        "id": "a",
+        "texte": "Performance de coût future nécessaire pour respecter le budget restant"
+      },
+      {
+        "id": "b",
+        "texte": "Coût final projeté du projet basé sur la performance actuelle"
+      },
+      {
+        "id": "c",
+        "texte": "Efficacité des dépenses (valeur produite / coût réel)"
+      },
+      {
+        "id": "d",
+        "texte": "Efficacité du respect du calendrier (valeur produite / valeur planifiée)"
+      }
+    ],
+    "correct_matching": {
+      "1": "c",
+      "2": "d",
+      "3": "a",
+      "4": "b"
+    },
+    "explication": "Le CPI mesure l'efficacité des coûts, le SPI l'efficacité du calendrier, le TCPI projette la performance future nécessaire, et l'EAC est la prévision du coût total final.",
+    "reference": "PMBOK 8 - Focus Area Indices de gestion de la valeur acquise (EVM)",
+    "code": "EX5-MT-004",
+    "exam": 5,
+    "category": "Exam"
+  },
+  {
+    "id": 9217,
+    "type": "matching",
+    "domaine": "D2",
+    "approche": "predictif",
+    "theme": "standard",
+    "scenario": "Associez chaque concept de gestion des risques à sa description correcte.",
+    "question": "Associez chaque élément de la colonne de gauche à l'élément correspondant de la colonne de droite.",
+    "colonne_gauche": [
+      {
+        "id": "1",
+        "texte": "Registre de risques"
+      },
+      {
+        "id": "2",
+        "texte": "Plan de réponse aux incidents"
+      },
+      {
+        "id": "3",
+        "texte": "Analyse de sensibilité"
+      },
+      {
+        "id": "4",
+        "texte": "Diagramme en tornade"
+      }
+    ],
+    "colonne_droite": [
+      {
+        "id": "a",
+        "texte": "Visualisation classant les variables par ordre d'impact décroissant sur le résultat"
+      },
+      {
+        "id": "b",
+        "texte": "Document consignant les risques identifiés, leur évaluation et leur réponse"
+      },
+      {
+        "id": "c",
+        "texte": "Procédure prédéfinie pour réagir à un événement de sécurité"
+      },
+      {
+        "id": "d",
+        "texte": "Technique évaluant l'impact de la variation d'une seule variable à la fois"
+      }
+    ],
+    "correct_matching": {
+      "1": "b",
+      "2": "c",
+      "3": "d",
+      "4": "a"
+    },
+    "explication": "Ces outils de gestion des risques se distinguent par leur fonction : le registre documente, le plan de réponse encadre l'action, l'analyse de sensibilité isole une variable, et le diagramme en tornade hiérarchise visuellement plusieurs variables.",
+    "reference": "PMBOK 8 - Focus Area Outils d'analyse et de gestion des risques",
+    "code": "EX5-MT-005",
+    "exam": 5,
+    "category": "Exam"
+  },
+  {
+    "id": 9218,
+    "type": "matching",
+    "domaine": "D2",
+    "approche": "agile_hybride",
+    "theme": "standard",
+    "scenario": "Associez chaque cérémonie/artefact Scrum à sa fonction principale.",
+    "question": "Associez chaque élément de la colonne de gauche à l'élément correspondant de la colonne de droite.",
+    "colonne_gauche": [
+      {
+        "id": "1",
+        "texte": "Sprint Planning"
+      },
+      {
+        "id": "2",
+        "texte": "Daily Scrum"
+      },
+      {
+        "id": "3",
+        "texte": "Sprint Review"
+      },
+      {
+        "id": "4",
+        "texte": "Sprint Retrospective"
+      }
+    ],
+    "colonne_droite": [
+      {
+        "id": "a",
+        "texte": "Inspecter et adapter les processus et pratiques de l'équipe"
+      },
+      {
+        "id": "b",
+        "texte": "Synchroniser quotidiennement le travail de l'équipe"
+      },
+      {
+        "id": "c",
+        "texte": "Sélectionner et planifier le travail du sprint à venir"
+      },
+      {
+        "id": "d",
+        "texte": "Démontrer l'incrément et recueillir le feedback des parties prenantes"
+      }
+    ],
+    "correct_matching": {
+      "1": "c",
+      "2": "b",
+      "3": "d",
+      "4": "a"
+    },
+    "explication": "Chaque cérémonie Scrum a une fonction distincte dans le cycle d'inspection et d'adaptation : planification en amont, synchronisation quotidienne, démonstration aux parties prenantes, et amélioration des processus internes.",
+    "reference": "PMBOK 8 - Focus Area Cérémonies Scrum et leurs fonctions",
+    "code": "EX5-MT-006",
+    "exam": 5,
+    "category": "Exam"
+  },
+  {
+    "id": 9219,
+    "type": "case_study",
+    "domaine": "D2",
+    "approche": "predictif",
+    "theme": "standard",
+    "contexte_etendu": "Vous gérez un projet d'infrastructure cloud pour une banque régionale, migrant son système de paiement vers une architecture de microservices intégrant un moteur de détection de fraude par IA. Le projet est à 65% d'avancement. Un audit de sécurité externe vient de révéler une vulnérabilité critique : les clés d'API utilisées pour la communication entre microservices sont stockées en clair dans les fichiers de configuration, accessibles à tout développeur ayant accès au dépôt de code. Par ailleurs, le contrat avec le fournisseur cloud principal arrive à échéance dans 4 mois, et les négociations de renouvellement stagnent sur des clauses de responsabilité en cas d'incident de sécurité. Le CPI du projet est de 0,90 et le SPI de 0,95.",
+    "sous_questions": [
+      {
+        "id": "EX5-CS-002-Q1",
+        "type": "single_choice",
+        "question": "Quelle est la priorité absolue immédiate du chef de projet ?",
+        "options": [
+          {
+            "id": "A",
+            "texte": "Continuer le développement normal et traiter la vulnérabilité lors du prochain sprint"
+          },
+          {
+            "id": "B",
+            "texte": "Traiter la vulnérabilité des clés d'API comme un incident de sécurité critique nécessitant une correction immédiate (chiffrement, gestion sécurisée des secrets), avant toute autre priorité"
+          },
+          {
+            "id": "C",
+            "texte": "Attendre la fin du contrat cloud pour tout résoudre en une seule fois"
+          },
+          {
+            "id": "D",
+            "texte": "Informer uniquement l'équipe technique sans remonter à la direction"
+          }
+        ],
+        "correct_answers": [
+          "B"
+        ],
+        "explication": "Une vulnérabilité de sécurité critique (clés en clair) dans un système financier exige une action corrective immédiate et prioritaire absolue, avant tout autre développement, sans attendre un cycle normal (A) ni la fin du contrat (C), avec remontée appropriée (pas D)."
+      },
+      {
+        "id": "EX5-CS-002-Q2",
+        "type": "multi_choice",
+        "question": "Concernant la négociation contractuelle stagnante avec le fournisseur cloud, sélectionnez les DEUX actions les plus appropriées :",
+        "options": [
+          {
+            "id": "A",
+            "texte": "Laisser le contrat expirer sans renouvellement si les clauses ne conviennent pas"
+          },
+          {
+            "id": "B",
+            "texte": "Impliquer le service juridique pour clarifier les limites de responsabilité acceptables des deux côtés"
+          },
+          {
+            "id": "C",
+            "texte": "Accepter n'importe quelle clause proposée pour éviter un vide contractuel"
+          },
+          {
+            "id": "D",
+            "texte": "Élaborer un plan de contingence (fournisseur alternatif, délai de grâce) en cas de non-renouvellement à temps"
+          },
+          {
+            "id": "E",
+            "texte": "Ignorer la négociation car elle relève exclusivement des achats"
+          }
+        ],
+        "correct_answers": [
+          "B",
+          "D"
+        ],
+        "nombre_reponses_attendues": 2,
+        "explication": "Une négociation stagnante sur des clauses critiques doit être appuyée par une expertise juridique tout en préparant un plan de contingence, plutôt qu'un abandon (A), une acceptation aveugle (C) ou un désengagement du chef de projet (E)."
+      },
+      {
+        "id": "EX5-CS-002-Q3",
+        "type": "single_choice",
+        "question": "Le CPI (0,90) et le SPI (0,95) combinés à la découverte de cette vulnérabilité suggèrent quelle action de gestion la plus appropriée ?",
+        "options": [
+          {
+            "id": "A",
+            "texte": "Ignorer les indices EVM, la sécurité étant la seule priorité désormais"
+          },
+          {
+            "id": "B",
+            "texte": "Réviser l'estimation à terminaison (EAC) pour intégrer le coût et le délai de la correction de sécurité, et communiquer cet impact aux parties prenantes"
+          },
+          {
+            "id": "C",
+            "texte": "Maintenir les prévisions budgétaires et calendaires initiales sans ajustement"
+          },
+          {
+            "id": "D",
+            "texte": "Réduire la portée du projet sans consultation pour compenser le nouveau coût"
+          }
+        ],
+        "correct_answers": [
+          "B"
+        ],
+        "explication": "Un incident de sécurité avec impact coût/délai doit être intégré formellement dans une EAC révisée et communiqué, plutôt qu'ignoré au profit de la seule sécurité (A) ou maintenu sans ajustement réaliste (C), ni traité par une réduction de portée unilatérale (D)."
+      }
+    ],
+    "reference": "PMBOK 8 - Focus Area Sécurité critique, gestion contractuelle et EVM combinée",
+    "code": "EX5-CS-002",
+    "exam": 5,
+    "category": "Exam"
   }
 ];
-
 const QUESTIONS_EN = [
   {
     "id": 1,
@@ -2082,6 +6580,2886 @@ const QUESTIONS_EN = [
     },
     "answer": "B",
     "justification": "A rapidly evolving market requires short, iterative delivery cycles (incremental/hybrid approach) to incorporate market feedback and continuously deliver value."
+  },
+  {
+    "id": 10000,
+    "exam": 99,
+    "num_in_exam": 1,
+    "domain": "People",
+    "text": "[TEST #1] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 1)",
+      "B": "Test option B (question 1)",
+      "C": "Test option C (question 1)",
+      "D": "Test option D (question 1)"
+    },
+    "answer": "A",
+    "justification": "Test question #1 — the correct answer is arbitrarily set to \"A\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10001,
+    "exam": 99,
+    "num_in_exam": 2,
+    "domain": "People",
+    "text": "[TEST #2] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 2)",
+      "B": "Test option B (question 2)",
+      "C": "Test option C (question 2)",
+      "D": "Test option D (question 2)"
+    },
+    "answer": "B",
+    "justification": "Test question #2 — the correct answer is arbitrarily set to \"B\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10002,
+    "exam": 99,
+    "num_in_exam": 3,
+    "domain": "Process",
+    "text": "[TEST #3] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 3)",
+      "B": "Test option B (question 3)",
+      "C": "Test option C (question 3)",
+      "D": "Test option D (question 3)"
+    },
+    "answer": "C",
+    "justification": "Test question #3 — the correct answer is arbitrarily set to \"C\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10003,
+    "exam": 99,
+    "num_in_exam": 4,
+    "domain": "People",
+    "text": "[TEST #4] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 4)",
+      "B": "Test option B (question 4)",
+      "C": "Test option C (question 4)",
+      "D": "Test option D (question 4)"
+    },
+    "answer": "D",
+    "justification": "Test question #4 — the correct answer is arbitrarily set to \"D\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10004,
+    "exam": 99,
+    "num_in_exam": 5,
+    "domain": "People",
+    "text": "[TEST #5] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 5)",
+      "B": "Test option B (question 5)",
+      "C": "Test option C (question 5)",
+      "D": "Test option D (question 5)"
+    },
+    "answer": "A",
+    "justification": "Test question #5 — the correct answer is arbitrarily set to \"A\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10005,
+    "exam": 99,
+    "num_in_exam": 6,
+    "domain": "Process",
+    "text": "[TEST #6] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 6)",
+      "B": "Test option B (question 6)",
+      "C": "Test option C (question 6)",
+      "D": "Test option D (question 6)"
+    },
+    "answer": "B",
+    "justification": "Test question #6 — the correct answer is arbitrarily set to \"B\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10006,
+    "exam": 99,
+    "num_in_exam": 7,
+    "domain": "People",
+    "text": "[TEST #7] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 7)",
+      "B": "Test option B (question 7)",
+      "C": "Test option C (question 7)",
+      "D": "Test option D (question 7)"
+    },
+    "answer": "C",
+    "justification": "Test question #7 — the correct answer is arbitrarily set to \"C\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10007,
+    "exam": 99,
+    "num_in_exam": 8,
+    "domain": "Process",
+    "text": "[TEST #8] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 8)",
+      "B": "Test option B (question 8)",
+      "C": "Test option C (question 8)",
+      "D": "Test option D (question 8)"
+    },
+    "answer": "D",
+    "justification": "Test question #8 — the correct answer is arbitrarily set to \"D\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10008,
+    "exam": 99,
+    "num_in_exam": 9,
+    "domain": "Process",
+    "text": "[TEST #9] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 9)",
+      "B": "Test option B (question 9)",
+      "C": "Test option C (question 9)",
+      "D": "Test option D (question 9)"
+    },
+    "answer": "A",
+    "justification": "Test question #9 — the correct answer is arbitrarily set to \"A\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10009,
+    "exam": 99,
+    "num_in_exam": 10,
+    "domain": "People",
+    "text": "[TEST #10] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 10)",
+      "B": "Test option B (question 10)",
+      "C": "Test option C (question 10)",
+      "D": "Test option D (question 10)"
+    },
+    "answer": "B",
+    "justification": "Test question #10 — the correct answer is arbitrarily set to \"B\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10010,
+    "exam": 99,
+    "num_in_exam": 11,
+    "domain": "People",
+    "text": "[TEST #11] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 11)",
+      "B": "Test option B (question 11)",
+      "C": "Test option C (question 11)",
+      "D": "Test option D (question 11)"
+    },
+    "answer": "C",
+    "justification": "Test question #11 — the correct answer is arbitrarily set to \"C\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10011,
+    "exam": 99,
+    "num_in_exam": 12,
+    "domain": "Process",
+    "text": "[TEST #12] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 12)",
+      "B": "Test option B (question 12)",
+      "C": "Test option C (question 12)",
+      "D": "Test option D (question 12)"
+    },
+    "answer": "D",
+    "justification": "Test question #12 — the correct answer is arbitrarily set to \"D\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10012,
+    "exam": 99,
+    "num_in_exam": 13,
+    "domain": "Process",
+    "text": "[TEST #13] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 13)",
+      "B": "Test option B (question 13)",
+      "C": "Test option C (question 13)",
+      "D": "Test option D (question 13)"
+    },
+    "answer": "A",
+    "justification": "Test question #13 — the correct answer is arbitrarily set to \"A\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10013,
+    "exam": 99,
+    "num_in_exam": 14,
+    "domain": "Process",
+    "text": "[TEST #14] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 14)",
+      "B": "Test option B (question 14)",
+      "C": "Test option C (question 14)",
+      "D": "Test option D (question 14)"
+    },
+    "answer": "B",
+    "justification": "Test question #14 — the correct answer is arbitrarily set to \"B\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10014,
+    "exam": 99,
+    "num_in_exam": 15,
+    "domain": "People",
+    "text": "[TEST #15] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 15)",
+      "B": "Test option B (question 15)",
+      "C": "Test option C (question 15)",
+      "D": "Test option D (question 15)"
+    },
+    "answer": "C",
+    "justification": "Test question #15 — the correct answer is arbitrarily set to \"C\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10015,
+    "exam": 99,
+    "num_in_exam": 16,
+    "domain": "Process",
+    "text": "[TEST #16] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 16)",
+      "B": "Test option B (question 16)",
+      "C": "Test option C (question 16)",
+      "D": "Test option D (question 16)"
+    },
+    "answer": "D",
+    "justification": "Test question #16 — the correct answer is arbitrarily set to \"D\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10016,
+    "exam": 99,
+    "num_in_exam": 17,
+    "domain": "People",
+    "text": "[TEST #17] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 17)",
+      "B": "Test option B (question 17)",
+      "C": "Test option C (question 17)",
+      "D": "Test option D (question 17)"
+    },
+    "answer": "A",
+    "justification": "Test question #17 — the correct answer is arbitrarily set to \"A\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10017,
+    "exam": 99,
+    "num_in_exam": 18,
+    "domain": "People",
+    "text": "[TEST #18] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 18)",
+      "B": "Test option B (question 18)",
+      "C": "Test option C (question 18)",
+      "D": "Test option D (question 18)"
+    },
+    "answer": "B",
+    "justification": "Test question #18 — the correct answer is arbitrarily set to \"B\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10018,
+    "exam": 99,
+    "num_in_exam": 19,
+    "domain": "Process",
+    "text": "[TEST #19] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 19)",
+      "B": "Test option B (question 19)",
+      "C": "Test option C (question 19)",
+      "D": "Test option D (question 19)"
+    },
+    "answer": "C",
+    "justification": "Test question #19 — the correct answer is arbitrarily set to \"C\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10019,
+    "exam": 99,
+    "num_in_exam": 20,
+    "domain": "People",
+    "text": "[TEST #20] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 20)",
+      "B": "Test option B (question 20)",
+      "C": "Test option C (question 20)",
+      "D": "Test option D (question 20)"
+    },
+    "answer": "D",
+    "justification": "Test question #20 — the correct answer is arbitrarily set to \"D\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10020,
+    "exam": 99,
+    "num_in_exam": 21,
+    "domain": "People",
+    "text": "[TEST #21] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 21)",
+      "B": "Test option B (question 21)",
+      "C": "Test option C (question 21)",
+      "D": "Test option D (question 21)"
+    },
+    "answer": "A",
+    "justification": "Test question #21 — the correct answer is arbitrarily set to \"A\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10021,
+    "exam": 99,
+    "num_in_exam": 22,
+    "domain": "Business",
+    "text": "[TEST #22] Auto-generated test question (domain Business) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 22)",
+      "B": "Test option B (question 22)",
+      "C": "Test option C (question 22)",
+      "D": "Test option D (question 22)"
+    },
+    "answer": "B",
+    "justification": "Test question #22 — the correct answer is arbitrarily set to \"B\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10022,
+    "exam": 99,
+    "num_in_exam": 23,
+    "domain": "Process",
+    "text": "[TEST #23] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 23)",
+      "B": "Test option B (question 23)",
+      "C": "Test option C (question 23)",
+      "D": "Test option D (question 23)"
+    },
+    "answer": "C",
+    "justification": "Test question #23 — the correct answer is arbitrarily set to \"C\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10023,
+    "exam": 99,
+    "num_in_exam": 24,
+    "domain": "Process",
+    "text": "[TEST #24] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 24)",
+      "B": "Test option B (question 24)",
+      "C": "Test option C (question 24)",
+      "D": "Test option D (question 24)"
+    },
+    "answer": "D",
+    "justification": "Test question #24 — the correct answer is arbitrarily set to \"D\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10024,
+    "exam": 99,
+    "num_in_exam": 25,
+    "domain": "Process",
+    "text": "[TEST #25] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 25)",
+      "B": "Test option B (question 25)",
+      "C": "Test option C (question 25)",
+      "D": "Test option D (question 25)"
+    },
+    "answer": "A",
+    "justification": "Test question #25 — the correct answer is arbitrarily set to \"A\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10025,
+    "exam": 99,
+    "num_in_exam": 26,
+    "domain": "Process",
+    "text": "[TEST #26] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 26)",
+      "B": "Test option B (question 26)",
+      "C": "Test option C (question 26)",
+      "D": "Test option D (question 26)"
+    },
+    "answer": "B",
+    "justification": "Test question #26 — the correct answer is arbitrarily set to \"B\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10026,
+    "exam": 99,
+    "num_in_exam": 27,
+    "domain": "People",
+    "text": "[TEST #27] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 27)",
+      "B": "Test option B (question 27)",
+      "C": "Test option C (question 27)",
+      "D": "Test option D (question 27)"
+    },
+    "answer": "C",
+    "justification": "Test question #27 — the correct answer is arbitrarily set to \"C\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10027,
+    "exam": 99,
+    "num_in_exam": 28,
+    "domain": "People",
+    "text": "[TEST #28] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 28)",
+      "B": "Test option B (question 28)",
+      "C": "Test option C (question 28)",
+      "D": "Test option D (question 28)"
+    },
+    "answer": "D",
+    "justification": "Test question #28 — the correct answer is arbitrarily set to \"D\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10028,
+    "exam": 99,
+    "num_in_exam": 29,
+    "domain": "People",
+    "text": "[TEST #29] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 29)",
+      "B": "Test option B (question 29)",
+      "C": "Test option C (question 29)",
+      "D": "Test option D (question 29)"
+    },
+    "answer": "A",
+    "justification": "Test question #29 — the correct answer is arbitrarily set to \"A\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10029,
+    "exam": 99,
+    "num_in_exam": 30,
+    "domain": "People",
+    "text": "[TEST #30] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 30)",
+      "B": "Test option B (question 30)",
+      "C": "Test option C (question 30)",
+      "D": "Test option D (question 30)"
+    },
+    "answer": "B",
+    "justification": "Test question #30 — the correct answer is arbitrarily set to \"B\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10030,
+    "exam": 99,
+    "num_in_exam": 31,
+    "domain": "Process",
+    "text": "[TEST #31] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 31)",
+      "B": "Test option B (question 31)",
+      "C": "Test option C (question 31)",
+      "D": "Test option D (question 31)"
+    },
+    "answer": "C",
+    "justification": "Test question #31 — the correct answer is arbitrarily set to \"C\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10031,
+    "exam": 99,
+    "num_in_exam": 32,
+    "domain": "People",
+    "text": "[TEST #32] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 32)",
+      "B": "Test option B (question 32)",
+      "C": "Test option C (question 32)",
+      "D": "Test option D (question 32)"
+    },
+    "answer": "D",
+    "justification": "Test question #32 — the correct answer is arbitrarily set to \"D\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10032,
+    "exam": 99,
+    "num_in_exam": 33,
+    "domain": "People",
+    "text": "[TEST #33] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 33)",
+      "B": "Test option B (question 33)",
+      "C": "Test option C (question 33)",
+      "D": "Test option D (question 33)"
+    },
+    "answer": "A",
+    "justification": "Test question #33 — the correct answer is arbitrarily set to \"A\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10033,
+    "exam": 99,
+    "num_in_exam": 34,
+    "domain": "Process",
+    "text": "[TEST #34] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 34)",
+      "B": "Test option B (question 34)",
+      "C": "Test option C (question 34)",
+      "D": "Test option D (question 34)"
+    },
+    "answer": "B",
+    "justification": "Test question #34 — the correct answer is arbitrarily set to \"B\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10034,
+    "exam": 99,
+    "num_in_exam": 35,
+    "domain": "People",
+    "text": "[TEST #35] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 35)",
+      "B": "Test option B (question 35)",
+      "C": "Test option C (question 35)",
+      "D": "Test option D (question 35)"
+    },
+    "answer": "C",
+    "justification": "Test question #35 — the correct answer is arbitrarily set to \"C\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10035,
+    "exam": 99,
+    "num_in_exam": 36,
+    "domain": "Process",
+    "text": "[TEST #36] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 36)",
+      "B": "Test option B (question 36)",
+      "C": "Test option C (question 36)",
+      "D": "Test option D (question 36)"
+    },
+    "answer": "D",
+    "justification": "Test question #36 — the correct answer is arbitrarily set to \"D\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10036,
+    "exam": 99,
+    "num_in_exam": 37,
+    "domain": "Process",
+    "text": "[TEST #37] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 37)",
+      "B": "Test option B (question 37)",
+      "C": "Test option C (question 37)",
+      "D": "Test option D (question 37)"
+    },
+    "answer": "A",
+    "justification": "Test question #37 — the correct answer is arbitrarily set to \"A\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10037,
+    "exam": 99,
+    "num_in_exam": 38,
+    "domain": "Process",
+    "text": "[TEST #38] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 38)",
+      "B": "Test option B (question 38)",
+      "C": "Test option C (question 38)",
+      "D": "Test option D (question 38)"
+    },
+    "answer": "B",
+    "justification": "Test question #38 — the correct answer is arbitrarily set to \"B\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10038,
+    "exam": 99,
+    "num_in_exam": 39,
+    "domain": "Process",
+    "text": "[TEST #39] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 39)",
+      "B": "Test option B (question 39)",
+      "C": "Test option C (question 39)",
+      "D": "Test option D (question 39)"
+    },
+    "answer": "C",
+    "justification": "Test question #39 — the correct answer is arbitrarily set to \"C\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10039,
+    "exam": 99,
+    "num_in_exam": 40,
+    "domain": "Process",
+    "text": "[TEST #40] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 40)",
+      "B": "Test option B (question 40)",
+      "C": "Test option C (question 40)",
+      "D": "Test option D (question 40)"
+    },
+    "answer": "D",
+    "justification": "Test question #40 — the correct answer is arbitrarily set to \"D\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10040,
+    "exam": 99,
+    "num_in_exam": 41,
+    "domain": "People",
+    "text": "[TEST #41] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 41)",
+      "B": "Test option B (question 41)",
+      "C": "Test option C (question 41)",
+      "D": "Test option D (question 41)"
+    },
+    "answer": "A",
+    "justification": "Test question #41 — the correct answer is arbitrarily set to \"A\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10041,
+    "exam": 99,
+    "num_in_exam": 42,
+    "domain": "Process",
+    "text": "[TEST #42] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 42)",
+      "B": "Test option B (question 42)",
+      "C": "Test option C (question 42)",
+      "D": "Test option D (question 42)"
+    },
+    "answer": "B",
+    "justification": "Test question #42 — the correct answer is arbitrarily set to \"B\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10042,
+    "exam": 99,
+    "num_in_exam": 43,
+    "domain": "People",
+    "text": "[TEST #43] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 43)",
+      "B": "Test option B (question 43)",
+      "C": "Test option C (question 43)",
+      "D": "Test option D (question 43)"
+    },
+    "answer": "C",
+    "justification": "Test question #43 — the correct answer is arbitrarily set to \"C\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10043,
+    "exam": 99,
+    "num_in_exam": 44,
+    "domain": "People",
+    "text": "[TEST #44] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 44)",
+      "B": "Test option B (question 44)",
+      "C": "Test option C (question 44)",
+      "D": "Test option D (question 44)"
+    },
+    "answer": "D",
+    "justification": "Test question #44 — the correct answer is arbitrarily set to \"D\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10044,
+    "exam": 99,
+    "num_in_exam": 45,
+    "domain": "Process",
+    "text": "[TEST #45] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 45)",
+      "B": "Test option B (question 45)",
+      "C": "Test option C (question 45)",
+      "D": "Test option D (question 45)"
+    },
+    "answer": "A",
+    "justification": "Test question #45 — the correct answer is arbitrarily set to \"A\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10045,
+    "exam": 99,
+    "num_in_exam": 46,
+    "domain": "Process",
+    "text": "[TEST #46] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 46)",
+      "B": "Test option B (question 46)",
+      "C": "Test option C (question 46)",
+      "D": "Test option D (question 46)"
+    },
+    "answer": "B",
+    "justification": "Test question #46 — the correct answer is arbitrarily set to \"B\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10046,
+    "exam": 99,
+    "num_in_exam": 47,
+    "domain": "Process",
+    "text": "[TEST #47] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 47)",
+      "B": "Test option B (question 47)",
+      "C": "Test option C (question 47)",
+      "D": "Test option D (question 47)"
+    },
+    "answer": "C",
+    "justification": "Test question #47 — the correct answer is arbitrarily set to \"C\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10047,
+    "exam": 99,
+    "num_in_exam": 48,
+    "domain": "People",
+    "text": "[TEST #48] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 48)",
+      "B": "Test option B (question 48)",
+      "C": "Test option C (question 48)",
+      "D": "Test option D (question 48)"
+    },
+    "answer": "D",
+    "justification": "Test question #48 — the correct answer is arbitrarily set to \"D\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10048,
+    "exam": 99,
+    "num_in_exam": 49,
+    "domain": "People",
+    "text": "[TEST #49] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 49)",
+      "B": "Test option B (question 49)",
+      "C": "Test option C (question 49)",
+      "D": "Test option D (question 49)"
+    },
+    "answer": "A",
+    "justification": "Test question #49 — the correct answer is arbitrarily set to \"A\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10049,
+    "exam": 99,
+    "num_in_exam": 50,
+    "domain": "People",
+    "text": "[TEST #50] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 50)",
+      "B": "Test option B (question 50)",
+      "C": "Test option C (question 50)",
+      "D": "Test option D (question 50)"
+    },
+    "answer": "B",
+    "justification": "Test question #50 — the correct answer is arbitrarily set to \"B\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10050,
+    "exam": 99,
+    "num_in_exam": 51,
+    "domain": "Process",
+    "text": "[TEST #51] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 51)",
+      "B": "Test option B (question 51)",
+      "C": "Test option C (question 51)",
+      "D": "Test option D (question 51)"
+    },
+    "answer": "C",
+    "justification": "Test question #51 — the correct answer is arbitrarily set to \"C\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10051,
+    "exam": 99,
+    "num_in_exam": 52,
+    "domain": "Business",
+    "text": "[TEST #52] Auto-generated test question (domain Business) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 52)",
+      "B": "Test option B (question 52)",
+      "C": "Test option C (question 52)",
+      "D": "Test option D (question 52)"
+    },
+    "answer": "D",
+    "justification": "Test question #52 — the correct answer is arbitrarily set to \"D\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10052,
+    "exam": 99,
+    "num_in_exam": 53,
+    "domain": "Process",
+    "text": "[TEST #53] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 53)",
+      "B": "Test option B (question 53)",
+      "C": "Test option C (question 53)",
+      "D": "Test option D (question 53)"
+    },
+    "answer": "A",
+    "justification": "Test question #53 — the correct answer is arbitrarily set to \"A\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10053,
+    "exam": 99,
+    "num_in_exam": 54,
+    "domain": "People",
+    "text": "[TEST #54] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 54)",
+      "B": "Test option B (question 54)",
+      "C": "Test option C (question 54)",
+      "D": "Test option D (question 54)"
+    },
+    "answer": "B",
+    "justification": "Test question #54 — the correct answer is arbitrarily set to \"B\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10054,
+    "exam": 99,
+    "num_in_exam": 55,
+    "domain": "People",
+    "text": "[TEST #55] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 55)",
+      "B": "Test option B (question 55)",
+      "C": "Test option C (question 55)",
+      "D": "Test option D (question 55)"
+    },
+    "answer": "C",
+    "justification": "Test question #55 — the correct answer is arbitrarily set to \"C\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10055,
+    "exam": 99,
+    "num_in_exam": 56,
+    "domain": "Process",
+    "text": "[TEST #56] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 56)",
+      "B": "Test option B (question 56)",
+      "C": "Test option C (question 56)",
+      "D": "Test option D (question 56)"
+    },
+    "answer": "D",
+    "justification": "Test question #56 — the correct answer is arbitrarily set to \"D\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10056,
+    "exam": 99,
+    "num_in_exam": 57,
+    "domain": "Business",
+    "text": "[TEST #57] Auto-generated test question (domain Business) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 57)",
+      "B": "Test option B (question 57)",
+      "C": "Test option C (question 57)",
+      "D": "Test option D (question 57)"
+    },
+    "answer": "A",
+    "justification": "Test question #57 — the correct answer is arbitrarily set to \"A\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10057,
+    "exam": 99,
+    "num_in_exam": 58,
+    "domain": "People",
+    "text": "[TEST #58] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 58)",
+      "B": "Test option B (question 58)",
+      "C": "Test option C (question 58)",
+      "D": "Test option D (question 58)"
+    },
+    "answer": "B",
+    "justification": "Test question #58 — the correct answer is arbitrarily set to \"B\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10058,
+    "exam": 99,
+    "num_in_exam": 59,
+    "domain": "Process",
+    "text": "[TEST #59] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 59)",
+      "B": "Test option B (question 59)",
+      "C": "Test option C (question 59)",
+      "D": "Test option D (question 59)"
+    },
+    "answer": "C",
+    "justification": "Test question #59 — the correct answer is arbitrarily set to \"C\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10059,
+    "exam": 99,
+    "num_in_exam": 60,
+    "domain": "Process",
+    "text": "[TEST #60] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 60)",
+      "B": "Test option B (question 60)",
+      "C": "Test option C (question 60)",
+      "D": "Test option D (question 60)"
+    },
+    "answer": "D",
+    "justification": "Test question #60 — the correct answer is arbitrarily set to \"D\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10060,
+    "exam": 99,
+    "num_in_exam": 61,
+    "domain": "People",
+    "text": "[TEST #61] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 61)",
+      "B": "Test option B (question 61)",
+      "C": "Test option C (question 61)",
+      "D": "Test option D (question 61)"
+    },
+    "answer": "A",
+    "justification": "Test question #61 — the correct answer is arbitrarily set to \"A\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10061,
+    "exam": 99,
+    "num_in_exam": 62,
+    "domain": "Process",
+    "text": "[TEST #62] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 62)",
+      "B": "Test option B (question 62)",
+      "C": "Test option C (question 62)",
+      "D": "Test option D (question 62)"
+    },
+    "answer": "B",
+    "justification": "Test question #62 — the correct answer is arbitrarily set to \"B\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10062,
+    "exam": 99,
+    "num_in_exam": 63,
+    "domain": "People",
+    "text": "[TEST #63] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 63)",
+      "B": "Test option B (question 63)",
+      "C": "Test option C (question 63)",
+      "D": "Test option D (question 63)"
+    },
+    "answer": "C",
+    "justification": "Test question #63 — the correct answer is arbitrarily set to \"C\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10063,
+    "exam": 99,
+    "num_in_exam": 64,
+    "domain": "Process",
+    "text": "[TEST #64] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 64)",
+      "B": "Test option B (question 64)",
+      "C": "Test option C (question 64)",
+      "D": "Test option D (question 64)"
+    },
+    "answer": "D",
+    "justification": "Test question #64 — the correct answer is arbitrarily set to \"D\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10064,
+    "exam": 99,
+    "num_in_exam": 65,
+    "domain": "People",
+    "text": "[TEST #65] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 65)",
+      "B": "Test option B (question 65)",
+      "C": "Test option C (question 65)",
+      "D": "Test option D (question 65)"
+    },
+    "answer": "A",
+    "justification": "Test question #65 — the correct answer is arbitrarily set to \"A\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10065,
+    "exam": 99,
+    "num_in_exam": 66,
+    "domain": "People",
+    "text": "[TEST #66] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 66)",
+      "B": "Test option B (question 66)",
+      "C": "Test option C (question 66)",
+      "D": "Test option D (question 66)"
+    },
+    "answer": "B",
+    "justification": "Test question #66 — the correct answer is arbitrarily set to \"B\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10066,
+    "exam": 99,
+    "num_in_exam": 67,
+    "domain": "People",
+    "text": "[TEST #67] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 67)",
+      "B": "Test option B (question 67)",
+      "C": "Test option C (question 67)",
+      "D": "Test option D (question 67)"
+    },
+    "answer": "C",
+    "justification": "Test question #67 — the correct answer is arbitrarily set to \"C\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10067,
+    "exam": 99,
+    "num_in_exam": 68,
+    "domain": "Process",
+    "text": "[TEST #68] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 68)",
+      "B": "Test option B (question 68)",
+      "C": "Test option C (question 68)",
+      "D": "Test option D (question 68)"
+    },
+    "answer": "D",
+    "justification": "Test question #68 — the correct answer is arbitrarily set to \"D\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10068,
+    "exam": 99,
+    "num_in_exam": 69,
+    "domain": "People",
+    "text": "[TEST #69] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 69)",
+      "B": "Test option B (question 69)",
+      "C": "Test option C (question 69)",
+      "D": "Test option D (question 69)"
+    },
+    "answer": "A",
+    "justification": "Test question #69 — the correct answer is arbitrarily set to \"A\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10069,
+    "exam": 99,
+    "num_in_exam": 70,
+    "domain": "Process",
+    "text": "[TEST #70] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 70)",
+      "B": "Test option B (question 70)",
+      "C": "Test option C (question 70)",
+      "D": "Test option D (question 70)"
+    },
+    "answer": "B",
+    "justification": "Test question #70 — the correct answer is arbitrarily set to \"B\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10070,
+    "exam": 99,
+    "num_in_exam": 71,
+    "domain": "People",
+    "text": "[TEST #71] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 71)",
+      "B": "Test option B (question 71)",
+      "C": "Test option C (question 71)",
+      "D": "Test option D (question 71)"
+    },
+    "answer": "C",
+    "justification": "Test question #71 — the correct answer is arbitrarily set to \"C\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10071,
+    "exam": 99,
+    "num_in_exam": 72,
+    "domain": "Business",
+    "text": "[TEST #72] Auto-generated test question (domain Business) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 72)",
+      "B": "Test option B (question 72)",
+      "C": "Test option C (question 72)",
+      "D": "Test option D (question 72)"
+    },
+    "answer": "D",
+    "justification": "Test question #72 — the correct answer is arbitrarily set to \"D\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10072,
+    "exam": 99,
+    "num_in_exam": 73,
+    "domain": "Process",
+    "text": "[TEST #73] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 73)",
+      "B": "Test option B (question 73)",
+      "C": "Test option C (question 73)",
+      "D": "Test option D (question 73)"
+    },
+    "answer": "A",
+    "justification": "Test question #73 — the correct answer is arbitrarily set to \"A\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10073,
+    "exam": 99,
+    "num_in_exam": 74,
+    "domain": "People",
+    "text": "[TEST #74] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 74)",
+      "B": "Test option B (question 74)",
+      "C": "Test option C (question 74)",
+      "D": "Test option D (question 74)"
+    },
+    "answer": "B",
+    "justification": "Test question #74 — the correct answer is arbitrarily set to \"B\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10074,
+    "exam": 99,
+    "num_in_exam": 75,
+    "domain": "Process",
+    "text": "[TEST #75] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 75)",
+      "B": "Test option B (question 75)",
+      "C": "Test option C (question 75)",
+      "D": "Test option D (question 75)"
+    },
+    "answer": "C",
+    "justification": "Test question #75 — the correct answer is arbitrarily set to \"C\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10075,
+    "exam": 99,
+    "num_in_exam": 76,
+    "domain": "Process",
+    "text": "[TEST #76] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 76)",
+      "B": "Test option B (question 76)",
+      "C": "Test option C (question 76)",
+      "D": "Test option D (question 76)"
+    },
+    "answer": "D",
+    "justification": "Test question #76 — the correct answer is arbitrarily set to \"D\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10076,
+    "exam": 99,
+    "num_in_exam": 77,
+    "domain": "People",
+    "text": "[TEST #77] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 77)",
+      "B": "Test option B (question 77)",
+      "C": "Test option C (question 77)",
+      "D": "Test option D (question 77)"
+    },
+    "answer": "A",
+    "justification": "Test question #77 — the correct answer is arbitrarily set to \"A\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10077,
+    "exam": 99,
+    "num_in_exam": 78,
+    "domain": "People",
+    "text": "[TEST #78] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 78)",
+      "B": "Test option B (question 78)",
+      "C": "Test option C (question 78)",
+      "D": "Test option D (question 78)"
+    },
+    "answer": "B",
+    "justification": "Test question #78 — the correct answer is arbitrarily set to \"B\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10078,
+    "exam": 99,
+    "num_in_exam": 79,
+    "domain": "People",
+    "text": "[TEST #79] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 79)",
+      "B": "Test option B (question 79)",
+      "C": "Test option C (question 79)",
+      "D": "Test option D (question 79)"
+    },
+    "answer": "C",
+    "justification": "Test question #79 — the correct answer is arbitrarily set to \"C\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10079,
+    "exam": 99,
+    "num_in_exam": 80,
+    "domain": "Process",
+    "text": "[TEST #80] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 80)",
+      "B": "Test option B (question 80)",
+      "C": "Test option C (question 80)",
+      "D": "Test option D (question 80)"
+    },
+    "answer": "D",
+    "justification": "Test question #80 — the correct answer is arbitrarily set to \"D\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10080,
+    "exam": 99,
+    "num_in_exam": 81,
+    "domain": "People",
+    "text": "[TEST #81] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 81)",
+      "B": "Test option B (question 81)",
+      "C": "Test option C (question 81)",
+      "D": "Test option D (question 81)"
+    },
+    "answer": "A",
+    "justification": "Test question #81 — the correct answer is arbitrarily set to \"A\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10081,
+    "exam": 99,
+    "num_in_exam": 82,
+    "domain": "Business",
+    "text": "[TEST #82] Auto-generated test question (domain Business) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 82)",
+      "B": "Test option B (question 82)",
+      "C": "Test option C (question 82)",
+      "D": "Test option D (question 82)"
+    },
+    "answer": "B",
+    "justification": "Test question #82 — the correct answer is arbitrarily set to \"B\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10082,
+    "exam": 99,
+    "num_in_exam": 83,
+    "domain": "Process",
+    "text": "[TEST #83] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 83)",
+      "B": "Test option B (question 83)",
+      "C": "Test option C (question 83)",
+      "D": "Test option D (question 83)"
+    },
+    "answer": "C",
+    "justification": "Test question #83 — the correct answer is arbitrarily set to \"C\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10083,
+    "exam": 99,
+    "num_in_exam": 84,
+    "domain": "People",
+    "text": "[TEST #84] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 84)",
+      "B": "Test option B (question 84)",
+      "C": "Test option C (question 84)",
+      "D": "Test option D (question 84)"
+    },
+    "answer": "D",
+    "justification": "Test question #84 — the correct answer is arbitrarily set to \"D\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10084,
+    "exam": 99,
+    "num_in_exam": 85,
+    "domain": "Process",
+    "text": "[TEST #85] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 85)",
+      "B": "Test option B (question 85)",
+      "C": "Test option C (question 85)",
+      "D": "Test option D (question 85)"
+    },
+    "answer": "A",
+    "justification": "Test question #85 — the correct answer is arbitrarily set to \"A\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10085,
+    "exam": 99,
+    "num_in_exam": 86,
+    "domain": "Process",
+    "text": "[TEST #86] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 86)",
+      "B": "Test option B (question 86)",
+      "C": "Test option C (question 86)",
+      "D": "Test option D (question 86)"
+    },
+    "answer": "B",
+    "justification": "Test question #86 — the correct answer is arbitrarily set to \"B\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10086,
+    "exam": 99,
+    "num_in_exam": 87,
+    "domain": "Process",
+    "text": "[TEST #87] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 87)",
+      "B": "Test option B (question 87)",
+      "C": "Test option C (question 87)",
+      "D": "Test option D (question 87)"
+    },
+    "answer": "C",
+    "justification": "Test question #87 — the correct answer is arbitrarily set to \"C\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10087,
+    "exam": 99,
+    "num_in_exam": 88,
+    "domain": "People",
+    "text": "[TEST #88] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 88)",
+      "B": "Test option B (question 88)",
+      "C": "Test option C (question 88)",
+      "D": "Test option D (question 88)"
+    },
+    "answer": "D",
+    "justification": "Test question #88 — the correct answer is arbitrarily set to \"D\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10088,
+    "exam": 99,
+    "num_in_exam": 89,
+    "domain": "People",
+    "text": "[TEST #89] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 89)",
+      "B": "Test option B (question 89)",
+      "C": "Test option C (question 89)",
+      "D": "Test option D (question 89)"
+    },
+    "answer": "A",
+    "justification": "Test question #89 — the correct answer is arbitrarily set to \"A\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10089,
+    "exam": 99,
+    "num_in_exam": 90,
+    "domain": "Process",
+    "text": "[TEST #90] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 90)",
+      "B": "Test option B (question 90)",
+      "C": "Test option C (question 90)",
+      "D": "Test option D (question 90)"
+    },
+    "answer": "B",
+    "justification": "Test question #90 — the correct answer is arbitrarily set to \"B\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10090,
+    "exam": 99,
+    "num_in_exam": 91,
+    "domain": "Business",
+    "text": "[TEST #91] Auto-generated test question (domain Business) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 91)",
+      "B": "Test option B (question 91)",
+      "C": "Test option C (question 91)",
+      "D": "Test option D (question 91)"
+    },
+    "answer": "C",
+    "justification": "Test question #91 — the correct answer is arbitrarily set to \"C\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10091,
+    "exam": 99,
+    "num_in_exam": 92,
+    "domain": "People",
+    "text": "[TEST #92] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 92)",
+      "B": "Test option B (question 92)",
+      "C": "Test option C (question 92)",
+      "D": "Test option D (question 92)"
+    },
+    "answer": "D",
+    "justification": "Test question #92 — the correct answer is arbitrarily set to \"D\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10092,
+    "exam": 99,
+    "num_in_exam": 93,
+    "domain": "Process",
+    "text": "[TEST #93] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 93)",
+      "B": "Test option B (question 93)",
+      "C": "Test option C (question 93)",
+      "D": "Test option D (question 93)"
+    },
+    "answer": "A",
+    "justification": "Test question #93 — the correct answer is arbitrarily set to \"A\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10093,
+    "exam": 99,
+    "num_in_exam": 94,
+    "domain": "Process",
+    "text": "[TEST #94] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 94)",
+      "B": "Test option B (question 94)",
+      "C": "Test option C (question 94)",
+      "D": "Test option D (question 94)"
+    },
+    "answer": "B",
+    "justification": "Test question #94 — the correct answer is arbitrarily set to \"B\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10094,
+    "exam": 99,
+    "num_in_exam": 95,
+    "domain": "Business",
+    "text": "[TEST #95] Auto-generated test question (domain Business) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 95)",
+      "B": "Test option B (question 95)",
+      "C": "Test option C (question 95)",
+      "D": "Test option D (question 95)"
+    },
+    "answer": "C",
+    "justification": "Test question #95 — the correct answer is arbitrarily set to \"C\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10095,
+    "exam": 99,
+    "num_in_exam": 96,
+    "domain": "People",
+    "text": "[TEST #96] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 96)",
+      "B": "Test option B (question 96)",
+      "C": "Test option C (question 96)",
+      "D": "Test option D (question 96)"
+    },
+    "answer": "D",
+    "justification": "Test question #96 — the correct answer is arbitrarily set to \"D\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10096,
+    "exam": 99,
+    "num_in_exam": 97,
+    "domain": "People",
+    "text": "[TEST #97] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 97)",
+      "B": "Test option B (question 97)",
+      "C": "Test option C (question 97)",
+      "D": "Test option D (question 97)"
+    },
+    "answer": "A",
+    "justification": "Test question #97 — the correct answer is arbitrarily set to \"A\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10097,
+    "exam": 99,
+    "num_in_exam": 98,
+    "domain": "Process",
+    "text": "[TEST #98] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 98)",
+      "B": "Test option B (question 98)",
+      "C": "Test option C (question 98)",
+      "D": "Test option D (question 98)"
+    },
+    "answer": "B",
+    "justification": "Test question #98 — the correct answer is arbitrarily set to \"B\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10098,
+    "exam": 99,
+    "num_in_exam": 99,
+    "domain": "Process",
+    "text": "[TEST #99] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 99)",
+      "B": "Test option B (question 99)",
+      "C": "Test option C (question 99)",
+      "D": "Test option D (question 99)"
+    },
+    "answer": "C",
+    "justification": "Test question #99 — the correct answer is arbitrarily set to \"C\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10099,
+    "exam": 99,
+    "num_in_exam": 100,
+    "domain": "People",
+    "text": "[TEST #100] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 100)",
+      "B": "Test option B (question 100)",
+      "C": "Test option C (question 100)",
+      "D": "Test option D (question 100)"
+    },
+    "answer": "D",
+    "justification": "Test question #100 — the correct answer is arbitrarily set to \"D\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10100,
+    "exam": 99,
+    "num_in_exam": 101,
+    "domain": "People",
+    "text": "[TEST #101] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 101)",
+      "B": "Test option B (question 101)",
+      "C": "Test option C (question 101)",
+      "D": "Test option D (question 101)"
+    },
+    "answer": "A",
+    "justification": "Test question #101 — the correct answer is arbitrarily set to \"A\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10101,
+    "exam": 99,
+    "num_in_exam": 102,
+    "domain": "Process",
+    "text": "[TEST #102] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 102)",
+      "B": "Test option B (question 102)",
+      "C": "Test option C (question 102)",
+      "D": "Test option D (question 102)"
+    },
+    "answer": "B",
+    "justification": "Test question #102 — the correct answer is arbitrarily set to \"B\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10102,
+    "exam": 99,
+    "num_in_exam": 103,
+    "domain": "People",
+    "text": "[TEST #103] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 103)",
+      "B": "Test option B (question 103)",
+      "C": "Test option C (question 103)",
+      "D": "Test option D (question 103)"
+    },
+    "answer": "C",
+    "justification": "Test question #103 — the correct answer is arbitrarily set to \"C\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10103,
+    "exam": 99,
+    "num_in_exam": 104,
+    "domain": "Process",
+    "text": "[TEST #104] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 104)",
+      "B": "Test option B (question 104)",
+      "C": "Test option C (question 104)",
+      "D": "Test option D (question 104)"
+    },
+    "answer": "D",
+    "justification": "Test question #104 — the correct answer is arbitrarily set to \"D\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10104,
+    "exam": 99,
+    "num_in_exam": 105,
+    "domain": "Process",
+    "text": "[TEST #105] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 105)",
+      "B": "Test option B (question 105)",
+      "C": "Test option C (question 105)",
+      "D": "Test option D (question 105)"
+    },
+    "answer": "A",
+    "justification": "Test question #105 — the correct answer is arbitrarily set to \"A\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10105,
+    "exam": 99,
+    "num_in_exam": 106,
+    "domain": "Process",
+    "text": "[TEST #106] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 106)",
+      "B": "Test option B (question 106)",
+      "C": "Test option C (question 106)",
+      "D": "Test option D (question 106)"
+    },
+    "answer": "B",
+    "justification": "Test question #106 — the correct answer is arbitrarily set to \"B\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10106,
+    "exam": 99,
+    "num_in_exam": 107,
+    "domain": "Process",
+    "text": "[TEST #107] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 107)",
+      "B": "Test option B (question 107)",
+      "C": "Test option C (question 107)",
+      "D": "Test option D (question 107)"
+    },
+    "answer": "C",
+    "justification": "Test question #107 — the correct answer is arbitrarily set to \"C\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10107,
+    "exam": 99,
+    "num_in_exam": 108,
+    "domain": "Process",
+    "text": "[TEST #108] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 108)",
+      "B": "Test option B (question 108)",
+      "C": "Test option C (question 108)",
+      "D": "Test option D (question 108)"
+    },
+    "answer": "D",
+    "justification": "Test question #108 — the correct answer is arbitrarily set to \"D\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10108,
+    "exam": 99,
+    "num_in_exam": 109,
+    "domain": "Process",
+    "text": "[TEST #109] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 109)",
+      "B": "Test option B (question 109)",
+      "C": "Test option C (question 109)",
+      "D": "Test option D (question 109)"
+    },
+    "answer": "A",
+    "justification": "Test question #109 — the correct answer is arbitrarily set to \"A\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10109,
+    "exam": 99,
+    "num_in_exam": 110,
+    "domain": "People",
+    "text": "[TEST #110] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 110)",
+      "B": "Test option B (question 110)",
+      "C": "Test option C (question 110)",
+      "D": "Test option D (question 110)"
+    },
+    "answer": "B",
+    "justification": "Test question #110 — the correct answer is arbitrarily set to \"B\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10110,
+    "exam": 99,
+    "num_in_exam": 111,
+    "domain": "Process",
+    "text": "[TEST #111] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 111)",
+      "B": "Test option B (question 111)",
+      "C": "Test option C (question 111)",
+      "D": "Test option D (question 111)"
+    },
+    "answer": "C",
+    "justification": "Test question #111 — the correct answer is arbitrarily set to \"C\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10111,
+    "exam": 99,
+    "num_in_exam": 112,
+    "domain": "People",
+    "text": "[TEST #112] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 112)",
+      "B": "Test option B (question 112)",
+      "C": "Test option C (question 112)",
+      "D": "Test option D (question 112)"
+    },
+    "answer": "D",
+    "justification": "Test question #112 — the correct answer is arbitrarily set to \"D\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10112,
+    "exam": 99,
+    "num_in_exam": 113,
+    "domain": "People",
+    "text": "[TEST #113] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 113)",
+      "B": "Test option B (question 113)",
+      "C": "Test option C (question 113)",
+      "D": "Test option D (question 113)"
+    },
+    "answer": "A",
+    "justification": "Test question #113 — the correct answer is arbitrarily set to \"A\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10113,
+    "exam": 99,
+    "num_in_exam": 114,
+    "domain": "Process",
+    "text": "[TEST #114] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 114)",
+      "B": "Test option B (question 114)",
+      "C": "Test option C (question 114)",
+      "D": "Test option D (question 114)"
+    },
+    "answer": "B",
+    "justification": "Test question #114 — the correct answer is arbitrarily set to \"B\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10114,
+    "exam": 99,
+    "num_in_exam": 115,
+    "domain": "People",
+    "text": "[TEST #115] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 115)",
+      "B": "Test option B (question 115)",
+      "C": "Test option C (question 115)",
+      "D": "Test option D (question 115)"
+    },
+    "answer": "C",
+    "justification": "Test question #115 — the correct answer is arbitrarily set to \"C\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10115,
+    "exam": 99,
+    "num_in_exam": 116,
+    "domain": "People",
+    "text": "[TEST #116] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 116)",
+      "B": "Test option B (question 116)",
+      "C": "Test option C (question 116)",
+      "D": "Test option D (question 116)"
+    },
+    "answer": "D",
+    "justification": "Test question #116 — the correct answer is arbitrarily set to \"D\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10116,
+    "exam": 99,
+    "num_in_exam": 117,
+    "domain": "Business",
+    "text": "[TEST #117] Auto-generated test question (domain Business) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 117)",
+      "B": "Test option B (question 117)",
+      "C": "Test option C (question 117)",
+      "D": "Test option D (question 117)"
+    },
+    "answer": "A",
+    "justification": "Test question #117 — the correct answer is arbitrarily set to \"A\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10117,
+    "exam": 99,
+    "num_in_exam": 118,
+    "domain": "Process",
+    "text": "[TEST #118] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 118)",
+      "B": "Test option B (question 118)",
+      "C": "Test option C (question 118)",
+      "D": "Test option D (question 118)"
+    },
+    "answer": "B",
+    "justification": "Test question #118 — the correct answer is arbitrarily set to \"B\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10118,
+    "exam": 99,
+    "num_in_exam": 119,
+    "domain": "Process",
+    "text": "[TEST #119] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 119)",
+      "B": "Test option B (question 119)",
+      "C": "Test option C (question 119)",
+      "D": "Test option D (question 119)"
+    },
+    "answer": "C",
+    "justification": "Test question #119 — the correct answer is arbitrarily set to \"C\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10119,
+    "exam": 99,
+    "num_in_exam": 120,
+    "domain": "Process",
+    "text": "[TEST #120] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 120)",
+      "B": "Test option B (question 120)",
+      "C": "Test option C (question 120)",
+      "D": "Test option D (question 120)"
+    },
+    "answer": "D",
+    "justification": "Test question #120 — the correct answer is arbitrarily set to \"D\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10120,
+    "exam": 99,
+    "num_in_exam": 121,
+    "domain": "Process",
+    "text": "[TEST #121] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 121)",
+      "B": "Test option B (question 121)",
+      "C": "Test option C (question 121)",
+      "D": "Test option D (question 121)"
+    },
+    "answer": "A",
+    "justification": "Test question #121 — the correct answer is arbitrarily set to \"A\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10121,
+    "exam": 99,
+    "num_in_exam": 122,
+    "domain": "People",
+    "text": "[TEST #122] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 122)",
+      "B": "Test option B (question 122)",
+      "C": "Test option C (question 122)",
+      "D": "Test option D (question 122)"
+    },
+    "answer": "B",
+    "justification": "Test question #122 — the correct answer is arbitrarily set to \"B\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10122,
+    "exam": 99,
+    "num_in_exam": 123,
+    "domain": "Process",
+    "text": "[TEST #123] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 123)",
+      "B": "Test option B (question 123)",
+      "C": "Test option C (question 123)",
+      "D": "Test option D (question 123)"
+    },
+    "answer": "C",
+    "justification": "Test question #123 — the correct answer is arbitrarily set to \"C\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10123,
+    "exam": 99,
+    "num_in_exam": 124,
+    "domain": "People",
+    "text": "[TEST #124] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 124)",
+      "B": "Test option B (question 124)",
+      "C": "Test option C (question 124)",
+      "D": "Test option D (question 124)"
+    },
+    "answer": "D",
+    "justification": "Test question #124 — the correct answer is arbitrarily set to \"D\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10124,
+    "exam": 99,
+    "num_in_exam": 125,
+    "domain": "Process",
+    "text": "[TEST #125] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 125)",
+      "B": "Test option B (question 125)",
+      "C": "Test option C (question 125)",
+      "D": "Test option D (question 125)"
+    },
+    "answer": "A",
+    "justification": "Test question #125 — the correct answer is arbitrarily set to \"A\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10125,
+    "exam": 99,
+    "num_in_exam": 126,
+    "domain": "Process",
+    "text": "[TEST #126] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 126)",
+      "B": "Test option B (question 126)",
+      "C": "Test option C (question 126)",
+      "D": "Test option D (question 126)"
+    },
+    "answer": "B",
+    "justification": "Test question #126 — the correct answer is arbitrarily set to \"B\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10126,
+    "exam": 99,
+    "num_in_exam": 127,
+    "domain": "People",
+    "text": "[TEST #127] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 127)",
+      "B": "Test option B (question 127)",
+      "C": "Test option C (question 127)",
+      "D": "Test option D (question 127)"
+    },
+    "answer": "C",
+    "justification": "Test question #127 — the correct answer is arbitrarily set to \"C\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10127,
+    "exam": 99,
+    "num_in_exam": 128,
+    "domain": "People",
+    "text": "[TEST #128] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 128)",
+      "B": "Test option B (question 128)",
+      "C": "Test option C (question 128)",
+      "D": "Test option D (question 128)"
+    },
+    "answer": "D",
+    "justification": "Test question #128 — the correct answer is arbitrarily set to \"D\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10128,
+    "exam": 99,
+    "num_in_exam": 129,
+    "domain": "People",
+    "text": "[TEST #129] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 129)",
+      "B": "Test option B (question 129)",
+      "C": "Test option C (question 129)",
+      "D": "Test option D (question 129)"
+    },
+    "answer": "A",
+    "justification": "Test question #129 — the correct answer is arbitrarily set to \"A\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10129,
+    "exam": 99,
+    "num_in_exam": 130,
+    "domain": "Process",
+    "text": "[TEST #130] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 130)",
+      "B": "Test option B (question 130)",
+      "C": "Test option C (question 130)",
+      "D": "Test option D (question 130)"
+    },
+    "answer": "B",
+    "justification": "Test question #130 — the correct answer is arbitrarily set to \"B\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10130,
+    "exam": 99,
+    "num_in_exam": 131,
+    "domain": "Process",
+    "text": "[TEST #131] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 131)",
+      "B": "Test option B (question 131)",
+      "C": "Test option C (question 131)",
+      "D": "Test option D (question 131)"
+    },
+    "answer": "C",
+    "justification": "Test question #131 — the correct answer is arbitrarily set to \"C\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10131,
+    "exam": 99,
+    "num_in_exam": 132,
+    "domain": "People",
+    "text": "[TEST #132] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 132)",
+      "B": "Test option B (question 132)",
+      "C": "Test option C (question 132)",
+      "D": "Test option D (question 132)"
+    },
+    "answer": "D",
+    "justification": "Test question #132 — the correct answer is arbitrarily set to \"D\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10132,
+    "exam": 99,
+    "num_in_exam": 133,
+    "domain": "People",
+    "text": "[TEST #133] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 133)",
+      "B": "Test option B (question 133)",
+      "C": "Test option C (question 133)",
+      "D": "Test option D (question 133)"
+    },
+    "answer": "A",
+    "justification": "Test question #133 — the correct answer is arbitrarily set to \"A\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10133,
+    "exam": 99,
+    "num_in_exam": 134,
+    "domain": "Business",
+    "text": "[TEST #134] Auto-generated test question (domain Business) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 134)",
+      "B": "Test option B (question 134)",
+      "C": "Test option C (question 134)",
+      "D": "Test option D (question 134)"
+    },
+    "answer": "B",
+    "justification": "Test question #134 — the correct answer is arbitrarily set to \"B\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10134,
+    "exam": 99,
+    "num_in_exam": 135,
+    "domain": "Process",
+    "text": "[TEST #135] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 135)",
+      "B": "Test option B (question 135)",
+      "C": "Test option C (question 135)",
+      "D": "Test option D (question 135)"
+    },
+    "answer": "C",
+    "justification": "Test question #135 — the correct answer is arbitrarily set to \"C\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10135,
+    "exam": 99,
+    "num_in_exam": 136,
+    "domain": "People",
+    "text": "[TEST #136] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 136)",
+      "B": "Test option B (question 136)",
+      "C": "Test option C (question 136)",
+      "D": "Test option D (question 136)"
+    },
+    "answer": "D",
+    "justification": "Test question #136 — the correct answer is arbitrarily set to \"D\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10136,
+    "exam": 99,
+    "num_in_exam": 137,
+    "domain": "Process",
+    "text": "[TEST #137] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 137)",
+      "B": "Test option B (question 137)",
+      "C": "Test option C (question 137)",
+      "D": "Test option D (question 137)"
+    },
+    "answer": "A",
+    "justification": "Test question #137 — the correct answer is arbitrarily set to \"A\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10137,
+    "exam": 99,
+    "num_in_exam": 138,
+    "domain": "Process",
+    "text": "[TEST #138] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 138)",
+      "B": "Test option B (question 138)",
+      "C": "Test option C (question 138)",
+      "D": "Test option D (question 138)"
+    },
+    "answer": "B",
+    "justification": "Test question #138 — the correct answer is arbitrarily set to \"B\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10138,
+    "exam": 99,
+    "num_in_exam": 139,
+    "domain": "Business",
+    "text": "[TEST #139] Auto-generated test question (domain Business) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 139)",
+      "B": "Test option B (question 139)",
+      "C": "Test option C (question 139)",
+      "D": "Test option D (question 139)"
+    },
+    "answer": "C",
+    "justification": "Test question #139 — the correct answer is arbitrarily set to \"C\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10139,
+    "exam": 99,
+    "num_in_exam": 140,
+    "domain": "Process",
+    "text": "[TEST #140] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 140)",
+      "B": "Test option B (question 140)",
+      "C": "Test option C (question 140)",
+      "D": "Test option D (question 140)"
+    },
+    "answer": "D",
+    "justification": "Test question #140 — the correct answer is arbitrarily set to \"D\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10140,
+    "exam": 99,
+    "num_in_exam": 141,
+    "domain": "People",
+    "text": "[TEST #141] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 141)",
+      "B": "Test option B (question 141)",
+      "C": "Test option C (question 141)",
+      "D": "Test option D (question 141)"
+    },
+    "answer": "A",
+    "justification": "Test question #141 — the correct answer is arbitrarily set to \"A\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10141,
+    "exam": 99,
+    "num_in_exam": 142,
+    "domain": "People",
+    "text": "[TEST #142] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 142)",
+      "B": "Test option B (question 142)",
+      "C": "Test option C (question 142)",
+      "D": "Test option D (question 142)"
+    },
+    "answer": "B",
+    "justification": "Test question #142 — the correct answer is arbitrarily set to \"B\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10142,
+    "exam": 99,
+    "num_in_exam": 143,
+    "domain": "Process",
+    "text": "[TEST #143] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 143)",
+      "B": "Test option B (question 143)",
+      "C": "Test option C (question 143)",
+      "D": "Test option D (question 143)"
+    },
+    "answer": "C",
+    "justification": "Test question #143 — the correct answer is arbitrarily set to \"C\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10143,
+    "exam": 99,
+    "num_in_exam": 144,
+    "domain": "Process",
+    "text": "[TEST #144] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 144)",
+      "B": "Test option B (question 144)",
+      "C": "Test option C (question 144)",
+      "D": "Test option D (question 144)"
+    },
+    "answer": "D",
+    "justification": "Test question #144 — the correct answer is arbitrarily set to \"D\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10144,
+    "exam": 99,
+    "num_in_exam": 145,
+    "domain": "People",
+    "text": "[TEST #145] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 145)",
+      "B": "Test option B (question 145)",
+      "C": "Test option C (question 145)",
+      "D": "Test option D (question 145)"
+    },
+    "answer": "A",
+    "justification": "Test question #145 — the correct answer is arbitrarily set to \"A\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10145,
+    "exam": 99,
+    "num_in_exam": 146,
+    "domain": "Process",
+    "text": "[TEST #146] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 146)",
+      "B": "Test option B (question 146)",
+      "C": "Test option C (question 146)",
+      "D": "Test option D (question 146)"
+    },
+    "answer": "B",
+    "justification": "Test question #146 — the correct answer is arbitrarily set to \"B\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10146,
+    "exam": 99,
+    "num_in_exam": 147,
+    "domain": "People",
+    "text": "[TEST #147] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 147)",
+      "B": "Test option B (question 147)",
+      "C": "Test option C (question 147)",
+      "D": "Test option D (question 147)"
+    },
+    "answer": "C",
+    "justification": "Test question #147 — the correct answer is arbitrarily set to \"C\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10147,
+    "exam": 99,
+    "num_in_exam": 148,
+    "domain": "Business",
+    "text": "[TEST #148] Auto-generated test question (domain Business) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 148)",
+      "B": "Test option B (question 148)",
+      "C": "Test option C (question 148)",
+      "D": "Test option D (question 148)"
+    },
+    "answer": "D",
+    "justification": "Test question #148 — the correct answer is arbitrarily set to \"D\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10148,
+    "exam": 99,
+    "num_in_exam": 149,
+    "domain": "Process",
+    "text": "[TEST #149] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 149)",
+      "B": "Test option B (question 149)",
+      "C": "Test option C (question 149)",
+      "D": "Test option D (question 149)"
+    },
+    "answer": "A",
+    "justification": "Test question #149 — the correct answer is arbitrarily set to \"A\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10149,
+    "exam": 99,
+    "num_in_exam": 150,
+    "domain": "People",
+    "text": "[TEST #150] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 150)",
+      "B": "Test option B (question 150)",
+      "C": "Test option C (question 150)",
+      "D": "Test option D (question 150)"
+    },
+    "answer": "B",
+    "justification": "Test question #150 — the correct answer is arbitrarily set to \"B\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10150,
+    "exam": 99,
+    "num_in_exam": 151,
+    "domain": "Process",
+    "text": "[TEST #151] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 151)",
+      "B": "Test option B (question 151)",
+      "C": "Test option C (question 151)",
+      "D": "Test option D (question 151)"
+    },
+    "answer": "C",
+    "justification": "Test question #151 — the correct answer is arbitrarily set to \"C\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10151,
+    "exam": 99,
+    "num_in_exam": 152,
+    "domain": "People",
+    "text": "[TEST #152] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 152)",
+      "B": "Test option B (question 152)",
+      "C": "Test option C (question 152)",
+      "D": "Test option D (question 152)"
+    },
+    "answer": "D",
+    "justification": "Test question #152 — the correct answer is arbitrarily set to \"D\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10152,
+    "exam": 99,
+    "num_in_exam": 153,
+    "domain": "Process",
+    "text": "[TEST #153] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 153)",
+      "B": "Test option B (question 153)",
+      "C": "Test option C (question 153)",
+      "D": "Test option D (question 153)"
+    },
+    "answer": "A",
+    "justification": "Test question #153 — the correct answer is arbitrarily set to \"A\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10153,
+    "exam": 99,
+    "num_in_exam": 154,
+    "domain": "Process",
+    "text": "[TEST #154] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 154)",
+      "B": "Test option B (question 154)",
+      "C": "Test option C (question 154)",
+      "D": "Test option D (question 154)"
+    },
+    "answer": "B",
+    "justification": "Test question #154 — the correct answer is arbitrarily set to \"B\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10154,
+    "exam": 99,
+    "num_in_exam": 155,
+    "domain": "People",
+    "text": "[TEST #155] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 155)",
+      "B": "Test option B (question 155)",
+      "C": "Test option C (question 155)",
+      "D": "Test option D (question 155)"
+    },
+    "answer": "C",
+    "justification": "Test question #155 — the correct answer is arbitrarily set to \"C\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10155,
+    "exam": 99,
+    "num_in_exam": 156,
+    "domain": "Process",
+    "text": "[TEST #156] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 156)",
+      "B": "Test option B (question 156)",
+      "C": "Test option C (question 156)",
+      "D": "Test option D (question 156)"
+    },
+    "answer": "D",
+    "justification": "Test question #156 — the correct answer is arbitrarily set to \"D\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10156,
+    "exam": 99,
+    "num_in_exam": 157,
+    "domain": "Process",
+    "text": "[TEST #157] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 157)",
+      "B": "Test option B (question 157)",
+      "C": "Test option C (question 157)",
+      "D": "Test option D (question 157)"
+    },
+    "answer": "A",
+    "justification": "Test question #157 — the correct answer is arbitrarily set to \"A\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10157,
+    "exam": 99,
+    "num_in_exam": 158,
+    "domain": "People",
+    "text": "[TEST #158] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 158)",
+      "B": "Test option B (question 158)",
+      "C": "Test option C (question 158)",
+      "D": "Test option D (question 158)"
+    },
+    "answer": "B",
+    "justification": "Test question #158 — the correct answer is arbitrarily set to \"B\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10158,
+    "exam": 99,
+    "num_in_exam": 159,
+    "domain": "People",
+    "text": "[TEST #159] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 159)",
+      "B": "Test option B (question 159)",
+      "C": "Test option C (question 159)",
+      "D": "Test option D (question 159)"
+    },
+    "answer": "C",
+    "justification": "Test question #159 — the correct answer is arbitrarily set to \"C\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10159,
+    "exam": 99,
+    "num_in_exam": 160,
+    "domain": "People",
+    "text": "[TEST #160] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 160)",
+      "B": "Test option B (question 160)",
+      "C": "Test option C (question 160)",
+      "D": "Test option D (question 160)"
+    },
+    "answer": "D",
+    "justification": "Test question #160 — the correct answer is arbitrarily set to \"D\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10160,
+    "exam": 99,
+    "num_in_exam": 161,
+    "domain": "Business",
+    "text": "[TEST #161] Auto-generated test question (domain Business) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 161)",
+      "B": "Test option B (question 161)",
+      "C": "Test option C (question 161)",
+      "D": "Test option D (question 161)"
+    },
+    "answer": "A",
+    "justification": "Test question #161 — the correct answer is arbitrarily set to \"A\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10161,
+    "exam": 99,
+    "num_in_exam": 162,
+    "domain": "Process",
+    "text": "[TEST #162] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 162)",
+      "B": "Test option B (question 162)",
+      "C": "Test option C (question 162)",
+      "D": "Test option D (question 162)"
+    },
+    "answer": "B",
+    "justification": "Test question #162 — the correct answer is arbitrarily set to \"B\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10162,
+    "exam": 99,
+    "num_in_exam": 163,
+    "domain": "People",
+    "text": "[TEST #163] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 163)",
+      "B": "Test option B (question 163)",
+      "C": "Test option C (question 163)",
+      "D": "Test option D (question 163)"
+    },
+    "answer": "C",
+    "justification": "Test question #163 — the correct answer is arbitrarily set to \"C\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10163,
+    "exam": 99,
+    "num_in_exam": 164,
+    "domain": "People",
+    "text": "[TEST #164] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 164)",
+      "B": "Test option B (question 164)",
+      "C": "Test option C (question 164)",
+      "D": "Test option D (question 164)"
+    },
+    "answer": "D",
+    "justification": "Test question #164 — the correct answer is arbitrarily set to \"D\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10164,
+    "exam": 99,
+    "num_in_exam": 165,
+    "domain": "Process",
+    "text": "[TEST #165] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 165)",
+      "B": "Test option B (question 165)",
+      "C": "Test option C (question 165)",
+      "D": "Test option D (question 165)"
+    },
+    "answer": "A",
+    "justification": "Test question #165 — the correct answer is arbitrarily set to \"A\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10165,
+    "exam": 99,
+    "num_in_exam": 166,
+    "domain": "Process",
+    "text": "[TEST #166] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 166)",
+      "B": "Test option B (question 166)",
+      "C": "Test option C (question 166)",
+      "D": "Test option D (question 166)"
+    },
+    "answer": "B",
+    "justification": "Test question #166 — the correct answer is arbitrarily set to \"B\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10166,
+    "exam": 99,
+    "num_in_exam": 167,
+    "domain": "Process",
+    "text": "[TEST #167] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 167)",
+      "B": "Test option B (question 167)",
+      "C": "Test option C (question 167)",
+      "D": "Test option D (question 167)"
+    },
+    "answer": "C",
+    "justification": "Test question #167 — the correct answer is arbitrarily set to \"C\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10167,
+    "exam": 99,
+    "num_in_exam": 168,
+    "domain": "Process",
+    "text": "[TEST #168] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 168)",
+      "B": "Test option B (question 168)",
+      "C": "Test option C (question 168)",
+      "D": "Test option D (question 168)"
+    },
+    "answer": "D",
+    "justification": "Test question #168 — the correct answer is arbitrarily set to \"D\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10168,
+    "exam": 99,
+    "num_in_exam": 169,
+    "domain": "People",
+    "text": "[TEST #169] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 169)",
+      "B": "Test option B (question 169)",
+      "C": "Test option C (question 169)",
+      "D": "Test option D (question 169)"
+    },
+    "answer": "A",
+    "justification": "Test question #169 — the correct answer is arbitrarily set to \"A\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10169,
+    "exam": 99,
+    "num_in_exam": 170,
+    "domain": "Business",
+    "text": "[TEST #170] Auto-generated test question (domain Business) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 170)",
+      "B": "Test option B (question 170)",
+      "C": "Test option C (question 170)",
+      "D": "Test option D (question 170)"
+    },
+    "answer": "B",
+    "justification": "Test question #170 — the correct answer is arbitrarily set to \"B\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10170,
+    "exam": 99,
+    "num_in_exam": 171,
+    "domain": "Process",
+    "text": "[TEST #171] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 171)",
+      "B": "Test option B (question 171)",
+      "C": "Test option C (question 171)",
+      "D": "Test option D (question 171)"
+    },
+    "answer": "C",
+    "justification": "Test question #171 — the correct answer is arbitrarily set to \"C\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10171,
+    "exam": 99,
+    "num_in_exam": 172,
+    "domain": "Process",
+    "text": "[TEST #172] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 172)",
+      "B": "Test option B (question 172)",
+      "C": "Test option C (question 172)",
+      "D": "Test option D (question 172)"
+    },
+    "answer": "D",
+    "justification": "Test question #172 — the correct answer is arbitrarily set to \"D\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10172,
+    "exam": 99,
+    "num_in_exam": 173,
+    "domain": "People",
+    "text": "[TEST #173] Auto-generated test question (domain People) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 173)",
+      "B": "Test option B (question 173)",
+      "C": "Test option C (question 173)",
+      "D": "Test option D (question 173)"
+    },
+    "answer": "A",
+    "justification": "Test question #173 — the correct answer is arbitrarily set to \"A\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10173,
+    "exam": 99,
+    "num_in_exam": 174,
+    "domain": "Process",
+    "text": "[TEST #174] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 174)",
+      "B": "Test option B (question 174)",
+      "C": "Test option C (question 174)",
+      "D": "Test option D (question 174)"
+    },
+    "answer": "B",
+    "justification": "Test question #174 — the correct answer is arbitrarily set to \"B\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10174,
+    "exam": 99,
+    "num_in_exam": 175,
+    "domain": "Process",
+    "text": "[TEST #175] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 175)",
+      "B": "Test option B (question 175)",
+      "C": "Test option C (question 175)",
+      "D": "Test option D (question 175)"
+    },
+    "answer": "C",
+    "justification": "Test question #175 — the correct answer is arbitrarily set to \"C\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10175,
+    "exam": 99,
+    "num_in_exam": 176,
+    "domain": "Process",
+    "text": "[TEST #176] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 176)",
+      "B": "Test option B (question 176)",
+      "C": "Test option C (question 176)",
+      "D": "Test option D (question 176)"
+    },
+    "answer": "D",
+    "justification": "Test question #176 — the correct answer is arbitrarily set to \"D\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10176,
+    "exam": 99,
+    "num_in_exam": 177,
+    "domain": "Process",
+    "text": "[TEST #177] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 177)",
+      "B": "Test option B (question 177)",
+      "C": "Test option C (question 177)",
+      "D": "Test option D (question 177)"
+    },
+    "answer": "A",
+    "justification": "Test question #177 — the correct answer is arbitrarily set to \"A\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10177,
+    "exam": 99,
+    "num_in_exam": 178,
+    "domain": "Business",
+    "text": "[TEST #178] Auto-generated test question (domain Business) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 178)",
+      "B": "Test option B (question 178)",
+      "C": "Test option C (question 178)",
+      "D": "Test option D (question 178)"
+    },
+    "answer": "B",
+    "justification": "Test question #178 — the correct answer is arbitrarily set to \"B\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10178,
+    "exam": 99,
+    "num_in_exam": 179,
+    "domain": "Process",
+    "text": "[TEST #179] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 179)",
+      "B": "Test option B (question 179)",
+      "C": "Test option C (question 179)",
+      "D": "Test option D (question 179)"
+    },
+    "answer": "C",
+    "justification": "Test question #179 — the correct answer is arbitrarily set to \"C\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
+  },
+  {
+    "id": 10179,
+    "exam": 99,
+    "num_in_exam": 180,
+    "domain": "Process",
+    "text": "[TEST #180] Auto-generated test question (domain Process) — only used to validate the break mechanism after 60/120 questions and the 240-minute clock. Replace with a real question via the admin panel.",
+    "options": {
+      "A": "Test option A (question 180)",
+      "B": "Test option B (question 180)",
+      "C": "Test option C (question 180)",
+      "D": "Test option D (question 180)"
+    },
+    "answer": "D",
+    "justification": "Test question #180 — the correct answer is arbitrarily set to \"D\" to verify score calculation. Do not use as-is for a real exam.",
+    "category": "Exam"
   }
 ];
 
