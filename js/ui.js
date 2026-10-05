@@ -26,9 +26,9 @@ function getMistakeQuestions(username) {
 
 function domainMeta() {
   return {
-    People:   { label: t('dom_People'),   color: 'var(--dom-people)',   weight: 42 },
-    Process:  { label: t('dom_Process'),  color: 'var(--dom-process)',  weight: 50 },
-    Business: { label: t('dom_Business'), color: 'var(--dom-business)', weight: 8 },
+    People:   { label: t('dom_People'),   color: 'var(--dom-people)',   weight: 33 },
+    Process:  { label: t('dom_Process'),  color: 'var(--dom-process)',  weight: 41 },
+    Business: { label: t('dom_Business'), color: 'var(--dom-business)', weight: 26 },
   };
 }
 

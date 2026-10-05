@@ -165,6 +165,18 @@
         <input type="date" id="v-validity">
       </div>
       <div class="field">
+        <label data-i18n="voucher_field_scope">Accès accordé</label>
+        <small data-i18n="voucher_field_scope_hint">Ne coche rien pour un accès complet à tout. Coche une ou plusieurs catégories pour restreindre ce voucher à elles seules.</small>
+        <div id="v-scope-list" style="display:flex; flex-wrap:wrap; gap:.6rem; margin-top:.4rem">
+          <label style="display:flex; align-items:center; gap:.3rem; font-weight:400"><input type="checkbox" class="v-scope-cb" value="Exam"> <span data-i18n="cat_Exam_label">Examen blanc</span></label>
+          <label style="display:flex; align-items:center; gap:.3rem; font-weight:400"><input type="checkbox" class="v-scope-cb" value="MiniExam"> <span data-i18n="cat_MiniExam_label">Mini-examens</span></label>
+          <label style="display:flex; align-items:center; gap:.3rem; font-weight:400"><input type="checkbox" class="v-scope-cb" value="Predictif"> <span data-i18n="cat_Predictif_label">Prédictif</span></label>
+          <label style="display:flex; align-items:center; gap:.3rem; font-weight:400"><input type="checkbox" class="v-scope-cb" value="Agile"> <span data-i18n="cat_Agile_label">Agile</span></label>
+          <label style="display:flex; align-items:center; gap:.3rem; font-weight:400"><input type="checkbox" class="v-scope-cb" value="Hybride"> <span data-i18n="cat_Hybride_label">Hybride</span></label>
+          <label style="display:flex; align-items:center; gap:.3rem; font-weight:400"><input type="checkbox" class="v-scope-cb" value="Quiz"> <span data-i18n="cat_Quiz_label">Quiz</span></label>
+        </div>
+      </div>
+      <div class="field">
         <label data-i18n="voucher_field_note">Note (optionnel)</label>
         <input type="text" id="v-note" placeholder="ex : Session Tunis — juillet 2026">
       </div>

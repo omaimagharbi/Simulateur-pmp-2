@@ -43,10 +43,26 @@
 
     document.title = `${meta.label} — ${t('brand')}`;
 
-    // sidebar persistante (mise en avant de la catégorie active)
+    // Catégorie demandée hors du périmètre d'accès de l'utilisateur (voucher
+    // restreint) : on bloque l'accès même si l'URL est forcée directement,
+    // et on redirige vers une catégorie autorisée.
+    const catAllowed = Store.canAccessCategory(catUser, cat);
+    if (!catAllowed) {
+      const fallback = Store.VOUCHER_SCOPE_CATEGORIES.find(c => Store.canAccessCategory(catUser, c));
+      window.location.href = fallback ? `category.html?cat=${fallback}` : 'dashboard.html';
+    } else {
+
+    // sidebar persistante (mise en avant de la catégorie active ; catégories
+    // hors périmètre affichées verrouillées, non cliquables)
     const categoryOrder = ['Predictif', 'Agile', 'Hybride', 'Exam', 'Quiz', 'MiniExam', 'KillMistakes'];
     document.getElementById('category-list').innerHTML = categoryOrder.map(c => {
       const m = CATEGORY_META[c];
+      const allowed = Store.canAccessCategory(catUser, c);
+      if (!allowed) {
+        return `<span class="category-item locked" title="${t('voucher_scope_locked_hint')}" style="opacity:.45; cursor:not-allowed">
+          <span class="dot" style="background:${m.color}"></span>${m.label} 🔒
+        </span>`;
+      }
       return `<a class="category-item ${c === cat ? 'active' : ''}" href="category.html?cat=${c}">
         <span class="dot" style="background:${m.color}"></span>${m.label}
       </a>`;
@@ -67,11 +83,15 @@
     document.getElementById('cat-desc').textContent = meta.desc;
 
     const questions = cat === 'KillMistakes' ? getMistakeQuestions(catUser.username) : Store.getAllQuestions().filter(q => q.category === cat);
-    // "Kill mistakes" et "Exam" restent une session UNIQUE et continue (comme un
-    // vrai examen blanc complet, avec pauses réglementaires pour "Exam") :
-    // pas de découpage en parties de 10 comme les autres catégories.
-    const isSingleSession = cat === 'KillMistakes' || cat === 'Exam';
-    const parts = isSingleSession ? (questions.length ? [questions] : []) : chunkQuestions(questions, 10);
+    // "Kill mistakes" reste une session UNIQUE et continue. "Exam" est un cas à
+    // part : ce ne sont pas des parties de 10, mais 5 EXAMENS FIXES (champ
+    // "examen" 1 à 5 sur chaque question), chacun une session continue de 180
+    // questions avec pauses réglementaires, comme un vrai examen blanc complet.
+    const isSingleSession = cat === 'KillMistakes';
+    const examParts = cat === 'Exam'
+      ? [1, 2, 3, 4, 5].map(n => questions.filter(q => q.examen === n)).filter(p => p.length)
+      : null;
+    const parts = cat === 'Exam' ? examParts : (isSingleSession ? (questions.length ? [questions] : []) : chunkQuestions(questions, 10));
 
     if (!parts.length) {
       document.getElementById('empty-mount').innerHTML = cat === 'KillMistakes' ? `
@@ -93,17 +113,23 @@
           <a href="quiz.html?cat=${cat}&part=1" class="btn btn-primary btn-block">${t('start_exam')}</a>
         </div>`;
     } else if (cat === 'Exam') {
-      document.getElementById('parts-grid').innerHTML = `
+      // 5 examens fixes et identiques pour tout le monde (même 180 questions
+      // à chaque fois pour "Examen 3" par exemple) ; seul l'ordre des questions
+      // est mélangé à chaque lancement, pas leur composition.
+      document.getElementById('parts-grid').innerHTML = parts.map((p, idx) => {
+        const examNo = idx + 1;
+        return `
         <div class="exam-card card">
-          <span class="tag">${parts[0].length} questions</span>
-          <h3>${t('exam_single_title')}</h3>
+          <span class="tag">${p.length} questions</span>
+          <h3>${t('exam_part_label', { n: examNo })}</h3>
           <p>${t('exam_single_desc')}</p>
           ${catUser.role === 'admin' ? `
           <div style="margin-bottom:.5rem">
             <a href="admin.html?cat=${cat}" class="btn btn-ghost btn-sm btn-block">${t('admin_edit_questions')}</a>
           </div>` : ''}
-          <a href="quiz.html?cat=${cat}&part=1" class="btn btn-primary btn-block">${t('start_exam')}</a>
+          <a href="quiz.html?cat=${cat}&part=1&exam=${examNo}" class="btn btn-primary btn-block">${t('start_exam')}</a>
         </div>`;
+      }).join('');
     } else {
       document.getElementById('parts-grid').innerHTML = parts.map((p, idx) => `
         <div class="exam-card card">
@@ -130,6 +156,7 @@
         });
       }
     }
+    } // fin du else (catAllowed)
   }
 </script>
 </body>

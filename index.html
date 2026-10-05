@@ -125,6 +125,11 @@
   document.getElementById('forgot-link').addEventListener('click', (e) => { e.preventDefault(); showTab('forgot'); });
   document.getElementById('back-to-login-link').addEventListener('click', (e) => { e.preventDefault(); showTab('login'); });
 
+  // Permet aux liens externes (page d'accueil, etc.) d'arriver directement
+  // sur le bon onglet via ?tab=signup ou ?tab=login.
+  const initialTab = new URLSearchParams(window.location.search).get('tab');
+  showTab(initialTab === 'signup' ? 'signup' : 'login');
+
   loginForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const username = document.getElementById('login-username').value;

@@ -136,13 +136,14 @@ const Store = {
 
   // Création manuelle d'un compte par l'admin (pas de mot secret nécessaire :
   // l'admin peut toujours réinitialiser le mot de passe lui-même).
-  createUserByAdmin(username, password, { role, unlocked, accessMonths } = {}) {
+  createUserByAdmin(username, password, { role, unlocked, accessMonths, accessScope } = {}) {
     const users = this.getUsers();
     const key = username.trim().toLowerCase();
     if (!key) return { ok: false, error: t('field_username') };
     if (users[key]) return { ok: false, error: getLang() === 'en' ? 'This username already exists.' : "Ce nom d'utilisateur existe déjà." };
     if (password.length < 4) return { ok: false, error: t('field_password_hint') };
     const months = Number(accessMonths) || null;
+    const cleanScope = Array.isArray(accessScope) ? accessScope.filter(c => this.VOUCHER_SCOPE_CATEGORIES.includes(c)) : [];
     users[key] = {
       username: key,
       passwordHash: simpleHash(password),
@@ -152,8 +153,21 @@ const Store = {
       blocked: false,
       accessMonths: months,
       accessExpiresAt: (unlocked && months) ? this._addMonths(new Date(), months).toISOString() : null,
+      // [] = accès complet (comportement historique) ; sinon périmètre restreint explicite.
+      accessScope: cleanScope,
       createdAt: new Date().toISOString(),
     };
+    writeJSON(DB_KEYS.users, users);
+    return { ok: true };
+  },
+
+  // Permet à l'admin de modifier le périmètre d'accès d'un utilisateur existant
+  // (ex. après avoir vendu un accès complémentaire), sans devoir régénérer un voucher.
+  setUserAccessScope(username, accessScope) {
+    const users = this.getUsers();
+    const key = username.trim().toLowerCase();
+    if (!users[key]) return { ok: false };
+    users[key].accessScope = Array.isArray(accessScope) ? accessScope.filter(c => this.VOUCHER_SCOPE_CATEGORIES.includes(c)) : [];
     writeJSON(DB_KEYS.users, users);
     return { ok: true };
   },
@@ -378,8 +392,18 @@ const Store = {
 
   getVouchers() { return readJSON(DB_KEYS.vouchers, []); },
 
-  createVoucher({ method, validUntil, note, amount, accessMonths }) {
+  // Catégories concernées par le contrôle d'accès par voucher. "KillMistakes"
+  // n'y figure pas : c'est une révision des erreurs passées de l'utilisateur,
+  // toujours accessible quel que soit son périmètre (elle reste de toute façon
+  // vide si l'utilisateur n'a jamais pu tenter les catégories hors périmètre).
+  VOUCHER_SCOPE_CATEGORIES: ['Predictif', 'Agile', 'Hybride', 'Exam', 'Quiz', 'MiniExam'],
+
+  // scope: tableau de catégories autorisées (ex. ['MiniExam','Quiz']), ou
+  // null/[] pour un accès complet à toutes les catégories (comportement par
+  // défaut, inchangé pour les vouchers déjà émis).
+  createVoucher({ method, validUntil, note, amount, accessMonths, scope }) {
     const vouchers = this.getVouchers();
+    const cleanScope = Array.isArray(scope) ? scope.filter(c => this.VOUCHER_SCOPE_CATEGORIES.includes(c)) : [];
     const voucher = {
       id: 'v_' + Date.now() + '_' + Math.random().toString(36).slice(2, 7),
       code: this.generateVoucherCode(),
@@ -392,6 +416,8 @@ const Store = {
       validUntil: validUntil || null,
       redeemedBy: null,
       redeemedAt: null,
+      // [] = accès complet à toutes les catégories ; sinon liste blanche explicite.
+      scope: cleanScope,
     };
     vouchers.push(voucher);
     writeJSON(DB_KEYS.vouchers, vouchers);
@@ -431,8 +457,22 @@ const Store = {
       users[key].voucherCode = code;
       users[key].accessMonths = voucher.accessMonths || null;
       users[key].accessExpiresAt = voucher.accessMonths ? this._addMonths(new Date(), voucher.accessMonths).toISOString() : null;
+      users[key].accessScope = Array.isArray(voucher.scope) ? voucher.scope.slice() : [];
       writeJSON(DB_KEYS.users, users);
     }
     return { ok: true };
+  },
+
+  // true si l'utilisateur peut accéder à cette catégorie. Admin et périmètre
+  // vide (= accès complet, y compris tous les comptes créés avant cette
+  // fonctionnalité) ont toujours accès à tout. "KillMistakes" est toujours
+  // autorisé (voir VOUCHER_SCOPE_CATEGORIES).
+  canAccessCategory(user, category) {
+    if (!user) return false;
+    if (user.role === 'admin') return true;
+    if (!this.VOUCHER_SCOPE_CATEGORIES.includes(category)) return true;
+    const scope = Array.isArray(user.accessScope) ? user.accessScope : [];
+    if (scope.length === 0) return true;
+    return scope.includes(category);
   },
 };

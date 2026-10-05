@@ -254,19 +254,24 @@ if (adminUser) {
       <div class="card stat-box"><div class="n">${vouchers.length - activeCount}</div><div class="l">${t('voucher_stat_pending')}</div></div>`;
 
     document.getElementById('vouchers-table').innerHTML = `
-      <thead><tr><th>${t('voucher_col_code')}</th><th>${t('voucher_col_method')}</th><th>${t('voucher_col_amount')}</th><th>${t('voucher_col_status')}</th><th>${t('voucher_col_user')}</th><th>${t('voucher_col_created')}</th><th>${t('voucher_col_note')}</th><th></th></tr></thead>
+      <thead><tr><th>${t('voucher_col_code')}</th><th>${t('voucher_col_method')}</th><th>${t('voucher_col_amount')}</th><th>${t('voucher_col_scope')}</th><th>${t('voucher_col_status')}</th><th>${t('voucher_col_user')}</th><th>${t('voucher_col_created')}</th><th>${t('voucher_col_note')}</th><th></th></tr></thead>
       <tbody>
-        ${filtered.map(v => `
+        ${filtered.map(v => {
+          const scope = Array.isArray(v.scope) ? v.scope : [];
+          const scopeLabel = scope.length === 0 ? t('voucher_scope_all') : scope.map(c => (categoryMeta()[c] || { label: c }).label).join(', ');
+          return `
           <tr>
             <td style="font-family:var(--font-mono)">${v.code}</td>
             <td>${v.method}</td>
             <td>${(v.amount || 0).toFixed(2)} TND</td>
+            <td>${scope.length === 0 ? `<span class="pill">${scopeLabel}</span>` : `<span class="pill good" title="${escapeHTML(scopeLabel)}">${escapeHTML(scopeLabel)}</span>`}</td>
             <td>${v.status === 'active' ? `<span class="pill good">${t('voucher_status_active')}</span>` : `<span class="pill">${t('voucher_status_inactive')}</span>`}</td>
             <td>${v.redeemedBy || '—'}</td>
             <td>${formatDate(v.createdAt)}</td>
             <td style="max-width:200px">${escapeHTML(v.note || '')}</td>
             <td>${v.status === 'inactive' ? `<button class="btn btn-danger btn-sm" data-cancel="${v.id}">${t('voucher_cancel')}</button>` : ''}</td>
-          </tr>`).join('')}
+          </tr>`;
+        }).join('')}
       </tbody>`;
 
     document.getElementById('vouchers-table').querySelectorAll('[data-cancel]').forEach(btn => {
@@ -296,7 +301,8 @@ if (adminUser) {
     const accessMonths = document.getElementById('v-access-months').value;
     const validUntil = document.getElementById('v-validity').value || null;
     const note = document.getElementById('v-note').value;
-    const voucher = Store.createVoucher({ method, validUntil, note, amount, accessMonths });
+    const scope = Array.from(document.querySelectorAll('.v-scope-cb:checked')).map(cb => cb.value);
+    const voucher = Store.createVoucher({ method, validUntil, note, amount, accessMonths, scope });
     document.getElementById('voucher-form').reset();
     voucherModal.classList.remove('show');
     document.getElementById('voucher-generated-code').textContent = voucher.code;

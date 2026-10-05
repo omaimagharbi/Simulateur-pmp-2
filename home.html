@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n-title="home_title">PMP Simulateur — Entraîne-toi comme le jour J</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+  /* Styles propres à la page d'accueil — n'affectent aucune autre page */
+  .home-nav{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:1.3rem clamp(1.4rem,4vw,3.2rem); border-bottom:1px solid var(--paper-line);
+  }
+  .home-nav .brand-mark{ display:flex; align-items:center; gap:.6rem; font-family:var(--font-display); font-size:1.25rem; font-weight:600; color:var(--ink-900); }
+  .home-nav .brand-mark img{ width:30px; height:30px; display:block; }
+  .home-nav nav{ display:flex; gap:2rem; }
+  .home-nav nav a{ color:var(--ink-700); text-decoration:none; font-size:.96rem; }
+  .home-nav nav a:hover{ color:var(--ink-900); }
+  .home-nav .home-actions{ display:flex; align-items:center; gap:.7rem; }
+
+  .home-hero{
+    display:grid; grid-template-columns:1fr 1fr; gap:clamp(2rem,5vw,4.5rem);
+    align-items:center; padding:clamp(2.6rem,6vw,5rem) clamp(1.4rem,4vw,3.2rem) clamp(3rem,6vw,5rem);
+    max-width:1320px; margin:0 auto;
+  }
+  .home-eyebrow{
+    display:inline-flex; align-items:center; gap:.5rem; padding:.45rem 1rem;
+    background:var(--dom-people-bg); color:var(--dom-people); border-radius:999px;
+    font-size:.82rem; font-weight:600; margin-bottom:1.6rem;
+  }
+  .home-eyebrow .dot{ width:6px; height:6px; border-radius:50%; background:var(--dom-people); }
+  .home-headline{
+    font-family:var(--font-display); font-weight:600; line-height:1.12;
+    font-size:clamp(2.2rem,4.2vw,3.4rem); color:var(--ink-900); margin:0 0 1.5rem;
+    max-width:14ch;
+  }
+  .home-headline em{ font-style:italic; color:var(--brass); }
+  .home-sub{ font-size:1.08rem; line-height:1.6; color:var(--ink-600); max-width:46ch; margin:0 0 2.1rem; }
+  .home-cta-row{ display:flex; gap:.9rem; flex-wrap:wrap; }
+
+  .home-visual{
+    background:var(--ink-900); border-radius:22px; padding:clamp(1.8rem,3vw,2.6rem);
+    min-height:420px; position:relative; overflow:hidden;
+  }
+  .home-visual::before{
+    content:''; position:absolute; inset:0;
+    background:radial-gradient(circle at 70% 20%, rgba(91,147,245,.16), transparent 55%);
+  }
+  .home-score-card, .home-info-card{
+    position:absolute; background:var(--white); border-radius:14px; padding:.8rem 1.1rem;
+    display:flex; align-items:center; gap:.55rem; font-weight:600; font-size:.92rem;
+    box-shadow:0 12px 30px rgba(10,16,34,.35); color:var(--ink-900);
+  }
+  .home-score-card{ top:clamp(1.6rem,4vw,2.4rem); left:clamp(1.6rem,4vw,2.4rem); }
+  .home-score-card .dot{ width:8px; height:8px; border-radius:50%; background:var(--good); }
+  .home-info-card{ bottom:clamp(1.8rem,4vw,2.6rem); right:clamp(1.6rem,4vw,2.4rem); }
+  .home-info-card .dot{ width:8px; height:8px; border-radius:50%; background:var(--dom-process); }
+
+  .home-ring-wrap{ position:absolute; inset:0; display:flex; align-items:center; justify-content:center; }
+
+  .home-section{ padding:clamp(2.6rem,5vw,4.5rem) clamp(1.4rem,4vw,3.2rem); max-width:1320px; margin:0 auto; }
+  .home-section-head{ max-width:62ch; margin:0 0 2.2rem; }
+  .home-section-head h2{ font-family:var(--font-display); font-size:clamp(1.6rem,2.6vw,2.1rem); color:var(--ink-900); margin:0 0 .6rem; font-weight:600; }
+  .home-section-head p{ color:var(--ink-600); font-size:1.02rem; line-height:1.55; margin:0; }
+
+  .home-domain-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:1.3rem; }
+  .home-domain-card{ border:1px solid var(--paper-line); border-radius:16px; padding:1.5rem; background:var(--white); }
+  .home-domain-card .swatch{ width:34px; height:34px; border-radius:9px; margin-bottom:1rem; }
+  .home-domain-card h3{ font-family:var(--font-display); font-size:1.15rem; margin:0 0 .4rem; color:var(--ink-900); }
+  .home-domain-card .weight{ font-family:var(--font-mono); font-size:.85rem; color:var(--ink-600); margin-bottom:.7rem; }
+  .home-domain-card p{ font-size:.92rem; color:var(--ink-600); line-height:1.5; margin:0; }
+
+  .home-footer{ border-top:1px solid var(--paper-line); padding:1.6rem clamp(1.4rem,4vw,3.2rem); display:flex; justify-content:space-between; align-items:center; color:var(--ink-600); font-size:.88rem; }
+
+  .home-section-alt{ background:var(--paper-dim); }
+  .home-program-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:1.2rem; }
+  .home-program-card{ border:1px solid var(--paper-line); border-radius:16px; padding:1.4rem; background:var(--white); }
+  .home-program-card .count{ font-family:var(--font-display); font-size:1.9rem; color:var(--ink-900); line-height:1; margin-bottom:.5rem; }
+  .home-program-card h3{ font-size:1.02rem; margin:0 0 .4rem; color:var(--ink-900); }
+  .home-program-card p{ font-size:.86rem; color:var(--ink-600); line-height:1.45; margin:0; }
+  .home-program-langs{ display:flex; gap:.6rem; margin-top:1.6rem; }
+  .home-program-langs span{ padding:.4rem .9rem; border-radius:999px; background:var(--white); border:1px solid var(--paper-line); font-size:.84rem; font-weight:600; color:var(--ink-700); }
+
+  .home-insights-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:1.3rem; }
+  .home-insight-card{ border:1px solid var(--paper-line); border-radius:16px; padding:1.5rem; background:var(--white); display:flex; flex-direction:column; gap:.7rem; text-decoration:none; }
+  .home-insight-card .tag{ align-self:flex-start; font-size:.74rem; font-weight:700; letter-spacing:.03em; text-transform:uppercase; color:var(--brass); }
+  .home-insight-card h3{ font-family:var(--font-display); font-size:1.12rem; color:var(--ink-900); margin:0; }
+  .home-insight-card p{ font-size:.9rem; color:var(--ink-600); line-height:1.5; margin:0; flex:1; }
+  .home-insight-card .go{ font-size:.86rem; font-weight:600; color:var(--ink-900); }
+
+  @media (max-width:860px){
+    .home-program-grid, .home-insights-grid{ grid-template-columns:1fr; }
+  }
+
+  @media (max-width:860px){
+    .home-hero{ grid-template-columns:1fr; }
+    .home-domain-grid{ grid-template-columns:1fr; }
+    .home-nav nav{ display:none; }
+  }
+</style>
+</head>
+<body style="background:var(--paper)">
+
+<header class="home-nav">
+  <div class="brand-mark"><img src="assets/logo.svg" alt=""> <span data-i18n="brand">PMP Simulateur</span></div>
+  <nav>
+    <a href="home.html" data-i18n="home_nav_home">Accueil</a>
+    <a href="#programme" data-i18n="home_nav_program">Programme</a>
+    <a href="#domaines" data-i18n="home_nav_domains">Domaines</a>
+    <a href="#insights" data-i18n="home_nav_insights">Insights</a>
+  </nav>
+  <div class="home-actions">
+    <div id="lang-mount"></div>
+    <a class="btn btn-ghost" href="index.html" data-i18n="btn_login">Se connecter</a>
+    <a class="btn btn-primary" href="index.html?tab=signup" data-i18n="tab_signup">Créer un compte</a>
+  </div>
+</header>
+
+<section class="home-hero">
+  <div>
+    <div class="home-eyebrow"><span class="dot"></span><span data-i18n="home_eyebrow">Simulateur d'examen PMP · ECO 2026</span></div>
+    <h1 class="home-headline" data-i18n-html="home_headline_html">La rigueur d'un formateur certifié, <em>à la vitesse d'un examen blanc.</em></h1>
+    <p class="home-sub" data-i18n="home_sub">1500 questions FR/EN/AR alignées sur le dernier référentiel PMI, réparties selon les vrais poids People/Process/Business — pour arriver à l'examen sans surprise.</p>
+    <div class="home-cta-row">
+      <a class="btn btn-primary btn-lg" href="index.html?tab=signup" data-i18n="home_cta_primary">Commencer un examen blanc</a>
+      <a class="btn btn-ghost btn-lg" href="library.html" data-i18n="home_cta_secondary">Voir la bibliothèque</a>
+    </div>
+  </div>
+
+  <div class="home-visual">
+    <div class="home-score-card"><span class="dot"></span><span data-i18n="home_score_card">Score 149/180</span></div>
+    <div class="home-ring-wrap" id="home-ring-mount"></div>
+    <div class="home-info-card"><span class="dot"></span><span data-i18n="home_info_card">Examen blanc · 180 questions</span></div>
+  </div>
+</section>
+
+<section class="home-section" id="domaines">
+  <div class="home-section-head">
+    <h2 data-i18n="home_domains_title">Trois domaines, une seule discipline</h2>
+    <p data-i18n="home_domains_sub">Chaque question est classée selon le dernier référentiel d'examen PMI (ECO juillet 2026) — pas une estimation maison.</p>
+  </div>
+  <div class="home-domain-grid" id="home-domain-cards"></div>
+</section>
+
+<section class="home-section home-section-alt" id="programme">
+  <div class="home-section-head">
+    <h2 data-i18n="home_program_title">Un programme complet, pas une liste de questions</h2>
+    <p data-i18n="home_program_sub">Chaque format d'entraînement correspond à un usage précis, du tout premier quiz jusqu'à l'examen blanc complet.</p>
+  </div>
+  <div class="home-program-grid">
+    <div class="home-program-card">
+      <div class="count">180</div>
+      <h3 data-i18n="home_program_exam_title">Examen blanc</h3>
+      <p data-i18n="home_program_exam_desc">Tirage aléatoire à chaque lancement, aux mêmes proportions que le vrai examen (People 33% / Process 41% / Business 26%).</p>
+    </div>
+    <div class="home-program-card">
+      <div class="count">5×60</div>
+      <h3 data-i18n="home_program_mini_title">Mini-examens</h3>
+      <p data-i18n="home_program_mini_desc">Des sessions plus courtes pour s'entraîner régulièrement sans bloquer 4 heures.</p>
+    </div>
+    <div class="home-program-card">
+      <div class="count">3×60</div>
+      <h3 data-i18n="home_program_quiz_title">Quiz par domaine</h3>
+      <p data-i18n="home_program_quiz_desc">People, Process, Business Environment : travaille un domaine à la fois pour combler tes points faibles.</p>
+    </div>
+    <div class="home-program-card">
+      <div class="count">2×60</div>
+      <h3 data-i18n="home_program_approach_title">Prédictif / Agile</h3>
+      <p data-i18n="home_program_approach_desc">Entraîne-toi spécifiquement sur l'approche prédictive ou agile-hybride, les deux bien représentées à l'examen.</p>
+    </div>
+  </div>
+  <div class="home-program-langs">
+    <span>🇫🇷 Français</span>
+    <span>🇬🇧 English</span>
+    <span>🇸🇦 العربية</span>
+  </div>
+</section>
+
+<section class="home-section" id="insights">
+  <div class="home-section-head">
+    <h2 data-i18n="home_insights_title">Insights</h2>
+    <p data-i18n="home_insights_sub">Ce qui fait vraiment basculer une réponse le jour de l'examen.</p>
+  </div>
+  <div class="home-insights-grid">
+    <a class="home-insight-card" href="chatbot.html">
+      <span class="tag" data-i18n="home_insight_tag_1">Méthode</span>
+      <h3 data-i18n="home_insight_title_1">Prédictif, agile ou hybride : comment l'ECO 2026 les mélange</h3>
+      <p data-i18n="home_insight_desc_1">La majorité des questions ne précisent plus l'approche — c'est à toi de la reconnaître dans l'énoncé.</p>
+      <span class="go" data-i18n="home_insight_cta">Demander à l'assistant →</span>
+    </a>
+    <a class="home-insight-card" href="chatbot.html">
+      <span class="tag" data-i18n="home_insight_tag_2">Erreur fréquente</span>
+      <h3 data-i18n="home_insight_title_2">Pourquoi la "bonne" réponse PMP n'est pas toujours la plus rapide</h3>
+      <p data-i18n="home_insight_desc_2">PMI teste souvent le réflexe de leader-serviteur plutôt que l'action la plus directe.</p>
+      <span class="go" data-i18n="home_insight_cta">Demander à l'assistant →</span>
+    </a>
+    <a class="home-insight-card" href="history.html">
+      <span class="tag" data-i18n="home_insight_tag_3">Progression</span>
+      <h3 data-i18n="home_insight_title_3">Lis ton historique comme un formateur le ferait</h3>
+      <p data-i18n="home_insight_desc_3">Le mode "Kill mistakes" cible exactement tes erreurs passées, domaine par domaine.</p>
+      <span class="go" data-i18n="home_insight_cta2">Voir mon historique →</span>
+    </a>
+  </div>
+</section>
+
+<footer class="home-footer">
+  <span data-i18n="home_footer_left">PMP Simulateur — un outil PiloBrain</span>
+  <span data-i18n="home_footer_right">Pas affilié à PMI®, pour un entraînement personnel</span>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/data.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/ui.js"></script>
+<script>
+  applyI18n();
+  renderLangSwitchStandalone('lang-mount');
+
+  // Anneau des domaines — même logique visuelle que le tableau de bord
+  // (FIXED_DOMAIN_SPLIT, domainMeta), mais en autonome ici : pas besoin
+  // d'être connecté pour voir la page d'accueil.
+  (function renderHomeRing() {
+    const DOMAIN_META = domainMeta();
+    const domains = Object.keys(DOMAIN_META);
+    const size = 190, stroke = 20, r = (size - stroke) / 2, c = size / 2;
+    const circumference = 2 * Math.PI * r;
+    let offset = 0;
+    const segments = domains.map(d => {
+      const weight = FIXED_DOMAIN_SPLIT[d];
+      const len = (weight / 100) * circumference;
+      const seg = `<circle cx="${c}" cy="${c}" r="${r}" fill="none" stroke="${DOMAIN_META[d].color}"
+        stroke-width="${stroke}" stroke-dasharray="${len} ${circumference - len}"
+        stroke-dashoffset="${-offset}" transform="rotate(-90 ${c} ${c})" stroke-linecap="butt"/>`;
+      offset += len;
+      return seg;
+    }).join('');
+    document.getElementById('home-ring-mount').innerHTML = `
+      <div style="position:relative;width:${size}px;height:${size}px">
+        <svg width="${size}" height="${size}">${segments}</svg>
+        <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center">
+          <span style="font-family:var(--font-mono);font-size:.72rem;color:var(--paper-dim)">${t('weighting_label')}</span>
+          <b style="font-family:var(--font-display);font-size:1.15rem;color:var(--white)">ECO 2026</b>
+        </div>
+      </div>`;
+
+    document.getElementById('home-domain-cards').innerHTML = domains.map(d => `
+      <div class="home-domain-card">
+        <div class="swatch" style="background:${DOMAIN_META[d].color}"></div>
+        <h3>${DOMAIN_META[d].label}</h3>
+        <div class="weight">${FIXED_DOMAIN_SPLIT[d]}% ${t('home_of_exam')}</div>
+        <p>${t('home_domain_desc_' + d)}</p>
+      </div>`).join('');
+  })();
+</script>
+</body>
+</html>

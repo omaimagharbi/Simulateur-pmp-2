@@ -11,8 +11,20 @@ if (quizUser) {
   const category = params.get('cat') || 'Exam';
   const part = parseInt(params.get('part') || '1', 10);
 
+  // Examens fixes : chaque question du pool "Exam" porte un champ "examen"
+  // (1 à 5) assigné une fois pour toutes côté données, avec exactement 180
+  // questions et les quotas de domaine de l'ECO PMP juillet 2026 (People 33% /
+  // Process 41% / Business Environment 26%) par examen. L'URL doit préciser
+  // ?exam=1..5 ; chaque candidat qui choisit "Examen 3" voit toujours le même
+  // jeu de 180 questions (seul leur ordre est mélangé à chaque lancement).
+  const examNumber = category === 'Exam' ? (parseInt(params.get('exam'), 10) || 1) : null;
+
   const allQuestions = Store.getAllQuestions();
-  const categoryQuestions = category === 'KillMistakes' ? getMistakeQuestions(quizUser.username) : allQuestions.filter(q => q.category === category);
+  const categoryQuestions = category === 'KillMistakes'
+    ? getMistakeQuestions(quizUser.username)
+    : category === 'Exam'
+      ? allQuestions.filter(q => q.category === category && q.examen === examNumber)
+      : allQuestions.filter(q => q.category === category);
   // "Exam" (examen blanc complet) et "KillMistakes" restent une session unique et continue,
   // avec les pauses réglementaires PMI à 60/120 questions pour "Exam" — pas de découpage en parties de 10.
   const parts = (category === 'KillMistakes' || category === 'Exam') ? [categoryQuestions] : chunkQuestions(categoryQuestions, 10);

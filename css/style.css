@@ -108,6 +108,7 @@ button, input, select, textarea{ font-family:inherit; font-size:1rem; }
 .btn-danger:hover{ background:rgba(163,57,43,.08); }
 .btn-block{ width:100%; }
 .btn-sm{ padding:.45em 1em; font-size:.82rem; }
+.btn-lg{ padding:.9em 1.7em; font-size:1rem; }
 .btn:disabled{ opacity:.45; cursor:not-allowed; }
 
 /* ---------- Cards / surfaces ---------- */
