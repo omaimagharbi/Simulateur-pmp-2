@@ -11,23 +11,33 @@ if (quizUser) {
   const category = params.get('cat') || 'Exam';
   const part = parseInt(params.get('part') || '1', 10);
 
-  // Examens fixes : chaque question du pool "Exam" porte un champ "examen"
-  // (1 à 5) assigné une fois pour toutes côté données, avec exactement 180
-  // questions et les quotas de domaine de l'ECO PMP juillet 2026 (People 33% /
-  // Process 41% / Business Environment 26%) par examen. L'URL doit préciser
-  // ?exam=1..5 ; chaque candidat qui choisit "Examen 3" voit toujours le même
-  // jeu de 180 questions (seul leur ordre est mélangé à chaque lancement).
+  // Compositions FIXES par catégorie (même contenu à chaque visite, seul
+  // l'ordre est mélangé à chaque lancement) — doit rester identique à la
+  // logique de category.html :
+  //  - "Exam"     : 5 examens de 180 (champ "examen" 1-5, ?exam=1..5)
+  //  - "Quiz"     : 3 quiz de domaine de 60 (People/Process/Business, ?part=1..3)
+  //  - "MiniExam" : 5 mini-examens de 60 (champ "miniExamen" 1-5, ?part=1..5)
   const examNumber = category === 'Exam' ? (parseInt(params.get('exam'), 10) || 1) : null;
+  const QUIZ_DOMAIN_ORDER = ['People', 'Process', 'Business'];
 
   const allQuestions = Store.getAllQuestions();
   const categoryQuestions = category === 'KillMistakes'
     ? getMistakeQuestions(quizUser.username)
-    : category === 'Exam'
-      ? allQuestions.filter(q => q.category === category && q.examen === examNumber)
-      : allQuestions.filter(q => q.category === category);
-  // "Exam" (examen blanc complet) et "KillMistakes" restent une session unique et continue,
-  // avec les pauses réglementaires PMI à 60/120 questions pour "Exam" — pas de découpage en parties de 10.
-  const parts = (category === 'KillMistakes' || category === 'Exam') ? [categoryQuestions] : chunkQuestions(categoryQuestions, 10);
+    : allQuestions.filter(q => q.category === category);
+  // "Exam" et "KillMistakes" restent une session unique et continue, avec les
+  // pauses réglementaires PMI à 60/120 questions pour "Exam" — pas de
+  // découpage en parties de 10. "Quiz" et "MiniExam" sont découpés en
+  // compositions fixes (domaine / numéro de mini-examen), jamais par lots de
+  // 10 génériques, pour rester cohérents avec category.html.
+  const parts = category === 'Exam'
+    ? [categoryQuestions.filter(q => q.examen === examNumber)]
+    : category === 'KillMistakes'
+      ? [categoryQuestions]
+      : category === 'Quiz'
+        ? QUIZ_DOMAIN_ORDER.map(d => categoryQuestions.filter(q => q.domain === d)).filter(p => p.length)
+        : category === 'MiniExam'
+          ? [1, 2, 3, 4, 5].map(n => categoryQuestions.filter(q => q.miniExamen === n)).filter(p => p.length)
+          : chunkQuestions(categoryQuestions, 10);
   const chosenPart = parts[part - 1] || parts[0] || categoryQuestions;
   let questions = shuffle(chosenPart.length ? chosenPart : categoryQuestions);
   if (!questions.length) questions = shuffle([...allQuestions]);

@@ -1,8 +1,9 @@
 // Banque de questions PMP — FR, EN et AR.
-// FR : relecture "formateur" du 04/10/2026 — 4 quasi-doublons thématiques repérés
-// parmi les questions originales (même mise en situation, texte reformulé) et
-// remplacés par des scénarios réellement distincts. 1500 jouables, 5 examens
-// fixes de 180 par langue (voir en-tête précédente).
+// Quiz (180) divisé en 3 quiz de domaine fixes de 60 (People/Process/Business).
+// MiniExam (300) divisé en 5 mini-examens fixes de 60 (champ "miniExamen" 1-5).
+// Exam (900) toujours divisé en 5 examens fixes de 180 (champ "examen" 1-5).
+// Agile (60/langue) : pas encore fusionné avec "Hybride" (contenu Hybride inexistant,
+// 240 questions/langue manquantes pour atteindre 5x60 — en attente de confirmation).
 const QUESTIONS_FR = [
   {
     "type": "single_choice",
@@ -10837,7 +10838,8 @@ const QUESTIONS_FR = [
     "id": 301,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q001"
+    "source_id": "MINI1-Q001",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -10872,7 +10874,8 @@ const QUESTIONS_FR = [
     "id": 302,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q002"
+    "source_id": "MINI1-Q002",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -10907,7 +10910,8 @@ const QUESTIONS_FR = [
     "id": 303,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q003"
+    "source_id": "MINI1-Q003",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -10942,7 +10946,8 @@ const QUESTIONS_FR = [
     "id": 304,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q004"
+    "source_id": "MINI1-Q004",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -10977,7 +10982,8 @@ const QUESTIONS_FR = [
     "id": 305,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q005"
+    "source_id": "MINI1-Q005",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -11012,7 +11018,8 @@ const QUESTIONS_FR = [
     "id": 306,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q006"
+    "source_id": "MINI1-Q006",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -11047,7 +11054,8 @@ const QUESTIONS_FR = [
     "id": 307,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q007"
+    "source_id": "MINI1-Q007",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -11082,7 +11090,8 @@ const QUESTIONS_FR = [
     "id": 308,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q008"
+    "source_id": "MINI1-Q008",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -11117,7 +11126,8 @@ const QUESTIONS_FR = [
     "id": 309,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q009"
+    "source_id": "MINI1-Q009",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -11152,7 +11162,8 @@ const QUESTIONS_FR = [
     "id": 310,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q010"
+    "source_id": "MINI1-Q010",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -11187,7 +11198,8 @@ const QUESTIONS_FR = [
     "id": 311,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q011"
+    "source_id": "MINI1-Q011",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -11222,7 +11234,8 @@ const QUESTIONS_FR = [
     "id": 312,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q012"
+    "source_id": "MINI1-Q012",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -11257,7 +11270,8 @@ const QUESTIONS_FR = [
     "id": 313,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q013"
+    "source_id": "MINI1-Q013",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -11292,7 +11306,8 @@ const QUESTIONS_FR = [
     "id": 314,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q014"
+    "source_id": "MINI1-Q014",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -11327,7 +11342,8 @@ const QUESTIONS_FR = [
     "id": 315,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q015"
+    "source_id": "MINI1-Q015",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -11362,7 +11378,8 @@ const QUESTIONS_FR = [
     "id": 316,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q016"
+    "source_id": "MINI1-Q016",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -11397,7 +11414,8 @@ const QUESTIONS_FR = [
     "id": 317,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q017"
+    "source_id": "MINI1-Q017",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -11432,7 +11450,8 @@ const QUESTIONS_FR = [
     "id": 318,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q018"
+    "source_id": "MINI1-Q018",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -11467,7 +11486,8 @@ const QUESTIONS_FR = [
     "id": 319,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q019"
+    "source_id": "MINI1-Q019",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -11502,7 +11522,8 @@ const QUESTIONS_FR = [
     "id": 320,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q020"
+    "source_id": "MINI1-Q020",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -11537,7 +11558,8 @@ const QUESTIONS_FR = [
     "id": 321,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q021"
+    "source_id": "MINI1-Q021",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -11572,7 +11594,8 @@ const QUESTIONS_FR = [
     "id": 322,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q022"
+    "source_id": "MINI1-Q022",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -11607,7 +11630,8 @@ const QUESTIONS_FR = [
     "id": 323,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q023"
+    "source_id": "MINI1-Q023",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -11642,7 +11666,8 @@ const QUESTIONS_FR = [
     "id": 324,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q024"
+    "source_id": "MINI1-Q024",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -11677,7 +11702,8 @@ const QUESTIONS_FR = [
     "id": 325,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q025"
+    "source_id": "MINI1-Q025",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -11712,7 +11738,8 @@ const QUESTIONS_FR = [
     "id": 326,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q026"
+    "source_id": "MINI1-Q026",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -11747,7 +11774,8 @@ const QUESTIONS_FR = [
     "id": 327,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q027"
+    "source_id": "MINI1-Q027",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -11782,7 +11810,8 @@ const QUESTIONS_FR = [
     "id": 328,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q028"
+    "source_id": "MINI1-Q028",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -11817,7 +11846,8 @@ const QUESTIONS_FR = [
     "id": 329,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q029"
+    "source_id": "MINI1-Q029",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -11852,7 +11882,8 @@ const QUESTIONS_FR = [
     "id": 330,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q030"
+    "source_id": "MINI1-Q030",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -11887,7 +11918,8 @@ const QUESTIONS_FR = [
     "id": 331,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q031"
+    "source_id": "MINI1-Q031",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -11922,7 +11954,8 @@ const QUESTIONS_FR = [
     "id": 332,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q032"
+    "source_id": "MINI1-Q032",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -11957,7 +11990,8 @@ const QUESTIONS_FR = [
     "id": 333,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q033"
+    "source_id": "MINI1-Q033",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -11992,7 +12026,8 @@ const QUESTIONS_FR = [
     "id": 334,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q034"
+    "source_id": "MINI1-Q034",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -12027,7 +12062,8 @@ const QUESTIONS_FR = [
     "id": 335,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q035"
+    "source_id": "MINI1-Q035",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -12062,7 +12098,8 @@ const QUESTIONS_FR = [
     "id": 336,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q036"
+    "source_id": "MINI1-Q036",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -12097,7 +12134,8 @@ const QUESTIONS_FR = [
     "id": 337,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q037"
+    "source_id": "MINI1-Q037",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -12132,7 +12170,8 @@ const QUESTIONS_FR = [
     "id": 338,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q038"
+    "source_id": "MINI1-Q038",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -12167,7 +12206,8 @@ const QUESTIONS_FR = [
     "id": 339,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q039"
+    "source_id": "MINI1-Q039",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -12202,7 +12242,8 @@ const QUESTIONS_FR = [
     "id": 340,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q040"
+    "source_id": "MINI1-Q040",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -12237,7 +12278,8 @@ const QUESTIONS_FR = [
     "id": 341,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q041"
+    "source_id": "MINI1-Q041",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -12272,7 +12314,8 @@ const QUESTIONS_FR = [
     "id": 342,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q042"
+    "source_id": "MINI1-Q042",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -12307,7 +12350,8 @@ const QUESTIONS_FR = [
     "id": 343,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q043"
+    "source_id": "MINI1-Q043",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -12342,7 +12386,8 @@ const QUESTIONS_FR = [
     "id": 344,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q044"
+    "source_id": "MINI1-Q044",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -12377,7 +12422,8 @@ const QUESTIONS_FR = [
     "id": 345,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q045"
+    "source_id": "MINI1-Q045",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -12412,7 +12458,8 @@ const QUESTIONS_FR = [
     "id": 346,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q046"
+    "source_id": "MINI1-Q046",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -12447,7 +12494,8 @@ const QUESTIONS_FR = [
     "id": 347,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q047"
+    "source_id": "MINI1-Q047",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -12482,7 +12530,8 @@ const QUESTIONS_FR = [
     "id": 348,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q048"
+    "source_id": "MINI1-Q048",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -12517,7 +12566,8 @@ const QUESTIONS_FR = [
     "id": 349,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q049"
+    "source_id": "MINI1-Q049",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -12552,7 +12602,8 @@ const QUESTIONS_FR = [
     "id": 350,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q050"
+    "source_id": "MINI1-Q050",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -12587,7 +12638,8 @@ const QUESTIONS_FR = [
     "id": 351,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q051"
+    "source_id": "MINI1-Q051",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -12622,7 +12674,8 @@ const QUESTIONS_FR = [
     "id": 352,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q052"
+    "source_id": "MINI1-Q052",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -12657,7 +12710,8 @@ const QUESTIONS_FR = [
     "id": 353,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q053"
+    "source_id": "MINI1-Q053",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -12692,7 +12746,8 @@ const QUESTIONS_FR = [
     "id": 354,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q054"
+    "source_id": "MINI1-Q054",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -12727,7 +12782,8 @@ const QUESTIONS_FR = [
     "id": 355,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q055"
+    "source_id": "MINI1-Q055",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -12762,7 +12818,8 @@ const QUESTIONS_FR = [
     "id": 356,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q056"
+    "source_id": "MINI1-Q056",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -12797,7 +12854,8 @@ const QUESTIONS_FR = [
     "id": 357,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q057"
+    "source_id": "MINI1-Q057",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -12832,7 +12890,8 @@ const QUESTIONS_FR = [
     "id": 358,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q058"
+    "source_id": "MINI1-Q058",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -12867,7 +12926,8 @@ const QUESTIONS_FR = [
     "id": 359,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q059"
+    "source_id": "MINI1-Q059",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -12902,7 +12962,8 @@ const QUESTIONS_FR = [
     "id": 360,
     "examen": 1,
     "category": "MiniExam",
-    "source_id": "MINI1-Q060"
+    "source_id": "MINI1-Q060",
+    "miniExamen": 1
   },
   {
     "type": "single_choice",
@@ -12937,7 +12998,8 @@ const QUESTIONS_FR = [
     "id": 361,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q001"
+    "source_id": "MINI2-Q001",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -12972,7 +13034,8 @@ const QUESTIONS_FR = [
     "id": 362,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q002"
+    "source_id": "MINI2-Q002",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -13007,7 +13070,8 @@ const QUESTIONS_FR = [
     "id": 363,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q003"
+    "source_id": "MINI2-Q003",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -13042,7 +13106,8 @@ const QUESTIONS_FR = [
     "id": 364,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q004"
+    "source_id": "MINI2-Q004",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -13077,7 +13142,8 @@ const QUESTIONS_FR = [
     "id": 365,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q005"
+    "source_id": "MINI2-Q005",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -13112,7 +13178,8 @@ const QUESTIONS_FR = [
     "id": 366,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q006"
+    "source_id": "MINI2-Q006",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -13147,7 +13214,8 @@ const QUESTIONS_FR = [
     "id": 367,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q007"
+    "source_id": "MINI2-Q007",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -13182,7 +13250,8 @@ const QUESTIONS_FR = [
     "id": 368,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q008"
+    "source_id": "MINI2-Q008",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -13217,7 +13286,8 @@ const QUESTIONS_FR = [
     "id": 369,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q009"
+    "source_id": "MINI2-Q009",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -13252,7 +13322,8 @@ const QUESTIONS_FR = [
     "id": 370,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q010"
+    "source_id": "MINI2-Q010",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -13287,7 +13358,8 @@ const QUESTIONS_FR = [
     "id": 371,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q011"
+    "source_id": "MINI2-Q011",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -13322,7 +13394,8 @@ const QUESTIONS_FR = [
     "id": 372,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q012"
+    "source_id": "MINI2-Q012",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -13357,7 +13430,8 @@ const QUESTIONS_FR = [
     "id": 373,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q013"
+    "source_id": "MINI2-Q013",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -13392,7 +13466,8 @@ const QUESTIONS_FR = [
     "id": 374,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q014"
+    "source_id": "MINI2-Q014",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -13427,7 +13502,8 @@ const QUESTIONS_FR = [
     "id": 375,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q015"
+    "source_id": "MINI2-Q015",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -13462,7 +13538,8 @@ const QUESTIONS_FR = [
     "id": 376,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q016"
+    "source_id": "MINI2-Q016",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -13497,7 +13574,8 @@ const QUESTIONS_FR = [
     "id": 377,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q017"
+    "source_id": "MINI2-Q017",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -13532,7 +13610,8 @@ const QUESTIONS_FR = [
     "id": 378,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q018"
+    "source_id": "MINI2-Q018",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -13567,7 +13646,8 @@ const QUESTIONS_FR = [
     "id": 379,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q019"
+    "source_id": "MINI2-Q019",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -13602,7 +13682,8 @@ const QUESTIONS_FR = [
     "id": 380,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q020"
+    "source_id": "MINI2-Q020",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -13637,7 +13718,8 @@ const QUESTIONS_FR = [
     "id": 381,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q021"
+    "source_id": "MINI2-Q021",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -13672,7 +13754,8 @@ const QUESTIONS_FR = [
     "id": 382,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q022"
+    "source_id": "MINI2-Q022",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -13707,7 +13790,8 @@ const QUESTIONS_FR = [
     "id": 383,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q023"
+    "source_id": "MINI2-Q023",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -13742,7 +13826,8 @@ const QUESTIONS_FR = [
     "id": 384,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q024"
+    "source_id": "MINI2-Q024",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -13777,7 +13862,8 @@ const QUESTIONS_FR = [
     "id": 385,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q025"
+    "source_id": "MINI2-Q025",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -13812,7 +13898,8 @@ const QUESTIONS_FR = [
     "id": 386,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q026"
+    "source_id": "MINI2-Q026",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -13847,7 +13934,8 @@ const QUESTIONS_FR = [
     "id": 387,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q027"
+    "source_id": "MINI2-Q027",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -13882,7 +13970,8 @@ const QUESTIONS_FR = [
     "id": 388,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q028"
+    "source_id": "MINI2-Q028",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -13917,7 +14006,8 @@ const QUESTIONS_FR = [
     "id": 389,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q029"
+    "source_id": "MINI2-Q029",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -13952,7 +14042,8 @@ const QUESTIONS_FR = [
     "id": 390,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q030"
+    "source_id": "MINI2-Q030",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -13987,7 +14078,8 @@ const QUESTIONS_FR = [
     "id": 391,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q031"
+    "source_id": "MINI2-Q031",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -14022,7 +14114,8 @@ const QUESTIONS_FR = [
     "id": 392,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q032"
+    "source_id": "MINI2-Q032",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -14057,7 +14150,8 @@ const QUESTIONS_FR = [
     "id": 393,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q033"
+    "source_id": "MINI2-Q033",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -14092,7 +14186,8 @@ const QUESTIONS_FR = [
     "id": 394,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q034"
+    "source_id": "MINI2-Q034",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -14127,7 +14222,8 @@ const QUESTIONS_FR = [
     "id": 395,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q035"
+    "source_id": "MINI2-Q035",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -14162,7 +14258,8 @@ const QUESTIONS_FR = [
     "id": 396,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q036"
+    "source_id": "MINI2-Q036",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -14197,7 +14294,8 @@ const QUESTIONS_FR = [
     "id": 397,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q037"
+    "source_id": "MINI2-Q037",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -14232,7 +14330,8 @@ const QUESTIONS_FR = [
     "id": 398,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q038"
+    "source_id": "MINI2-Q038",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -14267,7 +14366,8 @@ const QUESTIONS_FR = [
     "id": 399,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q039"
+    "source_id": "MINI2-Q039",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -14302,7 +14402,8 @@ const QUESTIONS_FR = [
     "id": 400,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q040"
+    "source_id": "MINI2-Q040",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -14337,7 +14438,8 @@ const QUESTIONS_FR = [
     "id": 401,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q041"
+    "source_id": "MINI2-Q041",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -14372,7 +14474,8 @@ const QUESTIONS_FR = [
     "id": 402,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q042"
+    "source_id": "MINI2-Q042",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -14407,7 +14510,8 @@ const QUESTIONS_FR = [
     "id": 403,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q043"
+    "source_id": "MINI2-Q043",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -14442,7 +14546,8 @@ const QUESTIONS_FR = [
     "id": 404,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q044"
+    "source_id": "MINI2-Q044",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -14477,7 +14582,8 @@ const QUESTIONS_FR = [
     "id": 405,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q045"
+    "source_id": "MINI2-Q045",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -14512,7 +14618,8 @@ const QUESTIONS_FR = [
     "id": 406,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q046"
+    "source_id": "MINI2-Q046",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -14547,7 +14654,8 @@ const QUESTIONS_FR = [
     "id": 407,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q047"
+    "source_id": "MINI2-Q047",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -14582,7 +14690,8 @@ const QUESTIONS_FR = [
     "id": 408,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q048"
+    "source_id": "MINI2-Q048",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -14617,7 +14726,8 @@ const QUESTIONS_FR = [
     "id": 409,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q049"
+    "source_id": "MINI2-Q049",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -14652,7 +14762,8 @@ const QUESTIONS_FR = [
     "id": 410,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q050"
+    "source_id": "MINI2-Q050",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -14687,7 +14798,8 @@ const QUESTIONS_FR = [
     "id": 411,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q051"
+    "source_id": "MINI2-Q051",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -14722,7 +14834,8 @@ const QUESTIONS_FR = [
     "id": 412,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q052"
+    "source_id": "MINI2-Q052",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -14757,7 +14870,8 @@ const QUESTIONS_FR = [
     "id": 413,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q053"
+    "source_id": "MINI2-Q053",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -14792,7 +14906,8 @@ const QUESTIONS_FR = [
     "id": 414,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q054"
+    "source_id": "MINI2-Q054",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -14827,7 +14942,8 @@ const QUESTIONS_FR = [
     "id": 415,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q055"
+    "source_id": "MINI2-Q055",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -14862,7 +14978,8 @@ const QUESTIONS_FR = [
     "id": 416,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q056"
+    "source_id": "MINI2-Q056",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -14897,7 +15014,8 @@ const QUESTIONS_FR = [
     "id": 417,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q057"
+    "source_id": "MINI2-Q057",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -14932,7 +15050,8 @@ const QUESTIONS_FR = [
     "id": 418,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q058"
+    "source_id": "MINI2-Q058",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -14967,7 +15086,8 @@ const QUESTIONS_FR = [
     "id": 419,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q059"
+    "source_id": "MINI2-Q059",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -15002,7 +15122,8 @@ const QUESTIONS_FR = [
     "id": 420,
     "examen": 2,
     "category": "MiniExam",
-    "source_id": "MINI2-Q060"
+    "source_id": "MINI2-Q060",
+    "miniExamen": 2
   },
   {
     "type": "single_choice",
@@ -15037,7 +15158,8 @@ const QUESTIONS_FR = [
     "id": 421,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q001"
+    "source_id": "MINI3-Q001",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -15072,7 +15194,8 @@ const QUESTIONS_FR = [
     "id": 422,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q002"
+    "source_id": "MINI3-Q002",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -15107,7 +15230,8 @@ const QUESTIONS_FR = [
     "id": 423,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q003"
+    "source_id": "MINI3-Q003",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -15142,7 +15266,8 @@ const QUESTIONS_FR = [
     "id": 424,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q004"
+    "source_id": "MINI3-Q004",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -15177,7 +15302,8 @@ const QUESTIONS_FR = [
     "id": 425,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q005"
+    "source_id": "MINI3-Q005",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -15212,7 +15338,8 @@ const QUESTIONS_FR = [
     "id": 426,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q006"
+    "source_id": "MINI3-Q006",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -15247,7 +15374,8 @@ const QUESTIONS_FR = [
     "id": 427,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q007"
+    "source_id": "MINI3-Q007",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -15282,7 +15410,8 @@ const QUESTIONS_FR = [
     "id": 428,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q008"
+    "source_id": "MINI3-Q008",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -15317,7 +15446,8 @@ const QUESTIONS_FR = [
     "id": 429,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q009"
+    "source_id": "MINI3-Q009",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -15352,7 +15482,8 @@ const QUESTIONS_FR = [
     "id": 430,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q010"
+    "source_id": "MINI3-Q010",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -15387,7 +15518,8 @@ const QUESTIONS_FR = [
     "id": 431,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q011"
+    "source_id": "MINI3-Q011",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -15422,7 +15554,8 @@ const QUESTIONS_FR = [
     "id": 432,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q012"
+    "source_id": "MINI3-Q012",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -15457,7 +15590,8 @@ const QUESTIONS_FR = [
     "id": 433,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q013"
+    "source_id": "MINI3-Q013",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -15492,7 +15626,8 @@ const QUESTIONS_FR = [
     "id": 434,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q014"
+    "source_id": "MINI3-Q014",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -15527,7 +15662,8 @@ const QUESTIONS_FR = [
     "id": 435,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q015"
+    "source_id": "MINI3-Q015",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -15562,7 +15698,8 @@ const QUESTIONS_FR = [
     "id": 436,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q016"
+    "source_id": "MINI3-Q016",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -15597,7 +15734,8 @@ const QUESTIONS_FR = [
     "id": 437,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q017"
+    "source_id": "MINI3-Q017",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -15632,7 +15770,8 @@ const QUESTIONS_FR = [
     "id": 438,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q018"
+    "source_id": "MINI3-Q018",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -15667,7 +15806,8 @@ const QUESTIONS_FR = [
     "id": 439,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q019"
+    "source_id": "MINI3-Q019",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -15702,7 +15842,8 @@ const QUESTIONS_FR = [
     "id": 440,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q020"
+    "source_id": "MINI3-Q020",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -15737,7 +15878,8 @@ const QUESTIONS_FR = [
     "id": 441,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q021"
+    "source_id": "MINI3-Q021",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -15772,7 +15914,8 @@ const QUESTIONS_FR = [
     "id": 442,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q022"
+    "source_id": "MINI3-Q022",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -15807,7 +15950,8 @@ const QUESTIONS_FR = [
     "id": 443,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q023"
+    "source_id": "MINI3-Q023",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -15842,7 +15986,8 @@ const QUESTIONS_FR = [
     "id": 444,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q024"
+    "source_id": "MINI3-Q024",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -15877,7 +16022,8 @@ const QUESTIONS_FR = [
     "id": 445,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q025"
+    "source_id": "MINI3-Q025",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -15912,7 +16058,8 @@ const QUESTIONS_FR = [
     "id": 446,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q026"
+    "source_id": "MINI3-Q026",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -15947,7 +16094,8 @@ const QUESTIONS_FR = [
     "id": 447,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q027"
+    "source_id": "MINI3-Q027",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -15982,7 +16130,8 @@ const QUESTIONS_FR = [
     "id": 448,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q028"
+    "source_id": "MINI3-Q028",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -16017,7 +16166,8 @@ const QUESTIONS_FR = [
     "id": 449,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q029"
+    "source_id": "MINI3-Q029",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -16052,7 +16202,8 @@ const QUESTIONS_FR = [
     "id": 450,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q030"
+    "source_id": "MINI3-Q030",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -16087,7 +16238,8 @@ const QUESTIONS_FR = [
     "id": 451,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q031"
+    "source_id": "MINI3-Q031",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -16122,7 +16274,8 @@ const QUESTIONS_FR = [
     "id": 452,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q032"
+    "source_id": "MINI3-Q032",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -16157,7 +16310,8 @@ const QUESTIONS_FR = [
     "id": 453,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q033"
+    "source_id": "MINI3-Q033",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -16192,7 +16346,8 @@ const QUESTIONS_FR = [
     "id": 454,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q034"
+    "source_id": "MINI3-Q034",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -16227,7 +16382,8 @@ const QUESTIONS_FR = [
     "id": 455,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q035"
+    "source_id": "MINI3-Q035",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -16262,7 +16418,8 @@ const QUESTIONS_FR = [
     "id": 456,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q036"
+    "source_id": "MINI3-Q036",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -16297,7 +16454,8 @@ const QUESTIONS_FR = [
     "id": 457,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q037"
+    "source_id": "MINI3-Q037",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -16332,7 +16490,8 @@ const QUESTIONS_FR = [
     "id": 458,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q038"
+    "source_id": "MINI3-Q038",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -16367,7 +16526,8 @@ const QUESTIONS_FR = [
     "id": 459,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q039"
+    "source_id": "MINI3-Q039",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -16402,7 +16562,8 @@ const QUESTIONS_FR = [
     "id": 460,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q040"
+    "source_id": "MINI3-Q040",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -16437,7 +16598,8 @@ const QUESTIONS_FR = [
     "id": 461,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q041"
+    "source_id": "MINI3-Q041",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -16472,7 +16634,8 @@ const QUESTIONS_FR = [
     "id": 462,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q042"
+    "source_id": "MINI3-Q042",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -16507,7 +16670,8 @@ const QUESTIONS_FR = [
     "id": 463,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q043"
+    "source_id": "MINI3-Q043",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -16542,7 +16706,8 @@ const QUESTIONS_FR = [
     "id": 464,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q044"
+    "source_id": "MINI3-Q044",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -16577,7 +16742,8 @@ const QUESTIONS_FR = [
     "id": 465,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q045"
+    "source_id": "MINI3-Q045",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -16612,7 +16778,8 @@ const QUESTIONS_FR = [
     "id": 466,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q046"
+    "source_id": "MINI3-Q046",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -16647,7 +16814,8 @@ const QUESTIONS_FR = [
     "id": 467,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q047"
+    "source_id": "MINI3-Q047",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -16682,7 +16850,8 @@ const QUESTIONS_FR = [
     "id": 468,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q048"
+    "source_id": "MINI3-Q048",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -16717,7 +16886,8 @@ const QUESTIONS_FR = [
     "id": 469,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q049"
+    "source_id": "MINI3-Q049",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -16752,7 +16922,8 @@ const QUESTIONS_FR = [
     "id": 470,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q050"
+    "source_id": "MINI3-Q050",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -16787,7 +16958,8 @@ const QUESTIONS_FR = [
     "id": 471,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q051"
+    "source_id": "MINI3-Q051",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -16822,7 +16994,8 @@ const QUESTIONS_FR = [
     "id": 472,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q052"
+    "source_id": "MINI3-Q052",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -16857,7 +17030,8 @@ const QUESTIONS_FR = [
     "id": 473,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q053"
+    "source_id": "MINI3-Q053",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -16892,7 +17066,8 @@ const QUESTIONS_FR = [
     "id": 474,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q054"
+    "source_id": "MINI3-Q054",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -16927,7 +17102,8 @@ const QUESTIONS_FR = [
     "id": 475,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q055"
+    "source_id": "MINI3-Q055",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -16962,7 +17138,8 @@ const QUESTIONS_FR = [
     "id": 476,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q056"
+    "source_id": "MINI3-Q056",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -16997,7 +17174,8 @@ const QUESTIONS_FR = [
     "id": 477,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q057"
+    "source_id": "MINI3-Q057",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -17032,7 +17210,8 @@ const QUESTIONS_FR = [
     "id": 478,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q058"
+    "source_id": "MINI3-Q058",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -17067,7 +17246,8 @@ const QUESTIONS_FR = [
     "id": 479,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q059"
+    "source_id": "MINI3-Q059",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -17102,7 +17282,8 @@ const QUESTIONS_FR = [
     "id": 480,
     "examen": 3,
     "category": "MiniExam",
-    "source_id": "MINI3-Q060"
+    "source_id": "MINI3-Q060",
+    "miniExamen": 3
   },
   {
     "type": "single_choice",
@@ -17137,7 +17318,8 @@ const QUESTIONS_FR = [
     "id": 481,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q001"
+    "source_id": "MINI4-Q001",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -17172,7 +17354,8 @@ const QUESTIONS_FR = [
     "id": 482,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q002"
+    "source_id": "MINI4-Q002",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -17207,7 +17390,8 @@ const QUESTIONS_FR = [
     "id": 483,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q003"
+    "source_id": "MINI4-Q003",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -17242,7 +17426,8 @@ const QUESTIONS_FR = [
     "id": 484,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q004"
+    "source_id": "MINI4-Q004",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -17277,7 +17462,8 @@ const QUESTIONS_FR = [
     "id": 485,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q005"
+    "source_id": "MINI4-Q005",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -17312,7 +17498,8 @@ const QUESTIONS_FR = [
     "id": 486,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q006"
+    "source_id": "MINI4-Q006",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -17347,7 +17534,8 @@ const QUESTIONS_FR = [
     "id": 487,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q007"
+    "source_id": "MINI4-Q007",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -17382,7 +17570,8 @@ const QUESTIONS_FR = [
     "id": 488,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q008"
+    "source_id": "MINI4-Q008",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -17417,7 +17606,8 @@ const QUESTIONS_FR = [
     "id": 489,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q009"
+    "source_id": "MINI4-Q009",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -17452,7 +17642,8 @@ const QUESTIONS_FR = [
     "id": 490,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q010"
+    "source_id": "MINI4-Q010",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -17487,7 +17678,8 @@ const QUESTIONS_FR = [
     "id": 491,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q011"
+    "source_id": "MINI4-Q011",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -17522,7 +17714,8 @@ const QUESTIONS_FR = [
     "id": 492,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q012"
+    "source_id": "MINI4-Q012",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -17557,7 +17750,8 @@ const QUESTIONS_FR = [
     "id": 493,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q013"
+    "source_id": "MINI4-Q013",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -17592,7 +17786,8 @@ const QUESTIONS_FR = [
     "id": 494,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q014"
+    "source_id": "MINI4-Q014",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -17627,7 +17822,8 @@ const QUESTIONS_FR = [
     "id": 495,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q015"
+    "source_id": "MINI4-Q015",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -17662,7 +17858,8 @@ const QUESTIONS_FR = [
     "id": 496,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q016"
+    "source_id": "MINI4-Q016",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -17697,7 +17894,8 @@ const QUESTIONS_FR = [
     "id": 497,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q017"
+    "source_id": "MINI4-Q017",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -17732,7 +17930,8 @@ const QUESTIONS_FR = [
     "id": 498,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q018"
+    "source_id": "MINI4-Q018",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -17767,7 +17966,8 @@ const QUESTIONS_FR = [
     "id": 499,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q019"
+    "source_id": "MINI4-Q019",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -17802,7 +18002,8 @@ const QUESTIONS_FR = [
     "id": 500,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q020"
+    "source_id": "MINI4-Q020",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -17837,7 +18038,8 @@ const QUESTIONS_FR = [
     "id": 501,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q021"
+    "source_id": "MINI4-Q021",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -17872,7 +18074,8 @@ const QUESTIONS_FR = [
     "id": 502,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q022"
+    "source_id": "MINI4-Q022",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -17907,7 +18110,8 @@ const QUESTIONS_FR = [
     "id": 503,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q023"
+    "source_id": "MINI4-Q023",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -17942,7 +18146,8 @@ const QUESTIONS_FR = [
     "id": 504,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q024"
+    "source_id": "MINI4-Q024",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -17977,7 +18182,8 @@ const QUESTIONS_FR = [
     "id": 505,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q025"
+    "source_id": "MINI4-Q025",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -18012,7 +18218,8 @@ const QUESTIONS_FR = [
     "id": 506,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q026"
+    "source_id": "MINI4-Q026",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -18047,7 +18254,8 @@ const QUESTIONS_FR = [
     "id": 507,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q027"
+    "source_id": "MINI4-Q027",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -18082,7 +18290,8 @@ const QUESTIONS_FR = [
     "id": 508,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q028"
+    "source_id": "MINI4-Q028",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -18117,7 +18326,8 @@ const QUESTIONS_FR = [
     "id": 509,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q029"
+    "source_id": "MINI4-Q029",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -18152,7 +18362,8 @@ const QUESTIONS_FR = [
     "id": 510,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q030"
+    "source_id": "MINI4-Q030",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -18187,7 +18398,8 @@ const QUESTIONS_FR = [
     "id": 511,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q031"
+    "source_id": "MINI4-Q031",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -18222,7 +18434,8 @@ const QUESTIONS_FR = [
     "id": 512,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q032"
+    "source_id": "MINI4-Q032",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -18257,7 +18470,8 @@ const QUESTIONS_FR = [
     "id": 513,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q033"
+    "source_id": "MINI4-Q033",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -18292,7 +18506,8 @@ const QUESTIONS_FR = [
     "id": 514,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q034"
+    "source_id": "MINI4-Q034",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -18327,7 +18542,8 @@ const QUESTIONS_FR = [
     "id": 515,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q035"
+    "source_id": "MINI4-Q035",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -18362,7 +18578,8 @@ const QUESTIONS_FR = [
     "id": 516,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q036"
+    "source_id": "MINI4-Q036",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -18397,7 +18614,8 @@ const QUESTIONS_FR = [
     "id": 517,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q037"
+    "source_id": "MINI4-Q037",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -18432,7 +18650,8 @@ const QUESTIONS_FR = [
     "id": 518,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q038"
+    "source_id": "MINI4-Q038",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -18467,7 +18686,8 @@ const QUESTIONS_FR = [
     "id": 519,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q039"
+    "source_id": "MINI4-Q039",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -18502,7 +18722,8 @@ const QUESTIONS_FR = [
     "id": 520,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q040"
+    "source_id": "MINI4-Q040",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -18537,7 +18758,8 @@ const QUESTIONS_FR = [
     "id": 521,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q041"
+    "source_id": "MINI4-Q041",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -18572,7 +18794,8 @@ const QUESTIONS_FR = [
     "id": 522,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q042"
+    "source_id": "MINI4-Q042",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -18607,7 +18830,8 @@ const QUESTIONS_FR = [
     "id": 523,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q043"
+    "source_id": "MINI4-Q043",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -18642,7 +18866,8 @@ const QUESTIONS_FR = [
     "id": 524,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q044"
+    "source_id": "MINI4-Q044",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -18677,7 +18902,8 @@ const QUESTIONS_FR = [
     "id": 525,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q045"
+    "source_id": "MINI4-Q045",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -18712,7 +18938,8 @@ const QUESTIONS_FR = [
     "id": 526,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q046"
+    "source_id": "MINI4-Q046",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -18747,7 +18974,8 @@ const QUESTIONS_FR = [
     "id": 527,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q047"
+    "source_id": "MINI4-Q047",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -18782,7 +19010,8 @@ const QUESTIONS_FR = [
     "id": 528,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q048"
+    "source_id": "MINI4-Q048",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -18817,7 +19046,8 @@ const QUESTIONS_FR = [
     "id": 529,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q049"
+    "source_id": "MINI4-Q049",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -18852,7 +19082,8 @@ const QUESTIONS_FR = [
     "id": 530,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q050"
+    "source_id": "MINI4-Q050",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -18887,7 +19118,8 @@ const QUESTIONS_FR = [
     "id": 531,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q051"
+    "source_id": "MINI4-Q051",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -18922,7 +19154,8 @@ const QUESTIONS_FR = [
     "id": 532,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q052"
+    "source_id": "MINI4-Q052",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -18957,7 +19190,8 @@ const QUESTIONS_FR = [
     "id": 533,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q053"
+    "source_id": "MINI4-Q053",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -18992,7 +19226,8 @@ const QUESTIONS_FR = [
     "id": 534,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q054"
+    "source_id": "MINI4-Q054",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -19027,7 +19262,8 @@ const QUESTIONS_FR = [
     "id": 535,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q055"
+    "source_id": "MINI4-Q055",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -19062,7 +19298,8 @@ const QUESTIONS_FR = [
     "id": 536,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q056"
+    "source_id": "MINI4-Q056",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -19097,7 +19334,8 @@ const QUESTIONS_FR = [
     "id": 537,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q057"
+    "source_id": "MINI4-Q057",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -19132,7 +19370,8 @@ const QUESTIONS_FR = [
     "id": 538,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q058"
+    "source_id": "MINI4-Q058",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -19167,7 +19406,8 @@ const QUESTIONS_FR = [
     "id": 539,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q059"
+    "source_id": "MINI4-Q059",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -19202,7 +19442,8 @@ const QUESTIONS_FR = [
     "id": 540,
     "examen": 4,
     "category": "MiniExam",
-    "source_id": "MINI4-Q060"
+    "source_id": "MINI4-Q060",
+    "miniExamen": 4
   },
   {
     "type": "single_choice",
@@ -19237,7 +19478,8 @@ const QUESTIONS_FR = [
     "id": 541,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q001"
+    "source_id": "MINI5-Q001",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -19272,7 +19514,8 @@ const QUESTIONS_FR = [
     "id": 542,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q002"
+    "source_id": "MINI5-Q002",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -19307,7 +19550,8 @@ const QUESTIONS_FR = [
     "id": 543,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q003"
+    "source_id": "MINI5-Q003",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -19342,7 +19586,8 @@ const QUESTIONS_FR = [
     "id": 544,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q004"
+    "source_id": "MINI5-Q004",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -19377,7 +19622,8 @@ const QUESTIONS_FR = [
     "id": 545,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q005"
+    "source_id": "MINI5-Q005",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -19412,7 +19658,8 @@ const QUESTIONS_FR = [
     "id": 546,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q006"
+    "source_id": "MINI5-Q006",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -19447,7 +19694,8 @@ const QUESTIONS_FR = [
     "id": 547,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q007"
+    "source_id": "MINI5-Q007",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -19482,7 +19730,8 @@ const QUESTIONS_FR = [
     "id": 548,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q008"
+    "source_id": "MINI5-Q008",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -19517,7 +19766,8 @@ const QUESTIONS_FR = [
     "id": 549,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q009"
+    "source_id": "MINI5-Q009",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -19552,7 +19802,8 @@ const QUESTIONS_FR = [
     "id": 550,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q010"
+    "source_id": "MINI5-Q010",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -19587,7 +19838,8 @@ const QUESTIONS_FR = [
     "id": 551,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q011"
+    "source_id": "MINI5-Q011",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -19622,7 +19874,8 @@ const QUESTIONS_FR = [
     "id": 552,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q012"
+    "source_id": "MINI5-Q012",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -19657,7 +19910,8 @@ const QUESTIONS_FR = [
     "id": 553,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q013"
+    "source_id": "MINI5-Q013",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -19692,7 +19946,8 @@ const QUESTIONS_FR = [
     "id": 554,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q014"
+    "source_id": "MINI5-Q014",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -19727,7 +19982,8 @@ const QUESTIONS_FR = [
     "id": 555,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q015"
+    "source_id": "MINI5-Q015",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -19762,7 +20018,8 @@ const QUESTIONS_FR = [
     "id": 556,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q016"
+    "source_id": "MINI5-Q016",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -19797,7 +20054,8 @@ const QUESTIONS_FR = [
     "id": 557,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q017"
+    "source_id": "MINI5-Q017",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -19832,7 +20090,8 @@ const QUESTIONS_FR = [
     "id": 558,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q018"
+    "source_id": "MINI5-Q018",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -19867,7 +20126,8 @@ const QUESTIONS_FR = [
     "id": 559,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q019"
+    "source_id": "MINI5-Q019",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -19902,7 +20162,8 @@ const QUESTIONS_FR = [
     "id": 560,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q020"
+    "source_id": "MINI5-Q020",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -19937,7 +20198,8 @@ const QUESTIONS_FR = [
     "id": 561,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q021"
+    "source_id": "MINI5-Q021",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -19972,7 +20234,8 @@ const QUESTIONS_FR = [
     "id": 562,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q022"
+    "source_id": "MINI5-Q022",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -20007,7 +20270,8 @@ const QUESTIONS_FR = [
     "id": 563,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q023"
+    "source_id": "MINI5-Q023",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -20042,7 +20306,8 @@ const QUESTIONS_FR = [
     "id": 564,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q024"
+    "source_id": "MINI5-Q024",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -20077,7 +20342,8 @@ const QUESTIONS_FR = [
     "id": 565,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q025"
+    "source_id": "MINI5-Q025",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -20112,7 +20378,8 @@ const QUESTIONS_FR = [
     "id": 566,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q026"
+    "source_id": "MINI5-Q026",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -20147,7 +20414,8 @@ const QUESTIONS_FR = [
     "id": 567,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q027"
+    "source_id": "MINI5-Q027",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -20182,7 +20450,8 @@ const QUESTIONS_FR = [
     "id": 568,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q028"
+    "source_id": "MINI5-Q028",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -20217,7 +20486,8 @@ const QUESTIONS_FR = [
     "id": 569,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q029"
+    "source_id": "MINI5-Q029",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -20252,7 +20522,8 @@ const QUESTIONS_FR = [
     "id": 570,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q030"
+    "source_id": "MINI5-Q030",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -20287,7 +20558,8 @@ const QUESTIONS_FR = [
     "id": 571,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q031"
+    "source_id": "MINI5-Q031",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -20322,7 +20594,8 @@ const QUESTIONS_FR = [
     "id": 572,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q032"
+    "source_id": "MINI5-Q032",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -20357,7 +20630,8 @@ const QUESTIONS_FR = [
     "id": 573,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q033"
+    "source_id": "MINI5-Q033",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -20392,7 +20666,8 @@ const QUESTIONS_FR = [
     "id": 574,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q034"
+    "source_id": "MINI5-Q034",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -20427,7 +20702,8 @@ const QUESTIONS_FR = [
     "id": 575,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q035"
+    "source_id": "MINI5-Q035",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -20462,7 +20738,8 @@ const QUESTIONS_FR = [
     "id": 576,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q036"
+    "source_id": "MINI5-Q036",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -20497,7 +20774,8 @@ const QUESTIONS_FR = [
     "id": 577,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q037"
+    "source_id": "MINI5-Q037",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -20532,7 +20810,8 @@ const QUESTIONS_FR = [
     "id": 578,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q038"
+    "source_id": "MINI5-Q038",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -20567,7 +20846,8 @@ const QUESTIONS_FR = [
     "id": 579,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q039"
+    "source_id": "MINI5-Q039",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -20602,7 +20882,8 @@ const QUESTIONS_FR = [
     "id": 580,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q040"
+    "source_id": "MINI5-Q040",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -20637,7 +20918,8 @@ const QUESTIONS_FR = [
     "id": 581,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q041"
+    "source_id": "MINI5-Q041",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -20672,7 +20954,8 @@ const QUESTIONS_FR = [
     "id": 582,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q042"
+    "source_id": "MINI5-Q042",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -20707,7 +20990,8 @@ const QUESTIONS_FR = [
     "id": 583,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q043"
+    "source_id": "MINI5-Q043",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -20742,7 +21026,8 @@ const QUESTIONS_FR = [
     "id": 584,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q044"
+    "source_id": "MINI5-Q044",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -20777,7 +21062,8 @@ const QUESTIONS_FR = [
     "id": 585,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q045"
+    "source_id": "MINI5-Q045",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -20812,7 +21098,8 @@ const QUESTIONS_FR = [
     "id": 586,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q046"
+    "source_id": "MINI5-Q046",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -20847,7 +21134,8 @@ const QUESTIONS_FR = [
     "id": 587,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q047"
+    "source_id": "MINI5-Q047",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -20882,7 +21170,8 @@ const QUESTIONS_FR = [
     "id": 588,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q048"
+    "source_id": "MINI5-Q048",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -20917,7 +21206,8 @@ const QUESTIONS_FR = [
     "id": 589,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q049"
+    "source_id": "MINI5-Q049",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -20952,7 +21242,8 @@ const QUESTIONS_FR = [
     "id": 590,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q050"
+    "source_id": "MINI5-Q050",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -20987,7 +21278,8 @@ const QUESTIONS_FR = [
     "id": 591,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q051"
+    "source_id": "MINI5-Q051",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -21022,7 +21314,8 @@ const QUESTIONS_FR = [
     "id": 592,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q052"
+    "source_id": "MINI5-Q052",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -21057,7 +21350,8 @@ const QUESTIONS_FR = [
     "id": 593,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q053"
+    "source_id": "MINI5-Q053",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -21092,7 +21386,8 @@ const QUESTIONS_FR = [
     "id": 594,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q054"
+    "source_id": "MINI5-Q054",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -21127,7 +21422,8 @@ const QUESTIONS_FR = [
     "id": 595,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q055"
+    "source_id": "MINI5-Q055",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -21162,7 +21458,8 @@ const QUESTIONS_FR = [
     "id": 596,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q056"
+    "source_id": "MINI5-Q056",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -21197,7 +21494,8 @@ const QUESTIONS_FR = [
     "id": 597,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q057"
+    "source_id": "MINI5-Q057",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -21232,7 +21530,8 @@ const QUESTIONS_FR = [
     "id": 598,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q058"
+    "source_id": "MINI5-Q058",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -21267,7 +21566,8 @@ const QUESTIONS_FR = [
     "id": 599,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q059"
+    "source_id": "MINI5-Q059",
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
@@ -21302,7 +21602,8 @@ const QUESTIONS_FR = [
     "id": 600,
     "examen": 5,
     "category": "MiniExam",
-    "source_id": "MINI5-Q060"
+    "source_id": "MINI5-Q060",
+    "miniExamen": 5
   },
   {
     "id": 601,
@@ -59123,7 +59424,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: the Scrum Master is a servant-leader who protects psychological safety; individual coaching followed by a team working agreement is the appropriate approach.",
     "category": "MiniExam",
-    "id": 301
+    "id": 301,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q002",
@@ -59141,7 +59443,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: before any corrective action, EVM requires understanding the causes (resources, estimation, risks) to target the right response.",
     "category": "MiniExam",
-    "id": 302
+    "id": 302,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q003",
@@ -59159,7 +59462,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: the PM must assess the enterprise environmental factors (EEF), document the impact, and adjust the risk management plan.",
     "category": "MiniExam",
-    "id": 303
+    "id": 303,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q004",
@@ -59177,7 +59481,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: collaboration is the most effective long-term technique, especially for legitimate technical disagreements requiring joint exploration.",
     "category": "MiniExam",
-    "id": 304
+    "id": 304,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q005",
@@ -59195,7 +59500,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: analogous estimating directly leverages historical data from a similar project, which is fast and relevant here.",
     "category": "MiniExam",
-    "id": 305
+    "id": 305,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q006",
@@ -59213,7 +59519,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: effective organizational change management involves relevant stakeholders and uses evidence of value (pilots) to build buy-in.",
     "category": "MiniExam",
-    "id": 306
+    "id": 306,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q007",
@@ -59231,7 +59538,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: recognition and valued responsibilities directly address the 'esteem' level of Maslow's pyramid.",
     "category": "MiniExam",
-    "id": 307
+    "id": 307,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q008",
@@ -59249,7 +59557,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: any change request must be documented, analyzed (cost, schedule, risk), and validated by the governance body (CCB) before execution.",
     "category": "MiniExam",
-    "id": 308
+    "id": 308,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q009",
@@ -59267,7 +59576,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: the PM must address non-conformances through a formal corrective action plan, integrated into project governance.",
     "category": "MiniExam",
-    "id": 309
+    "id": 309,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q010",
@@ -59285,7 +59595,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: the retrospective is the dedicated tool for continuous improvement; the SM facilitates identifying impediments without imposing a solution.",
     "category": "MiniExam",
-    "id": 310
+    "id": 310,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q011",
@@ -59303,7 +59614,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: an effective hybrid approach maintains common integration milestones while respecting each stream's cadence autonomy.",
     "category": "MiniExam",
-    "id": 311
+    "id": 311,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q012",
@@ -59321,7 +59633,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: techniques like WSJF or MoSCoW allow multi-factor prioritization including value, regulatory urgency, and risk.",
     "category": "MiniExam",
-    "id": 312
+    "id": 312,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q013",
@@ -59339,7 +59652,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: the PM must evaluate concrete options and document a risk response (mitigation), consistent with the risk management plan.",
     "category": "MiniExam",
-    "id": 313
+    "id": 313,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q014",
@@ -59357,7 +59671,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: critical path activities with zero float must be closely monitored, as any slip directly affects the end date.",
     "category": "MiniExam",
-    "id": 314
+    "id": 314,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q015",
@@ -59375,7 +59690,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: facing contradictory regulatory constraints, the PM must mobilize legal expertise and stakeholders for a documented, defensible solution.",
     "category": "MiniExam",
-    "id": 315
+    "id": 315,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q016",
@@ -59393,7 +59709,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: the Scrum Guide protects sprint content; the Scrum Master should coach the PO on this principle while respecting their authority over the backlog.",
     "category": "MiniExam",
-    "id": 316
+    "id": 316,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q017",
@@ -59411,7 +59728,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: formal documentation and PMO sharing turn lessons learned into reusable organizational assets.",
     "category": "MiniExam",
-    "id": 317
+    "id": 317,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q018",
@@ -59429,7 +59747,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: a governance transition requires a formal alignment meeting on the charter and project status.",
     "category": "MiniExam",
-    "id": 318
+    "id": 318,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q019",
@@ -59447,7 +59766,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: Norming is the phase where roles, working norms, and relationships stabilize after Storming conflicts.",
     "category": "MiniExam",
-    "id": 319
+    "id": 319,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q020",
@@ -59465,7 +59785,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: for a risk with high probability and high impact, avoidance or active mitigation are the priority strategies to reduce exposure.",
     "category": "MiniExam",
-    "id": 320
+    "id": 320,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q021",
@@ -59483,7 +59804,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: the business case must be regularly reassessed (benefits review), and any major deviation must be escalated to governance for decision.",
     "category": "MiniExam",
-    "id": 321
+    "id": 321,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q022",
@@ -59501,7 +59823,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: agility values individuals and interactions; adapting practices for remote inclusion is a servant leadership responsibility.",
     "category": "MiniExam",
-    "id": 322
+    "id": 322,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q023",
@@ -59519,7 +59842,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: EMV (probability x impact) for each risk, summed, provides a rigorous quantitative basis for the contingency reserve.",
     "category": "MiniExam",
-    "id": 323
+    "id": 323,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q024",
@@ -59537,7 +59861,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: the goal of scaled agile is strategic alignment and cross-team synchronization around a shared vision and cadences.",
     "category": "MiniExam",
-    "id": 324
+    "id": 324,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q025",
@@ -59555,7 +59880,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: the communications management plan must be adapted to the cultural context while establishing explicit common norms.",
     "category": "MiniExam",
-    "id": 325
+    "id": 325,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q026",
@@ -59573,7 +59899,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: in an FFP, financial risk related to costs is transferred to the supplier; an increase is only due if a specific clause (e.g., indexation) provides for it.",
     "category": "MiniExam",
-    "id": 326
+    "id": 326,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q027",
@@ -59591,7 +59918,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: the updated business case explicitly links the project to strategic objectives and expected benefits, which is the purpose of a portfolio review.",
     "category": "MiniExam",
-    "id": 327
+    "id": 327,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q028",
@@ -59609,7 +59937,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: the Scrum Master must serve the organization by clarifying roles and supporting gradual cultural change toward self-organization.",
     "category": "MiniExam",
-    "id": 328
+    "id": 328,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q029",
@@ -59627,7 +59956,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: a weighted multi-criteria scoring grid is the standard method to balance cost, quality, and risk in supplier selection.",
     "category": "MiniExam",
-    "id": 329
+    "id": 329,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q030",
@@ -59645,7 +59975,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: ethical and professional responsibility requires transparency, rapid corrective action, and communication to relevant stakeholders.",
     "category": "MiniExam",
-    "id": 330
+    "id": 330,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q031",
@@ -59663,7 +59994,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: people-centered leadership acknowledges the human context and directs toward appropriate support while reasonably adjusting workload.",
     "category": "MiniExam",
-    "id": 331
+    "id": 331,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q032",
@@ -59681,7 +60013,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: for activities difficult to partially quantify, fixed formulas (0/100, 20/80) offer an objective measure based on completing milestones.",
     "category": "MiniExam",
-    "id": 332
+    "id": 332,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q033",
@@ -59699,7 +60032,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: in this context, selection must combine financial criteria and strategic value/competitive advantage to justify the urgency.",
     "category": "MiniExam",
-    "id": 333
+    "id": 333,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q034",
@@ -59717,7 +60051,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: a collaborative recalibration workshop (e.g., Planning Poker with reference stories) helps the team improve future estimation accuracy.",
     "category": "MiniExam",
-    "id": 334
+    "id": 334,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q035",
@@ -59735,7 +60070,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: procurement closure requires formal verification of deliverable acceptance and final payment settlement before any administrative closure.",
     "category": "MiniExam",
-    "id": 335
+    "id": 335,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q036",
@@ -59753,7 +60089,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: local legal compliance requires expert consultation and active verification, a key element of enterprise environmental factors.",
     "category": "MiniExam",
-    "id": 336
+    "id": 336,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q037",
@@ -59771,7 +60108,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: situational leadership adjusts style (directing, coaching, participating, delegating) based on each individual's maturity and experience.",
     "category": "MiniExam",
-    "id": 337
+    "id": 337,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q038",
@@ -59789,7 +60127,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: the 'Validate Scope' process involves obtaining formal acceptance of completed deliverables by the client/sponsor per defined criteria.",
     "category": "MiniExam",
-    "id": 338
+    "id": 338,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q039",
@@ -59807,7 +60146,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: business value is measured by the real impact (ROI, adoption, customer satisfaction) of delivered features, beyond effort metrics like velocity.",
     "category": "MiniExam",
-    "id": 339
+    "id": 339,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q040",
@@ -59825,7 +60165,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: 'Dark Scrum' occurs when ceremonies are applied mechanically without integrating agile values (transparency, inspection, adaptation).",
     "category": "MiniExam",
-    "id": 340
+    "id": 340,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q041",
@@ -59843,7 +60184,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: strong matrix or projectized structures give the PM high authority and dedicated access to project resources.",
     "category": "MiniExam",
-    "id": 341
+    "id": 341,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q042",
@@ -59861,7 +60203,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: the benefits management plan must be reviewed to understand gaps and adjust actions favoring full value realization.",
     "category": "MiniExam",
-    "id": 342
+    "id": 342,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q043",
@@ -59879,7 +60222,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: a cross-project resource conflict falls under PMO/portfolio governance arbitration, based on organizational priorities.",
     "category": "MiniExam",
-    "id": 343
+    "id": 343,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q044",
@@ -59897,7 +60241,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: quality assurance focuses on auditing and improving processes to prevent defects at the source, rather than detecting them after the fact.",
     "category": "MiniExam",
-    "id": 344
+    "id": 344,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q045",
@@ -59915,7 +60260,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: an organizational maturity model (like OPM3) assesses the organization's capabilities and processes in project, portfolio, and program management.",
     "category": "MiniExam",
-    "id": 345
+    "id": 345,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q046",
@@ -59933,7 +60279,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: the Scrum Master must directly address the problematic behavior, reaffirm team norms, and involve HR/management if the behavior persists.",
     "category": "MiniExam",
-    "id": 346
+    "id": 346,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q047",
@@ -59951,7 +60298,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: the power/interest matrix allows classifying stakeholders and adapting communication strategy and frequency based on their influence and interest.",
     "category": "MiniExam",
-    "id": 347
+    "id": 347,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q048",
@@ -59969,7 +60317,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: make-or-buy analysis objectively evaluates cost, risk, available skills, and timelines to guide the outsourcing decision.",
     "category": "MiniExam",
-    "id": 348
+    "id": 348,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q049",
@@ -59987,7 +60336,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: effective feedback is private, factual, specific, and solution-oriented for concrete improvement.",
     "category": "MiniExam",
-    "id": 349
+    "id": 349,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q050",
@@ -60005,7 +60355,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: sunk costs should not influence a future decision, as they are already committed and unrecoverable regardless of the decision made.",
     "category": "MiniExam",
-    "id": 350
+    "id": 350,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q051",
@@ -60023,7 +60374,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: in a regulated sector, compliance controls must be continuous and documented at each phase to avoid costly non-conformances.",
     "category": "MiniExam",
-    "id": 351
+    "id": 351,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q052",
@@ -60041,7 +60393,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: delegation of authority must be progressive and based on team maturity, with guardrails to maintain organization-wide architectural coherence.",
     "category": "MiniExam",
-    "id": 352
+    "id": 352,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q053",
@@ -60059,7 +60412,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: an external dependency involves a relationship between a project activity and a factor outside the team's control, such as a contractual requirement from a third party.",
     "category": "MiniExam",
-    "id": 353
+    "id": 353,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q054",
@@ -60077,7 +60431,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: effective communication adapts content and level of detail to the audience, prioritizing key indicators and expected decisions.",
     "category": "MiniExam",
-    "id": 354
+    "id": 354,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q055",
@@ -60095,7 +60450,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: an open, non-punitive analysis of causes, combined with progressive goals, restores trust and psychological safety for future performance.",
     "category": "MiniExam",
-    "id": 355
+    "id": 355,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q056",
@@ -60113,7 +60469,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: for a well-defined, stable scope, FFP minimizes buyer risk by fixing a firm price, with cost risk borne by the supplier.",
     "category": "MiniExam",
-    "id": 356
+    "id": 356,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q057",
@@ -60131,7 +60488,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: the agile approach favors continuous validation of value hypotheses through real market data and feedback, to decide whether to pivot, persevere, or stop.",
     "category": "MiniExam",
-    "id": 357
+    "id": 357,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q058",
@@ -60149,7 +60507,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: varying formats (silent writing, anonymous polls, visual workshops) includes different participation styles and yields richer feedback.",
     "category": "MiniExam",
-    "id": 358
+    "id": 358,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q059",
@@ -60167,7 +60526,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: the 'Develop Project Management Plan' process integrates and harmonizes all subsidiary plans before execution begins.",
     "category": "MiniExam",
-    "id": 359
+    "id": 359,
+    "miniExamen": 1
   },
   {
     "source_id": "ME1EN-Q060",
@@ -60185,7 +60545,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: the PMI Code of Ethics and Professional Conduct requires immediate, transparent disclosure of any conflict of interest and removal of the person from the decision-making process.",
     "category": "MiniExam",
-    "id": 360
+    "id": 360,
+    "miniExamen": 1
   },
   {
     "source_id": "ME2EN-Q001",
@@ -60203,7 +60564,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: the sprint backlog must reflect actual capacity; the team negotiates content with the PO based on priorities.",
     "category": "MiniExam",
-    "id": 361
+    "id": 361,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q002",
@@ -60221,7 +60583,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: structured onboarding with peer mentoring fosters rapid integration and understanding of team norms.",
     "category": "MiniExam",
-    "id": 362
+    "id": 362,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q003",
@@ -60239,7 +60602,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: accommodating means yielding one's own needs to preserve harmony and the long-term relationship.",
     "category": "MiniExam",
-    "id": 363
+    "id": 363,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q004",
@@ -60257,7 +60621,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: models like ADKAR (Awareness, Desire, Knowledge, Ability, Reinforcement) help diagnose resistance, and active involvement fosters buy-in.",
     "category": "MiniExam",
-    "id": 364
+    "id": 364,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q005",
@@ -60275,7 +60640,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: collaborative backlog refinement and clear acceptance criteria (INVEST/Definition of Ready) reduce ambiguity before the sprint.",
     "category": "MiniExam",
-    "id": 365
+    "id": 365,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q006",
@@ -60293,7 +60659,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: the RACI matrix clarifies who is responsible, accountable, consulted, and informed for each activity, reducing ambiguities between departments.",
     "category": "MiniExam",
-    "id": 366
+    "id": 366,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q007",
@@ -60311,7 +60678,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: a vague or unrespected Definition of Done is a frequent cause of untested work; clarifying and collectively enforcing it resolves the problem at its root.",
     "category": "MiniExam",
-    "id": 367
+    "id": 367,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q008",
@@ -60329,7 +60697,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: active listening and regular communication build the trust needed to encourage proactive transparency from the supplier.",
     "category": "MiniExam",
-    "id": 368
+    "id": 368,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q009",
@@ -60347,7 +60716,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: collaborative alignment on a common product-level DoD, with local extensions, resolves integration problems while respecting team autonomy.",
     "category": "MiniExam",
-    "id": 369
+    "id": 369,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q010",
@@ -60365,7 +60735,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: resource registers/inventories and skills matrices provide the information needed on availability, skills, and costs for team formation.",
     "category": "MiniExam",
-    "id": 370
+    "id": 370,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q011",
@@ -60383,7 +60754,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: the Scrum Master must facilitate a collective exploration of root causes and adjust future planning for a sustainable pace (agile sustainable pace principle).",
     "category": "MiniExam",
-    "id": 371
+    "id": 371,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q012",
@@ -60401,7 +60773,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: a skills gap analysis followed by a targeted training plan is a proactive resource management plan practice.",
     "category": "MiniExam",
-    "id": 372
+    "id": 372,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q013",
@@ -60419,7 +60792,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: understanding the causes of the negative perception (poorly facilitated retros, no follow-through on actions) allows co-creating a format that restores perceived value.",
     "category": "MiniExam",
-    "id": 373
+    "id": 373,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q014",
@@ -60437,7 +60811,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: agreed overlap hours, written documentation of decisions, and asynchronous tools optimize collaboration for a multi-timezone virtual team.",
     "category": "MiniExam",
-    "id": 374
+    "id": 374,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q015",
@@ -60455,7 +60830,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: negotiating dedicated windows or establishing a trained proxy PO maintains velocity while respecting the PO's role on strategic decisions.",
     "category": "MiniExam",
-    "id": 375
+    "id": 375,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q016",
@@ -60473,7 +60849,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: in a highly interdependent team, collaborative and interpersonal skills often have more impact on overall performance than technical expertise alone.",
     "category": "MiniExam",
-    "id": 376
+    "id": 376,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q017",
@@ -60491,7 +60868,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: the Scrum Master facilitates by constructively refocusing the discussion in the moment, then addresses the problematic tone privately to preserve the relationship and psychological safety.",
     "category": "MiniExam",
-    "id": 377
+    "id": 377,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q018",
@@ -60509,7 +60887,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: for high power and low interest, the 'Keep Satisfied' strategy provides infrequent, sufficient high-level information to maintain their support.",
     "category": "MiniExam",
-    "id": 378
+    "id": 378,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q019",
@@ -60527,7 +60906,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: an empirical approach (discussing, experimenting with variants, measuring real impact) lets the team decide collectively based on concrete data.",
     "category": "MiniExam",
-    "id": 379
+    "id": 379,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q020",
@@ -60545,7 +60925,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: the WBS hierarchically decomposes the entire project scope into manageable work packages.",
     "category": "MiniExam",
-    "id": 380
+    "id": 380,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q021",
@@ -60563,7 +60944,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: the Critical Path Method (CPM) calculates the minimum project duration by identifying the longest sequence of activities with no float.",
     "category": "MiniExam",
-    "id": 381
+    "id": 381,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q022",
@@ -60581,7 +60963,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: setting a WIP limit forces the team to resolve the bottleneck before adding new work, a fundamental Kanban/Lean flow principle.",
     "category": "MiniExam",
-    "id": 382
+    "id": 382,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q023",
@@ -60599,7 +60982,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: the probability-impact matrix allows a rapid qualitative assessment of risks to prioritize those requiring a response.",
     "category": "MiniExam",
-    "id": 383
+    "id": 383,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q024",
@@ -60617,7 +61001,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: the performance measurement baseline (PMB) integrates approved scope, schedule, and cost baselines, used for earned value analysis.",
     "category": "MiniExam",
-    "id": 384
+    "id": 384,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q025",
@@ -60635,7 +61020,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: the average velocity of previous sprints is the standard empirical metric to forecast future delivery capacity.",
     "category": "MiniExam",
-    "id": 385
+    "id": 385,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q026",
@@ -60653,7 +61039,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: fast-tracking consists of executing normally sequential activities in parallel, without major additional cost, when risk allows.",
     "category": "MiniExam",
-    "id": 386
+    "id": 386,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q027",
@@ -60671,7 +61058,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: any request is compared against the approved scope baseline to determine whether it constitutes a deviation requiring a formal change request.",
     "category": "MiniExam",
-    "id": 387
+    "id": 387,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q028",
@@ -60689,7 +61077,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: integrating regulatory documentation into the Definition of Done allows compliant, incremental production without sacrificing agility.",
     "category": "MiniExam",
-    "id": 388
+    "id": 388,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q029",
@@ -60707,7 +61096,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: Control Quality involves monitoring and recording the results of executing quality activities to verify deliverable conformance.",
     "category": "MiniExam",
-    "id": 389
+    "id": 389,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q030",
@@ -60725,7 +61115,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: EAC forecasts the project's final total cost accounting for current performance (CPI) and costs already incurred.",
     "category": "MiniExam",
-    "id": 390
+    "id": 390,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q031",
@@ -60743,7 +61134,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: the Control Procurements process includes managing contractual relationships and handling claims administration.",
     "category": "MiniExam",
-    "id": 391
+    "id": 391,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q032",
@@ -60761,7 +61153,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: allocating a regular capacity share to technical debt, made visible and prioritized in the backlog, is the recommended sustainable practice.",
     "category": "MiniExam",
-    "id": 392
+    "id": 392,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q033",
@@ -60779,7 +61172,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: Monte Carlo simulation models the cumulative effect of multiple uncertainties to estimate a probabilistic distribution of outcomes (cost/schedule).",
     "category": "MiniExam",
-    "id": 393
+    "id": 393,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q034",
@@ -60797,7 +61191,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: the project charter formally authorizes the project and names the project manager with their level of authority.",
     "category": "MiniExam",
-    "id": 394
+    "id": 394,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q035",
@@ -60815,7 +61210,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: the sprint burndown chart visualizes remaining work relative to elapsed sprint time, a standard agile tracking tool.",
     "category": "MiniExam",
-    "id": 395
+    "id": 395,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q036",
@@ -60833,7 +61229,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: phase closure requires formal acceptance of deliverables and capitalizing on lessons learned before moving to the next phase (phase review/gate review).",
     "category": "MiniExam",
-    "id": 396
+    "id": 396,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q037",
@@ -60851,7 +61248,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: currency fluctuations and marketplace conditions are external EEFs to monitor and integrate into risk management.",
     "category": "MiniExam",
-    "id": 397
+    "id": 397,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q038",
@@ -60869,7 +61267,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: IRR or benefit-cost ratio normalize profitability as a percentage or ratio, allowing fair comparison between projects of different sizes.",
     "category": "MiniExam",
-    "id": 398
+    "id": 398,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q039",
@@ -60887,7 +61286,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: a durable agile culture relies on tolerance for failure (learning), trust, and decentralized decision-making, fundamental cultural elements.",
     "category": "MiniExam",
-    "id": 399
+    "id": 399,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q040",
@@ -60905,7 +61305,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: security requirements must be integrated from planning, in consultation with relevant security/compliance experts.",
     "category": "MiniExam",
-    "id": 400
+    "id": 400,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q041",
@@ -60923,7 +61324,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: OKRs align teams on measurable key results while preserving autonomy on how to achieve them, consistent with the agile spirit.",
     "category": "MiniExam",
-    "id": 401
+    "id": 401,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q042",
@@ -60941,7 +61343,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: the PM must escalate to governance and reassess the business case to adjust strategy (differentiation, schedule acceleration, etc.).",
     "category": "MiniExam",
-    "id": 402
+    "id": 402,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q043",
@@ -60959,7 +61362,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: NPS and adoption/retention rates directly measure user satisfaction and perceived value, key external indicators of product success.",
     "category": "MiniExam",
-    "id": 403
+    "id": 403,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q044",
@@ -60977,7 +61381,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: integrating concrete CSR criteria into vendor selection and the project management plan is the practice aligned with professional and societal responsibility.",
     "category": "MiniExam",
-    "id": 404
+    "id": 404,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q045",
@@ -60995,7 +61400,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: evidence-based influence (return on investment, benchmarks) is the most effective technique to convince a skeptical decision-maker.",
     "category": "MiniExam",
-    "id": 405
+    "id": 405,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q046",
@@ -61013,7 +61419,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: refocusing the retrospective on the team's 'circle of influence' helps identify concrete internal actions, fostering accountability.",
     "category": "MiniExam",
-    "id": 406
+    "id": 406,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q047",
@@ -61031,7 +61438,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: the Requirements Traceability Matrix links each requirement to its origin, deliverables, and acceptance tests, ensuring complete coverage.",
     "category": "MiniExam",
-    "id": 407
+    "id": 407,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q048",
@@ -61049,7 +61457,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: continuous integration with automated tests detects defects as early as possible, reducing correction cost and improving continuous quality.",
     "category": "MiniExam",
-    "id": 408
+    "id": 408,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q049",
@@ -61067,7 +61476,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: the 'Identify Stakeholders' process systematically catalogs individuals and organizations impacted by or impacting the project.",
     "category": "MiniExam",
-    "id": 409
+    "id": 409,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q050",
@@ -61085,7 +61495,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: risk management is iterative; the register must be reviewed regularly to integrate new risks and the evolution of existing ones.",
     "category": "MiniExam",
-    "id": 410
+    "id": 410,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q051",
@@ -61103,7 +61514,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: the PMI Code of Ethics requires transparency and rigorous management of conflicts of interest, with formal documentation and application of the compliance policy.",
     "category": "MiniExam",
-    "id": 411
+    "id": 411,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q052",
@@ -61121,7 +61533,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: the transition to product management involves permanent, cross-functional teams organized around durable business value rather than one-off projects.",
     "category": "MiniExam",
-    "id": 412
+    "id": 412,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q053",
@@ -61139,7 +61552,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: a major strategic change requires a formal portfolio governance review to determine the project's future.",
     "category": "MiniExam",
-    "id": 413
+    "id": 413,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q054",
@@ -61157,7 +61571,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: WSJF combines business value, urgency, risk reduction, and effort size to maximize value delivered per unit of time, particularly useful under budget constraint.",
     "category": "MiniExam",
-    "id": 414
+    "id": 414,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q055",
@@ -61175,7 +61590,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: the Ishikawa diagram (cause-and-effect) visually structures the potential causes of a quality problem by category (manpower, method, material, etc.).",
     "category": "MiniExam",
-    "id": 415
+    "id": 415,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q056",
@@ -61193,7 +61609,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: TCO integrates all costs over the full lifecycle (acquisition, maintenance, operation, end-of-life), enabling a rigorous financial comparison between options.",
     "category": "MiniExam",
-    "id": 416
+    "id": 416,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q057",
@@ -61211,7 +61628,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: mutual awareness of communication styles and explicit team norms durably reduce misunderstandings.",
     "category": "MiniExam",
-    "id": 417
+    "id": 417,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q058",
@@ -61229,7 +61647,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: a scaled tooling investment decision should be based on a genuine cost-benefit analysis integrating expected organizational gains.",
     "category": "MiniExam",
-    "id": 418
+    "id": 418,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q059",
@@ -61247,7 +61666,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: declining satisfaction despite stable velocity requires deep human exploration (purpose, recognition, perceived workload) to prevent future disengagement.",
     "category": "MiniExam",
-    "id": 419
+    "id": 419,
+    "miniExamen": 2
   },
   {
     "source_id": "ME2EN-Q060",
@@ -61265,7 +61685,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: the PMI Code of Ethics requires refusing to use inappropriately obtained information and handling the situation with transparency and integrity.",
     "category": "MiniExam",
-    "id": 420
+    "id": 420,
+    "miniExamen": 2
   },
   {
     "source_id": "ME3EN-Q001",
@@ -61283,7 +61704,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: a private, caring conversation reinforces psychological safety and helps the person honestly express their real capacity.",
     "category": "MiniExam",
-    "id": 421
+    "id": 421,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q002",
@@ -61301,7 +61723,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: the management reserve covers unidentified risks and its use generally requires sponsor or governance approval.",
     "category": "MiniExam",
-    "id": 422
+    "id": 422,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q003",
@@ -61319,7 +61742,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: low adoption despite rapid delivery often signals a misalignment between what's being built and real needs, requiring more user research and hypothesis validation.",
     "category": "MiniExam",
-    "id": 423
+    "id": 423,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q004",
@@ -61337,7 +61761,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: for high interest and low power, the 'Keep Informed' strategy involves regularly providing information without requiring intensive management.",
     "category": "MiniExam",
-    "id": 424
+    "id": 424,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q005",
@@ -61355,7 +61780,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: the S-curve represents the cumulative budget time-phased across the project, serving as the baseline for earned value analysis.",
     "category": "MiniExam",
-    "id": 425
+    "id": 425,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q006",
@@ -61373,7 +61799,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: integrating compliance indicators into periodic reports and milestones guarantees the continuous tracking expected by institutional donors.",
     "category": "MiniExam",
-    "id": 426
+    "id": 426,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q007",
@@ -61391,7 +61818,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: progressive coaching and reinforcing the PO's legitimacy with management builds durable autonomy.",
     "category": "MiniExam",
-    "id": 427
+    "id": 427,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q008",
@@ -61409,7 +61837,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: Cost Variance (CV = EV - AC) directly measures the difference between earned value and actual cost spent for the work performed.",
     "category": "MiniExam",
-    "id": 428
+    "id": 428,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q009",
@@ -61427,7 +61856,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: regular reviews based on value metrics and OKRs, with rapid escalation, offer light but effective governance suited to agility.",
     "category": "MiniExam",
-    "id": 429
+    "id": 429,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q010",
@@ -61445,7 +61875,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: the PM should proactively facilitate a structured resolution even for inter-departmental conflicts affecting their project.",
     "category": "MiniExam",
-    "id": 430
+    "id": 430,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q011",
@@ -61463,7 +61894,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: reducing WIP limits forces resolution of bottlenecks and improves flow, thereby decreasing average cycle time (Kanban/Lean principle).",
     "category": "MiniExam",
-    "id": 431
+    "id": 431,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q012",
@@ -61481,7 +61913,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: in high power-distance cultures, offering alternative channels (anonymous feedback, private discussions) helps surface concerns that wouldn't be expressed publicly.",
     "category": "MiniExam",
-    "id": 432
+    "id": 432,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q013",
@@ -61499,7 +61932,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: silent brainwriting and individual channels let introverted profiles contribute without the pressure of immediate public speaking.",
     "category": "MiniExam",
-    "id": 433
+    "id": 433,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q014",
@@ -61517,7 +61951,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: the assumption log documents initial assumptions and constraints and must be regularly reviewed to verify their continued validity.",
     "category": "MiniExam",
-    "id": 434
+    "id": 434,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q015",
@@ -61535,7 +61970,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: rapid growth in the number of teams without a coordination mechanism (Scrum of Scrums, guilds, architectural alignment) risks fragmenting product coherence and communication.",
     "category": "MiniExam",
-    "id": 435
+    "id": 435,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q016",
@@ -61553,7 +61989,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: continuously documented objective criteria, combined with balanced constructive feedback, ensure a fair evaluation useful for professional development.",
     "category": "MiniExam",
-    "id": 436
+    "id": 436,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q017",
@@ -61571,7 +62008,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: fast-tracking reduces duration with no significant additional cost by executing certain activities in parallel, suited to a tight budget constraint.",
     "category": "MiniExam",
-    "id": 437
+    "id": 437,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q018",
@@ -61589,7 +62027,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: public funding requires rigorous, continuous documentation of expenditures and decisions to guarantee transparency and audit readiness.",
     "category": "MiniExam",
-    "id": 438
+    "id": 438,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q019",
@@ -61607,7 +62046,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: observing, listening, and progressively demonstrating value is the most effective approach to building trust with a distrustful team facing a new consultant.",
     "category": "MiniExam",
-    "id": 439
+    "id": 439,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q020",
@@ -61625,7 +62065,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: statistical sampling verifies the conformance of a production batch by inspecting a representative subset rather than 100% of units.",
     "category": "MiniExam",
-    "id": 440
+    "id": 440,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q021",
@@ -61643,7 +62084,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: a significant macroeconomic deterioration must trigger a business case reassessment and a portfolio governance review.",
     "category": "MiniExam",
-    "id": 441
+    "id": 441,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q022",
@@ -61661,7 +62103,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: dedicated informal moments recreate the social bond lost from physical proximity, fostering cohesion and team psychological safety.",
     "category": "MiniExam",
-    "id": 442
+    "id": 442,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q023",
@@ -61679,7 +62122,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: the RFP (or RFQ/RFI depending on the level of detail required) formalizes the solicitation of bids or information from potential suppliers in the procurement process.",
     "category": "MiniExam",
-    "id": 443
+    "id": 443,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q024",
@@ -61697,7 +62141,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: frameworks like SAFe or LeSS explicitly structure the balance between communicated strategic alignment and team execution autonomy.",
     "category": "MiniExam",
-    "id": 444
+    "id": 444,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q025",
@@ -61715,7 +62160,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: public recognition and development opportunities are powerful non-financial motivators aligned with esteem and achievement needs.",
     "category": "MiniExam",
-    "id": 445
+    "id": 445,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q026",
@@ -61733,7 +62179,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: at project start with little information, a high-level parametric or analogous estimate (order of magnitude, -25%/+75%) is the appropriate method.",
     "category": "MiniExam",
-    "id": 446
+    "id": 446,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q027",
@@ -61751,7 +62198,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: the PM must integrate and actively monitor compliance with safety standards, including at subcontractors, per their legal and ethical obligations.",
     "category": "MiniExam",
-    "id": 447
+    "id": 447,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q028",
@@ -61769,7 +62217,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: the Scrum Master facilitates by refocusing the discussion and reaffirming that final prioritization authority belongs to the PO, outside the review setting.",
     "category": "MiniExam",
-    "id": 448
+    "id": 448,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q029",
@@ -61787,7 +62236,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: cost-reimbursable contracts like CPFF are suited for R&D projects with uncertain scope, allowing scope flexibility with reimbursement of actual costs incurred.",
     "category": "MiniExam",
-    "id": 449
+    "id": 449,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q030",
@@ -61805,7 +62255,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: a rigorous impact analysis with tax experts precisely quantifies the effect of the regulatory change on the budget and allows the plan to be adjusted accordingly.",
     "category": "MiniExam",
-    "id": 450
+    "id": 450,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q031",
@@ -61823,7 +62274,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: formats allowing indirect or written expression respect cultural diversity while preserving the retrospective's continuous improvement goal.",
     "category": "MiniExam",
-    "id": 451
+    "id": 451,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q032",
@@ -61841,7 +62293,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: the critical path groups activities with zero (or minimal) total float that determine the project's minimum duration.",
     "category": "MiniExam",
-    "id": 452
+    "id": 452,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q033",
@@ -61859,7 +62312,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: value stagnation despite stable production signals the need to validate the fundamental product-market fit hypothesis through concrete experiments.",
     "category": "MiniExam",
-    "id": 453
+    "id": 453,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q034",
@@ -61877,7 +62331,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: after mediation fails, reorganizing roles or separating tasks is a pragmatic last resort to preserve collective performance.",
     "category": "MiniExam",
-    "id": 454
+    "id": 454,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q035",
@@ -61895,7 +62350,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: the Cost of Quality concept establishes that prevention and appraisal costs are generally lower than costs of non-conformance (rework, corrections, warranties).",
     "category": "MiniExam",
-    "id": 455
+    "id": 455,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q036",
@@ -61913,7 +62369,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: a major organizational merger requires a proactive impact assessment and communication with the sponsor to anticipate possible priority changes.",
     "category": "MiniExam",
-    "id": 456
+    "id": 456,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q037",
@@ -61931,7 +62388,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: the Scrum Master must intervene quickly to refocus the daily on its true purpose and restore mutual respect norms essential to collaboration.",
     "category": "MiniExam",
-    "id": 457
+    "id": 457,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q038",
@@ -61949,7 +62407,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: the 'Close Project or Phase' process finalizes all administrative activities, obtains final acceptance, and archives project documents.",
     "category": "MiniExam",
-    "id": 458
+    "id": 458,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q039",
@@ -61967,7 +62426,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: budget envelope funding with regular value checkpoints (lean budgeting) reconciles financial discipline with execution agility.",
     "category": "MiniExam",
-    "id": 459
+    "id": 459,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q040",
@@ -61985,7 +62445,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: targeted communication skills development complements their technical expertise and reduces observed friction.",
     "category": "MiniExam",
-    "id": 460
+    "id": 460,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q041",
@@ -62003,7 +62464,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: Scrumban typically combines removing strict fixed iterations (Kanban-style continuous flow) while retaining some Scrum ceremonies and WIP limits to manage flow.",
     "category": "MiniExam",
-    "id": 461
+    "id": 461,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q042",
@@ -62021,7 +62483,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: a gap analysis between current organizational capabilities and specific project needs identifies necessary investments or training.",
     "category": "MiniExam",
-    "id": 462
+    "id": 462,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q043",
@@ -62039,7 +62502,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: without direct contact with end users, the risk of product misalignment is real; the Scrum Master can coach the PO on the importance of direct user discovery.",
     "category": "MiniExam",
-    "id": 463
+    "id": 463,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q044",
@@ -62057,7 +62521,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: configuration management ensures systematic tracking of versions and modifications to technical deliverables and their characteristics.",
     "category": "MiniExam",
-    "id": 464
+    "id": 464,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q045",
@@ -62075,7 +62540,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: integrating sustainability criteria directly into acceptance criteria of technical user stories allows concrete, incremental action consistent with agility.",
     "category": "MiniExam",
-    "id": 465
+    "id": 465,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q046",
@@ -62093,7 +62559,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: the resource management plan includes clear descriptions of roles, responsibilities, and authority levels, essential for clarifying expectations from the start.",
     "category": "MiniExam",
-    "id": 466
+    "id": 466,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q047",
@@ -62111,7 +62578,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: a multi-criteria probability/impact matrix allows simultaneous evaluation of a risk's effect on multiple objectives (cost, schedule, quality, scope).",
     "category": "MiniExam",
-    "id": 467
+    "id": 467,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q048",
@@ -62129,7 +62597,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: the 'privacy by design' principle requires integrating data protection from the design stage, a fundamental GDPR requirement and good compliance practice.",
     "category": "MiniExam",
-    "id": 468
+    "id": 468,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q049",
@@ -62147,7 +62616,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: investigating and adjusting workload per the sustainable pace principle prevents burnout and preserves long-term performance.",
     "category": "MiniExam",
-    "id": 469
+    "id": 469,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q050",
@@ -62165,7 +62635,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: three-point estimating (PERT) explicitly captures uncertainty via optimistic, pessimistic, and most likely scenarios, suited to uncertain external factors.",
     "category": "MiniExam",
-    "id": 470
+    "id": 470,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q051",
@@ -62183,7 +62654,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: factual, transparent communication backed by concrete data is essential for honestly managing an investor's expectations.",
     "category": "MiniExam",
-    "id": 471
+    "id": 471,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q052",
@@ -62201,7 +62673,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: evaluating objective shared metrics allows a data-driven decision rather than one based on subjective perceived individual productivity.",
     "category": "MiniExam",
-    "id": 472
+    "id": 472,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q053",
@@ -62219,7 +62692,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: free float is the delay possible for an activity without impacting the early start date of the immediately following activity.",
     "category": "MiniExam",
-    "id": 473
+    "id": 473,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q054",
@@ -62237,7 +62711,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: reusing already continuously tracked value metrics to feed quarterly reports avoids duplicate reporting work while meeting donor requirements.",
     "category": "MiniExam",
-    "id": 474
+    "id": 474,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q055",
@@ -62255,7 +62730,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: aligning tasks with individual strengths while balancing overall workload optimizes both performance and team engagement.",
     "category": "MiniExam",
-    "id": 475
+    "id": 475,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q056",
@@ -62273,7 +62749,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: a mandatory dependency (hard logic) results from the intrinsic physical nature of the work, such as needing foundations before walls.",
     "category": "MiniExam",
-    "id": 476
+    "id": 476,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q057",
@@ -62291,7 +62768,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: open source licenses vary considerably (permissive, copyleft) and must be checked to ensure compatibility with the product's intended commercial use.",
     "category": "MiniExam",
-    "id": 477
+    "id": 477,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q058",
@@ -62309,7 +62787,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: structured techniques like devil's advocate or systematic round-robin actively counter groupthink and value diverse perspectives.",
     "category": "MiniExam",
-    "id": 478
+    "id": 478,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q059",
@@ -62327,7 +62806,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: for very short-duration activities, the 0/100 formula is simple and avoids the bias of a hard-to-justify intermediate estimate.",
     "category": "MiniExam",
-    "id": 479
+    "id": 479,
+    "miniExamen": 3
   },
   {
     "source_id": "ME3EN-Q060",
@@ -62345,7 +62825,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: the Code of Ethics requires immediate corrective action to restore transparency and reaffirm reporting integrity standards with the team.",
     "category": "MiniExam",
-    "id": 480
+    "id": 480,
+    "miniExamen": 3
   },
   {
     "source_id": "ME4EN-Q001",
@@ -62363,7 +62844,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: Planning Poker with simultaneous, anonymous voting reduces authority influence and encourages fairer collective estimation.",
     "category": "MiniExam",
-    "id": 481
+    "id": 481,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q002",
@@ -62381,7 +62863,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: the 'Exploit' strategy aims to guarantee full materialization of an opportunity, unlike negative risk strategies.",
     "category": "MiniExam",
-    "id": 482
+    "id": 482,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q003",
@@ -62399,7 +62882,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: the logframe formalizes development objectives and impact indicators agreed with donors, an essential reference for verifying strategic alignment.",
     "category": "MiniExam",
-    "id": 483
+    "id": 483,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q004",
@@ -62417,7 +62901,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: understanding root causes through exit interviews and adjusting managerial practices is the proactive approach to durably reduce turnover.",
     "category": "MiniExam",
-    "id": 484
+    "id": 484,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q005",
@@ -62435,7 +62920,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: by definition, critical path activities have zero (or minimal network value) total float, meaning no delay is possible without affecting the end date.",
     "category": "MiniExam",
-    "id": 485
+    "id": 485,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q006",
@@ -62453,7 +62939,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: comparing CAC, LTV, and retention rates provides a factual basis for arbitrating between acquisition and retention investment.",
     "category": "MiniExam",
-    "id": 486
+    "id": 486,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q007",
@@ -62471,7 +62958,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: clarifying and enforcing the formal change management process channels requests while ensuring traceability and consistency for the team.",
     "category": "MiniExam",
-    "id": 487
+    "id": 487,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q008",
@@ -62489,7 +62977,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: assessing criticality with the PO allows a pragmatic decision balancing sprint stability with the necessary responsiveness for impactful defects.",
     "category": "MiniExam",
-    "id": 488
+    "id": 488,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q009",
@@ -62507,7 +62996,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: assessing the compliance gap and integrating necessary corrections into the project management plan is the proactive compliance approach, even mid-execution.",
     "category": "MiniExam",
-    "id": 489
+    "id": 489,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q010",
@@ -62525,7 +63015,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: a significant change in composition (50%) generally returns the team to a Forming stage, requiring rebuilding of trust and norms.",
     "category": "MiniExam",
-    "id": 490
+    "id": 490,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q011",
@@ -62543,7 +63034,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: the contingency reserve covers known and identified risks (known-unknowns), generally calculated through expected monetary value (EMV) analysis.",
     "category": "MiniExam",
-    "id": 491
+    "id": 491,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q012",
@@ -62561,7 +63053,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: the build-measure-learn cycle guides the 'pivot or persevere' decision based on actual adoption and hypothesis validation data.",
     "category": "MiniExam",
-    "id": 492
+    "id": 492,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q013",
@@ -62579,7 +63072,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: a formal clarification session with documented, aligned success criteria prevents future misunderstandings about the definition of project success.",
     "category": "MiniExam",
-    "id": 493
+    "id": 493,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q014",
@@ -62597,7 +63091,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: the control chart monitors process stability over time, identifying variations outside acceptable control limits.",
     "category": "MiniExam",
-    "id": 494
+    "id": 494,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q015",
@@ -62615,7 +63110,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: applying the stricter standard between jurisdictions is the prudent compliance practice for extraterritorial laws like anti-corruption legislation (e.g., FCPA).",
     "category": "MiniExam",
-    "id": 495
+    "id": 495,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q016",
@@ -62633,7 +63129,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: targeted inclusion, clear scope, and planned knowledge transfer maximize the value of external expertise while preserving the permanent team's autonomy.",
     "category": "MiniExam",
-    "id": 496
+    "id": 496,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q017",
@@ -62651,7 +63148,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: the Delphi technique allows iterative, anonymous consultation of experts to converge toward consensus while reducing group influence bias.",
     "category": "MiniExam",
-    "id": 497
+    "id": 497,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q018",
@@ -62669,7 +63167,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: comparing market and competitive evolution to value delivery pace assesses whether the organization risks losing strategic relevance.",
     "category": "MiniExam",
-    "id": 498
+    "id": 498,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q019",
@@ -62687,7 +63186,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: shared cross-functional goals and activities rebuild a unified team identity and reduce competing sub-group dynamics.",
     "category": "MiniExam",
-    "id": 499
+    "id": 499,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q020",
@@ -62705,7 +63205,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: the INVEST criterion is the recognized standard for evaluating whether a user story is well-formed before entering the sprint.",
     "category": "MiniExam",
-    "id": 500
+    "id": 500,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q021",
@@ -62723,7 +63224,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: Actual Cost (AC) represents the amount actually spent on the work performed at a given date.",
     "category": "MiniExam",
-    "id": 501
+    "id": 501,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q022",
@@ -62741,7 +63243,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: Story Mapping visualizes the end-to-end user journey, helping identify coherent value slices for functional MVP releases.",
     "category": "MiniExam",
-    "id": 502
+    "id": 502,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q023",
@@ -62759,7 +63262,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: offering valuable learning and career development opportunities is durable intrinsic motivation, even for a temporary team.",
     "category": "MiniExam",
-    "id": 503
+    "id": 503,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q024",
@@ -62777,7 +63281,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: TCO demonstrates that an initial investment in quality often reduces non-conformance costs (rework, warranties, dissatisfaction) over the entire lifecycle.",
     "category": "MiniExam",
-    "id": 504
+    "id": 504,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q025",
@@ -62795,7 +63300,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: building a shared, multidimensional definition of value (business, user, technical) aligns team and PO on common priorities.",
     "category": "MiniExam",
-    "id": 505
+    "id": 505,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q026",
@@ -62813,7 +63319,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: User Acceptance Testing (UAT) formally validates that the deliverable meets functional requirements from the end user's perspective before production.",
     "category": "MiniExam",
-    "id": 506
+    "id": 506,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q027",
@@ -62831,7 +63338,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: specific social impact indicators, aligned with the organization's theory of change, meet donor accountability expectations, complementing internal agile metrics.",
     "category": "MiniExam",
-    "id": 507
+    "id": 507,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q028",
@@ -62849,7 +63357,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: explaining the organizational risk and making documentation an explicit performance expectation holds the person accountable while reducing dependency risk.",
     "category": "MiniExam",
-    "id": 508
+    "id": 508,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q029",
@@ -62867,7 +63376,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: a cross-team dependency board regularly updated during the Scrum of Scrums offers continuous, actionable visibility on technical dependencies.",
     "category": "MiniExam",
-    "id": 509
+    "id": 509,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q030",
@@ -62885,7 +63395,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: assessing the real impact, identifying compliant alternatives, and documenting the risk is the proactive, legal approach appropriate for an embargo.",
     "category": "MiniExam",
-    "id": 510
+    "id": 510,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q031",
@@ -62903,7 +63414,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: systematic after-the-fact criticism without in-meeting expression often signals a lack of psychological safety; alternative spaces and explicit encouragement foster more constructive real-time expression.",
     "category": "MiniExam",
-    "id": 511
+    "id": 511,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q032",
@@ -62921,7 +63433,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: the CCB is the formal body generally responsible for reviewing, approving, or rejecting change requests per a defined project governance process.",
     "category": "MiniExam",
-    "id": 512
+    "id": 512,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q033",
@@ -62939,7 +63452,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: a responsible prioritization assesses the potential impact of the security risk (even invisible short-term) alongside direct business value, reflecting mature risk management.",
     "category": "MiniExam",
-    "id": 513
+    "id": 513,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q034",
@@ -62957,7 +63471,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: proactively clarifying with concrete examples and documenting shared understanding prevents costly misunderstandings later in the project.",
     "category": "MiniExam",
-    "id": 514
+    "id": 514,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q035",
@@ -62975,7 +63490,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: a weighted decision matrix allows comparing several alternatives objectively based on multiple criteria and their relative importance.",
     "category": "MiniExam",
-    "id": 515
+    "id": 515,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q036",
@@ -62993,7 +63509,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: proactively seeking alignment with new leadership and verifying the project's ongoing relevance is a proactive governance management approach.",
     "category": "MiniExam",
-    "id": 516
+    "id": 516,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q037",
@@ -63011,7 +63528,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: progressively shifting toward on-demand coaching while remaining available for organizational impediments respects growing autonomy while maintaining a safety net.",
     "category": "MiniExam",
-    "id": 517
+    "id": 517,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q038",
@@ -63029,7 +63547,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: resource leveling adjusts activity start and end dates to respect resource availability constraints, potentially modifying the critical path.",
     "category": "MiniExam",
-    "id": 518
+    "id": 518,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q039",
@@ -63047,7 +63566,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: inner source fosters component reuse, reduces duplicated effort, and improves technical consistency across teams, a key organizational benefit.",
     "category": "MiniExam",
-    "id": 519
+    "id": 519,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q040",
@@ -63065,7 +63585,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: listening, explaining context, and clarifying the 'disagree and commit' principle respects both legitimate expression and the need to move forward collectively after a governance decision.",
     "category": "MiniExam",
-    "id": 520
+    "id": 520,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q041",
@@ -63083,7 +63604,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: stakeholders include all individuals, groups, or organizations who can affect or be affected by the project, well beyond the direct execution team.",
     "category": "MiniExam",
-    "id": 521
+    "id": 521,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q042",
@@ -63101,7 +63623,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: integrating the cost into updated projections and evaluating energy reduction options is the proactive, responsible approach to a new environmental regulatory factor.",
     "category": "MiniExam",
-    "id": 522
+    "id": 522,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q043",
@@ -63119,7 +63642,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: coaching the PO on the importance of sharing context and value strengthens transparency, engagement, and mutual understanding without undermining their authority.",
     "category": "MiniExam",
-    "id": 523
+    "id": 523,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q044",
@@ -63137,7 +63661,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: sensitivity analysis of the critical path and near-critical paths identifies delay risk areas to monitor closely, especially when multiple paths have low float.",
     "category": "MiniExam",
-    "id": 524
+    "id": 524,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q045",
@@ -63155,7 +63680,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: a structured engagement survey exploring work-life balance, recognition, and perceived meaning identifies the root causes of declining satisfaction despite good results.",
     "category": "MiniExam",
-    "id": 525
+    "id": 525,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q046",
@@ -63173,7 +63699,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: structured brainstorming is specifically designed to generate a maximum number of creative ideas in a collaborative problem-solving setting.",
     "category": "MiniExam",
-    "id": 526
+    "id": 526,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q047",
@@ -63191,7 +63718,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: an MVP or rapid prototype validates a hypothesis with minimal effort before committing greater resources, a key Lean Startup and agile principle.",
     "category": "MiniExam",
-    "id": 527
+    "id": 527,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q048",
@@ -63209,7 +63737,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: a program management maturity assessment verifies whether the organization has the processes, governance, and skills necessary before engaging in a complex program.",
     "category": "MiniExam",
-    "id": 528
+    "id": 528,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q049",
@@ -63227,7 +63756,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: reserving synchronous for complex, sensitive topics while keeping asynchronous for factual exchanges balances efficiency and clarity of communication.",
     "category": "MiniExam",
-    "id": 529
+    "id": 529,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q050",
@@ -63245,7 +63775,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: the Project Management Plan integrates all subsidiary plans (cost, schedule, scope, quality, etc.) in a coherent, coordinated manner.",
     "category": "MiniExam",
-    "id": 530
+    "id": 530,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q051",
@@ -63263,7 +63794,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: regular internal audits detect and correct compliance gaps before the final external audit, reducing the risk of certification failure.",
     "category": "MiniExam",
-    "id": 531
+    "id": 531,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q052",
@@ -63281,7 +63813,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: planning recovery periods, communicating the milestone's meaning, and recognizing effort are durable practices for managing performance under temporary high load.",
     "category": "MiniExam",
-    "id": 532
+    "id": 532,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q053",
@@ -63299,7 +63832,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: the Finish-to-Start (FS) relationship is the most common and means the successor cannot start until the predecessor finishes.",
     "category": "MiniExam",
-    "id": 533
+    "id": 533,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q054",
@@ -63317,7 +63851,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: integrating regulatory traceability into the Definition of Done for each increment ensures continuous compliance without sacrificing iterative agility.",
     "category": "MiniExam",
-    "id": 534
+    "id": 534,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q055",
@@ -63335,7 +63870,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: structured facilitation techniques allow sensitive topics to be addressed constructively without breaking trust, while avoiding the buildup of unspoken issues.",
     "category": "MiniExam",
-    "id": 535
+    "id": 535,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q056",
@@ -63353,7 +63889,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: process flow diagrams and use case diagrams effectively model a system's complex data flows and interactions, facilitating detailed requirements capture.",
     "category": "MiniExam",
-    "id": 536
+    "id": 536,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q057",
@@ -63371,7 +63908,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: assessing, engaging in dialogue about expected standards, and escalating if necessary reflects responsible, ethical management of a conduct issue with an external partner.",
     "category": "MiniExam",
-    "id": 537
+    "id": 537,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q058",
@@ -63389,7 +63927,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: gradually assigning responsibilities with mentoring and regular feedback is a proven, structured approach to leadership development.",
     "category": "MiniExam",
-    "id": 538
+    "id": 538,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q059",
@@ -63407,7 +63946,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: varying formats and ensuring real follow-up on decided actions maintains engagement and effectiveness of retrospectives over time.",
     "category": "MiniExam",
-    "id": 539
+    "id": 539,
+    "miniExamen": 4
   },
   {
     "source_id": "ME4EN-Q060",
@@ -63425,7 +63965,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: the PMI Code of Ethics requires reporting and correcting any significant reporting error, whether favorable or unfavorable, in the name of transparency and honesty.",
     "category": "MiniExam",
-    "id": 540
+    "id": 540,
+    "miniExamen": 4
   },
   {
     "source_id": "ME5EN-Q001",
@@ -63443,7 +63984,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: a private conversation reminding of collaboration values, combined with a collective presentation of results, corrects the behavior without humiliating the person.",
     "category": "MiniExam",
-    "id": 541
+    "id": 541,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q002",
@@ -63461,7 +64003,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: the 'Monitor Risks' process evaluates the ongoing effectiveness of the risk management process, identifies new risks, and verifies the relevance of responses in place.",
     "category": "MiniExam",
-    "id": 542
+    "id": 542,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q003",
@@ -63479,7 +64022,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: compatibility of agile practices, effective asynchronous communication, and sufficient time zone overlap are determinant for successful distributed agile collaboration.",
     "category": "MiniExam",
-    "id": 543
+    "id": 543,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q004",
@@ -63497,7 +64041,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: formally recognizing the mentoring role values this precious contribution and avoids unrecognized overload of the experienced member.",
     "category": "MiniExam",
-    "id": 544
+    "id": 544,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q005",
@@ -63515,7 +64060,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: the quality management plan defines the standards, criteria, and quality processes applicable to the project and its deliverables.",
     "category": "MiniExam",
-    "id": 545
+    "id": 545,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q006",
@@ -63533,7 +64079,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: a central reporting framework with per-donor presentation adaptation optimizes effort while respecting each donor's specific requirements.",
     "category": "MiniExam",
-    "id": 546
+    "id": 546,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q007",
@@ -63551,7 +64098,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: structured practices and explicit valuing of juniors' contributions rebalance the dynamic and enrich the quality of collective technical decisions.",
     "category": "MiniExam",
-    "id": 547
+    "id": 547,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q008",
@@ -63569,7 +64117,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: the time estimate at completion (often derived from SPI) allows forecasting the likely total project duration given current schedule performance.",
     "category": "MiniExam",
-    "id": 548
+    "id": 548,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q009",
@@ -63587,7 +64136,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: a rapid escalation mechanism combined with a pre-approved experimentation budget allows increased responsiveness while maintaining a controlled governance framework.",
     "category": "MiniExam",
-    "id": 549
+    "id": 549,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q010",
@@ -63605,7 +64155,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: negotiating a new time slot or delegating with a detailed report ensures information continuity without sacrificing a critical meeting.",
     "category": "MiniExam",
-    "id": 550
+    "id": 550,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q011",
@@ -63623,7 +64174,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: Monte Carlo probabilistic forecasting uses velocity history to generate a distribution of possible delivery dates with an associated confidence level, more realistic than a point estimate.",
     "category": "MiniExam",
-    "id": 551
+    "id": 551,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q012",
@@ -63641,7 +64193,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: consulting legal experts to identify compliant transfer mechanisms and adjust the architecture if necessary is the appropriate proactive, responsible approach.",
     "category": "MiniExam",
-    "id": 552
+    "id": 552,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q013",
@@ -63659,7 +64212,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: regularly sharing strategic context and market data builds mutual understanding of value, reducing unproductive questioning.",
     "category": "MiniExam",
-    "id": 553
+    "id": 553,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q014",
@@ -63677,7 +64231,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: the resource calendar integrates availability periods, holidays, and vacations, essential information for realistic activity planning.",
     "category": "MiniExam",
-    "id": 554
+    "id": 554,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q015",
@@ -63695,7 +64250,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: a structured risk and benefit assessment with controlled pilots allows responsible, progressive adoption of a high-potential but genuinely risky emerging technology.",
     "category": "MiniExam",
-    "id": 555
+    "id": 555,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q016",
@@ -63713,7 +64269,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: discussing specific needs and coordinating with HR for reasonable accommodations is the inclusive and legally compliant appropriate practice.",
     "category": "MiniExam",
-    "id": 556
+    "id": 556,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q017",
@@ -63731,7 +64288,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: documenting the incident, its root causes, and corrective actions in lessons learned and organizational process assets enables real capitalization for future projects.",
     "category": "MiniExam",
-    "id": 557
+    "id": 557,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q018",
@@ -63749,7 +64307,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: guaranteeing fairness and transparency, with documented criteria and no conflict of interest, is essential in a public tender, per the professional code of ethics.",
     "category": "MiniExam",
-    "id": 558
+    "id": 558,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q019",
@@ -63767,7 +64326,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: directly addressing the behavior with clear expectations of mutual respect protects psychological safety and collective learning without denying the person's technical value.",
     "category": "MiniExam",
-    "id": 559
+    "id": 559,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q020",
@@ -63785,7 +64345,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: visually marking blockers and prioritizing them in daily synchronization is standard Kanban practice for quickly resolving flow obstacles.",
     "category": "MiniExam",
-    "id": 560
+    "id": 560,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q021",
@@ -63803,7 +64364,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: predefined delegation thresholds allowing the PM to directly approve minor changes, with documentation, optimize efficiency while maintaining traceability.",
     "category": "MiniExam",
-    "id": 561
+    "id": 561,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q022",
@@ -63821,7 +64383,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: analyzing potential strategic dependency and available alternatives allows an informed decision, avoiding a long-term organizational vulnerability risk.",
     "category": "MiniExam",
-    "id": 562
+    "id": 562,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q023",
@@ -63839,7 +64402,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: a limited experiment with defined success criteria allows the team to test a new practice empirically and at low risk, reducing resistance to change.",
     "category": "MiniExam",
-    "id": 563
+    "id": 563,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q024",
@@ -63857,7 +64421,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: FMEA systematically identifies potential failure modes and assesses their severity, probability, and detectability to prioritize critical components.",
     "category": "MiniExam",
-    "id": 564
+    "id": 564,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q025",
@@ -63875,7 +64440,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: assessing severity, informing relevant stakeholders per internal procedures, and remediating quickly is the responsible, transparent approach to any security incident.",
     "category": "MiniExam",
-    "id": 565
+    "id": 565,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q026",
@@ -63893,7 +64459,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: combining leadership from the experienced member with structured mentoring secures delivery while developing team skills.",
     "category": "MiniExam",
-    "id": 566
+    "id": 566,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q027",
@@ -63911,7 +64478,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: indirect costs (overhead) represent shared expenses not directly attributable to a specific project activity, but necessary for its overall execution.",
     "category": "MiniExam",
-    "id": 567
+    "id": 567,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q028",
@@ -63929,7 +64497,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: analyzing local cultural context with experts and adapting practices while preserving non-negotiable ethical principles balances cultural respect and professional integrity.",
     "category": "MiniExam",
-    "id": 568
+    "id": 568,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q029",
@@ -63947,7 +64516,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: a community of practice (guild) with regular experience sharing reduces isolation and fosters continuous professional development of Scrum Masters organization-wide.",
     "category": "MiniExam",
-    "id": 569
+    "id": 569,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q030",
@@ -63965,7 +64535,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: CPI (EV/AC) directly measures budget utilization efficiency relative to actual progress of work accomplished.",
     "category": "MiniExam",
-    "id": 570
+    "id": 570,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q031",
@@ -63983,7 +64554,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: continuous incremental value indicators, complementary to traditional financial measures, better capture the iterative nature of agile value creation.",
     "category": "MiniExam",
-    "id": 571
+    "id": 571,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q032",
@@ -64001,7 +64573,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: a clear communication of reasons, progressive training, internal champions, and a feedback loop constitute a structured change management approach that minimizes resistance.",
     "category": "MiniExam",
-    "id": 572
+    "id": 572,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q033",
@@ -64019,7 +64592,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: regular refinement with archiving or removal of obsolete items and reorganization by theme/value maintains a manageable, relevant backlog.",
     "category": "MiniExam",
-    "id": 573
+    "id": 573,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q034",
@@ -64037,7 +64611,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: assessing real applicability and integrating required sustainability indicators into the project plan is the appropriate proactive, compliant approach.",
     "category": "MiniExam",
-    "id": 574
+    "id": 574,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q035",
@@ -64055,7 +64630,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: an initial in-person meeting or regular virtual team-building activities, combined with transparency, accelerate trust building in a distributed team.",
     "category": "MiniExam",
-    "id": 575
+    "id": 575,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q036",
@@ -64073,7 +64649,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: the resource management plan and resource calendar must integrate legal working hour constraints for compliant, realistic planning.",
     "category": "MiniExam",
-    "id": 576
+    "id": 576,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q037",
@@ -64091,7 +64668,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: comparing LTV, recurring revenue predictability, and target market alignment provides a solid factual basis for a strategic pricing model decision.",
     "category": "MiniExam",
-    "id": 577
+    "id": 577,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q038",
@@ -64109,7 +64687,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: presenting a factual analysis with associated risks while respecting the sponsor's final authority balances professional expertise and appropriate governance.",
     "category": "MiniExam",
-    "id": 578
+    "id": 578,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q039",
@@ -64127,7 +64706,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: integrated change control, in interaction with scope and schedule control, ensures overall consistency between the different dimensions of the project as it evolves.",
     "category": "MiniExam",
-    "id": 579
+    "id": 579,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q040",
@@ -64145,7 +64725,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: a factual, balanced presentation with scenarios and mitigation plans allows the board to make informed decisions on a complex strategic issue.",
     "category": "MiniExam",
-    "id": 580
+    "id": 580,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q041",
@@ -64163,7 +64744,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: explaining reasons, progressively adjusting expectations, and gathering feedback allow an empirical transition respectful of team well-being.",
     "category": "MiniExam",
-    "id": 581
+    "id": 581,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q042",
@@ -64181,7 +64763,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: the formal acceptance certificate and procurement closure documentation verify and formalize that all contractual requirements have been met before final payment.",
     "category": "MiniExam",
-    "id": 582
+    "id": 582,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q043",
@@ -64199,7 +64782,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: transparent communication with reskilling plans and employee involvement reflects social and ethical responsibility toward disruptive technological change.",
     "category": "MiniExam",
-    "id": 583
+    "id": 583,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q044",
@@ -64217,7 +64801,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: recognizing the contribution, fairly compensating extra time, and clarifying future expectations balance appropriate recognition and sustainable pace management.",
     "category": "MiniExam",
-    "id": 584
+    "id": 584,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q045",
@@ -64235,7 +64820,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: actively tracking the dependency with a dedicated risk register and contingency plans, while factoring it into sprint planning, is a pragmatic hybrid approach combining predictive rigor with agile flexibility.",
     "category": "MiniExam",
-    "id": 585
+    "id": 585,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q046",
@@ -64253,7 +64839,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: rigorously verifying real status and honestly assessing feasibility before committing reflects responsible, ethical professional practice.",
     "category": "MiniExam",
-    "id": 586
+    "id": 586,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q047",
@@ -64271,7 +64858,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: refocusing the discussion on the 'why' of each ceremony reconnects the team to underlying agile values and principles, beyond mechanical compliance.",
     "category": "MiniExam",
-    "id": 587
+    "id": 587,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q048",
@@ -64289,7 +64877,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: periodically reviewing the assumption log with relevant technical stakeholders and adjusting the plan if necessary is the proactive practice of continuous assumption management.",
     "category": "MiniExam",
-    "id": 588
+    "id": 588,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q049",
@@ -64307,7 +64896,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: integrating automated, incremental resilience tests with each increment, with regular compliance reviews, reconciles strict regulatory requirements with continuous agile rhythm.",
     "category": "MiniExam",
-    "id": 589
+    "id": 589,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q050",
@@ -64325,7 +64915,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: understanding motivations and organizing a progressive transition respects legitimate professional aspirations while minimizing impact on the critical-phase project.",
     "category": "MiniExam",
-    "id": 590
+    "id": 590,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q051",
@@ -64343,7 +64934,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: the 'Control Procurements' process monitors supplier performance against contractual terms, including interim delivery deadlines.",
     "category": "MiniExam",
-    "id": 591
+    "id": 591,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q052",
@@ -64361,7 +64953,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: political risk is a major external environmental factor that can significantly affect the continuity, regulation, and security of an international project.",
     "category": "MiniExam",
-    "id": 592
+    "id": 592,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q053",
@@ -64379,7 +64972,8 @@ const QUESTIONS_EN = [
     "answer": "D",
     "justification": "Correct: co-creating a shared calendar respecting local constraints, with defined overlap windows, promotes fairness and effective collaboration in a multicultural distributed team.",
     "category": "MiniExam",
-    "id": 593
+    "id": 593,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q054",
@@ -64397,7 +64991,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: direct observation (job shadowing) allows understanding real, often unexpressed user behaviors in their usual work context.",
     "category": "MiniExam",
-    "id": 594
+    "id": 594,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q055",
@@ -64415,7 +65010,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: analyzing the competitive ecosystem, partnership growth potential, and security/dependency risks provides a solid strategic basis for this open vs. closed architecture choice.",
     "category": "MiniExam",
-    "id": 595
+    "id": 595,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q056",
@@ -64433,7 +65029,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: combining a clear vision presentation with discussion time fosters engagement, mutual understanding, and collective ownership of the project from the start.",
     "category": "MiniExam",
-    "id": 596
+    "id": 596,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q057",
@@ -64451,7 +65048,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: a transparent discussion with the PO allowing informed splitting or deferring of the story is the appropriate agile practice when unexpected complexity is discovered.",
     "category": "MiniExam",
-    "id": 597
+    "id": 597,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q058",
@@ -64469,7 +65067,8 @@ const QUESTIONS_EN = [
     "answer": "C",
     "justification": "Correct: taking the report seriously, investigating confidentially and appropriately, and escalating if necessary reflects ethical, responsible management of a potential fraud report.",
     "category": "MiniExam",
-    "id": 598
+    "id": 598,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q059",
@@ -64487,7 +65086,8 @@ const QUESTIONS_EN = [
     "answer": "A",
     "justification": "Correct: personalized, non-stigmatizing support allows the person to develop digital skills while preserving their dignity and team integration.",
     "category": "MiniExam",
-    "id": 599
+    "id": 599,
+    "miniExamen": 5
   },
   {
     "source_id": "ME5EN-Q060",
@@ -64505,7 +65105,8 @@ const QUESTIONS_EN = [
     "answer": "B",
     "justification": "Correct: exhaustive documentation, training of the operations team, and a transitional support period guarantee a smooth transition and reduce post-closure risks.",
     "category": "MiniExam",
-    "id": 600
+    "id": 600,
+    "miniExamen": 5
   },
   {
     "source_id": "e1_q001",
@@ -85895,7 +86496,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "في البيئات الرشيقة، دور سكرم ماستر هو تيسير حل النزاعات داخل الفريق وليس فرض الحلول. الخيار B يحافظ على تمكين الفريق ذاتي التنظيم. A يقوض الاستقلالية الذاتية للفريق، C يتجاوز مستوى الفريق دون داع، وD يترك مشكلة تعطل الأداء دون معالجة.",
     "category": "MiniExam",
-    "id": 121
+    "id": 121,
+    "miniExamen": 1
   },
   {
     "source_id": 2,
@@ -85913,7 +86515,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "عندما يكون التعارض بسبب موارد مشتركة بين مشاريع، يجب أولاً التواصل مع مديري الموارد الوظيفية لتوضيح الأولويات قبل اتخاذ أي إجراء آخر. A سابق لأوانه بدون بيانات كافية، C يخاطر بالإرهاق، وD يتجاوز المستوى الإداري المناسب.",
     "category": "MiniExam",
-    "id": 122
+    "id": 122,
+    "miniExamen": 1
   },
   {
     "source_id": 3,
@@ -85931,7 +86534,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "مبدأ كانبان الأساسي هو احترام حدود WIP لتحسين التدفق. عند تجاوز الحد، يجب على الفريق التوقف عن سحب عمل جديد (Swarm) والتركيز على إكمال ما هو قائم. زيادة الحد أو تجاهله يخالف الممارسة الأساسية لكانبان.",
     "category": "MiniExam",
-    "id": 123
+    "id": 123,
+    "miniExamen": 1
   },
   {
     "source_id": 4,
@@ -85949,7 +86553,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "يجب فهم السبب الجذري وراء الطلب، ثم أي تعديل رسمي على خطة إدارة التواصل يجب أن يمر عبر عملية التحكم المتكامل بالتغيير. الموافقة الفورية أو الرفض دون تحليل كلاهما تجاهل لمنهجية إدارة الاتصال الرسمية.",
     "category": "MiniExam",
-    "id": 124
+    "id": 124,
+    "miniExamen": 1
   },
   {
     "source_id": 5,
@@ -85967,7 +86572,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "عندما ينحرف الفريق عن هدف السبرنت، غالبًا يكون السبب غموض الهدف أو ضعف تنقيح المتراكم قبل التخطيط. هذا بالضبط نوع الأسباب الجذرية التي يستكشفها الاستذكار لتحسين العملية.",
     "category": "MiniExam",
-    "id": 125
+    "id": 125,
+    "miniExamen": 1
   },
   {
     "source_id": 6,
@@ -85985,7 +86591,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "القيادة الشاملة تتطلب تكييف ممارسات التواصل لضمان مشاركة جميع أعضاء الفريق الفاعلة، خاصة في الفرق متعددة الثقافات. الخيارات الأخرى تُقصي العضو أو تضع عبئًا غير عادل عليه.",
     "category": "MiniExam",
-    "id": 126
+    "id": 126,
+    "miniExamen": 1
   },
   {
     "source_id": 7,
@@ -86003,7 +86610,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "تحسين دقة التقدير في البيئات الرشيقة يأتي من خلال التعلم التجريبي المستمر باستخدام بيانات السرعة الفعلية وتقنيات تعاونية مثل Planning Poker، وليس عبر الفرض أو العقاب.",
     "category": "MiniExam",
-    "id": 127
+    "id": 127,
+    "miniExamen": 1
   },
   {
     "source_id": 8,
@@ -86021,7 +86629,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "أسلوب حل المشكلة التعاوني هو الأكثر فعالية للنزاعات ذات التأثير الكبير على المشروع لأنه يعالج السبب الجذري ويصل لحل دائم يرضي الطرفين، على عكس الأساليب الأخرى المؤقتة أو القسرية.",
     "category": "MiniExam",
-    "id": 128
+    "id": 128,
+    "miniExamen": 1
   },
   {
     "source_id": 9,
@@ -86039,7 +86648,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "من أدوار سكرم ماستر الأساسية حماية الفريق (Servant Leadership) وتثقيف أصحاب المصلحة الخارجيين حول القدرة الفعلية والوتيرة المستدامة، بدلاً من الرضوخ لضغوط غير واقعية.",
     "category": "MiniExam",
-    "id": 129
+    "id": 129,
+    "miniExamen": 1
   },
   {
     "source_id": 10,
@@ -86057,7 +86667,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "النزاهة المهنية تقتضي التحقق من الحقائق ومواجهة الطرف المعني بشفافية قبل اتخاذ أي إجراء تصعيدي أو تعاقدي. الإخفاء أو التجاهل يخالفان مدونة السلوك الأخلاقي لـ PMI.",
     "category": "MiniExam",
-    "id": 130
+    "id": 130,
+    "miniExamen": 1
   },
   {
     "source_id": 11,
@@ -86075,7 +86686,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "الحفاظ على التزامن الوظيفي مع مراعاة التوازن بين المناطق الزمنية يمكن تحقيقه بالتناوب العادل أو الجمع بين التحديثات غير المتزامنة والاجتماعات الدورية، بدلًا من إلغاء الممارسة أو فرض عبء غير عادل على البعض.",
     "category": "MiniExam",
-    "id": 131
+    "id": 131,
+    "miniExamen": 1
   },
   {
     "source_id": 12,
@@ -86093,7 +86705,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "في البنى المصفوفية، مدير المشروع لا يملك سلطة التقييم الرسمية لكن من مسؤولياته تزويد المدير الوظيفي بتغذية راجعة دقيقة حول أداء العضو داخل المشروع لضمان تقييم عادل.",
     "category": "MiniExam",
-    "id": 132
+    "id": 132,
+    "miniExamen": 1
   },
   {
     "source_id": 13,
@@ -86111,7 +86724,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "من مبادئ سكرم الأساسية عدم تغيير نطاق السبرنت أثناء تنفيذه للحفاظ على التركيز، إلا في حالات استثنائية تستدعي إلغاء السبرنت بالكامل. الطلبات الجديدة توجه للمتراكم لتقييمها في دورة التخطيط التالية.",
     "category": "MiniExam",
-    "id": 133
+    "id": 133,
+    "miniExamen": 1
   },
   {
     "source_id": 14,
@@ -86129,7 +86743,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "إدارة التغيير الفعالة تتطلب الإشراك المبكر، التواصل الواضح حول الفوائد، وتوفير الدعم والتدريب لتقليل المقاومة، بدلاً من الفرض أو التجاهل أو التراجع الكامل.",
     "category": "MiniExam",
-    "id": 134
+    "id": 134,
+    "miniExamen": 1
   },
   {
     "source_id": 15,
@@ -86147,7 +86762,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "تقنيات التيسير مثل الكتابة الصامتة تمنح جميع الأعضاء فرصة متساوية للمساهمة دون ضغط اجتماعي، مما يحسن جودة المشاركة الجماعية مقارنة بالمطالبة المباشرة أو الاعتماد على الأصوات الأعلى فقط.",
     "category": "MiniExam",
-    "id": 135
+    "id": 135,
+    "miniExamen": 1
   },
   {
     "source_id": 16,
@@ -86165,7 +86781,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "تطوير الفريق عبر الإرشاد الداخلي أو التدريب المركز حل فعّال من حيث التكلفة يعالج الفجوة في المهارات دون إلغاء المهمة أو تحميل العضو مسؤولية غير مؤهل لها بمفرده.",
     "category": "MiniExam",
-    "id": 136
+    "id": 136,
+    "miniExamen": 1
   },
   {
     "source_id": 17,
@@ -86183,7 +86800,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "في الأساليب الهجينة، يُدار كل مكون من المشروع وفق طبيعته: المكونات ذات الغموض العالي تُدار بأسلوب تكيفي مع تطور تدريجي للنطاق، بينما يمكن تثبيت النطاق للمكونات الواضحة والمستقرة.",
     "category": "MiniExam",
-    "id": 137
+    "id": 137,
+    "miniExamen": 1
   },
   {
     "source_id": 18,
@@ -86201,7 +86819,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "أفضل ممارسة هي المعالجة المباشرة والدبلوماسية مع صاحب المصلحة لإعادة التأكيد على بروتوكولات التواصل المعتمدة، مع الحفاظ على العلاقة، قبل التفكير بالتصعيد.",
     "category": "MiniExam",
-    "id": 138
+    "id": 138,
+    "miniExamen": 1
   },
   {
     "source_id": 19,
@@ -86219,7 +86838,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "الموازنة المستدامة بين القيمة الفورية والصحة التقنية طويلة المدى تتطلب حوارًا مشتركًا وتخصيص سعة منتظمة لمعالجة الدين التقني، بدلًا من تجاهله أو تحميله بالكامل لطرف واحد.",
     "category": "MiniExam",
-    "id": 139
+    "id": 139,
+    "miniExamen": 1
   },
   {
     "source_id": 20,
@@ -86237,7 +86857,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "مدونة السلوك الأخلاقي والمهني لـ PMI تُلزم مدير المشروع بالصدق والشفافية في التقارير، بغض النظر عن الضغوط الخارجية، مع تقديم حلول بناءة بدلاً من تجميل الواقع.",
     "category": "MiniExam",
-    "id": 140
+    "id": 140,
+    "miniExamen": 1
   },
   {
     "source_id": 21,
@@ -86255,7 +86876,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "SV موجب يعني أن العمل المنجز أكثر مما كان مخططًا (متقدم عن الجدول)، بينما CV سالب يعني أن التكلفة الفعلية أعلى من القيمة المكتسبة (تجاوز في الميزانية). هذا مزيج شائع يستدعي تحليل كفاءة استخدام الموارد.",
     "category": "MiniExam",
-    "id": 141
+    "id": 141,
+    "miniExamen": 1
   },
   {
     "source_id": 22,
@@ -86273,7 +86895,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "توقيع عقد احتياطي كخطة بديلة تُفعّل عند وقوع الخطر هو مثال كلاسيكي على القبول الفعّال مع خطة طوارئ، حيث لا يُزال الخطر بل يُعد له استعداد مسبق للتنفيذ عند الحاجة.",
     "category": "MiniExam",
-    "id": 142
+    "id": 142,
+    "miniExamen": 1
   },
   {
     "source_id": 23,
@@ -86291,7 +86914,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "في مخطط البيرن داون، ارتفاع الخط الفعلي عن الخط المخطط (المتبقي من العمل أعلى من المتوقع) يشير إلى تأخر الفريق عن الوتيرة اللازمة لإكمال العمل بنهاية السبرنت.",
     "category": "MiniExam",
-    "id": 143
+    "id": 143,
+    "miniExamen": 1
   },
   {
     "source_id": 24,
@@ -86309,7 +86933,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "عملية التحكم المتكامل بالتغيير تتطلب تقييم الأثر أولاً، ثم الحصول على الموافقة الرسمية (غالبًا من CCB)، وبعدها تحديث خطوط الأساس والوثائق ذات الصلة قبل التنفيذ الفعلي للتغيير.",
     "category": "MiniExam",
-    "id": 144
+    "id": 144,
+    "miniExamen": 1
   },
   {
     "source_id": 25,
@@ -86327,7 +86952,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "ملاحظات مراجعة السبرنت تُستخدم لتحديث متراكم المنتج، وتنعكس التغييرات في الأولويات ضمن اجتماع تخطيط السبرنت التالي، مع الحفاظ على استقرار نطاق السبرنت الجاري.",
     "category": "MiniExam",
-    "id": 145
+    "id": 145,
+    "miniExamen": 1
   },
   {
     "source_id": 26,
@@ -86345,7 +86971,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "التعويم الكلي صفر يعني أن النشاط يقع على المسار الحرج، وأي تأخير فيه سينعكس مباشرة على تاريخ انتهاء المشروع الكلي.",
     "category": "MiniExam",
-    "id": 146
+    "id": 146,
+    "miniExamen": 1
   },
   {
     "source_id": 27,
@@ -86363,7 +86990,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "مخطط التدفق التراكمي هو الأداة الأساسية في كانبان لتحليل وتحسين زمن الدورة والتعرف على الاختناقات، بينما السرعة ونقاط القصة أدوات مرتبطة أكثر بسكرم.",
     "category": "MiniExam",
-    "id": 147
+    "id": 147,
+    "miniExamen": 1
   },
   {
     "source_id": 28,
@@ -86381,7 +87009,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "المخاطر ذات التأثير المنخفض حتى مع الاحتمالية العالية عادة تُدار بمراقبة دورية أو قبول سلبي، حيث لا يبرر تأثيرها المحدود تخصيص موارد كبيرة أو إجراءات تصعيدية.",
     "category": "MiniExam",
-    "id": 148
+    "id": 148,
+    "miniExamen": 1
   },
   {
     "source_id": 29,
@@ -86399,7 +87028,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "في المشاريع الهجينة، يتحقق التكامل الفعّال عبر نقاط تزامن ومعالم مشتركة ضمن خطة رئيسية تدير التبعيات بين المكونات ذات الأساليب المختلفة، دون إجبار أي جزء على تغيير منهجيته الأنسب له.",
     "category": "MiniExam",
-    "id": 149
+    "id": 149,
+    "miniExamen": 1
   },
   {
     "source_id": 30,
@@ -86417,7 +87047,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "SPI أقل من 1 يعني أن العمل الفعلي المنجز أقل من العمل المخطط، أي أن المشروع متأخر عن الجدول الزمني بنسبة تعكس الفارق (هنا بنسبة 15% تقريبًا).",
     "category": "MiniExam",
-    "id": 150
+    "id": 150,
+    "miniExamen": 1
   },
   {
     "source_id": 31,
@@ -86435,7 +87066,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "تقنيات مثل تحليل القيمة مقابل الجهد أو WSJF توفر أساسًا كميًا لتحديد الأولويات بناءً على القيمة النسبية والتكلفة/المجهود، وهي أنسب من الترتيب العشوائي أو الاعتماد على رأي فردي واحد.",
     "category": "MiniExam",
-    "id": 151
+    "id": 151,
+    "miniExamen": 1
   },
   {
     "source_id": 32,
@@ -86453,7 +87085,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "تحديد المخاطر عملية مستمرة طوال دورة حياة المشروع؛ يجب تحليل أي خطر جديد وتوثيقه في سجل المخاطر وتحديث الخطط ذات الصلة فور اكتشافه.",
     "category": "MiniExam",
-    "id": 152
+    "id": 152,
+    "miniExamen": 1
   },
   {
     "source_id": 33,
@@ -86471,7 +87104,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "تخطيط البوكر تقنية تعاونية تهدف للوصول لإجماع جماعي حول حجم العمل النسبي، وتقلل تأثير الآراء المهيمنة عبر الكشف المتزامن عن التقديرات ومناقشة الفروقات الكبيرة.",
     "category": "MiniExam",
-    "id": 153
+    "id": 153,
+    "miniExamen": 1
   },
   {
     "source_id": 34,
@@ -86489,7 +87123,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "التقدير من الأسفل إلى الأعلى يعتمد على تقدير كل حزمة عمل ضمن WBS بتفصيل دقيق، ثم تجميع النتائج للحصول على تقدير إجمالي أكثر دقة، وإن كان يتطلب وقتًا وجهدًا أكبر من الأساليب البارامترية.",
     "category": "MiniExam",
-    "id": 154
+    "id": 154,
+    "miniExamen": 1
   },
   {
     "source_id": 35,
@@ -86507,7 +87142,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "تخطيط الزيادة البرمجية (PI Planning) في SAFe هو حدث محاذاة يجمع عدة فرق (Agile Release Train) لمواءمة الأهداف، تحديد التبعيات بين الفرق، والتخطيط المشترك للزيادة القادمة.",
     "category": "MiniExam",
-    "id": 155
+    "id": 155,
+    "miniExamen": 1
   },
   {
     "source_id": 36,
@@ -86525,7 +87161,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "عندما يُفترض أن أداء التكلفة الحالي (CPI) سيستمر لبقية المشروع، تُستخدم الصيغة EAC = BAC / CPI. الصيغ الأخرى تُستخدم لافتراضات مختلفة مثل استمرار التباين الحالي فقط أو إعادة تقدير من الصفر.",
     "category": "MiniExam",
-    "id": 156
+    "id": 156,
+    "miniExamen": 1
   },
   {
     "source_id": 37,
@@ -86543,7 +87180,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "تعريف الاكتمال (DoD) يوفر معيارًا موحدًا وشفافًا يضمن أن كل عنصر تم تسليمه يفي بمستوى جودة متفق عليه، مما يقلل الغموض ويحسن التنبؤية والشفافية داخل الفريق.",
     "category": "MiniExam",
-    "id": 157
+    "id": 157,
+    "miniExamen": 1
   },
   {
     "source_id": 38,
@@ -86561,7 +87199,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "التوثيق الضعيف للدروس المستفادة يؤدي لفقدان أصول العملية التنظيمية (OPA) القيّمة التي كان يمكن أن تحسّن تخطيط وتنفيذ المشاريع المستقبلية المشابهة، وهو أثر طويل المدى وليس مجرد مشكلة إجرائية آنية.",
     "category": "MiniExam",
-    "id": 158
+    "id": 158,
+    "miniExamen": 1
   },
   {
     "source_id": 39,
@@ -86579,7 +87218,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "ممارسات XP مثل التطوير الموجه بالاختبار والبرمجة الزوجية تدعم مباشرة الجودة المستمرة والدمج المستمر عبر اكتشاف الأخطاء مبكرًا وتحسين مراجعة الكود التعاونية.",
     "category": "MiniExam",
-    "id": 159
+    "id": 159,
+    "miniExamen": 1
   },
   {
     "source_id": 40,
@@ -86597,7 +87237,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "مخطط التحكم (Control Chart) هو الأداة المخصصة لمراقبة استقرار عملية ما بمرور الوقت وتحديد ما إذا كانت النتائج ضمن حدود التحكم المقبولة إحصائيًا، على عكس أدوات تحليل الأسباب الجذرية أو ترتيب الأولويات.",
     "category": "MiniExam",
-    "id": 160
+    "id": 160,
+    "miniExamen": 1
   },
   {
     "source_id": 41,
@@ -86615,7 +87256,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "اتساع طبقة معينة بشكل متزايد في مخطط التدفق التراكمي هو مؤشر كلاسيكي على وجود اختناق في تلك المرحلة، حيث يدخل العمل أسرع مما يخرج، مما يستدعي تحقيقًا لتحديد السبب ومعالجته.",
     "category": "MiniExam",
-    "id": 161
+    "id": 161,
+    "miniExamen": 1
   },
   {
     "source_id": 42,
@@ -86633,7 +87275,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "في نسبة تقاسم الوفورات 80/20 (المشتري/البائع) كما ورد في السؤال، يحصل المشتري على 80% من الوفورات المحققة والبائع على 20% منها وفق الصيغة التعاقدية المتفق عليها.",
     "category": "MiniExam",
-    "id": 162
+    "id": 162,
+    "miniExamen": 1
   },
   {
     "source_id": 43,
@@ -86651,7 +87294,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "لوحة البرنامج (Program Board) في SAFe هي الأداة المخصصة لتصور وإدارة التبعيات بين عدة فرق ضمن نفس قطار الإصدار الرشيق (ART) والمعالم المشتركة عبر الزيادة البرمجية.",
     "category": "MiniExam",
-    "id": 163
+    "id": 163,
+    "miniExamen": 1
   },
   {
     "source_id": 44,
@@ -86669,7 +87313,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "حشد الموارد (Crashing) يهدف تحديدًا لضغط الجدول الزمني بإضافة موارد مع تحليل تكلفة-وقت لاختيار الأنشطة التي تقدم أكبر تسريع بأقل تكلفة إضافية، على عكس التنفيذ المتوازي الذي يعتمد على تداخل الأنشطة دون بالضرورة تحليل التكلفة.",
     "category": "MiniExam",
-    "id": 164
+    "id": 164,
+    "miniExamen": 1
   },
   {
     "source_id": 45,
@@ -86687,7 +87332,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "مقاييس مثل صافي نقاط الترويج أو معدل تبني الميزة الفعلي تعكس القيمة الحقيقية المقدمة للعميل، بينما نقاط القصة وساعات العمل هي مقاييس إنتاجية داخلية لا تقيس القيمة المُدركة من المستخدم مباشرة.",
     "category": "MiniExam",
-    "id": 165
+    "id": 165,
+    "miniExamen": 1
   },
   {
     "source_id": 46,
@@ -86705,7 +87351,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "عند ظهور متطلبات تنظيمية جديدة، يجب أولاً تقييم أثرها الكامل على قيود المشروع، ثم توثيق ذلك عبر طلب تغيير رسمي يمر بعملية التحكم المتكامل بالتغيير، وليس التنفيذ العشوائي أو التجاهل.",
     "category": "MiniExam",
-    "id": 166
+    "id": 166,
+    "miniExamen": 1
   },
   {
     "source_id": 47,
@@ -86723,7 +87370,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "التحول الثقافي الناجح نحو الرشاقة يتطلب تدريبًا وتوعية مستمرة، وإشراك الإدارة الوسطى في إعادة تعريف دورها الجديد كداعم وميسر بدلاً من مراقب تقليدي، وليس الفرض أو التجاهل.",
     "category": "MiniExam",
-    "id": 167
+    "id": 167,
+    "miniExamen": 1
   },
   {
     "source_id": 48,
@@ -86741,7 +87389,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "في المشاريع متعددة البلدان، يجب دمج متطلبات الامتثال القانوني والتنظيمي الخاصة بكل بيئة تشغيلية ضمن التخطيط الشامل وسجل المخاطر، لأن تجاهلها يعرض المشروع لمخاطر قانونية جسيمة.",
     "category": "MiniExam",
-    "id": 168
+    "id": 168,
+    "miniExamen": 1
   },
   {
     "source_id": 49,
@@ -86759,7 +87408,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "استمرار اتخاذ القرارات بشكل هرمي مركزي رغم إجراء الطقوس الرشيقة شكليًا هو المؤشر الأوضح على غياب التبني الثقافي الحقيقي للرشاقة، بينما الخيارات الأخرى تعكس ممارسات رشيقة صحية فعلية.",
     "category": "MiniExam",
-    "id": 169
+    "id": 169,
+    "miniExamen": 1
   },
   {
     "source_id": 50,
@@ -86777,7 +87427,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "حالة العمل وخطة إدارة الفوائد هما الأداتان الأساسيتان لربط أهداف المشروع بالاستراتيجية التنظيمية وتبرير استمرار الاستثمار فيه طوال دورة حياة المشروع، بعكس أدوات الجدولة أو التقارير التشغيلية.",
     "category": "MiniExam",
-    "id": 170
+    "id": 170,
+    "miniExamen": 1
   },
   {
     "source_id": 51,
@@ -86795,7 +87446,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "إدارة المحفظة الرشيقة الخفيفة (Lean Portfolio Management) تتيح مراجعة وتعديل أولويات الاستثمار بشكل دوري ومرن بناءً على القيمة المتوقعة وقدرة المؤسسة، بدلاً من التجميد الجامد أو غياب التنسيق المركزي.",
     "category": "MiniExam",
-    "id": 171
+    "id": 171,
+    "miniExamen": 1
   },
   {
     "source_id": 52,
@@ -86813,7 +87465,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "عند ظهور صاحب مصلحة مؤثر لم يكن مدرجًا سابقًا، يجب تحديث تحليل أصحاب المصلحة وخطة الإشراك لتشمله، مع فتح حوار شفاف لمعالجة مخاوفه، بدلاً من التجاهل أو الإيقاف المتسرع.",
     "category": "MiniExam",
-    "id": 172
+    "id": 172,
+    "miniExamen": 1
   },
   {
     "source_id": 53,
@@ -86831,7 +87484,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "دمج متطلبات الامتثال التنظيمي ضمن تعريف الاكتمال (DoD) للعناصر ذات الصلة يسمح للفريق بالحفاظ على الرشاقة والتكرار في بقية العمل مع ضمان الالتزام التنظيمي الكامل حيثما يلزم.",
     "category": "MiniExam",
-    "id": 173
+    "id": 173,
+    "miniExamen": 1
   },
   {
     "source_id": 54,
@@ -86849,7 +87503,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "إدارة البرنامج تركز على تنسيق مشاريع مترابطة لتحقيق فوائد تآزرية، بينما إدارة المحفظة تركز على تحسين تخصيص الموارد عبر مجموعة من المشاريع والبرامج (قد لا تكون مترابطة) بما يخدم الاستراتيجية التنظيمية الشاملة.",
     "category": "MiniExam",
-    "id": 174
+    "id": 174,
+    "miniExamen": 1
   },
   {
     "source_id": 55,
@@ -86867,7 +87522,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "التنبؤ الاحتمالي المبني على بيانات السرعة التاريخية المجمعة عبر عدة فرق يوفر تنبؤية معقولة على المستوى الأعلى (برنامج/محفظة) دون فرض جمود تنبؤي على مستوى الفريق الفردي، محافظًا على المرونة الرشيقة.",
     "category": "MiniExam",
-    "id": 175
+    "id": 175,
+    "miniExamen": 1
   },
   {
     "source_id": 56,
@@ -86885,7 +87541,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "تقلبات أسعار الصرف خطر مالي يجب تضمينه رسميًا في سجل المخاطر مع استراتيجيات استباقية مثل التحوط المالي أو بنود تعديل الأسعار التعاقدية، بدلاً من التجاهل أو الحلول المتطرفة.",
     "category": "MiniExam",
-    "id": 176
+    "id": 176,
+    "miniExamen": 1
   },
   {
     "source_id": 57,
@@ -86903,7 +87560,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "عند تنافس عدة فرق على موارد نادرة مشتركة، الحل المؤسسي الأنسب هو إنشاء آلية تخصيص مركزية أو مجمع مهارات مُدار على مستوى البرنامج بأولويات واضحة، بدلاً من التفاوض الفوضوي أو التجميد الكامل.",
     "category": "MiniExam",
-    "id": 177
+    "id": 177,
+    "miniExamen": 1
   },
   {
     "source_id": 58,
@@ -86921,7 +87579,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "معايير الاستدامة (ESG) يجب أن تُدمج منذ بداية المشروع ضمن الميثاق وخطط الإدارة الفرعية ذات الصلة لضمان تطبيقها المنهجي طوال دورة الحياة، وليس فقط كبند شكلي في التقرير النهائي.",
     "category": "MiniExam",
-    "id": 178
+    "id": 178,
+    "miniExamen": 1
   },
   {
     "source_id": 59,
@@ -86939,7 +87598,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "الفرق المتعددة الوظائف الدائمة تقلل التبعيات على التسليم المتسلسل بين الأقسام المنعزلة (silos)، مما يحسّن التعاون المباشر والسرعة الكلية للتسليم، وهي الفائدة الأساسية المرجوة من هذا التحول الهيكلي.",
     "category": "MiniExam",
-    "id": 179
+    "id": 179,
+    "miniExamen": 1
   },
   {
     "source_id": 60,
@@ -86957,7 +87617,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "القيود المؤسسية مثل سياسات المشتريات المركزية يجب أخذها بعين الاعتبار ضمن التخطيط الواقعي للمشروع، مع التعاون مع الأقسام المعنية لفهم الجداول الزمنية اللازمة، بدلاً من تجاوز السياسة أو تجاهلها بشكل يعرض المشروع لمخاطر امتثال.",
     "category": "MiniExam",
-    "id": 180
+    "id": 180,
+    "miniExamen": 1
   },
   {
     "source_id": 1,
@@ -86975,7 +87636,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "الأمان النفسي عنصر جوهري في الفرق الرشيقة عالية الأداء. دور سكرم ماستر تهيئة بيئة يشعر فيها الجميع بالراحة لطرح الأسئلة، عبر التشجيع الصريح ودعم الزملاء، لا الإقصاء أو التجاهل.",
     "category": "MiniExam",
-    "id": 181
+    "id": 181,
+    "miniExamen": 2
   },
   {
     "source_id": 2,
@@ -86993,7 +87655,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "نسب الفضل الفردي لجهود جماعية يقوض الثقة والروح المعنوية، وهو سلوك يجب على مدير المشروع معالجته مباشرة عبر تغذية راجعة صريحة وإعادة توزيع الاعتراف بشكل عادل قبل أن يؤثر سلبًا على تماسك الفريق.",
     "category": "MiniExam",
-    "id": 182
+    "id": 182,
+    "miniExamen": 2
   },
   {
     "source_id": 3,
@@ -87011,7 +87674,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "القرارات الجماعية تبقى قابلة لإعادة النظر إذا ظهرت مخاوف مشروعة بعد الاتفاق الأولي. فتح حوار قصير لفهم السبب واتخاذ قرار مستنير أفضل من التجاهل أو الإجبار أو الإلغاء الكامل.",
     "category": "MiniExam",
-    "id": 183
+    "id": 183,
+    "miniExamen": 2
   },
   {
     "source_id": 4,
@@ -87029,7 +87693,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "القيادة الظرفية (Situational Leadership) تتطلب تكييف أسلوب التواصل والتحفيز حسب احتياجات كل فرد أو مجموعة، مع الحفاظ على وضوح الأهداف المشتركة، بدلاً من فرض نمط واحد لا يناسب الجميع.",
     "category": "MiniExam",
-    "id": 184
+    "id": 184,
+    "miniExamen": 2
   },
   {
     "source_id": 5,
@@ -87047,7 +87712,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "القرارات الفعالة حول الأولويات تتطلب دمج منظور القيمة (من صاحب المنتج) مع منظور التعقيد والجهد التقني (من الفريق) خلال تنقيح المتراكم التعاوني، لا انفراد أي طرف بالقرار.",
     "category": "MiniExam",
-    "id": 185
+    "id": 185,
+    "miniExamen": 2
   },
   {
     "source_id": 6,
@@ -87065,7 +87731,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "إدارة التغيير الفردي الفعالة تتطلب تدريبًا مخصصًا وصبورًا يربط الأداة الجديدة بفوائد ملموسة لاحتياجات الفرد، بدلاً من الإجبار أو الاستثناء الدائم الذي قد يعيق التكامل مع الفريق.",
     "category": "MiniExam",
-    "id": 186
+    "id": 186,
+    "miniExamen": 2
   },
   {
     "source_id": 7,
@@ -87083,7 +87750,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "التغيير الرشيق يجب أن يحدث بين السبرنتات وليس فوضويًا داخل السبرنت. سكرم ماستر يسهّل حوارًا لفهم السبب الجذري ويشجع على معايير قبول واضحة لتقليل الغموض المتكرر، دون إلغاء الدور أو تجاهل التوجيه.",
     "category": "MiniExam",
-    "id": 187
+    "id": 187,
+    "miniExamen": 2
   },
   {
     "source_id": 8,
@@ -87101,7 +87769,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "مع الأعضاء ذوي الخبرة العالية والموثوقية المثبتة، التفويض الكامل (حيث يتخذ العضو القرار ويبلغ لاحقًا) يعزز الملكية والثقة ويستفيد من خبرتهم، بعكس المستويات الأدنى من التفويض التي تناسب أعضاء أقل خبرة.",
     "category": "MiniExam",
-    "id": 188
+    "id": 188,
+    "miniExamen": 2
   },
   {
     "source_id": 9,
@@ -87119,7 +87788,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "دور سكرم ماستر هو تعزيز التنظيم الذاتي للفريق تدريجيًا، وليس اتخاذ القرارات نيابة عنه بشكل دائم ولا الانسحاب المفاجئ الكامل الذي قد يربك الفريق؛ الانتقال التدريجي مع دعم عند الحاجة هو الأنسب.",
     "category": "MiniExam",
-    "id": 189
+    "id": 189,
+    "miniExamen": 2
   },
   {
     "source_id": 10,
@@ -87137,7 +87807,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "الأسلوب القيادي التحكمي حتى مع نتائج فنية جيدة ظاهريًا، يؤدي غالبًا لتراجع التحفيز والمشاركة وزيادة معدل الدوران على المدى المتوسط والطويل، وهو ما يجب معالجته عبر تدريب قيادي مستهدف.",
     "category": "MiniExam",
-    "id": 190
+    "id": 190,
+    "miniExamen": 2
   },
   {
     "source_id": 11,
@@ -87155,7 +87826,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "التحسين المستمر في الأطر الرشيقة يعتمد على التجريب الصغير المتكرر (kaizen)، حيث يدعم سكرم ماستر الفريق في تجربة أفكاره الخاصة وتقييم أثرها تجريبيًا بدلًا من الرفض المسبق أو الفرض غير المدروس.",
     "category": "MiniExam",
-    "id": 191
+    "id": 191,
+    "miniExamen": 2
   },
   {
     "source_id": 12,
@@ -87173,7 +87845,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "عندما يصل النزاع على الموارد إلى طريق مسدود بين طرفين متساويين في السلطة تقريبًا، التصعيد المنظم لمستوى إداري أعلى قادر على الموازنة بين الأولويات الاستراتيجية هو الحل المناسب، بدلاً من الجمود أو الإجراءات الأحادية.",
     "category": "MiniExam",
-    "id": 192
+    "id": 192,
+    "miniExamen": 2
   },
   {
     "source_id": 13,
@@ -87191,7 +87864,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "بناء فريق متعدد المهارات ومتوازن يتحقق عبر ممارسات مشاركة المعرفة كالبرمجة الزوجية والإرشاد الداخلي، مما يقلل الاعتماد المفرط على فرد واحد ويطور مهارات 'T-shaped' لدى الجميع تدريجيًا.",
     "category": "MiniExam",
-    "id": 193
+    "id": 193,
+    "miniExamen": 2
   },
   {
     "source_id": 14,
@@ -87209,7 +87883,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "بعد التحقق من صحة الشكوى، المعالجة البناءة تتم عبر محادثة خاصة وصريحة مع الطرف المعني، مع متابعة لاحقة، بدلاً من التجاهل أو العقاب العلني المهين أو نقل الطرف المتضرر بدلاً من معالجة جذر المشكلة.",
     "category": "MiniExam",
-    "id": 194
+    "id": 194,
+    "miniExamen": 2
   },
   {
     "source_id": 15,
@@ -87227,7 +87902,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "عند وجود قيود التوقيت، الحل العملي هو تسجيل العرض وجمع تغذية راجعة منظمة كتابيًا خلال إطار زمني محدد، مع محاولة عقد اجتماعات متزامنة دورية، بدلاً من إلغاء الممارسة أو تجاوز صلاحيات صاحب المنتج.",
     "category": "MiniExam",
-    "id": 195
+    "id": 195,
+    "miniExamen": 2
   },
   {
     "source_id": 16,
@@ -87245,7 +87921,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "مرحلة العصف (Storming) في نموذج تاكمان هي المرحلة التي يظهر فيها أكبر قدر من التوتر والصراع بين أعضاء الفريق أثناء تنافسهم على الأدوار وتوضيح أساليب العمل، قبل الانتقال لمرحلة المعايرة الأكثر استقرارًا.",
     "category": "MiniExam",
-    "id": 196
+    "id": 196,
+    "miniExamen": 2
   },
   {
     "source_id": 17,
@@ -87263,7 +87940,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "من مبادئ طريقة كانبان الأساسية 'البدء بما هو موجود حاليًا' دون تغيير جذري مفاجئ، ثم تصور سير العمل الفعلي وتطبيق تحسينات تدريجية مثل حدود WIP، بدلاً من إلغاء الممارسات القائمة دفعة واحدة.",
     "category": "MiniExam",
-    "id": 197
+    "id": 197,
+    "miniExamen": 2
   },
   {
     "source_id": 18,
@@ -87281,7 +87959,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "في بيئات المشاريع المعقدة، غالبًا لا تتوفر معلومات كاملة عند اتخاذ القرار؛ النهج الأنسب هو استخدام أفضل المعلومات المتاحة مع تقييم واعٍ للمخاطر واتخاذ قرار قابل للتعديل، بدلاً من الانتظار المطول أو التهرب من المسؤولية.",
     "category": "MiniExam",
-    "id": 198
+    "id": 198,
+    "miniExamen": 2
   },
   {
     "source_id": 19,
@@ -87299,7 +87978,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "تخصيص وقت قصير غير رسمي لبناء الترابط الاجتماعي في الفرق الافتراضية ممارسة تيسير فعالة ومنخفضة التكلفة تحسّن التماسك والثقة دون التأثير سلبًا على وقت الإنتاجية الفعلي، بعكس الخيارات الأخرى الأكثر تطرفًا.",
     "category": "MiniExam",
-    "id": 199
+    "id": 199,
+    "miniExamen": 2
   },
   {
     "source_id": 20,
@@ -87317,7 +87997,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "في البيئات ذات السلطة الرسمية المحدودة، القوة الخبيرة والمرجعية المبنية على الكفاءة التقنية واحترام الفريق تُعد الأكثر استدامة وفعالية على المدى الطويل، مقارنة بالقوة القسرية أو الاعتماد الحصري على السلطة الرسمية أو المكافآت.",
     "category": "MiniExam",
-    "id": 200
+    "id": 200,
+    "miniExamen": 2
   },
   {
     "source_id": 21,
@@ -87335,7 +88016,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "CPI أكبر من 1 يعني أن القيمة المكتسبة أعلى من التكلفة الفعلية، أي أن المشروع يحقق كفاءة تكلفة أفضل من المخطط، وهو مؤشر إيجابي على الأداء المالي وليس تجاوزًا للميزانية.",
     "category": "MiniExam",
-    "id": 201
+    "id": 201,
+    "miniExamen": 2
   },
   {
     "source_id": 22,
@@ -87353,7 +88035,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "الاعتماديات الإلزامية (hard logic) مرتبطة بطبيعة العمل الفعلية ولا يمكن تجاوزها (مثل صب الأساس قبل البناء)، بينما التقديرية (soft logic) تستند لأفضل الممارسات ويمكن تعديلها عند الحاجة لتسريع الجدول عبر تقنيات مثل التنفيذ المتوازي.",
     "category": "MiniExam",
-    "id": 202
+    "id": 202,
+    "miniExamen": 2
   },
   {
     "source_id": 23,
@@ -87371,7 +88054,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "حارة التعجيل (Expedite Lane) ضمن نظام كانبان تسمح بمعالجة عدد محدود من العناصر عالية الأولوية بسرعة أكبر عبر النظام دون التخلي عن انضباط حدود WIP للعناصر الأخرى، وهي الممارسة القياسية لهذا الغرض.",
     "category": "MiniExam",
-    "id": 203
+    "id": 203,
+    "miniExamen": 2
   },
   {
     "source_id": 24,
@@ -87389,7 +88073,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "تقنية الأسئلة الخمسة لماذا تهدف للوصول تدريجيًا للسبب الجذري الحقيقي وراء مشكلة الجودة عبر طرح 'لماذا' بشكل متكرر، بدلاً من الاكتفاء بمعالجة الأعراض الظاهرة أو تحديد المسؤولية الفردية.",
     "category": "MiniExam",
-    "id": 204
+    "id": 204,
+    "miniExamen": 2
   },
   {
     "source_id": 25,
@@ -87407,7 +88092,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "النشر المستمر الآمن يعتمد أساسًا على مجموعة اختبارات آلية شاملة وموثوقة تعمل كبوابة جودة تلقائية، مع مراقبة مستمرة بعد النشر، وليس على المراجعة اليدوية وحدها التي تتعارض مع مفهوم الأتمتة الكاملة.",
     "category": "MiniExam",
-    "id": 205
+    "id": 205,
+    "miniExamen": 2
   },
   {
     "source_id": 26,
@@ -87425,7 +88111,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "محاكاة مونت كارلو هي التقنية الكمية القياسية لتوليد توزيع احتمالي لنتائج التكلفة أو الجدول بناءً على آلاف التكرارات، مما يتيح تقدير احتمالية تحقيق ميزانية أو تاريخ معين، بعكس مصفوفة الاحتمالية والتأثير التي تُستخدم للتحليل النوعي.",
     "category": "MiniExam",
-    "id": 206
+    "id": 206,
+    "miniExamen": 2
   },
   {
     "source_id": 27,
@@ -87443,7 +88130,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "في معيار INVEST لتقييم جودة قصص المستخدم، يشير الحرف I إلى Independent (مستقلة)، أي أن القصة ينبغي أن تكون قابلة للتطوير والتسليم بأقل قدر من الاعتماد على قصص أخرى، مما يسهل الجدولة والتقدير المرن.",
     "category": "MiniExam",
-    "id": 207
+    "id": 207,
+    "miniExamen": 2
   },
   {
     "source_id": 28,
@@ -87461,7 +88149,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "عقود الوقت والمواد تنقل مخاطر عدم وضوح النطاق بشكل أكبر نحو المشتري، إذ لا يوجد سقف تلقائي للتكلفة النهائية إلا إذا أُدرج بند 'حد أقصى للتكلفة' صراحة في العقد، على عكس عقود السعر الثابت التي تضع المخاطر على البائع.",
     "category": "MiniExam",
-    "id": 208
+    "id": 208,
+    "miniExamen": 2
   },
   {
     "source_id": 29,
@@ -87479,7 +88168,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "تغطية الاختبارات الآلية ومعدل تكرار الأخطاء التي تصل للإنتاج مقاييس تعكس مباشرة الصحة التقنية وجودة النظام، بينما نقاط القصة وعدد الاجتماعات وحجم الفريق مقاييس إنتاجية أو تشغيلية لا ترتبط مباشرة بجودة الكود.",
     "category": "MiniExam",
-    "id": 209
+    "id": 209,
+    "miniExamen": 2
   },
   {
     "source_id": 30,
@@ -87497,7 +88187,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "ميثاق المشروع الموقّع رسميًا من الراعي هو الوثيقة التي تمنح مدير المشروع السلطة الرسمية لاستخدام موارد المؤسسة، وهو نقطة انطلاق المشروع رسميًا، بخلاف الوثائق التشغيلية الأخرى اللاحقة.",
     "category": "MiniExam",
-    "id": 210
+    "id": 210,
+    "miniExamen": 2
   },
   {
     "source_id": 31,
@@ -87515,7 +88206,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "الشفافية مبدأ أساسي في الأطر الرشيقة؛ يجب عرض الحالة الفعلية بصدق لأصحاب المصلحة مهما كانت، ثم استخدام الاستذكار لتحليل كيفية تحسين إدارة الاعتماديات الخارجية مستقبلاً، بدلاً من الإخفاء أو العقاب غير العادل.",
     "category": "MiniExam",
-    "id": 211
+    "id": 211,
+    "miniExamen": 2
   },
   {
     "source_id": 32,
@@ -87533,7 +88225,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "في مصفوفة RACI، يشير الحرف A إلى Accountable، أي الشخص الذي يتحمل المسؤولية النهائية عن صحة واكتمال القرار أو المهمة، وهو غالبًا شخص واحد فقط لكل نشاط، بخلاف Responsible الذي قد يشمل عدة منفذين.",
     "category": "MiniExam",
-    "id": 212
+    "id": 212,
+    "miniExamen": 2
   },
   {
     "source_id": 33,
@@ -87551,7 +88244,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "صاحب المنتج هو المسؤول الوحيد عن ترتيب أولويات متراكم المنتج بما يعظم القيمة، وإن كان يستفيد من مدخلات الفريق وأصحاب المصلحة، بينما سكرم ماستر يركز على تيسير العملية لا محتوى الأولويات.",
     "category": "MiniExam",
-    "id": 213
+    "id": 213,
+    "miniExamen": 2
   },
   {
     "source_id": 34,
@@ -87569,7 +88263,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "تحليل التباين التاريخي بين التقديرات والفعلي يكشف أنماطًا منهجية يمكن استخدامها لتحسين دقة التقديرات المستقبلية عبر تحديث أصول العملية التنظيمية (مثل معاملات تصحيح قياسية)، بدلاً من التجاهل أو زيادة الميزانية دون فهم السبب.",
     "category": "MiniExam",
-    "id": 214
+    "id": 214,
+    "miniExamen": 2
   },
   {
     "source_id": 35,
@@ -87587,7 +88282,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "البنية التحتية كشيفرة تهدف لإدارة موارد البنية التحتية عبر ملفات تعريف نصية قابلة للنسخ والتحكم بالإصدارات، مما يحسّن الاتساق ويسرّع الاستنساخ عبر البيئات المختلفة، وليس استبدال المطورين أو إلغاء بيئات الاختبار.",
     "category": "MiniExam",
-    "id": 215
+    "id": 215,
+    "miniExamen": 2
   },
   {
     "source_id": 36,
@@ -87605,7 +88301,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "عقد السعر الثابت (FFP) الأنسب عندما يكون النطاق محددًا بدقة عالية منذ البداية، مما يسمح بتسعير دقيق ونقل معظم مخاطر تجاوز التكلفة إلى البائع، بعكس المشاريع ذات النطاق الغامض أو الاستكشافي التي تناسبها عقود أكثر مرونة مثل CPFF أو T&M.",
     "category": "MiniExam",
-    "id": 216
+    "id": 216,
+    "miniExamen": 2
   },
   {
     "source_id": 37,
@@ -87623,7 +88320,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "مقياس الوقت الفعلي للقيمة يقيس المدة من بدء العمل على فكرة أو ميزة حتى وصولها الفعلي للمستخدم وتحقيقها قيمة ملموسة، وهو مؤشر مهم لتقييم كفاءة تدفق التسليم الكلي، بخلاف مقاييس الجهد الداخلي البحتة.",
     "category": "MiniExam",
-    "id": 217
+    "id": 217,
+    "miniExamen": 2
   },
   {
     "source_id": 38,
@@ -87641,7 +88339,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "عملية التحقق من النطاق (Validate Scope) هي التي تُعنى رسميًا بالحصول على قبول العميل الرسمي للمخرجات المكتملة بناءً على معايير القبول، وهي منفصلة عن ضبط الجودة الذي يتحقق من صحة المخرجات تقنيًا قبل هذه المرحلة.",
     "category": "MiniExam",
-    "id": 218
+    "id": 218,
+    "miniExamen": 2
   },
   {
     "source_id": 39,
@@ -87659,7 +88358,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "مهندس قطار الإصدار (RTE) يعمل كخادم-قائد على مستوى البرنامج، يسهل الأحداث والعمليات عبر عدة فرق ويزيل العوائق التي تتجاوز نطاق فريق واحد، دون أن يحل محل سكرم ماستر أو صاحب المنتج على مستوى الفريق.",
     "category": "MiniExam",
-    "id": 219
+    "id": 219,
+    "miniExamen": 2
   },
   {
     "source_id": 40,
@@ -87677,7 +88377,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "القيمة المتوقعة النقدية (EMV) = الاحتمالية × التأثير = 0.30 × (-50,000) = -15,000 دولار. هذه القيمة تُستخدم كأساس لتحديد حجم احتياطي الطوارئ المخصص لهذا الخطر تحديدًا.",
     "category": "MiniExam",
-    "id": 220
+    "id": 220,
+    "miniExamen": 2
   },
   {
     "source_id": 41,
@@ -87695,7 +88396,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "ارتفاع معدل هروب العيوب إلى الإنتاج يشير إلى ضعف متزايد في فعالية آليات الاختبار والجودة قبل النشر، وهو مؤشر تحذيري يستدعي من الفريق مراجعة استراتيجية الاختبار وتقوية بوابات الجودة.",
     "category": "MiniExam",
-    "id": 221
+    "id": 221,
+    "miniExamen": 2
   },
   {
     "source_id": 42,
@@ -87713,7 +88415,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "التنفيذ المتوازي (Fast Tracking) يقلل المدة الزمنية لكنه يزيد خطر إعادة العمل، لأن النشاط اللاحق قد يبدأ بناءً على معلومات غير مكتملة من النشاط السابق، مما قد يستلزم تعديلات لاحقة إذا تغيرت المخرجات الأولية.",
     "category": "MiniExam",
-    "id": 222
+    "id": 222,
+    "miniExamen": 2
   },
   {
     "source_id": 43,
@@ -87731,7 +88434,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "خارطة الطريق الهجينة تجمع بين تنبؤية المعالم الحرجة (كالموافقات التنظيمية التي تتطلب التزامًا زمنيًا واضحًا) ومرونة الزيادات التكيفية لتطوير الميزات، مما يوازن بين متطلبات إدارة أصحاب المصلحة والاستجابة للتغيير.",
     "category": "MiniExam",
-    "id": 223
+    "id": 223,
+    "miniExamen": 2
   },
   {
     "source_id": 44,
@@ -87749,7 +88453,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "عندما يثبت أن افتراضًا رئيسيًا غير صحيح، يجب معاملته كمصدر خطر جديد يستدعي تقييم الأثر وتحديث الخطط ذات الصلة (المخاطر، النطاق، الجدول) بدلاً من التجاهل أو الاستمرار كأن شيئًا لم يتغير.",
     "category": "MiniExam",
-    "id": 224
+    "id": 224,
+    "miniExamen": 2
   },
   {
     "source_id": 45,
@@ -87767,7 +88472,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "مؤشر التنبؤية يُحسب عادة كنسبة العمل الملتزم به والمكتمل فعليًا مقارنة بالالتزام الأصلي في بداية السبرنت، مقاسًا عبر عدة دورات متتالية، وهو مؤشر مهم لتقييم موثوقية تخطيط الفريق مع مرور الوقت.",
     "category": "MiniExam",
-    "id": 225
+    "id": 225,
+    "miniExamen": 2
   },
   {
     "source_id": 46,
@@ -87785,7 +88491,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "متطلبات حوكمة البيانات والامتثال التنظيمي يجب دمجها منذ مرحلة بدء المشروع ضمن التخطيط الشامل (النطاق، المخاطر، الجودة)، وليس الانتظار حتى اكتشاف مخالفة أو الإغلاق، لتفادي مخاطر قانونية وسمعة جسيمة.",
     "category": "MiniExam",
-    "id": 226
+    "id": 226,
+    "miniExamen": 2
   },
   {
     "source_id": 47,
@@ -87803,7 +88510,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "تقييم النضج الرشيق المؤسسي الموضوعي يتطلب نموذجًا منظمًا يجمع بين تقييم الممارسات الفعلية مقابل القيم والمبادئ الرشيقة وبيانات أداء كمية عبر الفرق، وليس رأيًا فرديًا أو مقاييس سطحية كعدد الاجتماعات.",
     "category": "MiniExam",
-    "id": 227
+    "id": 227,
+    "miniExamen": 2
   },
   {
     "source_id": 48,
@@ -87821,7 +88529,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "في الهيكل المصفوفي القوي، يملك مدير المشروع سلطة معتدلة إلى عالية نسبيًا مقارنة بالمدير الوظيفي، وغالبًا يعمل بدوام كامل مخصص لإدارة المشروع، على عكس المصفوفة الضعيفة حيث تظل السلطة الأكبر للمدير الوظيفي.",
     "category": "MiniExam",
-    "id": 228
+    "id": 228,
+    "miniExamen": 2
   },
   {
     "source_id": 49,
@@ -87839,7 +88548,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "فرق المنتج المستقرة تسمح بتراكم معرفة عميقة بالمنتج والسياق التجاري بمرور الوقت، مع تحسين الأداء بفضل استقرار العلاقات والفهم المشترك، وهي فائدة استراتيجية تتجاوز مجرد توفير تكاليف التوظيف.",
     "category": "MiniExam",
-    "id": 229
+    "id": 229,
+    "miniExamen": 2
   },
   {
     "source_id": 50,
@@ -87857,7 +88567,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "وفق مصفوفة السلطة/الاهتمام، أصحاب المصلحة ذوو السلطة العالية والاهتمام الحالي المنخفض يُدارون عبر استراتيجية 'إبقاؤهم راضين' بتواصل دوري مناسب دون إغراقهم بالتفاصيل، لأنهم قادرون على التأثير الكبير إذا تغير اهتمامهم لاحقًا.",
     "category": "MiniExam",
-    "id": 230
+    "id": 230,
+    "miniExamen": 2
   },
   {
     "source_id": 51,
@@ -87875,7 +88586,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "المؤشر الحقيقي لثقافة التعلم من الفشل هو المشاركة العلنية والآمنة للتجارب غير الناجحة ودروسها دون خوف من اللوم، مع تطبيق فعلي للتحسينات المكتسبة، بخلاف المعاقبة أو الإخفاء التي تدل على ثقافة شكلية فقط.",
     "category": "MiniExam",
-    "id": 231
+    "id": 231,
+    "miniExamen": 2
   },
   {
     "source_id": 52,
@@ -87893,7 +88605,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "القيود المؤسسية مثل تجميد الميزانية السنوي يجب دمجها صراحة في خطط التكلفة والجدول، مع التخطيط الاستباقي لضمان إنجاز الأنشطة عالية التكلفة قبل موعد التجميد، بدلاً من التجاهل أو التجاوز غير المدروس.",
     "category": "MiniExam",
-    "id": 232
+    "id": 232,
+    "miniExamen": 2
   },
   {
     "source_id": 53,
@@ -87911,7 +88624,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "يركز إطار LeSS على تبسيط الهيكل التنظيمي عند التوسع والحفاظ على قواعد سكرم الأساسية بأقل قدر من التعقيد الإضافي (مثل صاحب منتج واحد لعدة فرق ومتراكم منتج واحد)، على عكس الأطر الأخرى التي قد تضيف طبقات وأدوار جديدة أكثر.",
     "category": "MiniExam",
-    "id": 233
+    "id": 233,
+    "miniExamen": 2
   },
   {
     "source_id": 54,
@@ -87929,7 +88643,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "عندما تهدف عدة مشاريع مترابطة لتحقيق فائدة استراتيجية مشتركة لا تتحقق بإدارتها منفردة، فهذا يُصنف كبرنامج (Program) يُدار بتنسيق مركزي لتعظيم الفوائد التآزرية، بخلاف المحفظة التي لا تشترط الترابط بين مكوناتها.",
     "category": "MiniExam",
-    "id": 234
+    "id": 234,
+    "miniExamen": 2
   },
   {
     "source_id": 55,
@@ -87947,7 +88662,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "التمويل التدريجي في السياقات الرشيقة يتيح للمؤسسة توجيه الاستثمار بناءً على قيمة مُثبتة فعليًا من كل زيادة تسليم، مما يقلل مخاطر الاستمرار في اتجاه غير مجدٍ لفترة طويلة، وهي حجة استراتيجية أقوى من مجرد الادعاء بتقليل التكلفة الإجمالية أو إلغاء الرقابة.",
     "category": "MiniExam",
-    "id": 235
+    "id": 235,
+    "miniExamen": 2
   },
   {
     "source_id": 56,
@@ -87965,7 +88681,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "متطلبات السلامة المهنية التنظيمية يجب دمجها منذ البداية ضمن ميثاق المشروع وخطط إدارة المخاطر والجودة كقيود جوهرية، لضمان الامتثال المستمر طوال دورة الحياة وليس فقط كملاحظة ختامية أو مسؤولية غير موثقة مركزيًا.",
     "category": "MiniExam",
-    "id": 236
+    "id": 236,
+    "miniExamen": 2
   },
   {
     "source_id": 57,
@@ -87983,7 +88700,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "تكييف الممارسات الرشيقة ثقافيًا يتطلب توفير قنوات تغذية راجعة غير مباشرة (كالاستطلاعات المجهولة) جنبًا إلى جنب مع المناقشات المفتوحة، مع بناء الثقة تدريجيًا لتشجيع الصراحة، بدلاً من الفرض غير الحساس ثقافيًا أو التخلي الكامل عن قيمة الشفافية.",
     "category": "MiniExam",
-    "id": 237
+    "id": 237,
+    "miniExamen": 2
   },
   {
     "source_id": 58,
@@ -88001,7 +88719,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "في المؤسسات الكبيرة، التوافق مع معايير حوكمة تكنولوجيا المعلومات يخضع عادة لمراجعة واعتماد من لجنة حوكمة أو مجلس مراجعة معماري/تقني مركزي، وليس لتقدير فريق المشروع المنفرد أو اعتماد الميزانية وحده.",
     "category": "MiniExam",
-    "id": 238
+    "id": 238,
+    "miniExamen": 2
   },
   {
     "source_id": 59,
@@ -88019,7 +88738,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "مقاييس الإنتاجية الداخلية مثل السرعة تقيس كفاءة الفريق لكنها لا تعكس بالضرورة الأثر التجاري الفعلي؛ مؤشر وقت التسويق يربط هذه التحسينات الداخلية بالنتيجة الملموسة على مستوى السوق والمؤسسة، مما يجعله مكملاً ضروريًا وليس بديلاً.",
     "category": "MiniExam",
-    "id": 239
+    "id": 239,
+    "miniExamen": 2
   },
   {
     "source_id": 60,
@@ -88037,7 +88757,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "التقارير المجمعة حول المخاطر الاستراتيجية على مستوى PMO تمكّن الإدارة العليا من رؤية شاملة للمخاطر المترابطة عبر المحفظة، مما يدعم قرارات استراتيجية أفضل حول تخصيص الموارد والأولويات، دون أن يلغي ذلك مسؤولية كل مدير مشروع عن سجل مخاطره الخاص.",
     "category": "MiniExam",
-    "id": 240
+    "id": 240,
+    "miniExamen": 2
   },
   {
     "source_id": 1,
@@ -88055,7 +88776,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "الأداء المستقر مع غياب الحماس قد يشير لفقدان المعنى أو التحدي. استكشاف السبب الجذري جماعيًا في الاستذكار وإشراك الفريق في تحديد تحسينات ذات مغزى أفضل من الحلول القسرية أو تجاهل إشارة تحذيرية مبكرة لخطر الإرهاق أو الانفصال.",
     "category": "MiniExam",
-    "id": 241
+    "id": 241,
+    "miniExamen": 3
   },
   {
     "source_id": 2,
@@ -88073,7 +88795,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "وفق نموذج القيادة الظرفية، الفرق ذات الكفاءة والدافعية العالية (مستوى نضج مرتفع) تناسبها القيادة التفويضية التي تمنحهم استقلالية عالية مع دعم عند الطلب فقط، بخلاف الأساليب الأكثر توجيهًا أو تدخلاً المناسبة لمستويات نضج أقل.",
     "category": "MiniExam",
-    "id": 242
+    "id": 242,
+    "miniExamen": 3
   },
   {
     "source_id": 3,
@@ -88091,7 +88814,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "اجتماع Scrum of Scrums (أو ما يعادله من آليات تزامن بين الفرق) هو الممارسة القياسية لمواءمة الأولويات وإدارة التبعيات بين فرق رشيقة متعددة تعمل على منتجات مترابطة، دون الحاجة لدمج الفرق أو فرض هيكل هرمي تقليدي.",
     "category": "MiniExam",
-    "id": 243
+    "id": 243,
+    "miniExamen": 3
   },
   {
     "source_id": 4,
@@ -88109,7 +88833,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "التعامل الاحترافي مع قضايا شخصية تؤثر على الأداء يتطلب التعاطف وتقديم الدعم العملي المتاح (كالمرونة أو الإحالة لموارد الدعم) دون التدخل في التفاصيل الخاصة التي لا يرغب الشخص بمشاركتها، وليس الضغط أو التجاهل الكامل.",
     "category": "MiniExam",
-    "id": 244
+    "id": 244,
+    "miniExamen": 3
   },
   {
     "source_id": 5,
@@ -88127,7 +88852,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "تقنيات مثل الاستذكار الصامت تهدف لضمان مساهمة متوازنة من كل الأعضاء وتقليل هيمنة الأصوات الأعلى على النقاش الجماعي، مما يحسن جودة وشمولية التغذية الراجعة المُجمعة، وليس فقط تسريع الاجتماع.",
     "category": "MiniExam",
-    "id": 245
+    "id": 245,
+    "miniExamen": 3
   },
   {
     "source_id": 6,
@@ -88145,7 +88871,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "معالجة ارتفاع معدل الدوران تبدأ بتحليل الأسباب الجذرية عبر مقابلات الخروج ومراجعة الأنماط، قبل اتخاذ أي إجراء تصحيحي مثل زيادة الرواتب أو التوظيف السريع الذي قد لا يعالج المشكلة الحقيقية.",
     "category": "MiniExam",
-    "id": 246
+    "id": 246,
+    "miniExamen": 3
   },
   {
     "source_id": 7,
@@ -88163,7 +88890,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "التوازن الصحي يجمع بين الحفاظ على قيمة الإنجاز الجماعي التي تعزز التعاون، مع خلق فرص إضافية ومناسبة للاعتراف بالمساهمات الفردية البارزة، دون اللجوء للمنافسة المباشرة التي قد تضر بروح الفريق.",
     "category": "MiniExam",
-    "id": 247
+    "id": 247,
+    "miniExamen": 3
   },
   {
     "source_id": 8,
@@ -88181,7 +88909,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "مدونة السلوك المهني لـ PMI تُلزم بالشفافية والصدق في التواصل حول القيود والمخاطر، وتقديم خيارات واقعية لأصحاب المصلحة لاتخاذ قرار مستنير، بدلاً من التضحية بالجودة سرًا أو اتخاذ القرار أحاديًا دون تواصل.",
     "category": "MiniExam",
-    "id": 248
+    "id": 248,
+    "miniExamen": 3
   },
   {
     "source_id": 9,
@@ -88199,7 +88928,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "حتى مع ضغط هرمي، يجب على صاحب المنتج شرح الأثر الفعلي لأي طلب على التزام السبرنت الجاري بشفافية، وتوجيه الطلبات غير الطارئة لعملية تنقيح المتراكم القياسية، حفاظًا على سلامة العملية الرشيقة وتجنب الفوضى في الالتزامات.",
     "category": "MiniExam",
-    "id": 249
+    "id": 249,
+    "miniExamen": 3
   },
   {
     "source_id": 10,
@@ -88217,7 +88947,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "وفق نظرية هيرزبرغ، العوامل الصحية (كالراتب وظروف العمل) تمنع عدم الرضا لكنها لا تخلق دافعية حقيقية طويلة المدى، بينما العوامل المحفزة الحقيقية مثل التقدير والنمو والمسؤولية ذات المعنى هي التي تحسن الدافعية الفعلية والمستدامة.",
     "category": "MiniExam",
-    "id": 250
+    "id": 250,
+    "miniExamen": 3
   },
   {
     "source_id": 11,
@@ -88235,7 +88966,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "دور سكرم ماستر تعزيز ثقافة تعاونية شاملة تمنح الجميع، بغض النظر عن الأقدمية، فرصة المساهمة والتحدي البناء، بدلاً من دعم هيمنة فردية أو تجاهل الديناميكية التي تضر بجودة القرارات الجماعية والمشاركة.",
     "category": "MiniExam",
-    "id": 251
+    "id": 251,
+    "miniExamen": 3
   },
   {
     "source_id": 12,
@@ -88253,7 +88985,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "دمج المقاولين الخارجيين ضمن ثقافة الفريق يتحقق عبر إشراكهم الكامل في الأنشطة الجماعية الرسمية وغير الرسمية مع وضوح الأدوار والتوقعات، مما يعزز التماسك والأداء الجماعي، بخلاف عزلهم أو التمييز ضدهم.",
     "category": "MiniExam",
-    "id": 252
+    "id": 252,
+    "miniExamen": 3
   },
   {
     "source_id": 13,
@@ -88271,7 +89004,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "تقنية قبعات التفكير الست تنظم النقاش الجماعي عبر توجيه التفكير بالتناوب نحو زوايا مختلفة (الحقائق، الحدس، المخاطر، الفوائد، الإبداع، الإدارة)، مما ينتج تحليلاً أكثر شمولاً وتوازنًا للمشكلات المعقدة، وليس مجرد تسريع الاجتماع.",
     "category": "MiniExam",
-    "id": 253
+    "id": 253,
+    "miniExamen": 3
   },
   {
     "source_id": 14,
@@ -88289,7 +89023,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "الاحتفاظ بالمواهب الحرجة يتطلب فهم السبب الجذري لعدم الرضا (غالبًا يتجاوز الراتب) والعمل بالتنسيق مع الموارد البشرية لوضع خطة تطوير مهني واقعية تلبي احتياجاته، بدلاً من الحلول السطحية أو الاستسلام المبكر لفقدانه.",
     "category": "MiniExam",
-    "id": 254
+    "id": 254,
+    "miniExamen": 3
   },
   {
     "source_id": 15,
@@ -88307,7 +89042,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "تجاوز الوقت المحدد بشكل متكرر يرهق الفريق ويقلل فعالية التركيز، ويضعف الانضباط الرشيق الذي يعتمد على إيقاع منتظم ومتوقع للأحداث؛ من دور سكرم ماستر تحسين تيسير الاجتماعات لضبط الوقت دون التضحية بجودة القرار.",
     "category": "MiniExam",
-    "id": 255
+    "id": 255,
+    "miniExamen": 3
   },
   {
     "source_id": 16,
@@ -88325,7 +89061,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "إدارة التوتر المحتمل بشكل استباقي عبر فهم طبيعته ووضع توقعات سلوكية واضحة قبل الضم، مع متابعة عن قرب لاحقًا، نهج أكثر احترافية من الرفض التلقائي أو التجاهل الكامل الذي قد يؤدي لمشاكل لاحقة.",
     "category": "MiniExam",
-    "id": 256
+    "id": 256,
+    "miniExamen": 3
   },
   {
     "source_id": 17,
@@ -88343,7 +89080,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "النجاح الثقافي الحقيقي لـ DevOps يظهر في تحمل الفريق الموحد مسؤولية جماعية كاملة عن أداء وموثوقية النظام في الإنتاج (مبدأ 'you build it, you run it')، وليس فقط اتباع عمليات موحدة شكليًا مع بقاء الحدود الثقافية والوظيفية قائمة فعليًا.",
     "category": "MiniExam",
-    "id": 257
+    "id": 257,
+    "miniExamen": 3
   },
   {
     "source_id": 18,
@@ -88361,7 +89099,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "رغم أن أسلوب التعاون هو الأمثل عمومًا لحل النزاعات، في الحالات الاستثنائية ذات الضغط الزمني الشديد حيث يهدد التأخير المشروع، يصبح أسلوب الفرض/التوجيه الحاسم مبررًا لاتخاذ قرار سريع، مع توضيح الأسباب لاحقًا للحفاظ على الثقة.",
     "category": "MiniExam",
-    "id": 258
+    "id": 258,
+    "miniExamen": 3
   },
   {
     "source_id": 19,
@@ -88379,7 +89118,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "الشفافية الراديكالية فعّالة فقط ضمن ثقافة أمان نفسي قوية؛ دون ذلك، قد تُستخدم البيانات المكشوفة لإلقاء اللوم الفردي أو مقارنات تنافسية ضارة بدلاً من التعلم البناء، وهو خطر ثقافي حقيقي يجب على القيادة إدارته بوعي عند تبني هذا المبدأ.",
     "category": "MiniExam",
-    "id": 259
+    "id": 259,
+    "miniExamen": 3
   },
   {
     "source_id": 20,
@@ -88397,7 +89137,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "التعامل البناء مع القرارات العاطفية المتسرعة يتم عبر الاستماع الفعّال والأسئلة التوضيحية الهادئة لإعادة توجيه النقاش نحو الحقائق، مع إمكانية متابعة فردية لاحقة عند الحاجة، بدلاً من المواجهة العلنية الحادة أو الإقصاء الكامل.",
     "category": "MiniExam",
-    "id": 260
+    "id": 260,
+    "miniExamen": 3
   },
   {
     "source_id": 21,
@@ -88415,7 +89156,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "فارق التكلفة (CV) يُحسب كالفرق بين القيمة المكتسبة (EV) والتكلفة الفعلية (AC)، ويقيس مباشرة ما إذا كان المشروع يتجاوز أو يقل عن الميزانية المخططة حتى تلك النقطة الزمنية، بخلاف SV وSPI اللذين يقيسان أداء الجدول الزمني.",
     "category": "MiniExam",
-    "id": 261
+    "id": 261,
+    "miniExamen": 3
   },
   {
     "source_id": 22,
@@ -88433,7 +89175,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "استراتيجية التجنب (Avoid) تعني تغيير خطة المشروع للتخلص الكامل من التهديد أو حمايته من أثره، مثل إزالة النشاط المسبب للخطر بالكامل، على عكس التخفيف الذي يقلل الاحتمالية أو التأثير دون إزالته كليًا.",
     "category": "MiniExam",
-    "id": 262
+    "id": 262,
+    "miniExamen": 3
   },
   {
     "source_id": 23,
@@ -88451,7 +89194,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "تجزئة قصص المستخدم الكبيرة تهدف لتقسيم العمل الضخم إلى وحدات أصغر قابلة للإنجاز والتسليم ضمن سبرنت واحد، مع الحفاظ على قيمة مستقلة قابلة للتقييم لكل جزء، وهي ممارسة أساسية لضمان التسليم التدريجي المستمر.",
     "category": "MiniExam",
-    "id": 263
+    "id": 263,
+    "miniExamen": 3
   },
   {
     "source_id": 24,
@@ -88469,7 +89213,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "تقنية دلفي تجمع آراء الخبراء بشكل مجهول عبر جولات متكررة، مما يقلل تأثير الأصوات المهيمنة أو التحيز الجماعي (groupthink) الذي قد يحدث في جلسات العصف الذهني المباشرة، ويصل لتوافق أكثر موضوعية حول المخاطر.",
     "category": "MiniExam",
-    "id": 264
+    "id": 264,
+    "miniExamen": 3
   },
   {
     "source_id": 25,
@@ -88487,7 +89232,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "متوسط زمن الاسترداد (MTTR) يقيس تحديدًا متوسط الوقت اللازم لاستعادة الخدمة إلى العمل الطبيعي بعد وقوع عطل أو حادثة إنتاج، وهو مقياس جوهري لتقييم مرونة النظام وفعالية فريق الاستجابة للحوادث في بيئات DevOps الناضجة.",
     "category": "MiniExam",
-    "id": 265
+    "id": 265,
+    "miniExamen": 3
   },
   {
     "source_id": 26,
@@ -88505,7 +89251,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "تكاليف الوقاية تشمل الاستثمارات الاستباقية مثل التدريب والتخطيط الوقائي وتصميم العمليات لمنع حدوث العيوب من الأساس، وهي ضمن فئة 'تكلفة المطابقة' مقابل تكاليف الفشل الداخلي والخارجي التي تمثل 'تكلفة عدم المطابقة'.",
     "category": "MiniExam",
-    "id": 266
+    "id": 266,
+    "miniExamen": 3
   },
   {
     "source_id": 27,
@@ -88523,7 +89270,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "صافي نقاط ترويج الموظفين مؤشر رائد يعكس صحة ورضا الفريق الداخلي، مما يساعد في اكتشاف مخاطر الإرهاق أو ضعف الروح المعنوية مبكرًا قبل أن تنعكس سلبًا على مقاييس الإنتاجية والجودة، وهو مكمل مهم للمقاييس التقنية البحتة.",
     "category": "MiniExam",
-    "id": 267
+    "id": 267,
+    "miniExamen": 3
   },
   {
     "source_id": 28,
@@ -88541,7 +89289,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "في عقود FPIF التي تتضمن سقف سعر (Price Ceiling)، يتحمل البائع كامل التكلفة الزائدة بعد تجاوز هذا السقف، حيث يتحول العقد فعليًا لسعر ثابت صارم عند هذه النقطة، مما يحفز البائع على ضبط التكاليف ضمن الحدود المتفق عليها.",
     "category": "MiniExam",
-    "id": 268
+    "id": 268,
+    "miniExamen": 3
   },
   {
     "source_id": 29,
@@ -88559,7 +89308,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "انخفاض كفاءة التدفق يعني أن معظم زمن الدورة يُقضى في الانتظار بين مراحل العمل (بسبب اختناقات أو تبعيات أو توفر الموارد) بدلاً من العمل الفعلي على العنصر، وهو مؤشر مهم يستدعي تحليل الاختناقات لتحسين التدفق الكلي.",
     "category": "MiniExam",
-    "id": 269
+    "id": 269,
+    "miniExamen": 3
   },
   {
     "source_id": 30,
@@ -88577,7 +89327,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "بوابات المرحلة (Phase Gates) أو مراجعات نهاية المرحلة هي النقاط الرسمية الموثقة التي يُتخذ فيها قرار صريح بالموافقة على الانتقال للمرحلة التالية (أو التوقف/التعديل)، وهي آلية أساسية في دورات الحياة التنبؤية المرحلية.",
     "category": "MiniExam",
-    "id": 270
+    "id": 270,
+    "miniExamen": 3
   },
   {
     "source_id": 31,
@@ -88595,7 +89346,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "عندما تحمل قصة المستخدم غموضًا تقنيًا كبيرًا، الممارسة القياسية هي إنشاء 'سبايك' بحثي محدد زمنيًا لاستكشاف الحل التقني وتقليل عدم اليقين، مما يتيح تقديرًا أكثر دقة وموثوقية لاحقًا بدلاً من التخمين أو الرفض المتشدد.",
     "category": "MiniExam",
-    "id": 271
+    "id": 271,
+    "miniExamen": 3
   },
   {
     "source_id": 32,
@@ -88613,7 +89365,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "صيغة TCPI بناءً على BAC (الأصلية) هي: (BAC − EV) / (BAC − AC)، أي نسبة العمل المتبقي إلى الميزانية المتبقية، وهي تقيس الكفاءة المطلوبة لبقية المشروع للبقاء ضمن الميزانية الأصلية المعتمدة.",
     "category": "MiniExam",
-    "id": 272
+    "id": 272,
+    "miniExamen": 3
   },
   {
     "source_id": 33,
@@ -88631,7 +89384,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "المعيار الأساسي لاختيار النهج (تنبؤي مقابل تكيفي) لكل مكون من المشروع هو درجة وضوح واستقرار المتطلبات ومدى الحاجة للتكرار السريع بناءً على التغذية الراجعة؛ المكونات الواضحة والمستقرة تناسبها الأساليب التنبؤية، بينما الغامضة والمتغيرة تناسبها الأساليب التكيفية.",
     "category": "MiniExam",
-    "id": 273
+    "id": 273,
+    "miniExamen": 3
   },
   {
     "source_id": 34,
@@ -88649,7 +89403,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "قاعدة 100% في WBS تنص على أن المستويات الأدنى مجتمعة يجب أن تمثل نطاق العمل بالكامل بدون نقص أو زيادة، مع تفصيل كافٍ للتخطيط والرقابة الفعالة دون الإفراط في التجزئة التي تضيف تعقيدًا إداريًا غير ضروري.",
     "category": "MiniExam",
-    "id": 274
+    "id": 274,
+    "miniExamen": 3
   },
   {
     "source_id": 35,
@@ -88667,7 +89422,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "عرض النقاط (System Demo) في SAFe يعرض التكامل المجمّع لعمل جميع الفرق ضمن قطار الإصدار الرشيق كنظام متكامل واحد، بينما مراجعة السبرنت الفردية تركز على عمل فريق واحد فقط، وكلاهما يُعقدان بشكل متكامل وليس بديلاً أحدهما عن الآخر.",
     "category": "MiniExam",
-    "id": 275
+    "id": 275,
+    "miniExamen": 3
   },
   {
     "source_id": 36,
@@ -88685,7 +89441,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "خط الأساس للتكلفة يتضمن تقديرات الأنشطة المعتمدة بالإضافة لاحتياطي الطوارئ للمخاطر المعروفة، بينما الميزانية الإجمالية للمشروع تضيف فوق ذلك احتياطي الإدارة (Management Reserve) المخصص للمخاطر غير المعروفة (unknown unknowns)، والذي لا يخضع لرقابة مدير المشروع المباشرة دون موافقة إدارية.",
     "category": "MiniExam",
-    "id": 276
+    "id": 276,
+    "miniExamen": 3
   },
   {
     "source_id": 37,
@@ -88703,7 +89460,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "ارتفاع معدل تكرار النشر (أحد مقاييس DORA) يعكس نضج الفريق في التسليم المتكرر لدفعات صغيرة منخفضة المخاطر، مما يسرّع دورة التغذية الراجعة ويقلل تعقيد ومخاطر كل عملية نشر مقارنة بالدفعات الكبيرة النادرة، وهو مؤشر أداء إيجابي مرتبط بالنضج التقني والتشغيلي.",
     "category": "MiniExam",
-    "id": 277
+    "id": 277,
+    "miniExamen": 3
   },
   {
     "source_id": 38,
@@ -88721,7 +89479,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "الـ Lag في علاقة Finish-to-Start يمثل فترة انتظار إلزامية بعد انتهاء النشاط السابق وقبل بدء النشاط التالي (مثل وقت جفاف الطلاء قبل التركيب التالي)، على عكس الـ Lead الذي يمثل تداخلاً يسمح ببدء النشاط التالي قبل انتهاء السابق بالكامل.",
     "category": "MiniExam",
-    "id": 278
+    "id": 278,
+    "miniExamen": 3
   },
   {
     "source_id": 39,
@@ -88739,7 +89498,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "تصنيف المهام الصغيرة جدًا كـ 'نقطة قصة صفر' يسمح بتتبعها والحفاظ على الشفافية الكاملة للعمل المنجز، دون تضخيم مقاييس السرعة بشكل مصطنع لا يعكس الجهد الفعلي المبذول على العمل ذي القيمة الأكبر، مما يحافظ على دقة قياس الأداء عبر الزمن.",
     "category": "MiniExam",
-    "id": 279
+    "id": 279,
+    "miniExamen": 3
   },
   {
     "source_id": 40,
@@ -88757,7 +89517,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "تحليل الحشد (Crashing) يتطلب حساب تكلفة تسريع كل نشاط مقسومة على عدد الأيام الممكن توفيرها (تكلفة الوحدة الزمنية)، مع التركيز حصريًا على أنشطة المسار الحرج لأن تسريع الأنشطة غير الحرجة لن يقلل مدة المشروع الكلية.",
     "category": "MiniExam",
-    "id": 280
+    "id": 280,
+    "miniExamen": 3
   },
   {
     "source_id": 41,
@@ -88775,7 +89536,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "السياسات الصريحة المكتوبة لكل عمود في لوحة كانبان توضح معايير موحدة ومفهومة للجميع حول شروط انتقال العنصر بين المراحل، مما يقلل الغموض والنقاشات المتكررة حول جاهزية العمل، ويحسّن اتساق واستقلالية اتخاذ القرار داخل الفريق.",
     "category": "MiniExam",
-    "id": 281
+    "id": 281,
+    "miniExamen": 3
   },
   {
     "source_id": 42,
@@ -88793,7 +89555,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "احتياطي الإدارة مخصص للمخاطر غير المعروفة (unknown unknowns) ولا يقع عادة ضمن خط الأساس المعتمد الذي يتحكم فيه مدير المشروع مباشرة؛ استخدامه يتطلب موافقة الإدارة العليا أو الراعي، بخلاف احتياطي الطوارئ الذي يقع ضمن صلاحية مدير المشروع المباشرة.",
     "category": "MiniExam",
-    "id": 282
+    "id": 282,
+    "miniExamen": 3
   },
   {
     "source_id": 43,
@@ -88811,7 +89574,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "الحل الأمثل في السياقات الهجينة هو أتمتة تجميع البيانات من كلا النهجين (EVM للتنبؤي، ومقاييس التدفق/السرعة للرشيق) في لوحة معلومات موحدة، مما يلبي احتياجات التقارير المختلفة دون إرهاق الفرق بإدخال يدوي مزدوج أو إجبار أي فريق على التخلي عن أدواته الملائمة.",
     "category": "MiniExam",
-    "id": 283
+    "id": 283,
+    "miniExamen": 3
   },
   {
     "source_id": 44,
@@ -88829,7 +89593,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "عملية إغلاق المشتريات هي التي تغطي رسميًا التحقق من اكتمال جميع المخرجات التعاقدية، معالجة أي نزاعات متبقية، وتوثيق الإغلاق الرسمي للعقد قبل الدفعة النهائية، وهي منفصلة عن عمليات التخطيط والتنفيذ والمراقبة السابقة للمشتريات.",
     "category": "MiniExam",
-    "id": 284
+    "id": 284,
+    "miniExamen": 3
   },
   {
     "source_id": 45,
@@ -88847,7 +89612,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "زمن التقدم (Lead Time) يقيس المدة الكاملة من لحظة طلب العنصر (دخوله قائمة الانتظار) حتى تسليمه النهائي، بينما زمن الدورة (Cycle Time) يقيس فقط المدة من بدء العمل الفعلي عليه حتى اكتماله، وهو دائمًا أقصر من أو يساوي زمن التقدم.",
     "category": "MiniExam",
-    "id": 285
+    "id": 285,
+    "miniExamen": 3
   },
   {
     "source_id": 46,
@@ -88865,7 +89631,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "عند صدور متطلبات تنظيمية جديدة، يجب أولاً تقييم أثرها الكامل على خطط المشروع القائمة، ثم دمجها عبر طلب تغيير رسمي ضمن عملية التحكم المتكامل بالتغيير، وليس التنفيذ العشوائي أو التجاهل أو الرفض غير المدروس الذي يعرض المشروع لمخاطر قانونية.",
     "category": "MiniExam",
-    "id": 286
+    "id": 286,
+    "miniExamen": 3
   },
   {
     "source_id": 47,
@@ -88883,7 +89650,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "التحدي الأكبر عند الانتقال للفرق ذاتية القيادة هو إعادة تعريف دور المديرين التقليديين من متحكمين مباشرين إلى قادة داعمين وميسرين (خدمة الفريق بدلاً من التحكم فيه)، وهو تحول ثقافي عميق يتجاوز مجرد إعادة الهيكلة التنظيمية الشكلية.",
     "category": "MiniExam",
-    "id": 287
+    "id": 287,
+    "miniExamen": 3
   },
   {
     "source_id": 48,
@@ -88901,7 +89669,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "في المشاريع المشتركة بين مؤسسات ذات ثقافات إدارية مختلفة، وضع ميثاق حوكمة مشترك يحدد صراحة آليات اتخاذ القرار وحدود سلطة كل طرف منذ البداية هو الأساس لتجنب النزاعات والغموض لاحقًا، بدلاً من فرض ثقافة طرف واحد أو ترك الأمور للصدفة.",
     "category": "MiniExam",
-    "id": 288
+    "id": 288,
+    "miniExamen": 3
   },
   {
     "source_id": 49,
@@ -88919,7 +89688,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "التوازن بين استقلالية الفريق والمواءمة الاستراتيجية يتحقق عبر تحديد 'ماذا' على المستوى الاستراتيجي (مثل أهداف ونتائج رئيسية OKRs) مع ترك 'كيف' لتقدير الفرق ذاتية التنظيم، مما يجمع بين التوجيه الاستراتيجي الواضح والمرونة التنفيذية اللازمة للرشاقة الحقيقية.",
     "category": "MiniExam",
-    "id": 289
+    "id": 289,
+    "miniExamen": 3
   },
   {
     "source_id": 50,
@@ -88937,7 +89707,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "خلال فترات الاستحواذ أو الاندماج، يجب على مدير المشروع مراقبة احتمال تغير الأولويات الاستراتيجية أو هيكل الحوكمة أو مصادر التمويل عن كثب، لأن هذه التغييرات قد تؤثر بشكل مباشر على استمرارية المشروع أو نطاقه أو حتى وجوده، وهو خطر بيئي/تنظيمي حقيقي يستحق تحديثًا مستمرًا لسجل المخاطر.",
     "category": "MiniExam",
-    "id": 290
+    "id": 290,
+    "miniExamen": 3
   },
   {
     "source_id": 51,
@@ -88955,7 +89726,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "تدفقات القيمة في LPM تنظم العمل حول التسلسل الفعلي للخطوات اللازمة لتقديم قيمة محددة للعميل من البداية للنهاية، متجاوزة الحدود الوظيفية التقليدية (كالأقسام المنفصلة)، مما يحسّن التدفق الكلي للقيمة ويقلل التأخير الناتج عن التسليم بين الأقسام المعزولة.",
     "category": "MiniExam",
-    "id": 291
+    "id": 291,
+    "miniExamen": 3
   },
   {
     "source_id": 52,
@@ -88973,7 +89745,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "في القطاعات شديدة التنظيم، يجب دمج متطلبات المراجعة الإلزامية (كمراجعة السلامة المستقلة) كخطوة رسمية وموثقة ضمن سير عمل التحكم المتكامل بالتغيير، مع التخطيط الزمني الواقعي الذي يأخذ بعين الاعتبار هذه المدة الإضافية، وليس تجاوزها أو إلغاء العملية بالكامل.",
     "category": "MiniExam",
-    "id": 292
+    "id": 292,
+    "miniExamen": 3
   },
   {
     "source_id": 53,
@@ -88991,7 +89764,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "النهج الهجين الأنسب لمكتب إدارة المشاريع العالمي يجمع بين إطار حوكمة أساسي موحد (المبادئ والمعايير الجوهرية لضمان الاتساق والرقابة) ومرونة محلية في التطبيق التفصيلي تحترم الفروقات الثقافية والتنظيمية، بدلاً من التوحيد الصارم الكامل أو غياب أي معايير مشتركة.",
     "category": "MiniExam",
-    "id": 293
+    "id": 293,
+    "miniExamen": 3
   },
   {
     "source_id": 54,
@@ -89009,7 +89783,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "في البنية التنظيمية الموجهة نحو المشروع، يملك مدير المشروع سلطة عالية جدًا إلى شبه كاملة، ويتبع أعضاء الفريق له تنظيميًا بشكل مباشر طوال مدة المشروع دون وجود إدارة وظيفية موازية تنافس على الولاء أو الأولويات، على عكس البنى المصفوفية أو الوظيفية.",
     "category": "MiniExam",
-    "id": 294
+    "id": 294,
+    "miniExamen": 3
   },
   {
     "source_id": 55,
@@ -89027,7 +89802,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "التحول نحو النموذج المتمحور حول المنتج يغيّر جوهريًا نموذج التمويل المؤسسي من تمويل مشاريع مؤقتة محددة المدة (بإغلاق نهائي) إلى تمويل تدفقات قيمة/منتجات مستمرة، مما يتطلب نموذج حوكمة مالي مختلف يقيّم الأداء والقيمة المستمرة بدلاً من مقاييس إغلاق المشروع التقليدية.",
     "category": "MiniExam",
-    "id": 295
+    "id": 295,
+    "miniExamen": 3
   },
   {
     "source_id": 56,
@@ -89045,7 +89821,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "المخاطر الجيوسياسية يجب تضمينها رسميًا في سجل المخاطر الاستراتيجية مع خطط طوارئ عملية (مسارات بديلة، مرونة جدولية) ومتابعة دورية استباقية للتطورات، بدلاً من التجاهل الكامل أو ردود الفعل المتطرفة كالإيقاف الفوري أو الاعتماد الحصري على التأمين دون خطط تشغيلية.",
     "category": "MiniExam",
-    "id": 296
+    "id": 296,
+    "miniExamen": 3
   },
   {
     "source_id": 57,
@@ -89063,7 +89840,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "التحول من تمويل قائم على المخرجات (عدد الميزات المُسلّمة) إلى تمويل قائم على النتائج (الأثر التجاري الفعلي أو قيمة العميل المتحققة) يعيد توجيه أولويات الفرق والمؤسسة نحو تعظيم القيمة الحقيقية، بدلاً من مجرد زيادة حجم الإنتاج دون ضمان تحقيق أثر فعلي ملموس.",
     "category": "MiniExam",
-    "id": 297
+    "id": 297,
+    "miniExamen": 3
   },
   {
     "source_id": 58,
@@ -89081,7 +89859,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "أصول العملية التنظيمية (OPA) هي العمليات والسياسات والقوالب والمعرفة التنظيمية الداخلية المتراكمة من المؤسسة نفسها (مثل قوالب المشروع وقواعد الدروس المستفادة)، بينما العوامل البيئية الخارجية مثل الظروف الاقتصادية والقوانين ومعايير الصناعة الخارجية تُصنّف ضمن 'العوامل البيئية للمؤسسة' (EEF) الخارجية أو شبه الخارجية.",
     "category": "MiniExam",
-    "id": 298
+    "id": 298,
+    "miniExamen": 3
   },
   {
     "source_id": 59,
@@ -89099,7 +89878,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "دور مركز التميز الرشيق المتوافق مع روح الرشاقة هو التمكين وليس التحكم: توفير الإرشاد وأفضل الممارسات والتدريب ومجتمعات الممارسة لدعم الفرق، مع احترام استقلاليتها في التطبيق، بدلاً من فرض عمليات جامدة موحدة أو ممارسة رقابة تفصيلية مركزية تتعارض مع مبادئ التمكين الذاتي للفرق.",
     "category": "MiniExam",
-    "id": 299
+    "id": 299,
+    "miniExamen": 3
   },
   {
     "source_id": 60,
@@ -89117,7 +89897,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "الفرق الجوهري هو أن الإدارة العامة تُعنى بالعمليات المستمرة والمستدامة لضمان استمرارية المؤسسة، بينما إدارة المشاريع تُعنى تحديدًا بمساعي مؤقتة فريدة (بداية ونهاية محددتين) لتحقيق منتج أو نتيجة أو خدمة فريدة، وهو تمييز مهم يوضح الحاجة لحوكمة وأدوات مختلفة لكل منهما.",
     "category": "MiniExam",
-    "id": 300
+    "id": 300,
+    "miniExamen": 3
   },
   {
     "source_id": 1,
@@ -89135,7 +89916,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "تحسين دقة التقدير يجب أن ينبع من الفريق نفسه عبر مراجعة تعاونية لبيانات السرعة التاريخية وفهم أسباب التفاؤل المفرط في الاستذكار، وليس عبر فرض حلول تعسفية مثل المضاعفة الآلية أو العقاب.",
     "category": "MiniExam",
-    "id": 301
+    "id": 301,
+    "miniExamen": 4
   },
   {
     "source_id": 2,
@@ -89153,7 +89935,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "توضيح الأدوار الرسمية وتوجيه الطاقة التنافسية نحو أهداف مشتركة نهج بناء يعالج جذر المشكلة (الغموض في الأدوار وتضارب الطموحات)، بخلاف التجاهل الذي يسمح بتفاقم الانقسام أو الإجراءات المتطرفة غير المدروسة.",
     "category": "MiniExam",
-    "id": 302
+    "id": 302,
+    "miniExamen": 4
   },
   {
     "source_id": 3,
@@ -89171,7 +89954,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "السبب الجذري الشائع لاجتماعات التخطيط الطويلة هو ضعف تنقيح المتراكم المسبق؛ تحسين هذه الخطوة التمهيدية يجعل القصص جاهزة بوضوح كافٍ عند الوصول للتخطيط، مما يقلل وقت النقاش الفعلي دون التضحية بجودة القرار أو إلغاء الممارسة الأساسية.",
     "category": "MiniExam",
-    "id": 303
+    "id": 303,
+    "miniExamen": 4
   },
   {
     "source_id": 4,
@@ -89189,7 +89973,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "استخدام أداة تقييم منظمة لاستعداد التغيير (مثل قياس الوعي والرغبة والمعرفة والقدرة) يوفر قياسًا موضوعيًا لجاهزية الفريق قبل التنفيذ، مما يتيح تخطيطًا أفضل لإدارة التغيير، بخلاف الاعتماد على الانطباع الشخصي أو تجاهل هذه الخطوة الأساسية.",
     "category": "MiniExam",
-    "id": 304
+    "id": 304,
+    "miniExamen": 4
   },
   {
     "source_id": 5,
@@ -89207,7 +89992,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "عند وجود فجوة تفصيلية بين صاحب المنتج والفريق التقني اليومي، تعيين وكيل تقني يعمل بشكل وثيق مع الفريق مع بقاء القرارات الاستراتيجية النهائية بيد صاحب المنتج الأصلي حل عملي شائع يحافظ على وضوح المسؤولية النهائية مع تحسين التواصل اليومي.",
     "category": "MiniExam",
-    "id": 305
+    "id": 305,
+    "miniExamen": 4
   },
   {
     "source_id": 6,
@@ -89225,7 +90011,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "بناء الثقة المبكرة مع فريق جديد يتحقق عبر الشفافية والاستماع الفعّال والوفاء الثابت بالوعود الصغيرة، مما يبني مصداقية تدريجية قابلة للإثبات، بخلاف الاعتماد على السلطة الرسمية وحدها أو المطالبة بالثقة دون أي أساس عملي.",
     "category": "MiniExam",
-    "id": 306
+    "id": 306,
+    "miniExamen": 4
   },
   {
     "source_id": 7,
@@ -89243,7 +90030,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "تنويع تقنيات الاستذكار (مثل نجمة البحر مقابل الصيغ التقليدية) يحافظ على تفاعل وحيوية الفريق ويمنع الملل الناتج عن التكرار الرتيب، مما يحسّن عمق وجودة التأمل الجماعي والنتائج العملية للاستذكار، وليس مجرد تغيير شكلي.",
     "category": "MiniExam",
-    "id": 307
+    "id": 307,
+    "miniExamen": 4
   },
   {
     "source_id": 8,
@@ -89261,7 +90049,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "التعامل المهني مع مثل هذه الشكوى يتطلب محادثة خاصة وبناءة مع الزميل المعني لمشاركة الملاحظة بطريقة مهنية، مع تقديم الدعم للعضو المتضرر، بدلاً من التجاهل أو المواجهة العلنية المهينة التي قد تفاقم التوتر بين الفريقين.",
     "category": "MiniExam",
-    "id": 308
+    "id": 308,
+    "miniExamen": 4
   },
   {
     "source_id": 9,
@@ -89279,7 +90068,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "ثقافة 'ما بعد الحادثة الخالية من اللوم' تركز على تحليل الأسباب النظامية للفشل (عمليات، أدوات، اتصال) بدلاً من البحث عن كبش فداء فردي، مما يشجع الشفافية والتعلم المستمر ويحسّن موثوقية النظام، بخلاف ثقافة اللوم التي تخلق دفاعية وإخفاء للمشاكل مستقبلاً.",
     "category": "MiniExam",
-    "id": 309
+    "id": 309,
+    "miniExamen": 4
   },
   {
     "source_id": 10,
@@ -89297,7 +90087,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "المستوى الثالث في نموذج كيركباتريك (السلوك) يقيس تحديدًا مدى تطبيق المتدربين للمهارات والمعرفة المكتسبة فعليًا في بيئة عملهم الحقيقية بعد التدريب، وهو أعمق من مجرد قياس رد الفعل الفوري (المستوى الأول) أو التعلم داخل القاعة (المستوى الثاني).",
     "category": "MiniExam",
-    "id": 310
+    "id": 310,
+    "miniExamen": 4
   },
   {
     "source_id": 11,
@@ -89315,7 +90106,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "فحوصات صحة الفريق الدورية تتيح اكتشافًا مبكرًا لعلامات التعب أو ضعف التعاون أو تراجع الرضا قبل أن تتفاقم وتؤثر سلبًا على الأداء، مما يمكّن من تدخل استباقي وقائي بدلاً من انتظار ظهور المشكلة في مقاييس الإنتاجية المتأخرة.",
     "category": "MiniExam",
-    "id": 311
+    "id": 311,
+    "miniExamen": 4
   },
   {
     "source_id": 12,
@@ -89333,7 +90125,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "القيادة الفعالة تتطلب تكييف الأسلوب حسب احتياج الفريق الفعلي (وفق مبادئ القيادة الظرفية)، وليس التمسك بأسلوب مفضل شخصيًا بغض النظر عن السياق؛ الانتقال التدريجي من التوجيه المباشر نحو الأسلوب التحويلي مع نضج الفريق هو النهج الأنسب.",
     "category": "MiniExam",
-    "id": 312
+    "id": 312,
+    "miniExamen": 4
   },
   {
     "source_id": 13,
@@ -89351,7 +90144,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "شرح الأدلة العلمية حول تكلفة تبديل السياق ومراقبة البيانات الفعلية للأداء الفردي (زمن الدورة، معدل الإنجاز) نهج تعليمي مقنع أكثر من الاستثناء أو الإلغاء أو التجاهل، ويساعد العضو على فهم القيمة الحقيقية لحدود WIP بناءً على الأدلة لا الفرض.",
     "category": "MiniExam",
-    "id": 313
+    "id": 313,
+    "miniExamen": 4
   },
   {
     "source_id": 14,
@@ -89369,7 +90163,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "الأداء التقني الجيد لا يعني بالضرورة غياب مخاطر فقدان التحفيز؛ إجراء محادثة استكشافية استباقية لفهم مصدر التململ (رغبة في تحدٍ أو تنوع) والعمل على إعادة تصميم المسؤوليات إن أمكن يحافظ على تحفيز العضو قبل أن يتحول لمشكلة أداء أو استقالة.",
     "category": "MiniExam",
-    "id": 314
+    "id": 314,
+    "miniExamen": 4
   },
   {
     "source_id": 15,
@@ -89387,7 +90182,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "التفاعل غير الرسمي يلعب دورًا مهمًا في بناء الثقة والتماسك الاجتماعي الذي يسهّل لاحقًا التعاون الفعال والتواصل الصريح حول القضايا الصعبة في سياق العمل الرسمي؛ فقدانه في الفرق الموزعة يستدعي تعويضه عمدًا بممارسات تيسير مخصصة، وليس تجاهله كأمر ثانوي.",
     "category": "MiniExam",
-    "id": 315
+    "id": 315,
+    "miniExamen": 4
   },
   {
     "source_id": 16,
@@ -89405,7 +90201,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "قبل افتراض أن النزاع شخصي بحت، يجب أولاً مراجعة مصفوفة RACI ووصف الأدوار الرسمي للتحقق من وجود غموض أو تداخل فعلي في المسؤوليات قد يكون السبب الجذري الحقيقي للنزاع، إذ يمكن معالجة هذا النوع من الأسباب بوضوح تنظيمي بسيط بدلاً من الوساطة الشخصية فقط.",
     "category": "MiniExam",
-    "id": 316
+    "id": 316,
+    "miniExamen": 4
   },
   {
     "source_id": 17,
@@ -89423,7 +90220,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "روح التحسين المستمر الرشيق تشجع على تجربة الأفكار الجديدة بشكل مضبوط ومحدود زمنيًا مع مقاييس تقييم واضحة، بدلاً من الرفض الفوري أو الموافقة العمياء دون تقييم، مما يسمح باتخاذ قرار دائم مستنير بناءً على بيانات فعلية.",
     "category": "MiniExam",
-    "id": 317
+    "id": 317,
+    "miniExamen": 4
   },
   {
     "source_id": 18,
@@ -89441,7 +90239,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "وفق نموذج انتشار الابتكار، التركيز على المتبنين الأوائل المتحمسين نسبيًا واستخدام نجاحهم المبكر كدليل اجتماعي مقنع استراتيجية فعالة لتوسيع التبني تدريجيًا عبر بقية الفريق، بدلاً من محاولة إقناع الجميع دفعة واحدة أو استهداف الأكثر مقاومة أولاً وهو الأصعب نجاحًا.",
     "category": "MiniExam",
-    "id": 318
+    "id": 318,
+    "miniExamen": 4
   },
   {
     "source_id": 19,
@@ -89459,7 +90258,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "ساعات المكتب المخصصة توفر وصولاً متوقعًا ومنظمًا لصاحب المنتج، مما يقلل الانقطاعات العشوائية للفريق أثناء أوقات العمل المركّز مع ضمان استمرار تدفق التوضيحات اللازمة بكفاءة، وهي ممارسة توازن بين التوافر والتركيز، وليست وسيلة لتقليل التواصل الكلي أو إلغاء ممارسات أخرى.",
     "category": "MiniExam",
-    "id": 319
+    "id": 319,
+    "miniExamen": 4
   },
   {
     "source_id": 20,
@@ -89477,7 +90277,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "الصراع المرتبط بالمهمة (حول الأفكار وطرق الحل) يمكن أن يكون بنّاءً ومفيدًا لتحسين جودة القرارات إذا أُدير بشكل صحي واحترافي، على عكس الصراع العلائقي المبني على مشاعر شخصية سلبية الذي يضر دائمًا بالأداء والتماسك الجماعي ويجب تقليله بنشاط.",
     "category": "MiniExam",
-    "id": 320
+    "id": 320,
+    "miniExamen": 4
   },
   {
     "source_id": 21,
@@ -89495,7 +90296,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "عندما يُفترض أن التباين الحالي استثنائي ولن يتكرر (أي سيعود الأداء لطبيعته الأصلية)، تُستخدم صيغة ETC = BAC − EV لتقدير العمل المتبقي وفق الخطة الأصلية، بخلاف الصيغ الأخرى التي تفترض استمرار نمط التباين الحالي بأشكال مختلفة.",
     "category": "MiniExam",
-    "id": 321
+    "id": 321,
+    "miniExamen": 4
   },
   {
     "source_id": 22,
@@ -89513,7 +90315,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "مخطط تدفق العملية يصوّر تسلسل الخطوات بوضوح، مما يساعد في تحديد نقاط الاختناق أو الفشل المحتملة أو الخطوات الزائدة القابلة للتبسيط، وهي أداة تحليلية لتحسين تصميم العملية وجودتها، وليست بديلاً عن اختبارات الجودة اللاحقة.",
     "category": "MiniExam",
-    "id": 322
+    "id": 322,
+    "miniExamen": 4
   },
   {
     "source_id": 23,
@@ -89531,7 +90334,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "التقدير النسبي بنقاط القصة يسهّل مقارنة الحجم والتعقيد النسبي بين القصص المختلفة دون الحاجة لدقة زمنية مطلقة، وهو عادة أسرع وأكثر اتساقًا عبر الفريق بمرور الوقت مقارنة بمحاولة التقدير الدقيق بالساعات الذي يصعب تحقيقه بموثوقية عالية للعمل المعقد.",
     "category": "MiniExam",
-    "id": 323
+    "id": 323,
+    "miniExamen": 4
   },
   {
     "source_id": 24,
@@ -89549,7 +90353,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "حدود تحمل المخاطر تحدد المستوى المقبول من التعرض الذي يستدعي (أو لا يستدعي) استجابة رسمية أو تصعيد، بما يعكس شهية المخاطرة العامة للمؤسسة، مما يوفر معيارًا موضوعيًا لتحديد أولويات الاستجابة بدلاً من الاعتماد على الحكم الشخصي فقط لكل خطر.",
     "category": "MiniExam",
-    "id": 324
+    "id": 324,
+    "miniExamen": 4
   },
   {
     "source_id": 25,
@@ -89567,7 +90372,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "التذبذب الكبير في السرعة بين السبرنتات يستدعي تحقيقًا لفهم السبب، سواء كان تدخلات خارجية متكررة، تغير في تكوين الفريق، أو ضعف في دقة التقدير، لأن السرعة المستقرة نسبيًا هي أساس التخطيط والتنبؤ الموثوق بالسعة المستقبلية للفريق.",
     "category": "MiniExam",
-    "id": 325
+    "id": 325,
+    "miniExamen": 4
   },
   {
     "source_id": 26,
@@ -89585,7 +90391,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "فارق التكلفة CV = EV − AC = 200,000 − 250,000 = -50,000 دولار، وهو رقم سالب يعني أن المشروع أنفق أكثر مما أنجز فعليًا من قيمة، أي أنه يتجاوز الميزانية المخططة لمستوى العمل المنجز حتى الآن.",
     "category": "MiniExam",
-    "id": 326
+    "id": 326,
+    "miniExamen": 4
   },
   {
     "source_id": 27,
@@ -89603,7 +90410,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "نقاط القصة تُستخدم على مستوى الفريق الفردي لتقدير قصص المستخدم التفصيلية، بينما نقاط الميزات في SAFe تُستخدم على مستوى البرنامج (Program level) لتقدير ميزات أكبر قد تتطلب عمل عدة فرق مجتمعة ضمن قطار الإصدار الرشيق، وهو مستوى تجميع أعلى.",
     "category": "MiniExam",
-    "id": 327
+    "id": 327,
+    "miniExamen": 4
   },
   {
     "source_id": 28,
@@ -89621,7 +90429,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "عقود تعديل السعر الاقتصادي (EPA) مناسبة للمشاريع طويلة المدى المعرضة لتقلبات كبيرة في أسعار المواد أو التضخم، حيث يحمي بند التعديل كلا الطرفين من مخاطر السوق غير المتوقعة خلال مدة تنفيذ طويلة، بخلاف السعر الثابت البسيط الأنسب للمشاريع قصيرة المدى ذات الاستقرار السعري.",
     "category": "MiniExam",
-    "id": 328
+    "id": 328,
+    "miniExamen": 4
   },
   {
     "source_id": 29,
@@ -89639,7 +90448,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "معدل تغيير الفشل يقيس النسبة المئوية للتغييرات المنشورة للإنتاج التي تسببت في فشل أو تطلبت إصلاحًا عاجلاً أو تراجعًا، وهو مؤشر جودة أساسي ضمن مقاييس DORA الأربعة يعكس مدى موثوقية عملية النشر والاختبار، بخلاف مقاييس السرعة أو حجم الفريق.",
     "category": "MiniExam",
-    "id": 329
+    "id": 329,
+    "miniExamen": 4
   },
   {
     "source_id": 30,
@@ -89657,7 +90467,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "خطة إدارة التغيير هي الوثيقة التي تحدد بالتفصيل كيفية استلام وتقييم ومعالجة طلبات التغيير، بما يشمل الأدوار (مثل لجنة مراقبة التغيير) والصلاحيات وآلية اتخاذ القرار، وهي جزء أساسي من خطة إدارة المشروع الشاملة، بخلاف الوثائق الأخرى ذات الأغراض المختلفة.",
     "category": "MiniExam",
-    "id": 330
+    "id": 330,
+    "miniExamen": 4
   },
   {
     "source_id": 31,
@@ -89675,7 +90486,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "توثيق قصص الرافعة (العمل التقني التمكيني) صراحة ضمن المتراكم يضمن الشفافية الكاملة حول جميع أنواع العمل الضروري، ويمنع تحيز الأولويات نحو الميزات الظاهرة للمستخدم فقط على حساب البنية التحتية والصحة التقنية اللازمة لاستدامة المنتج على المدى الطويل.",
     "category": "MiniExam",
-    "id": 331
+    "id": 331,
+    "miniExamen": 4
   },
   {
     "source_id": 32,
@@ -89693,7 +90505,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "مصفوفة تتبع المتطلبات تربط كل متطلب بمصدره (كحاجة عمل أو صاحب مصلحة) وأهدافه ومخرجاته النهائية عبر دورة حياة المشروع بالكامل، مما يضمن عدم إغفال أي متطلب أثناء التصميم والتنفيذ والاختبار، وهي أداة تتبع أساسية وليست بديلة عن وثيقة النطاق.",
     "category": "MiniExam",
-    "id": 332
+    "id": 332,
+    "miniExamen": 4
   },
   {
     "source_id": 33,
@@ -89711,7 +90524,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "تصنيف فئات الخدمة يحدد سياسات معالجة مختلفة (أولوية، استجابة، تحمل للتأخير) لكل نوع من العمل بناءً على طبيعته الفعلية وأثر تأخيره، مما يحسّن جودة القرارات حول أولويات السحب من قائمة الانتظار، ويكمّل حدود WIP بدلاً من استبدالها.",
     "category": "MiniExam",
-    "id": 333
+    "id": 333,
+    "miniExamen": 4
   },
   {
     "source_id": 34,
@@ -89729,7 +90543,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "مراجعة الأقران تكتشف أخطاء أو ثغرات قد يغفلها الكاتب الأصلي بسبب الألفة المفرطة مع عمله (نقاط عمياء)، مستفيدة من منظور خبرة مستقل يحسّن جودة المخرج النهائي، وهي إضافة جوهرية للجودة تتجاوز حدود المراجعة الذاتية وحدها.",
     "category": "MiniExam",
-    "id": 334
+    "id": 334,
+    "miniExamen": 4
   },
   {
     "source_id": 35,
@@ -89747,7 +90562,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "إدارة الدين التقني الاستباقية تتطلب توثيقه بوضوح ضمن المتراكم وتخصيص سعة منتظمة لمعالجته بشكل مستمر، بدلاً من تجاهله حتى يتفاقم ويسبب أعطالًا كبرى، أو الانتظار حتى الأزمة، مما يحافظ على الصحة التقنية للمنتج على المدى الطويل.",
     "category": "MiniExam",
-    "id": 335
+    "id": 335,
+    "miniExamen": 4
   },
   {
     "source_id": 36,
@@ -89765,7 +90581,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "وجود مسارات حرجة متوازية بنفس المدة يزيد المخاطر الكلية للجدول الزمني بشكل ملحوظ، لأن أي تأخير في أي من هذه المسارات (وليس مسارًا واحدًا فقط) يمكن أن يؤخر تاريخ انتهاء المشروع، مما يستدعي رقابة أكثر صرامة ومخاطر إضافية يجب توثيقها ومراقبتها بعناية.",
     "category": "MiniExam",
-    "id": 336
+    "id": 336,
+    "miniExamen": 4
   },
   {
     "source_id": 37,
@@ -89783,7 +90600,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "دمج مقاييس رضا العميل الخارجية مع مقاييس الإنتاجية الداخلية يضمن أن تحسين الكفاءة الداخلية (كزيادة السرعة) يترافق فعليًا مع تحسن ملموس في القيمة المُدركة من العميل، ويمنع الوقوع في فخ 'الإنتاجية دون قيمة حقيقية' الذي قد تخفيه مقاييس السرعة وحدها.",
     "category": "MiniExam",
-    "id": 337
+    "id": 337,
+    "miniExamen": 4
   },
   {
     "source_id": 38,
@@ -89801,7 +90619,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "توثيق الدروس المستفادة رسميًا كجزء من أصول العملية التنظيمية يوفر معرفة قيّمة تراكمية للمشاريع المستقبلية المشابهة، مما يساعد في تفادي تكرار نفس الأخطاء (مثل اختيار أداة غير مناسبة) ويحسّن كفاءة اتخاذ القرار التنظيمي على المدى الطويل، وليس مجرد أرشفة شكلية بلا قيمة.",
     "category": "MiniExam",
-    "id": 338
+    "id": 338,
+    "miniExamen": 4
   },
   {
     "source_id": 39,
@@ -89819,7 +90638,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "خارطة تدفق القيمة في السياق الهجيني تحدد نقاط التأخير أو الاختناق عبر التدفق الكلي من الفكرة للتسليم، بما فيها نقاط التسليم الحرجة بين المكونات التنبؤية والتكيفية، مما يتيح تحسين سرعة القيمة الإجمالية للنظام بدلاً من تحسين كل مكون بمعزل عن السياق الأشمل.",
     "category": "MiniExam",
-    "id": 339
+    "id": 339,
+    "miniExamen": 4
   },
   {
     "source_id": 40,
@@ -89837,7 +90657,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "العوامل الأساسية في تحليل Make-or-Buy تشمل التكلفة النسبية، توفر الخبرة والقدرة الداخلية، والمخاطر المرتبطة بكل خيار، بينما عوامل غير جوهرية مثل لون العلامة التجارية للمورد المحتمل لا تُعد معيارًا فعليًا لهذا القرار الاستراتيجي التحليلي.",
     "category": "MiniExam",
-    "id": 340
+    "id": 340,
+    "miniExamen": 4
   },
   {
     "source_id": 41,
@@ -89855,7 +90676,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "الالتزام المتحفظ بشكل مفرط (أقل بكثير من السعة الفعلية) يخفي القدرة الحقيقية للفريق عن أصحاب المصلحة، مما قد يشوّه التخطيط الاستراتيجي على مستوى المؤسسة ويؤدي لفقدان فرص تسليم قيمة أكبر كان يمكن تحقيقها فعليًا؛ الشفافية حول السعة الحقيقية أهم من إظهار نجاح مصطنع في تحقيق الالتزامات المتحفظة.",
     "category": "MiniExam",
-    "id": 341
+    "id": 341,
+    "miniExamen": 4
   },
   {
     "source_id": 42,
@@ -89873,7 +90695,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "تحليل شجرة القرار يصوّر المسارات المحتملة للقرار مع احتمالياتها وقيمها المالية المتوقعة (EMV) لكل فرع، مما يتيح اختيار الخيار الاستثماري ذي القيمة المتوقعة الأعلى بناءً على تحليل كمي منظم وموضوعي، بدلاً من الاعتماد على الحدس فقط في القرارات الاستثمارية المعقدة.",
     "category": "MiniExam",
-    "id": 342
+    "id": 342,
+    "miniExamen": 4
   },
   {
     "source_id": 43,
@@ -89891,7 +90714,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "مراجعة الأقران للكود قبل الدمج تكتشف الأخطاء والمشاكل التصميمية مبكرًا، وتساهم في مشاركة المعرفة بين أعضاء الفريق (خاصة الأقل خبرة)، مما يحسّن جودة الكود الإجمالية ويقلل تراكم الديون التقنية، وهي ممارسة تكميلية للاختبارات الآلية وليست بديلة عنها.",
     "category": "MiniExam",
-    "id": 343
+    "id": 343,
+    "miniExamen": 4
   },
   {
     "source_id": 44,
@@ -89909,7 +90733,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "دورة الحياة التكرارية تحسّن المنتج تدريجيًا عبر دورات متكررة من التطوير والتغذية الراجعة والتنقيح، لكن دون اشتراط تسليم كل نسخة وسيطة كمنتج قابل للشحن فعليًا للعميل النهائي (كما في التسليم التزايدي أو الرشيق الكامل)، وهي تجمع بعض خصائص التكرار دون كامل خصائص المرونة التسليمية للأساليب الرشيقة الخالصة.",
     "category": "MiniExam",
-    "id": 344
+    "id": 344,
+    "miniExamen": 4
   },
   {
     "source_id": 45,
@@ -89927,7 +90752,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "تكرار الابتكار والتخطيط في SAFe مخصص لتوفير وقت بعيد عن ضغط تسليم الميزات المعتاد، يُستخدم للابتكار والتجريب، معالجة الدين التقني، التطوير المهني، والتحضير الفعلي لتخطيط الزيادة البرمجية القادمة، وهو جزء أساسي من استدامة الأداء العالي على المدى الطويل وليس مجرد وقت فراغ.",
     "category": "MiniExam",
-    "id": 345
+    "id": 345,
+    "miniExamen": 4
   },
   {
     "source_id": 46,
@@ -89945,7 +90771,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "حالة العمل هي الوثيقة التي تربط مباشرة مبررات المشروع وفوائده المتوقعة بالأهداف الاستراتيجية للمؤسسة؛ مراجعتها مقارنة بالخطة الاستراتيجية الحالية تحدد ما إذا كان المشروع لا يزال متوافقًا استراتيجيًا أم يحتاج لإعادة تقييم، بخلاف الوثائق التشغيلية اليومية الأخرى.",
     "category": "MiniExam",
-    "id": 346
+    "id": 346,
+    "miniExamen": 4
   },
   {
     "source_id": 47,
@@ -89963,7 +90790,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "التمويل القائم على الفرق يقلل عبء إعادة التفاوض على التمويل لكل مبادرة جديدة، مما يمنح الفرق مرونة أكبر للاستجابة السريعة للفرص والتغييرات دون انتظار دورات موافقة تمويل بطيئة ومتكررة لكل مشروع منفصل، وهو مكسب استراتيجي جوهري لتحقيق الرشاقة المؤسسية الحقيقية.",
     "category": "MiniExam",
-    "id": 347
+    "id": 347,
+    "miniExamen": 4
   },
   {
     "source_id": 48,
@@ -89981,7 +90809,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "الخضوع لمعايير جودة دولية صارمة يستلزم دمج متطلبات المعيار (كالتوثيق المحدد وعمليات التدقيق الداخلي وإجراءات التصحيح) بشكل صريح ضمن خطة إدارة الجودة الخاصة بالمشروع، لضمان الامتثال المستمر القابل للتدقيق، وليس تجاهله أو الاعتماد فقط على الاعتماد المؤسسي العام دون تطبيق فعلي على مستوى المشروع.",
     "category": "MiniExam",
-    "id": 348
+    "id": 348,
+    "miniExamen": 4
   },
   {
     "source_id": 49,
@@ -89999,7 +90828,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "تقييم شامل لنجاح التحول الرشيق على مستوى المحفظة يتطلب مزيجًا من مقاييس الأداء المالي (كوقت التسويق والعائد الفعلي)، رضا العميل، وصحة/استبقاء الموظفين، لأن أي مقياس منفرد (كعدد الفرق المستخدمة لسكرم شكليًا) لا يعكس الأثر الحقيقي متعدد الأبعاد للتحول الاستراتيجي.",
     "category": "MiniExam",
-    "id": 349
+    "id": 349,
+    "miniExamen": 4
   },
   {
     "source_id": 50,
@@ -90017,7 +90847,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "عند اكتشاف قيود تصدير تقنية صارمة، يجب استشارة خبراء قانونيين متخصصين لتقييم الأثر الكامل على نطاق وتصميم المشروع، وتحديث سجل المخاطر وخطط الامتثال وفقًا لذلك، لأن تجاهل هذه القيود أو المضي دون تقييم قد يعرض المؤسسة لعقوبات قانونية جسيمة.",
     "category": "MiniExam",
-    "id": 350
+    "id": 350,
+    "miniExamen": 4
   },
   {
     "source_id": 51,
@@ -90035,7 +90866,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "دمج بُعد المسؤولية الاجتماعية ضمن ثقافة الفرق الرشيقة يعزز شعور الفرق بالمعنى والغرض وراء عملها، ويربط الرشاقة بقيم أوسع تتجاوز الإنتاجية البحتة، مما قد يحسّن التحفيز الداخلي والاحتفاظ بالمواهب مع تعزيز سمعة المؤسسة الخارجية، وهو استثمار استراتيجي مدروس وليس مجرد نشاط جانبي بلا قيمة.",
     "category": "MiniExam",
-    "id": 351
+    "id": 351,
+    "miniExamen": 4
   },
   {
     "source_id": 52,
@@ -90053,7 +90885,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "الاستعداد الاستباقي الصحيح للتدقيق يعتمد على الانضباط المستمر في التوثيق الدقيق والمتسق لجميع القرارات والتغييرات والمخاطر طوال دورة حياة المشروع، وليس التوثيق الشكلي المتسرع قبل التدقيق مباشرة أو إخفاء المشاكل، لأن النزاهة والشفافية أساس الثقة المؤسسية في وظيفة الحوكمة.",
     "category": "MiniExam",
-    "id": 352
+    "id": 352,
+    "miniExamen": 4
   },
   {
     "source_id": 53,
@@ -90071,7 +90904,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "مجتمع الممارسة شبكة أفقية طوعية تجمع أفرادًا من تخصص مشترك (كمديري المنتج) عبر حدود الفرق الرسمية لتبادل المعرفة والخبرة وأفضل الممارسات، وهو منفصل عن الهيكل الإداري الرسمي الذي يحدد خطوط السلطة والمساءلة المباشرة، وكلاهما يخدم غرضًا تنظيميًا مختلفًا ومكملاً.",
     "category": "MiniExam",
-    "id": 353
+    "id": 353,
+    "miniExamen": 4
   },
   {
     "source_id": 54,
@@ -90089,7 +90923,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "البنية التنظيمية والثقافة المؤسسية وتوزيع البنية التحتية الداخلية للموارد تُصنّف كعوامل بيئية داخلية للمؤسسة (EEF داخلية)، بينما ظروف السوق والقوانين الحكومية ومعايير الصناعة الخارجية تُصنّف كعوامل بيئية خارجية تقع خارج سيطرة المؤسسة المباشرة.",
     "category": "MiniExam",
-    "id": 354
+    "id": 354,
+    "miniExamen": 4
   },
   {
     "source_id": 55,
@@ -90107,7 +90942,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "الحوكمة التكيفية تتميز بمراجعة وتعديل سياسات وعمليات الحوكمة بشكل دوري ومنتظم بناءً على التعلم الفعلي والتغذية الراجعة من التطبيق، بدلاً من وضعها جامدة لسنوات طويلة دون تحديث، مع الحفاظ على إطار مشترك يوازن بين المرونة والرقابة اللازمة، وليس إلغاء الرقابة كليًا أو تفويضها بشكل فوضوي.",
     "category": "MiniExam",
-    "id": 355
+    "id": 355,
+    "miniExamen": 4
   },
   {
     "source_id": 56,
@@ -90125,7 +90961,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "إدارة مخاطر الاعتماد على مورد وحيد استباقيًا تتطلب تطوير علاقات مع موردين بديلين محتملين كخطة طوارئ، مع تقييم دوري لمرونة سلسلة التوريد ضمن سجل المخاطر الاستراتيجية، بدلاً من الاستمرار بالاعتماد الأحادي الخطير أو اتخاذ إجراءات متطرفة غير مدروسة كإلغاء المشروع بالكامل.",
     "category": "MiniExam",
-    "id": 356
+    "id": 356,
+    "miniExamen": 4
   },
   {
     "source_id": 57,
@@ -90143,7 +90980,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "الشفافية المالية الموسعة عبر الفرق تمكّن الجميع من فهم كيفية تخصيص الموارد المؤسسية على نطاق أوسع، مما يعزز اتخاذ قرارات أولويات أكثر مسؤولية على مستوى الفريق، ويقلل الشعور بعدم العدالة أو الغموض حول توزيع الاستثمار عبر المحفظة، وهي ممارسة تعزز الثقة المؤسسية بدلاً من إضعاف الحافز.",
     "category": "MiniExam",
-    "id": 357
+    "id": 357,
+    "miniExamen": 4
   },
   {
     "source_id": 58,
@@ -90161,7 +90999,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "في نموذج ثلاثي الخطوط الدفاعية، يمثل مدير المشروع وفريقه الخط الأول كأصحاب ومالكي المخاطر التشغيلية المباشرة الذين يديرون المخاطر يوميًا كجزء لا يتجزأ من تنفيذ عملهم، بينما يمثل الخط الثاني وظائف الرقابة والامتثال المستقلة، والخط الثالث التدقيق الداخلي المستقل الذي يراجع فعالية الخطين الأول والثاني معًا.",
     "category": "MiniExam",
-    "id": 358
+    "id": 358,
+    "miniExamen": 4
   },
   {
     "source_id": 59,
@@ -90179,7 +91018,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "نهج 'المنصة كمنتج' يوفر أدوات وبنية تحتية موحدة وقابلة لإعادة الاستخدام كخدمة ذاتية (self-service) للفرق، مما يقلل الجهد المكرر عبر الفرق المختلفة ويسرّع قدرتها على التسليم دون الحاجة لبناء كل شيء من الصفر بمعزل، مع الحفاظ على مرونة معقولة للفرق في اختيار كيفية استخدام هذه المنصة لاحتياجاتها الخاصة.",
     "category": "MiniExam",
-    "id": 359
+    "id": 359,
+    "miniExamen": 4
   },
   {
     "source_id": 60,
@@ -90197,7 +91037,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "مجلس مراجعة المشاريع الدوري على مستوى المحفظة يوفر رؤية موحدة ومنتظمة للإدارة العليا حول أداء وصحة جميع المشاريع الاستراتيجية مجتمعة، مما يمكّن من اتخاذ قرارات استباقية مستنيرة حول إعادة تخصيص الموارد أو إيقاف المشاريع غير المجدية في الوقت المناسب، وهي آلية حوكمة استراتيجية جوهرية وليست مجرد إجراء شكلي.",
     "category": "MiniExam",
-    "id": 360
+    "id": 360,
+    "miniExamen": 4
   },
   {
     "source_id": 1,
@@ -90215,7 +91056,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "من الضروري توضيح الفرق الجوهري بين دور سكرم ماستر (التيسير، إزالة العوائق، حماية العملية) ودور الإدارة التقليدية؛ القرارات التقنية تبقى مسؤولية الفريق ذاتي التنظيم، وقبول اتخاذها نيابة عنهم يقوض مبدأ التمكين الرشيق الأساسي.",
     "category": "MiniExam",
-    "id": 361
+    "id": 361,
+    "miniExamen": 5
   },
   {
     "source_id": 2,
@@ -90233,7 +91075,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "إنشاء قاموس مصطلحات مشترك مبسط وتشجيع ثقافة الأسئلة المفتوحة دون خجل حل عملي وفعال لتحسين التفاهم المتبادل بين تخصصات متنوعة، بخلاف الحلول المتطرفة كالفصل الكامل أو انتظار الحل التلقائي الذي قد يستغرق وقتًا طويلاً ويؤثر على الأداء.",
     "category": "MiniExam",
-    "id": 362
+    "id": 362,
+    "miniExamen": 5
   },
   {
     "source_id": 3,
@@ -90251,7 +91094,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "الانتقال للتنظيم الذاتي يتطلب دعمًا تدريجيًا ومنظمًا (تدريب، مناقشات جماعية للأولويات) لبناء الثقة والمهارة اللازمة، بدلاً من العودة للتوزيع المباشر الذي يقوض جوهر التحول الرشيق، أو تركهم دون دعم مما قد يخلق ارتباكًا وقلقًا غير ضروري.",
     "category": "MiniExam",
-    "id": 363
+    "id": 363,
+    "miniExamen": 5
   },
   {
     "source_id": 4,
@@ -90269,7 +91113,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "التفاوض المبني على المصالح يركز على فهم المصالح الجوهرية الكامنة وراء المواقف الظاهرة لكل طرف، والبحث عن خيارات تحقق قيمة مشتركة (win-win) تتجاوز مجرد المقايضة على المواقف السطحية، وهو الأسلوب الأكثر فعالية للوصول لحلول مستدامة تحافظ على العلاقة التعاقدية طويلة المدى.",
     "category": "MiniExam",
-    "id": 364
+    "id": 364,
+    "miniExamen": 5
   },
   {
     "source_id": 5,
@@ -90287,7 +91132,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "جمع تغذية راجعة مجهولة دورية حول أسلوب تواصل صاحب المنتج يمكّنه من تحسين وضوح متطلباته وأسلوب تعاونه مع الفريق بشكل مستمر، انطلاقًا من مبدأ أن التحسين المستمر يشمل جميع أدوار الفريق الرشيق وليس فقط عمليات التطوير التقنية.",
     "category": "MiniExam",
-    "id": 365
+    "id": 365,
+    "miniExamen": 5
   },
   {
     "source_id": 6,
@@ -90305,7 +91151,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "وفق نظرية التحديد الذاتي، الدافعية الداخلية الحقيقية تنبع من تلبية ثلاثة احتياجات نفسية أساسية: الاستقلالية (الشعور بالتحكم في عملك)، الكفاءة (الشعور بالتمكن والنمو)، والانتماء (الشعور بالترابط الاجتماعي الإيجابي)، وهي عوامل محفزة أعمق وأكثر استدامة من الحوافز الخارجية كالراتب والمكافآت.",
     "category": "MiniExam",
-    "id": 366
+    "id": 366,
+    "miniExamen": 5
   },
   {
     "source_id": 7,
@@ -90323,7 +91170,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "السماح بمرونة معقولة في الأدوات الشخصية للتنظيم الفردي، مع الحفاظ على تحديث دقيق ومنتظم للوحة المشتركة الرقمية، يوازن بين تفضيلات الفرد وضرورة الشفافية الجماعية للفريق بأكمله، بدلاً من الفرض الصارم لأداة واحدة أو التساهل الذي يضر بشفافية اللوحة المشتركة.",
     "category": "MiniExam",
-    "id": 367
+    "id": 367,
+    "miniExamen": 5
   },
   {
     "source_id": 8,
@@ -90341,7 +91189,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "تحديد السبب الحقيقي لمشكلة الأداء (كفاءة، دافعية، أو عوائق خارجية) يتطلب محادثة فردية استكشافية مباشرة مع الشخص المعني مع مراجعة البيانات الموضوعية المتاحة، قبل اتخاذ أي إجراء تصحيحي؛ الافتراض المسبق دون تشخيص فعلي (كافتراض نقص الكفاءة تلقائيًا) قد يؤدي لحلول غير فعالة لا تعالج السبب الجذري الحقيقي.",
     "category": "MiniExam",
-    "id": 368
+    "id": 368,
+    "miniExamen": 5
   },
   {
     "source_id": 9,
@@ -90359,7 +91208,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "جوهر مراجعة السبرنت هو العرض التفاعلي الحي للزيادة العاملة الفعلية (working increment) مع أصحاب المصلحة لجمع تغذية راجعة حقيقية، وليس مجرد شرائح عرض تقديمي نظرية تصف العمل دون إظهاره فعليًا؛ الانحراف نحو الشكل التقديمي البحت يفقد الاجتماع قيمته الرشيقة الأساسية.",
     "category": "MiniExam",
-    "id": 369
+    "id": 369,
+    "miniExamen": 5
   },
   {
     "source_id": 10,
@@ -90377,7 +91227,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "نموذج 'الوضع-السلوك-الأثر' (SBI) يركز على وصف سلوك محدد وقابل للتغيير في سياق واضح مع توضيح أثره الفعلي، دون الانتقال لانتقاد الشخصية العامة للفرد، مما يجعل التغذية الراجعة السلبية أكثر قبولاً وبناءً وأقل تهديدًا للعلاقة المهنية، بخلاف النقد الشخصي أو العلني أو تجنب التغذية الراجعة كليًا.",
     "category": "MiniExam",
-    "id": 370
+    "id": 370,
+    "miniExamen": 5
   },
   {
     "source_id": 11,
@@ -90395,7 +91246,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "أسلوب الوقوف اليومي حول لوحة كانبان يركز على تدفق العمل الجماعي (ما العناصر العالقة، ما يحتاج انتباهًا لتحسين التدفق)، بخلاف التركيز الفردي التقليدي في سكرم اليومي على تحديثات كل شخص عن أمسه ويومه وعوائقه، وهو اختلاف في زاوية التركيز يعكس فلسفة كل إطار (تدفق مستمر مقابل التزام دوري).",
     "category": "MiniExam",
-    "id": 371
+    "id": 371,
+    "miniExamen": 5
   },
   {
     "source_id": 12,
@@ -90413,7 +91265,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "المخالفات السلوكية الخطيرة ذات الأثر القانوني المحتمل (كإفشاء معلومات سرية) تتطلب تنسيقًا فوريًا مع قسم الموارد البشرية والإدارة القانونية لضمان اتباع الإجراءات التأديبية الرسمية والقانونية الصحيحة، حماية للمؤسسة والأفراد المعنيين، وليس اتخاذ قرار فردي متسرع أو تجاهل المخالفة الخطيرة.",
     "category": "MiniExam",
-    "id": 372
+    "id": 372,
+    "miniExamen": 5
   },
   {
     "source_id": 13,
@@ -90431,7 +91284,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "شرح الفلسفة الأساسية لكانبان (التدفق المستمر وحدود WIP) بوضوح، مع ربطها بمفاهيم مألوفة من خبرة العضو السابقة مع سكرم، يسهّل الانتقال المفاهيمي ويقلل الحيرة، بخلاف تجاهل الحيرة أو إعادة تنظيم الفريق بالكامل بشكل غير ضروري لراحة عضو واحد.",
     "category": "MiniExam",
-    "id": 373
+    "id": 373,
+    "miniExamen": 5
   },
   {
     "source_id": 14,
@@ -90449,7 +91303,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "المؤشر الأكثر دلالة على استعداد الفريق لتحمل مسؤولية واستقلالية أكبر هو القدرة المتكررة والمثبتة على حل المشكلات الروتينية بنجاح ذاتيًا دون تدخل مباشر، مع طلب الدعم فقط عند الحاجة الحقيقية للقرارات الأكثر تعقيدًا، وهذا مؤشر سلوكي عملي أكثر دلالة من عدد ساعات العمل أو الأقدمية الوظيفية المجردة.",
     "category": "MiniExam",
-    "id": 374
+    "id": 374,
+    "miniExamen": 5
   },
   {
     "source_id": 15,
@@ -90467,7 +91322,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "تقنية المرآة (إعادة الصياغة للتأكيد) تضمن الفهم الدقيق والمشترك لما يُقال، مما يقلل سوء الفهم أو التفسيرات الخاطئة التي قد تؤدي لاحقًا لقرارات مبنية على افتراضات غير صحيحة، وهي أداة تيسير تحسّن جودة التواصل الجماعي حتى لو استغرقت وقتًا إضافيًا قصيرًا.",
     "category": "MiniExam",
-    "id": 375
+    "id": 375,
+    "miniExamen": 5
   },
   {
     "source_id": 16,
@@ -90485,7 +91341,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "معالجة انفصال الفريق البعيد عن الرؤية الاستراتيجية الأكبر تتطلب جلسات دورية تربط عمل كل عضو اليومي بهذه الرؤية بشكل ملموس وشخصي، مما يعزز الشعور بالمعنى والانتماء للهدف الأكبر، بخلاف التواصل النادر غير التفاعلي أو الحلول القسرية كإجبار العمل من المكتب.",
     "category": "MiniExam",
-    "id": 376
+    "id": 376,
+    "miniExamen": 5
   },
   {
     "source_id": 17,
@@ -90503,7 +91360,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "الاستذكار على مستوى المنتج يوسّع نطاق التحسين المستمر ليشمل ديناميكيات التعاون الأشمل بين صاحب المنتج وأصحاب المصلحة التجاريين والفريق التقني معًا، مما يكشف عن فرص تحسين قد لا تظهر في استذكار الفريق التقني الداخلي وحده الذي يركز أساسًا على العمليات الهندسية.",
     "category": "MiniExam",
-    "id": 377
+    "id": 377,
+    "miniExamen": 5
   },
   {
     "source_id": 18,
@@ -90521,7 +91379,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "التنظيم الذاتي (إدارة الذات) في نموذج جولمان يتعلق تحديدًا بالقدرة على إدارة الانفعالات الشخصية والاندفاعات تحت الضغط، والحفاظ على الهدوء والتفكير الواضح في المواقف الصعبة، بخلاف الوعي الذاتي الذي يتعلق بمعرفة وفهم انفعالاتك الخاصة دون بالضرورة القدرة على إدارتها فعليًا.",
     "category": "MiniExam",
-    "id": 378
+    "id": 378,
+    "miniExamen": 5
   },
   {
     "source_id": 19,
@@ -90539,7 +91398,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "التكيف الاستباقي مع بيئة العمل عن بعد يتطلب تكييف الأدوات والممارسات (لوحات رقمية، اجتماعات فيديو منظمة، وقت تواصل غير رسمي) للحفاظ على جوهر التعاون والشفافية الرشيقة، بدلاً من رفض العمل عن بعد كليًا أو الاستسلام بإلغاء الممارسات الأساسية أو ترك الحضور اختياريًا مما يقوض الالتزام الجماعي.",
     "category": "MiniExam",
-    "id": 379
+    "id": 379,
+    "miniExamen": 5
   },
   {
     "source_id": 20,
@@ -90557,7 +91417,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "تحقيق تماسك جماعي مع تنوع أنواع العقود يتطلب توضيح قيمة كل عضو بغض النظر عن نوع تعاقده، وإشراكه الكامل في الأهداف والأنشطة، مع تقدير عادل يعزز شعورًا إيجابيًا بالانتماء طوال مدة تعاقده، بدلاً من الاستبعاد أو المعاملة الباردة التي تضر بالتماسك الجماعي والأداء العام.",
     "category": "MiniExam",
-    "id": 380
+    "id": 380,
+    "miniExamen": 5
   },
   {
     "source_id": 21,
@@ -90575,7 +91436,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "EAC = BAC / CPI = 800,000 / 0.8 = 1,000,000 دولار. هذه الصيغة تفترض استمرار كفاءة الأداء الحالية (CPI) طوال بقية المشروع، وهي الأنسب عندما لا يُتوقع تغير جذري في أسباب التباين الحالي.",
     "category": "MiniExam",
-    "id": 381
+    "id": 381,
+    "miniExamen": 5
   },
   {
     "source_id": 22,
@@ -90593,7 +91455,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "استراتيجية 'استغلال' (Exploit) تُستخدم للفرص الإيجابية عالية الأولوية، حيث يتم تخصيص موارد مباشرة (كتخصيص موظف ذو مهارة نادرة) لضمان تحقق الفرصة فعليًا والاستفادة الكاملة منها، وهي مقابلة لاستراتيجية 'التجنب' المستخدمة للتهديدات السلبية، وليست نفس الاستراتيجية.",
     "category": "MiniExam",
-    "id": 382
+    "id": 382,
+    "miniExamen": 5
   },
   {
     "source_id": 23,
@@ -90611,7 +91474,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "عندما تُنجز معظم العناصر الفردية لكن هدف السبرنت الكلي (الذي يمثل القيمة المتماسكة المرجوة من هذه العناصر معًا) لا يُحقق باستمرار، فهذا يشير غالبًا لضعف في صياغة هدف السبرنت أو ضعف الربط بينه وبين العناصر المختارة، مما يستدعي تحسين هذه الصياغة في جلسات التخطيط القادمة.",
     "category": "MiniExam",
-    "id": 383
+    "id": 383,
+    "miniExamen": 5
   },
   {
     "source_id": 24,
@@ -90629,7 +91493,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "تحليل الحساسية يهدف لتحديد أي المخاطر أو المتغيرات لها التأثير الأكبر نسبيًا على نتيجة المشروع الكلية (كالتكلفة أو الجدول)، وغالبًا يُعرض هذا التحليل بصريًا عبر مخطط تورنادو الذي يرتب المتغيرات حسب درجة تأثيرها، مما يساعد في توجيه جهود إدارة المخاطر نحو أهم العوامل أولاً.",
     "category": "MiniExam",
-    "id": 384
+    "id": 384,
+    "miniExamen": 5
   },
   {
     "source_id": 25,
@@ -90647,7 +91512,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "معدل تبني الميزات يقيس القيمة الفعلية المُحققة (هل يستخدم العملاء الميزة بالفعل ويستفيدون منها) بدلاً من مجرد قياس النشاط الإنتاجي للفريق (عدد الميزات المبنية)، وهو تمييز جوهري بين 'الإنتاج' و'النتيجة الفعلية ذات القيمة'، الذي يُعد مبدأ أساسيًا في التفكير الرشيق المتمحور حول القيمة الحقيقية للعميل.",
     "category": "MiniExam",
-    "id": 385
+    "id": 385,
+    "miniExamen": 5
   },
   {
     "source_id": 26,
@@ -90665,7 +91531,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "مصفوفة الاحتمالية والتأثير أداة تحليل نوعي للمخاطر، تعتمد على تقييمات نسبية وذاتية (عالية/متوسطة/منخفضة) لتحديد أولويات المخاطر بسرعة وسهولة نسبية، بخلاف التحليل الكمي الذي يعتمد على قيم رقمية دقيقة ونماذج احتمالية معقدة كمحاكاة مونت كارلو أو شجرة القرار.",
     "category": "MiniExam",
-    "id": 386
+    "id": 386,
+    "miniExamen": 5
   },
   {
     "source_id": 27,
@@ -90683,7 +91550,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "في نظام السحب (المستخدم في كانبان)، يسحب أعضاء الفريق العمل بأنفسهم عند توفر سعة فعلية ضمن حدود WIP، مما يمنع التكدس والإفراط في تخصيص العمل؛ بينما في نظام الدفع، يُخصص العمل للفريق من مصدر خارجي بغض النظر عن سعته الفعلية الحالية، مما قد يؤدي لتكدس وتراكم في العمل قيد التنفيذ.",
     "category": "MiniExam",
-    "id": 387
+    "id": 387,
+    "miniExamen": 5
   },
   {
     "source_id": 28,
@@ -90701,7 +91569,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "ضمان الأداء أداة مالية تحمي المشتري في حال فشل المورد في الوفاء الكامل بالتزاماته التعاقدية، حيث يمكن للمشتري المطالبة من الضامن (بنك أو شركة تأمين) لاسترداد جزء من الخسائر الناتجة عن هذا الفشل، وهو ضمان مالي منفصل عن ضمان الجودة أو البنود الجزائية الأخرى في العقد.",
     "category": "MiniExam",
-    "id": 388
+    "id": 388,
+    "miniExamen": 5
   },
   {
     "source_id": 29,
@@ -90719,7 +91588,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "ممارسات مثل النشر التدريجي (Canary Deployment) تهدف لتقليل وقت التوقف غير المخطط عبر اختبار التغيير على نسبة صغيرة من حركة المرور أو المستخدمين أولاً، واكتشاف أي مشاكل قبل النشر الكامل على النظام بأكمله، مما يحد بشكل استباقي من الأثر السلبي المحتمل على موثوقية النظام الكلية.",
     "category": "MiniExam",
-    "id": 389
+    "id": 389,
+    "miniExamen": 5
   },
   {
     "source_id": 30,
@@ -90737,7 +91607,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "عندما يكون المورد المتخصص محدودًا وغير قابل للاستبدال، تسوية الموارد (Resource Leveling) تتطلب تعديل الجدول لتأخير النشاط المعتمد على هذا المورد حتى توفره الفعلي، حتى لو نتج عن ذلك تمديد المسار الحرج والمدة الإجمالية للمشروع، وهذا فارق جوهري عن تسوية الموارد الميسّرة (Resource Smoothing) التي لا تُغيّر تاريخ الانتهاء.",
     "category": "MiniExam",
-    "id": 390
+    "id": 390,
+    "miniExamen": 5
   },
   {
     "source_id": 31,
@@ -90755,7 +91626,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "معيار القبول خاص بكل قصة مستخدم فردية ويحدد الشروط الوظيفية المحددة لقبولها من صاحب المنتج، بينما تعريف الاكتمال معيار موحد وعام ينطبق على جميع عناصر المتراكم (مثل اكتمال الاختبارات والتوثيق) لضمان مستوى جودة أساسي ثابت بغض النظر عن طبيعة القصة المحددة، وكلاهما ضروريان ومكملان لبعضهما.",
     "category": "MiniExam",
-    "id": 391
+    "id": 391,
+    "miniExamen": 5
   },
   {
     "source_id": 32,
@@ -90773,7 +91645,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "خط الأساس للنطاق يتكون من ثلاثة مكونات: بيان نطاق المشروع المعتمد، هيكل تجزئة العمل (WBS)، وقاموس WBS التفصيلي. أما خط الأساس للجدول الزمني فهو خط أساس منفصل يتعلق بالتوقيت الزمني للأنشطة وليس جزءًا من خط أساس النطاق نفسه، رغم ارتباطه الوثيق به.",
     "category": "MiniExam",
-    "id": 392
+    "id": 392,
+    "miniExamen": 5
   },
   {
     "source_id": 33,
@@ -90791,7 +91664,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "خارطة الطريق القائمة على الموضوعات الاستراتيجية توفر مرونة تكيفية أكبر تسمح للفرق بتحديد الميزات المحددة الأمثل لتحقيق كل موضوع بناءً على التعلم والتغذية الراجعة المستجدة على أرض الواقع، بخلاف الالتزام المسبق الصارم بميزات دقيقة قد تصبح غير مثالية أو حتى غير ذات صلة بحلول وقت التنفيذ الفعلي في بيئة متغيرة.",
     "category": "MiniExam",
-    "id": 393
+    "id": 393,
+    "miniExamen": 5
   },
   {
     "source_id": 34,
@@ -90809,7 +91683,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "صيغة PERT: TE = (O + 4M + P) / 6 = (4 + 4×6 + 14) / 6 = (4 + 24 + 14) / 6 = 42 / 6 = 7 أيام. هذه الصيغة تعطي وزنًا أكبر للتقدير الأكثر احتمالاً (M) مقارنة بالتقديرين المتطرفين، مما ينتج تقديرًا موزونًا أكثر واقعية من المتوسط البسيط.",
     "category": "MiniExam",
-    "id": 394
+    "id": 394,
+    "miniExamen": 5
   },
   {
     "source_id": 35,
@@ -90827,7 +91702,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "ارتفاع معدل رفض القصص في مراجعة السبرنت يشير غالبًا لضعف في وضوح معايير القبول عند بدء العمل، أو ضعف في التواصل المستمر بين الفريق وصاحب المنتج أثناء التطوير (وليس فقط في نهايته)، وهو ما يستدعي تحسين ممارسات تنقيح المتراكم والتواصل المستمر، وليس بالضرورة إشارة إلى عدم كفاءة أي طرف بعينه.",
     "category": "MiniExam",
-    "id": 395
+    "id": 395,
+    "miniExamen": 5
   },
   {
     "source_id": 36,
@@ -90845,7 +91721,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "هيكل تجزئة العمل (WBS) يُنظم نطاق العمل بشكل هرمي حسب المخرجات القابلة للتسليم، بينما هيكل تجزئة الموارد (RBS) يُنظم الموارد (البشرية والمعدات والمواد) بشكل هرمي حسب فئتها ونوعها بغض النظر عن حزمة العمل المحددة، وهما أداتان تنظيميتان مختلفتان تخدمان أغراضًا تخطيطية متكاملة لكن متمايزة.",
     "category": "MiniExam",
-    "id": 396
+    "id": 396,
+    "miniExamen": 5
   },
   {
     "source_id": 37,
@@ -90863,7 +91740,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "MVP يركز على أقل مجموعة ميزات كافية للتعلم من العملاء واختبار الفرضية الأساسية للمنتج (غالبًا بغرض التحقق لا البيع الفعلي)، بينما MMP يمثل الحد الأدنى من الميزات الجاهزة تجاريًا والقابلة للبيع أو التسويق الفعلي في السوق بشكل مقبول من العملاء، وهو عادة أكبر نطاقًا وأكثر اكتمالاً من MVP الأولي التجريبي.",
     "category": "MiniExam",
-    "id": 397
+    "id": 397,
+    "miniExamen": 5
   },
   {
     "source_id": 38,
@@ -90881,7 +91759,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "مراجعة ما بعد التنفيذ المتأخرة تسمح بتقييم مدى تحقق الفوائد التجارية الفعلية المتوقعة (وفق حالة العمل وخطة إدارة الفوائد) بعد فترة تشغيلية كافية للمنتج أو الخدمة، وهو تقييم لا يمكن إجراؤه بدقة فور الإغلاق المباشر للمشروع حيث لم تُختبر الفوائد الفعلية بعد على أرض الواقع التشغيلي.",
     "category": "MiniExam",
-    "id": 398
+    "id": 398,
+    "miniExamen": 5
   },
   {
     "source_id": 39,
@@ -90899,7 +91778,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "نموذج التمويل التدريجي المرحلي الهجين يجمع بين الرقابة المالية الصارمة عند نقاط القرار الحرجة (البوابات المرحلية التي تراجع الجدوى المستمرة) والمرونة التكيفية في تنفيذ العمل التفصيلي داخل كل مرحلة، مما يقلل مخاطر الاستمرار الطويل في مسار غير مجدٍ مع الحفاظ على انضباط الحوكمة المالية اللازم للمشاريع الكبرى.",
     "category": "MiniExam",
-    "id": 399
+    "id": 399,
+    "miniExamen": 5
   },
   {
     "source_id": 40,
@@ -90917,7 +91797,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "التعويم الحر يقيس مقدار التأخير الممكن لنشاط معين دون التأثير على أقرب تاريخ بدء للنشاط اللاحق المعتمد عليه مباشرة فقط، بخلاف التعويم الكلي الذي يقيس التأخير الممكن دون التأثير على تاريخ انتهاء المشروع الكلي (وقد يشمل تأثيرًا على أنشطة لاحقة أخرى غير المباشرة).",
     "category": "MiniExam",
-    "id": 400
+    "id": 400,
+    "miniExamen": 5
   },
   {
     "source_id": 41,
@@ -90935,7 +91816,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "المقاييس المركبة تبسّط التواصل حول الصحة العامة للتدفق لأصحاب المصلحة غير التقنيين، لكنها تحمل خطر إخفاء تراجع حاد في مقياس فردي واحد إذا عوّضته تحسينات في مقاييس أخرى ضمن المتوسط المركب؛ لذا يجب الاستمرار في مراجعة المقاييس الفردية التفصيلية بجانب المؤشر المركب لضمان عدم إغفال مشاكل جوهرية محددة.",
     "category": "MiniExam",
-    "id": 401
+    "id": 401,
+    "miniExamen": 5
   },
   {
     "source_id": 42,
@@ -90953,7 +91835,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "عقد الوقت والمواد يوفر مرونة تعاقدية مناسبة للمشاريع البحثية الاستكشافية ذات الغموض العالي في النطاق، حيث لا يمكن تحديد كل التفاصيل مسبقًا بدقة كافية لتسعير عقد سعر ثابت بشكل عادل ودقيق لكل من المشتري والبائع، بخلاف السعر الثابت الذي يناسب المشاريع ذات النطاق الواضح والمستقر.",
     "category": "MiniExam",
-    "id": 402
+    "id": 402,
+    "miniExamen": 5
   },
   {
     "source_id": 43,
@@ -90971,7 +91854,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "التحليل الطبقي متعدد المستويات للمخاطر يضمن أن المخاطر التشغيلية التفصيلية تُدار بسرعة وكفاءة على المستوى المحلي للفريق، بينما تُصعّد المخاطر ذات التأثير الاستراتيجي الأوسع (التي تتجاوز نطاق فريق واحد) لمستوى البرنامج لضمان رؤية وتنسيق شامل، دون إغراق الإدارة العليا بتفاصيل تشغيلية دقيقة لا تستدعي تدخلها المباشر.",
     "category": "MiniExam",
-    "id": 403
+    "id": 403,
+    "miniExamen": 5
   },
   {
     "source_id": 44,
@@ -90989,7 +91873,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "الاعتماد الخارجي يتضمن علاقة بين نشاط المشروع وعامل خارج سيطرة فريق المشروع المباشرة، مثل تسليم مكون من مورد خارجي أو الحصول على موافقة تنظيمية من جهة حكومية، بخلاف الاعتماديات الداخلية التي تقع بالكامل ضمن سيطرة وتنسيق فريق المشروع الداخلي نفسه (بين الأنشطة أو المراحل أو حتى قرارات الراعي الداخلي).",
     "category": "MiniExam",
-    "id": 404
+    "id": 404,
+    "miniExamen": 5
   },
   {
     "source_id": 45,
@@ -91007,7 +91892,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "خارطة قصة المستخدم تصوّر رحلة المستخدم الكاملة أفقيًا (الأنشطة الأساسية بالترتيب) وعموديًا (تفاصيل كل نشاط مرتبة بالأولوية)، مما يسهّل تحديد 'شريحة أفقية رقيقة' متكاملة عبر الرحلة الكاملة تمثل إصدارًا أوليًا قابلًا للاستخدام (MVP)، بدلاً من الاقتصار على تسليم ميزة واحدة عميقة جدًا بمعزل عن باقي رحلة المستخدم الأساسية والمهمة.",
     "category": "MiniExam",
-    "id": 405
+    "id": 405,
+    "miniExamen": 5
   },
   {
     "source_id": 46,
@@ -91025,7 +91911,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "عملية التقييم البيئي الإلزامية يجب دمجها كنشاط حرج ضمن الجدول الزمني الكلي منذ البداية، مع التخطيط الاستباقي لمدتها المتوقعة، وعدم بدء أي أعمال بناء فعلية تعتمد على هذه الموافقة قبل الحصول عليها رسميًا، لأن البدء المتوازي أو التجاهل أو التأجيل قد يعرض المشروع لمخاطر قانونية وتوقف قسري مكلف لاحقًا.",
     "category": "MiniExam",
-    "id": 406
+    "id": 406,
+    "miniExamen": 5
   },
   {
     "source_id": 47,
@@ -91043,7 +91930,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "مؤشر وقت الاستجابة للتغيير السوقي على مستوى المحفظة يقيس النتيجة التنظيمية الاستراتيجية الفعلية المرجوة من التحول الرشيق، بينما عدد الفرق التي تستخدم ممارسات رشيقة رسميًا قد يعكس تبنيًا شكليًا للأدوات والطقوس دون تحقيق الأثر الاستراتيجي الحقيقي (كتسريع الاستجابة الفعلية للفرص والتهديدات السوقية)، وهو الفرق الجوهري بين قياس النشاط وقياس النتيجة الاستراتيجية.",
     "category": "MiniExam",
-    "id": 407
+    "id": 407,
+    "miniExamen": 5
   },
   {
     "source_id": 48,
@@ -91061,7 +91949,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "متطلبات استمرارية الأعمال في القطاع المصرفي المنظم يجب دمجها كمتطلبات غير وظيفية أساسية ضمن تصميم النظام منذ بداية المشروع، بالتنسيق مع أقسام إدارة المخاطر والامتثال المؤسسية، وليس تجاهلها أو تأجيل معالجتها لما بعد التسليم، لأن ذلك قد يعرض المؤسسة لمخالفات تنظيمية جسيمة ومخاطر تشغيلية حقيقية في حال وقوع كوارث فعلية.",
     "category": "MiniExam",
-    "id": 408
+    "id": 408,
+    "miniExamen": 5
   },
   {
     "source_id": 49,
@@ -91079,7 +91968,8 @@ const QUESTIONS_AR = [
     "answer": "A",
     "justification": "التحدي الرئيسي عند الانتقال لنموذج شبكي يقوم على التأثير والخبرة هو ضمان أن أصحاب السلطة الرسمية التقليدية يجدون دورًا جديدًا ذا معنى وقيمة (كالتوجيه الاستراتيجي أو تطوير المواهب) في النموذج الجديد، لتجنب مقاومتهم النشطة أو الخفية للتحول بسبب شعورهم بفقدان النفوذ، وهو تحد ثقافي وقيادي جوهري يتجاوز مجرد إعادة تسمية الأدوار.",
     "category": "MiniExam",
-    "id": 409
+    "id": 409,
+    "miniExamen": 5
   },
   {
     "source_id": 50,
@@ -91097,7 +91987,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "عند وجود تعارض في متطلبات حماية البيانات بين بلدين، تصميم بنية تقنية هجينة تفصل تخزين البيانات الحساسة إقليميًا حسب متطلبات كل بلد (احترام مبدأ 'إقامة البيانات' المحلية حيث يُطلب)، مع بنية تطبيق موحدة تتعامل مع هذا التوزيع بشكل شفاف، هو الحل العملي الذي يحقق الامتثال الكامل لكل الأطراف التنظيمية دون تجاهل أي منها أو التخلي عن المشروع.",
     "category": "MiniExam",
-    "id": 410
+    "id": 410,
+    "miniExamen": 5
   },
   {
     "source_id": 51,
@@ -91115,7 +92006,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "نجاح ثقافة التجريب المؤسسي على نطاق واسع يتطلب بنية تقنية وتحليلية تدعم تشغيل وقياس التجارب بسرعة وموثوقية، مع ثقافة تنظيمية تتقبل النتائج غير المتوقعة كمصدر تعلم قيّم بدلاً من معاملتها كفشل يستوجب اللوم، وهما شرطان أساسيان ومتكاملان لجعل القرارات المبنية على التجربة الفعلية ممارسة مستدامة ومقبولة على مستوى المؤسسة بأكملها.",
     "category": "MiniExam",
-    "id": 411
+    "id": 411,
+    "miniExamen": 5
   },
   {
     "source_id": 52,
@@ -91133,7 +92025,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "دمج متطلبات جهة التمويل الخارجية ضمن خطة إدارة التكلفة وإجراءات التوثيق المالي منذ بداية المشروع، مع تقارير دورية منتظمة تتوافق مع الصيغة المطلوبة تحديدًا من جهة التمويل، يضمن امتثالًا مستمرًا وسلسًا طوال دورة الحياة، بخلاف الاعتماد على المراجعة النهائية فقط أو الانتظار السلبي حتى الطلب الرسمي الذي قد يأتي متأخرًا جدًا لتصحيح أي انحرافات في التوثيق.",
     "category": "MiniExam",
-    "id": 412
+    "id": 412,
+    "miniExamen": 5
   },
   {
     "source_id": 53,
@@ -91151,7 +92044,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "الدرس الاستراتيجي الأهم من أزمة سلسلة التوريد هو دمج تحليل مرونة سلسلة التوريد الرقمية (كتنويع المصادر ووجود بدائل محلية أو إقليمية) كمعيار استراتيجي أساسي عند تقييم واختيار المشاريع والمكونات التقنية ضمن المحفظة المستقبلية، إلى جانب معايير التكلفة والأداء التقني التقليدية، بدلاً من التطرف نحو تجنب الاعتماد الخارجي كليًا أو تجاهل الدرس المستفاد لندرة الأزمات.",
     "category": "MiniExam",
-    "id": 413
+    "id": 413,
+    "miniExamen": 5
   },
   {
     "source_id": 54,
@@ -91169,7 +92063,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "استجابة PMO الاستباقية لمتطلبات إفصاح ESG الإلزامية تتطلب تحديث معايير تقييم واختيار المشاريع ضمن المحفظة لتشمل مقاييس ESG كجزء أساسي من حالة العمل، مع تطوير آليات موحدة لتتبع وجمع بيانات ESG من جميع المشاريع النشطة، بما يلبي متطلبات الإفصاح التنظيمي الجديدة بشكل منهجي، بدلاً من تجاهلها أو الانتظار السلبي حتى وقوع مخالفة فعلية.",
     "category": "MiniExam",
-    "id": 414
+    "id": 414,
+    "miniExamen": 5
   },
   {
     "source_id": 55,
@@ -91187,7 +92082,8 @@ const QUESTIONS_AR = [
     "answer": "C",
     "justification": "نموذج الحوكمة الموزعة مع خطوط حمراء مركزية يحدد فقط القيود الأساسية غير القابلة للتفاوض (كالأمان والامتثال القانوني) على المستوى المركزي، بينما تُمنح الفرق حرية كاملة في اتخاذ القرارات التفصيلية ضمن هذه الحدود، وهو يوازن بين ضرورة الرقابة المركزية على المخاطر الحرجة والمرونة اللازمة للسرعة الرشيقة على مستوى الفريق، بخلاف الحوكمة المركزية الكاملة التي تبطئ اتخاذ القرار عبر التحكم في كل التفاصيل.",
     "category": "MiniExam",
-    "id": 415
+    "id": 415,
+    "miniExamen": 5
   },
   {
     "source_id": 56,
@@ -91205,7 +92101,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "في المشاريع الدفاعية الحساسة الخاضعة لمتطلبات أمن المعلومات المصنفة، يجب أن يخضع اختيار أعضاء الفريق لعملية تصريح أمني رسمية قبل الانضمام الفعلي، وهو قيد بيئي/تنظيمي يحد بشكل كبير من مجموعة المرشحين المتاحين ويجب أخذه بعين الاعتبار بدقة عند التخطيط الزمني للتوظيف وتشكيل الفريق، بخلاف تجاهل هذا القيد أو التعامل معه بشكل عشوائي.",
     "category": "MiniExam",
-    "id": 416
+    "id": 416,
+    "miniExamen": 5
   },
   {
     "source_id": 57,
@@ -91223,7 +92120,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "دمج بُعد الاستدامة البيئية ضمن معايير تحديد أولويات المتراكم يضمن أن قرارات الفريق تعكس قيم المؤسسة الأوسع بجانب القيمة التجارية المباشرة فقط، مما يوازن بين تحقيق نتائج قصيرة المدى (تسليم الميزات) والأثر الاستراتيجي طويل المدى (السمعة المؤسسية والاستعداد لمتطلبات بيئية تنظيمية مستقبلية محتملة)، وهو استثمار استراتيجي مدروس وليس عبئًا شكليًا بلا قيمة.",
     "category": "MiniExam",
-    "id": 417
+    "id": 417,
+    "miniExamen": 5
   },
   {
     "source_id": 58,
@@ -91241,7 +92139,8 @@ const QUESTIONS_AR = [
     "answer": "B",
     "justification": "المستويات العليا من نموذج نضج القدرة (المستوى الرابع 'المُدار كميًا' والمستوى الخامس 'المُحسَّن') تتميز بإدارة العمليات باستخدام مقاييس إحصائية دقيقة والتحسين المستمر والمنهجي بناءً على هذه البيانات الكمية، بخلاف المستويات الأدنى (كالمستوى الأول الفوضوي أو الثاني المُدار بشكل أساسي) التي قد تعتمد على عمليات غير موثقة أو موثقة بشكل أساسي دون قياس كمي منهجي متقدم.",
     "category": "MiniExam",
-    "id": 418
+    "id": 418,
+    "miniExamen": 5
   },
   {
     "source_id": 59,
@@ -91259,7 +92158,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "الخطر الثقافي الأساسي في نموذج الاقتصاد الداخلي التنافسي بين الفرق هو احتمال تحول التنافس الصحي على الموارد إلى منافسة مدمرة تقوّض التعاون الضروري بين الفرق (كمشاركة المعرفة أو حل التبعيات المشتركة)، مما يتطلب من القيادة توازنًا دقيقًا بين حوافز التنافس على تقديم أفضل قيمة والحفاظ المتزامن على ثقافة تعاون صحية عبر حدود الفرق المختلفة ضمن المؤسسة الواحدة.",
     "category": "MiniExam",
-    "id": 419
+    "id": 419,
+    "miniExamen": 5
   },
   {
     "source_id": 60,
@@ -91277,7 +92177,8 @@ const QUESTIONS_AR = [
     "answer": "D",
     "justification": "في المشاريع عالية الحساسية السياسية والاجتماعية الخاضعة لمراقبة إعلامية مكثفة، وضع استراتيجية تواصل استباقية وشفافة بالتنسيق مع خبراء العلاقات العامة المتخصصين، تشمل تواصلًا منتظمًا مع المجتمعات المحلية المتأثرة، مع استعداد مسبق لمعالجة المخاوف المتوقعة، هو النهج الأنسب لإدارة السمعة والثقة العامة، بخلاف التقييد الكامل أو الاعتماد الحصري على بيانات رسمية نادرة قد تزيد الشك والقلق العام.",
     "category": "MiniExam",
-    "id": 420
+    "id": 420,
+    "miniExamen": 5
   },
   {
     "type": "single_choice",
