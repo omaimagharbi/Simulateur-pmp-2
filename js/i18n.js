@@ -747,6 +747,11 @@ function t(key, vars) {
 
 // Applique les traductions à tous les éléments [data-i18n] / [data-i18n-html] / [data-i18n-ph] de la page.
 function applyI18n(root) {
+  // Sens de lecture : l'arabe est RTL. L'interface elle-même (boutons, menus)
+  // reste en français tant que STRINGS.ar n'existe pas (voir t()), mais au
+  // moins le texte des questions et explications s'affiche dans le bon sens.
+  document.documentElement.setAttribute('dir', getLang() === 'ar' ? 'rtl' : 'ltr');
+  document.documentElement.setAttribute('lang', getLang());
   const scope = root || document;
   scope.querySelectorAll('[data-i18n]').forEach(el => { el.textContent = t(el.getAttribute('data-i18n')); });
   scope.querySelectorAll('[data-i18n-html]').forEach(el => { el.innerHTML = t(el.getAttribute('data-i18n-html')); });

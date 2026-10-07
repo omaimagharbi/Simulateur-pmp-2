@@ -72,11 +72,17 @@ function renderLangSwitchStandalone(mountId) {
   const mount = document.getElementById(mountId);
   if (!mount) return;
   const lang = getLang();
+  // L'arabe n'a pas encore sa propre traduction de l'interface (STRINGS.ar
+  // n'existe pas) : t() retombe alors automatiquement sur le français pour
+  // les boutons/menus. La BANQUE DE QUESTIONS, elle, est bien en arabe dès
+  // qu'on choisit "AR" — c'est elle que l'utilisateur vient chercher ici.
   mount.innerHTML = `
     <span class="lang-switch">
       <button class="lang-btn ${lang === 'fr' ? 'active' : ''}" data-lang="fr">FR</button>
       <span class="lang-sep">/</span>
       <button class="lang-btn ${lang === 'en' ? 'active' : ''}" data-lang="en">EN</button>
+      <span class="lang-sep">/</span>
+      <button class="lang-btn ${lang === 'ar' ? 'active' : ''}" data-lang="ar">AR</button>
     </span>`;
   mount.querySelectorAll('.lang-btn').forEach(btn => {
     btn.addEventListener('click', () => { setLang(btn.dataset.lang); window.location.reload(); });
