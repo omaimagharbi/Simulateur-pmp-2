@@ -23,7 +23,7 @@ if (user) {
   if (minPassEl) minPassEl.textContent = '65%';
 
   // ---- category sidebar (navigue vers une page dédiée, comme un dossier) ----
-  const categoryOrder = ['Predictif', 'Agile', 'Hybride', 'Exam', 'Quiz', 'MiniExam', 'KillMistakes'];
+  const categoryOrder = ['Predictif', 'Agile', 'Domaine1', 'Domaine2', 'Domaine3', 'Exam', 'MiniExam', 'KillMistakes'];
 
   function renderCategoryList() {
     const mount = document.getElementById('category-list');

@@ -55,7 +55,7 @@
   if (accUser) {
     renderTopbar(null);
     const CATEGORY_META = categoryMeta();
-    const categoryOrder = ['Predictif', 'Agile', 'Hybride', 'Exam', 'Quiz', 'MiniExam', 'KillMistakes'];
+    const categoryOrder = ['Predictif', 'Agile', 'Domaine1', 'Domaine2', 'Domaine3', 'Exam', 'MiniExam', 'KillMistakes'];
     document.getElementById('category-list').innerHTML = categoryOrder.map(c => {
       const m = CATEGORY_META[c];
       return `<a class="category-item" href="category.html?cat=${c}">

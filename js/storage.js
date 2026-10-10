@@ -396,7 +396,7 @@ const Store = {
   // n'y figure pas : c'est une révision des erreurs passées de l'utilisateur,
   // toujours accessible quel que soit son périmètre (elle reste de toute façon
   // vide si l'utilisateur n'a jamais pu tenter les catégories hors périmètre).
-  VOUCHER_SCOPE_CATEGORIES: ['Predictif', 'Agile', 'Hybride', 'Exam', 'Quiz', 'MiniExam'],
+  VOUCHER_SCOPE_CATEGORIES: ['Predictif', 'Agile', 'Domaine1', 'Domaine2', 'Domaine3', 'Exam', 'MiniExam'],
 
   // scope: tableau de catégories autorisées (ex. ['MiniExam','Quiz']), ou
   // null/[] pour un accès complet à toutes les catégories (comportement par

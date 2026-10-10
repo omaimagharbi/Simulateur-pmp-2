@@ -54,7 +54,7 @@
 
     // sidebar persistante (mise en avant de la catégorie active ; catégories
     // hors périmètre affichées verrouillées, non cliquables)
-    const categoryOrder = ['Predictif', 'Agile', 'Hybride', 'Exam', 'Quiz', 'MiniExam', 'KillMistakes'];
+    const categoryOrder = ['Predictif', 'Agile', 'Domaine1', 'Domaine2', 'Domaine3', 'Exam', 'MiniExam', 'KillMistakes'];
     document.getElementById('category-list').innerHTML = categoryOrder.map(c => {
       const m = CATEGORY_META[c];
       const allowed = Store.canAccessCategory(catUser, c);
@@ -83,24 +83,22 @@
     document.getElementById('cat-desc').textContent = meta.desc;
 
     const questions = cat === 'KillMistakes' ? getMistakeQuestions(catUser.username) : Store.getAllQuestions().filter(q => q.category === cat);
-    // "Kill mistakes" reste une session UNIQUE et continue.
+    // "Kill mistakes", "Predictif", "Agile" (Agile/Hybride) et les trois
+    // "Domaine1/2/3" sont chacun un bloc UNIQUE et continu (60 questions, ou
+    // la totalité du pool pour Kill mistakes) — jamais découpés en parties de 10.
     // "Exam" : 5 EXAMENS FIXES (champ "examen" 1-5), 180 questions chacun.
-    // "Quiz" : 3 QUIZ DE DOMAINE FIXES (People/Process/Business), 60 questions chacun.
     // "MiniExam" : 5 MINI-EXAMENS FIXES (champ "miniExamen" 1-5), 60 questions chacun.
     // Dans tous les cas, même contenu à chaque visite — seul l'ordre des
     // questions est mélangé à chaque lancement, pas leur composition.
-    const isSingleSession = cat === 'KillMistakes';
+    const SINGLE_BLOCK_CATEGORIES = ['KillMistakes', 'Predictif', 'Agile', 'Domaine1', 'Domaine2', 'Domaine3'];
+    const isSingleSession = SINGLE_BLOCK_CATEGORIES.includes(cat);
     const examParts = cat === 'Exam'
       ? [1, 2, 3, 4, 5].map(n => questions.filter(q => q.examen === n)).filter(p => p.length)
-      : null;
-    const quizDomainOrder = ['People', 'Process', 'Business'];
-    const quizParts = cat === 'Quiz'
-      ? quizDomainOrder.map(d => questions.filter(q => q.domain === d)).filter(p => p.length)
       : null;
     const miniParts = cat === 'MiniExam'
       ? [1, 2, 3, 4, 5].map(n => questions.filter(q => q.miniExamen === n)).filter(p => p.length)
       : null;
-    const fixedParts = examParts || quizParts || miniParts;
+    const fixedParts = examParts || miniParts;
     const parts = fixedParts || (isSingleSession ? (questions.length ? [questions] : []) : chunkQuestions(questions, 10));
 
     if (!parts.length) {
@@ -140,26 +138,20 @@
           <a href="quiz.html?cat=${cat}&part=1&exam=${examNo}" class="btn btn-primary btn-block">${t('start_exam')}</a>
         </div>`;
       }).join('');
-    } else if (cat === 'Quiz') {
-      // 3 quiz de domaine fixes (People / Process / Business), 60 questions
-      // chacun — même composition à chaque visite, mêmes trois domaines que
-      // dans "Exam", pour s'entraîner un domaine à la fois.
-      document.getElementById('parts-grid').innerHTML = parts.map((p, idx) => {
-        const d = quizDomainOrder[idx];
-        const dm = domainMeta()[d];
-        return `
+    } else if (SINGLE_BLOCK_CATEGORIES.includes(cat)) {
+      // Predictif, Agile (Agile/Hybride) et Domaine1/2/3 : un seul bloc de
+      // 60 questions, même composition à chaque visite, seul l'ordre change.
+      document.getElementById('parts-grid').innerHTML = `
         <div class="exam-card card">
-          <span class="tag">${p.length} questions</span>
-          <span class="dot" style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${dm.color};margin-right:.4rem"></span>
-          <h3 style="display:inline">${t('quiz_domain_part_label', { n: idx + 1, domain: dm.label })}</h3>
-          <p>${meta.label}</p>
+          <span class="tag">${parts[0].length} questions</span>
+          <h3>${meta.label}</h3>
+          <p>${meta.desc}</p>
           ${catUser.role === 'admin' ? `
           <div style="margin-bottom:.5rem">
             <a href="admin.html?cat=${cat}" class="btn btn-ghost btn-sm btn-block">${t('admin_edit_questions')}</a>
           </div>` : ''}
-          <a href="quiz.html?cat=${cat}&part=${idx + 1}" class="btn btn-primary btn-block">${t('start_exam')}</a>
+          <a href="quiz.html?cat=${cat}&part=1" class="btn btn-primary btn-block">${t('start_exam')}</a>
         </div>`;
-      }).join('');
     } else {
       // "MiniExam" (5 parties fixes) utilise ici le libellé "Mini-examen N" ;
       // les autres catégories restantes (Predictif, Agile) gardent "Partie N".

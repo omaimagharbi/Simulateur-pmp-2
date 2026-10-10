@@ -1,9 +1,10 @@
 // Banque de questions PMP — FR, EN et AR.
-// Quiz (180) divisé en 3 quiz de domaine fixes de 60 (People/Process/Business).
-// MiniExam (300) divisé en 5 mini-examens fixes de 60 (champ "miniExamen" 1-5).
-// Exam (900) toujours divisé en 5 examens fixes de 180 (champ "examen" 1-5).
-// Agile (60/langue) : pas encore fusionné avec "Hybride" (contenu Hybride inexistant,
-// 240 questions/langue manquantes pour atteindre 5x60 — en attente de confirmation).
+// "Quiz" supprimée (08/10/2026) : ses 180 questions reclassées en 3 catégories
+// fixes Domaine1 (People), Domaine2 (Process), Domaine3 (Business), 60 chacune.
+// Exam (900) : 5 examens fixes de 180 (champ "examen" 1-5).
+// MiniExam (300) : 5 mini-examens fixes de 60 (champ "miniExamen" 1-5).
+// Predictif (60), Agile/Hybride (60), Domaine1/2/3 (60 chacune) : un seul bloc
+// de 60 questions par catégorie, pas de découpage en parties de 10.
 const QUESTIONS_FR = [
   {
     "type": "single_choice",
@@ -4358,7 +4359,7 @@ const QUESTIONS_FR = [
     "id": 121,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q001"
   },
   {
@@ -4394,7 +4395,7 @@ const QUESTIONS_FR = [
     "id": 122,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q002"
   },
   {
@@ -4430,7 +4431,7 @@ const QUESTIONS_FR = [
     "id": 123,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q003"
   },
   {
@@ -4466,7 +4467,7 @@ const QUESTIONS_FR = [
     "id": 124,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q004"
   },
   {
@@ -4502,7 +4503,7 @@ const QUESTIONS_FR = [
     "id": 125,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q005"
   },
   {
@@ -4538,7 +4539,7 @@ const QUESTIONS_FR = [
     "id": 126,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q006"
   },
   {
@@ -4574,7 +4575,7 @@ const QUESTIONS_FR = [
     "id": 127,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q007"
   },
   {
@@ -4610,7 +4611,7 @@ const QUESTIONS_FR = [
     "id": 128,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q008"
   },
   {
@@ -4646,7 +4647,7 @@ const QUESTIONS_FR = [
     "id": 129,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q009"
   },
   {
@@ -4682,7 +4683,7 @@ const QUESTIONS_FR = [
     "id": 130,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q010"
   },
   {
@@ -4718,7 +4719,7 @@ const QUESTIONS_FR = [
     "id": 131,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q011"
   },
   {
@@ -4754,7 +4755,7 @@ const QUESTIONS_FR = [
     "id": 132,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q012"
   },
   {
@@ -4790,7 +4791,7 @@ const QUESTIONS_FR = [
     "id": 133,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q013"
   },
   {
@@ -4826,7 +4827,7 @@ const QUESTIONS_FR = [
     "id": 134,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q014"
   },
   {
@@ -4862,7 +4863,7 @@ const QUESTIONS_FR = [
     "id": 135,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q015"
   },
   {
@@ -4898,7 +4899,7 @@ const QUESTIONS_FR = [
     "id": 136,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q016"
   },
   {
@@ -4934,7 +4935,7 @@ const QUESTIONS_FR = [
     "id": 137,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q017"
   },
   {
@@ -4970,7 +4971,7 @@ const QUESTIONS_FR = [
     "id": 138,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q018"
   },
   {
@@ -5006,7 +5007,7 @@ const QUESTIONS_FR = [
     "id": 139,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q019"
   },
   {
@@ -5042,7 +5043,7 @@ const QUESTIONS_FR = [
     "id": 140,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q020"
   },
   {
@@ -5078,7 +5079,7 @@ const QUESTIONS_FR = [
     "id": 141,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q021"
   },
   {
@@ -5114,7 +5115,7 @@ const QUESTIONS_FR = [
     "id": 142,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q022"
   },
   {
@@ -5150,7 +5151,7 @@ const QUESTIONS_FR = [
     "id": 143,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q023"
   },
   {
@@ -5186,7 +5187,7 @@ const QUESTIONS_FR = [
     "id": 144,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q024"
   },
   {
@@ -5222,7 +5223,7 @@ const QUESTIONS_FR = [
     "id": 145,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q025"
   },
   {
@@ -5258,7 +5259,7 @@ const QUESTIONS_FR = [
     "id": 146,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q026"
   },
   {
@@ -5294,7 +5295,7 @@ const QUESTIONS_FR = [
     "id": 147,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q027"
   },
   {
@@ -5330,7 +5331,7 @@ const QUESTIONS_FR = [
     "id": 148,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q028"
   },
   {
@@ -5366,7 +5367,7 @@ const QUESTIONS_FR = [
     "id": 149,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q029"
   },
   {
@@ -5402,7 +5403,7 @@ const QUESTIONS_FR = [
     "id": 150,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q030"
   },
   {
@@ -5438,7 +5439,7 @@ const QUESTIONS_FR = [
     "id": 151,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q031"
   },
   {
@@ -5474,7 +5475,7 @@ const QUESTIONS_FR = [
     "id": 152,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q032"
   },
   {
@@ -5510,7 +5511,7 @@ const QUESTIONS_FR = [
     "id": 153,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q033"
   },
   {
@@ -5546,7 +5547,7 @@ const QUESTIONS_FR = [
     "id": 154,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q034"
   },
   {
@@ -5582,7 +5583,7 @@ const QUESTIONS_FR = [
     "id": 155,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q035"
   },
   {
@@ -5618,7 +5619,7 @@ const QUESTIONS_FR = [
     "id": 156,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q036"
   },
   {
@@ -5654,7 +5655,7 @@ const QUESTIONS_FR = [
     "id": 157,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q037"
   },
   {
@@ -5690,7 +5691,7 @@ const QUESTIONS_FR = [
     "id": 158,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q038"
   },
   {
@@ -5726,7 +5727,7 @@ const QUESTIONS_FR = [
     "id": 159,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q039"
   },
   {
@@ -5762,7 +5763,7 @@ const QUESTIONS_FR = [
     "id": 160,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q040"
   },
   {
@@ -5798,7 +5799,7 @@ const QUESTIONS_FR = [
     "id": 161,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q041"
   },
   {
@@ -5834,7 +5835,7 @@ const QUESTIONS_FR = [
     "id": 162,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q042"
   },
   {
@@ -5870,7 +5871,7 @@ const QUESTIONS_FR = [
     "id": 163,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q043"
   },
   {
@@ -5906,7 +5907,7 @@ const QUESTIONS_FR = [
     "id": 164,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q044"
   },
   {
@@ -5942,7 +5943,7 @@ const QUESTIONS_FR = [
     "id": 165,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q045"
   },
   {
@@ -5978,7 +5979,7 @@ const QUESTIONS_FR = [
     "id": 166,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q046"
   },
   {
@@ -6014,7 +6015,7 @@ const QUESTIONS_FR = [
     "id": 167,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q047"
   },
   {
@@ -6050,7 +6051,7 @@ const QUESTIONS_FR = [
     "id": 168,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q048"
   },
   {
@@ -6086,7 +6087,7 @@ const QUESTIONS_FR = [
     "id": 169,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q049"
   },
   {
@@ -6122,7 +6123,7 @@ const QUESTIONS_FR = [
     "id": 170,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q050"
   },
   {
@@ -6158,7 +6159,7 @@ const QUESTIONS_FR = [
     "id": 171,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q051"
   },
   {
@@ -6194,7 +6195,7 @@ const QUESTIONS_FR = [
     "id": 172,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q052"
   },
   {
@@ -6230,7 +6231,7 @@ const QUESTIONS_FR = [
     "id": 173,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q053"
   },
   {
@@ -6266,7 +6267,7 @@ const QUESTIONS_FR = [
     "id": 174,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q054"
   },
   {
@@ -6302,7 +6303,7 @@ const QUESTIONS_FR = [
     "id": 175,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q055"
   },
   {
@@ -6338,7 +6339,7 @@ const QUESTIONS_FR = [
     "id": 176,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q056"
   },
   {
@@ -6374,7 +6375,7 @@ const QUESTIONS_FR = [
     "id": 177,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q057"
   },
   {
@@ -6410,7 +6411,7 @@ const QUESTIONS_FR = [
     "id": 178,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q058"
   },
   {
@@ -6446,7 +6447,7 @@ const QUESTIONS_FR = [
     "id": 179,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q059"
   },
   {
@@ -6482,7 +6483,7 @@ const QUESTIONS_FR = [
     "id": 180,
     "examen": 3,
     "nom_examen": "Domaine1-People",
-    "category": "Quiz",
+    "category": "Domaine1",
     "source_id": "EXAM-Domaine1-People-Q060"
   },
   {
@@ -6518,7 +6519,7 @@ const QUESTIONS_FR = [
     "id": 181,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q001"
   },
   {
@@ -6554,7 +6555,7 @@ const QUESTIONS_FR = [
     "id": 182,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q002"
   },
   {
@@ -6590,7 +6591,7 @@ const QUESTIONS_FR = [
     "id": 183,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q003"
   },
   {
@@ -6626,7 +6627,7 @@ const QUESTIONS_FR = [
     "id": 184,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q004"
   },
   {
@@ -6662,7 +6663,7 @@ const QUESTIONS_FR = [
     "id": 185,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q005"
   },
   {
@@ -6698,7 +6699,7 @@ const QUESTIONS_FR = [
     "id": 186,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q006"
   },
   {
@@ -6734,7 +6735,7 @@ const QUESTIONS_FR = [
     "id": 187,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q007"
   },
   {
@@ -6770,7 +6771,7 @@ const QUESTIONS_FR = [
     "id": 188,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q008"
   },
   {
@@ -6806,7 +6807,7 @@ const QUESTIONS_FR = [
     "id": 189,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q009"
   },
   {
@@ -6842,7 +6843,7 @@ const QUESTIONS_FR = [
     "id": 190,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q010"
   },
   {
@@ -6878,7 +6879,7 @@ const QUESTIONS_FR = [
     "id": 191,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q011"
   },
   {
@@ -6914,7 +6915,7 @@ const QUESTIONS_FR = [
     "id": 192,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q012"
   },
   {
@@ -6950,7 +6951,7 @@ const QUESTIONS_FR = [
     "id": 193,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q013"
   },
   {
@@ -6986,7 +6987,7 @@ const QUESTIONS_FR = [
     "id": 194,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q014"
   },
   {
@@ -7022,7 +7023,7 @@ const QUESTIONS_FR = [
     "id": 195,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q015"
   },
   {
@@ -7058,7 +7059,7 @@ const QUESTIONS_FR = [
     "id": 196,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q016"
   },
   {
@@ -7094,7 +7095,7 @@ const QUESTIONS_FR = [
     "id": 197,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q017"
   },
   {
@@ -7130,7 +7131,7 @@ const QUESTIONS_FR = [
     "id": 198,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q018"
   },
   {
@@ -7166,7 +7167,7 @@ const QUESTIONS_FR = [
     "id": 199,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q019"
   },
   {
@@ -7202,7 +7203,7 @@ const QUESTIONS_FR = [
     "id": 200,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q020"
   },
   {
@@ -7238,7 +7239,7 @@ const QUESTIONS_FR = [
     "id": 201,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q021"
   },
   {
@@ -7274,7 +7275,7 @@ const QUESTIONS_FR = [
     "id": 202,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q022"
   },
   {
@@ -7310,7 +7311,7 @@ const QUESTIONS_FR = [
     "id": 203,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q023"
   },
   {
@@ -7346,7 +7347,7 @@ const QUESTIONS_FR = [
     "id": 204,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q024"
   },
   {
@@ -7382,7 +7383,7 @@ const QUESTIONS_FR = [
     "id": 205,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q025"
   },
   {
@@ -7418,7 +7419,7 @@ const QUESTIONS_FR = [
     "id": 206,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q026"
   },
   {
@@ -7454,7 +7455,7 @@ const QUESTIONS_FR = [
     "id": 207,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q027"
   },
   {
@@ -7490,7 +7491,7 @@ const QUESTIONS_FR = [
     "id": 208,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q028"
   },
   {
@@ -7526,7 +7527,7 @@ const QUESTIONS_FR = [
     "id": 209,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q029"
   },
   {
@@ -7562,7 +7563,7 @@ const QUESTIONS_FR = [
     "id": 210,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q030"
   },
   {
@@ -7598,7 +7599,7 @@ const QUESTIONS_FR = [
     "id": 211,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q031"
   },
   {
@@ -7634,7 +7635,7 @@ const QUESTIONS_FR = [
     "id": 212,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q032"
   },
   {
@@ -7670,7 +7671,7 @@ const QUESTIONS_FR = [
     "id": 213,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q033"
   },
   {
@@ -7706,7 +7707,7 @@ const QUESTIONS_FR = [
     "id": 214,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q034"
   },
   {
@@ -7742,7 +7743,7 @@ const QUESTIONS_FR = [
     "id": 215,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q035"
   },
   {
@@ -7778,7 +7779,7 @@ const QUESTIONS_FR = [
     "id": 216,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q036"
   },
   {
@@ -7814,7 +7815,7 @@ const QUESTIONS_FR = [
     "id": 217,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q037"
   },
   {
@@ -7850,7 +7851,7 @@ const QUESTIONS_FR = [
     "id": 218,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q038"
   },
   {
@@ -7886,7 +7887,7 @@ const QUESTIONS_FR = [
     "id": 219,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q039"
   },
   {
@@ -7922,7 +7923,7 @@ const QUESTIONS_FR = [
     "id": 220,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q040"
   },
   {
@@ -7958,7 +7959,7 @@ const QUESTIONS_FR = [
     "id": 221,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q041"
   },
   {
@@ -7994,7 +7995,7 @@ const QUESTIONS_FR = [
     "id": 222,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q042"
   },
   {
@@ -8030,7 +8031,7 @@ const QUESTIONS_FR = [
     "id": 223,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q043"
   },
   {
@@ -8066,7 +8067,7 @@ const QUESTIONS_FR = [
     "id": 224,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q044"
   },
   {
@@ -8102,7 +8103,7 @@ const QUESTIONS_FR = [
     "id": 225,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q045"
   },
   {
@@ -8138,7 +8139,7 @@ const QUESTIONS_FR = [
     "id": 226,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q046"
   },
   {
@@ -8174,7 +8175,7 @@ const QUESTIONS_FR = [
     "id": 227,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q047"
   },
   {
@@ -8210,7 +8211,7 @@ const QUESTIONS_FR = [
     "id": 228,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q048"
   },
   {
@@ -8246,7 +8247,7 @@ const QUESTIONS_FR = [
     "id": 229,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q049"
   },
   {
@@ -8282,7 +8283,7 @@ const QUESTIONS_FR = [
     "id": 230,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q050"
   },
   {
@@ -8318,7 +8319,7 @@ const QUESTIONS_FR = [
     "id": 231,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q051"
   },
   {
@@ -8354,7 +8355,7 @@ const QUESTIONS_FR = [
     "id": 232,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q052"
   },
   {
@@ -8390,7 +8391,7 @@ const QUESTIONS_FR = [
     "id": 233,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q053"
   },
   {
@@ -8426,7 +8427,7 @@ const QUESTIONS_FR = [
     "id": 234,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q054"
   },
   {
@@ -8462,7 +8463,7 @@ const QUESTIONS_FR = [
     "id": 235,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q055"
   },
   {
@@ -8498,7 +8499,7 @@ const QUESTIONS_FR = [
     "id": 236,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q056"
   },
   {
@@ -8534,7 +8535,7 @@ const QUESTIONS_FR = [
     "id": 237,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q057"
   },
   {
@@ -8570,7 +8571,7 @@ const QUESTIONS_FR = [
     "id": 238,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q058"
   },
   {
@@ -8606,7 +8607,7 @@ const QUESTIONS_FR = [
     "id": 239,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q059"
   },
   {
@@ -8642,7 +8643,7 @@ const QUESTIONS_FR = [
     "id": 240,
     "examen": 4,
     "nom_examen": "Domaine2-Process",
-    "category": "Quiz",
+    "category": "Domaine2",
     "source_id": "EXAM-Domaine2-Process-Q060"
   },
   {
@@ -8678,7 +8679,7 @@ const QUESTIONS_FR = [
     "id": 241,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q001"
   },
   {
@@ -8714,7 +8715,7 @@ const QUESTIONS_FR = [
     "id": 242,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q002"
   },
   {
@@ -8750,7 +8751,7 @@ const QUESTIONS_FR = [
     "id": 243,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q003"
   },
   {
@@ -8786,7 +8787,7 @@ const QUESTIONS_FR = [
     "id": 244,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q004"
   },
   {
@@ -8822,7 +8823,7 @@ const QUESTIONS_FR = [
     "id": 245,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q005"
   },
   {
@@ -8858,7 +8859,7 @@ const QUESTIONS_FR = [
     "id": 246,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q006"
   },
   {
@@ -8894,7 +8895,7 @@ const QUESTIONS_FR = [
     "id": 247,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q007"
   },
   {
@@ -8930,7 +8931,7 @@ const QUESTIONS_FR = [
     "id": 248,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q008"
   },
   {
@@ -8966,7 +8967,7 @@ const QUESTIONS_FR = [
     "id": 249,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q009"
   },
   {
@@ -9002,7 +9003,7 @@ const QUESTIONS_FR = [
     "id": 250,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q010"
   },
   {
@@ -9038,7 +9039,7 @@ const QUESTIONS_FR = [
     "id": 251,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q011"
   },
   {
@@ -9074,7 +9075,7 @@ const QUESTIONS_FR = [
     "id": 252,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q012"
   },
   {
@@ -9110,7 +9111,7 @@ const QUESTIONS_FR = [
     "id": 253,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q013"
   },
   {
@@ -9146,7 +9147,7 @@ const QUESTIONS_FR = [
     "id": 254,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q014"
   },
   {
@@ -9182,7 +9183,7 @@ const QUESTIONS_FR = [
     "id": 255,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q015"
   },
   {
@@ -9218,7 +9219,7 @@ const QUESTIONS_FR = [
     "id": 256,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q016"
   },
   {
@@ -9254,7 +9255,7 @@ const QUESTIONS_FR = [
     "id": 257,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q017"
   },
   {
@@ -9290,7 +9291,7 @@ const QUESTIONS_FR = [
     "id": 258,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q018"
   },
   {
@@ -9326,7 +9327,7 @@ const QUESTIONS_FR = [
     "id": 259,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q019"
   },
   {
@@ -9362,7 +9363,7 @@ const QUESTIONS_FR = [
     "id": 260,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q020"
   },
   {
@@ -9398,7 +9399,7 @@ const QUESTIONS_FR = [
     "id": 261,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q021"
   },
   {
@@ -9434,7 +9435,7 @@ const QUESTIONS_FR = [
     "id": 262,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q022"
   },
   {
@@ -9470,7 +9471,7 @@ const QUESTIONS_FR = [
     "id": 263,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q023"
   },
   {
@@ -9506,7 +9507,7 @@ const QUESTIONS_FR = [
     "id": 264,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q024"
   },
   {
@@ -9542,7 +9543,7 @@ const QUESTIONS_FR = [
     "id": 265,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q025"
   },
   {
@@ -9578,7 +9579,7 @@ const QUESTIONS_FR = [
     "id": 266,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q026"
   },
   {
@@ -9614,7 +9615,7 @@ const QUESTIONS_FR = [
     "id": 267,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q027"
   },
   {
@@ -9650,7 +9651,7 @@ const QUESTIONS_FR = [
     "id": 268,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q028"
   },
   {
@@ -9686,7 +9687,7 @@ const QUESTIONS_FR = [
     "id": 269,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q029"
   },
   {
@@ -9722,7 +9723,7 @@ const QUESTIONS_FR = [
     "id": 270,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q030"
   },
   {
@@ -9758,7 +9759,7 @@ const QUESTIONS_FR = [
     "id": 271,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q031"
   },
   {
@@ -9794,7 +9795,7 @@ const QUESTIONS_FR = [
     "id": 272,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q032"
   },
   {
@@ -9830,7 +9831,7 @@ const QUESTIONS_FR = [
     "id": 273,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q033"
   },
   {
@@ -9866,7 +9867,7 @@ const QUESTIONS_FR = [
     "id": 274,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q034"
   },
   {
@@ -9902,7 +9903,7 @@ const QUESTIONS_FR = [
     "id": 275,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q035"
   },
   {
@@ -9938,7 +9939,7 @@ const QUESTIONS_FR = [
     "id": 276,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q036"
   },
   {
@@ -9974,7 +9975,7 @@ const QUESTIONS_FR = [
     "id": 277,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q037"
   },
   {
@@ -10010,7 +10011,7 @@ const QUESTIONS_FR = [
     "id": 278,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q038"
   },
   {
@@ -10046,7 +10047,7 @@ const QUESTIONS_FR = [
     "id": 279,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q039"
   },
   {
@@ -10082,7 +10083,7 @@ const QUESTIONS_FR = [
     "id": 280,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q040"
   },
   {
@@ -10118,7 +10119,7 @@ const QUESTIONS_FR = [
     "id": 281,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q041"
   },
   {
@@ -10154,7 +10155,7 @@ const QUESTIONS_FR = [
     "id": 282,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q042"
   },
   {
@@ -10190,7 +10191,7 @@ const QUESTIONS_FR = [
     "id": 283,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q043"
   },
   {
@@ -10226,7 +10227,7 @@ const QUESTIONS_FR = [
     "id": 284,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q044"
   },
   {
@@ -10262,7 +10263,7 @@ const QUESTIONS_FR = [
     "id": 285,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q045"
   },
   {
@@ -10298,7 +10299,7 @@ const QUESTIONS_FR = [
     "id": 286,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q046"
   },
   {
@@ -10334,7 +10335,7 @@ const QUESTIONS_FR = [
     "id": 287,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q047"
   },
   {
@@ -10370,7 +10371,7 @@ const QUESTIONS_FR = [
     "id": 288,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q048"
   },
   {
@@ -10406,7 +10407,7 @@ const QUESTIONS_FR = [
     "id": 289,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q049"
   },
   {
@@ -10442,7 +10443,7 @@ const QUESTIONS_FR = [
     "id": 290,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q050"
   },
   {
@@ -10478,7 +10479,7 @@ const QUESTIONS_FR = [
     "id": 291,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q051"
   },
   {
@@ -10514,7 +10515,7 @@ const QUESTIONS_FR = [
     "id": 292,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q052"
   },
   {
@@ -10550,7 +10551,7 @@ const QUESTIONS_FR = [
     "id": 293,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q053"
   },
   {
@@ -10586,7 +10587,7 @@ const QUESTIONS_FR = [
     "id": 294,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q054"
   },
   {
@@ -10622,7 +10623,7 @@ const QUESTIONS_FR = [
     "id": 295,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q055"
   },
   {
@@ -10658,7 +10659,7 @@ const QUESTIONS_FR = [
     "id": 296,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q056"
   },
   {
@@ -10694,7 +10695,7 @@ const QUESTIONS_FR = [
     "id": 297,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q057"
   },
   {
@@ -10730,7 +10731,7 @@ const QUESTIONS_FR = [
     "id": 298,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q058"
   },
   {
@@ -10766,7 +10767,7 @@ const QUESTIONS_FR = [
     "id": 299,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q059"
   },
   {
@@ -10802,7 +10803,7 @@ const QUESTIONS_FR = [
     "id": 300,
     "examen": 5,
     "nom_examen": "Domaine3-BusinessEnv",
-    "category": "Quiz",
+    "category": "Domaine3",
     "source_id": "EXAM-Domaine3-BusinessEnv-Q060"
   },
   {
@@ -54023,7 +54024,7 @@ const QUESTIONS_EN = [
     },
     "answer": "B",
     "justification": "Correct: the Scrum Master is a servant-leader who protects psychological safety; private coaching followed by a team working agreement is the appropriate response.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 1
   },
   {
@@ -54041,7 +54042,7 @@ const QUESTIONS_EN = [
     },
     "answer": "D",
     "justification": "Correct: clarifying and enforcing the formal change management process channels requests while ensuring traceability and consistency for the team.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 2
   },
   {
@@ -54059,7 +54060,7 @@ const QUESTIONS_EN = [
     },
     "answer": "D",
     "justification": "Correct: structured onboarding with peer mentoring fosters rapid integration and understanding of team norms.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 3
   },
   {
@@ -54077,7 +54078,7 @@ const QUESTIONS_EN = [
     },
     "answer": "C",
     "justification": "Correct: accommodating means yielding one's own needs to preserve harmony and the long-term relationship.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 4
   },
   {
@@ -54095,7 +54096,7 @@ const QUESTIONS_EN = [
     },
     "answer": "D",
     "justification": "Correct: Planning Poker with simultaneous, anonymous voting reduces authority influence and encourages fairer collective estimation.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 5
   },
   {
@@ -54113,7 +54114,7 @@ const QUESTIONS_EN = [
     },
     "answer": "A",
     "justification": "Correct: shared cross-functional goals and activities rebuild a unified team identity and reduce competing sub-group dynamics.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 6
   },
   {
@@ -54131,7 +54132,7 @@ const QUESTIONS_EN = [
     },
     "answer": "A",
     "justification": "Correct: progressive coaching and reinforcing the PO's legitimacy with management builds durable autonomy.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 7
   },
   {
@@ -54149,7 +54150,7 @@ const QUESTIONS_EN = [
     },
     "answer": "B",
     "justification": "Correct: for low competence but high commitment, a directing/coaching style provides the guidance needed while nurturing enthusiasm.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 8
   },
   {
@@ -54167,7 +54168,7 @@ const QUESTIONS_EN = [
     },
     "answer": "A",
     "justification": "Correct: investigating and adjusting workload per the sustainable pace principle prevents burnout and preserves long-term performance.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 9
   },
   {
@@ -54185,7 +54186,7 @@ const QUESTIONS_EN = [
     },
     "answer": "D",
     "justification": "Correct: public recognition and development opportunities are powerful non-financial motivators aligned with esteem and achievement needs.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 10
   },
   {
@@ -54203,7 +54204,7 @@ const QUESTIONS_EN = [
     },
     "answer": "B",
     "justification": "Correct: the Scrum Master must facilitate a collective exploration of root causes and adjust future planning for a sustainable pace.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 11
   },
   {
@@ -54221,7 +54222,7 @@ const QUESTIONS_EN = [
     },
     "answer": "D",
     "justification": "Correct: in a highly interdependent team, collaborative and interpersonal skills often have more impact on overall performance than technical expertise alone.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 12
   },
   {
@@ -54239,7 +54240,7 @@ const QUESTIONS_EN = [
     },
     "answer": "D",
     "justification": "Correct: the Scrum Guide protects sprint content; the Scrum Master should coach the PO on this principle while respecting their authority over the backlog.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 13
   },
   {
@@ -54257,7 +54258,7 @@ const QUESTIONS_EN = [
     },
     "answer": "B",
     "justification": "Correct: agreed overlap hours, written documentation of decisions, and asynchronous tools optimize collaboration for a multi-timezone virtual team.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 14
   },
   {
@@ -54275,7 +54276,7 @@ const QUESTIONS_EN = [
     },
     "answer": "C",
     "justification": "Correct: negotiating dedicated windows or establishing a trained proxy PO maintains velocity while respecting the PO's role on strategic decisions.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 15
   },
   {
@@ -54293,7 +54294,7 @@ const QUESTIONS_EN = [
     },
     "answer": "A",
     "justification": "Correct: targeted communication skills development complements their technical expertise and reduces observed friction.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 16
   },
   {
@@ -54311,7 +54312,7 @@ const QUESTIONS_EN = [
     },
     "answer": "B",
     "justification": "Correct: the Scrum Master facilitates by constructively refocusing the discussion in the moment, then addresses the problematic tone privately to preserve the relationship and psychological safety.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 17
   },
   {
@@ -54329,7 +54330,7 @@ const QUESTIONS_EN = [
     },
     "answer": "C",
     "justification": "Correct: for high power and low interest, the 'Keep Satisfied' strategy provides infrequent, sufficient high-level information to maintain their support.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 18
   },
   {
@@ -54347,7 +54348,7 @@ const QUESTIONS_EN = [
     },
     "answer": "C",
     "justification": "Correct: understanding the causes of the negative perception (poorly facilitated retros, no follow-through on actions) allows co-creating a format that restores perceived value.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 19
   },
   {
@@ -54365,7 +54366,7 @@ const QUESTIONS_EN = [
     },
     "answer": "D",
     "justification": "Correct: after mediation fails, reorganizing roles or separating tasks is a pragmatic last resort to preserve collective performance.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 20
   },
   {
@@ -54383,7 +54384,7 @@ const QUESTIONS_EN = [
     },
     "answer": "B",
     "justification": "Correct: dedicated informal moments recreate the social bond lost from physical proximity, fostering cohesion and team psychological safety.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 21
   },
   {
@@ -54401,7 +54402,7 @@ const QUESTIONS_EN = [
     },
     "answer": "C",
     "justification": "Correct: discussing specific needs and coordinating with HR for reasonable accommodations is the inclusive and legally compliant appropriate practice.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 22
   },
   {
@@ -54419,7 +54420,7 @@ const QUESTIONS_EN = [
     },
     "answer": "B",
     "justification": "Correct: directly addressing the behavior with clear expectations of mutual respect protects psychological safety and collective learning without denying the person's technical value.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 23
   },
   {
@@ -54437,7 +54438,7 @@ const QUESTIONS_EN = [
     },
     "answer": "C",
     "justification": "Correct: combining leadership from the experienced member with structured mentoring secures delivery while developing team skills.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 24
   },
   {
@@ -54455,7 +54456,7 @@ const QUESTIONS_EN = [
     },
     "answer": "A",
     "justification": "Correct: systematic after-the-fact criticism without in-meeting expression often signals a lack of psychological safety; alternative spaces and explicit encouragement foster more constructive real-time expression.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 25
   },
   {
@@ -54473,7 +54474,7 @@ const QUESTIONS_EN = [
     },
     "answer": "B",
     "justification": "Correct: offering valuable learning and career development opportunities is durable intrinsic motivation, even for a temporary team.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 26
   },
   {
@@ -54491,7 +54492,7 @@ const QUESTIONS_EN = [
     },
     "answer": "C",
     "justification": "Correct: building a shared, multidimensional definition of value (business, user, technical) aligns team and PO on common priorities.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 27
   },
   {
@@ -54509,7 +54510,7 @@ const QUESTIONS_EN = [
     },
     "answer": "D",
     "justification": "Correct: effective feedback is private, factual, specific, and solution-oriented for concrete improvement.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 28
   },
   {
@@ -54527,7 +54528,7 @@ const QUESTIONS_EN = [
     },
     "answer": "B",
     "justification": "Correct: targeted inclusion, clear scope, and planned knowledge transfer maximize the value of external expertise while preserving the permanent team's autonomy.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 29
   },
   {
@@ -54545,7 +54546,7 @@ const QUESTIONS_EN = [
     },
     "answer": "A",
     "justification": "Correct: proactively clarifying with concrete examples and documenting shared understanding prevents costly misunderstandings later in the project.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 30
   },
   {
@@ -54563,7 +54564,7 @@ const QUESTIONS_EN = [
     },
     "answer": "B",
     "justification": "Correct: progressively shifting toward on-demand coaching while remaining available for organizational impediments respects growing autonomy while maintaining a safety net.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 31
   },
   {
@@ -54581,7 +54582,7 @@ const QUESTIONS_EN = [
     },
     "answer": "C",
     "justification": "Correct: evidence-based influence (return on investment, benchmarks) is the most effective technique to convince a skeptical decision-maker.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 32
   },
   {
@@ -54599,7 +54600,7 @@ const QUESTIONS_EN = [
     },
     "answer": "A",
     "justification": "Correct: refocusing the retrospective on the team's 'circle of influence' helps identify concrete internal actions, fostering accountability.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 33
   },
   {
@@ -54617,7 +54618,7 @@ const QUESTIONS_EN = [
     },
     "answer": "A",
     "justification": "Correct: explaining the organizational risk and making documentation an explicit performance expectation holds the person accountable while reducing dependency risk.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 34
   },
   {
@@ -54635,7 +54636,7 @@ const QUESTIONS_EN = [
     },
     "answer": "D",
     "justification": "Correct: structured facilitation techniques allow sensitive topics to be addressed constructively without breaking trust, while avoiding the buildup of unspoken issues.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 35
   },
   {
@@ -54653,7 +54654,7 @@ const QUESTIONS_EN = [
     },
     "answer": "B",
     "justification": "Correct: structured brainstorming is specifically designed to generate a maximum number of creative ideas in a collaborative problem-solving setting.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 36
   },
   {
@@ -54671,7 +54672,7 @@ const QUESTIONS_EN = [
     },
     "answer": "A",
     "justification": "Correct: coaching the PO on the importance of sharing context and value strengthens transparency, engagement, and mutual understanding without undermining their authority.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 37
   },
   {
@@ -54689,7 +54690,7 @@ const QUESTIONS_EN = [
     },
     "answer": "A",
     "justification": "Correct: a formal clarification session with documented, aligned success criteria prevents future misunderstandings about the definition of project success.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 38
   },
   {
@@ -54707,7 +54708,7 @@ const QUESTIONS_EN = [
     },
     "answer": "C",
     "justification": "Correct: reserving synchronous for complex, sensitive topics while keeping asynchronous for factual exchanges balances efficiency and clarity.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 39
   },
   {
@@ -54725,7 +54726,7 @@ const QUESTIONS_EN = [
     },
     "answer": "C",
     "justification": "Correct: gradually assigning responsibilities with mentoring and regular feedback is a proven, structured approach to leadership development.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 40
   },
   {
@@ -54743,7 +54744,7 @@ const QUESTIONS_EN = [
     },
     "answer": "C",
     "justification": "Correct: formats allowing indirect or written expression respect cultural diversity while preserving the retrospective's continuous improvement goal.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 41
   },
   {
@@ -54761,7 +54762,7 @@ const QUESTIONS_EN = [
     },
     "answer": "D",
     "justification": "Correct: the PM should proactively facilitate a structured resolution even for inter-departmental conflicts affecting their project.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 42
   },
   {
@@ -54779,7 +54780,7 @@ const QUESTIONS_EN = [
     },
     "answer": "C",
     "justification": "Correct: the Scrum Master facilitates by refocusing the discussion and reaffirming that final prioritization authority belongs to the PO, outside the review setting.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 43
   },
   {
@@ -54797,7 +54798,7 @@ const QUESTIONS_EN = [
     },
     "answer": "D",
     "justification": "Correct: listening, explaining context, and clarifying the 'disagree and commit' principle respects both legitimate expression and the need to move forward collectively after a governance decision.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 44
   },
   {
@@ -54815,7 +54816,7 @@ const QUESTIONS_EN = [
     },
     "answer": "B",
     "justification": "Correct: observing, listening, and progressively demonstrating value is the most effective approach to building trust with a distrustful team facing a new consultant.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 45
   },
   {
@@ -54833,7 +54834,7 @@ const QUESTIONS_EN = [
     },
     "answer": "A",
     "justification": "Correct: mutual awareness of communication styles and explicit team norms durably reduce misunderstandings.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 46
   },
   {
@@ -54851,7 +54852,7 @@ const QUESTIONS_EN = [
     },
     "answer": "C",
     "justification": "Correct: refocusing the discussion on the 'why' of each ceremony reconnects the team to underlying agile values and principles, beyond mechanical compliance.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 47
   },
   {
@@ -54869,7 +54870,7 @@ const QUESTIONS_EN = [
     },
     "answer": "B",
     "justification": "Correct: clear communication of reasons, progressive training, internal champions, and a feedback loop constitute a structured change management approach that minimizes resistance.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 48
   },
   {
@@ -54887,7 +54888,7 @@ const QUESTIONS_EN = [
     },
     "answer": "B",
     "justification": "Correct: co-creating a shared calendar respecting local constraints, with defined overlap windows, promotes fairness and effective collaboration in a multicultural distributed team.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 49
   },
   {
@@ -54905,7 +54906,7 @@ const QUESTIONS_EN = [
     },
     "answer": "A",
     "justification": "Correct: understanding motivations and organizing a progressive transition respects legitimate professional aspirations while minimizing impact on the critical-phase project.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 50
   },
   {
@@ -54923,7 +54924,7 @@ const QUESTIONS_EN = [
     },
     "answer": "C",
     "justification": "Correct: a private, caring conversation reinforces psychological safety and helps the person honestly express their real capacity.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 51
   },
   {
@@ -54941,7 +54942,7 @@ const QUESTIONS_EN = [
     },
     "answer": "D",
     "justification": "Correct: formally recognizing the mentoring role values this precious contribution and avoids unrecognized overload of the experienced member.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 52
   },
   {
@@ -54959,7 +54960,7 @@ const QUESTIONS_EN = [
     },
     "answer": "D",
     "justification": "Correct: a community of practice (guild) with regular experience sharing reduces isolation and fosters continuous professional development of Scrum Masters organization-wide.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 53
   },
   {
@@ -54977,7 +54978,7 @@ const QUESTIONS_EN = [
     },
     "answer": "A",
     "justification": "Correct: combining a clear vision presentation with discussion time fosters engagement, mutual understanding, and collective ownership of the project from the start.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 54
   },
   {
@@ -54995,7 +54996,7 @@ const QUESTIONS_EN = [
     },
     "answer": "B",
     "justification": "Correct: personalized, non-stigmatizing support allows the person to develop digital skills while preserving their dignity and team integration.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 55
   },
   {
@@ -55013,7 +55014,7 @@ const QUESTIONS_EN = [
     },
     "answer": "A",
     "justification": "Correct: recognizing the contribution, fairly compensating extra time, and clarifying future expectations balance appropriate recognition and sustainable pace management.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 56
   },
   {
@@ -55031,7 +55032,7 @@ const QUESTIONS_EN = [
     },
     "answer": "D",
     "justification": "Correct: structured techniques like devil's advocate or systematic round-robin actively counter groupthink and value diverse perspectives.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 57
   },
   {
@@ -55049,7 +55050,7 @@ const QUESTIONS_EN = [
     },
     "answer": "A",
     "justification": "Correct: a significant change in composition (50%) generally returns the team to a Forming stage, requiring rebuilding of trust and norms.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 58
   },
   {
@@ -55067,7 +55068,7 @@ const QUESTIONS_EN = [
     },
     "answer": "C",
     "justification": "Correct: conflict facilitation and stakeholder management skills allow the Scrum Master to redirect the discussion constructively while preserving relationships and the review's purpose.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 59
   },
   {
@@ -55085,7 +55086,7 @@ const QUESTIONS_EN = [
     },
     "answer": "D",
     "justification": "Correct: the PMI Code of Ethics requires reporting and correcting any significant reporting error, whether favorable or unfavorable, in the name of transparency and honesty.",
-    "category": "Quiz",
+    "category": "Domaine1",
     "id": 60
   },
   {
@@ -55103,7 +55104,7 @@ const QUESTIONS_EN = [
     },
     "answer": "A",
     "justification": "Correct: the WBS hierarchically decomposes the entire project scope into manageable work packages.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 61
   },
   {
@@ -55121,7 +55122,7 @@ const QUESTIONS_EN = [
     },
     "answer": "A",
     "justification": "Correct: visually marking blockers and prioritizing them in daily synchronization is a standard Kanban practice for quickly resolving flow obstacles.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 62
   },
   {
@@ -55139,7 +55140,7 @@ const QUESTIONS_EN = [
     },
     "answer": "B",
     "justification": "Correct: the Critical Path Method (CPM) calculates the minimum project duration by identifying the longest sequence of activities with no float.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 63
   },
   {
@@ -55157,7 +55158,7 @@ const QUESTIONS_EN = [
     },
     "answer": "C",
     "justification": "Correct: Scrumban typically combines removing strict fixed iterations (Kanban-style continuous flow) while retaining some Scrum ceremonies and WIP limits to manage flow.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 64
   },
   {
@@ -55175,7 +55176,7 @@ const QUESTIONS_EN = [
     },
     "answer": "A",
     "justification": "Correct: Actual Cost (AC) represents the amount actually spent on the work performed at a given date.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 65
   },
   {
@@ -55193,7 +55194,7 @@ const QUESTIONS_EN = [
     },
     "answer": "A",
     "justification": "Correct: Story Mapping visualizes the end-to-end user journey, helping identify coherent value slices for MVP releases.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 66
   },
   {
@@ -55211,7 +55212,7 @@ const QUESTIONS_EN = [
     },
     "answer": "D",
     "justification": "Correct: FMEA systematically identifies potential failure modes and assesses their severity, probability, and detectability to prioritize critical components.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 67
   },
   {
@@ -55229,7 +55230,7 @@ const QUESTIONS_EN = [
     },
     "answer": "C",
     "justification": "Correct: the INVEST criterion is the recognized standard for evaluating whether a user story is well-formed before entering the sprint.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 68
   },
   {
@@ -55247,7 +55248,7 @@ const QUESTIONS_EN = [
     },
     "answer": "C",
     "justification": "Correct: configuration management ensures systematic tracking of versions and changes to technical deliverables and their characteristics.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 69
   },
   {
@@ -55265,7 +55266,7 @@ const QUESTIONS_EN = [
     },
     "answer": "C",
     "justification": "Correct: an MVP or rapid prototype validates a hypothesis with minimal effort before committing greater resources, a key Lean Startup and agile principle.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 70
   },
   {
@@ -55283,7 +55284,7 @@ const QUESTIONS_EN = [
     },
     "answer": "D",
     "justification": "Correct: the time estimate at completion (often derived from SPI) allows forecasting the likely total project duration given current schedule performance.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 71
   },
   {
@@ -55301,7 +55302,7 @@ const QUESTIONS_EN = [
     },
     "answer": "D",
     "justification": "Correct: Monte Carlo probabilistic forecasting uses velocity history to generate a distribution of possible delivery dates with an associated confidence level, more realistic than a point estimate.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 72
   },
   {
@@ -55319,7 +55320,7 @@ const QUESTIONS_EN = [
     },
     "answer": "A",
     "justification": "Correct: User Acceptance Testing (UAT) formally validates that the deliverable meets functional requirements from the end user's perspective before production.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 73
   },
   {
@@ -55337,7 +55338,7 @@ const QUESTIONS_EN = [
     },
     "answer": "D",
     "justification": "Correct: assessing criticality with the PO allows a pragmatic decision balancing sprint stability with the necessary responsiveness for impactful defects.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 74
   },
   {
@@ -55355,7 +55356,7 @@ const QUESTIONS_EN = [
     },
     "answer": "D",
     "justification": "Correct: the Requirements Traceability Matrix links each requirement to its origin, deliverables, and acceptance tests, ensuring complete coverage.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 75
   },
   {
@@ -55373,7 +55374,7 @@ const QUESTIONS_EN = [
     },
     "answer": "C",
     "justification": "Correct: continuous integration with automated tests detects defects as early as possible, reducing correction cost and improving continuous quality.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 76
   },
   {
@@ -55391,7 +55392,7 @@ const QUESTIONS_EN = [
     },
     "answer": "C",
     "justification": "Correct: the 'Identify Stakeholders' process systematically catalogs individuals and organizations impacted by or impacting the project.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 77
   },
   {
@@ -55409,7 +55410,7 @@ const QUESTIONS_EN = [
     },
     "answer": "B",
     "justification": "Correct: allocating a regular capacity share to technical debt, made visible and prioritized in the backlog, is the recommended sustainable practice.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 78
   },
   {
@@ -55427,7 +55428,7 @@ const QUESTIONS_EN = [
     },
     "answer": "B",
     "justification": "Correct: the control chart monitors process stability over time, identifying variations outside acceptable control limits.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 79
   },
   {
@@ -55445,7 +55446,7 @@ const QUESTIONS_EN = [
     },
     "answer": "A",
     "justification": "Correct: regular refinement with archiving or removal of obsolete items and reorganization by theme/value maintains a manageable, relevant backlog.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 80
   },
   {
@@ -55463,7 +55464,7 @@ const QUESTIONS_EN = [
     },
     "answer": "B",
     "justification": "Correct: the S-curve represents the cumulative budget time-phased across the project, serving as the baseline for earned value analysis.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 81
   },
   {
@@ -55481,7 +55482,7 @@ const QUESTIONS_EN = [
     },
     "answer": "D",
     "justification": "Correct: reducing WIP limits forces resolution of bottlenecks and improves flow, thereby decreasing average cycle time (Kanban/Lean principle).",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 82
   },
   {
@@ -55499,7 +55500,7 @@ const QUESTIONS_EN = [
     },
     "answer": "B",
     "justification": "Correct: the probability-impact matrix allows a rapid qualitative assessment of risks to prioritize those requiring a response.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 83
   },
   {
@@ -55517,7 +55518,7 @@ const QUESTIONS_EN = [
     },
     "answer": "B",
     "justification": "Correct: the average velocity of previous sprints is the standard empirical metric to forecast future delivery capacity.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 84
   },
   {
@@ -55535,7 +55536,7 @@ const QUESTIONS_EN = [
     },
     "answer": "D",
     "justification": "Correct: fast-tracking consists of executing normally sequential activities in parallel, without major additional cost, when risk allows.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 85
   },
   {
@@ -55553,7 +55554,7 @@ const QUESTIONS_EN = [
     },
     "answer": "B",
     "justification": "Correct: integrating regulatory traceability into the Definition of Done for each increment ensures continuous compliance without sacrificing iterative agility.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 86
   },
   {
@@ -55571,7 +55572,7 @@ const QUESTIONS_EN = [
     },
     "answer": "B",
     "justification": "Correct: cost-reimbursable contracts like CPFF are suited for R&D projects with uncertain scope, allowing scope flexibility with reimbursement of actual costs incurred.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 87
   },
   {
@@ -55589,7 +55590,7 @@ const QUESTIONS_EN = [
     },
     "answer": "A",
     "justification": "Correct: collaborative alignment on a common product-level DoD, with local extensions, resolves integration problems while respecting team autonomy.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 88
   },
   {
@@ -55607,7 +55608,7 @@ const QUESTIONS_EN = [
     },
     "answer": "D",
     "justification": "Correct: the 'Monitor Risks' process evaluates the ongoing effectiveness of the risk management process, identifies new risks, and verifies the relevance of existing responses.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 89
   },
   {
@@ -55625,7 +55626,7 @@ const QUESTIONS_EN = [
     },
     "answer": "A",
     "justification": "Correct: a cross-team dependency board regularly updated during the Scrum of Scrums offers continuous, actionable visibility on technical dependencies.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 90
   },
   {
@@ -55643,7 +55644,7 @@ const QUESTIONS_EN = [
     },
     "answer": "C",
     "justification": "Correct: any request is compared against the approved scope baseline to determine whether it constitutes a deviation requiring a formal change request.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 91
   },
   {
@@ -55661,7 +55662,7 @@ const QUESTIONS_EN = [
     },
     "answer": "B",
     "justification": "Correct: actively tracking the dependency with a dedicated risk register and contingency plans, while factoring it into sprint planning, is a pragmatic hybrid approach combining predictive rigor with agile flexibility.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 92
   },
   {
@@ -55679,7 +55680,7 @@ const QUESTIONS_EN = [
     },
     "answer": "A",
     "justification": "Correct: predefined delegation thresholds allowing the PM to directly approve minor changes, with documentation, optimize efficiency while maintaining traceability.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 93
   },
   {
@@ -55697,7 +55698,7 @@ const QUESTIONS_EN = [
     },
     "answer": "D",
     "justification": "Correct: evaluating objective shared metrics allows a data-driven decision rather than one based on subjective perceived individual productivity.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 94
   },
   {
@@ -55715,7 +55716,7 @@ const QUESTIONS_EN = [
     },
     "answer": "C",
     "justification": "Correct: the critical path groups activities with zero (or minimal) total float that determine the project's minimum duration.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 95
   },
   {
@@ -55733,7 +55734,7 @@ const QUESTIONS_EN = [
     },
     "answer": "B",
     "justification": "Correct: varying formats and ensuring real follow-up on decided actions maintains engagement and effectiveness of retrospectives over time.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 96
   },
   {
@@ -55751,7 +55752,7 @@ const QUESTIONS_EN = [
     },
     "answer": "B",
     "justification": "Correct: the 'Close Project or Phase' process finalizes all administrative activities, obtains final acceptance, and archives project documents.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 97
   },
   {
@@ -55769,7 +55770,7 @@ const QUESTIONS_EN = [
     },
     "answer": "B",
     "justification": "Correct: integrating automated, incremental resilience tests with each increment, with regular compliance reviews, reconciles strict regulatory requirements with continuous agile rhythm.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 98
   },
   {
@@ -55787,7 +55788,7 @@ const QUESTIONS_EN = [
     },
     "answer": "B",
     "justification": "Correct: fast-tracking reduces duration without significant additional cost by executing certain activities in parallel, suited to a strong budget constraint.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 99
   },
   {
@@ -55805,7 +55806,7 @@ const QUESTIONS_EN = [
     },
     "answer": "A",
     "justification": "Correct: historical velocity data combined with a probabilistic technique (e.g., Monte Carlo) provides a realistic, empirically grounded forecast.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 100
   },
   {
@@ -55823,7 +55824,7 @@ const QUESTIONS_EN = [
     },
     "answer": "D",
     "justification": "Correct: the Cost of Quality concept establishes that prevention and appraisal costs are generally lower than costs of non-conformance (rework, corrections, warranties).",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 101
   },
   {
@@ -55841,7 +55842,7 @@ const QUESTIONS_EN = [
     },
     "answer": "A",
     "justification": "Correct: a transparent discussion with the PO allowing informed splitting or deferring of the story is the appropriate agile practice when unexpected complexity is discovered.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 102
   },
   {
@@ -55859,7 +55860,7 @@ const QUESTIONS_EN = [
     },
     "answer": "B",
     "justification": "Correct: resource leveling adjusts activity start and end dates to respect resource availability constraints, potentially modifying the critical path.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 103
   },
   {
@@ -55877,7 +55878,7 @@ const QUESTIONS_EN = [
     },
     "answer": "C",
     "justification": "Correct: documenting and discussing priority with the PO enables an informed decision, balancing sprint continuity with proper defect management.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 104
   },
   {
@@ -55895,7 +55896,7 @@ const QUESTIONS_EN = [
     },
     "answer": "C",
     "justification": "Correct: sensitivity analysis of the critical path and near-critical paths identifies delay risk areas to monitor closely, especially when multiple paths have low float.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 105
   },
   {
@@ -55913,7 +55914,7 @@ const QUESTIONS_EN = [
     },
     "answer": "B",
     "justification": "Correct: PI Planning in scaled agile frameworks explicitly visualizes and coordinates cross-team dependencies for the upcoming increment.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 106
   },
   {
@@ -55931,7 +55932,7 @@ const QUESTIONS_EN = [
     },
     "answer": "A",
     "justification": "Correct: a mandatory dependency (hard logic) results from the intrinsic physical nature of the work, such as needing foundations before walls.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 107
   },
   {
@@ -55949,7 +55950,7 @@ const QUESTIONS_EN = [
     },
     "answer": "C",
     "justification": "Correct: negotiating dedicated windows or establishing a trained proxy PO maintains velocity while respecting the PO's role on strategic decisions.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 108
   },
   {
@@ -55967,7 +55968,7 @@ const QUESTIONS_EN = [
     },
     "answer": "C",
     "justification": "Correct: the CCB is the formal body generally responsible for reviewing, approving, or rejecting change requests per a defined project governance process.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 109
   },
   {
@@ -55985,7 +55986,7 @@ const QUESTIONS_EN = [
     },
     "answer": "C",
     "justification": "Correct: techniques like WSJF or MoSCoW allow multi-factor prioritization including value, regulatory urgency, and risk.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 110
   },
   {
@@ -56003,7 +56004,7 @@ const QUESTIONS_EN = [
     },
     "answer": "D",
     "justification": "Correct: the 'Control Procurements' process monitors supplier performance against contractual terms, including interim delivery deadlines.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 111
   },
   {
@@ -56021,7 +56022,7 @@ const QUESTIONS_EN = [
     },
     "answer": "A",
     "justification": "Correct: optimizing the test suite through parallelization and prioritization maintains fast feedback while preserving sufficient coverage for critical paths.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 112
   },
   {
@@ -56039,7 +56040,7 @@ const QUESTIONS_EN = [
     },
     "answer": "D",
     "justification": "Correct: free float is the delay possible for an activity without impacting the early start date of the immediately following activity.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 113
   },
   {
@@ -56057,7 +56058,7 @@ const QUESTIONS_EN = [
     },
     "answer": "C",
     "justification": "Correct: breaking the item into smaller pieces with clear ownership and shared dependency tracking ensures coordinated, efficient cross-team delivery.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 114
   },
   {
@@ -56075,7 +56076,7 @@ const QUESTIONS_EN = [
     },
     "answer": "D",
     "justification": "Correct: documenting the incident, its root causes, and corrective actions in lessons learned and organizational process assets enables real capitalization for future projects.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 115
   },
   {
@@ -56093,7 +56094,7 @@ const QUESTIONS_EN = [
     },
     "answer": "A",
     "justification": "Correct: identifying, quarantining, and prioritizing root-cause fixes for flaky tests, while tracking flakiness as a metric, restores CI reliability systematically.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 116
   },
   {
@@ -56111,7 +56112,7 @@ const QUESTIONS_EN = [
     },
     "answer": "D",
     "justification": "Correct: the Project Management Plan integrates all subsidiary plans (cost, schedule, scope, quality, etc.) in a coherent, coordinated manner.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 117
   },
   {
@@ -56129,7 +56130,7 @@ const QUESTIONS_EN = [
     },
     "answer": "C",
     "justification": "Correct: transparently sharing spike findings and collaboratively adjusting the approach is the appropriate empirical response to new technical information.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 118
   },
   {
@@ -56147,7 +56148,7 @@ const QUESTIONS_EN = [
     },
     "answer": "D",
     "justification": "Correct: for very short-duration activities, the 0/100 formula is simple and avoids the bias of a hard-to-justify intermediate estimate.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 119
   },
   {
@@ -56165,7 +56166,7 @@ const QUESTIONS_EN = [
     },
     "answer": "A",
     "justification": "Correct: incremental runbook documentation, pairing operations staff during final sprints, and a transitional support period ensure a smooth handoff and reduce post-transition risks.",
-    "category": "Quiz",
+    "category": "Domaine2",
     "id": 120
   },
   {
@@ -56183,7 +56184,7 @@ const QUESTIONS_EN = [
     },
     "answer": "C",
     "justification": "Correct: the PM must assess the enterprise environmental factors (EEF), document the impact, and adjust the risk management plan.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 121
   },
   {
@@ -56201,7 +56202,7 @@ const QUESTIONS_EN = [
     },
     "answer": "B",
     "justification": "Correct: effective organizational change management involves relevant stakeholders and uses evidence of value (pilots) to build buy-in.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 122
   },
   {
@@ -56219,7 +56220,7 @@ const QUESTIONS_EN = [
     },
     "answer": "D",
     "justification": "Correct: IRR or benefit-cost ratio normalize profitability as a percentage or ratio, allowing fair comparison between projects of different sizes.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 123
   },
   {
@@ -56237,7 +56238,7 @@ const QUESTIONS_EN = [
     },
     "answer": "A",
     "justification": "Correct: a durable agile culture relies on tolerance for failure (learning), trust, and decentralized decision-making, fundamental cultural elements.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 124
   },
   {
@@ -56255,7 +56256,7 @@ const QUESTIONS_EN = [
     },
     "answer": "B",
     "justification": "Correct: security requirements must be integrated from planning, in consultation with relevant security/compliance experts.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 125
   },
   {
@@ -56273,7 +56274,7 @@ const QUESTIONS_EN = [
     },
     "answer": "B",
     "justification": "Correct: OKRs align teams on measurable key results while preserving autonomy on how to achieve them, consistent with the agile spirit.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 126
   },
   {
@@ -56291,7 +56292,7 @@ const QUESTIONS_EN = [
     },
     "answer": "D",
     "justification": "Correct: the PM must escalate to governance and reassess the business case to adjust strategy (differentiation, schedule acceleration, etc.).",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 127
   },
   {
@@ -56309,7 +56310,7 @@ const QUESTIONS_EN = [
     },
     "answer": "D",
     "justification": "Correct: NPS and adoption/retention rates directly measure user satisfaction and perceived value, key external indicators of product success.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 128
   },
   {
@@ -56327,7 +56328,7 @@ const QUESTIONS_EN = [
     },
     "answer": "C",
     "justification": "Correct: integrating concrete CSR criteria into vendor selection and the project management plan is the practice aligned with professional and societal responsibility.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 129
   },
   {
@@ -56345,7 +56346,7 @@ const QUESTIONS_EN = [
     },
     "answer": "B",
     "justification": "Correct: comparing CAC, LTV, and retention rates provides a factual basis for arbitrating between acquisition and retention investment.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 130
   },
   {
@@ -56363,7 +56364,7 @@ const QUESTIONS_EN = [
     },
     "answer": "A",
     "justification": "Correct: assessing the compliance gap and integrating necessary corrections into the project management plan is the proactive compliance approach, even mid-execution.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 131
   },
   {
@@ -56381,7 +56382,7 @@ const QUESTIONS_EN = [
     },
     "answer": "C",
     "justification": "Correct: the build-measure-learn cycle guides the 'pivot or persevere' decision based on actual adoption and hypothesis validation data.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 132
   },
   {
@@ -56399,7 +56400,7 @@ const QUESTIONS_EN = [
     },
     "answer": "C",
     "justification": "Correct: a major strategic change requires a formal portfolio governance review to determine the project's future.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 133
   },
   {
@@ -56417,7 +56418,7 @@ const QUESTIONS_EN = [
     },
     "answer": "D",
     "justification": "Correct: specific social impact indicators, aligned with the organization's theory of change, meet donor accountability expectations, complementing internal agile metrics.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 134
   },
   {
@@ -56435,7 +56436,7 @@ const QUESTIONS_EN = [
     },
     "answer": "C",
     "justification": "Correct: currency fluctuations and marketplace conditions are external EEFs to monitor and integrate into risk management.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 135
   },
   {
@@ -56453,7 +56454,7 @@ const QUESTIONS_EN = [
     },
     "answer": "D",
     "justification": "Correct: inner source fosters component reuse, reduces duplicated effort, and improves technical consistency across teams, a key organizational benefit.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 136
   },
   {
@@ -56471,7 +56472,7 @@ const QUESTIONS_EN = [
     },
     "answer": "A",
     "justification": "Correct: applying the stricter standard between jurisdictions is the prudent compliance practice for extraterritorial laws like anti-corruption legislation (e.g., FCPA).",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 137
   },
   {
@@ -56489,7 +56490,7 @@ const QUESTIONS_EN = [
     },
     "answer": "B",
     "justification": "Correct: comparing market and competitive evolution to value delivery pace assesses whether the organization risks losing strategic relevance.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 138
   },
   {
@@ -56507,7 +56508,7 @@ const QUESTIONS_EN = [
     },
     "answer": "D",
     "justification": "Correct: TCO demonstrates that an initial investment in quality often reduces non-conformance costs (rework, warranties, dissatisfaction) over the entire lifecycle.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 139
   },
   {
@@ -56525,7 +56526,7 @@ const QUESTIONS_EN = [
     },
     "answer": "A",
     "justification": "Correct: analyzing the competitive ecosystem, partnership growth potential, and security/dependency risks provides a solid strategic basis for this open vs. closed architecture choice.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 140
   },
   {
@@ -56543,7 +56544,7 @@ const QUESTIONS_EN = [
     },
     "answer": "B",
     "justification": "Correct: consulting legal experts to identify compliant transfer mechanisms and adjust the architecture if necessary is the proactive, responsible approach.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 141
   },
   {
@@ -56561,7 +56562,7 @@ const QUESTIONS_EN = [
     },
     "answer": "A",
     "justification": "Correct: 'privacy by design' requires integrating data protection from the design stage, a fundamental requirement of data protection regulations and good compliance practice.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 142
   },
   {
@@ -56579,7 +56580,7 @@ const QUESTIONS_EN = [
     },
     "answer": "D",
     "justification": "Correct: analyzing local cultural context with experts and adapting practices while preserving non-negotiable ethical principles balances cultural respect and professional integrity.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 143
   },
   {
@@ -56597,7 +56598,7 @@ const QUESTIONS_EN = [
     },
     "answer": "B",
     "justification": "Correct: rapid growth in the number of teams without a coordination mechanism (Scrum of Scrums, guilds, architectural alignment) risks fragmenting product coherence and communication.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 144
   },
   {
@@ -56615,7 +56616,7 @@ const QUESTIONS_EN = [
     },
     "answer": "C",
     "justification": "Correct: assessing the real impact, identifying compliant alternatives, and documenting the risk is the proactive, legal approach appropriate for an embargo.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 145
   },
   {
@@ -56633,7 +56634,7 @@ const QUESTIONS_EN = [
     },
     "answer": "B",
     "justification": "Correct: a structured risk and benefit assessment with controlled pilots allows responsible, progressive adoption of a high-potential but genuinely risky emerging technology.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 146
   },
   {
@@ -56651,7 +56652,7 @@ const QUESTIONS_EN = [
     },
     "answer": "A",
     "justification": "Correct: assessing, engaging in dialogue about expected standards, and escalating if necessary reflects responsible, ethical management of a conduct issue with an external partner.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 147
   },
   {
@@ -56669,7 +56670,7 @@ const QUESTIONS_EN = [
     },
     "answer": "C",
     "justification": "Correct: comparing LTV, recurring revenue predictability, and target market alignment provides a solid factual basis for a strategic pricing model decision.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 148
   },
   {
@@ -56687,7 +56688,7 @@ const QUESTIONS_EN = [
     },
     "answer": "B",
     "justification": "Correct: the PMI Code of Ethics requires refusing to use inappropriately obtained information and handling the situation with transparency and integrity.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 149
   },
   {
@@ -56705,7 +56706,7 @@ const QUESTIONS_EN = [
     },
     "answer": "D",
     "justification": "Correct: compatibility of agile practices, effective asynchronous communication, and sufficient time zone overlap are determinant for successful distributed agile collaboration.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 150
   },
   {
@@ -56723,7 +56724,7 @@ const QUESTIONS_EN = [
     },
     "answer": "B",
     "justification": "Correct: a program management maturity assessment verifies whether the organization has the processes, governance, and skills necessary before engaging in a complex program.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 151
   },
   {
@@ -56741,7 +56742,7 @@ const QUESTIONS_EN = [
     },
     "answer": "B",
     "justification": "Correct: regular reviews based on value metrics and OKRs, with rapid escalation, offer light but effective governance suited to agility.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 152
   },
   {
@@ -56759,7 +56760,7 @@ const QUESTIONS_EN = [
     },
     "answer": "C",
     "justification": "Correct: integrating the cost into updated projections and evaluating energy reduction options is the proactive, responsible approach to a new environmental regulatory factor.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 153
   },
   {
@@ -56777,7 +56778,7 @@ const QUESTIONS_EN = [
     },
     "answer": "B",
     "justification": "Correct: responsible prioritization assesses the potential impact of the security risk (even invisible short-term) alongside direct business value, reflecting mature risk management.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 154
   },
   {
@@ -56795,7 +56796,7 @@ const QUESTIONS_EN = [
     },
     "answer": "D",
     "justification": "Correct: TCO integrates all costs over the full lifecycle (acquisition, maintenance, operation, end-of-life), enabling a rigorous financial comparison between options.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 155
   },
   {
@@ -56813,7 +56814,7 @@ const QUESTIONS_EN = [
     },
     "answer": "A",
     "justification": "Correct: a scaled tooling investment decision should be based on a genuine cost-benefit analysis integrating expected organizational gains.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 156
   },
   {
@@ -56831,7 +56832,7 @@ const QUESTIONS_EN = [
     },
     "answer": "C",
     "justification": "Correct: proactively seeking alignment with new leadership and verifying the project's ongoing relevance is a proactive governance management approach.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 157
   },
   {
@@ -56849,7 +56850,7 @@ const QUESTIONS_EN = [
     },
     "answer": "C",
     "justification": "Correct: continuous incremental value indicators, complementary to traditional financial measures, better capture the iterative nature of agile value creation.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 158
   },
   {
@@ -56867,7 +56868,7 @@ const QUESTIONS_EN = [
     },
     "answer": "C",
     "justification": "Correct: rigorously verifying real status and honestly assessing feasibility before committing reflects responsible, ethical professional practice.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 159
   },
   {
@@ -56885,7 +56886,7 @@ const QUESTIONS_EN = [
     },
     "answer": "D",
     "justification": "Correct: integrating regulatory traceability into the Definition of Done for each increment ensures continuous compliance without sacrificing iterative agility.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 160
   },
   {
@@ -56903,7 +56904,7 @@ const QUESTIONS_EN = [
     },
     "answer": "A",
     "justification": "Correct: the PM must address non-conformances through a formal corrective action plan, integrated into project governance.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 161
   },
   {
@@ -56921,7 +56922,7 @@ const QUESTIONS_EN = [
     },
     "answer": "D",
     "justification": "Correct: reusing already continuously tracked value metrics to feed quarterly reports avoids duplicate reporting work while meeting donor requirements.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 162
   },
   {
@@ -56939,7 +56940,7 @@ const QUESTIONS_EN = [
     },
     "answer": "D",
     "justification": "Correct: the PMI Code of Ethics requires refusing to use inappropriately obtained information and addressing the situation with transparency and integrity.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 163
   },
   {
@@ -56957,7 +56958,7 @@ const QUESTIONS_EN = [
     },
     "answer": "A",
     "justification": "Correct: transparent communication with reskilling plans and employee involvement reflects social and ethical responsibility toward disruptive technological change.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 164
   },
   {
@@ -56975,7 +56976,7 @@ const QUESTIONS_EN = [
     },
     "answer": "B",
     "justification": "Correct: sunk costs should not influence a future decision, as they are already committed and unrecoverable regardless of the decision made.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 165
   },
   {
@@ -56993,7 +56994,7 @@ const QUESTIONS_EN = [
     },
     "answer": "C",
     "justification": "Correct: consulting legal experts and integrating compliant safeguards into the delivery pipeline is the proactive approach that preserves both compliance and agile delivery speed.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 166
   },
   {
@@ -57011,7 +57012,7 @@ const QUESTIONS_EN = [
     },
     "answer": "A",
     "justification": "Correct: a weighted multi-criteria scoring grid is the standard method to balance cost, quality, and risk in supplier selection.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 167
   },
   {
@@ -57029,7 +57030,7 @@ const QUESTIONS_EN = [
     },
     "answer": "C",
     "justification": "Correct: integrating sustainability criteria directly into acceptance criteria of technical user stories allows concrete, incremental action consistent with agility.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 168
   },
   {
@@ -57047,7 +57048,7 @@ const QUESTIONS_EN = [
     },
     "answer": "D",
     "justification": "Correct: the PM must integrate and actively monitor compliance with safety standards, including at subcontractors, per legal and ethical obligations.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 169
   },
   {
@@ -57065,7 +57066,7 @@ const QUESTIONS_EN = [
     },
     "answer": "C",
     "justification": "Correct: frameworks like SAFe or LeSS explicitly structure the balance between communicated strategic alignment and team execution autonomy.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 170
   },
   {
@@ -57083,7 +57084,7 @@ const QUESTIONS_EN = [
     },
     "answer": "A",
     "justification": "Correct: a gap analysis between current organizational capabilities and specific project needs identifies necessary investments or training.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 171
   },
   {
@@ -57101,7 +57102,7 @@ const QUESTIONS_EN = [
     },
     "answer": "D",
     "justification": "Correct: a structured engagement survey exploring work-life balance, recognition, and perceived meaning identifies the root causes of declining satisfaction despite good results.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 172
   },
   {
@@ -57119,7 +57120,7 @@ const QUESTIONS_EN = [
     },
     "answer": "A",
     "justification": "Correct: regular internal audits detect and correct compliance gaps before the final external audit, reducing the risk of certification failure.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 173
   },
   {
@@ -57137,7 +57138,7 @@ const QUESTIONS_EN = [
     },
     "answer": "A",
     "justification": "Correct: Lean budgeting with regular value checkpoints reconciles financial discipline with execution agility.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 174
   },
   {
@@ -57155,7 +57156,7 @@ const QUESTIONS_EN = [
     },
     "answer": "B",
     "justification": "Correct: the Code of Ethics requires immediate corrective action to restore transparency and reaffirm reporting integrity standards with the team.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 175
   },
   {
@@ -57173,7 +57174,7 @@ const QUESTIONS_EN = [
     },
     "answer": "B",
     "justification": "Correct: assessing severity, informing relevant stakeholders per internal procedures, and remediating quickly is the responsible, transparent approach to any security incident.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 176
   },
   {
@@ -57191,7 +57192,7 @@ const QUESTIONS_EN = [
     },
     "answer": "D",
     "justification": "Correct: a factual, balanced presentation with scenarios and mitigation plans allows the board to make informed decisions on a complex strategic issue.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 177
   },
   {
@@ -57209,7 +57210,7 @@ const QUESTIONS_EN = [
     },
     "answer": "A",
     "justification": "Correct: taking the report seriously, investigating confidentially and appropriately, and escalating if necessary reflects ethical, responsible management of a potential fraud report.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 178
   },
   {
@@ -57227,7 +57228,7 @@ const QUESTIONS_EN = [
     },
     "answer": "A",
     "justification": "Correct: political risk is a major external environmental factor that can significantly affect the continuity, regulation, and security of an international project.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 179
   },
   {
@@ -57245,7 +57246,7 @@ const QUESTIONS_EN = [
     },
     "answer": "C",
     "justification": "Correct: assessing security implications alongside ecosystem growth potential, with security requirements embedded in the backlog, balances innovation and responsible risk management.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 180
   },
   {
@@ -85415,7 +85416,7 @@ const QUESTIONS_AR = [
     },
     "answer": "D",
     "justification": "عند صدور متطلبات تنظيمية بيئية جديدة أثناء التنفيذ، يجب تقييم أثرها الكامل على المشروع الجاري وتقديم طلب تغيير رسمي إذا لزم الأمر عبر عملية التحكم المتكامل بالتغيير، بدلاً من التجاهل أو الإيقاف المتسرع أو تحمل مخاطر عدم الامتثال دون تقييم.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 61
   },
   {
@@ -85433,7 +85434,7 @@ const QUESTIONS_AR = [
     },
     "answer": "B",
     "justification": "دمج نقطة تدقيق دورية لاختبار الضغط التنظيمي كجزء أساسي ومتكرر من دورة حياة كل مشروع تقني، مع تخصيص وقت وموارد محددة منذ بداية التخطيط، يضمن الامتثال المستمر والمنهجي، بدلاً من التعامل التفاعلي فقط عند الطلب المباشر أو الاعتماد الكامل على قسم منفصل دون تخطيط استباقي من فريق المشروع.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 62
   },
   {
@@ -85451,7 +85452,7 @@ const QUESTIONS_AR = [
     },
     "answer": "B",
     "justification": "عندما تتطلب هيئة مستقلة موافقة مسبقة على تغييرات جوهرية، يجب دمج هذه الموافقة كخطوة إلزامية وموثقة ضمن عملية التحكم المتكامل بالتغيير، مع تخطيط زمني واقعي يأخذ مدتها بعين الاعتبار، بدلاً من تجاوزها أو تجميد التغيير بالكامل بشكل غير عملي.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 63
   },
   {
@@ -85469,7 +85470,7 @@ const QUESTIONS_AR = [
     },
     "answer": "B",
     "justification": "وحدة العملة لا تعني بالضرورة توحيد الأنظمة الضريبية الوطنية؛ يجب دمج تحليل الأنظمة الضريبية المختلفة لكل بلد مشارك ضمن التخطيط المالي والتعاقدي، لتجنب مخاطر امتثال ضريبي غير متوقعة قد تنشأ من الفروقات الوطنية القائمة رغم العملة المشتركة.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 64
   },
   {
@@ -85487,7 +85488,7 @@ const QUESTIONS_AR = [
     },
     "answer": "D",
     "justification": "متطلبات فترة الإلغاء المجانية الإلزامية يجب دمجها ضمن التخطيط المالي والتشغيلي لمرحلة الإطلاق، عبر تقدير التكلفة المتوقعة لعمليات الإلغاء والتأكد من جاهزية أنظمة الدعم لهذا الحجم المتوقع من الطلبات، بدلاً من التجاهل أو اعتبارها مجرد قيد تشغيلي منفصل بعد الإطلاق دون تخطيط مسبق.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 65
   },
   {
@@ -85505,7 +85506,7 @@ const QUESTIONS_AR = [
     },
     "answer": "D",
     "justification": "المخاطر السياسية المرتبطة بتغييرات كبرى محتملة (كالانتخابات) يجب تضمينها ضمن سجل المخاطر الاستراتيجية مع سيناريوهات تخطيط متعددة تغطي التوجهات المحتملة المختلفة، مما يتيح استعدادًا استباقيًا بدلاً من التجاهل الكامل أو الإيقاف المتسرع أو الاعتماد على مصادر معلومات غير منظمة تحليليًا.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 66
   },
   {
@@ -85523,7 +85524,7 @@ const QUESTIONS_AR = [
     },
     "answer": "C",
     "justification": "عند اختلاف معايير سلامة العمال بين البلدين، تطبيق المعيار الأعلى بينهما كحد أدنى موحد للمشروع يضمن أفضل حماية ممكنة للعمال ويقلل مخاطر السمعة والامتثال القانوني المرتبطة بتطبيق مستوى حماية أدنى من الممكن توفيره فعليًا، وهي ممارسة مسؤولة تتجاوز الحد الأدنى القانوني المحلي فقط.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 67
   },
   {
@@ -85541,7 +85542,7 @@ const QUESTIONS_AR = [
     },
     "answer": "A",
     "justification": "استخدام أدوات التحوط المالي مثل عقود الأسعار الآجلة لتثبيت جزء من تكلفة المُدخل الأساسي استراتيجية استباقية فعالة لإدارة مخاطر تقلبات أسعار السلع العالمية، مع تضمين هذا الخطر رسميًا في سجل المخاطر المالية، بدلاً من التجاهل الكامل أو الحلول المتطرفة كالشراء الكلي المسبق أو إلغاء الاستخدام.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 68
   },
   {
@@ -85559,7 +85560,7 @@ const QUESTIONS_AR = [
     },
     "answer": "B",
     "justification": "حماية الملكية الفكرية عبر سياق دولي متنوع تتطلب تسجيلًا منفصلاً في كل بلد ذي أهمية استراتيجية، مع دمج بنود تعاقدية إضافية (كاتفاقيات عدم الإفشاء) في جميع العقود ذات الصلة، بدلاً من الاعتماد فقط على قوانين بلد واحد أو تجاهل الحماية في بلدان أضعف تنظيميًا أو الاعتماد على الثقة الشخصية دون أساس قانوني رسمي.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 69
   },
   {
@@ -85577,7 +85578,7 @@ const QUESTIONS_AR = [
     },
     "answer": "A",
     "justification": "الاستعداد الاستباقي لمتطلبات الإفصاح الإلزامي السريع عن الحوادث الأمنية يتطلب دمج خطة استجابة واضحة ضمن خطة إدارة المخاطر، مع بروتوكول تصعيد سريع يضمن الامتثال للموعد القانوني، بدلاً من الانتظار السلبي حتى وقوع حادثة فعلية أو الاعتماد الكامل على قسم منفصل دون تنسيق مسبق مع فريق المشروع.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 70
   },
   {
@@ -85595,7 +85596,7 @@ const QUESTIONS_AR = [
     },
     "answer": "C",
     "justification": "إدارة تسلسل التصاريح متعددة المستويات تتطلب تحديد التبعيات الفعلية بينها (فبعضها يتطلب تصريحًا أدنى كشرط مسبق للمستوى الأعلى) ودمج هذا التسلسل كمسار حرج ضمن الجدول الزمني، بدلاً من السعي المتوازي غير الواقعي أو تجاهل مستويات معينة أو البدء بالتنفيذ الفعلي قبل استكمال التصاريح اللازمة وهو ما يعرض المشروع لمخاطر قانونية جسيمة.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 71
   },
   {
@@ -85613,7 +85614,7 @@ const QUESTIONS_AR = [
     },
     "answer": "A",
     "justification": "دمج هوامش زمنية احتياطية استراتيجية تتوافق مع مواسم الخطر الطبيعي التاريخية، مع خطط طوارئ لوجستية مناسبة، نهج استباقي يوازن بين استمرارية المشروع وإدارة المخاطر البيئية الجغرافية المعروفة، بدلاً من تجاهل النمط الموسمي أو اتخاذ إجراء متطرف كالإلغاء الكامل.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 72
   },
   {
@@ -85631,7 +85632,7 @@ const QUESTIONS_AR = [
     },
     "answer": "B",
     "justification": "متطلبات تتبع سلسلة الإمداد الصحية الصارمة تستلزم تصميم نظام مشتريات يوثق ويتتبع كل مكون من المصدر حتى المنتج النهائي، بما يلبي المتطلبات التنظيمية ويتيح استرجاعًا سريعًا للمعلومات عند الحاجة (كاستدعاء منتج)، وليس الاعتماد الكامل على الموردين بمفردهم دون نظام مركزي موثق للمؤسسة.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 73
   },
   {
@@ -85649,7 +85650,7 @@ const QUESTIONS_AR = [
     },
     "answer": "C",
     "justification": "إشراك ممثلي النقابة العمالية القوية ضمن تحليل أصحاب المصلحة وخطة الإشراك منذ البداية، مع حوار استباقي شفاف حول أي تغييرات محتملة في ظروف العمل، يبني علاقة تعاونية تقلل مخاطر النزاعات العمالية المستقبلية، بخلاف التجاهل أو الانتظار حتى ظهور نزاع فعلي أو رفض التواصل الرسمي مع طرف مؤثر بهذا الحجم.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 74
   },
   {
@@ -85667,7 +85668,7 @@ const QUESTIONS_AR = [
     },
     "answer": "A",
     "justification": "التعامل المسؤول مع الأثر الاجتماعي للأتمتة على الوظائف الحالية يتطلب خطة انتقالية شاملة تشمل إعادة التدريب والتواصل الشفاف المبكر بالتنسيق مع الموارد البشرية، بدلاً من التنفيذ المفاجئ غير المخطط، أو الإخفاء غير الأخلاقي، أو التأجيل الدائم الذي يتجاهل الفوائد الاستراتيجية المشروعة للمشروع.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 75
   },
   {
@@ -85685,7 +85686,7 @@ const QUESTIONS_AR = [
     },
     "answer": "D",
     "justification": "الامتثال لمتطلبات المحتوى المحلي الإلزامية يتطلب دمج تحليل توفر المواد والكفاءات المحلية ضمن التخطيط المبكر، مع بناء علاقات استراتيجية مع موردين ومتعاقدين محليين مؤهلين، بدلاً من تجاهل المتطلب القانوني أو محاولة التحايل عليه بطرق غير أخلاقية أو غير قانونية.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 76
   },
   {
@@ -85703,7 +85704,7 @@ const QUESTIONS_AR = [
     },
     "answer": "A",
     "justification": "ضمان الامتثال لمتطلبات الشفافية الضريبية عبر الحدود المتزايدة يتطلب تنسيقًا وثيقًا مع قسم الضرائب المؤسسي لتوثيق دقيق لكل نشاط مالي حسب موقعه الجغرافي، مع تحديث مستمر للتغييرات التنظيمية، بدلاً من التبسيط المخل أو تجاهل الفروقات الجغرافية أو أي ممارسات تفتقر للشفافية اللازمة.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 77
   },
   {
@@ -85721,7 +85722,7 @@ const QUESTIONS_AR = [
     },
     "answer": "A",
     "justification": "عند وجود خطر تعدٍ محتمل على براءة اختراع، إجراء تحليل قانوني متخصص لتقييم الخطر الفعلي واستكشاف خيارات بديلة (كالترخيص أو التصميم البديل) نهج استباقي مسؤول، بخلاف المضي دون تقييم أو التجاهل الكامل أو محاولة الاستخدام السري غير الأخلاقي الذي يزيد الخطر القانوني بدلاً من تقليله.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 78
   },
   {
@@ -85739,7 +85740,7 @@ const QUESTIONS_AR = [
     },
     "answer": "C",
     "justification": "تقدير تكلفة إعادة التأهيل البيئي المستقبلية وتخصيص احتياطي مالي مناسب ضمن الميزانية منذ البداية يتوافق مع مبدأ المحاسبة الكاملة لدورة الحياة، ويضمن عدم مواجهة المؤسسة بتكلفة غير مخطط لها مستقبلاً، بخلاف التجاهل أو التأجيل أو تحميل التكلفة على مشروع لاحق بشكل غير عادل ومخالف لمبدأ 'من يُلوث يدفع' الشائع في التنظيم البيئي.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 79
   },
   {
@@ -85757,7 +85758,7 @@ const QUESTIONS_AR = [
     },
     "answer": "D",
     "justification": "مرحلة موافقة اللجنة الأخلاقية المستقلة يجب إدراجها كنشاط حرج ضمن الجدول الزمني مع تخطيط واقعي لمدتها المتوقعة، ولا يجوز البدء بأي نشاط بحثي يتضمن مشاركين بشريين قبل الحصول على هذه الموافقة رسميًا، لأن ذلك يمثل مخالفة أخلاقية وتنظيمية جسيمة بغض النظر عن تقدير الباحثين الشخصي لمستوى الخطر.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 80
   },
   {
@@ -85775,7 +85776,7 @@ const QUESTIONS_AR = [
     },
     "answer": "C",
     "justification": "دمج معايير إمكانية الوصول كمتطلبات غير وظيفية أساسية منذ مرحلة التصميم الأولى، مع اختبارات دورية طوال دورة التطوير، يضمن امتثالاً حقيقيًا وفعالاً وأقل تكلفة من معالجتها كفكرة لاحقة في مرحلة الاختبار النهائي أو بعد الإطلاق، وهو التزام قانوني لا يعتمد على تصور مسبق لمن قد يستخدم المنتج فعليًا.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 81
   },
   {
@@ -85793,7 +85794,7 @@ const QUESTIONS_AR = [
     },
     "answer": "B",
     "justification": "إجراء تحليل حساسية للجدوى المالية في سيناريوهات متعددة (مع/بدون حوافز حكومية) يضمن استعدادًا استراتيجيًا لتغيرات سياسية مستقبلية محتملة، مما يحمي استمرارية المشروع الاقتصادية بدلاً من الاعتماد الكامل غير المدروس على استمرار الحوافز الحالية أو اتخاذ قرار متطرف بالإلغاء الفوري.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 82
   },
   {
@@ -85811,7 +85812,7 @@ const QUESTIONS_AR = [
     },
     "answer": "D",
     "justification": "دمج التزامات وإجراءات التخفيف الواردة في تقرير التقييم البيئي والاجتماعي ضمن خطط المشروع التنفيذية الفعلية، مع آلية رصد ومتابعة مستمرة، يضمن التزامًا حقيقيًا وليس شكليًا فقط لإرضاء جهة التمويل، وهو أساس أخلاقي وتعاقدي لضمان استمرار التمويل الدولي وحماية المجتمعات والبيئة المتأثرة.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 83
   },
   {
@@ -85829,7 +85830,7 @@ const QUESTIONS_AR = [
     },
     "answer": "A",
     "justification": "متطلبات 'حق النسيان' القانونية تستلزم تصميم بنية قاعدة البيانات منذ البداية لدعم آلية حذف كامل وموثق (بما يشمل النسخ الاحتياطية والأرشيفات)، لأن إضافة هذه القدرة كتعديل لاحق على نظام قائم أصعب وأكثر تعقيدًا بكثير من دمجها في التصميم الأصلي، وهو التزام قانوني جوهري لا يكفي معالجته سطحيًا من الواجهة الأمامية فقط.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 84
   },
   {
@@ -85847,7 +85848,7 @@ const QUESTIONS_AR = [
     },
     "answer": "B",
     "justification": "نموذج الفرق المستقلة الكاملة قد يؤدي لتكرار غير فعال لبعض المهارات النادرة والمكلفة (كالأمن السيبراني المتخصص) عبر عدة فرق، مما يستدعي إيجاد توازن عملي بين استقلالية الفريق ومشاركة الموارد النادرة عبر آليات تنسيقية كمجتمعات الممارسة، بدلاً من افتراض أن الاستقلالية الكاملة مثالية دون أي تكلفة تنظيمية مصاحبة.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 85
   },
   {
@@ -85865,7 +85866,7 @@ const QUESTIONS_AR = [
     },
     "answer": "D",
     "justification": "دمج الوعي البيئي ضمن ثقافة الفريق اليومية يعزز تدريجيًا اتخاذ قرارات تقنية أكثر استدامة (كتحسين كفاءة استخدام الموارد السحابية)، ويهيئ المؤسسة استباقيًا لمتطلبات إفصاح بيئي تنظيمي مستقبلي محتمل، وهو استثمار استراتيجي يتجاوز كونه مجرد بعد إضافي غير مرتبط بالرشاقة التقليدية.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 86
   },
   {
@@ -85883,7 +85884,7 @@ const QUESTIONS_AR = [
     },
     "answer": "A",
     "justification": "التوسع العضوي التدريجي يسمح للممارسات بالتطور والتكيف مع السياق المؤسسي الفعلي بناءً على تجربة ناجحة حقيقية، مما يقلل خطر فرض بنية معقدة قد لا تناسب السياق الفعلي، ويبني قبولاً ثقافيًا أعمق قبل أي توسع رسمي أكبر لاحقًا، وإن كان لا يمنع إمكانية تبني إطار رسمي في مرحلة لاحقة أنضج.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 87
   },
   {
@@ -85901,7 +85902,7 @@ const QUESTIONS_AR = [
     },
     "answer": "C",
     "justification": "تقييم الاستعداد التنظيمي الشامل الذي يفحص التوافق بين الثقافة الحالية وهيكل السلطة وأنظمة الحوافز وأهداف التحول المنشودة يحدد الفجوات الجوهرية التي يجب معالجتها قبل الاستثمار الكبير في التحول، مما يقلل مخاطر فشل التحول لاحقًا بسبب مقاومة ثقافية أو هيكلية غير متوقعة.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 88
   },
   {
@@ -85919,7 +85920,7 @@ const QUESTIONS_AR = [
     },
     "answer": "C",
     "justification": "الخطر الأساسي في نظام الحوافز الجماعية البحت هو ظاهرة 'الراكب المجاني' حيث يقلل بعض الأفراد مساهمتهم الفعلية اعتمادًا على مجهود الآخرين، مما يتطلب آليات تقدير تكميلية (كالتغذية الراجعة من الزملاء) تحافظ على المساءلة الفردية دون التضحية بالتوجه الجماعي الأساسي للحوافز.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 89
   },
   {
@@ -85937,7 +85938,7 @@ const QUESTIONS_AR = [
     },
     "answer": "D",
     "justification": "المسار الوظيفي المزدوج يحافظ على الخبراء التقنيين الأعمق داخل أدوارهم الفنية بدلاً من دفعهم قسريًا نحو مناصب إدارية قد لا تناسب مهاراتهم أو رغباتهم، مما يحافظ على العمق التقني اللازم لفرق رشيقة عالية الأداء ويقلل معدل دوران الكفاءات النادرة التي قد تغادر المؤسسة إذا كان المسار الإداري هو الطريق الوحيد للتقدم.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 90
   },
   {
@@ -85955,7 +85956,7 @@ const QUESTIONS_AR = [
     },
     "answer": "B",
     "justification": "دعم الميزانية المرنة على مستوى تدفق القيمة يتطلب من قسم المالية تطوير آليات محاسبية جديدة تتيح إعادة تخصيص الموازنة بمرونة خلال السنة بناءً على الأداء الفعلي والفرص الناشئة، وهو تحدٍ محاسبي جوهري يتجاوز مجرد إلغاء الرقابة أو افتراض ضمان تكلفة أقل تلقائيًا.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 91
   },
   {
@@ -85973,7 +85974,7 @@ const QUESTIONS_AR = [
     },
     "answer": "D",
     "justification": "استراتيجية الدمج الأنسب تتضمن تقييمًا دقيقًا لأوجه التوافق والاختلاف، مع الحفاظ على استقلالية تشغيلية مؤقتة للفريق المستحوذ عليه كحماية ثقافية، بينما يُستفاد تدريجيًا وبشكل متبادل من أفضل الممارسات من كل جانب، بدلاً من الفرض الأحادي لأي ثقافة أو الفصل الكامل الذي يفوّت فرصة التعلم المتبادل والتكامل الاستراتيجي المفيد.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 92
   },
   {
@@ -85991,7 +85992,7 @@ const QUESTIONS_AR = [
     },
     "answer": "D",
     "justification": "الشراكة الاستراتيجية مع الجامعات تبني خط أنابيب مستدام من المواهب المُهيّأة مسبقًا لثقافة وممارسات المؤسسة الخاصة، مما يقلل مخاطر ندرة المواهب في سوق تنافسي ويقلل وقت التأهيل مقارنة بالتوظيف الخارجي الكامل، وهي فائدة استراتيجية طويلة المدى تتجاوز مجرد توفير التكلفة قصيرة المدى، دون أن تكون بديلاً كاملاً للتوظيف الخارجي في جميع الحالات.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 93
   },
   {
@@ -86009,7 +86010,7 @@ const QUESTIONS_AR = [
     },
     "answer": "B",
     "justification": "التحدي الأساسي في حوكمة تدفقات القيمة العابرة للحدود هو التوفيق بين متطلبات قوانين العمل المختلفة بين البلدان المشاركة (ساعات العمل، العطلات، حقوق الموظفين)، مع الحفاظ على تجربة عمل موحدة ومنصفة نسبيًا لجميع الأعضاء بغض النظر عن موقعهم، بدلاً من فرض قانون بلد واحد بشكل غير قانوني على الآخرين أو تجاهل الفروقات القانونية الجوهرية القائمة.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 94
   },
   {
@@ -86027,7 +86028,7 @@ const QUESTIONS_AR = [
     },
     "answer": "D",
     "justification": "حتى التحولات الرشيقة الناجحة ظاهريًا معرضة لانتكاس تدريجي وخفي نحو الممارسات الهرمية القديمة بمرور الوقت (كإعادة تمركز القرارات دون وعي صريح)؛ التقييم المستمر للمخاطر الثقافية يكتشف هذا الانتكاس مبكرًا ويتيح تدخلاً استباقيًا لحماية مكاسب التحول، بدلاً من افتراض أن النجاح الأولي يضمن استمرارية دائمة دون أي مراقبة.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 95
   },
   {
@@ -86045,7 +86046,7 @@ const QUESTIONS_AR = [
     },
     "answer": "D",
     "justification": "استراتيجية توطين ناجحة تكيّف وتيرة وأسلوب تطبيق الممارسات الرشيقة لتحترم القيم الثقافية المحلية العميقة، مع الحفاظ على المبادئ الجوهرية للرشاقة (التسليم التدريجي والتغذية الراجعة) بأسلوب مناسب للسياق، بدلاً من الفرض غير الحساس ثقافيًا أو رفض التوسع كليًا أو تجاهل الفروقات الثقافية الجوهرية القائمة فعليًا.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 96
   },
   {
@@ -86063,7 +86064,7 @@ const QUESTIONS_AR = [
     },
     "answer": "A",
     "justification": "تشكيل مجلس حوكمة يمثل الفرق المستخدمة الرئيسية للمنصة المشتركة، مسؤول عن القرارات الاستراتيجية المشتركة مع تفويض واضح للقرارات التشغيلية اليومية لكل فريق، يوازن بين ضرورة التنسيق المركزي للمنصة والاستقلالية التشغيلية اللازمة للفرق، بدلاً من الفوضى غير المنسقة أو السيطرة الأحادية غير التمثيلية أو التجزؤ الكامل غير الفعال من حيث التكلفة.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 97
   },
   {
@@ -86081,7 +86082,7 @@ const QUESTIONS_AR = [
     },
     "answer": "B",
     "justification": "مؤشر مرونة سلسلة القيمة الرقمية بعد الأزمات يبني قدرة تنظيمية على قياس استعداد النظام البيئي الكامل (لا فريقًا واحدًا فقط) أمام أزمات مستقبلية مشابهة، مما يوجه استثمارات مستقبلية في نقاط الضعف الهيكلية المشتركة بين عدة فرق، وهو مكمل لمراجعات الحوادث الفردية وليس بديلاً كاملاً عنها أو ضمانًا مطلقًا لعدم تكرار الأزمات.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 98
   },
   {
@@ -86099,7 +86100,7 @@ const QUESTIONS_AR = [
     },
     "answer": "D",
     "justification": "القيود الأخلاقية الصريحة على التمويل التنافسي الداخلي توجه الابتكار نحو مسارات مستدامة ومسؤولة، مما يحمي سمعة المؤسسة وثقة المستخدمين طويلة المدى من مخاطر مقترحات قصيرة النظر تُعظّم مقاييس سريعة على حساب القيم الأخلاقية، وهي قيد استراتيجي وقائي وليس مجرد عائق أمام الابتكار أو بديلاً كاملاً عن التقييم الأخلاقي التفصيلي لكل مقترح على حدة.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 99
   },
   {
@@ -86117,7 +86118,7 @@ const QUESTIONS_AR = [
     },
     "answer": "C",
     "justification": "دمج اعتبار الأثر البيئي التراكمي ضمن قرارات هندسة الأداء يدفع الفريق نحو تحسين كفاءة الموارد الحوسبية المستخدمة (كتحسين خوارزميات البناء أو استخدام موارد أكثر كفاءة طاقيًا)، مما يقلل الأثر البيئي التراكمي دون التضحية بضرورة السرعة والتكرار الأساسية في ممارسات DevOps الحديثة، بدلاً من تجاهل هذا البعد أو اعتباره سببًا لإيقاف الممارسات الأساسية بالكامل.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 100
   },
   {
@@ -86135,7 +86136,7 @@ const QUESTIONS_AR = [
     },
     "answer": "B",
     "justification": "نجاح نموذج الشبكة المرنة عبر الأقسام يتطلب نظامًا شفافًا لتتبع سعة وتوافر كل فرد (كلوحة مهارات مركزية)، مع ثقافة تنظيمية تدعم التنقل المرن دون خلق فراغ غير مُدار في القسم الأصلي، وليس مجرد إلغاء التنسيق المركزي بالكامل أو إجبار الموافقة الفورية دون أي اعتبار لاحتياجات القسم الأصلي المنقول منه العضو.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 101
   },
   {
@@ -86153,7 +86154,7 @@ const QUESTIONS_AR = [
     },
     "answer": "C",
     "justification": "التحدي الأساسي هو التوفيق بين سرعة التكرار الرشيقة المطلوبة لتطوير منتجات الذكاء الاصطناعي وضرورة إجراء تقييمات مخاطر سمعية وأخلاقية معمقة، عبر دمج بوابات تقييم سريعة لكن جوهرية ضمن كل دورة تكرار، بدلاً من إبطاء العملية بالكامل بشكل يقتل السرعة الرشيقة أو تجاهل المخاطر لصالح السرعة القصوى أو ترك كل فريق يعمل دون معيار مؤسسي موحد للمخاطر السمعية الحساسة.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 102
   },
   {
@@ -86171,7 +86172,7 @@ const QUESTIONS_AR = [
     },
     "answer": "C",
     "justification": "الشفافية التصاعدية تمنح الإدارة العليا فهمًا أعمق للواقع التقني والتحديات الفعلية التي تواجهها الفرق، مما يحسّن جودة القرارات الاستراتيجية المستقبلية بناءً على معلومات ميدانية حقيقية، وهي تدفق معلومات مكمل للتوجيه التصاعدي التقليدي من الأعلى للأسفل، وليست بديلاً عنه أو ضمانًا لموافقة تلقائية على كل قرار فريق.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 103
   },
   {
@@ -86189,7 +86190,7 @@ const QUESTIONS_AR = [
     },
     "answer": "A",
     "justification": "الدرس الاستراتيجي الأهم هو تكييف عمق ووتيرة ممارسات إدارة الامتثال والتوثيق بما يتناسب مع درجة التنظيم الأعلى للقطاع الجديد، مع الحفاظ على جوهر المرونة والتسليم التدريجي الرشيق حيثما أمكن، بدلاً من نقل الممارسات دون تعديل أو التخلي الكامل عن الرشاقة أو تجاهل الفروقات التنظيمية الجوهرية بين القطاعات المختلفة.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 104
   },
   {
@@ -86207,7 +86208,7 @@ const QUESTIONS_AR = [
     },
     "answer": "C",
     "justification": "نموذج الحوكمة القائمة على الثقة المُثبتة يحفز الفرق على بناء سجل أداء وامتثال قوي لكسب استقلالية أكبر تدريجيًا، مع تخصيص الرقابة الأكثر صرامة للفرق التي تحتاجها فعليًا (الجديدة أو ذات سجل أضعف)، مما يحسّن كفاءة توزيع موارد الحوكمة المحدودة على مستوى المؤسسة بدلاً من توزيعها بالتساوي غير الفعال بين جميع الفرق بغض النظر عن سجلها الفعلي.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 105
   },
   {
@@ -86225,7 +86226,7 @@ const QUESTIONS_AR = [
     },
     "answer": "D",
     "justification": "المساهمة الاستراتيجية في مشاريع مفتوحة المصدر ذات صلة تبني تأثيرًا وسمعة تقنية للمؤسسة داخل مجتمعات استراتيجية، مع الحفاظ على تحديث وتحسين مستمر للأدوات المعتمد عليها داخليًا، مما يقلل مخاطر الاعتماد على أدوات مهجورة على المدى الطويل، وهي فائدة استراتيجية غير مالية مباشرة بالضرورة، لكنها ذات قيمة حقيقية طويلة الأمد.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 106
   },
   {
@@ -86243,7 +86244,7 @@ const QUESTIONS_AR = [
     },
     "answer": "C",
     "justification": "حضور ممثل مالي في جلسات تخطيط الزيادة البرمجية يضمن أن الأولويات التقنية المخطط لها متوافقة بشكل واقعي مع القدرة المالية والاستدامة طويلة المدى، مما يتيح تعديلات مبكرة عند ظهور أي تعارض، بدلاً من اكتشافه متأخرًا بعد استثمار كبير في التخطيط والتنفيذ، دون أن يعني ذلك تحويل قرار الأولويات التقنية بالكامل لقسم المالية أو ضمان ميزانية غير محدودة.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 107
   },
   {
@@ -86261,7 +86262,7 @@ const QUESTIONS_AR = [
     },
     "answer": "B",
     "justification": "ضمان استمرارية المعرفة المؤسسية يتطلب توثيقًا منهجيًا وموسّعًا للمعرفة الضمنية المتراكمة لدى القادة الأوائل (السياقات والقرارات التاريخية وأسبابها)، بالتزامن مع برنامج إرشاد مكثف يربطهم بالقيادات الصاعدة قبل سنوات كافية من التقاعد الفعلي، بدلاً من الانتظار حتى اللحظة الأخيرة أو الاعتماد فقط على الوثائق الرسمية التي نادرًا ما تلتقط عمق المعرفة الضمنية الحقيقية.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 108
   },
   {
@@ -86279,7 +86280,7 @@ const QUESTIONS_AR = [
     },
     "answer": "B",
     "justification": "الشراكة التنظيمية الاستباقية تتيح تصميم المنتجات بمرونة تتوقع التوجهات التنظيمية المستقبلية المحتملة، مما يقلل خطر إعادة التصميم المكلفة بعد صدور قوانين رسمية غير متوقعة، وتبني علاقة تعاونية بناءة تعزز سمعة المؤسسة كشريك مسؤول، دون أن تضمن توافقًا مطلقًا تلقائيًا مع كل تغيير قانوني مستقبلي أو تلغي الحاجة لمراجعات قانونية رسمية لاحقة.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 109
   },
   {
@@ -86297,7 +86298,7 @@ const QUESTIONS_AR = [
     },
     "answer": "C",
     "justification": "توسيع تقييم بصمة الكربون ليشمل بيئات التطوير والاختبار يكشف عن فرص تحسين كبيرة غالبًا مُهمَلة (كبيئات تجريبية تعمل دون استخدام فعلي لفترات طويلة)، والتي قد تمثل نسبة كبيرة من إجمالي البصمة الكربونية التقنية رغم عدم ظهورها للمستخدمين النهائيين، وهي فرصة استراتيجية للتحسين لا تقتصر على قطاع معين ولا تعني إلغاء هذه البيئات الضرورية بالكامل بل تحسين كفاءة استخدامها.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 110
   },
   {
@@ -86315,7 +86316,7 @@ const QUESTIONS_AR = [
     },
     "answer": "A",
     "justification": "التحدي الأساسي هو التأكد من الامتثال لقوانين العمل والضرائب والإقامة في كل بلد قد يعمل منه العضو مؤقتًا، لأن العمل الفعلي من بلد معين قد يخلق التزامات قانونية أو ضريبية غير متوقعة للمؤسسة في تلك الولاية القضائية، وهو تحدٍ قانوني حقيقي يتطلب مراجعة مسبقة ولا يمكن تجاهله بافتراض أن العمل عبر الإنترنت خارج نطاق القوانين المحلية، ولا يجوز تحميل الموظف المسؤولية القانونية الكاملة بمفرده دون دعم مؤسسي.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 111
   },
   {
@@ -86333,7 +86334,7 @@ const QUESTIONS_AR = [
     },
     "answer": "B",
     "justification": "دمج بُعد القيمة الاجتماعية ضمن معايير تحديد أولويات المحفظة يضمن أن قرارات تخصيص الموارد تعكس الأثر المجتمعي الحقيقي، وليس فقط العائد المالي المباشر، مما يوسع فهم المؤسسة لمعنى القيمة بشكل أكثر شمولية ومسؤولية، دون أن يعني ذلك إلغاء التقييم المالي التقليدي أو ضمان نجاح تجاري تلقائي لأي منتج ذي قيمة اجتماعية مرتفعة.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 112
   },
   {
@@ -86351,7 +86352,7 @@ const QUESTIONS_AR = [
     },
     "answer": "D",
     "justification": "الحوكمة التكيفية متعددة المستويات تسرّع تدفق العمل للميزات منخفضة المخاطر عبر موافقة مبسطة، بينما تُخصص رقابة أكثر صرامة فقط للميزات عالية المخاطر التي تستدعيها فعليًا، مما يوازن بشكل ذكي بين السرعة الرشيقة والرقابة اللازمة بناءً على المخاطر الفعلية، بخلاف معاملة كل التغييرات بنفس مستوى التدقيق الثابت بغض النظر عن حجم المخاطرة الحقيقية.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 113
   },
   {
@@ -86369,7 +86370,7 @@ const QUESTIONS_AR = [
     },
     "answer": "A",
     "justification": "بناء شبكة دعم مؤسسية منهجية لمعالجة السبب الجذري لظاهرة الإرهاق المتكرر (بدلاً من تركها لكل سكرم ماستر بمفرده) يحمي استدامة الأداء العالي طويل المدى للمؤسسة بأكملها ويقلل معدل دوران المواهب، وهو استثمار استراتيجي وليس مجرد مصروف إضافي، لكنه لا يضمن اختفاء الظاهرة بالكامل ولا يعوّض عن ضرورة معالجة الأسباب التشغيلية الفعلية لوتيرة العمل المفرطة إن وجدت.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 114
   },
   {
@@ -86387,7 +86388,7 @@ const QUESTIONS_AR = [
     },
     "answer": "A",
     "justification": "التشارك الاستباقي الواسع لدروس الأزمات يبني مناعة تنظيمية جماعية أوسع من خلال نشر المعرفة حول أنماط فشل قد تنطبق على فرق أخرى تستخدم بنى تقنية أو ممارسات مشابهة، مما يمنع تكرار أخطاء مماثلة في فرق لم تكن على علم بالخطر أصلاً، بخلاف الاكتفاء بمشاركة الدروس مع الفريق المتأثر مباشرة فقط، دون أن يضمن ذلك عدم حدوث أزمات مستقبلية بشكل نهائي.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 115
   },
   {
@@ -86405,7 +86406,7 @@ const QUESTIONS_AR = [
     },
     "answer": "A",
     "justification": "الاعتبار الأهم عند أتمتة عمليات الحوكمة هو ضمان أن الأتمتة تغطي فعليًا الجوانب القابلة للأتمتة الموضوعية (كفحوصات أمان تقنية محددة)، مع الاحتفاظ بمراجعة بشرية للجوانب التي تتطلب حكمًا سياقيًا أو أخلاقيًا أعمق لا يمكن للأدوات الآلية تقييمه بشكل كافٍ، بدلاً من الأتمتة الكاملة غير المتمايزة أو رفض الأتمتة كليًا رغم فوائدها الواضحة في الجوانب المناسبة لها.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 116
   },
   {
@@ -86423,7 +86424,7 @@ const QUESTIONS_AR = [
     },
     "answer": "C",
     "justification": "إدارة العلاقة مع المورد الخارجي وفق مبادئ رشيقة تتيح اكتشاف أي انحراف عن التوقعات مبكرًا خلال دورة التسليم بدلاً من انتظار نهاية العقد بالكامل، مما يتيح تصحيحًا سريعًا ومنخفض التكلفة نسبيًا، ويقلل مخاطر مفاجأة كبرى غير سارة عند التسليم النهائي الوحيد، دون أن يعني ذلك إلغاء البنود التعاقدية الرسمية الضرورية أو ضمان التزام مطلق بكل موعد نهائي.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 117
   },
   {
@@ -86441,7 +86442,7 @@ const QUESTIONS_AR = [
     },
     "answer": "B",
     "justification": "دمج البعد البيئي ضمن معايير اتخاذ القرار المعماري يوسع نطاق التقييم ليشمل الأثر البيئي المحتمل لكل خيار (كاستهلاك الطاقة النسبي)، مما يدعم قرارات أكثر استدامة على المدى الطويل، دون أن يعني ذلك تجاهل الاعتبارات التقنية والمالية التقليدية الأساسية أو ضمان اختيار البنية الأقل استهلاكًا للطاقة تلقائيًا بغض النظر عن أي عامل آخر مهم.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 118
   },
   {
@@ -86459,7 +86460,7 @@ const QUESTIONS_AR = [
     },
     "answer": "A",
     "justification": "فرق الاستجابة السريعة عبر الوظائف تضمن استجابة منسقة وشاملة تجمع الخبرات المتنوعة اللازمة من عدة فرق بسرعة، مع رؤية موحدة لحجم وتأثير الأزمة الكامل، بخلاف الاستجابات الجزئية والمتفرقة من كل فريق بمعزل التي قد لا تتعامل مع الأزمة بشكل متكامل وفعال، دون أن يعني ذلك إلغاء الحاجة للهيكل التنظيمي الدائم أو ضمان حل فوري بدون تحديات.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 119
   },
   {
@@ -86477,7 +86478,7 @@ const QUESTIONS_AR = [
     },
     "answer": "C",
     "justification": "الاستراتيجية الأنسب توازن بين تشجيع الشفافية والمساهمة المجتمعية التقنية التي تبني سمعة إيجابية وتجذب المواهب، مع حماية المعلومات التنافسية الحساسة أو التفاصيل التي قد تكشف نقاط ضعف أمنية عن غير قصد، عبر إرشاد مؤسسي واضح للمشاركة العلنية، بدلاً من المنع الكامل الذي يفوّت فرصة بناء السمعة أو ترك القرار الفردي دون أي مراجعة قد تعرض المؤسسة لمخاطر غير مقصودة.",
-    "category": "Quiz",
+    "category": "Domaine3",
     "id": 120
   },
   {
@@ -93144,7 +93145,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "خلال اجتماع سكرم اليومي، ينتقد عضو فريق كبير باستمرار أفكار الأعضاء المبتدئين، مما يدفعهم للانسحاب من المشاركة. ماذا ينبغي على سكرم ماستر أن يفعل أولاً؟",
     "options": {
       "A": "لا يفعل شيئاً، لأن اجتماع سكرم اليومي يخص فريق التطوير",
@@ -93160,7 +93161,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يلاحظ مدير مشروع أن صاحب مصلحة رئيسياً يغيّر المتطلبات باستمرار في وقت متأخر من الجدول الزمني، مما يسبب ارتباكاً للفريق. ما الكفاءة التواصلية الأكثر فائدة هنا؟",
     "options": {
       "A": "قبول كل تغيير فوراً دون توثيق",
@@ -93176,7 +93177,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "ينضم عضو جديد إلى فريق سكرم راسخ ويشعر بالضياع وسط الممارسات القائمة. ما الإجراء الذي يدعم اندماجه على أفضل وجه؟",
     "options": {
       "A": "تكليفه فوراً بأعقد المهام لتسريع التعلم",
@@ -93192,7 +93193,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يختلف عضوان في الفريق من قسمين مختلفين باستمرار حول أولويات الموارد في مبادرة رشيقة متعددة الوظائف. أي أسلوب لحل النزاع يعطي الأولوية للعلاقات طويلة الأمد على المكسب الفوري؟",
     "options": {
       "A": "التهدئة/التكيّف",
@@ -93208,7 +93209,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يلاحظ سكرم ماستر أن الفريق لا يشكك أبداً في تقديرات أقدم أعضائه، حتى عندما تبدو غير واقعية. أي تحيز يوضح هذا وماذا ينبغي فعله؟",
     "options": {
       "A": "إلغاء تقدير الفريق كلياً",
@@ -93224,7 +93225,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يجب على مدير مشروع حل خلاف بين فريقين فرعيين تشكّلا بشكل غير رسمي، مما أوجد منافسة غير صحية. ما الإجراء القيادي الأنسب؟",
     "options": {
       "A": "تشجيع المنافسة بين المجموعتين الفرعيتين لتحفيز الأداء",
@@ -93240,7 +93241,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يفتقر مالك منتج مبتدئ إلى الثقة لاتخاذ قرارات ترتيب أولويات صعبة ويصعّد الأمر دائماً إلى مديره. ما الإجراء الذي يدعم تطوره على أفضل وجه؟",
     "options": {
       "A": "تجاهل الوضع لأنه ليس مشكلة الفريق",
@@ -93256,7 +93257,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يجب على مدير مشروع اختيار أسلوب القيادة الأنسب لعضو فريق ذو كفاءة منخفضة لكن التزام مرتفع بمهمة جديدة. أي أسلوب قيادة وضعي هو الأنسب؟",
     "options": {
       "A": "الدعم فقط دون أي توجيه",
@@ -93272,7 +93273,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يلاحظ مدرب رشيق أن فريقاً عالي الأداء تظهر عليه علامات الإرهاق (تزايد الغياب، العصبية). ما الإجراء ذو الأولوية للحفاظ على الأداء المستدام؟",
     "options": {
       "A": "تجاهل العلامات ما دامت السرعة مستقرة",
@@ -93288,7 +93289,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يجب على مدير مشروع تقدير مساهمة استثنائية للفريق دون وجود ميزانية لمكافأة مالية. أي تقدير غير مالي هو الأكثر فعالية؟",
     "options": {
       "A": "تجاهل المساهمة لتجنب خلق توقعات لدى الآخرين",
@@ -93304,7 +93305,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "في استعراض رجعي، يعبّر عضو فريق عن شعور مزمن بعبء عمل مفرط. ما أفضل استجابة لسكرم ماستر؟",
     "options": {
       "A": "إضافة مزيد من المهام لاختبار قدرته على التحمل",
@@ -93320,7 +93321,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يجب على مدير مشروع الاختيار بين مرشحين داخليين لدور رئيسي: أحدهما أكثر خبرة تقنية، والآخر لديه مهارات تعاون أفضل في سياق فريق شديد الاعتماد المتبادل. أي عامل يجب أن يكون الأثقل وزناً هنا؟",
     "options": {
       "A": "الأقدمية في المنظمة",
@@ -93336,7 +93337,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يغيّر مالك المنتج أولويات السبرنت باستمرار في منتصفه، مما يربك فريق التطوير. ما أفضل إجراء لسكرم ماستر؟",
     "options": {
       "A": "منع مالك المنتج من حضور المراسم",
@@ -93352,7 +93353,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يجب على مدير مشروع إدارة فريق افتراضي منتشر عبر مناطق زمنية متعددة. أي ممارسة تحسّن التعاون الفعال أكثر؟",
     "options": {
       "A": "وضع ساعات عمل متداخلة متفق عليها، وتوثيق القرارات كتابياً، واستخدام أدوات تعاون غير متزامنة",
@@ -93368,7 +93369,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يفتقر مالك المنتج إلى التوفر للإجابة عن أسئلة الفريق أثناء السبرنت، مما يبطئ التطوير. ما أفضل حل دائم؟",
     "options": {
       "A": "يتخذ الفريق جميع قرارات المنتج دون مالك المنتج بشكل دائم",
@@ -93384,7 +93385,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يلاحظ مدير مشروع أن عضو فريق متميز تقنياً لكنه يفتقر لمهارات التواصل، مما يسبب احتكاكاً مع الآخرين. ما إجراء التطوير الأنسب؟",
     "options": {
       "A": "تقديم تدريب أو تكوين في مهارات التواصل يكمّل خبرته التقنية المعترف بها",
@@ -93400,7 +93401,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "خلال مراجعة سبرنت، ينتقد صاحب مصلحة بشدة العمل المقدَّم أمام الفريق بأكمله، مما يُثبط المطورين. ما أفضل رد فوري لسكرم ماستر؟",
     "options": {
       "A": "إعادة توجيه النقاش بلباقة نحو ملاحظات بنّاءة موجهة نحو الحل، ثم معالجة النغمة بشكل خاص مع صاحب المصلحة بعد ذلك",
@@ -93416,7 +93417,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يجب على مدير مشروع إشراك صاحب مصلحة عالي التأثير لكن منخفض الاهتمام، وفق مصفوفة القوة/الاهتمام. أي استراتيجية إدارة أصحاب المصلحة مناسبة؟",
     "options": {
       "A": "الحفاظ على رضاه بتحديثات غير متكررة وعالية المستوى",
@@ -93432,7 +93433,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يلاحظ مدرب رشيق أن فريقاً يرفض جميع الاستعراضات الرجعية، معتبراً أنها بلا فائدة. ما النهج الذي ينبغي اتباعه أولاً؟",
     "options": {
       "A": "استبدال الفريق بأكمله",
@@ -93448,7 +93449,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يجب على مدير مشروع إدارة فريق يعاني من صراع شخصي مستمر رغم عدة محاولات وساطة. ما الخيار المناسب كحل أخير؟",
     "options": {
       "A": "إجبار الشخصين على العمل معاً بشكل أوثق",
@@ -93464,7 +93465,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "شهد فريق رشيق موزع عبر عدة دول تراجعاً في التماسك الاجتماعي منذ الانتقال إلى العمل عن بُعد بنسبة 100%. ما الإجراء الذي يعيد بناء الروابط بين الفريق على أفضل وجه؟",
     "options": {
       "A": "حظر كل تواصل غير رسمي للتركيز على الإنتاجية",
@@ -93480,7 +93481,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يجب على مدير مشروع إدماج عضو فريق ذي إعاقة يتطلب ترتيبات تيسيرية معقولة. ما الإجراء المناسب؟",
     "options": {
       "A": "التحدث مع الشخص لفهم احتياجاته المحددة وتطبيق ترتيبات معقولة بالتنسيق مع الموارد البشرية",
@@ -93496,7 +93497,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يلاحظ سكرم ماستر أن عضواً ذا كفاءة تقنية عالية يتبنى نغمة تنم عن عدم الاحترام تجاه أسئلة الآخرين، مما يعيق تعلمهم. ما الإجراء الذي ينبغي على سكرم ماستر اتخاذه؟",
     "options": {
       "A": "التسامح مع السلوك لأن مهاراته التقنية قيّمة للفريق",
@@ -93512,7 +93513,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يجب على مدير مشروع تحديد كيفية توزيع العمل عندما يكون لدى عضوين مستويات كفاءة مختلفة جداً لنفس المهمة الحرجة. ما النهج الأكثر توازناً؟",
     "options": {
       "A": "تقسيم العمل بالتساوي دون اعتبار لمستوى الكفاءة",
@@ -93528,7 +93529,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يلاحظ سكرم ماستر أن عضو فريق ينتقد باستمرار قرارات المجموعة بعد اتخاذها، دون أن يتحدث أبداً خلال الاجتماعات. ما الظاهرة التي يوضحها هذا وما الإجراء الذي ينبغي اتخاذه؟",
     "options": {
       "A": "هذا أمر طبيعي وليس له عواقب على الفريق",
@@ -93544,7 +93545,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يجب على مدير مشروع تحفيز فريق مؤقت تجمّع فقط لمدة المشروع، مع خطر فقدان الحافز بسبب غياب آفاق طويلة الأمد. ما الإجراء التحفيزي المناسب؟",
     "options": {
       "A": "توضيح أهداف المشروع وتقديم فرص تعلم وتطوير مهارات قيّمة لمستقبل مسار الأعضاء المهني",
@@ -93560,7 +93561,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "لدى مالك المنتج وفريق التطوير آراء متباينة حول 'القيمة' لميزة ما (أحدهما يعطي الأولوية للإيراد، والآخر لتجربة المستخدم). أي نهج يحل هذا الاختلاف على أفضل وجه؟",
     "options": {
       "A": "فرض رأي مالك المنتج دون نقاش، لأنه يملك سلطة القائمة",
@@ -93576,7 +93577,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يجب على مدير مشروع تحديد كيفية إعطاء تغذية راجعة تصحيحية لعضو فريق بشأن خطأ متكرر. أي أسلوب تغذية راجعة هو الأكثر بناءً؟",
     "options": {
       "A": "الانتقاد علناً أمام الفريق بأكمله لترك أثر دائم",
@@ -93592,7 +93593,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يجب على سكرم ماستر إدماج مستشار خارجي لخبرة لمرة واحدة على مكوّن تقني معقد. أي إجراء يُسهّل إدماجه دون تعطيل ديناميكية الفريق؟",
     "options": {
       "A": "عدم توثيق عمله أبداً للبقاء مرناً",
@@ -93608,7 +93609,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يلاحظ مدير مشروع أن صاحب مصلحة لديه سوء فهم لنطاق المشروع، مما قد يولّد توقعات غير واقعية. ما إجراء التواصل ذو الأولوية؟",
     "options": {
       "A": "توضيح النطاق بشكل استباقي بأمثلة ملموسة وتوثيق فهم مشترك لمنع سوء الفهم المستقبلي",
@@ -93624,7 +93625,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يطلب فريق رشيق ذو خبرة من سكرم ماستر تقليل مشاركته لشعوره باستقلالية كافية. ما الاستجابة المناسبة؟",
     "options": {
       "A": "تجاهل طلب الفريق",
@@ -93640,7 +93641,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يجب على مدير مشروع كسب دعم راعٍ متشكك بشأن قيمة منهجية إدارة مخاطر محسّنة. أي نهج تفاوض وتأثير هو الأكثر فعالية؟",
     "options": {
       "A": "تجاوز الراعي وتطبيق المنهجية دون موافقته",
@@ -93656,7 +93657,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يلاحظ سكرم ماستر أن الفريق يلوم العوامل الخارجية بشكل منهجي للمشاكل دون فحص ممارساته الخاصة أبداً. ما التدخل الذي يعزز ثقافة المساءلة؟",
     "options": {
       "A": "تجاهل نمط اللوم",
@@ -93672,7 +93673,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يجب على مدير مشروع تحديد كيفية إدارة عضو فريق ذي كفاءة عالية يرفض باستمرار توثيق عمله، مما يخلق خطر 'عامل الحافلة' (اعتماد حرج على فرد واحد). ما الإجراء المناسب؟",
     "options": {
       "A": "توثيق عمله بدلاً منه إلى أجل غير مسمى",
@@ -93688,7 +93689,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يلاحظ سكرم ماستر أن فريقاً يتجنب مناقشة المواضيع الصعبة في الاستعراضات الرجعية للحفاظ على جو متناغم. ما الخطر الذي يمثله هذا وما الإجراء الذي ينبغي اتخاذه؟",
     "options": {
       "A": "خطر تراكم مشكلات غير محلولة (انسجام مصطنع)؛ إدخال تقنيات منظمة لمعالجة المواضيع الحساسة بشكل بنّاء (مثل استعراض القارب الشراعي)",
@@ -93704,7 +93705,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يجب على مدير مشروع اختيار أفضل تقنية لتوليد أقصى عدد من الأفكار الإبداعية خلال جلسة حل مشكلات مع الفريق. أي تقنية هي الأنسب؟",
     "options": {
       "A": "مخطط الشبكة",
@@ -93720,7 +93721,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يتخذ مالك منتج قرارات ترتيب الأولويات دون تفسير منطقه للفريق أبداً، مما يولّد إحباطاً. ما الإجراء الذي يسهّل تعاوناً أفضل؟",
     "options": {
       "A": "قبول أن مالك المنتج لا يحتاج لتبرير نفسه للفريق",
@@ -93736,7 +93737,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يجب على مدير مشروع إدارة خلاف بين الراعي وصاحب مصلحة رئيسي حول تعريف نجاح المشروع. ما إجراء التيسير المناسب؟",
     "options": {
       "A": "اختيار وجهة نظر واحدة بشكل عشوائي دون نقاش",
@@ -93752,7 +93753,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يستخدم فريق موزع أساساً التواصل الكتابي غير المتزامن، وهو ما يسبب أحياناً سوء فهم في المواضيع المعقدة. ما التوصية المتوازنة المناسبة؟",
     "options": {
       "A": "حجز التواصل المتزامن (فيديو، مكالمات) للمواضيع المعقدة أو الحساسة، والكتابة غير المتزامنة للتحديثات الواقعية البسيطة",
@@ -93768,7 +93769,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يجب على مدير مشروع تحديد كيفية تطوير مهارات القيادة لعضو فريق ذي إمكانات عالية. أي إجراء تطوير هو الأكثر فعالية؟",
     "options": {
       "A": "تكليفه تدريجياً بمسؤوليات تنسيق على مهام فرعية، مع توجيه وتغذية راجعة منتظمة",
@@ -93784,7 +93785,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "لدى فريق سكرم متعدد الثقافات تفسيرات مختلفة لـ 'الانفتاح والصراحة' في الاستعراضات الرجعية، إذ يتجنب بعضهم النقد المباشر احتراماً ثقافياً. ما التكيّف الذي يدعم استعراضاً رجعياً فعالاً؟",
     "options": {
       "A": "عقد الاستعراضات الرجعية مع الأعضاء الأكثر مباشرة ثقافياً فقط",
@@ -93800,7 +93801,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يلاحظ مدير مشروع أن قسمين لديهما خلاف غير محلول يؤثر سلباً على معنويات فريق المشروع. ما أفضل خطوة أولى؟",
     "options": {
       "A": "الانحياز لقسم على حساب الآخر",
@@ -93816,7 +93817,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يتناقض مالك المنتج وصاحب مصلحة خارجي علناً حول أولوية ميزة خلال مراجعة سبرنت. ما الإجراء المناسب في تلك اللحظة؟",
     "options": {
       "A": "إلغاء مراجعة السبرنت فوراً",
@@ -93832,7 +93833,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يجب على مدير مشروع تحديد كيفية التعامل مع عضو فريق يختلف علناً مع قرار استراتيجي وافقت عليه الحوكمة مسبقاً. ما نهج القيادة الأنسب؟",
     "options": {
       "A": "منع أي تعبير عن الاختلاف من الآن فصاعداً",
@@ -93848,7 +93849,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "ينضم سكرم ماستر كمستشار خارجي إلى فريق قائم ويلمس عدم ثقة مبدئية تجاه دوره. أي نهج يبني الثقة على أفضل وجه؟",
     "options": {
       "A": "مراقبة الديناميكيات القائمة أولاً، والإصغاء النشط لمخاوف الفريق، وإثبات القيمة عبر إجراءات تيسير ملموسة قبل إدخال أي تغييرات",
@@ -93864,7 +93865,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يلاحظ مدير مشروع أن عضوين رئيسيين لديهما أساليب تواصل مختلفة جداً (أحدهما مباشر وواقعي، والآخر أكثر علائقية وغير مباشر)، مما يسبب سوء فهم متكرر. ما الإجراء الذي يعزز تعاوناً أفضل؟",
     "options": {
       "A": "فصلهما بشكل دائم لتجنب أي تواصل",
@@ -93880,7 +93881,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يلاحظ سكرم ماستر أن فريقاً يفسّر مراسم سكرم بشكل صارم كغاية في نفسها بدلاً من أدوات تخدم القيمة. ما الإجراء الذي يعيد توجيه الفريق نحو الأساسيات؟",
     "options": {
       "A": "إزالة جميع المراسم لتجنب الشكلية المفرطة",
@@ -93896,7 +93897,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يجب على مدير مشروع تحضير فريق للانتقال إلى أداة إدارة مشاريع معقدة جديدة. أي نهج لإدارة التغيير يقلل المقاومة على أفضل وجه؟",
     "options": {
       "A": "فرض الأداة دون تفسير الفوائد المتوقعة",
@@ -93912,7 +93913,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يلاحظ سكرم ماستر أن فريقاً موزعاً ومتنوعاً ثقافياً يجد صعوبة في الاتفاق على وتيرة عمل مشتركة بسبب اختلافات المناطق الزمنية والعطلات المحلية. ما الحل المتوازن المناسب؟",
     "options": {
       "A": "إلزام جميع الأعضاء بالعمل في المنطقة الزمنية نفسها بغض النظر عن موقعهم",
@@ -93928,7 +93929,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يجب على مدير مشروع تحديد كيفية الرد على عضو فريق يعبّر عن رغبته في مغادرة المشروع لأسباب تطوير مهني، بينما المشروع في مرحلة حرجة. ما النهج الأكثر مهنية؟",
     "options": {
       "A": "تركه يغادر فوراً دون أي تخطيط انتقالي",
@@ -93944,7 +93945,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يلاحظ سكرم ماستر أن عضواً يفرط بشكل منهجي في الالتزام بالعمل خوفاً من خذلان الآخرين. ما أفضل تدخل؟",
     "options": {
       "A": "تجاهل الأمر، فليس من دور سكرم ماستر",
@@ -93960,7 +93961,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يجب على مدير مشروع تحديد كيفية تقدير دور توجيه غير رسمي يتحمله عضو فريق كبير، مما يخلق عبء عمل إضافياً غير مُقدَّر. ما الإجراء المناسب؟",
     "options": {
       "A": "تقدير دور التوجيه رسمياً في عبء عمل وأهداف أداء العضو الكبير",
@@ -93976,7 +93977,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يلاحظ مدرب رشيق أن عدة سكرم ماسترز يشعرون بالعزلة في ممارستهم، دون مجتمع دعم. ما الإجراء التنظيمي الذي يعزز تطويرهم المهني المستمر؟",
     "options": {
       "A": "إزالة دور سكرم ماستر لتجنب هذه العزلة",
@@ -93992,7 +93993,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يجب على مدير مشروع تحديد كيفية هيكلة اجتماع انطلاق لتعظيم انخراط الفريق وأصحاب المصلحة. ما العنصر الأهم إدراجه؟",
     "options": {
       "A": "عرض من جانب واحد لساعتين من مدير المشروع دون أي تفاعل",
@@ -94008,7 +94009,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يلاحظ سكرم ماستر أن عضو فريق يواجه صعوبة مع الأدوات الرقمية المستخدمة (إلمام رقمي منخفض)، مما يُبطئ مساهمته. ما الإجراء الشامل المناسب؟",
     "options": {
       "A": "تقديم دعم شخصي (تدريب، دروس، دعم من الزملاء) لتقوية إتقانه للأدوات دون وصمه",
@@ -94024,7 +94025,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يجب على مدير مشروع تقدير مساهمة عضو فريق حلّ مشكلة حرجة خارج ساعات العمل العادية. ما التقدير الأنسب؟",
     "options": {
       "A": "عدم فعل أي شيء لتجنب تشجيع العمل خارج الساعات العادية",
@@ -94040,7 +94041,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يلاحظ سكرم ماستر أن فريقاً متماسكاً جداً يستبعد لا شعورياً أفكار عضو جديد من خلفية مختلفة (التفكير الجماعي). أي إجراء يعزز تنوع الأفكار بشكل أفضل؟",
     "options": {
       "A": "تجاهل ظاهرة التفكير الجماعي",
@@ -94056,7 +94057,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يجب على مدير مشروع تحديد كيفية إدارة تغيير في تكوين 50% من الفريق في منتصف المشروع. وفق نموذج توكمان، أي مرحلة من المرجح أن يعود الفريق إليها؟",
     "options": {
       "A": "لا مرحلة، النموذج لا ينطبق على تغييرات تكوين الفريق",
@@ -94072,7 +94073,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يجب على سكرم ماستر التعامل مع موقف يختلف فيه مالك المنتج وأحد أصحاب المصلحة الخارجيين علناً حول أولوية ميزة أثناء مراجعة السبرنت. ما الإجراء المناسب في تلك اللحظة؟",
     "options": {
       "A": "ترك الجدل يتصاعد أمام الفريق",
@@ -94088,7 +94089,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "People",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine1",
     "text": "يكتشف مدير مشروع أن تقريراً مالياً رسمياً للمشروع يحتوي خطأً كبيراً في صالح المشروع، لم يلاحظه فريق المالية. ما الإجراء المناسب وفق ميثاق أخلاقيات PMI؟",
     "options": {
       "A": "الإبلاغ فوراً عن الخطأ للأطراف ذات الصلة وتصحيح التقرير، بغض النظر عما إذا كان في صالح المشروع أو ضده",
@@ -94104,7 +94105,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يجب على مدير مشروع تفكيك نطاق المشروع إلى مكونات قابلة للإدارة. أي أداة تنتج تفكيكاً هرمياً للعمل الواجب تنفيذه؟",
     "options": {
       "A": "خطة إدارة التواصل",
@@ -94120,7 +94121,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يريد فريق يستخدم لوحة كانبان تصوّر العوائق المتكررة في سير عمله بشكل أفضل. ما الممارسة الأكثر فعالية؟",
     "options": {
       "A": "إزالة العناصر المعطّلة من اللوحة حتى لا تظهر المشاكل",
@@ -94136,7 +94137,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يجب على مدير مشروع تحديد إجمالي مدة المشروع مع مراعاة التبعيات بين الأنشطة. أي تقنية تحسب مدة المشروع وتحدد المسار الحرج؟",
     "options": {
       "A": "طريقة المسار الحرج (CPM)",
@@ -94152,7 +94153,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يريد فريق يستخدم Scrumban الجمع بين قابلية التنبؤ في السبرنت ومرونة التدفق المستمر. أي ممارسة هجينة تميز هذا النهج؟",
     "options": {
       "A": "إزالة جميع قياسات التدفق أو السرعة",
@@ -94168,7 +94169,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يجب على مدير مشروع التحقق من أن التكاليف المتكبدة حتى تاريخه تتوافق مع العمل المنجز فعلاً. أي مؤشر من مؤشرات EVM يمثل التكلفة الفعلية المُنفقة؟",
     "options": {
       "A": "القيمة المخططة (PV)",
@@ -94184,7 +94185,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يريد فريق تصوّر رحلة المستخدم الشاملة لتنظيم قائمة منتج معقد. أي تقنية هي الأكثر فائدة؟",
     "options": {
       "A": "مخطط التحكم",
@@ -94200,7 +94201,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يجب على مدير مشروع التحقق من أن فشل مكوّن حرج سيكون له الأثر الأكبر على النظام ككل. أي تقنية تحليل مخاطر هي الأنسب؟",
     "options": {
       "A": "مصفوفة RACI",
@@ -94216,7 +94217,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يريد فريق تحسين جودة قصص المستخدم قبل دخولها السبرنت. أي معيار قياسي هو الأكثر فائدة لتقييم جودة قصة المستخدم؟",
     "options": {
       "A": "معيار INVEST (مستقلة، قابلة للتفاوض، ذات قيمة، قابلة للتقدير، صغيرة، قابلة للاختبار)",
@@ -94232,7 +94233,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يجب على مدير مشروع ضمان تتبع التعديلات على تكوينات المخرجات التقنية بشكل صحيح. أي عملية/أداة تدير هذا؟",
     "options": {
       "A": "إدارة التكوين",
@@ -94248,7 +94249,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يريد فريق التحقق بسرعة من فرضية منتج بأقل جهد تطوير. أي ممارسة تتوافق أكثر مع هذا الهدف؟",
     "options": {
       "A": "تطوير ميزة كاملة وشاملة قبل أي اختبار للمستخدمين",
@@ -94264,7 +94265,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يجب على مدير مشروع حساب الوقت الإضافي اللازم لإكمال المشروع بناءً على أداء الجدول الزمني الحالي. أي مؤشر EVM يُستخدم لهذا التنبؤ؟",
     "options": {
       "A": "الميزانية عند الاكتمال (BAC) وحدها",
@@ -94280,7 +94281,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يريد فريق تحسين دقة توقعات التسليم للأرباع القادمة. أي تقنية تجمع بين بيانات السرعة التاريخية وهامش عدم اليقين؟",
     "options": {
       "A": "التنبؤ الاحتمالي (مونت كارلو) القائم على سجل سرعة الفريق",
@@ -94296,7 +94297,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يجب على مدير مشروع اختيار أفضل طريقة للتحقق من أن مخرجاً معقداً يستوفي جميع المتطلبات الوظيفية قبل الانتقال للإنتاج. أي نشاط مناسب؟",
     "options": {
       "A": "تحليل SWOT",
@@ -94312,7 +94313,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يريد فريق تحديد كيفية التعامل مع عيوب الإنتاج المكتشفة خلال سبرنت جارٍ. ما الممارسة الموصى بها؟",
     "options": {
       "A": "تقييم خطورة العيب مع مالك المنتج والفريق، ودمجه في السبرنت الحالي إذا برر الأثر التجاري المقاطعة، وإلا ترتيب أولويته في القائمة",
@@ -94328,7 +94329,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يجب على مدير مشروع ضمان قابلية تتبع المتطلبات من المتطلبات الأولية إلى المخرجات النهائية. أي أداة تضمن هذه القابلية؟",
     "options": {
       "A": "لوحة كانبان",
@@ -94344,7 +94345,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يريد فريق تحسين جودة الشيفرة باستمرار. أي ممارسة هندسية رشيقة تدعم الاكتشاف المبكر للعيوب على أفضل وجه؟",
     "options": {
       "A": "التكامل المستمر مع اختبارات آلية عند كل commit",
@@ -94360,7 +94361,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يجب على مدير مشروع تحديد جميع أصحاب المصلحة المحتملين قبل بدء المشروع. أي عملية تغطي هذا النشاط؟",
     "options": {
       "A": "التحكم في التكاليف",
@@ -94376,7 +94377,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يريد فريق تحديد كيفية إدارة الدين التقني المتراكم الذي يبطئ السرعة تدريجياً. أي ممارسة هي الأكثر توصية؟",
     "options": {
       "A": "تخصيص حصة منتظمة من سعة السبرنت لتقليل الدين التقني، مع جعله مرئياً في القائمة",
@@ -94392,7 +94393,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يجب على مدير مشروع اختيار مخرج للتحكم الإحصائي في العمليات للتحقق من أن عملية إنتاجية تبقى ضمن الحدود المقبولة عبر الزمن. أي أداة هي الأنسب؟",
     "options": {
       "A": "مصفوفة RACI",
@@ -94408,7 +94409,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يجب على مالك المنتج تحديد كيفية إدارة قائمة منتج أصبحت كبيرة جداً ويصعب التنقل فيها بعد أشهر من جمع الأفكار. ما إجراء إدارة القائمة المناسب؟",
     "options": {
       "A": "الاحتفاظ بجميع العناصر إلى أجل غير مسمى، حتى القديمة منها، تحسباً لأن تصبح ذات صلة مجدداً",
@@ -94424,7 +94425,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يجب على مدير مشروع ضمان أن الميزانية المخصصة تتطابق مع حجم العمل المخطط عبر الزمن. أي أداة تجمع الجدول الزمني والتكلفة لهذا التخطيط؟",
     "options": {
       "A": "مخطط إيشيكاوا",
@@ -94440,7 +94441,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يريد فريق يعمل بكانبان تقليل متوسط زمن الدورة. أي إجراء هو الأكثر فعالية مباشرة؟",
     "options": {
       "A": "تقليل حدود العمل الجاري (WIP) والقضاء على الاختناقات المحددة في التدفق",
@@ -94456,7 +94457,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يريد مدير مشروع توقع المخاطر المحتملة قبل حدوثها. أي تقنية نوعية شائعة الاستخدام لتقييم احتمال وأثر المخاطر المحددة؟",
     "options": {
       "A": "لوحة كانبان",
@@ -94472,7 +94473,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يريد فريق سكرم تحسين قابلية التنبؤ بالتسليم. أي مقياس رشيق هو الأكثر فائدة للتنبؤ بسعة تسليم السبرنتات المستقبلية؟",
     "options": {
       "A": "عدد الساعات الحضور الفعلي في المكتب",
@@ -94488,7 +94489,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يجب على مدير مشروع اختيار طريقة ضغط الجدول الأقل خطورة للتعويض عن تأخير دون زيادة التكاليف بشكل كبير. أي تقنية هي الأنسب إذا أمكن تنفيذ الأنشطة بالتوازي دون خطورة كبيرة؟",
     "options": {
       "A": "التعجيل (إضافة موارد)",
@@ -94504,7 +94505,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "تحتاج منظمة رعاية صحية خاضعة للتنظيم وتطور منتجات رشيقة إلى التوفيق بين التكرار السريع ومتطلبات التتبع التنظيمي الصارمة. ما النهج الموصى به؟",
     "options": {
       "A": "تجاهل المتطلبات التنظيمية للتحرك أسرع",
@@ -94520,7 +94521,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يجب على مدير مشروع اختيار عقد لمشروع بحث وتطوير ذي نطاق شديد عدم اليقين والتطور. أي نوع عقد هو الأنسب؟",
     "options": {
       "A": "استرداد التكلفة، مثل التكلفة زائد أجر ثابت (CPFF)",
@@ -94536,7 +94537,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "لدى عدة فرق تعمل على المنتج نفسه تعريفات مختلفة لـ 'الاكتمال'، مما يسبب مشاكل تكامل. ما الإجراء المناسب على مستوى Scrum of Scrums؟",
     "options": {
       "A": "ترك كل فريق يحتفظ بتعريفه الخاص إلى أجل غير مسمى",
@@ -94552,7 +94553,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يجب على مدير مشروع التحقق من فعالية نظام إدارة المخاطر بعد عدة دورات مراجعة. أي عملية تُقيّم الأداء الإجمالي لإدارة مخاطر المشروع؟",
     "options": {
       "A": "إغلاق المشروع",
@@ -94568,7 +94569,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يريد فريق تصوّر التبعيات مع الفرق الأخرى بشكل أوضح. أي أداة تنسيق هي الأنسب على نطاق متعدد الفرق؟",
     "options": {
       "A": "بريد إلكتروني تلخيصي سنوي",
@@ -94584,7 +94585,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يجب على مدير مشروع ضمان التحكم الصحيح في تغييرات النطاق. أي وثيقة تُستخدم كمرجع لتقييم ما إذا كان الطلب يشكّل فعلاً تغييراً؟",
     "options": {
       "A": "سِيَر أعضاء الفريق الذاتية",
@@ -94600,7 +94601,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يريد فريق تحديد كيفية إدارة تبعية خارجية حرجة على مورد من طرف ثالث بجداول زمنية غير مؤكدة. أي نهج هجين هو الأنسب؟",
     "options": {
       "A": "تأجيل جميع السبرنتات إلى أجل غير مسمى حتى تُحل التبعية بالكامل",
@@ -94616,7 +94617,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يجب على مدير مشروع تحديد كيفية التعامل مع طلبات تغيير طفيفة لا تؤثر بشكل كبير على النطاق أو التكلفة أو الجدول. أي نهج هو الأكثر كفاءة؟",
     "options": {
       "A": "تقديم كل طلب بشكل منهجي، حتى الطفيف منه، إلى لجنة التحكم الكاملة في التغيير",
@@ -94632,7 +94633,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يلاحظ فريق يمارس البرمجة الجماعية (Mob Programming) أحياناً أن بعض المطورين يشعرون بأنها تبطئ إنتاجيتهم الفردية المُدركة. ما أفضل طريقة لتقييم الممارسة بموضوعية؟",
     "options": {
       "A": "التخلي عنها فوراً بناءً على الانطباعات الفردية",
@@ -94648,7 +94649,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يجب على مدير مشروع تحديد الأنشطة ذات التعويم الصفري وتحديد الحد الأدنى لمدة المشروع. ماذا تُسمى هذه الأنشطة مجتمعة؟",
     "options": {
       "A": "معالم المشروع",
@@ -94664,7 +94665,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يريد فريق تحسين فعالية استعراضاته الرجعية عبر الزمن دون أن تصبح مكررة. أي ممارسة تساعد على الحفاظ على فعاليتها؟",
     "options": {
       "A": "إزالة إجراءات المتابعة بين الاستعراضات الرجعية",
@@ -94680,7 +94681,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يجب على مدير مشروع إنهاء جميع الوثائق الإدارية والحصول على موافقة العميل النهائية في نهاية المشروع. أي عملية تُضفي الطابع الرسمي على هذه الخطوة؟",
     "options": {
       "A": "إغلاق المشروع أو المرحلة",
@@ -94696,7 +94697,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يجب على منظمة خدمات مالية تطور منتجات رشيقة الامتثال لمتطلبات المرونة التنظيمية (اختبارات الإجهاد). كيف يمكن دمج ذلك دون كسر الإيقاع الرشيق؟",
     "options": {
       "A": "تأجيل كل اختبارات المرونة إلى نهاية المشروع تماماً، قبيل التدقيق التنظيمي",
@@ -94712,7 +94713,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يجب على مدير مشروع تنويع طريقة ضغط الجدول عندما تكون الميزانية محدودة جداً. أي طريقة ينبغي إعطاؤها الأولوية؟",
     "options": {
       "A": "إسناد المشروع بأكمله لمورّد جديد",
@@ -94728,7 +94729,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يريد فريق سكرم التنبؤ بشكل أفضل بسعة التسليم للأرباع القادمة. أي مصدر بيانات هو الأكثر موثوقية لهذا التنبؤ؟",
     "options": {
       "A": "بيانات السرعة التاريخية مدمجة مع تقنية تنبؤ احتمالية",
@@ -94744,7 +94745,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يجب على مدير مشروع التحقق من أن أنشطة التحكم في الجودة المخططة كافية لمستوى مخاطر المشروع. أي مبدأ جودة ينص على أن منع العيوب أقل تكلفة من تصحيحها؟",
     "options": {
       "A": "قانون باركنسون",
@@ -94760,7 +94761,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يريد فريق تحديد كيفية التعامل مع قصص مستخدم تتبيّن أنها أعقد بكثير مما قُدّر بعد بدء التطوير. ما الممارسة المناسبة؟",
     "options": {
       "A": "إخفاء المشكلة حتى مراجعة السبرنت",
@@ -94776,7 +94777,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يجب على مدير مشروع تحديد كيفية الاستفادة من تسوية الموارد لإدارة توفر موارد محدود. أي تقنية تُعدّل الجدول الزمني بناءً على قيود الموارد؟",
     "options": {
       "A": "تحليل SWOT",
@@ -94792,7 +94793,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يريد فريق تحديد كيفية إدارة عيب مكتشف متأخراً في سبرنت وليس حرجاً لكنه يؤثر على جزء طفيف من المخرج. ما الإجراء المناسب؟",
     "options": {
       "A": "تجاهل العيب بشكل دائم",
@@ -94808,7 +94809,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يجب على مدير مشروع تحديد عدد المسارات المتوازية في مخطط الشبكة التي تقلل من خطر تأخير الجدول الإجمالي. أي تقنية تُقيّم حساسية المشروع للتأخيرات على المسارات شبه الحرجة؟",
     "options": {
       "A": "مصفوفة RACI",
@@ -94824,7 +94825,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يريد فريق تحسين الرؤية حول التبعيات التقنية مع الفرق الأخرى على نطاق واسع. أي آلية رشاقة موسّعة تدعم ذلك؟",
     "options": {
       "A": "محادثات غير رسمية بحتة وغير موثقة",
@@ -94840,7 +94841,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يجب على مدير مشروع توقع جميع الأنشطة التي يجب أن تسبق أخرى بسبب الطبيعة الفيزيائية للعمل (مثل الأساسات قبل الجدران). أي نوع تبعية يوضح هذا؟",
     "options": {
       "A": "لا حاجة لأي تبعية",
@@ -94856,7 +94857,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يريد فريق تحديد كيفية التعامل مع مالك منتج يفتقر للتوفر، مما يُبطئ اتخاذ القرار خلال السبرنت. ما الحل الدائم المناسب؟",
     "options": {
       "A": "تجاهل المشكلة والأمل في تحسن تلقائي",
@@ -94872,7 +94873,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يجب على مدير مشروع تنويع نظام رسمي لإدارة طلبات التغيير طوال المشروع. أي هيئة مسؤولة عموماً عن الموافقة على هذه الطلبات أو رفضها؟",
     "options": {
       "A": "لا حاجة لأي هيئة رسمية",
@@ -94888,7 +94889,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يجب على مالك منتج تحديد كيفية ترتيب أولويات القائمة مع مراعاة القيمة التجارية والقيود التنظيمية معاً. أي تقنية ترتيب أولويات تدمج البعدين على أفضل وجه؟",
     "options": {
       "A": "ترك كل مطور يختار ما يفضله",
@@ -94904,7 +94905,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يجب على مدير مشروع التحقق من أن مورّداً يحترم الشروط التعاقدية بشأن مواعيد التسليم المرحلية. أي عملية تراقب أداء المورّد بنشاط؟",
     "options": {
       "A": "تخطيط إدارة التواصل",
@@ -94920,7 +94921,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يريد فريق تحديد كيفية إدارة جودة الشيفرة في التسليم المستمر عندما تستغرق الاختبارات وقتاً طويلاً للتشغيل. أي ممارسة تعالج هذا التحدي؟",
     "options": {
       "A": "تحسين مجموعة الاختبارات (التوازي، إعطاء الأولوية لاختبارات الوحدة السريعة) مع الحفاظ على تغطية كافية للمسارات الحرجة",
@@ -94936,7 +94937,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يجب على مدير مشروع تحديد التعويم الحر لنشاط غير حرج. ماذا يمثل هذا المقياس بدقة؟",
     "options": {
       "A": "مقدار الوقت الذي يمكن تأخير نشاط فيه دون تأخير تاريخ البدء المبكر للنشاط التالي",
@@ -94952,7 +94953,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يريد فريق تحديد كيفية إدارة عنصر قائمة يمتد عبر مسؤوليات عدة فرق. ما ممارسة التنسيق المناسبة؟",
     "options": {
       "A": "تركه دون إسناد إلى أجل غير مسمى حتى يتطوع فريق",
@@ -94968,7 +94969,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يجب على مدير مشروع ضمان أن الدروس المستفادة من حادث جودة كبير تفيد مشاريع المنظمة المستقبلية. ما الإجراء الأساسي؟",
     "options": {
       "A": "إبلاغ الراعي شفهياً فقط دون توثيق",
@@ -94984,7 +94985,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يريد فريق تحديد كيفية إدارة الاختبارات الآلية غير المستقرة (التي تفشل بشكل متقطع) والتي تقوّض الثقة في خط التكامل المستمر. ما الإجراء المناسب؟",
     "options": {
       "A": "تجاهل الاختبارات غير المستقرة وترك المطورين يعيدون تشغيل البناءات الفاشلة يدوياً إلى أجل غير مسمى",
@@ -95000,7 +95001,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يجب على مدير مشروع ضمان الاتساق بين خطة إدارة التكلفة وخطة إدارة الجدول وخطة إدارة النطاق. أي وثيقة تدمج جميع هذه الخطط الفرعية؟",
     "options": {
       "A": "تقرير الحالة الأسبوعي",
@@ -95016,7 +95017,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يريد فريق تحديد كيفية التعامل مع Spike (مهمة بحثية) يكشف أن ميزة غير ممكنة تقنياً كما كانت متصورة أصلاً. ما الإجراء المناسب؟",
     "options": {
       "A": "مشاركة نتائج الـ Spike بشفافية مع مالك المنتج والفريق، وإعادة تعريف نطاق الميزة أو نهجها بشكل تعاوني بناءً على المعلومات الجديدة",
@@ -95032,7 +95033,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يجب على مدير مشروع اختيار أبسط طريقة لقياس التقدم للأنشطة قصيرة المدة جداً (أقل من أسبوع). أي صيغة EVM تُستخدم عموماً؟",
     "options": {
       "A": "تحليل مونت كارلو",
@@ -95048,7 +95049,7 @@ const QUESTIONS_AR = [
     "type": "single_choice",
     "domain": "Process",
     "approach": null,
-    "category": "Quiz",
+    "category": "Domaine2",
     "text": "يريد فريق تحديد كيفية إدارة انتقال المعرفة إلى فريق العمليات قبل تسليم المنتج، في سياق رشيق. أي إجراء يضمن انتقالاً ناجحاً؟",
     "options": {
       "A": "توثيق أدلة التشغيل بشكل تزايدي طوال التطوير، وإقران موظفي العمليات بالفريق خلال السبرنتات الأخيرة، وتنظيم فترة دعم انتقالية",

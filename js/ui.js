@@ -4,8 +4,9 @@
 
 function categoryMeta() {
   const colors = {
-    Predictif: '#2f5c8f', Agile: '#2c7a6d', Hybride: '#5b93f5',
-    Exam: '#1b3a6b', Quiz: '#3fa7a0', MiniExam: '#5c6bc0', KillMistakes: '#a3392b',
+    Predictif: '#2f5c8f', Agile: '#2c7a6d',
+    Domaine1: 'var(--dom-people)', Domaine2: 'var(--dom-process)', Domaine3: 'var(--dom-business)',
+    Exam: '#1b3a6b', MiniExam: '#5c6bc0', KillMistakes: '#a3392b',
   };
   const out = {};
   Object.keys(colors).forEach(cat => {
