@@ -1,4 +1,4 @@
-# PMP Simulateur — version unifiée (FR/EN dans une seule plateforme)
+# PMP Simulateur — version unifiée (FR/EN/AR dans une seule plateforme)
 
 Une seule plateforme, un seul déploiement : pas de sous-dossiers séparés par langue. Le bouton **FR / EN** en haut à droite de chaque page bascule instantanément toute l'interface et la banque de questions, sans changer d'URL ni de dossier.
 
@@ -54,9 +54,7 @@ Change-le dès la première connexion (Administration → Paramètres) — le mo
 │   ├── quiz.js
 │   ├── results.js
 │   └── admin.js
-└── data/
-    ├── questions_fr.json
-    └── questions_en.json
+└── pmp_question_bank_*.json   # banques sources FR/EN/AR (les questions utilisées sont dans js/data.js)
 ```
 
 ## Point important sur les données
@@ -65,3 +63,11 @@ Projet 100% statique : tout vit dans le `localStorage` du navigateur (comptes, t
 
 ---
 *Outil d'entraînement indépendant, non affilié au PMI®.*
+
+## Ajouts ECO 2026 (octobre 2026)
+
+- **Interface arabe complète** (`STRINGS.ar` dans `js/i18n.js`, 349 libellés) avec mise en page RTL ; bouton FR / EN / AR dans la barre du haut. Le PDF de résultat en arabe passe par une page imprimable (le navigateur l'enregistre en PDF).
+- **Nouveaux types de questions** : question graphique (figure SVG + choix), zone sensible (clic sur la figure), liste déroulante (texte à trous). Figures générées dans `js/figures.js` (aucune image externe).
+- **20 questions visuelles** dans `js/data_visual.js` (4 par examen, FR/EN/AR), qui remplacent 20 questions simples du même domaine par langue : chaque examen reste à 180.
+- Pas de crédit partiel pour la zone sensible ; crédit proportionnel pour la liste déroulante à plusieurs trous (comme le matching).
+- Limites : le chatbot reste FR/EN ; l'éditeur de l'admin ne gère pas encore les nouveaux types.

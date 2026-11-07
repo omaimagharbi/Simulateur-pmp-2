@@ -97,7 +97,7 @@ function seedDefaults() {
       admin: { username: 'admin', passwordHash: simpleHash('admin123'), recoveryHash: simpleHash('admin-secret'), role: 'admin', unlocked: true, blocked: false, accessMonths: null, accessExpiresAt: null, createdAt: new Date().toISOString() },
     });
   }
-  ['fr', 'en'].forEach(lang => {
+  ['fr', 'en', 'ar'].forEach(lang => {
     if (readJSON(DB_KEYS.customQuestions(lang), null) === null) writeJSON(DB_KEYS.customQuestions(lang), {});
     if (readJSON(DB_KEYS.deletedIds(lang), null) === null) writeJSON(DB_KEYS.deletedIds(lang), []);
   });
@@ -116,7 +116,7 @@ const Store = {
     const users = this.getUsers();
     const key = username.trim().toLowerCase();
     if (!key) return { ok: false, error: t('field_username') };
-    if (users[key]) return { ok: false, error: getLang() === 'en' ? 'This username already exists.' : "Ce nom d'utilisateur existe déjà." };
+    if (users[key]) return { ok: false, error: msg("Ce nom d'utilisateur existe déjà.", 'This username already exists.', 'اسم المستخدم هذا موجود بالفعل.') };
     if (password.length < 4) return { ok: false, error: t('field_password_hint') };
     if (!recoverySecret || recoverySecret.trim().length < 3) return { ok: false, error: t('field_recovery_secret_hint') };
     users[key] = {
@@ -140,7 +140,7 @@ const Store = {
     const users = this.getUsers();
     const key = username.trim().toLowerCase();
     if (!key) return { ok: false, error: t('field_username') };
-    if (users[key]) return { ok: false, error: getLang() === 'en' ? 'This username already exists.' : "Ce nom d'utilisateur existe déjà." };
+    if (users[key]) return { ok: false, error: msg("Ce nom d'utilisateur existe déjà.", 'This username already exists.', 'اسم المستخدم هذا موجود بالفعل.') };
     if (password.length < 4) return { ok: false, error: t('field_password_hint') };
     const months = Number(accessMonths) || null;
     const cleanScope = Array.isArray(accessScope) ? accessScope.filter(c => this.VOUCHER_SCOPE_CATEGORIES.includes(c)) : [];
@@ -219,8 +219,8 @@ const Store = {
     const users = this.getUsers();
     const key = username.trim().toLowerCase();
     const user = users[key];
-    if (!user) return { ok: false, error: getLang() === 'en' ? 'Account not found.' : 'Compte introuvable.' };
-    if (user.passwordHash !== simpleHash(password)) return { ok: false, error: getLang() === 'en' ? 'Incorrect password.' : 'Mot de passe incorrect.' };
+    if (!user) return { ok: false, error: msg('Compte introuvable.', 'Account not found.', 'الحساب غير موجود.') };
+    if (user.passwordHash !== simpleHash(password)) return { ok: false, error: msg('Mot de passe incorrect.', 'Incorrect password.', 'كلمة المرور غير صحيحة.') };
     return { ok: true, user };
   },
 
@@ -237,7 +237,7 @@ const Store = {
   // mot de passe avant d'appliquer le nouveau.
   changePasswordVerified(username, oldPassword, newPassword) {
     const auth = this.authenticate(username, oldPassword);
-    if (!auth.ok) return { ok: false, error: getLang() === 'en' ? 'Current password is incorrect.' : 'Le mot de passe actuel est incorrect.' };
+    if (!auth.ok) return { ok: false, error: msg('Le mot de passe actuel est incorrect.', 'Current password is incorrect.', 'كلمة المرور الحالية غير صحيحة.') };
     if (!newPassword || newPassword.length < 4) return { ok: false, error: t('field_password_hint') };
     return this.changePassword(username, newPassword);
   },
@@ -248,9 +248,9 @@ const Store = {
     const users = this.getUsers();
     const key = username.trim().toLowerCase();
     const user = users[key];
-    if (!user) return { ok: false, error: getLang() === 'en' ? 'Account not found.' : 'Compte introuvable.' };
+    if (!user) return { ok: false, error: msg('Compte introuvable.', 'Account not found.', 'الحساب غير موجود.') };
     if (!user.recoveryHash || user.recoveryHash !== simpleHash((recoverySecret || '').trim().toLowerCase())) {
-      return { ok: false, error: getLang() === 'en' ? 'Incorrect secret word.' : 'Mot secret incorrect.' };
+      return { ok: false, error: msg('Mot secret incorrect.', 'Incorrect secret word.', 'كلمة السرّ غير صحيحة.') };
     }
     if (!newPassword || newPassword.length < 4) return { ok: false, error: t('field_password_hint') };
     return this.changePassword(username, newPassword);
@@ -304,6 +304,14 @@ const Store = {
     // le résultat (un seul niveau, pas de tableaux imbriqués) est ce que le reste de l'app consomme.
     const expanded = merged.flatMap(expandQuestion);
     return expanded.sort((a, b) => a.id - b.id);
+  },
+
+  // Question « brute » (banque + surcharge admin, avant normalisation / éclatement des études de cas).
+  getRawQuestion(id) {
+    const overrides = this.getCustomQuestions();
+    const base = getQuestionBank(getLang()).find(q => q.id === id);
+    if (base) return overrides[id] ? { ...base, ...overrides[id] } : base;
+    return overrides[id] || null;
   },
 
   upsertQuestion(question) {
@@ -439,10 +447,10 @@ const Store = {
     const code = (codeRaw || '').trim().toUpperCase();
     const vouchers = this.getVouchers();
     const voucher = vouchers.find(v => v.code === code);
-    if (!voucher) return { ok: false, error: getLang() === 'en' ? 'Invalid code.' : 'Code invalide.' };
-    if (voucher.status === 'active') return { ok: false, error: getLang() === 'en' ? 'This code has already been used.' : 'Ce code a déjà été utilisé.' };
+    if (!voucher) return { ok: false, error: msg('Code invalide.', 'Invalid code.', 'رمز غير صالح.') };
+    if (voucher.status === 'active') return { ok: false, error: msg('Ce code a déjà été utilisé.', 'This code has already been used.', 'تم استخدام هذا الرمز من قبل.') };
     if (voucher.validUntil && new Date(voucher.validUntil) < new Date()) {
-      return { ok: false, error: getLang() === 'en' ? 'This code has expired.' : 'Ce code a expiré.' };
+      return { ok: false, error: msg('Ce code a expiré.', 'This code has expired.', 'انتهت صلاحية هذا الرمز.') };
     }
     voucher.status = 'active';
     voucher.redeemedBy = username.trim().toLowerCase();

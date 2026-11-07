@@ -119,14 +119,58 @@
           </select>
         </div>
       </div>
-      <div class="field"><label data-i18n="label_question_text">Énoncé de la question</label><textarea id="f-text" rows="3" required></textarea></div>
-      <div class="field"><label><span data-i18n="label_option">Option</span> A</label><input id="f-optA" required></div>
-      <div class="field"><label><span data-i18n="label_option">Option</span> B</label><input id="f-optB" required></div>
-      <div class="field"><label><span data-i18n="label_option">Option</span> C</label><input id="f-optC" required></div>
-      <div class="field"><label><span data-i18n="label_option">Option</span> D</label><input id="f-optD" required></div>
       <div class="field">
-        <label data-i18n="label_correct_answer">Bonne réponse</label>
-        <select id="f-answer"><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option></select>
+        <label data-i18n="label_type">Type de question</label>
+        <select id="f-type">
+          <option value="single_choice" data-i18n="type_single_choice">Choix unique</option>
+          <option value="multi_choice" data-i18n="type_multi_choice">Réponses multiples</option>
+          <option value="matching" data-i18n="type_matching">Glisser-déposer (association)</option>
+          <option value="dropdown" data-i18n="type_dropdown">Liste déroulante</option>
+          <option value="hotspot" data-i18n="type_hotspot">Zone sensible (figure)</option>
+        </select>
+      </div>
+      <div class="field" id="sec-case" style="display:none">
+        <div class="banner" data-i18n="hint_case_child">Cette question fait partie d'une étude de cas : la modifier met à jour l'étude de cas d'origine.</div>
+        <label data-i18n="label_case_context">Contexte de l'étude de cas</label>
+        <textarea id="f-case-context" rows="6"></textarea>
+      </div>
+      <div class="field"><label data-i18n="label_question_text">Énoncé de la question</label><textarea id="f-text" rows="3" required></textarea></div>
+      <div id="sec-choice">
+        <div class="field"><label><span data-i18n="label_option">Option</span> A</label><input id="f-optA"></div>
+        <div class="field"><label><span data-i18n="label_option">Option</span> B</label><input id="f-optB"></div>
+        <div class="field"><label><span data-i18n="label_option">Option</span> C</label><input id="f-optC"></div>
+        <div class="field"><label><span data-i18n="label_option">Option</span> D</label><input id="f-optD"></div>
+        <div id="sec-multi-extra" style="display:none">
+          <div class="field"><label><span data-i18n="label_option">Option</span> E</label><input id="f-optE"></div>
+          <div class="field"><label><span data-i18n="label_option">Option</span> F</label><input id="f-optF"></div>
+        </div>
+        <div class="field" id="sec-single-answer">
+          <label data-i18n="label_correct_answer">Bonne réponse</label>
+          <select id="f-answer"><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option></select>
+        </div>
+        <div class="field" id="sec-multi-answers" style="display:none">
+          <label data-i18n="label_multi_answers">Bonnes réponses (cocher toutes celles qui sont justes)</label>
+          <div id="f-multi-checks" style="display:flex;gap:1rem;flex-wrap:wrap">
+            <label><input type="checkbox" value="A"> A</label><label><input type="checkbox" value="B"> B</label>
+            <label><input type="checkbox" value="C"> C</label><label><input type="checkbox" value="D"> D</label>
+            <label><input type="checkbox" value="E"> E</label><label><input type="checkbox" value="F"> F</label>
+          </div>
+        </div>
+      </div>
+      <div id="sec-matching" style="display:none">
+        <div class="field"><label data-i18n="label_left_items">Colonne de gauche (une ligne par élément : id|texte)</label><textarea id="f-left" rows="4" placeholder="A|Directif"></textarea></div>
+        <div class="field"><label data-i18n="label_right_items">Colonne de droite (id|texte)</label><textarea id="f-right" rows="4" placeholder="1|Instructions précises…"></textarea></div>
+        <div class="field"><label data-i18n="label_pairs">Associations correctes (une par ligne : gauche-droite)</label><textarea id="f-pairs" rows="4" placeholder="A-1"></textarea></div>
+      </div>
+      <div id="sec-dropdown" style="display:none">
+        <div class="banner" data-i18n="hint_blanks">Dans l'énoncé, écrire {1}, {2}… aux endroits à compléter. Une ligne par trou : id|option1;option2;option3|numéro de la bonne option (1 = première).</div>
+        <div class="field"><label data-i18n="label_blanks">Trous et options</label><textarea id="f-blanks" rows="4" placeholder="1|éviter;transférer;atténuer;accepter|2"></textarea></div>
+      </div>
+      <div id="sec-hotspot" style="display:none">
+        <div class="field"><label data-i18n="label_figure">Figure (JSON : kind, séries, étiquettes…)</label><textarea id="f-figure" rows="6"></textarea></div>
+        <div class="field"><label data-i18n="label_zones">Zones cliquables (séparées par des virgules)</label><input id="f-zones"></div>
+        <div class="field"><label data-i18n="label_correct_zone">Zone correcte</label><input id="f-correct-zone"></div>
+        <div class="field"><label data-i18n="label_zone_labels">Libellés des zones (JSON, facultatif)</label><textarea id="f-zone-labels" rows="3"></textarea></div>
       </div>
       <div class="field"><label data-i18n="label_justification">Justification</label><textarea id="f-justification" rows="3"></textarea></div>
       <div class="modal-actions">
@@ -257,6 +301,7 @@
 
 <script src="js/i18n.js"></script>
 <script src="js/data.js"></script>
+<script src="js/data_visual.js"></script>
 <script src="js/storage.js"></script>
 <script src="js/ui.js"></script>
 <script src="js/admin.js"></script>

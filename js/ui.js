@@ -18,7 +18,9 @@ function categoryMeta() {
 // Questions déjà ratées par l'utilisateur, toutes tentatives confondues (une seule
 // fois par id, la plus récente rencontre suffit à la qualifier d'"erreur").
 function getMistakeQuestions(username) {
-  const attempts = Store.getAttemptsForUser(username);
+  // "Kill mistakes" ne reprend que les erreurs commises dans la catégorie
+  // "Exam" (l'examen blanc), pas celles des mini-examens, quiz de domaine, etc.
+  const attempts = Store.getAttemptsForUser(username).filter(a => a.category === 'Exam');
   const wrongIds = new Set();
   attempts.forEach(a => a.answers.forEach(ans => { if (!ans.correct) wrongIds.add(ans.questionId); }));
   const all = Store.getAllQuestions();
@@ -59,6 +61,8 @@ function renderTopbar(activePage) {
           <button class="lang-btn ${lang === 'fr' ? 'active' : ''}" data-lang="fr">FR</button>
           <span class="lang-sep">/</span>
           <button class="lang-btn ${lang === 'en' ? 'active' : ''}" data-lang="en">EN</button>
+          <span class="lang-sep">/</span>
+          <button class="lang-btn ${lang === 'ar' ? 'active' : ''}" data-lang="ar">AR</button>
         </span>
       </nav>
     </div>`;
@@ -73,10 +77,6 @@ function renderLangSwitchStandalone(mountId) {
   const mount = document.getElementById(mountId);
   if (!mount) return;
   const lang = getLang();
-  // L'arabe n'a pas encore sa propre traduction de l'interface (STRINGS.ar
-  // n'existe pas) : t() retombe alors automatiquement sur le français pour
-  // les boutons/menus. La BANQUE DE QUESTIONS, elle, est bien en arabe dès
-  // qu'on choisit "AR" — c'est elle que l'utilisateur vient chercher ici.
   mount.innerHTML = `
     <span class="lang-switch">
       <button class="lang-btn ${lang === 'fr' ? 'active' : ''}" data-lang="fr">FR</button>
@@ -196,7 +196,7 @@ function showToast(msg) {
 
 function formatDate(iso) {
   const d = new Date(iso);
-  const locale = getLang() === 'en' ? 'en-US' : 'fr-FR';
+  const locale = { en: 'en-US', ar: 'ar-TN', fr: 'fr-FR' }[getLang()] || 'fr-FR';
   return d.toLocaleDateString(locale, { day: '2-digit', month: 'short', year: 'numeric' }) +
     ' · ' + d.toLocaleTimeString(locale, { hour: '2-digit', minute: '2-digit' });
 }

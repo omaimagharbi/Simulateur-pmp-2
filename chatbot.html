@@ -39,6 +39,7 @@
 
 <script src="js/i18n.js"></script>
 <script src="js/data.js"></script>
+<script src="js/data_visual.js"></script>
 <script src="js/storage.js"></script>
 <script src="js/ui.js"></script>
 <script src="js/books.js"></script>
@@ -72,6 +73,7 @@
       const bubble = document.createElement('div');
       bubble.className = `chat-msg ${who}`;
       bubble.textContent = text;
+      bubble.setAttribute('dir', 'auto'); // texte arabe/latin mélangé : direction par message
       chatWindow.appendChild(bubble);
       chatWindow.scrollTop = chatWindow.scrollHeight;
     }

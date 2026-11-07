@@ -36,6 +36,15 @@ if (adminUser) {
   });
 
   // ---------- Questions tab ----------
+  // Résumé de la bonne réponse selon le type de question (le champ `answer` n'existe que pour le choix unique).
+  function answerSummary(q) {
+    if (q.type === 'multi_choice') return (q.correct_answers || []).join(', ');
+    if (q.type === 'matching') return (q.correct_answers || []).join(' · ');
+    if (q.type === 'dropdown') return (q.blanks || []).map(b => `${b.id}→${b.options[b.answer]}`).join(' · ');
+    if (q.type === 'hotspot') return q.correct_zone || '';
+    return q.answer || '';
+  }
+
   function renderQuestionsTable() {
     const catFilter = qFilterSelect.value;
     const questions = Store.getAllQuestions().filter(q => !catFilter || q.category === catFilter);
@@ -49,8 +58,8 @@ if (adminUser) {
             <td>${q.id}</td>
             <td>${(CATEGORY_META[q.category] || { label: q.category }).label}</td>
             <td>${(DOMAIN_META[q.domain] || { label: q.domain }).label}</td>
-            <td style="max-width:360px">${escapeHTML(q.text).slice(0, 140)}${q.text.length > 140 ? '…' : ''}</td>
-            <td><b>${q.answer}</b></td>
+            <td style="max-width:360px">${q.type && q.type !== 'single_choice' ? `<span class="pill">${t('type_' + q.type)}</span> ` : ''}${escapeHTML(q.text).slice(0, 140)}${q.text.length > 140 ? '…' : ''}</td>
+            <td><b>${answerSummary(q)}</b></td>
             <td style="white-space:nowrap">
               <button class="btn btn-ghost btn-sm" data-edit="${q.id}">${t('edit')}</button>
               <button class="btn btn-danger btn-sm" data-delete="${q.id}">${t('delete')}</button>
@@ -78,18 +87,70 @@ if (adminUser) {
   const overlay = document.getElementById('modal-overlay');
   const form = document.getElementById('question-form');
 
+  const TYPE_SECTIONS = {
+    single_choice: ['sec-choice', 'sec-single-answer'],
+    multi_choice: ['sec-choice', 'sec-multi-extra', 'sec-multi-answers'],
+    matching: ['sec-matching'],
+    dropdown: ['sec-dropdown'],
+    hotspot: ['sec-hotspot'],
+  };
+  const ALL_SECTIONS = ['sec-choice', 'sec-single-answer', 'sec-multi-extra', 'sec-multi-answers', 'sec-matching', 'sec-dropdown', 'sec-hotspot'];
+  const typeSelect = document.getElementById('f-type');
+  let editingCaseChild = null; // { parentId, index } quand on modifie une sous-question d'étude de cas
+
+  function showSections(type) {
+    ALL_SECTIONS.forEach(id => { document.getElementById(id).style.display = 'none'; });
+    (TYPE_SECTIONS[type] || []).forEach(id => { document.getElementById(id).style.display = ''; });
+  }
+  typeSelect.addEventListener('change', () => showSections(typeSelect.value));
+
+  function setMultiChecks(letters) {
+    document.querySelectorAll('#f-multi-checks input').forEach(cb => { cb.checked = letters.includes(cb.value); });
+  }
+
   function openModal(question) {
+    editingCaseChild = null;
     document.getElementById('modal-title').textContent = question ? t('modal_edit_title', { id: question.id }) : t('modal_add_title');
     document.getElementById('f-id').value = question ? question.id : '';
     document.getElementById('f-category').value = question ? question.category : 'Exam';
     document.getElementById('f-domain').value = question ? question.domain : 'People';
-    document.getElementById('f-text').value = question ? question.text : '';
-    document.getElementById('f-optA').value = question ? (question.options.A || '') : '';
-    document.getElementById('f-optB').value = question ? (question.options.B || '') : '';
-    document.getElementById('f-optC').value = question ? (question.options.C || '') : '';
-    document.getElementById('f-optD').value = question ? (question.options.D || '') : '';
-    document.getElementById('f-answer').value = question ? question.answer : 'A';
+    const type = question ? (question.type || 'single_choice') : 'single_choice';
+    typeSelect.value = TYPE_SECTIONS[type] ? type : 'single_choice';
+    typeSelect.disabled = !!question; // le type d'une question existante ne change pas
+    document.getElementById('f-text').value = question ? (question.type === 'dropdown' ? question.text : question.text) : '';
+    const opts = (question && question.options) || {};
+    ['A', 'B', 'C', 'D', 'E', 'F'].forEach(L => { document.getElementById('f-opt' + L).value = opts[L] || ''; });
+    document.getElementById('f-answer').value = question && question.answer ? question.answer : 'A';
+    setMultiChecks(question && Array.isArray(question.correct_answers) ? question.correct_answers : []);
     document.getElementById('f-justification').value = question ? (question.justification || '') : '';
+    // matching
+    document.getElementById('f-left').value = (question && question.colonne_gauche ? question.colonne_gauche : []).map(x => `${x.id}|${x.texte}`).join('\n');
+    document.getElementById('f-right').value = (question && question.colonne_droite ? question.colonne_droite : []).map(x => `${x.id}|${x.texte}`).join('\n');
+    document.getElementById('f-pairs').value = question && question.type === 'matching'
+      ? (question.correct_matching ? Object.entries(question.correct_matching).map(([l, r]) => `${l}-${r}`) : (question.correct_answers || [])).join('\n') : '';
+    // dropdown
+    document.getElementById('f-blanks').value = (question && question.blanks ? question.blanks : []).map(b => `${b.id}|${b.options.join(';')}|${b.answer + 1}`).join('\n');
+    // hotspot
+    document.getElementById('f-figure').value = question && question.figure ? JSON.stringify(question.figure, null, 1) : '';
+    document.getElementById('f-zones').value = question && question.zones ? question.zones.join(', ') : '';
+    document.getElementById('f-correct-zone').value = question && question.correct_zone ? question.correct_zone : '';
+    document.getElementById('f-zone-labels').value = question && question.zone_labels ? JSON.stringify(question.zone_labels) : '';
+    // étude de cas : on édite la sous-question dans son étude d'origine
+    const caseBox = document.getElementById('sec-case');
+    if (question && question.case_group_id) {
+      const parent = Store.getRawQuestion(question.case_group_id);
+      const idx = (parent && parent.sous_questions || []).findIndex(sq => {
+        const n = (parent.sous_questions.indexOf(sq)) + 1;
+        return question.id === (typeof parent.id === 'number' ? parent.id : 9000) * 1000 + n;
+      });
+      editingCaseChild = { parentId: question.case_group_id, index: idx };
+      caseBox.style.display = '';
+      document.getElementById('f-case-context').value = question.contexte_etendu || '';
+      typeSelect.value = 'single_choice';
+    } else {
+      caseBox.style.display = 'none';
+    }
+    showSections(typeSelect.value);
     overlay.classList.add('show');
   }
   function closeModal() { overlay.classList.remove('show'); }
@@ -98,25 +159,104 @@ if (adminUser) {
   document.getElementById('modal-cancel').addEventListener('click', closeModal);
   overlay.addEventListener('click', (e) => { if (e.target === overlay) closeModal(); });
 
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
+  function parseIdLines(text) {
+    return text.split('\n').map(l => l.trim()).filter(Boolean).map(l => {
+      const i = l.indexOf('|');
+      return i < 0 ? null : { id: l.slice(0, i).trim(), texte: l.slice(i + 1).trim() };
+    });
+  }
+
+  // Construit la question à partir du formulaire ; renvoie { question } ou { error: 'clé i18n' }.
+  function buildQuestionFromForm() {
     const idField = document.getElementById('f-id').value;
     const id = idField ? parseInt(idField, 10) : Store.nextCustomId();
-    const question = {
-      id,
+    const type = editingCaseChild ? 'single_choice' : typeSelect.value;
+    const existing = idField ? (Store.getRawQuestion(id) || {}) : {};
+    const text = document.getElementById('f-text').value.trim();
+    const justification = document.getElementById('f-justification').value.trim();
+    const q = {
+      ...existing, id, type,
       category: document.getElementById('f-category').value,
       domain: document.getElementById('f-domain').value,
-      text: document.getElementById('f-text').value.trim(),
-      options: {
-        A: document.getElementById('f-optA').value.trim(),
-        B: document.getElementById('f-optB').value.trim(),
-        C: document.getElementById('f-optC').value.trim(),
-        D: document.getElementById('f-optD').value.trim(),
-      },
-      answer: document.getElementById('f-answer').value,
-      justification: document.getElementById('f-justification').value.trim(),
+      text, justification, explication: justification,
     };
-    Store.upsertQuestion(question);
+    if (!text) return { error: 'err_form_invalid' };
+
+    if (type === 'single_choice' || type === 'multi_choice') {
+      const letters = type === 'multi_choice' ? ['A', 'B', 'C', 'D', 'E', 'F'] : ['A', 'B', 'C', 'D'];
+      const options = {};
+      letters.forEach(L => { const v = document.getElementById('f-opt' + L).value.trim(); if (v) options[L] = v; });
+      if (type === 'single_choice') {
+        if (Object.keys(options).length < 4) return { error: 'err_form_invalid' };
+        q.options = options;
+        q.answer = document.getElementById('f-answer').value;
+        q.correct_answers = [q.answer];
+      } else {
+        const checked = [...document.querySelectorAll('#f-multi-checks input:checked')].map(cb => cb.value);
+        if (Object.keys(options).length < 3 || checked.length < 2 || checked.some(L => !options[L])) return { error: 'err_multi' };
+        q.options = options;
+        q.correct_answers = checked;
+        q.nombre_reponses_attendues = checked.length;
+        delete q.answer;
+      }
+    } else if (type === 'matching') {
+      const left = parseIdLines(document.getElementById('f-left').value);
+      const right = parseIdLines(document.getElementById('f-right').value);
+      const pairs = document.getElementById('f-pairs').value.split('\n').map(l => l.trim()).filter(Boolean);
+      if (left.includes(null) || right.includes(null) || left.length < 2 || right.length < 2) return { error: 'err_pairs' };
+      const leftIds = left.map(x => x.id), rightIds = right.map(x => x.id);
+      const ok = pairs.length === left.length && pairs.every(p => { const [l, r] = p.split('-'); return leftIds.includes(l) && rightIds.includes(r); })
+        && new Set(pairs.map(p => p.split('-')[0])).size === left.length;
+      if (!ok) return { error: 'err_pairs' };
+      q.colonne_gauche = left; q.colonne_droite = right; q.correct_answers = pairs;
+      q.correct_matching = Object.fromEntries(pairs.map(p => p.split('-'))); // source de vérité de la correction
+      q.options = Object.fromEntries(left.map(x => [x.id, x.texte]));
+      q.matching_pairs = pairs.map(p => { const [l, r] = p.split('-'); return { left: l, right: right.find(x => x.id === r).texte }; });
+    } else if (type === 'dropdown') {
+      const lines = document.getElementById('f-blanks').value.split('\n').map(l => l.trim()).filter(Boolean);
+      const blanks = [];
+      for (const l of lines) {
+        const parts = l.split('|');
+        if (parts.length !== 3) return { error: 'err_blanks' };
+        const options = parts[1].split(';').map(x => x.trim()).filter(Boolean);
+        const answer = parseInt(parts[2], 10) - 1;
+        if (options.length < 2 || !(answer >= 0 && answer < options.length)) return { error: 'err_blanks' };
+        blanks.push({ id: parts[0].trim(), options, answer });
+      }
+      const placeholders = [...text.matchAll(/\{(\d+)\}/g)].map(m => m[1]);
+      if (!blanks.length || !placeholders.length || placeholders.some(n => !blanks.find(b => b.id === n))) return { error: 'err_blanks' };
+      q.blanks = blanks;
+    } else if (type === 'hotspot') {
+      let figure, zoneLabels = {};
+      try { figure = JSON.parse(document.getElementById('f-figure').value); } catch (e) { return { error: 'err_json' }; }
+      const labelsRaw = document.getElementById('f-zone-labels').value.trim();
+      if (labelsRaw) { try { zoneLabels = JSON.parse(labelsRaw); } catch (e) { return { error: 'err_json' }; } }
+      const zones = document.getElementById('f-zones').value.split(',').map(z => z.trim()).filter(Boolean);
+      const correct = document.getElementById('f-correct-zone').value.trim();
+      if (!figure || !figure.kind || zones.length < 2 || !zones.includes(correct)) return { error: 'err_zone' };
+      q.figure = figure; q.zones = zones; q.correct_zone = correct; q.zone_labels = zoneLabels;
+    }
+    return { question: q };
+  }
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const built = buildQuestionFromForm();
+    if (built.error) { showToast(t(built.error)); return; }
+    const question = built.question;
+    if (editingCaseChild && editingCaseChild.index >= 0) {
+      // On écrit la modification dans l'étude de cas parente (sous-question + contexte).
+      const parent = JSON.parse(JSON.stringify(Store.getRawQuestion(editingCaseChild.parentId)));
+      const sq = parent.sous_questions[editingCaseChild.index];
+      sq.question = question.text;
+      sq.options = Object.entries(question.options).map(([id, texte]) => ({ id, texte }));
+      sq.correct_answers = [question.answer];
+      sq.explication = question.justification;
+      parent.contexte_etendu = document.getElementById('f-case-context').value.trim() || parent.contexte_etendu;
+      Store.upsertQuestion(parent);
+    } else {
+      Store.upsertQuestion(question);
+    }
     closeModal();
     renderQuestionsTable();
     showToast(t('question_saved'));

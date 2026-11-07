@@ -22392,11 +22392,11 @@
       },
       {
         "id": "B",
-        "texte": "Alerter les parties prenantes sur le compromis qualité/vitesse et renégocier la portée ou le calendrier si nécessaire, tout en réintroduisant des pratiques de qualité"
+        "texte": "Exposer à la direction les risques de la mesure sur l'entraide et proposer des indicateurs d'équipe"
       },
       {
         "id": "C",
-        "texte": "Ignorer le problème tant que les délais sont respectés"
+        "texte": "Demander aux membres de gonfler leurs estimations afin de limiter l'effet de la nouvelle mesure"
       },
       {
         "id": "D",
@@ -22881,7 +22881,7 @@
       },
       {
         "id": "B",
-        "texte": "Vérifier discrètement les faits avant d'engager une conversation directe et factuelle avec la personne concernée"
+        "texte": "Vérifier discrètement les faits, puis échanger directement et factuellement avec elle"
       },
       {
         "id": "C",
@@ -22955,11 +22955,11 @@
       },
       {
         "id": "C",
-        "texte": "Ignorer le problème tant que la deadline finale n'est pas atteinte"
+        "texte": "Retirer l'un des deux rôles sans en discuter avec lui ni revoir les priorités du projet"
       },
       {
         "id": "D",
-        "texte": "Réassigner immédiatement la tâche sans discussion avec l'intéressé"
+        "texte": "Attendre la fin de la phase en cours avant de réexaminer son plan de charge et ses rôles"
       }
     ],
     "correct_answers": [
@@ -25218,15 +25218,15 @@
     "options": [
       {
         "id": "A",
-        "texte": "Considérer le livrable comme validé par défaut et poursuivre"
+        "texte": "Informer le client que le livrable sera réputé validé à l'échéance en l'absence de réponse de sa part"
       },
       {
         "id": "B",
-        "texte": "Attendre indéfiniment sans action ni documentation"
+        "texte": "Escalader immédiatement la situation au sponsor du client sans nouvelle relance préalable de l'équipe"
       },
       {
         "id": "C",
-        "texte": "Relancer formellement le client en soulignant l'impact du délai sur le calendrier, tout en documentant les tentatives de relance"
+        "texte": "Relancer formellement le client en précisant l'impact sur le calendrier et garder une trace écrite"
       },
       {
         "id": "D",
@@ -26233,11 +26233,11 @@
     "options": [
       {
         "id": "A",
-        "texte": "Choisir arbitrairement la version d'API d'une des trois équipes sans discussion technique"
+        "texte": "Intégrer le composant puis demander la validation juridique après la mise en production"
       },
       {
         "id": "B",
-        "texte": "Laisser chaque équipe résoudre l'incompatibilité de son côté sans coordination"
+        "texte": "Remplacer le composant par une version modifiée sans consulter le juridique sur la licence"
       },
       {
         "id": "C",
@@ -26245,7 +26245,7 @@
       },
       {
         "id": "D",
-        "texte": "Retarder indéfiniment l'intégration jusqu'à résolution spontanée"
+        "texte": "Demander aux développeurs d'évaluer eux-mêmes les obligations de la licence du composant"
       }
     ],
     "correct_answers": [
@@ -26837,11 +26837,11 @@
       },
       {
         "id": "B",
-        "texte": "Clarifier rapidement avec les nouveaux responsables hiérarchiques les priorités et attentes concernant les membres de l'équipe"
+        "texte": "Clarifier sans attendre avec les nouveaux responsables les priorités et attentes sur ces membres"
       },
       {
         "id": "C",
-        "texte": "Ignorer le changement organisationnel tant qu'il n'affecte pas directement le projet"
+        "texte": "Demander au sponsor de conserver l'ancienne organisation jusqu'à la fin du projet en cours"
       },
       {
         "id": "D",
@@ -26938,7 +26938,7 @@
     "options": [
       {
         "id": "A",
-        "texte": "Produire un rapport ESG unique en fin de projet sans suivi continu"
+        "texte": "Produire un seul rapport ESG en fin de projet, sans suivi continu pendant l'exécution du travail"
       },
       {
         "id": "B",
@@ -26950,7 +26950,7 @@
       },
       {
         "id": "D",
-        "texte": "Identifier avec l'équipe les données ESG pertinentes et intégrer leur suivi dans les rituels agiles existants"
+        "texte": "Identifier avec l'équipe les données ESG utiles et suivre leur collecte dans les rituels agiles"
       }
     ],
     "correct_answers": [
@@ -28833,7 +28833,7 @@
     "options": [
       {
         "id": "A",
-        "texte": "Faciliter une conversation entre eux pour expliciter leurs styles respectifs et convenir de pratiques minimisant les malentendus"
+        "texte": "Faciliter un échange pour clarifier leurs styles et convenir de pratiques limitant les malentendus"
       },
       {
         "id": "B",
@@ -28841,7 +28841,7 @@
       },
       {
         "id": "C",
-        "texte": "Éviter de les faire travailler ensemble à l'avenir"
+        "texte": "Les affecter à des tâches distinctes jusqu'à ce que les tensions diminuent entre eux"
       },
       {
         "id": "D",
@@ -28872,7 +28872,7 @@
       },
       {
         "id": "B",
-        "texte": "Continuer à noter l'item sans action concrète, ce n'est pas prioritaire"
+        "texte": "Transmettre les obstacles à la direction de manière informelle, sans suivi ni données chiffrées"
       },
       {
         "id": "C",
@@ -28880,7 +28880,7 @@
       },
       {
         "id": "D",
-        "texte": "Négocier avec le Product Owner une allocation dédiée et récurrente de temps pour la formation continue"
+        "texte": "Rendre les obstacles visibles, les remonter avec des données et suivre leur résolution ensemble"
       }
     ],
     "correct_answers": [
@@ -29641,15 +29641,15 @@
       },
       {
         "id": "B",
-        "texte": "Ignorer les différences culturelles et exiger une communication directe uniforme immédiatement"
+        "texte": "Demander à ce membre de venir plus souvent au bureau pour être mieux reconnu par l'équipe"
       },
       {
         "id": "C",
-        "texte": "Sensibiliser l'équipe aux différences de styles de communication culturels et établir progressivement des moyens de signalement confortables"
+        "texte": "Vérifier les pratiques de reconnaissance pour qu'elles soient équitables à distance et sur site"
       },
       {
         "id": "D",
-        "texte": "Exclure ce membre des tâches nécessitant un signalement direct de problèmes"
+        "texte": "Limiter la reconnaissance publique pour tous afin d'éviter toute comparaison entre membres"
       }
     ],
     "correct_answers": [
@@ -29742,7 +29742,7 @@
     "options": [
       {
         "id": "A",
-        "texte": "Avoir une conversation professionnelle et respectueuse sur l'importance de maintenir l'objectivité et de gérer les perceptions"
+        "texte": "Échanger sur les risques de dépendance, valoriser le partage et prévoir un transfert progressif"
       },
       {
         "id": "B",
@@ -29750,11 +29750,11 @@
       },
       {
         "id": "C",
-        "texte": "Ignorer les plaintes des autres membres sur le favoritisme perçu"
+        "texte": "Accepter la situation, son expertise le rendant précieux pour la réussite du projet en cours"
       },
       {
         "id": "D",
-        "texte": "Séparer immédiatement les deux personnes dans des équipes différentes"
+        "texte": "Organiser le transfert à son insu en interrogeant discrètement les autres membres de l'équipe"
       }
     ],
     "correct_answers": [
@@ -30206,11 +30206,11 @@
       },
       {
         "id": "B",
-        "texte": "Changer immédiatement d'outil sans évaluation ni transition planifiée"
+        "texte": "Changer d'outil immédiatement, sans évaluation ni transition planifiée avec l'équipe concernée"
       },
       {
         "id": "C",
-        "texte": "Mettre en place une sauvegarde régulière des données critiques et évaluer la fiabilité de l'outil ou des alternatives"
+        "texte": "Sauvegarder régulièrement les données critiques et évaluer l'outil ainsi que des alternatives"
       },
       {
         "id": "D",
@@ -30311,15 +30311,15 @@
       },
       {
         "id": "B",
-        "texte": "Confier la vérification à une seule personne responsable de tout cocher"
+        "texte": "Désactiver les tests intermittents pour retrouver un pipeline stable et des livraisons fluides"
       },
       {
         "id": "C",
-        "texte": "Supprimer complètement la Definition of Done checklist"
+        "texte": "Confier la surveillance du pipeline à un membre chargé de relancer les tests à la demande"
       },
       {
         "id": "D",
-        "texte": "Aborder ce constat en rétrospective, comprendre pourquoi la vérification est devenue mécanique et réviser la checklist"
+        "texte": "Traiter les tests instables en priorité : les isoler, en trouver les causes et les corriger"
       }
     ],
     "correct_answers": [
@@ -30377,19 +30377,19 @@
     "options": [
       {
         "id": "A",
-        "texte": "Communiquer clairement ce blocage au Product Owner et explorer des options proportionnées à la priorité"
+        "texte": "Planifier un spike pour comprendre le module hérité et estimer l'effort avant l'engagement"
       },
       {
         "id": "B",
-        "texte": "Assigner la story à un membre sans la compétence requise en espérant qu'il se débrouille"
+        "texte": "S'engager en estimant à l'intuition et corriger le plan en cours de sprint avec l'équipe"
       },
       {
         "id": "C",
-        "texte": "Retirer définitivement la story du backlog sans discussion"
+        "texte": "Refuser la fonctionnalité, tout module non documenté devant rester intouché par prudence"
       },
       {
         "id": "D",
-        "texte": "Reporter indéfiniment la story jusqu'à disponibilité naturelle de la compétence"
+        "texte": "Confier la modification au développeur le plus ancien sans estimation préalable de l'effort"
       }
     ],
     "correct_answers": [
@@ -30766,11 +30766,11 @@
       },
       {
         "id": "B",
-        "texte": "Ignorer l'impact sur le support tant que le déploiement technique réussit"
+        "texte": "Supprimer ces stories du backlog sans informer le Product Owner ni l'équipe de développement"
       },
       {
         "id": "C",
-        "texte": "Coordonner en amont avec l'équipe support pour anticiper le pic de charge et prévoir des ressources temporaires"
+        "texte": "Analyser avec le PO l'origine des doublons, les supprimer et améliorer l'affinage"
       },
       {
         "id": "D",
@@ -31147,7 +31147,7 @@
     "options": [
       {
         "id": "A",
-        "texte": "Évaluer avec l'équipe technique la scalabilité du produit et planifier une extension progressive et maîtrisée"
+        "texte": "Étudier avec l'infrastructure l'automatisation du déploiement et la construire progressivement"
       },
       {
         "id": "B",
@@ -31159,7 +31159,7 @@
       },
       {
         "id": "D",
-        "texte": "Refuser l'extension pour rester strictement dans le périmètre initial du pilote"
+        "texte": "Livrer les incréments sans les tester pour tenir le rythme demandé par le client sur ce projet"
       }
     ],
     "correct_answers": [
@@ -31229,7 +31229,7 @@
       },
       {
         "id": "D",
-        "texte": "Organiser une session de conception collaborative avec le Product Owner pour évaluer les compromis entre personas, basée sur des données réelles"
+        "texte": "Utiliser avec les deux directions une priorisation partagée (valeur, risque, coût du retard)"
       }
     ],
     "correct_answers": [
@@ -31519,11 +31519,11 @@
       },
       {
         "id": "B",
-        "texte": "Négocier fermement en s'appuyant sur les termes contractuels, tout en explorant la qualification d'un fournisseur alternatif"
+        "texte": "Négocier sur la base des termes du contrat et explorer la qualification d'un autre fournisseur"
       },
       {
         "id": "C",
-        "texte": "Accepter l'augmentation sans négociation, faute d'alternative qualifiée"
+        "texte": "Accepter la hausse sans négociation, faute d'alternative qualifiée sur le marché actuel"
       },
       {
         "id": "D",
@@ -31620,7 +31620,7 @@
     "options": [
       {
         "id": "A",
-        "texte": "Blâmer l'équipe administrative pour les retards sans analyse du processus"
+        "texte": "Passer le statut à orange par précaution pour montrer de la prudence au comité de pilotage"
       },
       {
         "id": "B",
@@ -31628,11 +31628,11 @@
       },
       {
         "id": "C",
-        "texte": "Analyser les causes des retards, mettre en place un processus plus rigoureux avec des rappels automatisés"
+        "texte": "Définir des critères objectifs de statut (seuils d'écart) et fonder les rapports dessus"
       },
       {
         "id": "D",
-        "texte": "Continuer le même processus tant qu'aucune sanction contractuelle n'a été appliquée"
+        "texte": "Remplacer le voyant par un commentaire libre, sans critère ni indicateur de référence"
       }
     ],
     "correct_answers": [
@@ -31764,11 +31764,11 @@
       },
       {
         "id": "B",
-        "texte": "Réduire artificiellement les coûts déclarés pour améliorer l'indicateur"
+        "texte": "Réduire le périmètre du projet sans consulter le sponsor pour ramener le TCPI vers 1 rapidement"
       },
       {
         "id": "C",
-        "texte": "Présenter cette analyse aux parties prenantes avec des options réalistes plutôt que de promettre un TCPI irréaliste"
+        "texte": "Présenter l'analyse aux parties prenantes avec des options réalistes plutôt qu'un TCPI irréaliste"
       },
       {
         "id": "D",
@@ -31939,15 +31939,15 @@
       },
       {
         "id": "B",
-        "texte": "Régulariser rapidement en obtenant l'acceptation formelle rétroactive, et renforcer la discipline du processus pour l'avenir"
+        "texte": "Rétablir la revue en la rendant plus courte et ciblée, avec un créneau protégé par le sponsor"
       },
       {
         "id": "C",
-        "texte": "Retirer les livrables de l'usage des utilisateurs finaux en attendant l'acceptation formelle"
+        "texte": "Reporter la revue des risques à la fin de chaque phase, sans maintenir de fréquence mensuelle"
       },
       {
         "id": "D",
-        "texte": "Abandonner le processus d'acceptation formelle puisqu'il est déjà contourné dans la pratique"
+        "texte": "Confier la revue des risques à un seul membre qui en rendra compte par e-mail au sponsor"
       }
     ],
     "correct_answers": [
@@ -32589,7 +32589,7 @@
       },
       {
         "id": "D",
-        "texte": "Partager l'information avec le Product Owner et les décideurs pour évaluer si une réorientation de la proposition de valeur est nécessaire"
+        "texte": "Partager l'information avec le PO et les décideurs pour évaluer l'effet sur la proposition de valeur"
       }
     ],
     "correct_answers": [
@@ -32647,7 +32647,7 @@
     "options": [
       {
         "id": "A",
-        "texte": "Collaborer avec le juridique et technique pour cartographier les exigences spécifiques et concevoir une architecture flexible"
+        "texte": "Cartographier avec le juridique et la technique les exigences par pays, et concevoir une base flexible"
       },
       {
         "id": "B",
@@ -32655,7 +32655,7 @@
       },
       {
         "id": "C",
-        "texte": "Appliquer une seule politique de localisation des données pour tous les marchés, la plus simple à implémenter"
+        "texte": "Appliquer à tous les marchés la politique de localisation la plus simple à mettre en œuvre d'emblée"
       },
       {
         "id": "D",
@@ -33843,11 +33843,11 @@
     "options": [
       {
         "id": "A",
-        "texte": "Demander aux membres gênés de s'habituer à ce style d'humour"
+        "texte": "Lui confier des tâches clairement définies dans son périmètre pour éviter toute friction"
       },
       {
         "id": "B",
-        "texte": "Ignorer le comportement car c'est une question de sensibilité individuelle"
+        "texte": "Le sanctionner formellement dès qu'il refuse d'aider un collègue en difficulté sur le projet"
       },
       {
         "id": "C",
@@ -33958,7 +33958,7 @@
       },
       {
         "id": "B",
-        "texte": "Avoir une conversation privée pour reconnaître son état et clarifier les attentes de comportement en équipe"
+        "texte": "Avoir un entretien privé pour reconnaître son état et clarifier les attentes de comportement"
       },
       {
         "id": "C",
@@ -33989,11 +33989,11 @@
     "options": [
       {
         "id": "A",
-        "texte": "Analyser objectivement si un biais systémique existe et ajuster le système pour garantir une reconnaissance équitable"
+        "texte": "Vérifier s'il existe un biais dans le système et l'ajuster pour une reconnaissance équitable"
       },
       {
         "id": "B",
-        "texte": "Supprimer complètement le système de reconnaissance par les pairs"
+        "texte": "Compléter le système par une reconnaissance managériale pour les membres les moins cités"
       },
       {
         "id": "C",
@@ -34351,7 +34351,7 @@
       },
       {
         "id": "D",
-        "texte": "Alerter la direction sur l'effet contre-productif potentiel du programme, tout en rappelant l'importance des objectifs collectifs"
+        "texte": "Définir des porte-parole tournants et préparer ensemble les messages à transmettre"
       }
     ],
     "correct_answers": [
@@ -34518,15 +34518,15 @@
       },
       {
         "id": "B",
-        "texte": "Adopter systématiquement ses prochaines idées pour compenser"
+        "texte": "Rejeter ses propositions pour préserver la culture agile actuelle de l'équipe sur ce projet"
       },
       {
         "id": "C",
-        "texte": "Analyser objectivement le processus de sélection des idées pour identifier d'éventuels biais et ajuster les techniques de facilitation"
+        "texte": "Écouter ses besoins, expliquer l'esprit des pratiques et essayer les processus utiles ensemble"
       },
       {
         "id": "D",
-        "texte": "Ignorer son ressenti tant qu'il continue à participer activement"
+        "texte": "Lui demander de s'adapter sans discussion, les pratiques de l'équipe étant déjà bien fixées"
       }
     ],
     "correct_answers": [
@@ -34584,19 +34584,19 @@
     "options": [
       {
         "id": "A",
-        "texte": "Laisser la situation évoluer naturellement avec le temps"
+        "texte": "Reprocher publiquement à chaque membre de ne pas avoir lu les documents avant la réunion"
       },
       {
         "id": "B",
-        "texte": "Faciliter une communication claire sur l'étendue des responsabilités du Product Owner adjoint et soutenir activement ses premières décisions"
+        "texte": "Raccourcir les documents, rappeler l'enjeu de la préparation et prévoir un temps de lecture"
       },
       {
         "id": "C",
-        "texte": "Forcer les développeurs à s'adresser uniquement au Product Owner adjoint sans transition"
+        "texte": "Supprimer les documents préalables et tout présenter oralement pendant chaque réunion d'équipe"
       },
       {
         "id": "D",
-        "texte": "Retirer le titre de Product Owner adjoint puisqu'il n'est pas respecté"
+        "texte": "Annuler les réunions dont les participants ne sont pas préparés, sans prévenir à l'avance"
       }
     ],
     "correct_answers": [
@@ -34693,11 +34693,11 @@
       },
       {
         "id": "B",
-        "texte": "Ignorer la plainte, la gestion des outils est une compétence individuelle à développer"
+        "texte": "Autoriser le télétravail aux seuls membres qui s'en plaignent le plus auprès du chef de projet"
       },
       {
         "id": "C",
-        "texte": "Évaluer collectivement la nécessité réelle de chaque outil, rationaliser leur nombre et être attentif aux besoins spécifiques"
+        "texte": "Recueillir les besoins et tester des aménagements (plages de calme, salles dédiées), puis ajuster"
       },
       {
         "id": "D",
@@ -34759,7 +34759,7 @@
     "options": [
       {
         "id": "A",
-        "texte": "Rappeler activement en planification les principes de rythme soutenable, en s'assurant que les objectifs restent réalistes"
+        "texte": "Échanger avec lui sur la priorisation et faire choisir au PO les initiatives selon la valeur"
       },
       {
         "id": "B",
@@ -34771,7 +34771,7 @@
       },
       {
         "id": "D",
-        "texte": "Réduire son influence en l'excluant des sessions de planification"
+        "texte": "Répartir ses initiatives en cours entre les autres membres de l'équipe sans l'en informer"
       }
     ],
     "correct_answers": [
@@ -34911,7 +34911,7 @@
       },
       {
         "id": "D",
-        "texte": "Céder systématiquement au manager fonctionnel senior en raison de son ancienneté"
+        "texte": "Proposer au manager un planning hebdomadaire de partage du temps du membre fixé à l'avance"
       }
     ],
     "correct_answers": [
@@ -35045,19 +35045,19 @@
     "options": [
       {
         "id": "A",
-        "texte": "Ignorer sa désillusion car elle concerne des promesses passées non liées au chef de projet actuel"
+        "texte": "Lui demander de rester à plein temps jusqu'à son départ sans préparer la transition du projet"
       },
       {
         "id": "B",
-        "texte": "Le transférer à un autre projet pour repartir à zéro"
+        "texte": "Refuser la promotion pour garder son expertise précieuse jusqu'à la fin du projet en cours"
       },
       {
         "id": "C",
-        "texte": "Reconnaître honnêtement la frustration légitime, éviter de nouvelles promesses non garanties, se concentrer sur des actions concrètes"
+        "texte": "Planifier avec lui et son futur manager un transfert de savoirs et une décharge progressive"
       },
       {
         "id": "D",
-        "texte": "Faire de nouvelles promesses de promotion pour restaurer sa motivation rapidement"
+        "texte": "Attendre son départ effectif avant de chercher une solution de remplacement pour son poste"
       }
     ],
     "correct_answers": [
@@ -35360,7 +35360,7 @@
     "options": [
       {
         "id": "A",
-        "texte": "Rejeter automatiquement toute discussion éthique dépassant le cadre légal strict"
+        "texte": "Maintenir le planning, les heures supplémentaires étant courantes dans ce type de secteur"
       },
       {
         "id": "B",
@@ -35372,7 +35372,7 @@
       },
       {
         "id": "D",
-        "texte": "Prendre ses préoccupations au sérieux et, si nécessaire, remonter la discussion éthique aux décideurs appropriés"
+        "texte": "Examiner les horaires avec lui et revoir le planning pour respecter contrat et réglementation"
       }
     ],
     "correct_answers": [
@@ -35399,15 +35399,15 @@
       },
       {
         "id": "B",
-        "texte": "Avoir une conversation directe sur l'impact négatif de tels commentaires, indépendamment de sa compétence technique"
+        "texte": "Le remercier de sa franchise, ne rien promettre d'irréaliste et préparer la continuité"
       },
       {
         "id": "C",
-        "texte": "Le remercier discrètement de ses observations sans aborder le ton employé"
+        "texte": "Lui proposer une augmentation immédiate sans validation de la direction pour le retenir"
       },
       {
         "id": "D",
-        "texte": "Ignorer ses commentaires en raison de sa compétence technique reconnue"
+        "texte": "Ignorer l'information tant qu'il n'a pas officiellement remis sa démission au service RH"
       }
     ],
     "correct_answers": [
@@ -35469,7 +35469,7 @@
       },
       {
         "id": "B",
-        "texte": "Ignorer ses difficultés d'adaptation, il doit s'ajuster seul avec le temps"
+        "texte": "Le dispenser de formation, son expérience étant déjà reconnue par toute l'équipe"
       },
       {
         "id": "C",
@@ -35477,7 +35477,7 @@
       },
       {
         "id": "D",
-        "texte": "Adopter temporairement un style plus hiérarchique pour s'adapter à ses attentes"
+        "texte": "Informer la direction de son refus sans l'avoir d'abord entendu sur ses raisons"
       }
     ],
     "correct_answers": [
@@ -35862,7 +35862,7 @@
     "options": [
       {
         "id": "A",
-        "texte": "Communiquer cette découverte au Product Owner pour réévaluer la décision, avec possible période de transition"
+        "texte": "Exposer les risques de régression et proposer des options (tests ciblés, périmètre réduit)"
       },
       {
         "id": "B",
@@ -35870,7 +35870,7 @@
       },
       {
         "id": "C",
-        "texte": "Supprimer la fonctionnalité en secret sans notification aux utilisateurs concernés"
+        "texte": "Réaliser quand même tous les tests en retardant discrètement la démonstration au client"
       },
       {
         "id": "D",
@@ -36002,11 +36002,11 @@
     "options": [
       {
         "id": "A",
-        "texte": "Publier les textes sans validation et corriger après coup si nécessaire"
+        "texte": "Appliquer la définition de l'équipe agile et facturer selon ses propres jalons internes"
       },
       {
         "id": "B",
-        "texte": "Reporter indéfiniment toute fonctionnalité impliquant des textes légaux"
+        "texte": "Appliquer la définition du partenaire et refaire le travail déjà livré par l'équipe agile"
       },
       {
         "id": "C",
@@ -36014,7 +36014,7 @@
       },
       {
         "id": "D",
-        "texte": "Intégrer systématiquement une étape de revue juridique dans la Definition of Ready, avec délai anticipé auprès de l'équipe juridique"
+        "texte": "Définir avec le partenaire des critères de sortie de phase communs, inscrits dans l'accord"
       }
     ],
     "correct_answers": [
@@ -36613,7 +36613,7 @@
       },
       {
         "id": "B",
-        "texte": "Réévaluer le calendrier en intégrant le délai réel de certification et communiquer l'impact"
+        "texte": "Analyser l'effet sur le chemin critique, mettre à jour le planning et informer les parties prenantes"
       },
       {
         "id": "C",
@@ -36621,7 +36621,7 @@
       },
       {
         "id": "D",
-        "texte": "Ignorer l'exigence de certification et livrer sans elle"
+        "texte": "Absorber le retard dans la marge totale du projet sans modifier la ligne de base du calendrier"
       }
     ],
     "correct_answers": [
@@ -36714,7 +36714,7 @@
     "options": [
       {
         "id": "A",
-        "texte": "Introduire des points de contrôle qualité intermédiaires tout au long du processus de production"
+        "texte": "Établir une procédure de non-conformité : enregistrer, analyser, corriger et prévenir"
       },
       {
         "id": "B",
@@ -36726,7 +36726,7 @@
       },
       {
         "id": "D",
-        "texte": "Doubler uniquement la fréquence de l'inspection finale"
+        "texte": "Attendre la fin du projet pour décider d'une procédure de gestion des défauts détectés"
       }
     ],
     "correct_answers": [
@@ -36784,15 +36784,15 @@
     "options": [
       {
         "id": "A",
-        "texte": "Analyser l'impact et soumettre les changements nécessaires au contrôle des changements avec ajustement calendrier/budget"
+        "texte": "Évaluer l'effet sur le chemin critique et les risques, puis décider par le contrôle des changements"
       },
       {
         "id": "B",
-        "texte": "Ignorer le changement réglementaire jusqu'à la fin du projet"
+        "texte": "Accepter la livraison en deux parties sans analyser l'effet sur les activités suivantes prévues"
       },
       {
         "id": "C",
-        "texte": "Suspendre immédiatement tout le projet sans analyse"
+        "texte": "Refuser toute modification de la séquence prévue au planning approuvé sans consulter le client"
       },
       {
         "id": "D",
@@ -37074,11 +37074,11 @@
       },
       {
         "id": "B",
-        "texte": "Supprimer tous les composants IA du produit par précaution excessive"
+        "texte": "Maintenir la licence perpétuelle, le marché n'étant pas représentatif des clients cibles actuels"
       },
       {
         "id": "C",
-        "texte": "Collaborer avec le juridique pour classifier les composants IA et prioriser les mesures de conformité selon le risque"
+        "texte": "Évaluer avec le sponsor et la finance l'effet sur le modèle économique et prévoir une transition"
       },
       {
         "id": "D",
@@ -37395,15 +37395,15 @@
       },
       {
         "id": "B",
-        "texte": "Mettre fin unilatéralement au partenariat pour éviter la pression continue"
+        "texte": "Refuser par principe toute demande spécifique à un seul client du produit sans l'étudier"
       },
       {
         "id": "C",
-        "texte": "Organiser une discussion transparente pour comprendre les attentes et explorer un alignement réaliste des priorités"
+        "texte": "Évaluer avec le PO l'effet sur la roadmap et la maintenance, puis décider selon la valeur"
       },
       {
         "id": "D",
-        "texte": "Ignorer le mécontentement du partenaire car la roadmap a déjà été validée en interne"
+        "texte": "Développer la fonctionnalité en dehors du backlog officiel de l'équipe produit en parallèle"
       }
     ],
     "correct_answers": [
@@ -37718,7 +37718,7 @@
       },
       {
         "id": "D",
-        "texte": "Collaborer avec le Product Owner pour redéfinir des jalons de valeur mesurable à court terme"
+        "texte": "Évaluer avec le juridique, la sécurité et le PO l'effet sur la confiance et la conformité d'abord"
       }
     ],
     "correct_answers": [
@@ -37850,11 +37850,11 @@
       },
       {
         "id": "B",
-        "texte": "Adopter immédiatement cette pratique pour les modèles futurs, et évaluer la faisabilité de documenter rétroactivement l'existant"
+        "texte": "Évaluer avec la sécurité et l'architecture les contrôles à adapter et former l'équipe d'abord"
       },
       {
         "id": "C",
-        "texte": "Ignorer cette exigence car elle ajoute une charge administrative sans valeur technique directe"
+        "texte": "Refuser la plateforme, les pratiques actuelles de test devant rester inchangées par l'équipe"
       },
       {
         "id": "D",
@@ -38521,15 +38521,15 @@
       },
       {
         "id": "B",
-        "texte": "Faciliter une discussion entre les Product Owners et, si nécessaire, escalader au Chief Product Owner"
+        "texte": "Comprendre le besoin de la finance et proposer une alternative légère, par exemple par sprint"
       },
       {
         "id": "C",
-        "texte": "Accepter la situation car chaque Product Owner défend ses propres intérêts légitimement"
+        "texte": "Refuser toute forme de suivi du temps, jugé contraire aux principes de l'agilité par l'équipe"
       },
       {
         "id": "D",
-        "texte": "Ignorer complètement les Product Owners et laisser les équipes décider entre elles"
+        "texte": "Remplir les feuilles de temps à la fin du projet à partir des souvenirs des membres de l'équipe"
       }
     ],
     "correct_answers": [
@@ -38797,15 +38797,15 @@
     "options": [
       {
         "id": "A",
-        "texte": "Ignorer les résultats car aucun incident concret n'est mentionné"
+        "texte": "Considérer que la stratégie relève de la seule direction et non des équipes de projet"
       },
       {
         "id": "B",
-        "texte": "Partager les résultats avec transparence et co-construire des actions d'amélioration"
+        "texte": "Relier les objectifs de l'équipe à la stratégie via des échanges réguliers et ouverts"
       },
       {
         "id": "C",
-        "texte": "Remettre en question la fiabilité de l'enquête anonyme"
+        "texte": "Envoyer le document stratégique complet à l'équipe sans accompagnement ni échange"
       },
       {
         "id": "D",
@@ -39227,7 +39227,7 @@
       },
       {
         "id": "B",
-        "texte": "Explorer avec le Product Owner la structuration du backlog par segments de valeur"
+        "texte": "Bâtir un socle commun et des extensions par filiale, et prioriser les variantes avec le PO"
       },
       {
         "id": "C",
@@ -39235,7 +39235,7 @@
       },
       {
         "id": "D",
-        "texte": "Créer deux équipes complètement séparées sans aucune coordination"
+        "texte": "Laisser chaque filiale modifier le produit à sa convenance après la livraison initiale"
       }
     ],
     "correct_answers": [
@@ -39258,11 +39258,11 @@
     "options": [
       {
         "id": "A",
-        "texte": "Éviter tout déploiement futur sans une visite physique préalable"
+        "texte": "Demander à l'équipe de surveiller manuellement les performances du système chaque matin"
       },
       {
         "id": "B",
-        "texte": "Résoudre le problème immédiat, puis mettre en place une pratique d'infrastructure as code ou documentation automatisée"
+        "texte": "Compléter le monitoring par des indicateurs de performance inclus dans la Definition of Done"
       },
       {
         "id": "C",
@@ -39538,7 +39538,7 @@
     "options": [
       {
         "id": "A",
-        "texte": "Laisser l'équipe support gérer seule la charge supplémentaire sans coordination"
+        "texte": "Maintenir les grosses stories entières pour préserver leur cohérence fonctionnelle et technique"
       },
       {
         "id": "B",
@@ -39546,7 +39546,7 @@
       },
       {
         "id": "C",
-        "texte": "Coordonner en amont avec l'équipe support pour anticiper le pic de charge"
+        "texte": "Découper les grosses stories pour livrer à chaque sprint des incréments terminés et visibles"
       },
       {
         "id": "D",
@@ -39818,7 +39818,7 @@
     "options": [
       {
         "id": "A",
-        "texte": "Ignorer les besoins contradictoires et concevoir sans référence aux personas spécifiques"
+        "texte": "Exclure de la revue les parties prenantes qui ne connaissent pas le contexte du produit"
       },
       {
         "id": "B",
@@ -39830,7 +39830,7 @@
       },
       {
         "id": "D",
-        "texte": "Organiser une session de conception collaborative pour évaluer les compromis, basée sur des données réelles"
+        "texte": "Envoyer un contexte court avant la revue et cadrer l'ouverture sur objectifs et périmètre"
       }
     ],
     "correct_answers": [
@@ -39927,15 +39927,15 @@
       },
       {
         "id": "B",
-        "texte": "Continuer avec les évaluations initiales car elles ont été validées formellement au début du projet"
+        "texte": "Retirer les jalons du plan pour supprimer le problème de déclaration auprès du sponsor"
       },
       {
         "id": "C",
-        "texte": "Ignorer les évaluations obsolètes tant qu'aucun risque ne s'est matérialisé"
+        "texte": "Laisser le sponsor constater lui-même les écarts à la fin du projet sans l'alerter avant"
       },
       {
         "id": "D",
-        "texte": "Réviser systématiquement toutes les évaluations à la lumière du contexte actuel, avec un cycle régulier futur"
+        "texte": "Définir des critères d'achèvement vérifiables et ne déclarer un jalon atteint qu'à ce prix"
       }
     ],
     "correct_answers": [
@@ -40211,11 +40211,11 @@
       },
       {
         "id": "C",
-        "texte": "Recruter immédiatement un second spécialiste qualité en urgence sans évaluation du besoin réel"
+        "texte": "Demander au sponsor de reprendre le pilotage au quotidien en cas d'absence prolongée"
       },
       {
         "id": "D",
-        "texte": "Réduire les exigences d'assurance qualité pour simplifier le processus"
+        "texte": "Reporter le sujet à la prochaine absence prévue du chef de projet dans le calendrier"
       }
     ],
     "correct_answers": [
@@ -40273,19 +40273,19 @@
     "options": [
       {
         "id": "A",
-        "texte": "Ignorer la situation car il s'agit d'une erreur non intentionnelle"
+        "texte": "Poursuivre l'usage des données, le client n'ayant pas contrôlé leur utilisation jusqu'ici"
       },
       {
         "id": "B",
-        "texte": "Réduire le nombre d'utilisateurs actifs du logiciel sans considération des besoins réels"
+        "texte": "Supprimer discrètement les traces de l'usage hors périmètre sans en parler au client"
       },
       {
         "id": "C",
-        "texte": "Continuer à utiliser le logiciel au-delà de la licence autorisée tant qu'aucun contrôle n'est effectué"
+        "texte": "Demander à l'équipe d'utiliser une version anonymisée sans en informer le client concerné"
       },
       {
         "id": "D",
-        "texte": "Régulariser immédiatement en acquérant les licences supplémentaires nécessaires, avec un processus de suivi futur"
+        "texte": "Cesser l'usage hors périmètre, informer le juridique et mettre en place un contrôle des accès"
       }
     ],
     "correct_answers": [
@@ -40833,19 +40833,19 @@
     "options": [
       {
         "id": "A",
-        "texte": "Migrer immédiatement vers une solution alternative sans évaluation de la faisabilité"
+        "texte": "Fusionner les produits immédiatement pour réduire les coûts de toute l'organisation"
       },
       {
         "id": "B",
-        "texte": "Accepter la dépendance comme permanente sans jamais envisager d'alternative"
+        "texte": "Refuser tout regroupement, chaque produit ayant sa propre base de clients à servir"
       },
       {
         "id": "C",
-        "texte": "Évaluer les options de réduction de cette dépendance à moyen terme, sans nécessairement migrer immédiatement"
+        "texte": "Évaluer avec les parties prenantes les gains et les risques de migration avant décision"
       },
       {
         "id": "D",
-        "texte": "Ignorer ce constat car le fournisseur a toujours été fiable jusqu'à présent"
+        "texte": "Laisser chaque équipe produit décider seule de rejoindre ou non la nouvelle plateforme"
       }
     ],
     "correct_answers": [
@@ -40938,19 +40938,19 @@
     "options": [
       {
         "id": "A",
-        "texte": "Proposer l'établissement d'un cadre d'allocation formalisé pour équilibrer innovation et développement à court terme"
+        "texte": "Définir avec le marketing des hypothèses mesurables et tester des évolutions du parcours"
       },
       {
         "id": "B",
-        "texte": "Consacrer systématiquement toute la capacité disponible au développement à court terme"
+        "texte": "Réduire le coût en supprimant les fonctionnalités les plus utilisées du produit actuel"
       },
       {
         "id": "C",
-        "texte": "Continuer sans cadre formel, chaque décision étant prise au cas par cas"
+        "texte": "Promettre la réduction de 15 % à la direction sans hypothèse ni mesure préalable"
       },
       {
         "id": "D",
-        "texte": "Ignorer le constat de la revue de gouvernance sur l'innovation"
+        "texte": "Attendre les résultats trimestriels du marketing avant d'engager des évolutions du produit"
       }
     ],
     "correct_answers": [
@@ -41327,11 +41327,11 @@
       },
       {
         "id": "B",
-        "texte": "Ignorer complètement la question de durabilité indirecte car elle n'affecte pas directement le produit lui-même"
+        "texte": "Refuser par principe tout outil d'analyse de sentiment sans l'étudier avec les RH"
       },
       {
         "id": "C",
-        "texte": "Évaluer des options d'optimisation logicielle prolongeant la compatibilité avec des appareils plus anciens"
+        "texte": "Évaluer avec les RH, le juridique et l'éthique la pertinence, le consentement et les limites"
       },
       {
         "id": "D",
@@ -41743,19 +41743,19 @@
     "options": [
       {
         "id": "A",
-        "texte": "Attendre qu'elles deviennent obligatoires avant d'agir"
+        "texte": "Accepter le SLA du client sans analyse de faisabilité pour conclure rapidement le contrat"
       },
       {
         "id": "B",
-        "texte": "Ignorer les recommandations car elles ne sont pas obligatoires"
+        "texte": "Refuser le client, les engagements prévus au projet étant déjà définitifs et validés"
       },
       {
         "id": "C",
-        "texte": "Adopter automatiquement toutes les recommandations sans évaluation de leur pertinence"
+        "texte": "Accepter le SLA et ne fournir les moyens nécessaires qu'en cas de pénalité avérée"
       },
       {
         "id": "D",
-        "texte": "Évaluer avec les parties prenantes le rapport coût-bénéfice de l'adoption de ces recommandations"
+        "texte": "Évaluer avec l'exploitation la faisabilité et le coût, puis négocier ou financer les moyens"
       }
     ],
     "correct_answers": [
@@ -42057,7 +42057,7 @@
     "options": [
       {
         "id": "A",
-        "texte": "Rappeler au Product Owner l'engagement de sprint et faciliter une discussion sur l'impact"
+        "texte": "Encourager des échanges directs entre l'équipe et les parties prenantes en facilitant"
       },
       {
         "id": "B",
@@ -42065,11 +42065,11 @@
       },
       {
         "id": "C",
-        "texte": "Escalader directement au sponsor du projet"
+        "texte": "Interdire à l'équipe tout échange direct avec les parties prenantes en dehors des revues"
       },
       {
         "id": "D",
-        "texte": "Accepter les changements car le Product Owner a autorité totale"
+        "texte": "Transférer toute la communication au Product Owner sans en informer l'équipe concernée"
       }
     ],
     "correct_answers": [
@@ -42162,19 +42162,19 @@
     "options": [
       {
         "id": "A",
-        "texte": "Réduire la fréquence des synchronisations à une fois par mois"
+        "texte": "Lui demander de suivre les conseils du directeur le plus ancien de l'organisation"
       },
       {
         "id": "B",
-        "texte": "Exiger que toute l'équipe s'aligne sur un seul fuseau horaire"
+        "texte": "Lui conseiller de ne jamais décider sans l'accord unanime des trois directeurs concernés"
       },
       {
         "id": "C",
-        "texte": "Laisser chaque sous-équipe gérer sa communication de façon autonome"
+        "texte": "Prendre les décisions à sa place pour le décharger de la pression de la direction"
       },
       {
         "id": "D",
-        "texte": "Mettre en place un tableau de bord partagé et des rituels de communication asynchrones structurés"
+        "texte": "L'aider à clarifier sa mission avec le sponsor et à instaurer un arbitrage des demandes"
       }
     ],
     "correct_answers": [
@@ -42232,19 +42232,19 @@
     "options": [
       {
         "id": "A",
-        "texte": "Accueillir le feedback avec professionnalisme, recentrer sur les faits, et adresser le moral de l'équipe en privé après"
+        "texte": "Expliquer les critères de choix, reconnaître sa déception et proposer une autre occasion"
       },
       {
         "id": "B",
-        "texte": "Mettre fin à la réunion immédiatement"
+        "texte": "Annuler la présentation pour éviter toute jalousie dans l'équipe et toute discussion"
       },
       {
         "id": "C",
-        "texte": "Défendre publiquement l'équipe en contredisant le client"
+        "texte": "Demander aux deux membres de se départager seuls pour la conférence, sans intervenir"
       },
       {
         "id": "D",
-        "texte": "Reporter la responsabilité sur un membre spécifique de l'équipe"
+        "texte": "Ne rien dire au collègue pour ne pas ouvrir une discussion sur le sujet avec l'équipe"
       }
     ],
     "correct_answers": [
@@ -42302,7 +42302,7 @@
     "options": [
       {
         "id": "A",
-        "texte": "Avoir une conversation individuelle pour ajuster la charge de travail ou la vélocité si nécessaire"
+        "texte": "Discuter avec lui de la charge soutenable et rappeler le rythme durable de l'équipe"
       },
       {
         "id": "B",
@@ -42310,7 +42310,7 @@
       },
       {
         "id": "C",
-        "texte": "Remplacer le membre par une nouvelle ressource"
+        "texte": "Interdire tout travail après 18 heures sans en discuter avec lui ni avec l'équipe"
       },
       {
         "id": "D",
@@ -42442,7 +42442,7 @@
     "options": [
       {
         "id": "A",
-        "texte": "Organiser un atelier collaboratif pour définir et documenter une Definition of Done acceptée par tous"
+        "texte": "Organiser un atelier collaboratif pour définir et documenter une Definition of Done commune"
       },
       {
         "id": "B",
@@ -43253,11 +43253,11 @@
     "options": [
       {
         "id": "A",
-        "texte": "Confronter publiquement la personne en réunion d'équipe"
+        "texte": "Lui révéler le salaire du collègue concerné pour clarifier rapidement la situation"
       },
       {
         "id": "B",
-        "texte": "Vérifier discrètement les faits avant d'engager une conversation directe et factuelle"
+        "texte": "L'écouter, l'orienter vers les RH pour un examen formel sans commenter les salaires"
       },
       {
         "id": "C",
@@ -43265,7 +43265,7 @@
       },
       {
         "id": "D",
-        "texte": "Ignorer l'information tant qu'elle reste non confirmée"
+        "texte": "Lui demander de ne plus parler de rémunération avec ses collègues de l'équipe projet"
       }
     ],
     "correct_answers": [
@@ -43428,11 +43428,11 @@
     "options": [
       {
         "id": "A",
-        "texte": "Demander à l'équipe de s'adapter à votre style plutôt que l'inverse"
+        "texte": "Réduire les réunions de pilotage à un rapport écrit mensuel envoyé aux parties prenantes"
       },
       {
         "id": "B",
-        "texte": "Adapter son style de leadership en fonction du contexte et des besoins de l'équipe"
+        "texte": "Séparer les réunions en une partie métier (valeur, risques, décisions) et une partie technique"
       },
       {
         "id": "C",
@@ -43440,7 +43440,7 @@
       },
       {
         "id": "D",
-        "texte": "Maintenir le même style car il a fonctionné dans vos projets précédents"
+        "texte": "Écarter les sujets techniques des réunions et les traiter en dehors du cadre du projet"
       }
     ],
     "correct_answers": [
@@ -43533,7 +43533,7 @@
     "options": [
       {
         "id": "A",
-        "texte": "Révoquer immédiatement tous les accès de l'équipe sans discernement"
+        "texte": "Enregistrer toutes les réunions dès demain sans en informer les participants concernés"
       },
       {
         "id": "B",
@@ -43541,11 +43541,11 @@
       },
       {
         "id": "C",
-        "texte": "Réviser systématiquement les accès selon le principe du moindre privilège"
+        "texte": "Vérifier avec le juridique et l'équipe les règles de consentement et de confidentialité"
       },
       {
         "id": "D",
-        "texte": "Ignorer le constat tant qu'aucun incident de sécurité n'est survenu"
+        "texte": "Laisser chaque membre enregistrer les réunions à sa convenance sur son propre outil"
       }
     ],
     "correct_answers": [
@@ -43603,19 +43603,19 @@
     "options": [
       {
         "id": "A",
-        "texte": "Reconnaître honnêtement la frustration légitime, sans faire de nouvelles promesses non garanties"
+        "texte": "Analyser les alternatives (priorités, ressources) et garder le week-end en dernier recours"
       },
       {
         "id": "B",
-        "texte": "Faire de nouvelles promesses de promotion pour restaurer sa motivation"
+        "texte": "Approuver immédiatement le travail du week-end pour rattraper le retard accumulé sur le lot"
       },
       {
         "id": "C",
-        "texte": "Ignorer sa désillusion car elle concerne des promesses passées non liées au chef de projet actuel"
+        "texte": "Interdire le travail du week-end sans analyser les causes du retard ni les alternatives"
       },
       {
         "id": "D",
-        "texte": "Le transférer à un autre projet pour repartir à zéro"
+        "texte": "Laisser le chef de lot décider seul du travail du week-end, sans en informer le sponsor"
       }
     ],
     "correct_answers": [
@@ -43642,15 +43642,15 @@
       },
       {
         "id": "B",
-        "texte": "Tolérer le comportement en raison de l'expertise rare du consultant"
+        "texte": "Demander à l'équipe commerciale de reprendre seule la relation avec le client concerné"
       },
       {
         "id": "C",
-        "texte": "Avoir une conversation directe sur les attentes comportementales et le respect mutuel"
+        "texte": "Organiser une revue conjointe des engagements et formaliser un point de contact unique"
       },
       {
         "id": "D",
-        "texte": "Retirer immédiatement le consultant du projet sans discussion préalable"
+        "texte": "Demander au client d'arbitrer lui-même entre les deux versions des engagements reçus"
       }
     ],
     "correct_answers": [
@@ -43712,7 +43712,7 @@
       },
       {
         "id": "B",
-        "texte": "Impliquer les parties prenantes contractuelles internes pour résoudre le litige rapidement"
+        "texte": "Examiner les heures facturées au regard du contrat et clarifier les limites avec lui"
       },
       {
         "id": "C",
@@ -43720,7 +43720,7 @@
       },
       {
         "id": "D",
-        "texte": "Menacer à son tour de résilier le contrat"
+        "texte": "Retirer l'expert du projet sans analyse des heures concernées ni discussion avec lui"
       }
     ],
     "correct_answers": [
@@ -44414,11 +44414,11 @@
     "options": [
       {
         "id": "A",
-        "texte": "Utiliser la prédiction comme un indicateur à contextualiser avec le jugement d'expert"
+        "texte": "Proposer quelques indicateurs complémentaires (valeur, qualité, délai, satisfaction)"
       },
       {
         "id": "B",
-        "texte": "Utiliser uniquement la prédiction IA sans jamais la recroiser avec l'avis de l'équipe"
+        "texte": "Retenir la vélocité comme seul indicateur, malgré ses limites reconnues par l'équipe"
       },
       {
         "id": "C",
@@ -44426,7 +44426,7 @@
       },
       {
         "id": "D",
-        "texte": "Ignorer complètement l'outil de prédiction IA"
+        "texte": "Créer un indicateur composite complexe que seule l'équipe de projet comprend vraiment"
       }
     ],
     "correct_answers": [
@@ -44554,7 +44554,7 @@
     "options": [
       {
         "id": "A",
-        "texte": "Fusionner toutes les équipes en une seule pour éliminer les dépendances"
+        "texte": "Annuler les rituels à chaque panne de l'outil de communication de l'équipe projet"
       },
       {
         "id": "B",
@@ -44562,11 +44562,11 @@
       },
       {
         "id": "C",
-        "texte": "Reporter la planification jusqu'à ce que toutes les dépendances soient éliminées"
+        "texte": "Remplacer l'outil immédiatement sans évaluer les besoins de l'équipe ni la transition"
       },
       {
         "id": "D",
-        "texte": "Ignorer les dépendances et laisser chaque équipe avancer indépendamment"
+        "texte": "Continuer à utiliser l'outil sans solution de repli, les pannes étant rares jusqu'ici"
       }
     ],
     "correct_answers": [
@@ -44694,15 +44694,15 @@
     "options": [
       {
         "id": "A",
-        "texte": "Laisser le Scrum Master résoudre seul les problèmes identifiés"
+        "texte": "Laisser le travail technique de côté tant qu'aucun incident ne se produit en production"
       },
       {
         "id": "B",
-        "texte": "Supprimer les rétrospectives car elles ne sont plus utiles"
+        "texte": "Réserver 50 % de chaque sprint au travail technique sans lien avec la valeur produit"
       },
       {
         "id": "C",
-        "texte": "Varier les formats et instaurer un suivi rigoureux des actions d'amélioration"
+        "texte": "Définir avec le PO des critères pour prioriser le travail technique dans le backlog"
       },
       {
         "id": "D",
@@ -44733,7 +44733,7 @@
       },
       {
         "id": "B",
-        "texte": "Former l'équipe aux techniques de découpage (critères INVEST)"
+        "texte": "Inclure la revue et les tests dans les estimations et mesurer l'écart avec la réalité"
       },
       {
         "id": "C",
@@ -44741,7 +44741,7 @@
       },
       {
         "id": "D",
-        "texte": "Abandonner totalement la mesure de vélocité"
+        "texte": "Confier l'estimation de la revue et des tests au chef de projet seul, sans l'équipe"
       }
     ],
     "correct_answers": [
@@ -44768,7 +44768,7 @@
       },
       {
         "id": "B",
-        "texte": "Évaluer l'impact via une analyse d'impact intégrée, puis appliquer les processus appropriés à chacun"
+        "texte": "Définir avec les deux volets des indicateurs communs (valeur livrée, jalons clés) à consolider"
       },
       {
         "id": "C",
@@ -44873,11 +44873,11 @@
       },
       {
         "id": "B",
-        "texte": "Imposer l'outil sans explication supplémentaire"
+        "texte": "Refuser toute communication sur les changements du backlog entre deux revues de sprint"
       },
       {
         "id": "C",
-        "texte": "Ajuster la facilitation avec des exemples concrets et démontrer sa valeur pratique"
+        "texte": "Convenir d'un canal et d'un rythme adaptés, comme un résumé hebdomadaire des changements"
       },
       {
         "id": "D",
@@ -46042,7 +46042,7 @@
       },
       {
         "id": "D",
-        "texte": "Réévaluer le calendrier en intégrant le délai réel et communiquer l'impact"
+        "texte": "Identifier pourquoi la preuve manquait, la produire si possible et corriger le processus"
       }
     ],
     "correct_answers": [
@@ -46100,7 +46100,7 @@
     "options": [
       {
         "id": "A",
-        "texte": "Abandonner l'outil car il remplace le jugement humain"
+        "texte": "Publier les comptes rendus tels quels pour favoriser la transparence de l'équipe projet"
       },
       {
         "id": "B",
@@ -46108,11 +46108,11 @@
       },
       {
         "id": "C",
-        "texte": "Réviser et valider les rapports générés par l'IA avant diffusion"
+        "texte": "Évaluer avec l'équipe ce qui peut être partagé en anonymisant les sujets sensibles"
       },
       {
         "id": "D",
-        "texte": "Utiliser l'IA uniquement pour les projets à faible enjeu"
+        "texte": "Publier les comptes rendus sans consulter l'équipe pour gagner du temps dans le projet"
       }
     ],
     "correct_answers": [
@@ -46248,11 +46248,11 @@
       },
       {
         "id": "C",
-        "texte": "Rechercher activement les connaissances tacites et documenter formellement vos propres leçons"
+        "texte": "Rappeler la procédure de contrôle des changements et exiger une validation avant de facturer"
       },
       {
         "id": "D",
-        "texte": "Ignorer l'absence de documentation et repartir de zéro"
+        "texte": "Demander aux prestataires de ne plus facturer les modifications mineures du périmètre"
       }
     ],
     "correct_answers": [
@@ -46700,19 +46700,19 @@
     "options": [
       {
         "id": "A",
-        "texte": "Réduire drastiquement la portée par anticipation excessive"
+        "texte": "Accepter l'exclusivité immédiatement pour ne pas perdre le partenariat avec ce client"
       },
       {
         "id": "B",
-        "texte": "Augmenter immédiatement le budget sans analyse détaillée"
+        "texte": "Refuser tout partage de données sans en discuter avec la direction ni le juridique"
       },
       {
         "id": "C",
-        "texte": "Ignorer les prévisions macroéconomiques à long terme"
+        "texte": "Partager les données d'abord et négocier les conditions ensuite avec le partenaire"
       },
       {
         "id": "D",
-        "texte": "Partager l'analyse avec le sponsor et la finance pour évaluer l'impact et des stratégies d'atténuation"
+        "texte": "Évaluer avec le juridique et la direction les conditions (exclusivité, finalité, durée)"
       }
     ],
     "correct_answers": [
@@ -46770,15 +46770,15 @@
     "options": [
       {
         "id": "A",
-        "texte": "Ignorer l'étude car elle ne reflète peut-être pas tous les contextes"
+        "texte": "Déposer un dossier immédiatement sans vérifier les critères d'éligibilité du programme"
       },
       {
         "id": "B",
-        "texte": "Rejeter catégoriquement l'usage de l'IA générative"
+        "texte": "Ignorer le programme, les subventions ne relevant pas du périmètre habituel du projet"
       },
       {
         "id": "C",
-        "texte": "Partager l'étude pour évaluer une expérimentation pragmatique de pratiques d'IA générative"
+        "texte": "Évaluer l'éligibilité avec le sponsor et la finance, estimer l'effort de dossier puis décider"
       },
       {
         "id": "D",
@@ -46980,19 +46980,19 @@
     "options": [
       {
         "id": "A",
-        "texte": "Ignorer le rapport tant qu'aucune action légale n'est intentée"
+        "texte": "Supprimer la clause immédiatement pour conserver ce client majeur du portefeuille"
       },
       {
         "id": "B",
-        "texte": "Communiquer immédiatement que votre produit n'est pas concerné sans vérification"
+        "texte": "Refuser toute modification contractuelle sans en discuter d'abord avec le juridique"
       },
       {
         "id": "C",
-        "texte": "Faire évaluer objectivement si les critiques s'appliquent, et prioriser les améliorations"
+        "texte": "Évaluer avec le juridique le risque et les alternatives (plafond, assurance) d'abord"
       },
       {
         "id": "D",
-        "texte": "Ignorer le rapport car il ne mentionne pas spécifiquement votre produit"
+        "texte": "Accepter oralement la demande du client en attendant la validation du juridique"
       }
     ],
     "correct_answers": [
@@ -47023,11 +47023,11 @@
       },
       {
         "id": "C",
-        "texte": "Collaborer avec les équipes de localisation pour prioriser marché par marché"
+        "texte": "Quantifier l'effet sur la marge, étudier d'autres canaux et en informer le sponsor"
       },
       {
         "id": "D",
-        "texte": "Adapter uniquement l'interface linguistique sans considération culturelle plus profonde"
+        "texte": "Absorber la hausse sans en informer le sponsor ni la finance de l'organisation"
       }
     ],
     "correct_answers": [
@@ -47050,19 +47050,19 @@
     "options": [
       {
         "id": "A",
-        "texte": "Créer des versions entièrement différentes sans évaluation de faisabilité"
+        "texte": "Attendre la date limite pour commencer à appliquer la nouvelle norme au produit livré"
       },
       {
         "id": "B",
-        "texte": "Ignorer ces différences et maintenir une interface uniforme"
+        "texte": "Appliquer la norme uniquement aux nouveaux composants sans évaluer l'existant du produit"
       },
       {
         "id": "C",
-        "texte": "Reporter indéfiniment l'expansion internationale"
+        "texte": "Demander à un prestataire de certifier la conformité sans impliquer l'équipe produit"
       },
       {
         "id": "D",
-        "texte": "Collaborer avec les designers UX pour adapter progressivement selon les priorités"
+        "texte": "Évaluer l'écart, prévoir formation et revues et intégrer la norme à la Definition of Done"
       }
     ],
     "correct_answers": [
@@ -47085,19 +47085,19 @@
     "options": [
       {
         "id": "A",
-        "texte": "Ignorer les scénarios prospectifs à long terme"
+        "texte": "Lancer la bêta publique sans cadre pour recueillir un maximum de retours rapidement"
       },
       {
         "id": "B",
-        "texte": "Arrêter immédiatement le développement en anticipation"
+        "texte": "Annuler la bêta, les retours négatifs pouvant nuire à l'image de marque du produit"
       },
       {
         "id": "C",
-        "texte": "Partager cette analyse pour évaluer une architecture plus flexible dès maintenant"
+        "texte": "Définir avec le marketing un cadre de bêta (public restreint, attentes et retours)"
       },
       {
         "id": "D",
-        "texte": "Ignorer les analystes car leurs prévisions sont souvent incertaines"
+        "texte": "Réaliser la bêta en interne uniquement, sans utilisateurs externes ni retours du marché"
       }
     ],
     "correct_answers": [
@@ -47124,11 +47124,11 @@
       },
       {
         "id": "B",
-        "texte": "Réécrire immédiatement toute l'interface sans évaluation progressive"
+        "texte": "Ignorer ces usages, le produit n'étant pas conçu pour ces besoins particuliers"
       },
       {
         "id": "C",
-        "texte": "Partager cette évolution pour évaluer une réorientation progressive vers le mobile"
+        "texte": "Étudier ces usages avec le PO et les clients et évaluer l'opportunité sous-jacente"
       },
       {
         "id": "D",
@@ -47155,19 +47155,19 @@
     "options": [
       {
         "id": "A",
-        "texte": "Ignorer la politique jusqu'à un blocage technique concret"
+        "texte": "Accepter la maintenance prolongée sans discuter du moment avec le partenaire concerné"
       },
       {
         "id": "B",
-        "texte": "Évaluer l'impact avec le technique et le juridique, explorer des alternatives par marché"
+        "texte": "Évaluer l'impact avec l'exploitation, négocier un autre créneau et informer les clients"
       },
       {
         "id": "C",
-        "texte": "Continuer à utiliser le modèle actuel dans tous les marchés"
+        "texte": "Refuser toute maintenance chez le partenaire pendant toute l'année en cours"
       },
       {
         "id": "D",
-        "texte": "Retirer complètement le produit de tous les marchés concernés"
+        "texte": "Informer les clients après la maintenance, sans préparation préalable de leur part"
       }
     ],
     "correct_answers": [
@@ -47295,19 +47295,19 @@
     "options": [
       {
         "id": "A",
-        "texte": "Participer activement avec le PMO à l'établissement d'un cadre organisationnel cohérent"
+        "texte": "Contribuer à un socle d'indicateurs communs avec des ajouts propres à chaque produit"
       },
       {
         "id": "B",
-        "texte": "Continuer selon les standards actuels de votre propre projet"
+        "texte": "Refuser toute harmonisation, chaque produit ayant un contexte et un marché distincts"
       },
       {
         "id": "C",
-        "texte": "Adopter unilatéralement les standards perçus comme meilleurs d'un autre projet"
+        "texte": "Imposer à tous les produits les indicateurs du produit le plus mature du portefeuille"
       },
       {
         "id": "D",
-        "texte": "Refuser toute participation à cette initiative organisationnelle"
+        "texte": "Attendre que la direction impose un indicateur unique pour s'y conformer ensuite"
       }
     ],
     "correct_answers": [
@@ -47330,19 +47330,19 @@
     "options": [
       {
         "id": "A",
-        "texte": "Reporter l'adoption jusqu'à obligation réglementaire externe"
+        "texte": "Intégrer immédiatement l'API et traiter ses changements au fil de l'eau, sans analyse"
       },
       {
         "id": "B",
-        "texte": "Ignorer cette exigence car elle ajoute une charge administrative"
+        "texte": "Refuser toute intégration reposant sur une API externe que le produit ne contrôle pas"
       },
       {
         "id": "C",
-        "texte": "Créer une fiche modèle générique sans réelle documentation spécifique"
+        "texte": "Intégrer l'API sans en informer le Product Owner pour accélérer la livraison du produit"
       },
       {
         "id": "D",
-        "texte": "Adopter immédiatement cette pratique pour les futurs modèles et évaluer la faisabilité rétroactive"
+        "texte": "Évaluer valeur et risque, isoler l'API par une couche d'abstraction et suivre ses évolutions"
       }
     ],
     "correct_answers": [
@@ -47482,7 +47482,7 @@
     "options": [
       {
         "id": "A",
-        "texte": "Sanctionner immédiatement le membre sans consultation du service conformité"
+        "texte": "Accepter l'invitation, le voyage étant sans lien direct avec l'appel d'offres en cours"
       },
       {
         "id": "B",
@@ -47494,7 +47494,7 @@
       },
       {
         "id": "D",
-        "texte": "Demander discrètement au membre de rendre le cadeau sans processus formel"
+        "texte": "Accepter après l'attribution du marché sans en parler à la conformité de l'entreprise"
       }
     ],
     "correct_answers": [
@@ -47517,7 +47517,7 @@
     "options": [
       {
         "id": "A",
-        "texte": "Programmer une revalidation formelle des hypothèses clés à intervalles réguliers"
+        "texte": "Désigner un propriétaire par bénéfice avec un suivi régulier relié aux livrables"
       },
       {
         "id": "B",
@@ -47525,11 +47525,11 @@
       },
       {
         "id": "C",
-        "texte": "Recréer un business case entièrement nouveau sans référence à l'historique"
+        "texte": "Attendre la clôture du projet pour attribuer la responsabilité des bénéfices"
       },
       {
         "id": "D",
-        "texte": "Continuer sans revalidation car le business case a été formellement approuvé initialement"
+        "texte": "Confier le suivi des bénéfices au chef de projet sans les relier au plan du projet"
       }
     ],
     "correct_answers": [
@@ -47661,11 +47661,11 @@
       },
       {
         "id": "B",
-        "texte": "Collaborer avec l'équipe RSE pour identifier les ODD pertinents et une méthode de reporting simple"
+        "texte": "Évaluer l'écart avec l'organisme, chiffrer coût et délai, et faire approuver le changement"
       },
       {
         "id": "C",
-        "texte": "Ignorer l'exigence car elle sort du cadre technique habituel"
+        "texte": "Renoncer à la certification, les exigences ayant changé en cours de projet entre-temps"
       },
       {
         "id": "D",
@@ -49493,19 +49493,19 @@
     "options": [
       {
         "id": "A",
-        "texte": "Comprendre ses motivations, explorer des solutions de transition progressive, et respecter ses aspirations professionnelles légitimes"
+        "texte": "Soutenir l'idée et vérifier avec le client et le juridique ce que l'on peut divulguer"
       },
       {
         "id": "B",
-        "texte": "Le punir pour avoir exprimé ce souhait"
+        "texte": "Refuser par principe toute communication externe sur les résultats du projet de l'équipe"
       },
       {
         "id": "C",
-        "texte": "Refuser catégoriquement son départ et l'obliger à rester"
+        "texte": "L'autoriser sans consulter le client ni le juridique pour valoriser le travail de l'équipe"
       },
       {
         "id": "D",
-        "texte": "Le laisser partir immédiatement sans aucune planification de transition"
+        "texte": "Laisser le membre décider seul de ce qu'il présente, en précisant qu'il est responsable"
       }
     ],
     "correct_answers": [
@@ -49524,19 +49524,19 @@
     "options": [
       {
         "id": "A",
-        "texte": "Réduire publiquement sa charge de travail devant l'équipe pour forcer le changement"
+        "texte": "Ignorer ses courriels tardifs, les décisions ayant déjà été prises en réunion"
       },
       {
         "id": "B",
-        "texte": "Discuter en privé de la charge de travail réaliste, encourager la transparence sur la capacité, et affirmer qu'il est acceptable de dire non"
+        "texte": "Convenir avec lui d'un moyen d'apporter ses points avant la décision, par courriel"
       },
       {
         "id": "C",
-        "texte": "Ignorer la situation, ce n'est pas le rôle du chef de projet"
+        "texte": "Lui demander de parler en réunion sans autre forme d'accompagnement ni préparation"
       },
       {
         "id": "D",
-        "texte": "Le laisser continuer car cela démontre son engagement"
+        "texte": "Reporter les décisions d'une réunion à l'autre pour attendre ses courriels tardifs"
       }
     ],
     "correct_answers": [
@@ -49617,19 +49617,19 @@
     "options": [
       {
         "id": "A",
-        "texte": "Explorer collectivement les causes (sur-engagement, dette technique, interruptions) et ajuster la charge future avec l'équipe"
+        "texte": "Analyser avec l'équipe la répartition du travail dans le sprint et lisser le flux"
       },
       {
         "id": "B",
-        "texte": "Ignorer la remarque et attendre que la personne s'adapte"
+        "texte": "Féliciter l'équipe pour sa capacité à terminer à temps chaque sprint et continuer"
       },
       {
         "id": "C",
-        "texte": "Ajouter davantage de tâches pour tester sa capacité d'endurance"
+        "texte": "Réduire la durée du sprint de moitié sans en discuter avec l'équipe de développement"
       },
       {
         "id": "D",
-        "texte": "Minimiser la remarque car les sprints sont censés être intenses"
+        "texte": "Reporter la revue de sprint d'un jour pour terminer le travail plus sereinement"
       }
     ],
     "correct_answers": [
@@ -49656,7 +49656,7 @@
       },
       {
         "id": "C",
-        "texte": "Traiter directement le comportement avec la personne, expliquer son impact négatif sur l'apprentissage collectif et la sécurité psychologique, et fixer des attentes claires de respect mutuel"
+        "texte": "Encourager un climat où les questions sont bienvenues et organiser un mentorat entre pairs"
       },
       {
         "id": "D",
@@ -49679,19 +49679,19 @@
     "options": [
       {
         "id": "A",
-        "texte": "Organiser un accueil structuré incluant la charte d'équipe, un mentor dédié, et des points de suivi réguliers"
+        "texte": "Faire désigner rapidement un remplaçant légitime et clarifier les décisions possibles"
       },
       {
         "id": "B",
-        "texte": "Le laisser observer sans intervention pendant plusieurs sprints"
+        "texte": "Laisser l'équipe décider seule de la feuille de route du produit jusqu'à nouvel ordre"
       },
       {
         "id": "C",
-        "texte": "L'affecter immédiatement aux tâches les plus complexes pour accélérer l'apprentissage"
+        "texte": "Suspendre le développement du produit jusqu'à l'arrivée d'un nouveau Product Owner"
       },
       {
         "id": "D",
-        "texte": "Lui donner uniquement la documentation technique sans accompagnement humain"
+        "texte": "Confier les décisions produit au Scrum Master sans désignation officielle préalable"
       }
     ],
     "correct_answers": [
@@ -50210,7 +50210,7 @@
       },
       {
         "id": "B",
-        "texte": "Observer d'abord les dynamiques existantes, écouter activement les préoccupations de l'équipe, et démontrer sa valeur par des actions de facilitation concrètes avant d'introduire des changements"
+        "texte": "Observer les dynamiques en place, écouter l'équipe et démontrer sa valeur par des actes"
       },
       {
         "id": "C",
@@ -50396,15 +50396,15 @@
       },
       {
         "id": "B",
-        "texte": "Prendre position immédiatement pour l'un des deux projets"
+        "texte": "Ignorer la menace, le contrat prévoyant des pénalités en cas de retard important"
       },
       {
         "id": "C",
-        "texte": "Communiquer avec les responsables de ressources fonctionnelles pour clarifier les priorités avant toute autre action"
+        "texte": "Écouter ses difficultés, clarifier le processus de changement et formaliser par écrit"
       },
       {
         "id": "D",
-        "texte": "Laisser les deux membres se débrouiller entre eux sans aucune implication"
+        "texte": "Remplacer le sous-traitant sans discussion préalable ni analyse de l'impact global"
       }
     ],
     "correct_answers": [
@@ -50516,7 +50516,7 @@
     "options": [
       {
         "id": "A",
-        "texte": "Continuer à lui confier ces tâches tant qu'il ne se plaint pas ouvertement"
+        "texte": "Le laisser continuer, la qualité de ses livrables étant jugée exceptionnelle"
       },
       {
         "id": "B",
@@ -50524,11 +50524,11 @@
       },
       {
         "id": "C",
-        "texte": "Féliciter publiquement sa bonne volonté pour encourager la poursuite de ce comportement"
+        "texte": "Lui retirer ses livrables pour les confier à quelqu'un de plus rapide de l'équipe"
       },
       {
         "id": "D",
-        "texte": "Ignorer la situation car la répartition des tâches n'est pas de son ressort"
+        "texte": "Lui imposer des délais très courts sans discuter des critères de qualité attendus"
       }
     ],
     "correct_answers": [
@@ -50826,7 +50826,7 @@
     "options": [
       {
         "id": "A",
-        "texte": "La matrice de traçabilité des exigences"
+        "texte": "Mettre en place une matrice de traçabilité reliant exigences, origines et livrables"
       },
       {
         "id": "B",
@@ -50838,7 +50838,7 @@
       },
       {
         "id": "D",
-        "texte": "Le diagramme de Gantt"
+        "texte": "Tenir un registre des risques listant toutes les exigences contestées par le client"
       }
     ],
     "correct_answers": [
@@ -51105,11 +51105,11 @@
     "options": [
       {
         "id": "A",
-        "texte": "Le remboursement de coûts, comme le coût plus honoraires fixes (CPFF)"
+        "texte": "Un contrat à remboursement de coûts avec honoraires, adapté à un périmètre incertain"
       },
       {
         "id": "B",
-        "texte": "Le prix fixe avec ajustement économique du prix (FP-EPA) uniquement"
+        "texte": "Un contrat à prix fixe ferme, le périmètre étant défini à l'avance par le client"
       },
       {
         "id": "C",
@@ -51117,7 +51117,7 @@
       },
       {
         "id": "D",
-        "texte": "Aucun contrat formel n'est nécessaire"
+        "texte": "Aucun contrat formel, la confiance entre les parties suffisant pour un tel projet"
       }
     ],
     "correct_answers": [
@@ -51233,15 +51233,15 @@
       },
       {
         "id": "B",
-        "texte": "Refuser systématiquement tout changement, même mineur"
+        "texte": "Ignorer la demande tant que le client ne la confirme pas par écrit de sa propre initiative"
       },
       {
         "id": "C",
-        "texte": "Définir des seuils de délégation permettant au chef de projet d'approuver directement les changements mineurs selon des critères prédéfinis, avec documentation"
+        "texte": "Formaliser la demande, évaluer son impact et obtenir l'approbation du contrôle des changements"
       },
       {
         "id": "D",
-        "texte": "Soumettre systématiquement chaque demande, même mineure, au comité de contrôle des changements complet"
+        "texte": "Refuser définitivement tout changement demandé oralement par le client lors de réunions"
       }
     ],
     "correct_answers": [
@@ -51419,11 +51419,11 @@
       },
       {
         "id": "B",
-        "texte": "Le principe de Pareto seul"
+        "texte": "Supprimer les contrôles intermédiaires pour réduire le coût de la qualité du projet"
       },
       {
         "id": "C",
-        "texte": "Le coût de la qualité, et spécifiquement le principe de prévention versus inspection"
+        "texte": "Investir davantage dans la prévention (formation, revues) pour réduire le coût global"
       },
       {
         "id": "D",
@@ -51508,19 +51508,19 @@
     "options": [
       {
         "id": "A",
-        "texte": "Le diagramme d'Ishikawa"
+        "texte": "Ignorer l'activité, seul le chemin critique conditionnant la date de fin du projet"
       },
       {
         "id": "B",
-        "texte": "L'analyse de sensibilité du chemin critique et des chemins quasi-critiques"
+        "texte": "La surveiller comme un chemin quasi critique et planifier des réponses aux risques"
       },
       {
         "id": "C",
-        "texte": "La matrice RACI"
+        "texte": "L'ajouter au chemin critique en supprimant sa marge dans le planning du projet"
       },
       {
         "id": "D",
-        "texte": "Le tableau kanban"
+        "texte": "L'externaliser immédiatement à un prestataire sans analyse de l'impact sur les coûts"
       }
     ],
     "correct_answers": [
@@ -51539,11 +51539,11 @@
     "options": [
       {
         "id": "A",
-        "texte": "La dépendance externe"
+        "texte": "Dépendance obligatoire, imposée par la nature physique du travail à réaliser"
       },
       {
         "id": "B",
-        "texte": "L'absence de toute dépendance"
+        "texte": "Dépendance externe, imposée par une organisation extérieure au projet lui-même"
       },
       {
         "id": "C",
@@ -51551,7 +51551,7 @@
       },
       {
         "id": "D",
-        "texte": "La dépendance obligatoire (logique dure)"
+        "texte": "Dépendance discrétionnaire, que l'équipe peut modifier pour optimiser le plan"
       }
     ],
     "correct_answers": [
@@ -51663,7 +51663,7 @@
     "options": [
       {
         "id": "A",
-        "texte": "Le nombre de ressources disponibles pour l'activité"
+        "texte": "Considérer que tout retard sur une activité non critique est sans effet sur le projet"
       },
       {
         "id": "B",
@@ -51671,11 +51671,11 @@
       },
       {
         "id": "C",
-        "texte": "Le délai de report possible d'une activité sans retarder la date de début au plus tôt de l'activité suivante"
+        "texte": "Comparer le retard aux marges libre et totale pour mesurer l'effet sur la date de fin"
       },
       {
         "id": "D",
-        "texte": "Le budget restant alloué à l'activité"
+        "texte": "Replanifier toutes les activités du projet sans analyser les marges ni les successeurs"
       }
     ],
     "correct_answers": [
@@ -51756,7 +51756,7 @@
     "options": [
       {
         "id": "A",
-        "texte": "L'auto-évaluation quotidienne détaillée"
+        "texte": "Demander un suivi quotidien du pourcentage d'avancement de chaque activité"
       },
       {
         "id": "B",
@@ -51764,11 +51764,11 @@
       },
       {
         "id": "C",
-        "texte": "Le diagramme de Pareto"
+        "texte": "Ne suivre que les grandes activités du plan et ignorer toutes les petites"
       },
       {
         "id": "D",
-        "texte": "L'analyse Monte-Carlo"
+        "texte": "Estimer l'avancement à l'intuition lors de chaque réunion d'équipe hebdomadaire"
       }
     ],
     "correct_answers": [
@@ -51787,7 +51787,7 @@
     "options": [
       {
         "id": "A",
-        "texte": "Ignorer la dette technique tant que les fonctionnalités sont livrées"
+        "texte": "Interdire toute modification du module central pour éviter les régressions du produit"
       },
       {
         "id": "B",
@@ -51795,7 +51795,7 @@
       },
       {
         "id": "C",
-        "texte": "Transférer la responsabilité de la dette technique au client"
+        "texte": "Laisser chaque développeur contourner le module au fil des besoins de chaque story"
       },
       {
         "id": "D",
@@ -51822,15 +51822,15 @@
       },
       {
         "id": "B",
-        "texte": "Retirer les éléments bloqués du tableau pour qu'ils n'apparaissent pas comme un problème"
+        "texte": "Interdire les corrections urgentes pour décourager la production de bugs par l'équipe"
       },
       {
         "id": "C",
-        "texte": "Ignorer les goulots d'étranglement tant que le travail progresse globalement"
+        "texte": "Confier la détection des bugs à une équipe distincte après la livraison du produit"
       },
       {
         "id": "D",
-        "texte": "Marquer visuellement les éléments bloqués (par exemple avec des étiquettes rouges) et prioriser la discussion des blocages lors de la synchronisation quotidienne"
+        "texte": "Renforcer les tests automatisés dès la conception et analyser les bugs échappés"
       }
     ],
     "correct_answers": [
@@ -52097,19 +52097,19 @@
     "options": [
       {
         "id": "A",
-        "texte": "Le nombre d'outils numériques disponibles"
+        "texte": "Mesurer uniquement le nombre de réunions agiles tenues par les équipes chaque mois"
       },
       {
         "id": "B",
-        "texte": "Le nombre de certifications détenues par les employés"
+        "texte": "Mesurer le nombre de certifications agiles obtenues par les employés chaque année"
       },
       {
         "id": "C",
-        "texte": "La taille des bureaux physiques"
+        "texte": "Mesurer la vélocité comparée des équipes entre elles pour établir un classement"
       },
       {
         "id": "D",
-        "texte": "La tolérance à l'échec, la confiance envers les équipes et l'ouverture à la prise de décision décentralisée"
+        "texte": "Combiner des indicateurs de résultats (satisfaction, délai, qualité) dans le temps"
       }
     ],
     "correct_answers": [
@@ -52159,19 +52159,19 @@
     "options": [
       {
         "id": "A",
-        "texte": "L'adoption immédiate sans évaluation des risques (biais, sécurité des données, propriété intellectuelle)"
+        "texte": "Lancer l'offre gratuite immédiatement pour profiter de l'effet de notoriété attendu"
       },
       {
         "id": "B",
-        "texte": "Ignorer complètement cette technologie par excès de prudence"
+        "texte": "Refuser par principe toute offre gratuite, jugée contraire à la rentabilité visée"
       },
       {
         "id": "C",
-        "texte": "Laisser chaque développeur décider seul sans cadre organisationnel"
+        "texte": "Lancer l'offre gratuite sans définir de durée ni de critère d'arrêt de l'essai"
       },
       {
         "id": "D",
-        "texte": "Procéder à une évaluation structurée des risques et bénéfices (sécurité des données, biais algorithmique, propriété intellectuelle) avant un déploiement large, avec des expérimentations contrôlées"
+        "texte": "Évaluer avec le marketing et la finance le coût, la cannibalisation et le bénéfice"
       }
     ],
     "correct_answers": [
@@ -52570,7 +52570,7 @@
       },
       {
         "id": "C",
-        "texte": "La connaissance locale du marché, le coût d'établissement d'une force de vente directe, et la rapidité d'accès au marché via des partenaires établis"
+        "texte": "La connaissance locale, le coût d'une force de vente propre et l'accès par des partenaires"
       },
       {
         "id": "D",
@@ -52748,19 +52748,19 @@
     "options": [
       {
         "id": "A",
-        "texte": "Le logo du fournisseur externe"
+        "texte": "Choisir le pays dont le salaire moyen est le plus bas, sans autre critère d'analyse"
       },
       {
         "id": "B",
-        "texte": "Le nombre d'années d'existence du fournisseur uniquement"
+        "texte": "Retenir le pays le plus proche géographiquement du siège sans analyse comparative"
       },
       {
         "id": "C",
-        "texte": "La capacité du fournisseur externe à garantir les mêmes normes de protection des données et de conformité réglementaire exigées sur le marché cible"
+        "texte": "Évaluer le coût et la disponibilité des compétences, la rétention et les alternatives"
       },
       {
         "id": "D",
-        "texte": "Le fuseau horaire du fournisseur uniquement"
+        "texte": "Décider selon la préférence personnelle des dirigeants pour une ville en particulier"
       }
     ],
     "correct_answers": [
@@ -52876,7 +52876,7 @@
       },
       {
         "id": "B",
-        "texte": "Rappeler avec bienveillance l'objectif de la mêlée et proposer de capturer les idées dans le backlog pour une discussion ultérieure appropriée"
+        "texte": "Rappeler avec bienveillance l'objectif de la mêlée et noter ses idées dans le backlog"
       },
       {
         "id": "C",
@@ -53155,7 +53155,7 @@
       },
       {
         "id": "B",
-        "texte": "L'estimation des coûts du projet, intégrant les coûts de prévention et d'évaluation de la qualité"
+        "texte": "L'estimation des coûts, avec les coûts de prévention et d'évaluation de la qualité"
       },
       {
         "id": "C",
@@ -53434,7 +53434,7 @@
       },
       {
         "id": "B",
-        "texte": "Définir des seuils de délégation prédéfinis permettant l'approbation directe des changements mineurs par le chef de projet, avec documentation systématique"
+        "texte": "Définir des seuils de délégation pour approuver les changements mineurs avec documentation"
       },
       {
         "id": "C",
@@ -53589,11 +53589,11 @@
       },
       {
         "id": "B",
-        "texte": "La couleur de l'interface de la solution tierce"
+        "texte": "La couleur de l'interface de la solution proposée par le fournisseur tiers retenu"
       },
       {
         "id": "C",
-        "texte": "La comparaison du coût total de possession, du délai de mise sur le marché, et de l'avantage stratégique de la propriété intellectuelle entre les deux options"
+        "texte": "Le coût total de possession, le délai de mise sur le marché et l'avantage stratégique"
       },
       {
         "id": "D",

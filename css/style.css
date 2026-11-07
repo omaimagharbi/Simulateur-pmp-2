@@ -6,7 +6,7 @@
    score est affiché.
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
 
 :root{
   /* Palette */
@@ -99,6 +99,15 @@ button, input, select, textarea{ font-family:inherit; font-size:1rem; }
 }
 .btn:active{ transform:translateY(1px); }
 .btn-primary{ background:var(--ink-900); color:var(--white); }
+.btn-brass{ background:var(--brass); color:var(--white); }
+.btn-brass:hover{ opacity:.92; }
+.btn-submit-floating{
+  position:fixed; right:1.6rem; bottom:1.6rem; z-index:40;
+  padding:.85em 1.6em; border-radius:999px; box-shadow:0 10px 24px rgba(10,16,34,.28);
+}
+@media (max-width:640px){
+  .btn-submit-floating{ right:1rem; bottom:1rem; padding:.7em 1.3em; font-size:.92rem; }
+}
 .btn-primary:hover{ background:var(--ink-700); }
 .btn-brass{ background:var(--brass); color:var(--white); }
 .btn-brass:hover{ background:var(--brass-light); }
@@ -330,6 +339,7 @@ table.history tr:last-child td{ border-bottom:none; }
 .q-domain.Business{ background:var(--dom-business-bg); color:var(--dom-business); }
 
 .q-card{ padding:2rem; margin-bottom:1.5rem; }
+.q-number{ font-family:var(--font-mono); font-size:.8rem; font-weight:700; color:var(--brass); text-transform:uppercase; letter-spacing:.04em; margin-bottom:.5rem; }
 .q-text{ font-size:1.12rem; line-height:1.55; margin-bottom:1.5rem; }
 
 .options{ display:flex; flex-direction:column; gap:.7rem; }
@@ -354,6 +364,32 @@ table.history tr:last-child td{ border-bottom:none; }
 .matching-row{ display:flex; align-items:center; justify-content:space-between; gap:1rem; cursor:default; }
 .matching-row .option-text{ flex:0 0 auto; max-width:45%; }
 .matching-select{ flex:1 1 auto; padding:.5rem .6rem; border:1px solid var(--brass-light); border-radius:8px; font-family:inherit; font-size:.9rem; background:var(--white); }
+
+/* Matching en glisser-déposer (comme au vrai examen) */
+.matching-dnd{ display:flex; flex-direction:column; gap:1.4rem; }
+.matching-left-col{ display:flex; flex-direction:column; gap:.7rem; }
+.matching-prompt{ flex:0 0 42%; max-width:42%; font-size:.92rem; }
+.matching-drop{
+  flex:1 1 auto; min-height:44px; border:2px dashed var(--brass-light); border-radius:10px;
+  display:flex; align-items:center; padding:.3rem .6rem; background:var(--paper); transition:border-color .15s, background .15s;
+}
+.matching-drop.drag-over{ border-color:var(--brass); background:var(--dom-people-bg); }
+.matching-drop.filled{ border-style:solid; border-color:var(--brass-light); background:var(--white); cursor:pointer; }
+.matching-drop-hint{ color:var(--ink-600); font-size:.82rem; font-style:italic; }
+.matching-pool{
+  display:flex; flex-wrap:wrap; gap:.6rem; padding:.9rem; border-radius:10px;
+  background:var(--paper-dim); min-height:52px;
+}
+.matching-chip{
+  display:inline-block; padding:.5rem .8rem; border-radius:8px; background:var(--white);
+  border:1px solid var(--brass-light); font-size:.88rem; cursor:grab; user-select:none;
+}
+.matching-chip:active{ cursor:grabbing; }
+.matching-chip.picked{ outline:2px solid var(--brass); background:var(--dom-people-bg); }
+@media (max-width:640px){
+  .matching-row{ flex-direction:column; align-items:stretch; gap:.4rem; }
+  .matching-prompt{ max-width:100%; }
+}
 
 .justification{
   margin-top:1.2rem; padding:1rem 1.1rem; border-radius:var(--radius-m);
@@ -434,3 +470,69 @@ footer.foot{ text-align:center; color:var(--ink-600); font-size:.78rem; padding:
   .topbar{ padding:.9rem 1.1rem; }
   .topbar nav{ display:none; }
 }
+
+/* ==========================================================================
+   Arabe / RTL — l'interface entière passe en dir="rtl" (voir applyI18n)
+   ========================================================================== */
+html[dir="rtl"] body,
+html[dir="rtl"] button,
+html[dir="rtl"] input,
+html[dir="rtl"] select,
+html[dir="rtl"] textarea,
+html[dir="rtl"] h1, html[dir="rtl"] h2, html[dir="rtl"] h3, html[dir="rtl"] h4,
+html[dir="rtl"] .q-text, html[dir="rtl"] .brand{
+  font-family:'IBM Plex Sans Arabic', 'Noto Sans Arabic', 'Segoe UI', Tahoma, sans-serif;
+}
+html[dir="rtl"] .lang-switch{ margin-left:0; margin-right:.4rem; direction:ltr; }
+html[dir="rtl"] .compass-legend .val,
+html[dir="rtl"] .category-item .count{ margin-left:0; margin-right:auto; }
+html[dir="rtl"] .category-item{ text-align:right; }
+html[dir="rtl"] table.history th,
+html[dir="rtl"] table.admin-table th{ text-align:right; }
+/* Les chronomètres, numéros et codes restent lisibles de gauche à droite. */
+html[dir="rtl"] .timer, html[dir="rtl"] .q-dot, html[dir="rtl"] .letter,
+html[dir="rtl"] code, html[dir="rtl"] .mono{ direction:ltr; unicode-bidi:isolate; }
+/* Le bouton Soumettre reste en bas à droite, comme demandé, dans toutes les langues. */
+html[dir="rtl"] .btn-submit-floating{ right:1.6rem; left:auto; }
+html[dir="rtl"] .toast{ right:auto; left:1.6rem; }
+@media (max-width:640px){ html[dir="rtl"] .btn-submit-floating{ right:1rem; } }
+
+/* ==========================================================================
+   Figures d'examen (graphiques SVG), zones sensibles et listes déroulantes
+   ========================================================================== */
+.q-figure{
+  margin:1rem 0 1.2rem; padding:.8rem; border:1px solid var(--paper-line); border-radius:var(--radius-m);
+  background:var(--white); overflow-x:auto;
+}
+.q-figure svg{ display:block; width:100%; height:auto; max-width:760px; margin:0 auto; direction:ltr; }
+.q-figure-caption{ font-size:.78rem; color:var(--ink-600); margin-bottom:.4rem; font-weight:600; letter-spacing:.03em; text-transform:uppercase; }
+.fig-text{ font-family:var(--font-body); fill:var(--ink-800); }
+.fig-axis{ stroke:var(--ink-600); stroke-width:1.2; fill:none; }
+.fig-grid{ stroke:var(--paper-line); stroke-width:1; }
+
+/* Hotspot : les zones sont des rectangles transparents posés sur la figure. */
+.hotspot-zone{ fill:transparent; stroke:transparent; stroke-width:2; cursor:pointer; transition:fill .12s, stroke .12s; }
+.hotspot-zone:hover{ fill:rgba(47,111,237,.14); stroke:var(--brass-light); }
+.hotspot-zone.selected{ fill:rgba(47,111,237,.24); stroke:var(--brass); stroke-width:3; }
+.hotspot-zone.correct{ fill:rgba(47,122,79,.28); stroke:var(--good); stroke-width:3; }
+.hotspot-zone.incorrect{ fill:rgba(163,57,43,.24); stroke:var(--bad); stroke-width:3; }
+.hotspot-zone:focus{ outline:none; stroke:var(--brass); }
+.hotspot-readout{ margin-top:.6rem; font-size:.85rem; color:var(--ink-700); min-height:1.2em; }
+
+/* Liste déroulante / texte à trous */
+.dropdown-text{ font-size:1rem; line-height:2.3; }
+.dropdown-select{
+  display:inline-block; margin:0 .25rem; padding:.3rem .5rem; min-width:9rem; max-width:100%;
+  border:2px solid var(--brass-light); border-radius:8px; background:var(--white);
+  font-family:inherit; font-size:.92rem; color:var(--ink-900); vertical-align:middle;
+}
+.dropdown-select:focus{ outline:none; border-color:var(--brass); }
+.dropdown-select.filled{ border-color:var(--good); }
+.dropdown-review-row{ margin:.35rem 0; font-size:.92rem; }
+.dropdown-review-row .ok{ color:var(--good); font-weight:600; }
+.dropdown-review-row .ko{ color:var(--bad); font-weight:600; }
+.hotspot-line{ fill:none !important; }
+.hotspot-line:hover{ stroke:rgba(47,111,237,.35); }
+.hotspot-line.selected{ stroke:rgba(47,111,237,.5) !important; }
+.hotspot-line.correct{ stroke:rgba(47,122,79,.55) !important; }
+.hotspot-line.incorrect{ stroke:rgba(163,57,43,.5) !important; }

@@ -33,7 +33,7 @@ if (quizUser) {
         ? [categoryQuestions]
         : chunkQuestions(categoryQuestions, 10);
   const chosenPart = parts[part - 1] || parts[0] || categoryQuestions;
-  let questions = shuffle(chosenPart.length ? chosenPart : categoryQuestions);
+  let questions = groupAwareShuffle(chosenPart.length ? chosenPart : categoryQuestions);
   if (!questions.length) questions = shuffle([...allQuestions]);
 
   let current = 0;
@@ -67,6 +67,26 @@ if (quizUser) {
       [a[i], a[j]] = [a[j], a[i]];
     }
     return a;
+  }
+
+  // Mélange qui garde groupées les sous-questions d'une même étude de cas
+  // (même "case_group_id", posé par expandQuestion dans storage.js) : elles
+  // se suivent toujours dans l'examen, jamais dispersées parmi d'autres
+  // questions — seul l'ORDRE des études de cas entre elles, et des questions
+  // isolées, est mélangé.
+  function groupAwareShuffle(arr) {
+    const groups = {};
+    const standalone = [];
+    arr.forEach(q => {
+      if (q.case_group_id) {
+        (groups[q.case_group_id] = groups[q.case_group_id] || []).push(q);
+      } else {
+        standalone.push(q);
+      }
+    });
+    Object.values(groups).forEach(g => g.sort((a, b) => a.id - b.id));
+    const blocks = standalone.map(q => [q]).concat(Object.values(groups));
+    return shuffle(blocks).flat();
   }
 
   function formatClock(totalSeconds) {
@@ -116,6 +136,7 @@ if (quizUser) {
     if (!val) return false;
     if (q.type === 'multi_choice') return Array.isArray(val) && val.length > 0;
     if (q.type === 'matching') return q.colonne_gauche.every(l => val[l.id]);
+    if (q.type === 'dropdown') return typeof val === 'object' && q.blanks.every(b => val[b.id] !== undefined && val[b.id] !== '');
     return !!val;
   }
 
@@ -150,18 +171,152 @@ if (quizUser) {
       </div>`;
   }
 
+  // Glisser-déposer comme au vrai examen PMP : les éléments de droite sont des
+  // "jetons" qu'on fait glisser vers la bonne case de gauche (HTML5 drag-and-
+  // drop sur ordinateur). Sur tactile, où le drag-and-drop HTML5 est peu
+  // fiable, un repli "toucher pour saisir, toucher pour déposer" prend le relais.
   function renderMatching(q, selected) {
     const val = selected && typeof selected === 'object' ? selected : {};
-    return `<div class="options matching">
-      ${q.colonne_gauche.map(l => `
-        <div class="option matching-row" data-left="${l.id}">
-          <span class="option-text">${l.texte}</span>
-          <select class="matching-select" data-left="${l.id}">
-            <option value="">—</option>
-            ${q.colonne_droite.map(r => `<option value="${r.id}" ${val[l.id] === r.id ? 'selected' : ''}>${r.texte}</option>`).join('')}
-          </select>
-        </div>`).join('')}
+    const placedRightIds = new Set(Object.values(val).filter(Boolean));
+    const poolItems = q.colonne_droite.filter(r => !placedRightIds.has(r.id));
+    return `<div class="options matching matching-dnd">
+      <div class="matching-left-col">
+        ${q.colonne_gauche.map(l => {
+          const placedId = val[l.id];
+          const placedItem = placedId ? q.colonne_droite.find(r => r.id === placedId) : null;
+          return `
+          <div class="matching-row">
+            <span class="option-text matching-prompt">${l.texte}</span>
+            <div class="matching-drop ${placedItem ? 'filled' : ''}" data-left="${l.id}">
+              ${placedItem
+                ? `<span class="matching-chip" draggable="true" data-right="${placedItem.id}" data-from-left="${l.id}">${placedItem.texte}</span>`
+                : `<span class="matching-drop-hint">${t('quiz_matching_drop_hint')}</span>`}
+            </div>
+          </div>`;
+        }).join('')}
+      </div>
+      <div class="matching-pool" id="matching-pool" data-pool="1">
+        ${poolItems.map(r => `<span class="matching-chip" draggable="true" data-right="${r.id}">${r.texte}</span>`).join('')}
+      </div>
     </div>`;
+  }
+
+  // Branche le glisser-déposer + le repli tactile pour une question matching donnée.
+  function wireMatching(q) {
+    let pickedChip = null; // repli tactile : jeton actuellement "en main"
+
+    function getVal() {
+      return (answers[q.id] && typeof answers[q.id] === 'object') ? { ...answers[q.id] } : {};
+    }
+    function commit(val) {
+      answers[q.id] = val;
+      maxReached = Math.max(maxReached, current);
+      renderQuestion();
+      renderDots();
+    }
+    function placeInto(leftId, rightId) {
+      const val = getVal();
+      Object.keys(val).forEach(l => { if (val[l] === rightId) delete val[l]; });
+      val[leftId] = rightId;
+      commit(val);
+    }
+    function removeFrom(leftId) {
+      const val = getVal();
+      delete val[leftId];
+      commit(val);
+    }
+
+    document.querySelectorAll('.matching-chip').forEach(chip => {
+      chip.addEventListener('dragstart', (e) => {
+        e.dataTransfer.setData('text/plain', chip.dataset.right);
+        e.dataTransfer.effectAllowed = 'move';
+      });
+      chip.addEventListener('click', () => {
+        document.querySelectorAll('.matching-chip.picked').forEach(c => c.classList.remove('picked'));
+        if (pickedChip === chip.dataset.right) { pickedChip = null; return; }
+        pickedChip = chip.dataset.right;
+        chip.classList.add('picked');
+      });
+    });
+
+    document.querySelectorAll('.matching-drop').forEach(zone => {
+      zone.addEventListener('dragover', (e) => { e.preventDefault(); zone.classList.add('drag-over'); });
+      zone.addEventListener('dragleave', () => zone.classList.remove('drag-over'));
+      zone.addEventListener('drop', (e) => {
+        e.preventDefault();
+        zone.classList.remove('drag-over');
+        const rightId = e.dataTransfer.getData('text/plain');
+        if (rightId) placeInto(zone.dataset.left, rightId);
+      });
+      zone.addEventListener('click', () => {
+        if (zone.classList.contains('filled')) { removeFrom(zone.dataset.left); return; }
+        if (pickedChip) { placeInto(zone.dataset.left, pickedChip); pickedChip = null; }
+      });
+    });
+
+    const pool = document.getElementById('matching-pool');
+    if (pool) {
+      pool.addEventListener('dragover', (e) => e.preventDefault());
+      pool.addEventListener('drop', (e) => {
+        e.preventDefault();
+        const rightId = e.dataTransfer.getData('text/plain');
+        if (!rightId) return;
+        const val = getVal();
+        Object.keys(val).forEach(l => { if (val[l] === rightId) delete val[l]; });
+        commit(val);
+      });
+    }
+  }
+
+  // Zone sensible (hotspot) : on clique directement sur la figure (courbe,
+  // cellule, point, activité…). Une seule zone peut être sélectionnée.
+  function renderHotspot(q, selected) {
+    const label = selected && q.zone_labels ? q.zone_labels[selected] : '';
+    return `${figureBlock(q.figure, { zones: q.zones, selected })}
+      <div class="answer-hint" style="margin-bottom:.3rem">${t('quiz_hotspot_hint')}</div>
+      <div class="hotspot-readout">${label ? `${t('quiz_hotspot_selected')} : <b>${label}</b>` : ''}</div>`;
+  }
+  function wireHotspot(q) {
+    document.querySelectorAll('[data-zone]').forEach(el => {
+      const pick = () => {
+        answers[q.id] = el.dataset.zone;
+        maxReached = Math.max(maxReached, current);
+        renderQuestion();
+        renderDots();
+      };
+      el.addEventListener('click', pick);
+      el.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); pick(); } });
+    });
+  }
+
+  // Liste déroulante / texte à trous : chaque {n} du texte devient un <select>.
+  function renderDropdownText(q, selected) {
+    const val = selected && typeof selected === 'object' ? selected : {};
+    return q.text.replace(/\{(\d+)\}/g, (m, n) => {
+      const blank = q.blanks.find(b => b.id === n);
+      if (!blank) return m;
+      const cur = val[n];
+      return `<select class="dropdown-select ${cur !== undefined && cur !== '' ? 'filled' : ''}" data-blank="${n}">
+        <option value="">${t('quiz_dropdown_choose')}</option>
+        ${blank.options.map((o, i) => `<option value="${i}" ${String(cur) === String(i) ? 'selected' : ''}>${o}</option>`).join('')}
+      </select>`;
+    });
+  }
+  function wireDropdown(q) {
+    document.querySelectorAll('.dropdown-select').forEach(sel => {
+      sel.addEventListener('change', () => {
+        const val = (answers[q.id] && typeof answers[q.id] === 'object') ? { ...answers[q.id] } : {};
+        if (sel.value === '') delete val[sel.dataset.blank]; else val[sel.dataset.blank] = parseInt(sel.value, 10);
+        answers[q.id] = val;
+        maxReached = Math.max(maxReached, current);
+        renderQuestion();
+        renderDots();
+      });
+    });
+  }
+
+  function figureFor(q) {
+    return q.figure && q.type !== 'hotspot' ? figureBlock(q.figure, {}) : '';
   }
 
   function renderQuestion() {
@@ -173,31 +328,30 @@ if (quizUser) {
     let optionsHtml;
     if (q.type === 'multi_choice') optionsHtml = renderOptionsMulti(q, selected);
     else if (q.type === 'matching') optionsHtml = renderMatching(q, selected);
+    else if (q.type === 'hotspot') optionsHtml = renderHotspot(q, selected);
+    else if (q.type === 'dropdown') optionsHtml = `<div class="answer-hint" style="margin-bottom:.5rem">${t('quiz_dropdown_hint')}</div>`;
     else optionsHtml = renderOptionsSingle(q, selected);
 
     const complete = isAnswerComplete(q, selected);
+    const questionTextHtml = q.type === 'dropdown'
+      ? `<div class="q-text dropdown-text">${renderDropdownText(q, selected)}</div>`
+      : `<div class="q-text">${q.text}</div>`;
     document.getElementById('question-mount').innerHTML = `
       <div class="card q-card">
+        <div class="q-number">${t('quiz_question_label')} ${current + 1}</div>
         ${caseHeader(q)}
-        <div class="q-text">${q.text}</div>
+        ${figureFor(q)}
+        ${questionTextHtml}
         ${optionsHtml}
       </div>
       ${!complete ? `<div class="answer-hint">${t('quiz_hint_lock')}</div>` : ''}`;
 
     if (q.type === 'matching') {
-      document.querySelectorAll('.matching-select').forEach(sel => {
-        sel.addEventListener('change', () => {
-          const current_val = (answers[q.id] && typeof answers[q.id] === 'object') ? { ...answers[q.id] } : {};
-          current_val[sel.dataset.left] = sel.value;
-          answers[q.id] = current_val;
-          maxReached = Math.max(maxReached, current);
-          renderDots();
-          const nowComplete = isAnswerComplete(q, answers[q.id]);
-          document.getElementById('btn-next').disabled = !nowComplete;
-          document.getElementById('btn-submit').disabled = !nowComplete;
-          document.querySelector('.answer-hint') && (document.querySelector('.answer-hint').style.display = nowComplete ? 'none' : '');
-        });
-      });
+      wireMatching(q);
+    } else if (q.type === 'hotspot') {
+      wireHotspot(q);
+    } else if (q.type === 'dropdown') {
+      wireDropdown(q);
     } else if (q.type === 'multi_choice') {
       document.querySelectorAll('.option').forEach(el => {
         el.addEventListener('click', () => {
@@ -240,7 +394,14 @@ if (quizUser) {
       return `<div class="q-dot ${answered ? 'answered' : ''} ${i === current ? 'current' : ''} ${locked ? 'locked' : ''}" data-idx="${i}">${i + 1}</div>`;
     }).join('');
     document.querySelectorAll('.q-dot:not(.locked)').forEach(el => {
-      el.addEventListener('click', () => { current = parseInt(el.dataset.idx, 10); renderQuestion(); renderDots(); startQuestionTimer(); });
+      el.addEventListener('click', () => {
+        current = parseInt(el.dataset.idx, 10);
+        maxReached = Math.max(maxReached, current);
+        renderQuestion();
+        renderDots();
+        startQuestionTimer();
+        maybeOfferBreak();
+      });
     });
   }
 
@@ -254,7 +415,19 @@ if (quizUser) {
     startQuestionTimer();
   }
 
-  function offerBreak(afterQuestionNumber) {
+  // Déclenche la pause réglementaire dès que le nombre de questions atteintes
+  // franchit un palier (60, 120), quelle que soit la façon d'y arriver —
+  // bouton "Suivante" ou clic direct sur un point de navigation.
+  function maybeOfferBreak() {
+    const reached = maxReached + 1; // nombre de questions atteintes (1-indexé)
+    const checkpoint = BREAK_CHECKPOINTS.find(n => n < reached && !breaksOffered.has(n)); // palier dépassé = question 60/120 validée
+    if (checkpoint) {
+      breaksOffered.add(checkpoint);
+      offerBreak(checkpoint, false); // on reste sur la question choisie
+    }
+  }
+
+  function offerBreak(afterQuestionNumber, advanceOnResume) {
     const overlay = document.getElementById('break-overlay');
     document.getElementById('break-desc').textContent = t('break_desc', { n: afterQuestionNumber });
     document.getElementById('break-timer-wrap').style.display = 'none';
@@ -272,7 +445,8 @@ if (quizUser) {
       overlay.classList.remove('show');
       clearInterval(breakCountdownHandle);
       startTimer();
-      advance();
+      startQuestionTimer();
+      if (advanceOnResume) advance();
     }
 
     skipBtn.onclick = closeAndResume;
@@ -298,10 +472,11 @@ if (quizUser) {
     const justAnsweredNumber = current + 1; // numéro (1-indexé) de la question qu'on vient de valider
     if (BREAK_CHECKPOINTS.includes(justAnsweredNumber) && !breaksOffered.has(justAnsweredNumber)) {
       breaksOffered.add(justAnsweredNumber);
-      offerBreak(justAnsweredNumber);
+      offerBreak(justAnsweredNumber, true);
       return;
     }
     advance();
+    maybeOfferBreak();
   });
 
   document.getElementById('btn-submit').addEventListener('click', () => {
@@ -314,6 +489,16 @@ if (quizUser) {
     finishExam();
   });
 
+  // Bouton flottant : permet de soumettre à tout moment, depuis n'importe
+  // quelle question, sans devoir naviguer jusqu'à la dernière (contrairement
+  // au bouton "Terminer" de la barre de navigation, qui n'apparaît que là).
+  document.getElementById('btn-submit-floating').addEventListener('click', () => {
+    const unanswered = questions.filter(q => !isAnswerComplete(q, answers[q.id])).length;
+    const proceed = unanswered > 0 ? confirm(t('quiz_confirm_unanswered', { n: unanswered })) : confirm(t('quiz_confirm_submit_now'));
+    if (!proceed) return;
+    finishExam();
+  });
+
   function finishExam() {
     if (submitted) return;
     submitted = true;
@@ -321,9 +506,9 @@ if (quizUser) {
     clearInterval(breakCountdownHandle);
     clearInterval(questionTimerHandle);
 
-    // Notation façon PMI : un choix unique ou multi-choix doit être exactement juste
-    // (aucun crédit partiel) ; un appariement donne un crédit proportionnel aux paires
-    // correctes, car c'est une évaluation plus granulaire par nature.
+    // Notation façon PMI : un choix unique, multi-choix ou une zone sensible doit être
+    // exactement juste (aucun crédit partiel) ; un appariement ou une liste déroulante à
+    // plusieurs trous donne un crédit proportionnel aux éléments corrects.
     function scoreOne(q) {
       const chosen = answers[q.id] || null;
       if (q.type === 'multi_choice') {
@@ -337,6 +522,15 @@ if (quizUser) {
         const pairs = q.colonne_gauche.map(l => l.id);
         const correctCount = pairs.filter(id => val[id] === q.correct_matching[id]).length;
         return { questionId: q.id, domain: q.domain, chosen: val, correctAnswer: q.correct_matching, correct: correctCount === pairs.length, partialCredit: pairs.length ? correctCount / pairs.length : 0 };
+      }
+      if (q.type === 'hotspot') {
+        return { questionId: q.id, domain: q.domain, chosen, correctAnswer: q.correct_zone, correct: chosen === q.correct_zone };
+      }
+      if (q.type === 'dropdown') {
+        const val = chosen && typeof chosen === 'object' ? chosen : {};
+        const good = q.blanks.filter(b => val[b.id] === b.answer).length;
+        const correctMap = Object.fromEntries(q.blanks.map(b => [b.id, b.answer]));
+        return { questionId: q.id, domain: q.domain, chosen: val, correctAnswer: correctMap, correct: good === q.blanks.length, partialCredit: q.blanks.length ? good / q.blanks.length : 0 };
       }
       return { questionId: q.id, domain: q.domain, chosen, correctAnswer: q.answer, correct: chosen === q.answer };
     }
